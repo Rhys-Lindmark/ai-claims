@@ -1,0 +1,9 @@
+{
+  "fixture_notice": "Synthetic review-priority fixture; consequence changes queue order only, never truth weighting or evidence standards.",
+  "records": [
+    { "canonical_claim_id": "canonical-health-01", "severity": 3, "reach": 2, "urgency": 3, "decision_relevance": 3, "rationale": "If acted on, the synthetic health claim could affect near-term decisions for many people.", "reviewer_confidence": "medium", "review_state": "editor_reviewed", "evidence_standard": "unchanged", "truth_score_weight": 1 },
+    { "canonical_claim_id": "canonical-policy-02", "severity": 2, "reach": 3, "urgency": 1, "decision_relevance": 2, "rationale": "The synthetic policy claim has broad reach but a longer decision horizon.", "reviewer_confidence": "medium", "review_state": "editor_reviewed", "evidence_standard": "unchanged", "truth_score_weight": 1 },
+    { "canonical_claim_id": "canonical-history-03", "severity": 0, "reach": 1, "urgency": 0, "decision_relevance": 0, "rationale": "The synthetic historical detail matters for accuracy but has little immediate decision consequence.", "reviewer_confidence": "high", "review_state": "editor_reviewed", "evidence_standard": "unchanged", "truth_score_weight": 1 }
+  ]
+}
+
