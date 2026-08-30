@@ -1,5 +1,7 @@
 # AI Claims
 
+[![Extension CI](https://github.com/Rhys-Lindmark/ai-claims/actions/workflows/extension-ci.yml/badge.svg)](https://github.com/Rhys-Lindmark/ai-claims/actions/workflows/extension-ci.yml)
+
 An open-source, page-aware truth layer from Rhys Lindmark's Website Accelerator, published at <https://ai.rhyslindmark.com/claims>.
 
 The north star is a Chrome extension that recognizes YouTube videos, Goodreads books, and ordinary web pages; resolves each page to a shared reviewed analysis; and shows a 0–100 truth score with its denominator, coverage, methodology version, and sources. A score stays hidden until every eligible claim is reviewed and the publication and provenance gates pass.

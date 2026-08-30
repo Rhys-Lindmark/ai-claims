@@ -1,0 +1,29 @@
+name: Extension CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22.19.0
+          cache: npm
+      - run: npm ci
+      - run: npm run test:extension
+      - run: npm run build
+      - run: npm run package:extension -- ai-claims-extension.zip
+      - run: unzip -t ai-claims-extension.zip
+      - uses: actions/upload-artifact@v7
+        with:
+          path: ai-claims-extension.zip
+          archive: false
+          retention-days: 14
