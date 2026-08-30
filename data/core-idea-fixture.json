@@ -1,0 +1,19 @@
+{
+  "fixture_notice": "Synthetic core-idea clusters; no real episode, speaker, or claim is represented.",
+  "clusters": [
+    { "idea_id": "idea-adoption", "label": "Adoption is accelerating", "summary": "Synthetic claims about participation counts, regional growth, and future uptake.", "review_state": "editor_reviewed", "memberships": [
+      { "canonical_claim_id": "canonical-01", "role": "central", "review_state": "editor_reviewed" },
+      { "canonical_claim_id": "canonical-03", "role": "supporting", "review_state": "in_review" },
+      { "canonical_claim_id": "canonical-04", "role": "supporting", "review_state": "unreviewed" }
+    ] },
+    { "idea_id": "idea-policy", "label": "Policy drove the change", "summary": "Synthetic causal claims and counterpoints about why participation changed.", "review_state": "editor_reviewed", "memberships": [
+      { "canonical_claim_id": "canonical-02", "role": "central", "review_state": "editor_reviewed" },
+      { "canonical_claim_id": "canonical-01", "role": "supporting", "review_state": "editor_reviewed" },
+      { "canonical_claim_id": "canonical-05", "role": "counterpoint", "review_state": "unreviewed" }
+    ] },
+    { "idea_id": "idea-tradeoff", "label": "Expansion has tradeoffs", "summary": "Synthetic value and factual premises about budget, access, and implementation.", "review_state": "machine_draft", "memberships": [
+      { "canonical_claim_id": "canonical-05", "role": "central", "review_state": "unreviewed" },
+      { "canonical_claim_id": "canonical-06", "role": "counterpoint", "review_state": "unreviewed" }
+    ] }
+  ]
+}
