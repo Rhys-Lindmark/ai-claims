@@ -1,0 +1,10 @@
+{
+  "fixture_notice": "Synthetic methodology manifest; no real analysis is represented.", "manifest_id": "method-demo-1.0.0", "version": "1.0.0", "effective_at": "2026-08-30T19:00:00Z", "content_digest": "sha256:4b5c27d9a106e3f8",
+  "rules": [
+    { "stage": "claim_selection", "rule_id": "selection-checkable-v1", "version": "1.0.0", "summary": "Select independently checkable assertions; preserve values and anecdotes without truth-scoring them." },
+    { "stage": "canonical_grouping", "rule_id": "group-repetition-v1", "version": "1.0.0", "summary": "Editor-reviewed exact repeats and paraphrases contribute one denominator unit." },
+    { "stage": "evidence_review", "rule_id": "evidence-both-sides-v1", "version": "1.0.0", "summary": "Record supporting, contradicting, and contextual evidence with source-quality fields." },
+    { "stage": "verdict_assignment", "rule_id": "dimensions-v1", "version": "1.0.0", "summary": "Separate accuracy, framing, causal support, and uncertainty instead of one opaque score." },
+    { "stage": "aggregation", "rule_id": "coverage-gated-v1", "version": "1.0.0", "summary": "Hide aggregate scores until publication gates clear and no reviewed findings remain unresolved." }
+  ]
+}
