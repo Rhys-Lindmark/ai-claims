@@ -36,7 +36,7 @@ function renderResult(state, identity, requestRecord = null) {
   result.innerHTML = `
     <h3>${heading}</h3>
     <p>${explanation}</p>
-    ${requestRecord ? identity.kind === 'youtube' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Supply permitted transcript ↗</a>` : '' : '<button class="request" id="request-analysis">Request analysis</button>'}`;
+    ${requestRecord ? identity.kind === 'youtube' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Supply permitted transcript ↗</a>` : identity.kind === 'goodreads' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/book-intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Confirm book edition ↗</a>` : '' : '<button class="request" id="request-analysis">Request analysis</button>'}`;
 }
 
 async function refresh() {

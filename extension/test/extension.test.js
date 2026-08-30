@@ -6,6 +6,7 @@ import { createApiResolver, createLocalResolver } from '../lib/analysis-resolver
 import { createRequestStore } from '../lib/analysis-requests.js';
 import { computeTruthScore } from '../lib/truth-score.js';
 import { goodreadsBookResolution, sourceNotice, transcriptAcquisition } from '../lib/source-policy.js';
+import { createBookIdentityRecord, isValidIsbn } from '../lib/book-identity.js';
 import { identifyPage } from '../lib/page-identity.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -182,4 +183,18 @@ test('Goodreads book identity resolves only from explicit permitted mappings', (
   assert.equal(goodreadsBookResolution({ kind: 'goodreads', registryMatch: true }).state, 'registry_match');
   assert.equal(goodreadsBookResolution({ kind: 'goodreads', suppliedIsbn: true }).state, 'user_supplied_isbn');
   assert.equal(goodreadsBookResolution({ kind: 'goodreads', publisherMetadata: true }).state, 'publisher_metadata');
+});
+
+test('validates ISBN-10 and ISBN-13 checksums', () => {
+  assert.equal(isValidIsbn('0-306-40615-2'), true);
+  assert.equal(isValidIsbn('978-0-306-40615-7'), true);
+  assert.equal(isValidIsbn('978-0-306-40615-8'), false);
+});
+
+test('stages a browser-local Goodreads-to-edition mapping without page metadata', () => {
+  const result = createBookIdentityRecord({ goodreadsUrl: 'https://www.goodreads.com/book/show/12345.Some_Book', isbn: '978-0-306-40615-7', editionNote: 'Hardcover', editionConfirmed: true, suppliedAt: '2026-08-30T00:00:00.000Z' });
+  assert.equal(result.ok, true);
+  assert.equal(result.record.entity_key, 'goodreads:12345');
+  assert.equal(result.record.isbn, '9780306406157');
+  assert.equal(Object.hasOwn(result.record, 'title'), false);
 });
