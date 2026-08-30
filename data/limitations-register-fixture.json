@@ -1,0 +1,8 @@
+{
+  "fixture_notice": "Synthetic limitations register; no real analysis or limitation is represented.",
+  "limitations": [
+    { "limitation_id": "limit-01", "kind": "transcript", "title": "Overlapping speech remains partially unresolved", "description": "A short synthetic exchange cannot be attributed word-by-word with confidence.", "severity": "material", "affected_finding_ids": ["finding-03"], "status": "open", "mitigation": "Exclude the disputed clause from scoring and seek a publisher transcript or manual audio review.", "reviewed_by": "Fixture editor", "updated_at": "2026-08-30T19:20:00Z", "resulting_analysis_version_id": null },
+    { "limitation_id": "limit-02", "kind": "evidence", "title": "Historical subgroup data are unavailable", "description": "The synthetic source reports the total but not the subgroup requested by the speaker.", "severity": "moderate", "affected_finding_ids": ["finding-01", "finding-04"], "status": "accepted", "mitigation": "Narrow the finding to the published total and disclose the unavailable subgroup comparison.", "reviewed_by": "Fixture editor", "updated_at": "2026-08-30T19:35:00Z", "resulting_analysis_version_id": null },
+    { "limitation_id": "limit-03", "kind": "methodology", "title": "Paraphrase threshold was updated", "description": "A prior draft used an automatic grouping threshold that is no longer permitted.", "severity": "minor", "affected_finding_ids": ["finding-02"], "status": "mitigated", "mitigation": "An editor re-reviewed the group under methodology v2.0.0.", "reviewed_by": "Fixture editor", "updated_at": "2026-08-30T20:05:00Z", "resulting_analysis_version_id": "analysis-demo-v4" }
+  ]
+}
