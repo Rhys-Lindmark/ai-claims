@@ -1,0 +1,15 @@
+{
+  "fixture_notice": "Synthetic speaker identities and segment attributions; no real people or episode are represented.",
+  "speakers": [
+    { "speaker_id": "host-aria", "display_name": "Host Aria", "identity_state": "confirmed", "identity_basis": "publisher_roster" },
+    { "speaker_id": "guest-mira", "display_name": "Guest Mira", "identity_state": "confirmed", "identity_basis": "self_introduction" },
+    { "speaker_id": "voice-unresolved", "display_name": "Unresolved voice", "identity_state": "unknown", "identity_basis": "none" }
+  ],
+  "attributions": [
+    { "attribution_id": "attr-01", "segment_id": "segment-12", "mode": "single_speaker", "speaker_ids": ["guest-mira"], "confidence": "high", "review_state": "editor_reviewed", "revisions": [
+      { "revision_number": 1, "previous_speaker_ids": ["auto-speaker-2"], "next_speaker_ids": ["guest-mira"], "changed_by": "Fixture editor", "changed_at": "2026-08-30T18:10:00Z", "reason": "Self-introduction and adjacent turn-taking establish the guest identity." }
+    ] },
+    { "attribution_id": "attr-02", "segment_id": "segment-13", "mode": "overlapping_speech", "speaker_ids": ["host-aria", "guest-mira"], "confidence": "medium", "review_state": "editor_reviewed", "revisions": [] },
+    { "attribution_id": "attr-03", "segment_id": "segment-14", "mode": "unknown_speaker", "speaker_ids": [], "confidence": "unknown", "review_state": "machine_suggested", "revisions": [] }
+  ]
+}
