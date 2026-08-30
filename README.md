@@ -10,6 +10,7 @@ The current site contains synthetic fixtures that test the review machinery with
 
 ```bash
 npm run test:extension
+npm run package:extension -- ai-claims-extension.zip
 npm run build
 ```
 
