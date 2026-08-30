@@ -1,0 +1,10 @@
+{
+  "fixture_notice": "Synthetic reviewer disclosures and recusals; no real person, organization, or conflict is represented.",
+  "reviewers": [{ "reviewer_id": "reviewer-aria", "display_name": "Reviewer Aria" }, { "reviewer_id": "reviewer-sol", "display_name": "Reviewer Sol" }, { "reviewer_id": "reviewer-nova", "display_name": "Reviewer Nova" }],
+  "disclosures": [{ "disclosure_id": "disclosure-01", "reviewer_id": "reviewer-aria", "category": "prior_advocacy", "statement": "The synthetic reviewer previously wrote publicly in favor of a related policy approach.", "disclosed_at": "2026-08-30T18:00:00Z", "public": true }],
+  "assignments": [
+    { "assignment_id": "assignment-01", "finding_id": "finding-01", "reviewer_id": "reviewer-aria", "role": "researcher", "conflict_state": "disclosed_managed", "disclosure_ids": ["disclosure-01"], "recusal_reason": null, "replacement_reviewer_id": null },
+    { "assignment_id": "assignment-02", "finding_id": "finding-01", "reviewer_id": "reviewer-sol", "role": "final_approver", "conflict_state": "recused", "disclosure_ids": [], "recusal_reason": "The synthetic reviewer has a close personal relationship with the represented speaker.", "replacement_reviewer_id": "reviewer-nova" },
+    { "assignment_id": "assignment-03", "finding_id": "finding-01", "reviewer_id": "reviewer-nova", "role": "final_approver", "conflict_state": "none_declared", "disclosure_ids": [], "recusal_reason": null, "replacement_reviewer_id": null }
+  ]
+}
