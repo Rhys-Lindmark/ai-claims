@@ -1,0 +1,12 @@
+{
+  "fixture_notice": "Synthetic publication-readiness record; no real analysis or editorial decision is represented.",
+  "analysis_id": "analysis-demo",
+  "unresolved_finding_count": 2,
+  "gates": [
+    { "kind": "transcript_provenance", "state": "ready", "reviewed_by": "Fixture editor", "reviewed_at": "2026-08-30T17:00:00Z", "rationale": "Permitted source, language, checksum, and retention policy are recorded.", "next_action": null },
+    { "kind": "speaker_attribution", "state": "ready", "reviewed_by": "Fixture editor", "reviewed_at": "2026-08-30T17:20:00Z", "rationale": "All scored claim segments have reviewed speaker attribution.", "next_action": null },
+    { "kind": "canonical_grouping", "state": "ready", "reviewed_by": "Fixture editor", "reviewed_at": "2026-08-30T17:45:00Z", "rationale": "Repeated and paraphrased occurrences have editor-reviewed groups.", "next_action": null },
+    { "kind": "evidence_review", "state": "blocked", "reviewed_by": null, "reviewed_at": null, "rationale": "Two checkable canonical claims still lack reviewed evidence on both sides.", "next_action": "Complete source review for canonical-04 and canonical-05." },
+    { "kind": "editorial_review", "state": "blocked", "reviewed_by": null, "reviewed_at": null, "rationale": "Final language and uncertainty have not been approved.", "next_action": "Resolve remaining findings, then request final editorial review." }
+  ]
+}
