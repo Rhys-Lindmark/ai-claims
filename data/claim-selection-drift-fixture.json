@@ -1,0 +1,15 @@
+{
+  "fixture_notice": "Synthetic rolling calibration batches; no real editors, claims, model, or production performance is represented.",
+  "policy_note": "The 80% observed-agreement threshold is a predeclared fixture rule, not a universal reliability standard.",
+  "batches": [
+    {
+      "batch_id": "calibration-batch-01", "methodology_version": "1.0.0", "window_start": "2026-06-01T00:00:00Z", "window_end": "2026-06-30T23:59:59Z", "reviewed_records": 20, "agreements": 18, "predeclared_agreement_threshold": 0.8, "unresolved_disagreements": 0, "stratum_warnings": [], "reviewed_by": "Fixture methods editor"
+    },
+    {
+      "batch_id": "calibration-batch-02", "methodology_version": "1.0.0", "window_start": "2026-07-01T00:00:00Z", "window_end": "2026-07-31T23:59:59Z", "reviewed_records": 20, "agreements": 17, "predeclared_agreement_threshold": 0.8, "unresolved_disagreements": 0, "stratum_warnings": [{ "stratum_id": "confidence-low", "disagreements": 2, "reviewed": 5, "note": "Low-confidence candidates account for both disagreements." }], "reviewed_by": "Fixture methods editor"
+    },
+    {
+      "batch_id": "calibration-batch-03", "methodology_version": "1.0.0", "window_start": "2026-08-01T00:00:00Z", "window_end": "2026-08-30T23:59:59Z", "reviewed_records": 20, "agreements": 13, "predeclared_agreement_threshold": 0.8, "unresolved_disagreements": 2, "stratum_warnings": [{ "stratum_id": "confidence-low", "disagreements": 3, "reviewed": 5, "note": "Editors diverged on converting hedged statements into candidates." }, { "stratum_id": "speaker-unknown", "disagreements": 2, "reviewed": 3, "note": "Overlapping speech produced unstable embedded-premise decisions." }], "reviewed_by": "Fixture methods editor"
+    }
+  ]
+}

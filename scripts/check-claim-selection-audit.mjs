@@ -5,6 +5,8 @@ import samplingFixture from '../data/claim-selection-sampling-frame-fixture.json
 import { claimSelectionSamplingDecision, validateClaimSelectionSamplingFrame } from '../lib/claim-selection-sampling.ts';
 import calibrationFixture from '../data/claim-selection-calibration-fixture.json' with { type: 'json' };
 import { claimSelectionCalibrationDecision, validateClaimSelectionCalibration } from '../lib/claim-selection-calibration.ts';
+import driftFixture from '../data/claim-selection-drift-fixture.json' with { type: 'json' };
+import { claimSelectionDriftDecision, validateClaimSelectionCalibrationBatches } from '../lib/claim-selection-drift.ts';
 
 assert.deepEqual(validateClaimSelectionAudit(fixture.samples), []);
 const summary = selectionAuditSummary(fixture.samples);
@@ -24,4 +26,11 @@ assert.equal(calibrationDecision.denominator_publishable, false);
 assert.equal(calibrationDecision.summary.agreements, 2);
 assert.equal(calibrationDecision.summary.disagreements, 2);
 assert.equal(calibrationDecision.summary.unresolved.length, 1);
+assert.deepEqual(validateClaimSelectionCalibrationBatches(driftFixture.batches), []);
+const driftDecision = claimSelectionDriftDecision(driftFixture.batches);
+assert.equal(driftDecision.methodology_review_required, true);
+assert.equal(driftDecision.denominator_publication_paused, true);
+assert.equal(driftDecision.latest_agreement, 0.65);
+assert.equal(driftDecision.rolling_three_batch_agreement, 0.8);
+assert.ok(Math.abs(driftDecision.change_from_previous - (-0.2)) < Number.EPSILON * 4);
 console.log('Claim-selection audit fixture passed.');
