@@ -8,6 +8,11 @@
       "publication_state": "active",
       "analysis_version_id": "analysis-demo-v4",
       "superseded_version_ids": ["analysis-demo-v1", "analysis-demo-v2", "analysis-demo-v3"],
+      "version_history": [
+        { "analysis_version_id": "analysis-demo-v1", "publication_state": "superseded", "superseded_by_version_id": "analysis-demo-v2" },
+        { "analysis_version_id": "analysis-demo-v2", "publication_state": "superseded", "superseded_by_version_id": "analysis-demo-v3" },
+        { "analysis_version_id": "analysis-demo-v3", "publication_state": "paused", "superseded_by_version_id": "analysis-demo-v4" }
+      ],
       "resumed_from_version_id": "analysis-demo-v3",
       "paused_reason": null,
       "score_0_100": 84,
@@ -26,6 +31,7 @@
       "publication_state": "draft",
       "analysis_version_id": "analysis-incomplete-v1",
       "superseded_version_ids": [],
+      "version_history": [],
       "resumed_from_version_id": null,
       "paused_reason": null,
       "score_0_100": null,
@@ -44,6 +50,9 @@
       "publication_state": "paused",
       "analysis_version_id": "analysis-paused-v2",
       "superseded_version_ids": ["analysis-paused-v1"],
+      "version_history": [
+        { "analysis_version_id": "analysis-paused-v1", "publication_state": "superseded", "superseded_by_version_id": "analysis-paused-v2" }
+      ],
       "resumed_from_version_id": null,
       "paused_reason": "claim_selection_calibration_drift",
       "score_0_100": 91,

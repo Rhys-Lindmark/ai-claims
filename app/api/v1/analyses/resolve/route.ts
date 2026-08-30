@@ -1,20 +1,25 @@
-import { resolveAnalysisEnvelope } from '@/lib/analysis-resolver-api';
+import { analysisEtag, resolveAnalysisEnvelope } from '@/lib/analysis-resolver-api';
 
-const headers = {
+const baseHeaders = {
   'access-control-allow-origin': '*',
-  'cache-control': 'public, max-age=60, stale-while-revalidate=300',
   'content-type': 'application/json; charset=utf-8',
 };
 
 export async function GET(request: Request) {
   const entityKey = new URL(request.url).searchParams.get('entity_key')?.trim() ?? '';
+  const versionId = new URL(request.url).searchParams.get('version_id')?.trim() || null;
+  const headers = { ...baseHeaders, 'cache-control': versionId ? 'public, max-age=31536000, immutable' : 'public, max-age=60, stale-while-revalidate=300' };
   if (!entityKey || entityKey.length > 500) {
     return Response.json({ contract_version: '1.0.0', error: 'A valid entity_key query parameter is required.' }, { status: 400, headers });
   }
 
-  const envelope = resolveAnalysisEnvelope(entityKey);
-  if (!envelope.analysis) return Response.json(envelope, { status: 404, headers });
-  return Response.json(envelope, { status: 200, headers });
+  if (versionId && versionId.length > 200) return Response.json({ contract_version: '1.0.0', error: 'A valid version_id is required.' }, { status: 400, headers });
+  const envelope = resolveAnalysisEnvelope(entityKey, versionId);
+  const etag = analysisEtag(envelope);
+  const responseHeaders = { ...headers, etag };
+  if (request.headers.get('if-none-match') === etag) return new Response(null, { status: 304, headers: responseHeaders });
+  if (!envelope.analysis) return Response.json(envelope, { status: 404, headers: responseHeaders });
+  return Response.json(envelope, { status: 200, headers: responseHeaders });
 }
 
 export async function OPTIONS() {
@@ -23,7 +28,8 @@ export async function OPTIONS() {
     headers: {
       'access-control-allow-origin': '*',
       'access-control-allow-methods': 'GET, OPTIONS',
-      'access-control-allow-headers': 'accept',
+      'access-control-allow-headers': 'accept, if-none-match',
+      'access-control-expose-headers': 'etag',
       'access-control-max-age': '86400',
     },
   });

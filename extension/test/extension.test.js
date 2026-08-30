@@ -84,6 +84,20 @@ test('API resolver uses the versioned envelope and exact entity key', async () =
   assert.equal(state.state, 'published');
 });
 
+test('API resolver opts into browser HTTP-cache revalidation', async () => {
+  let requestOptions;
+  const analysis = registry.analyses[0];
+  const resolver = createApiResolver({
+    endpoint: 'https://api.example.invalid',
+    fetchImpl: async (_url, options) => {
+      requestOptions = options;
+      return { ok: true, status: 200, json: async () => ({ contract_version: '1.0.0', entity_key: analysis.entity_key, analysis }) };
+    },
+  });
+  await resolver.resolve(analysis.entity_key);
+  assert.equal(requestOptions.cache, 'default');
+});
+
 test('API resolver preserves a custom endpoint path', async () => {
   let requestedUrl;
   const resolver = createApiResolver({
