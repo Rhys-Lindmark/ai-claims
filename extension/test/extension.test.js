@@ -5,7 +5,7 @@ import { resolveAnalysis, scoreState } from '../lib/analysis-registry.js';
 import { createApiResolver, createLocalResolver } from '../lib/analysis-resolver.js';
 import { createRequestStore } from '../lib/analysis-requests.js';
 import { computeTruthScore } from '../lib/truth-score.js';
-import { sourceNotice, transcriptAcquisition } from '../lib/source-policy.js';
+import { goodreadsBookResolution, sourceNotice, transcriptAcquisition } from '../lib/source-policy.js';
 import { identifyPage } from '../lib/page-identity.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -169,4 +169,17 @@ test('YouTube acquisition permits only documented authorization or rights-confir
   assert.equal(transcriptAcquisition({ kind: 'youtube', licensedSource: true }).state, 'licensed_source');
   assert.equal(transcriptAcquisition({ kind: 'youtube', transcriptSupplied: true }).state, 'rights_required');
   assert.equal(transcriptAcquisition({ kind: 'youtube', transcriptSupplied: true, rightsConfirmed: true }).state, 'user_supplied');
+});
+
+test('Goodreads URL detection never implies scraped book metadata', () => {
+  const unresolved = goodreadsBookResolution({ kind: 'goodreads' });
+  assert.equal(unresolved.state, 'identity_unresolved');
+  assert.equal(unresolved.resolved, false);
+  assert.match(sourceNotice('goodreads'), /separately sourced/);
+});
+
+test('Goodreads book identity resolves only from explicit permitted mappings', () => {
+  assert.equal(goodreadsBookResolution({ kind: 'goodreads', registryMatch: true }).state, 'registry_match');
+  assert.equal(goodreadsBookResolution({ kind: 'goodreads', suppliedIsbn: true }).state, 'user_supplied_isbn');
+  assert.equal(goodreadsBookResolution({ kind: 'goodreads', publisherMetadata: true }).state, 'publisher_metadata');
 });

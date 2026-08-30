@@ -14,3 +14,11 @@ export function sourceNotice(kind) {
   if (kind === 'goodreads') return 'The Goodreads page identifies the book; analysis uses separately sourced book claims and evidence.';
   return 'Page identity is local; no page text is uploaded by this prototype.';
 }
+
+export function goodreadsBookResolution(input) {
+  if (input.kind !== 'goodreads') return { state: 'not_applicable', resolved: true, reason: 'This page does not require Goodreads book resolution.' };
+  if (input.registryMatch === true) return { state: 'registry_match', resolved: true, reason: 'The page ID maps to a reviewed AI Claims book entity.' };
+  if (input.suppliedIsbn === true) return { state: 'user_supplied_isbn', resolved: true, reason: 'A user supplied an edition identifier for review.' };
+  if (input.publisherMetadata === true) return { state: 'publisher_metadata', resolved: true, reason: 'Permitted publisher or library metadata identifies the edition.' };
+  return { state: 'identity_unresolved', resolved: false, reason: 'AI Claims uses the Goodreads URL only as a page key and does not scrape book metadata.' };
+}

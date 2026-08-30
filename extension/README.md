@@ -23,6 +23,8 @@ On an unknown page, **Request analysis** creates one browser-local request per c
 
 YouTube detection never triggers transcript scraping. Creator-authorized API access, a licensed publisher source, or a rights-confirmed supplied transcript is required under the [transcript acquisition decision](../docs/YOUTUBE_TRANSCRIPT_ACQUISITION.md).
 
+Goodreads detection uses only the numeric page ID. Book identity comes from the reviewed registry, a supplied ISBN, or permitted publisher/library metadata under the [Goodreads source decision](../docs/GOODREADS_SOURCE_POLICY.md); ratings, reviews, and page metadata are not scraped.
+
 ## Architecture
 
 - `lib/page-identity.js` canonicalizes YouTube, Goodreads, and ordinary page URLs.
