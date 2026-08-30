@@ -4,6 +4,7 @@ import registry from '../data/analyses.json' with { type: 'json' };
 import { resolveAnalysis, scoreState } from '../lib/analysis-registry.js';
 import { createApiResolver, createLocalResolver } from '../lib/analysis-resolver.js';
 import { createRequestStore } from '../lib/analysis-requests.js';
+import { computeTruthScore } from '../lib/truth-score.js';
 import { identifyPage } from '../lib/page-identity.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -103,4 +104,54 @@ test('request lifecycle permits review, publication, failure, and explicit retry
   await store.transition(identity.entityKey, 'in_review');
   const published = await store.transition(identity.entityKey, 'published');
   assert.equal(published.state, 'published');
+});
+
+function reviewedClaim(id, summaryVerdict, overrides = {}) {
+  return {
+    canonical_claim_id: id,
+    eligibility_reviewed: true,
+    eligible: true,
+    review_state: 'reviewed',
+    summary_verdict: summaryVerdict,
+    publication_gates_passed: true,
+    provenance_complete: true,
+    consequence: 'high',
+    ...overrides,
+  };
+}
+
+test('truth score is equal-weight truth credit with a disclosed denominator', () => {
+  const result = computeTruthScore([
+    reviewedClaim('c1', 'accurate'),
+    reviewedClaim('c2', 'mostly_accurate'),
+    reviewedClaim('c3', 'mixed'),
+    reviewedClaim('c4', 'inaccurate'),
+  ]);
+  assert.equal(result.state, 'published');
+  assert.equal(result.score, 56);
+  assert.equal(result.earned_credits, 2.25);
+  assert.equal(result.eligible_claims, 4);
+});
+
+test('consequence and confidence cannot silently change score weight', () => {
+  const low = computeTruthScore([reviewedClaim('c1', 'accurate', { consequence: 'low', confidence: 0.55 }), reviewedClaim('c2', 'inaccurate', { consequence: 'low', confidence: 0.55 })]);
+  const high = computeTruthScore([reviewedClaim('c1', 'accurate', { consequence: 'critical', confidence: 0.99 }), reviewedClaim('c2', 'inaccurate', { consequence: 'critical', confidence: 0.99 })]);
+  assert.equal(low.score, 50);
+  assert.equal(high.score, 50);
+});
+
+test('uncheckable claims are excluded only after eligibility review', () => {
+  const result = computeTruthScore([
+    reviewedClaim('c1', 'accurate'),
+    reviewedClaim('opinion', null, { eligible: false, review_state: 'excluded', publication_gates_passed: false, provenance_complete: false, exclusion_reason: 'opinion' }),
+  ]);
+  assert.equal(result.score, 100);
+  assert.equal(result.eligible_claims, 1);
+});
+
+test('partial coverage, unresolved verdicts, and duplicate canonical claims suppress the score', () => {
+  assert.equal(computeTruthScore([reviewedClaim('c1', 'accurate'), reviewedClaim('c2', 'mixed', { review_state: 'pending' })]).state, 'pending');
+  assert.equal(computeTruthScore([reviewedClaim('c1', null)]).state, 'pending');
+  assert.equal(computeTruthScore([reviewedClaim('c1', 'accurate'), reviewedClaim('c1', 'inaccurate')]).state, 'pending');
+  assert.equal(computeTruthScore([reviewedClaim('c1', 'accurate', { eligibility_reviewed: false })]).state, 'pending');
 });
