@@ -1,0 +1,44 @@
+{
+  "fixture_notice": "Synthetic correction events; no real claim, evidence, or score is represented.",
+  "events": [
+    {
+      "event_id": "correction-event-001",
+      "sequence": 1,
+      "occurred_at": "2026-08-28T17:00:00Z",
+      "from_version_id": "analysis-demo-v1",
+      "to_version_id": "analysis-demo-v2",
+      "summary": "Separated one compound quantitative statement into two canonical claims and re-linked its evidence.",
+      "changed_records": [
+        { "kind": "claim", "record_id": "canonical-claim-004", "change": "split" },
+        { "kind": "evidence", "record_id": "evidence-link-009", "change": "relinked" }
+      ],
+      "public_score_state": "superseded"
+    },
+    {
+      "event_id": "correction-event-002",
+      "sequence": 2,
+      "occurred_at": "2026-08-29T18:30:00Z",
+      "from_version_id": "analysis-demo-v2",
+      "to_version_id": "analysis-demo-v3",
+      "summary": "Recorded calibration drift and paused score publication without deleting the prior record.",
+      "changed_records": [
+        { "kind": "method", "record_id": "calibration-batch-003", "change": "threshold_failed" },
+        { "kind": "publication_gate", "record_id": "publication-readiness-003", "change": "paused" }
+      ],
+      "public_score_state": "paused"
+    },
+    {
+      "event_id": "correction-event-003",
+      "sequence": 3,
+      "occurred_at": "2026-08-30T19:00:00Z",
+      "from_version_id": "analysis-demo-v3",
+      "to_version_id": "analysis-demo-v4",
+      "summary": "Linked verified remediation evidence and resumed publication in a new child version.",
+      "changed_records": [
+        { "kind": "method", "record_id": "remediation-quantitative", "change": "verified" },
+        { "kind": "publication_gate", "record_id": "publication-resumption-001", "change": "resumed" }
+      ],
+      "public_score_state": "active"
+    }
+  ]
+}
