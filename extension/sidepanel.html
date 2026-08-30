@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Claims</title>
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <header>
+      <span class="eyebrow">AI / RL · OPEN SOURCE</span>
+      <h1>CLAIMS</h1>
+      <p>How true is the page beside you?</p>
+    </header>
+    <main>
+      <section class="page-card" aria-labelledby="page-title">
+        <span class="kind" id="page-kind">Checking page</span>
+        <h2 id="page-title">Reading the active tab…</h2>
+        <p class="url" id="page-url"></p>
+      </section>
+
+      <section class="result" id="result" aria-live="polite"></section>
+
+      <button class="permission" id="permission" hidden>Always check this site</button>
+      <p class="privacy">Nothing from the page is uploaded by this prototype. Page identity is resolved locally.</p>
+    </main>
+    <footer>
+      <a href="https://ai.rhyslindmark.com/claims" target="_blank" rel="noreferrer">Method + source trail ↗</a>
+      <span>ROUGH DRAFT 0.1</span>
+    </footer>
+    <script type="module" src="sidepanel.js"></script>
+  </body>
+</html>

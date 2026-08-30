@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "fixture_notice": "Synthetic records for extension development; not claims about real media.",
+  "analyses": [
+    {
+      "entity_key": "web:example.invalid/reviewed-fixture",
+      "status": "published",
+      "score_0_100": 84,
+      "eligible_claims": 25,
+      "reviewed_claims": 25,
+      "unresolved_claims": 0,
+      "publication_gates_passed": true,
+      "provenance_complete": true,
+      "methodology_version": "0.4.0-fixture",
+      "last_reviewed_at": "2026-08-30",
+      "analysis_url": "https://ai.rhyslindmark.com/claims"
+    },
+    {
+      "entity_key": "web:example.invalid/incomplete-fixture",
+      "status": "editor_review",
+      "score_0_100": null,
+      "eligible_claims": 25,
+      "reviewed_claims": 18,
+      "unresolved_claims": 2,
+      "publication_gates_passed": false,
+      "provenance_complete": false,
+      "methodology_version": "0.4.0-fixture",
+      "last_reviewed_at": null,
+      "analysis_url": null
+    }
+  ]
+}
