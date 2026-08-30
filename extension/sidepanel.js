@@ -1,6 +1,7 @@
 import { identifyPage } from './lib/page-identity.js';
 import { createConfiguredResolver } from './lib/analysis-resolver.js';
 import { createRequestStore } from './lib/analysis-requests.js';
+import { sourceNotice } from './lib/source-policy.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
@@ -30,7 +31,7 @@ function renderResult(state, identity, requestRecord = null) {
   }
 
   const heading = requestRecord ? `ANALYSIS ${requestRecord.state.replaceAll('_', ' ').toUpperCase()}` : state.state === 'not_analyzed' ? 'NOT ANALYZED YET' : 'SCORE PENDING';
-  const explanation = requestRecord ? `Request ${requestRecord.request_id} is stored for this canonical page. Duplicate visits reuse it.` : `${state.reason} AI Claims never invents a score from partial review.`;
+  const explanation = requestRecord ? `Request ${requestRecord.request_id} is stored for this canonical page. Duplicate visits reuse it. ${sourceNotice(identity.kind)}` : `${state.reason} AI Claims never invents a score from partial review. ${sourceNotice(identity.kind)}`;
   result.className = 'result pending';
   result.innerHTML = `
     <h3>${heading}</h3>

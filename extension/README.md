@@ -21,6 +21,8 @@ The open scoring contract is documented in [`docs/TRUTH_SCORE_METHOD.md`](../doc
 
 On an unknown page, **Request analysis** creates one browser-local request per canonical entity. Repeated visits reuse that record across the `queued → in_review → published` lifecycle, with `failed → queued` as the only retry path. This is the offline contract for the eventual server queue; no request leaves the browser yet.
 
+YouTube detection never triggers transcript scraping. Creator-authorized API access, a licensed publisher source, or a rights-confirmed supplied transcript is required under the [transcript acquisition decision](../docs/YOUTUBE_TRANSCRIPT_ACQUISITION.md).
+
 ## Architecture
 
 - `lib/page-identity.js` canonicalizes YouTube, Goodreads, and ordinary page URLs.
@@ -28,6 +30,7 @@ On an unknown page, **Request analysis** creates one browser-local request per c
 - `lib/analysis-resolver.js` provides interchangeable local and read-only API adapters under contract `1.0.0`.
 - `lib/analysis-requests.js` provides idempotent request records and guarded lifecycle transitions.
 - `lib/truth-score.js` computes the gated, versioned 0–100 score.
+- `lib/source-policy.js` blocks undocumented YouTube transcript acquisition paths.
 - `sidepanel.*` renders the page identity, score state, coverage, and evidence link.
 - `service-worker.js` makes the toolbar action open the Chrome side panel.
 

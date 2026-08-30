@@ -5,6 +5,7 @@ import { resolveAnalysis, scoreState } from '../lib/analysis-registry.js';
 import { createApiResolver, createLocalResolver } from '../lib/analysis-resolver.js';
 import { createRequestStore } from '../lib/analysis-requests.js';
 import { computeTruthScore } from '../lib/truth-score.js';
+import { sourceNotice, transcriptAcquisition } from '../lib/source-policy.js';
 import { identifyPage } from '../lib/page-identity.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -154,4 +155,18 @@ test('partial coverage, unresolved verdicts, and duplicate canonical claims supp
   assert.equal(computeTruthScore([reviewedClaim('c1', null)]).state, 'pending');
   assert.equal(computeTruthScore([reviewedClaim('c1', 'accurate'), reviewedClaim('c1', 'inaccurate')]).state, 'pending');
   assert.equal(computeTruthScore([reviewedClaim('c1', 'accurate', { eligibility_reviewed: false })]).state, 'pending');
+});
+
+test('YouTube acquisition blocks scraping-shaped defaults', () => {
+  const decision = transcriptAcquisition({ kind: 'youtube' });
+  assert.equal(decision.state, 'permission_required');
+  assert.equal(decision.permitted, false);
+  assert.match(sourceNotice('youtube'), /does not scrape YouTube/);
+});
+
+test('YouTube acquisition permits only documented authorization or rights-confirmed supply', () => {
+  assert.equal(transcriptAcquisition({ kind: 'youtube', creatorAuthorized: true }).state, 'creator_authorized');
+  assert.equal(transcriptAcquisition({ kind: 'youtube', licensedSource: true }).state, 'licensed_source');
+  assert.equal(transcriptAcquisition({ kind: 'youtube', transcriptSupplied: true }).state, 'rights_required');
+  assert.equal(transcriptAcquisition({ kind: 'youtube', transcriptSupplied: true, rightsConfirmed: true }).state, 'user_supplied');
 });
