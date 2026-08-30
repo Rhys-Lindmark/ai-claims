@@ -1,0 +1,12 @@
+{
+  "fixture_notice": "Synthetic source-status records; no real source, retraction, or finding is represented.",
+  "sources": [
+    { "source_id": "source-demo-07", "title": "Synthetic annual participation report", "current_state": "retracted", "events": [
+      { "event_id": "source-event-01", "state": "active", "detected_at": "2026-08-28T12:00:00Z", "reviewed_by": "Fixture editor", "reason": "Source entered the evidence ledger in active standing.", "replacement_source_id": null },
+      { "event_id": "source-event-02", "state": "retracted", "detected_at": "2026-08-30T19:40:00Z", "reviewed_by": "Fixture editor", "reason": "The synthetic publisher withdrew the table after finding a duplicated reporting cohort.", "replacement_source_id": "source-demo-11" }
+    ], "dependent_finding_ids": ["finding-01", "finding-04"], "published_analysis_version_ids": ["analysis-demo-v2", "analysis-demo-v3"] },
+    { "source_id": "source-demo-08", "title": "Synthetic policy implementation memo", "current_state": "active", "events": [
+      { "event_id": "source-event-03", "state": "active", "detected_at": "2026-08-29T10:00:00Z", "reviewed_by": "Fixture editor", "reason": "Source is available and no correction notice is recorded.", "replacement_source_id": null }
+    ], "dependent_finding_ids": ["finding-02"], "published_analysis_version_ids": ["analysis-demo-v3"] }
+  ]
+}
