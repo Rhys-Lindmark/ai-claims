@@ -1,0 +1,23 @@
+{
+  "fixture_notice": "Synthetic right-of-reply workflow; no real speaker, publisher, episode, or dispute is represented.",
+  "request": {
+    "request_id": "request-demo-01",
+    "analysis_id": "analysis-demo",
+    "target_record_ids": ["canonical-01", "segment-14"],
+    "requester_role": "speaker",
+    "identity_state": "verified",
+    "request_kinds": ["transcript_context", "finding", "right_of_reply"],
+    "requested_context": "The synthetic speaker asks the editor to restore a qualifying sentence and reconsider the framing finding.",
+    "attachments": [
+      { "attachment_id": "attachment-01", "title": "Publisher transcript excerpt", "url": "https://example.com/synthetic-transcript", "supplied_by_requester": true, "review_state": "reviewed" }
+    ],
+    "received_at": "2026-08-29T09:00:00Z",
+    "response_due_at": "2026-09-05T09:00:00Z",
+    "triage_state": "partially_accepted",
+    "public_reply": "The synthetic speaker says the omitted qualifier changes how listeners should interpret the claim.",
+    "editorial_response": "The transcript context was expanded. The finding remains mixed because the additional sentence does not resolve the counting-rule ambiguity.",
+    "resulting_version_id": "analysis-demo-v3",
+    "independence_notice": "Requesters may supply context, evidence, and a public reply; editors independently decide transcript, grouping, evidence, and finding changes."
+  }
+}
+
