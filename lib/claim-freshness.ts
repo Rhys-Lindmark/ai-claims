@@ -1,0 +1,3 @@
+export type FreshnessSensitivity = 'static' | 'slow_changing' | 'fast_changing' | 'event_driven';
+export interface ClaimFreshness { freshness_id: string; finding_id: string; sensitivity: FreshnessSensitivity; last_reviewed_at: string; review_due_at: string | null; expiry_triggers: string[]; review_owner: string; stale_action: string; }
+export function freshnessState(record: ClaimFreshness, asOf: string, observedTriggers: string[]) { const fired = record.expiry_triggers.filter((trigger) => observedTriggers.includes(trigger)); const overdue = record.review_due_at ? new Date(record.review_due_at) <= new Date(asOf) : false; return { state: fired.length || overdue ? 'stale' as const : 'current' as const, overdue, fired_triggers: fired }; }

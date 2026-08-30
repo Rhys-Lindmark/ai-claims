@@ -1,0 +1,8 @@
+{
+  "fixture_notice": "Synthetic claim-freshness records; no real finding or expiry event is represented.", "as_of": "2026-08-30T20:00:00Z", "observed_triggers": ["source_retracted:source-demo-07"],
+  "records": [
+    { "freshness_id": "fresh-01", "finding_id": "finding-01", "sensitivity": "event_driven", "last_reviewed_at": "2026-08-29T18:00:00Z", "review_due_at": "2026-09-29T18:00:00Z", "expiry_triggers": ["source_retracted:source-demo-07", "publisher_correction"], "review_owner": "Fixture evidence editor", "stale_action": "Hide the prior finding from current summaries and complete source re-review." },
+    { "freshness_id": "fresh-02", "finding_id": "finding-02", "sensitivity": "fast_changing", "last_reviewed_at": "2026-07-30T12:00:00Z", "review_due_at": "2026-08-29T12:00:00Z", "expiry_triggers": ["new_official_release"], "review_owner": "Fixture data editor", "stale_action": "Mark stale and rerun the official-data search before republication." },
+    { "freshness_id": "fresh-03", "finding_id": "finding-03", "sensitivity": "static", "last_reviewed_at": "2026-08-30T10:00:00Z", "review_due_at": null, "expiry_triggers": ["transcript_correction"], "review_owner": "Fixture transcript editor", "stale_action": "Reopen attribution and claim extraction if the transcript changes." }
+  ]
+}
