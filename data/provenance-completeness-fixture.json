@@ -1,0 +1,8 @@
+{
+  "fixture_notice": "Synthetic evidence provenance records; no real source or finding is represented.", "finding_id": "finding-01",
+  "records": [
+    { "source_id": "source-demo-08", "title": "Synthetic implementation memo", "retrieved_at": "2026-08-29T10:00:00Z", "content_digest": "sha256:1a5d92c41e7b0f88", "rights_note": "Fixture metadata only; no source text reproduced.", "reviewed_by": "Fixture editor", "dependent_finding_ids": ["finding-01"] },
+    { "source_id": "source-demo-11", "title": "Synthetic corrected cohort note", "retrieved_at": "2026-08-30T19:40:00Z", "content_digest": "sha256:9e22ac10f16bd700", "rights_note": null, "reviewed_by": null, "dependent_finding_ids": ["finding-01"] },
+    { "source_id": "source-demo-14", "title": "Synthetic independent replication", "retrieved_at": "2026-08-30T19:50:00Z", "content_digest": "sha256:2c0a85d914e3fb76", "rights_note": "Fixture metadata only; no source text reproduced.", "reviewed_by": "Fixture editor", "dependent_finding_ids": ["finding-02"] }
+  ]
+}
