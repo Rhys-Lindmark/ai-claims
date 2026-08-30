@@ -1,0 +1,12 @@
+{
+  "fixture_notice": "Synthetic evidence dependency graph; no real source, claim, or finding is represented.", "graph_id": "dependency-demo-01", "changed_node_id": "source-07",
+  "nodes": [
+    { "node_id": "source-07", "kind": "source", "label": "Retracted cohort table", "state": "warning" }, { "node_id": "source-08", "kind": "source", "label": "Implementation memo", "state": "current" },
+    { "node_id": "canonical-01", "kind": "canonical_claim", "label": "Enrollment reached 20,000", "state": "warning" }, { "node_id": "canonical-02", "kind": "canonical_claim", "label": "The rule caused the increase", "state": "warning" },
+    { "node_id": "finding-01", "kind": "finding", "label": "Count accuracy finding", "state": "warning" }, { "node_id": "finding-02", "kind": "finding", "label": "Causal-support finding", "state": "warning" }
+  ],
+  "edges": [
+    { "edge_id": "edge-01", "from_node_id": "source-07", "to_node_id": "canonical-01", "relationship": "supports" }, { "edge_id": "edge-02", "from_node_id": "source-07", "to_node_id": "canonical-02", "relationship": "limits" },
+    { "edge_id": "edge-03", "from_node_id": "source-08", "to_node_id": "canonical-02", "relationship": "supports" }, { "edge_id": "edge-04", "from_node_id": "canonical-01", "to_node_id": "finding-01", "relationship": "depends_on" }, { "edge_id": "edge-05", "from_node_id": "canonical-02", "to_node_id": "finding-02", "relationship": "depends_on" }
+  ]
+}

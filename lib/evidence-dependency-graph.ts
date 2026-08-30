@@ -1,0 +1,4 @@
+export interface DependencyNode { node_id: string; kind: 'source' | 'canonical_claim' | 'finding'; label: string; state: 'current' | 'warning'; }
+export interface DependencyEdge { edge_id: string; from_node_id: string; to_node_id: string; relationship: 'supports' | 'contradicts' | 'limits' | 'depends_on'; }
+export interface EvidenceDependencyGraph { graph_id: string; nodes: DependencyNode[]; edges: DependencyEdge[]; }
+export function impactedFindings(graph: EvidenceDependencyGraph, changedNodeId: string): string[] { const next = [changedNodeId], seen = new Set(next); while (next.length) { const current = next.shift()!; for (const edge of graph.edges.filter((item) => item.from_node_id === current)) if (!seen.has(edge.to_node_id)) { seen.add(edge.to_node_id); next.push(edge.to_node_id); } } return graph.nodes.filter((node) => node.kind === 'finding' && seen.has(node.node_id)).map((node) => node.node_id).sort(); }

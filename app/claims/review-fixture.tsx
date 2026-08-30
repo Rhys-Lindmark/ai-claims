@@ -27,6 +27,7 @@ import { ClaimFreshnessDemo } from './claim-freshness-demo';
 import { CitationSnapshotsDemo } from './citation-snapshots-demo';
 import { SourceDiversityDemo } from './source-diversity-demo';
 import { CounterevidenceDemo } from './counterevidence-demo';
+import { EvidenceDependencyDemo } from './evidence-dependency-demo';
 
 const labels: Record<ClaimType, string> = { factual: 'Factual', causal: 'Causal', quantitative: 'Quantitative', prediction: 'Prediction', opinion_value: 'Opinion / value', rhetorical_hypothetical: 'Rhetorical / hypothetical', anecdote_personal: 'Anecdote / personal' };
 const tones: Record<ClaimType, string> = { factual: 'bg-acid', causal: 'bg-coral', quantitative: 'bg-cobalt text-white', prediction: 'bg-[#ffd76a]', opinion_value: 'bg-ink/10', rhetorical_hypothetical: 'bg-[#ded8ca]', anecdote_personal: 'bg-white' };
@@ -46,5 +47,6 @@ export function ClaimReviewFixture() {
 <LimitationsRegisterDemo />
 <ClaimFreshnessDemo />
 <CitationSnapshotsDemo />
-<SourceDiversityDemo /><CounterevidenceDemo /></main>;
+<SourceDiversityDemo />
+<CounterevidenceDemo /><EvidenceDependencyDemo /></main>;
 }
