@@ -1,0 +1,2 @@
+export interface CitationSnapshot { snapshot_id: string; source_id: string; source_url: string; title: string; retrieved_at: string; content_digest: string; archive_url: string | null; link_status: 'live' | 'redirected' | 'unavailable'; checked_at: string; rights_note: string; dependent_finding_ids: string[]; }
+export function linkRotCount(records: CitationSnapshot[]) { return records.filter((record) => record.link_status !== 'live').length; }

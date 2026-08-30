@@ -1,0 +1,7 @@
+{
+  "fixture_notice": "Synthetic citation snapshots; no real source, archive, or finding is represented.",
+  "snapshots": [
+    { "snapshot_id": "snapshot-01", "source_id": "source-demo-08", "source_url": "https://example.com/synthetic-policy-memo", "title": "Synthetic policy implementation memo", "retrieved_at": "2026-08-29T10:00:00Z", "content_digest": "sha256:1a5d92c41e7b0f88", "archive_url": "https://example.com/archive/snapshot-01", "link_status": "live", "checked_at": "2026-08-30T20:00:00Z", "rights_note": "Fixture metadata only; no source content is reproduced.", "dependent_finding_ids": ["finding-01", "finding-02"] },
+    { "snapshot_id": "snapshot-02", "source_id": "source-demo-12", "source_url": "https://example.com/synthetic-annual-table", "title": "Synthetic annual participation table", "retrieved_at": "2026-08-28T12:00:00Z", "content_digest": "sha256:5f2b14e805c9a771", "archive_url": "https://example.com/archive/snapshot-02", "link_status": "unavailable", "checked_at": "2026-08-30T20:00:00Z", "rights_note": "Fixture metadata only; archived access remains subject to source permissions.", "dependent_finding_ids": ["finding-04"] }
+  ]
+}

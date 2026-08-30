@@ -24,6 +24,7 @@ import { ReviewAdjudicationDemo } from './review-adjudication-demo';
 import { EvidenceSearchDemo } from './evidence-search-demo';
 import { LimitationsRegisterDemo } from './limitations-register-demo';
 import { ClaimFreshnessDemo } from './claim-freshness-demo';
+import { CitationSnapshotsDemo } from './citation-snapshots-demo';
 
 const labels: Record<ClaimType, string> = { factual: 'Factual', causal: 'Causal', quantitative: 'Quantitative', prediction: 'Prediction', opinion_value: 'Opinion / value', rhetorical_hypothetical: 'Rhetorical / hypothetical', anecdote_personal: 'Anecdote / personal' };
 const tones: Record<ClaimType, string> = { factual: 'bg-acid', causal: 'bg-coral', quantitative: 'bg-cobalt text-white', prediction: 'bg-[#ffd76a]', opinion_value: 'bg-ink/10', rhetorical_hypothetical: 'bg-[#ded8ca]', anecdote_personal: 'bg-white' };
@@ -40,5 +41,6 @@ export function ClaimReviewFixture() {
 <ReviewerDisclosuresDemo />
 <ReviewAdjudicationDemo />
 <EvidenceSearchDemo />
-<LimitationsRegisterDemo /><ClaimFreshnessDemo /></main>;
+<LimitationsRegisterDemo />
+<ClaimFreshnessDemo /><CitationSnapshotsDemo /></main>;
 }
