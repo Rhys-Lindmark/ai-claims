@@ -17,11 +17,14 @@ A 0–100 score appears only when an analysis is `published`, every eligible cla
 
 `data/analyses.json` contains synthetic development fixtures only. `data/resolver-config.json` selects the local adapter today; changing it to `api` switches to the versioned read-only `GET /v1/analyses/resolve?entity_key=…` contract without changing the panel or score gate.
 
+On an unknown page, **Request analysis** creates one browser-local request per canonical entity. Repeated visits reuse that record across the `queued → in_review → published` lifecycle, with `failed → queued` as the only retry path. This is the offline contract for the eventual server queue; no request leaves the browser yet.
+
 ## Architecture
 
 - `lib/page-identity.js` canonicalizes YouTube, Goodreads, and ordinary page URLs.
 - `lib/analysis-registry.js` applies the score publication gate.
 - `lib/analysis-resolver.js` provides interchangeable local and read-only API adapters under contract `1.0.0`.
+- `lib/analysis-requests.js` provides idempotent request records and guarded lifecycle transitions.
 - `sidepanel.*` renders the page identity, score state, coverage, and evidence link.
 - `service-worker.js` makes the toolbar action open the Chrome side panel.
 

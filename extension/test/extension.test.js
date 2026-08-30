@@ -3,6 +3,7 @@ import test from 'node:test';
 import registry from '../data/analyses.json' with { type: 'json' };
 import { resolveAnalysis, scoreState } from '../lib/analysis-registry.js';
 import { createApiResolver, createLocalResolver } from '../lib/analysis-resolver.js';
+import { createRequestStore } from '../lib/analysis-requests.js';
 import { identifyPage } from '../lib/page-identity.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -71,4 +72,35 @@ test('API resolver maps 404 to not analyzed and rejects incompatible contracts',
 
   const incompatible = createApiResolver({ endpoint: 'https://api.example.invalid', fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '2.0.0', entity_key: 'web:x', analysis: null }) }) });
   await assert.rejects(incompatible.resolve('web:x'), /Unsupported resolver contract/);
+});
+
+function memoryStorage() {
+  const values = {};
+  return {
+    get: async (key) => ({ [key]: values[key] }),
+    set: async (updates) => Object.assign(values, updates),
+  };
+}
+
+test('analysis requests are idempotent by canonical entity', async () => {
+  const store = createRequestStore({ storageArea: memoryStorage(), now: () => '2026-08-30T00:00:00.000Z', createId: () => 'request-1' });
+  const identity = identifyPage('https://youtu.be/abc123xyz00?t=42');
+  const first = await store.submit(identity);
+  const duplicate = await store.submit(identifyPage('https://www.youtube.com/watch?v=abc123xyz00'));
+  assert.equal(first.created, true);
+  assert.equal(duplicate.created, false);
+  assert.equal(duplicate.record.request_id, 'request-1');
+});
+
+test('request lifecycle permits review, publication, failure, and explicit retry only', async () => {
+  const store = createRequestStore({ storageArea: memoryStorage(), now: () => '2026-08-30T00:00:00.000Z', createId: () => 'request-2' });
+  const identity = identifyPage('https://example.com/article');
+  await store.submit(identity);
+  await assert.rejects(store.transition(identity.entityKey, 'published'), /Cannot transition/);
+  await store.transition(identity.entityKey, 'failed');
+  const retried = await store.transition(identity.entityKey, 'queued');
+  assert.equal(retried.attempt, 2);
+  await store.transition(identity.entityKey, 'in_review');
+  const published = await store.transition(identity.entityKey, 'published');
+  assert.equal(published.state, 'published');
 });

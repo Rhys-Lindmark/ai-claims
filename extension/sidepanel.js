@@ -1,5 +1,6 @@
 import { identifyPage } from './lib/page-identity.js';
 import { createConfiguredResolver } from './lib/analysis-resolver.js';
+import { createRequestStore } from './lib/analysis-requests.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
@@ -7,6 +8,8 @@ const pageUrl = document.querySelector('#page-url');
 const result = document.querySelector('#result');
 const permissionButton = document.querySelector('#permission');
 let currentTab;
+let currentIdentity;
+const requestStore = createRequestStore({ storageArea: chrome.storage.local });
 
 async function loadResolver() {
   const response = await fetch(chrome.runtime.getURL('data/resolver-config.json'));
@@ -15,7 +18,7 @@ async function loadResolver() {
   return createConfiguredResolver(config);
 }
 
-function renderResult(state, identity) {
+function renderResult(state, identity, requestRecord = null) {
   if (state.state === 'published') {
     result.className = 'result';
     result.innerHTML = `
@@ -26,20 +29,20 @@ function renderResult(state, identity) {
     return;
   }
 
-  const heading = state.state === 'not_analyzed' ? 'NOT ANALYZED YET' : 'SCORE PENDING';
-  const requestUrl = new URL('https://ai.rhyslindmark.com/claims');
-  if (identity.canonicalUrl) requestUrl.searchParams.set('url', identity.canonicalUrl);
+  const heading = requestRecord ? `ANALYSIS ${requestRecord.state.replaceAll('_', ' ').toUpperCase()}` : state.state === 'not_analyzed' ? 'NOT ANALYZED YET' : 'SCORE PENDING';
+  const explanation = requestRecord ? `Request ${requestRecord.request_id} is stored for this canonical page. Duplicate visits reuse it.` : `${state.reason} AI Claims never invents a score from partial review.`;
   result.className = 'result pending';
   result.innerHTML = `
     <h3>${heading}</h3>
-    <p>${state.reason} AI Claims never invents a score from partial review.</p>
-    <a class="request" href="${requestUrl}" target="_blank" rel="noreferrer">Request analysis ↗</a>`;
+    <p>${explanation}</p>
+    ${requestRecord ? '' : '<button class="request" id="request-analysis">Request analysis</button>'}`;
 }
 
 async function refresh() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   currentTab = tab;
   const identity = identifyPage(tab?.url ?? '', tab?.title ?? 'Current page');
+  currentIdentity = identity;
   kind.textContent = identity.kind === 'unsupported' ? 'Permission needed' : identity.kind;
   title.textContent = identity.title || 'Untitled page';
   pageUrl.textContent = identity.canonicalUrl ?? 'Click the extension icon on this page to grant temporary access.';
@@ -51,7 +54,9 @@ async function refresh() {
   }
 
   const resolver = await loadResolver();
-  renderResult(await resolver.resolve(identity.entityKey), identity);
+  const score = await resolver.resolve(identity.entityKey);
+  const requestRecord = score.state === 'not_analyzed' ? await requestStore.get(identity.entityKey) : null;
+  renderResult(score, identity, requestRecord);
   const origin = new URL(identity.canonicalUrl).origin;
   const hasAccess = await chrome.permissions.contains({ origins: [`${origin}/*`] });
   permissionButton.hidden = hasAccess;
@@ -62,6 +67,13 @@ permissionButton.addEventListener('click', async () => {
   const origin = new URL(currentTab.url).origin;
   const granted = await chrome.permissions.request({ origins: [`${origin}/*`] });
   if (granted) permissionButton.hidden = true;
+});
+
+result.addEventListener('click', async (event) => {
+  if (!(event.target instanceof HTMLElement) || event.target.id !== 'request-analysis' || !currentIdentity?.entityKey) return;
+  event.target.setAttribute('disabled', 'true');
+  const { record } = await requestStore.submit(currentIdentity);
+  renderResult({ state: 'not_analyzed', reason: 'No shared analysis exists for this page yet.' }, currentIdentity, record);
 });
 
 chrome.tabs.onActivated.addListener(refresh);
