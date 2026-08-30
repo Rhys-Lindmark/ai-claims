@@ -23,14 +23,16 @@ export function TranscriptIntakeForm() {
   const parsed = useMemo(() => parseYouTubeUrl(url), [url]);
   const decision = resolveTranscriptIntake(route);
 
-  function stageRecord() {
+  async function stageRecord() {
     setRecord(null);
     if (!parsed.ok) return setError(parsed.error);
     if (route !== 'user_supplied') return setError('This prototype stages user-supplied text only. Creator OAuth and licensed-source adapters are not connected yet.');
     const result = createUserTranscriptFixture({ canonicalVideoUrl: parsed.canonicalUrl, transcript, language, captionType, rightsConfirmed, suppliedAt: new Date().toISOString() });
     if (!result.ok) return setError(result.error);
     setError('');
-    setRecord(result.record);
+    const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(transcript.trim()));
+    const checksum = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, '0')).join('');
+    setRecord({ ...result.record, content_checksum: `sha256:${checksum}` });
   }
 
   return (
@@ -50,7 +52,7 @@ export function TranscriptIntakeForm() {
             <div className="flex items-center justify-between"><FileKey2 className="h-5 w-5 text-cobalt" /><span className="font-mono text-[8px] font-bold uppercase">Provenance preview</span></div>
             <h2 className="mt-5 text-3xl font-black leading-none">{record ? 'READY FOR REVIEW' : decision.title.toUpperCase()}</h2>
             {record ? <><div className="mt-5 flex items-center gap-2 font-mono text-[9px] font-bold uppercase text-cobalt"><CheckCircle2 className="h-4 w-4" /> Rights confirmed</div><dl className="mt-4 space-y-3 break-words font-mono text-[9px]"><div><dt className="font-bold uppercase text-ink/45">Video</dt><dd>{record.canonical_video_url}</dd></div><div><dt className="font-bold uppercase text-ink/45">Text</dt><dd>{record.word_count} words · {record.character_count} characters</dd></div><div><dt className="font-bold uppercase text-ink/45">Digest</dt><dd>{record.content_checksum}</dd></div><div><dt className="font-bold uppercase text-ink/45">Retention</dt><dd>{record.persistence.replaceAll('_', ' ')}</dd></div><div><dt className="font-bold uppercase text-ink/45">State</dt><dd>{record.review_state.replaceAll('_', ' ')}</dd></div></dl></> : <p className="mt-4 text-sm leading-relaxed text-ink/55">{decision.detail}</p>}
-            <p className="mt-6 border-t-2 border-ink pt-4 text-[10px] leading-relaxed text-ink/45">Staging this record does not publish, persist, upload, analyze, or score the transcript.</p>
+            <p className="mt-6 border-t-2 border-ink pt-4 text-[10px] leading-relaxed text-ink/45">Staging this record computes a local SHA-256 digest. It does not publish, persist, upload, analyze, or score the transcript.</p>
           </div>
         </aside>
       </section>
