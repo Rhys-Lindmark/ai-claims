@@ -7,7 +7,7 @@
   "owner": "Rhys Lindmark",
   "public_url": "https://ai.rhyslindmark.com/claims",
   "repository_url": "https://github.com/Rhys-Lindmark/ai-claims",
-  "artifact_url": "https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.6",
+  "artifact_url": "https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.7",
   "north_star_metric": {
     "name": "weekly_pages_checked",
     "current": null,
@@ -18,7 +18,7 @@
     {
       "kind": "shipped_prototype",
       "date": "2026-08-30",
-      "url": "https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.6",
+      "url": "https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.7",
       "note": "Installable Manifest V3 side-panel prototype; registry fixtures remain synthetic."
     }
   ],

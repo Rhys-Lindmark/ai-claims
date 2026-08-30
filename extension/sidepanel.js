@@ -63,8 +63,13 @@ async function refresh() {
     return;
   }
 
-  const resolver = await loadResolver();
-  const score = await resolver.resolve(identity.entityKey);
+  let score;
+  try {
+    const resolver = await loadResolver();
+    score = await resolver.resolve(identity.entityKey);
+  } catch {
+    score = { state: 'pending', reason: 'The shared analysis service is temporarily unavailable.' };
+  }
   if (!checkedThisSession.has(identity.entityKey)) {
     checkedThisSession.add(identity.entityKey);
     await metricsStore.record('page_checked', { kind: identity.kind });

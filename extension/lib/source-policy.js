@@ -12,7 +12,7 @@ export function transcriptAcquisition(input) {
 export function sourceNotice(kind) {
   if (kind === 'youtube') return 'Transcript acquisition is permission-gated; this prototype does not scrape YouTube.';
   if (kind === 'goodreads') return 'The Goodreads page identifies the book; analysis uses separately sourced book claims and evidence.';
-  return 'Page identity is local; no page text is uploaded by this prototype.';
+  return 'Only the canonical page key is checked against AI Claims; page text is not uploaded.';
 }
 
 export function goodreadsBookResolution(input) {

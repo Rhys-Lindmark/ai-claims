@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import registry from '../data/analyses.json' with { type: 'json' };
+import resolverConfig from '../data/resolver-config.json' with { type: 'json' };
+import manifest from '../manifest.json' with { type: 'json' };
 import { resolveAnalysis, scoreState } from '../lib/analysis-registry.js';
 import { createApiResolver, createLocalResolver } from '../lib/analysis-resolver.js';
 import { createRequestStore } from '../lib/analysis-requests.js';
@@ -81,6 +83,12 @@ test('API resolver preserves a custom endpoint path', async () => {
   });
   await resolver.resolve('goodreads:123');
   assert.equal(requestedUrl.pathname, '/claims/api/v1/analyses/resolve');
+});
+
+test('packaged extension uses the public resolver with a narrow host permission', () => {
+  assert.equal(resolverConfig.mode, 'api');
+  assert.equal(resolverConfig.endpoint, 'https://ai.rhyslindmark.com/claims/api/');
+  assert.deepEqual(manifest.host_permissions, ['https://ai.rhyslindmark.com/*']);
 });
 
 test('API resolver maps 404 to not analyzed and rejects incompatible contracts', async () => {
