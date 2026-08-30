@@ -1,0 +1,25 @@
+{
+  "fixture_notice": "Synthetic claim-to-transcript trace; no real episode, speaker, or claim is represented.",
+  "trace_id": "trace-01",
+  "candidate_claim_id": "candidate-01",
+  "atomic_claim": "The sample program enrolled 20,000 people last year.",
+  "segment_id": "segment-14",
+  "timestamp": "31:04",
+  "context_before": "Guest B asks whether the increase was sustained. Host A replies:",
+  "exact_utterance": "As I said, enrollment was twenty thousand last year.",
+  "context_after": "Host A adds that the reporting rules changed midyear, then the conversation turns to implementation.",
+  "speaker_attribution": {
+    "speaker_ids": ["host-a"],
+    "display_names": ["Host A"],
+    "mode": "single_speaker",
+    "confidence": "high",
+    "review_state": "editor_reviewed"
+  },
+  "canonical_membership": {
+    "canonical_claim_id": "canonical-01",
+    "occurrence_id": "occurrence-02",
+    "relationship": "paraphrase",
+    "grouping_state": "editor_reviewed",
+    "group_occurrence_count": 3
+  }
+}
