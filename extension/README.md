@@ -2,7 +2,7 @@
 
 This Manifest V3 prototype opens AI Claims beside the current page. It recognizes YouTube videos, Goodreads books, and canonical web URLs, checks that canonical identity against the public read-only analysis resolver, and links published entries to their full evidence trail.
 
-The panel's **Show scores as I browse this site** control grants an optional permission and saves an explicit local opt-in for that origin. Both must remain present. On later pages from the opted-in site, the toolbar badge shows a number only for a complete published review, `?` for an unknown page, and nothing when review state is incomplete or the resolver is unavailable.
+The panel's **Show scores as I browse this site** control grants an optional permission and saves an explicit local opt-in for that origin. Both must remain present. The same control becomes **Stop checking this site**, which removes the local opt-in and optional permission. On opted-in sites, the toolbar badge shows a number only for a complete published review, `?` for an unknown page, and nothing when review state is incomplete or the resolver is unavailable.
 
 ## Try it
 

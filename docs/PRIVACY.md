@@ -4,7 +4,7 @@
 
 Version 0.2 reads the active tab's URL and title only after the user clicks the extension. It canonicalizes the page locally and sends only that canonical entity key—for example, a YouTube video ID, Goodreads numeric page ID, or normalized web URL key—to the read-only AI Claims resolver at `ai.rhyslindmark.com`. It does not send the page title, page text, cookies, account data, browsing history, transcripts, ISBNs, claims, or form contents. The resolver does not write lookups to application storage; the hosting provider may retain standard request logs.
 
-The optional **Show scores as I browse this site** control grants access only to the current origin and records that explicit opt-in in `chrome.storage.local`. Both the saved opt-in and Chrome permission must be present before navigation triggers a canonical-key lookup. Users can revoke access at any time in Chrome's extension site-access settings.
+The optional **Show scores as I browse this site** control grants access only to the current origin and records that explicit opt-in in `chrome.storage.local`. Both the saved opt-in and Chrome permission must be present before navigation triggers a canonical-key lookup. The control then becomes **Stop checking this site**, which deletes the local opt-in, removes the optional permission when Chrome allows it, and clears the badge; access can also be revoked in Chrome's extension site-access settings.
 
 The optional **Always check this site** action requests access to the current origin only. Chrome stores that permission; the user can revoke it from the extension's site-access settings.
 

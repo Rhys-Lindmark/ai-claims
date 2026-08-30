@@ -13,6 +13,7 @@ const permissionButton = document.querySelector('#permission');
 const localMetrics = document.querySelector('#local-metrics');
 let currentTab;
 let currentIdentity;
+let currentAutoCheck = false;
 const requestStore = createRequestStore({ storageArea: chrome.storage.local });
 const metricsStore = createMetricsStore({ storageArea: chrome.storage.local });
 const originOptIns = createOriginOptInStore({ storageArea: chrome.storage.local });
@@ -81,16 +82,27 @@ async function refresh() {
   const requestRecord = score.state === 'not_analyzed' ? await requestStore.get(identity.entityKey) : null;
   renderResult(score, identity, requestRecord);
   const origin = new URL(identity.canonicalUrl).origin;
-  permissionButton.hidden = await originOptIns.has(origin);
+  currentAutoCheck = await originOptIns.has(origin);
+  permissionButton.textContent = currentAutoCheck ? 'Stop checking this site' : 'Show scores as I browse this site';
+  permissionButton.hidden = false;
 }
 
 permissionButton.addEventListener('click', async () => {
   if (!currentTab?.url) return;
   const origin = new URL(currentTab.url).origin;
+  if (currentAutoCheck) {
+    await originOptIns.revoke(origin);
+    await chrome.permissions.remove({ origins: [`${origin}/*`] });
+    currentAutoCheck = false;
+    permissionButton.textContent = 'Show scores as I browse this site';
+    chrome.runtime.sendMessage({ type: 'refresh-badge', tabId: currentTab.id });
+    return;
+  }
   const granted = await chrome.permissions.request({ origins: [`${origin}/*`] });
   if (granted) {
     await originOptIns.grant(origin);
-    permissionButton.hidden = true;
+    currentAutoCheck = true;
+    permissionButton.textContent = 'Stop checking this site';
     chrome.runtime.sendMessage({ type: 'refresh-badge', tabId: currentTab.id });
   }
 });
