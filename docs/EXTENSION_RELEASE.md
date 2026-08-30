@@ -15,6 +15,7 @@
 - [ ] Generic pages discard fragments and tracking parameters without collapsing meaningful query parameters.
 - [ ] Missing, partial, and blocked analyses never display a number.
 - [ ] Published scores show denominator, coverage, method version, review date, and evidence link.
+- [ ] Origin opt-in shows a toolbar number only for a complete published score, `?` for unknown, and no badge for pending or unavailable results.
 - [ ] Duplicate analysis requests reuse one canonical request record.
 
 ## Trust and store listing

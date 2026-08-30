@@ -11,6 +11,7 @@ import { goodreadsBookResolution, sourceNotice, transcriptAcquisition } from '..
 import { createBookIdentityRecord, isValidIsbn } from '../lib/book-identity.js';
 import { createMetricsStore } from '../lib/local-metrics.js';
 import { identifyPage } from '../lib/page-identity.js';
+import { actionBadgeForState } from '../lib/action-badge.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -89,6 +90,12 @@ test('packaged extension uses the public resolver with a narrow host permission'
   assert.equal(resolverConfig.mode, 'api');
   assert.equal(resolverConfig.endpoint, 'https://ai.rhyslindmark.com/claims/api/');
   assert.deepEqual(manifest.host_permissions, ['https://ai.rhyslindmark.com/*']);
+});
+
+test('toolbar badge exposes numbers only for published scores', () => {
+  assert.equal(actionBadgeForState({ state: 'published', score: 84 }).text, '84');
+  assert.equal(actionBadgeForState({ state: 'not_analyzed' }).text, '?');
+  assert.equal(actionBadgeForState({ state: 'pending', score: 91 }).text, '');
 });
 
 test('API resolver maps 404 to not analyzed and rejects incompatible contracts', async () => {

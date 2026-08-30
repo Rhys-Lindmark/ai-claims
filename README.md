@@ -12,7 +12,7 @@ The public resolver contract is available at [`/claims/api/v1/analyses/resolve?e
 
 ## Install the prototype
 
-Download the [`extension-v0.1.7` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.7), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. It checks canonical page keys against the public resolver; only synthetic reviewed fixtures are currently published.
+Download the [`extension-v0.2.0` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.0), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. It checks canonical page keys against the public resolver and supports origin-scoped automatic toolbar badges; only synthetic reviewed fixtures are currently published.
 
 ## Validate
 

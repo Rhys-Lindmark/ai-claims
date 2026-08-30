@@ -2,6 +2,8 @@
 
 This Manifest V3 prototype opens AI Claims beside the current page. It recognizes YouTube videos, Goodreads books, and canonical web URLs, checks that canonical identity against the public read-only analysis resolver, and links published entries to their full evidence trail.
 
+The panel's **Show scores as I browse this site** control grants an optional permission for that origin. On later pages from the opted-in site, the toolbar badge shows a number only for a complete published review, `?` for an unknown page, and nothing when review state is incomplete or the resolver is unavailable.
+
 ## Try it
 
 1. Open `chrome://extensions` in Chrome.
@@ -32,6 +34,7 @@ Local product metrics retain only event type, timestamp, and coarse page kind fo
 - `lib/page-identity.js` canonicalizes YouTube, Goodreads, and ordinary page URLs.
 - `lib/analysis-registry.js` applies the score publication gate.
 - `lib/analysis-resolver.js` provides interchangeable local and read-only API adapters under contract `1.0.0`.
+- `lib/action-badge.js` converts only publication-safe score states into toolbar badges.
 - `lib/analysis-requests.js` provides idempotent request records and guarded lifecycle transitions.
 - `lib/truth-score.js` computes the gated, versioned 0–100 score.
 - `lib/source-policy.js` blocks undocumented YouTube transcript acquisition paths.

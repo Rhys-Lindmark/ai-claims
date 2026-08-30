@@ -87,7 +87,10 @@ permissionButton.addEventListener('click', async () => {
   if (!currentTab?.url) return;
   const origin = new URL(currentTab.url).origin;
   const granted = await chrome.permissions.request({ origins: [`${origin}/*`] });
-  if (granted) permissionButton.hidden = true;
+  if (granted) {
+    permissionButton.hidden = true;
+    chrome.runtime.sendMessage({ type: 'refresh-badge', tabId: currentTab.id });
+  }
 });
 
 result.addEventListener('click', async (event) => {
