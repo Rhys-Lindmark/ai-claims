@@ -1,6 +1,9 @@
 import { actionBadgeForState } from './lib/action-badge.js';
 import { createConfiguredResolver } from './lib/analysis-resolver.js';
 import { identifyPage } from './lib/page-identity.js';
+import { createOriginOptInStore } from './lib/origin-opt-in.js';
+
+const originOptIns = createOriginOptInStore({ storageArea: chrome.storage.local });
 
 async function configureAction() {
   chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true });
@@ -21,8 +24,11 @@ async function paintBadge(tab) {
     const identity = identifyPage(tab.url ?? '', tab.title ?? 'Current page');
     if (!identity.entityKey) throw new Error('Unsupported page.');
     const origin = new URL(identity.canonicalUrl).origin;
-    const optedIn = await chrome.permissions.contains({ origins: [`${origin}/*`] });
-    if (!optedIn) throw new Error('Origin is not opted in.');
+    const [optedIn, hasPermission] = await Promise.all([
+      originOptIns.has(origin),
+      chrome.permissions.contains({ origins: [`${origin}/*`] }),
+    ]);
+    if (!optedIn || !hasPermission) throw new Error('Origin is not opted in.');
     const resolver = await loadResolver();
     badge = actionBadgeForState(await resolver.resolve(identity.entityKey));
   } catch {

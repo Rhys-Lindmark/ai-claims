@@ -3,6 +3,7 @@ import { createConfiguredResolver } from './lib/analysis-resolver.js';
 import { createRequestStore } from './lib/analysis-requests.js';
 import { sourceNotice } from './lib/source-policy.js';
 import { createMetricsStore } from './lib/local-metrics.js';
+import { createOriginOptInStore } from './lib/origin-opt-in.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
@@ -14,6 +15,7 @@ let currentTab;
 let currentIdentity;
 const requestStore = createRequestStore({ storageArea: chrome.storage.local });
 const metricsStore = createMetricsStore({ storageArea: chrome.storage.local });
+const originOptIns = createOriginOptInStore({ storageArea: chrome.storage.local });
 const checkedThisSession = new Set();
 
 async function refreshMetrics() {
@@ -79,8 +81,7 @@ async function refresh() {
   const requestRecord = score.state === 'not_analyzed' ? await requestStore.get(identity.entityKey) : null;
   renderResult(score, identity, requestRecord);
   const origin = new URL(identity.canonicalUrl).origin;
-  const hasAccess = await chrome.permissions.contains({ origins: [`${origin}/*`] });
-  permissionButton.hidden = hasAccess;
+  permissionButton.hidden = await originOptIns.has(origin);
 }
 
 permissionButton.addEventListener('click', async () => {
@@ -88,6 +89,7 @@ permissionButton.addEventListener('click', async () => {
   const origin = new URL(currentTab.url).origin;
   const granted = await chrome.permissions.request({ origins: [`${origin}/*`] });
   if (granted) {
+    await originOptIns.grant(origin);
     permissionButton.hidden = true;
     chrome.runtime.sendMessage({ type: 'refresh-badge', tabId: currentTab.id });
   }

@@ -12,6 +12,7 @@ import { createBookIdentityRecord, isValidIsbn } from '../lib/book-identity.js';
 import { createMetricsStore } from '../lib/local-metrics.js';
 import { identifyPage } from '../lib/page-identity.js';
 import { actionBadgeForState } from '../lib/action-badge.js';
+import { createOriginOptInStore } from '../lib/origin-opt-in.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -113,6 +114,15 @@ function memoryStorage() {
     set: async (updates) => Object.assign(values, updates),
   };
 }
+
+test('automatic checking requires an explicit local origin opt-in', async () => {
+  const store = createOriginOptInStore({ storageArea: memoryStorage() });
+  assert.equal(await store.has('https://ai.rhyslindmark.com'), false);
+  await store.grant('https://ai.rhyslindmark.com');
+  assert.equal(await store.has('https://ai.rhyslindmark.com'), true);
+  await store.revoke('https://ai.rhyslindmark.com');
+  assert.equal(await store.has('https://ai.rhyslindmark.com'), false);
+});
 
 test('analysis requests are idempotent by canonical entity', async () => {
   const store = createRequestStore({ storageArea: memoryStorage(), now: () => '2026-08-30T00:00:00.000Z', createId: () => 'request-1' });
