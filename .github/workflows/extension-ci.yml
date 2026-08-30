@@ -19,6 +19,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run test:extension
+      - run: npm run test:methods
       - run: npm run build
       - run: npm run package:extension -- ai-claims-extension.zip
       - run: unzip -t ai-claims-extension.zip

@@ -1,0 +1,79 @@
+{
+  "fixture_notice": "Synthetic claim-selection audit samples; no real episode, speaker, claim, or model evaluation is represented.",
+  "audit_id": "selection-audit-demo-01",
+  "sampling_note": "Purposefully balanced teaching sample. Precision and recall describe only these six examples, not production performance.",
+  "samples": [
+    {
+      "sample_id": "audit-01",
+      "segment_id": "segment-101",
+      "transcript_excerpt": "The sample program enrolled 20,000 people last year.",
+      "machine_candidate": { "candidate_id": "machine-01", "text": "The sample program enrolled 20,000 people last year.", "type": "quantitative", "confidence": 0.94 },
+      "editor_decision": "include",
+      "outcome": "true_positive",
+      "canonical_claim_text": "The sample program enrolled 20,000 people during the previous calendar year.",
+      "review_note": "The machine preserved the bounded quantity and time period; the editor normalized wording without changing meaning.",
+      "reviewed_by": "Fixture editor",
+      "reviewed_at": "2026-08-30T22:00:00Z"
+    },
+    {
+      "sample_id": "audit-02",
+      "segment_id": "segment-102",
+      "transcript_excerpt": "Wouldn't every sensible city copy an idea this obvious?",
+      "machine_candidate": { "candidate_id": "machine-02", "text": "Every sensible city would copy the idea.", "type": "factual", "confidence": 0.72 },
+      "editor_decision": "exclude",
+      "outcome": "false_positive",
+      "canonical_claim_text": null,
+      "review_note": "A rhetorical question was incorrectly converted into an asserted factual generalization.",
+      "reviewed_by": "Fixture editor",
+      "reviewed_at": "2026-08-30T22:03:00Z"
+    },
+    {
+      "sample_id": "audit-03",
+      "segment_id": "segment-103",
+      "transcript_excerpt": "My neighbor joined after the fee fell from forty dollars to ten.",
+      "machine_candidate": null,
+      "editor_decision": "add_missed",
+      "outcome": "false_negative",
+      "canonical_claim_text": "The sample program fee fell from $40 to $10 before the neighbor joined.",
+      "review_note": "The anecdote contains a checkable quantitative premise even though the personal decision itself is not generalizable.",
+      "reviewed_by": "Fixture editor",
+      "reviewed_at": "2026-08-30T22:06:00Z"
+    },
+    {
+      "sample_id": "audit-04",
+      "segment_id": "segment-104",
+      "transcript_excerpt": "Enrollment rose because the new rule removed the fee.",
+      "machine_candidate": { "candidate_id": "machine-04", "text": "Removing the fee caused enrollment to rise.", "type": "causal", "confidence": 0.81 },
+      "editor_decision": "include",
+      "outcome": "true_positive",
+      "canonical_claim_text": "Removing the sample program fee caused enrollment to increase.",
+      "review_note": "The causal assertion is explicit and must remain separate from any descriptive enrollment count.",
+      "reviewed_by": "Fixture editor",
+      "reviewed_at": "2026-08-30T22:09:00Z"
+    },
+    {
+      "sample_id": "audit-05",
+      "segment_id": "segment-105",
+      "transcript_excerpt": "Thanks for having me; it is great to be here.",
+      "machine_candidate": null,
+      "editor_decision": "confirm_nonclaim",
+      "outcome": "true_negative",
+      "canonical_claim_text": null,
+      "review_note": "Conversational courtesy is preserved in the transcript but is not a claim-selection target.",
+      "reviewed_by": "Fixture editor",
+      "reviewed_at": "2026-08-30T22:12:00Z"
+    },
+    {
+      "sample_id": "audit-06",
+      "segment_id": "segment-106",
+      "transcript_excerpt": "I bet the program reaches a million people next year.",
+      "machine_candidate": { "candidate_id": "machine-06", "text": "The program will reach one million people next year.", "type": "prediction", "confidence": 0.89 },
+      "editor_decision": "exclude",
+      "outcome": "false_positive",
+      "canonical_claim_text": null,
+      "review_note": "The forecast is preserved for later evaluation but excluded from the current-fact truth-score denominator.",
+      "reviewed_by": "Fixture editor",
+      "reviewed_at": "2026-08-30T22:15:00Z"
+    }
+  ]
+}
