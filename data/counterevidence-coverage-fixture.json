@@ -1,0 +1,10 @@
+{
+  "fixture_notice": "Synthetic counterevidence coverage; no real search, source, claim, or finding is represented.",
+  "records": [
+    { "coverage_id": "counter-01", "finding_id": "finding-01", "search_log_id": "search-log-01", "challenge_queries": ["sample enrollment count duplicated cohort", "sample program participation alternative estimate"], "databases_searched": ["Synthetic Scholar Index", "Synthetic Government Archive"], "result_state": "counterevidence_found", "items": [
+      { "source_id": "source-demo-11", "title": "Synthetic corrected cohort note", "effect": "limits_scope", "review_state": "editor_reviewed", "note": "The total is reported, but cross-year comparison is limited because eligibility changed." },
+      { "source_id": "source-demo-14", "title": "Synthetic independent replication", "effect": "alternative_explanation", "review_state": "editor_reviewed", "note": "Participation growth may partly reflect reporting changes rather than policy effects." }
+    ], "unresolved_gaps": ["No source separates the reporting change from actual enrollment growth."], "reviewed_by": "Fixture editor", "reviewed_at": "2026-08-30T20:20:00Z", "interpretation_note": "Counterevidence narrows the finding; it is not discarded merely because it conflicts with the initial claim." },
+    { "coverage_id": "counter-02", "finding_id": "finding-02", "search_log_id": "search-log-02", "challenge_queries": ["sample rule no effect enrollment", "sample program pretrend explanation"], "databases_searched": ["Synthetic Scholar Index"], "result_state": "none_found", "items": [], "unresolved_gaps": ["The search covered only English-language indexed sources.", "No unpublished null results were accessible."], "reviewed_by": "Fixture editor", "reviewed_at": "2026-08-30T20:30:00Z", "interpretation_note": "No counterevidence found is a search outcome, not affirmative proof that the claim is correct." }
+  ]
+}
