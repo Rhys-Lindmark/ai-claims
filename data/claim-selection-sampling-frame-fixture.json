@@ -1,0 +1,28 @@
+{
+  "fixture_notice": "Synthetic claim-selection sampling frame; no real episode, speaker, transcript, or model evaluation is represented.",
+  "frame_id": "selection-frame-demo-01",
+  "episode_id": "episode-synthetic-104",
+  "sampling_method": "stratified_random_with_editor_challenge",
+  "transcript_segment_count": 284,
+  "sampled_segment_count": 6,
+  "minimum_sample_size": 12,
+  "selection_seed_digest": "sha256:8b17d3ac02f19e44",
+  "created_at": "2026-08-30T22:20:00Z",
+  "reviewed_by": "Fixture methods editor",
+  "strata": [
+    { "stratum_id": "region-early", "dimension": "transcript_region", "label": "Opening third", "population_count": 95, "sampled_count": 2, "required_minimum": 2, "coverage_note": "Two segments sampled from the opening third." },
+    { "stratum_id": "region-middle", "dimension": "transcript_region", "label": "Middle third", "population_count": 95, "sampled_count": 2, "required_minimum": 2, "coverage_note": "Two segments sampled from the middle third." },
+    { "stratum_id": "region-late", "dimension": "transcript_region", "label": "Closing third", "population_count": 94, "sampled_count": 2, "required_minimum": 2, "coverage_note": "Two segments sampled from the closing third." },
+    { "stratum_id": "speaker-host", "dimension": "speaker", "label": "Host speech", "population_count": 122, "sampled_count": 3, "required_minimum": 2, "coverage_note": "Host speech clears the teaching threshold." },
+    { "stratum_id": "speaker-guest", "dimension": "speaker", "label": "Guest speech", "population_count": 146, "sampled_count": 2, "required_minimum": 2, "coverage_note": "Guest speech narrowly clears the threshold." },
+    { "stratum_id": "speaker-unknown", "dimension": "speaker", "label": "Unknown / overlap", "population_count": 16, "sampled_count": 1, "required_minimum": 2, "coverage_note": "Attribution uncertainty is under-sampled." },
+    { "stratum_id": "type-quantitative", "dimension": "machine_claim_type", "label": "Quantitative candidate", "population_count": 12, "sampled_count": 2, "required_minimum": 1, "coverage_note": "Machine-labeled quantitative candidates are represented." },
+    { "stratum_id": "type-causal", "dimension": "machine_claim_type", "label": "Causal candidate", "population_count": 9, "sampled_count": 1, "required_minimum": 1, "coverage_note": "Machine-labeled causal candidates are represented." },
+    { "stratum_id": "type-prediction", "dimension": "machine_claim_type", "label": "Prediction candidate", "population_count": 7, "sampled_count": 1, "required_minimum": 1, "coverage_note": "Forecast handling is represented." },
+    { "stratum_id": "type-none", "dimension": "machine_claim_type", "label": "No machine candidate", "population_count": 256, "sampled_count": 2, "required_minimum": 1, "coverage_note": "Negative segments are sampled to find false negatives." },
+    { "stratum_id": "confidence-low", "dimension": "machine_confidence", "label": "Low confidence", "population_count": 8, "sampled_count": 1, "required_minimum": 2, "coverage_note": "Low-confidence extraction remains under-sampled." },
+    { "stratum_id": "confidence-mid", "dimension": "machine_confidence", "label": "Medium confidence", "population_count": 11, "sampled_count": 2, "required_minimum": 2, "coverage_note": "Medium-confidence extraction clears the threshold." },
+    { "stratum_id": "confidence-high", "dimension": "machine_confidence", "label": "High confidence", "population_count": 9, "sampled_count": 2, "required_minimum": 2, "coverage_note": "High-confidence extraction clears the threshold." },
+    { "stratum_id": "confidence-none", "dimension": "machine_confidence", "label": "No candidate confidence", "population_count": 256, "sampled_count": 1, "required_minimum": 1, "coverage_note": "A negative segment is retained for missed-claim review." }
+  ]
+}
