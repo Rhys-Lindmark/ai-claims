@@ -1,5 +1,5 @@
 import { identifyPage } from './lib/page-identity.js';
-import { resolveAnalysis } from './lib/analysis-registry.js';
+import { createConfiguredResolver } from './lib/analysis-resolver.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
@@ -8,9 +8,11 @@ const result = document.querySelector('#result');
 const permissionButton = document.querySelector('#permission');
 let currentTab;
 
-async function loadRegistry() {
-  const response = await fetch(chrome.runtime.getURL('data/analyses.json'));
-  return response.json();
+async function loadResolver() {
+  const response = await fetch(chrome.runtime.getURL('data/resolver-config.json'));
+  const config = await response.json();
+  if (config.mode === 'local') config.registry_url = chrome.runtime.getURL(config.registry_url);
+  return createConfiguredResolver(config);
 }
 
 function renderResult(state, identity) {
@@ -48,8 +50,8 @@ async function refresh() {
     return;
   }
 
-  const registry = await loadRegistry();
-  renderResult(resolveAnalysis(registry, identity.entityKey), identity);
+  const resolver = await loadResolver();
+  renderResult(await resolver.resolve(identity.entityKey), identity);
   const origin = new URL(identity.canonicalUrl).origin;
   const hasAccess = await chrome.permissions.contains({ origins: [`${origin}/*`] });
   permissionButton.hidden = hasAccess;
