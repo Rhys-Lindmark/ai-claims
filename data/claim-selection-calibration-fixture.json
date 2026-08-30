@@ -1,0 +1,39 @@
+{
+  "fixture_notice": "Synthetic dual-editor claim-selection calibration; no real editor, transcript, claim, or model evaluation is represented.",
+  "calibration_set_id": "selection-calibration-demo-01",
+  "interpretation_note": "Observed agreement describes four teaching records only. It is not a reliability estimate or a production quality claim.",
+  "records": [
+    {
+      "calibration_id": "calibration-01",
+      "audit_sample_id": "audit-01",
+      "stratum_ids": ["region-early", "speaker-host", "confidence-high"],
+      "first_review": { "editor_id": "fixture-editor-a", "decision": "include", "rationale": "The quantity and time window are independently checkable.", "reviewed_at": "2026-08-30T22:30:00Z", "blind_to_peer_decision": true },
+      "second_review": { "editor_id": "fixture-editor-b", "decision": "include", "rationale": "This is a bounded quantitative assertion.", "reviewed_at": "2026-08-30T22:31:00Z", "blind_to_peer_decision": true },
+      "adjudication": { "state": "not_needed", "final_decision": null, "adjudicator_id": null, "rationale": "", "adjudicated_at": null }
+    },
+    {
+      "calibration_id": "calibration-02",
+      "audit_sample_id": "audit-02",
+      "stratum_ids": ["region-early", "speaker-host", "confidence-mid"],
+      "first_review": { "editor_id": "fixture-editor-a", "decision": "exclude", "rationale": "The sentence is rhetorical and does not assert city behavior.", "reviewed_at": "2026-08-30T22:33:00Z", "blind_to_peer_decision": true },
+      "second_review": { "editor_id": "fixture-editor-b", "decision": "include", "rationale": "The universal wording could be read as an implicit prediction.", "reviewed_at": "2026-08-30T22:34:00Z", "blind_to_peer_decision": true },
+      "adjudication": { "state": "resolved", "final_decision": "exclude", "adjudicator_id": "fixture-editor-c", "rationale": "Preserve the utterance as rhetoric; do not rewrite it into a universal factual claim.", "adjudicated_at": "2026-08-30T22:40:00Z" }
+    },
+    {
+      "calibration_id": "calibration-03",
+      "audit_sample_id": "audit-03",
+      "stratum_ids": ["region-middle", "speaker-guest", "confidence-none"],
+      "first_review": { "editor_id": "fixture-editor-a", "decision": "add_missed", "rationale": "The fee change is an embedded quantitative premise.", "reviewed_at": "2026-08-30T22:36:00Z", "blind_to_peer_decision": true },
+      "second_review": { "editor_id": "fixture-editor-b", "decision": "confirm_nonclaim", "rationale": "The segment is primarily anecdotal and may not belong in the denominator.", "reviewed_at": "2026-08-30T22:37:00Z", "blind_to_peer_decision": true },
+      "adjudication": { "state": "pending", "final_decision": null, "adjudicator_id": null, "rationale": "Awaiting a methods editor ruling on embedded premises.", "adjudicated_at": null }
+    },
+    {
+      "calibration_id": "calibration-04",
+      "audit_sample_id": "audit-05",
+      "stratum_ids": ["region-late", "speaker-unknown", "confidence-none"],
+      "first_review": { "editor_id": "fixture-editor-a", "decision": "confirm_nonclaim", "rationale": "Conversational courtesy is not a truth-selection target.", "reviewed_at": "2026-08-30T22:39:00Z", "blind_to_peer_decision": true },
+      "second_review": { "editor_id": "fixture-editor-b", "decision": "confirm_nonclaim", "rationale": "No checkable assertion is present.", "reviewed_at": "2026-08-30T22:40:00Z", "blind_to_peer_decision": true },
+      "adjudication": { "state": "not_needed", "final_decision": null, "adjudicator_id": null, "rationale": "", "adjudicated_at": null }
+    }
+  ]
+}

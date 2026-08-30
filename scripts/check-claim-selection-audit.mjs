@@ -3,6 +3,8 @@ import fixture from '../data/claim-selection-audit-fixture.json' with { type: 'j
 import { selectionAuditSummary, validateClaimSelectionAudit } from '../lib/claim-selection-audit.ts';
 import samplingFixture from '../data/claim-selection-sampling-frame-fixture.json' with { type: 'json' };
 import { claimSelectionSamplingDecision, validateClaimSelectionSamplingFrame } from '../lib/claim-selection-sampling.ts';
+import calibrationFixture from '../data/claim-selection-calibration-fixture.json' with { type: 'json' };
+import { claimSelectionCalibrationDecision, validateClaimSelectionCalibration } from '../lib/claim-selection-calibration.ts';
 
 assert.deepEqual(validateClaimSelectionAudit(fixture.samples), []);
 const summary = selectionAuditSummary(fixture.samples);
@@ -16,4 +18,10 @@ assert.equal(samplingDecision.metrics_publishable, false);
 assert.match(samplingDecision.blockers.join(' '), /12 are required/);
 assert.match(samplingDecision.blockers.join(' '), /Unknown \/ overlap/);
 assert.match(samplingDecision.blockers.join(' '), /Low confidence/);
+assert.deepEqual(validateClaimSelectionCalibration(calibrationFixture.records), []);
+const calibrationDecision = claimSelectionCalibrationDecision(calibrationFixture.records);
+assert.equal(calibrationDecision.denominator_publishable, false);
+assert.equal(calibrationDecision.summary.agreements, 2);
+assert.equal(calibrationDecision.summary.disagreements, 2);
+assert.equal(calibrationDecision.summary.unresolved.length, 1);
 console.log('Claim-selection audit fixture passed.');
