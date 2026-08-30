@@ -1,6 +1,6 @@
 # AI Claims Chrome extension prototype
 
-This Manifest V3 prototype opens AI Claims beside the current page. It recognizes YouTube videos, Goodreads books, and canonical web URLs, then resolves that identity against a local analysis registry.
+This Manifest V3 prototype opens AI Claims beside the current page. It recognizes YouTube videos, Goodreads books, and canonical web URLs, then resolves that identity against a local analysis registry and links published entries to their canonical public analysis route.
 
 ## Try it
 

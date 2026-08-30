@@ -13,7 +13,7 @@
       "provenance_complete": true,
       "methodology_version": "0.4.0-fixture",
       "last_reviewed_at": "2026-08-30",
-      "analysis_url": "https://ai.rhyslindmark.com/claims"
+      "analysis_url": "https://ai.rhyslindmark.com/claims/analysis?entity_key=web%3Aexample.invalid%2Freviewed-fixture"
     },
     {
       "entity_key": "web:example.invalid/incomplete-fixture",
