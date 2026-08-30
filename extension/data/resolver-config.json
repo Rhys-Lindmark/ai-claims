@@ -2,5 +2,6 @@
   "contract_version": "1.0.0",
   "mode": "local",
   "registry_url": "data/analyses.json",
-  "api_shape": "GET /v1/analyses/resolve?entity_key={encoded_entity_key}"
+  "api_shape": "GET /v1/analyses/resolve?entity_key={encoded_entity_key}",
+  "public_api_endpoint": "https://ai.rhyslindmark.com/claims/api/"
 }

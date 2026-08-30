@@ -8,9 +8,11 @@ The north star is a Chrome extension that recognizes YouTube videos, Goodreads b
 
 The current site contains synthetic fixtures that test the review machinery without presenting unreviewed examples as real facts. The first installable extension prototype lives in [`extension/`](./extension/README.md).
 
+The public resolver contract is available at [`/claims/api/v1/analyses/resolve?entity_key=…`](https://ai.rhyslindmark.com/claims/api/v1/analyses/resolve?entity_key=web%3Aexample.invalid%2Freviewed-fixture). It is read-only, CORS-enabled, versioned, and still serves synthetic registry data only.
+
 ## Install the prototype
 
-Download the [`extension-v0.1.5` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.5), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. It contains synthetic registry data only; no real-world truth scores ship in this release.
+Download the [`extension-v0.1.6` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.6), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. It contains synthetic registry data only; no real-world truth scores ship in this release.
 
 ## Validate
 

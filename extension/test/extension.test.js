@@ -70,6 +70,19 @@ test('API resolver uses the versioned envelope and exact entity key', async () =
   assert.equal(state.state, 'published');
 });
 
+test('API resolver preserves a custom endpoint path', async () => {
+  let requestedUrl;
+  const resolver = createApiResolver({
+    endpoint: 'https://ai.example.invalid/claims/api/',
+    fetchImpl: async (url) => {
+      requestedUrl = url;
+      return { ok: false, status: 404 };
+    },
+  });
+  await resolver.resolve('goodreads:123');
+  assert.equal(requestedUrl.pathname, '/claims/api/v1/analyses/resolve');
+});
+
 test('API resolver maps 404 to not analyzed and rejects incompatible contracts', async () => {
   const missing = createApiResolver({ endpoint: 'https://api.example.invalid', fetchImpl: async () => ({ ok: false, status: 404 }) });
   assert.equal((await missing.resolve('web:missing.invalid')).state, 'not_analyzed');

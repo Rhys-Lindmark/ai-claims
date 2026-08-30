@@ -25,7 +25,7 @@ export function createLocalResolver({ registryUrl, fetchImpl = fetch }) {
 export function createApiResolver({ endpoint, fetchImpl = fetch }) {
   return {
     async resolve(entityKey) {
-      const url = new URL('/v1/analyses/resolve', endpoint);
+      const url = new URL('v1/analyses/resolve', endpoint.endsWith('/') ? endpoint : `${endpoint}/`);
       url.searchParams.set('entity_key', entityKey);
       const response = await fetchImpl(url, { headers: { accept: 'application/json' } });
       if (response.status === 404) return scoreState(null);
