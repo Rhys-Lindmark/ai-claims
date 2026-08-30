@@ -1,0 +1,7 @@
+{
+  "fixture_notice": "Synthetic methods changelog; no real analysis or scoring change is represented.",
+  "changes": [
+    { "change_id": "method-change-02", "from_manifest_version": "1.1.0", "to_manifest_version": "2.0.0", "effective_at": "2026-08-30T19:30:00Z", "kind": "breaking_scoring_change", "affected_stages": ["canonical_grouping", "aggregation"], "summary": "Repeated paraphrases now require editor confirmation before denominator deduplication.", "rationale": "The prior automatic threshold could merge meaningfully different claims.", "affected_analysis_ids": ["analysis-demo-07", "analysis-demo-09"], "recomputation_state": "queued", "public_notice": "Two synthetic analyses are queued for recomputation; their prior versions remain visible." },
+    { "change_id": "method-change-01", "from_manifest_version": "1.0.0", "to_manifest_version": "1.1.0", "effective_at": "2026-08-29T16:00:00Z", "kind": "non_breaking_clarification", "affected_stages": ["evidence_review"], "summary": "Clarified that contextual evidence may explain scope without supporting or contradicting a claim.", "rationale": "The rule behavior did not change; its documentation was ambiguous.", "affected_analysis_ids": [], "recomputation_state": "not_required", "public_notice": "Documentation clarification only; no published findings or scores changed." }
+  ]
+}
