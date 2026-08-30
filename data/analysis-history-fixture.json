@@ -1,0 +1,9 @@
+{
+  "fixture_notice": "Synthetic version history; no real episode, person, claim, source, or correction is represented.",
+  "versions": [
+    { "version_id": "analysis-demo-v1", "analysis_id": "analysis-demo", "version_number": 1, "parent_version_id": null, "created_at": "2026-08-28T10:00:00Z", "created_by": "Fixture editor", "review_state": "published", "change_kinds": ["editorial_note"], "change_summary": "Initial synthetic analysis published with two reviewed canonical claims.", "changed_record_ids": ["canonical-01", "canonical-02"], "supersedes_public_version": false },
+    { "version_id": "analysis-demo-v2", "analysis_id": "analysis-demo", "version_number": 2, "parent_version_id": "analysis-demo-v1", "created_at": "2026-08-29T14:30:00Z", "created_by": "Fixture editor", "review_state": "published", "change_kinds": ["transcript", "speaker_attribution", "finding"], "change_summary": "Corrected a transcript word, reassigned one synthetic segment, and re-reviewed its framing finding.", "changed_record_ids": ["segment-14", "canonical-01"], "supersedes_public_version": true },
+    { "version_id": "analysis-demo-v3", "analysis_id": "analysis-demo", "version_number": 3, "parent_version_id": "analysis-demo-v2", "created_at": "2026-08-30T16:05:00Z", "created_by": "Fixture editor", "review_state": "published", "change_kinds": ["evidence", "finding"], "change_summary": "Added a qualifying methods source and changed framing from mostly supported to mixed.", "changed_record_ids": ["source-03", "link-03", "canonical-01"], "supersedes_public_version": true }
+  ]
+}
+
