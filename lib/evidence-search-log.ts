@@ -1,0 +1,3 @@
+export interface EvidenceSearchRun { search_id: string; database: string; query: string; executed_at: string; date_from: string | null; date_to: string; filters: string[]; result_count: number; searched_by: string; }
+export interface EvidenceInclusionDecision { decision_id: string; source_id: string; title: string; decision: 'included' | 'excluded'; reason: string; decided_by: string; }
+export interface FindingSearchLog { log_id: string; finding_id: string; searches: EvidenceSearchRun[]; decisions: EvidenceInclusionDecision[]; stopping_reason: 'scope_complete' | 'evidence_saturation' | 'deadline_reached' | 'resource_limit'; stopping_note: string; review_state: 'draft' | 'editor_reviewed'; reviewed_by: string | null; }

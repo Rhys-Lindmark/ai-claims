@@ -1,0 +1,12 @@
+{
+  "fixture_notice": "Synthetic evidence-search log; no real database search, source, or finding is represented.", "log_id": "search-log-01", "finding_id": "finding-01", "review_state": "editor_reviewed", "reviewed_by": "Fixture editor",
+  "searches": [
+    { "search_id": "search-01", "database": "Synthetic Scholar Index", "query": "sample program enrollment cohort definition annual report", "executed_at": "2026-08-30T17:10:00Z", "date_from": "2020-01-01", "date_to": "2026-08-30", "filters": ["primary research", "English"], "result_count": 34, "searched_by": "Fixture researcher" },
+    { "search_id": "search-02", "database": "Synthetic Government Archive", "query": "sample program eligibility rule enrollment table", "executed_at": "2026-08-30T17:24:00Z", "date_from": null, "date_to": "2026-08-30", "filters": ["official records"], "result_count": 11, "searched_by": "Fixture researcher" }
+  ],
+  "decisions": [
+    { "decision_id": "decision-01", "source_id": "source-demo-08", "title": "Synthetic implementation memo", "decision": "included", "reason": "Primary document defines the eligibility change and effective date.", "decided_by": "Fixture editor" },
+    { "decision_id": "decision-02", "source_id": "source-demo-12", "title": "Synthetic opinion roundup", "decision": "excluded", "reason": "Secondary commentary repeats the claim but supplies no underlying counts.", "decided_by": "Fixture editor" }
+  ],
+  "stopping_reason": "evidence_saturation", "stopping_note": "Two independent searches returned the same primary table and rule memo; later results added commentary but no new underlying evidence."
+}
