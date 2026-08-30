@@ -1,0 +1,14 @@
+{
+  "fixture_notice": "All statements and speakers are synthetic. No verdicts are assigned.",
+  "segment_id": "synthetic-segment-01",
+  "transcript": "The sample program enrolled 20,000 people last year, which proves the new rule caused the increase, and I think it will reach a million next year. Honestly, expanding it is the right thing to do. Imagine if every city copied it. In my neighborhood, everyone I know loves it.",
+  "candidates": [
+    { "id": "candidate-01", "source_segment_id": "synthetic-segment-01", "text": "The sample program enrolled 20,000 people last year.", "type": "quantitative", "checkability": "checkable_now", "split_from_compound": true, "embedded_factual_premise": false, "review_state": "editor_reviewed", "reviewer_note": "A bounded count with a stated time period." },
+    { "id": "candidate-02", "source_segment_id": "synthetic-segment-01", "text": "The new rule caused the increase.", "type": "causal", "checkability": "checkable_now", "split_from_compound": true, "embedded_factual_premise": false, "review_state": "editor_reviewed", "reviewer_note": "Separated because causation needs different evidence from the enrollment count." },
+    { "id": "candidate-03", "source_segment_id": "synthetic-segment-01", "text": "The sample program will reach one million participants next year.", "type": "prediction", "checkability": "checkable_later", "split_from_compound": true, "embedded_factual_premise": false, "review_state": "editor_reviewed", "reviewer_note": "Preserve the forecast horizon and evaluate later." },
+    { "id": "candidate-04", "source_segment_id": "synthetic-segment-01", "text": "Expanding the sample program is the right thing to do.", "type": "opinion_value", "checkability": "not_truth_scored", "split_from_compound": false, "embedded_factual_premise": false, "review_state": "editor_reviewed", "reviewer_note": "A value judgment, not a factual verdict target." },
+    { "id": "candidate-05", "source_segment_id": "synthetic-segment-01", "text": "Imagine if every city copied the sample program.", "type": "rhetorical_hypothetical", "checkability": "not_truth_scored", "split_from_compound": false, "embedded_factual_premise": false, "review_state": "editor_reviewed", "reviewer_note": "A hypothetical prompt with no asserted outcome." },
+    { "id": "candidate-06", "source_segment_id": "synthetic-segment-01", "text": "Everyone the speaker knows in their neighborhood loves the sample program.", "type": "anecdote_personal", "checkability": "needs_review", "split_from_compound": false, "embedded_factual_premise": true, "review_state": "editor_reviewed", "reviewer_note": "Preserve the anecdote, but do not treat it as population evidence." }
+  ]
+}
+

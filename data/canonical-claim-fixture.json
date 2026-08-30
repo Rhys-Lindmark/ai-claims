@@ -1,0 +1,10 @@
+{
+  "fixture_notice": "Synthetic repetition fixture; grouping is editor-reviewed and has no verdict.",
+  "occurrences": [
+    { "occurrence_id": "occurrence-01", "canonical_claim_id": "canonical-01", "source_segment_id": "segment-01", "timestamp": "08:12", "speaker": "Host A", "text": "The sample program enrolled 20,000 people last year.", "type": "quantitative", "relationship": "canonical_wording", "grouping_state": "editor_reviewed" },
+    { "occurrence_id": "occurrence-02", "canonical_claim_id": "canonical-01", "source_segment_id": "segment-14", "timestamp": "31:04", "speaker": "Host A", "text": "As I said, enrollment was twenty thousand last year.", "type": "quantitative", "relationship": "paraphrase", "grouping_state": "editor_reviewed" },
+    { "occurrence_id": "occurrence-03", "canonical_claim_id": "canonical-01", "source_segment_id": "segment-31", "timestamp": "68:40", "speaker": "Host A", "text": "The sample program enrolled 20,000 people last year.", "type": "quantitative", "relationship": "exact_repeat", "grouping_state": "editor_reviewed" },
+    { "occurrence_id": "occurrence-04", "canonical_claim_id": "canonical-02", "source_segment_id": "segment-22", "timestamp": "49:20", "speaker": "Guest B", "text": "The new rule caused the increase.", "type": "causal", "relationship": "canonical_wording", "grouping_state": "editor_reviewed" }
+  ]
+}
+

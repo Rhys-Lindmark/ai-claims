@@ -1,0 +1,20 @@
+{
+  "fixture_notice": "Synthetic reviewed-finding fixture; no real claim or source is represented.",
+  "records": [
+    { "canonical_claim_id": "canonical-01", "review_state": "editor_reviewed", "last_reviewed_at": "2026-08-30", "findings": [
+      { "dimension": "factual_accuracy", "state": "mostly_supported", "rationale": "The rounded count agrees with the registry and audit range.", "evidence_link_ids": ["link-01", "link-02"], "reviewer_confidence": "high" },
+      { "dimension": "quantitative_accuracy", "state": "mostly_supported", "rationale": "20,000 is a reasonable rounding of the synthetic registry total.", "evidence_link_ids": ["link-01"], "reviewer_confidence": "high" },
+      { "dimension": "framing_context", "state": "mixed", "rationale": "The word enrolled omits the active-record counting rule.", "evidence_link_ids": ["link-03"], "reviewer_confidence": "medium" },
+      { "dimension": "causal_support", "state": "not_applicable", "rationale": "This canonical claim asserts a count, not a cause.", "evidence_link_ids": [], "reviewer_confidence": "high" }
+    ] },
+    { "canonical_claim_id": "canonical-02", "review_state": "editor_reviewed", "last_reviewed_at": "2026-08-30", "findings": [
+      { "dimension": "causal_support", "state": "insufficient_evidence", "rationale": "The synthetic sources do not isolate the rule change from other interventions.", "evidence_link_ids": ["link-02", "link-03"], "reviewer_confidence": "high" },
+      { "dimension": "evidence_sufficiency", "state": "insufficient_evidence", "rationale": "No causal estimate is present in the current ledger.", "evidence_link_ids": ["link-02"], "reviewer_confidence": "high" }
+    ] },
+    { "canonical_claim_id": "canonical-03", "review_state": "in_review", "last_reviewed_at": null, "findings": [] },
+    { "canonical_claim_id": "canonical-04", "review_state": "unreviewed", "last_reviewed_at": null, "findings": [] },
+    { "canonical_claim_id": "canonical-05", "review_state": "unreviewed", "last_reviewed_at": null, "findings": [] },
+    { "canonical_claim_id": "canonical-06", "review_state": "unreviewed", "last_reviewed_at": null, "findings": [] }
+  ]
+}
+

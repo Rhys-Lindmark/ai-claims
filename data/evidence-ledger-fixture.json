@@ -1,0 +1,15 @@
+{
+  "fixture_notice": "All sources, URLs, excerpts, and claims are synthetic demonstration data.",
+  "canonical_claim": { "canonical_claim_id": "canonical-01", "text": "The sample program enrolled 20,000 people last year." },
+  "sources": [
+    { "source_id": "source-01", "title": "Sample Program Annual Registry", "publisher": "Synthetic Public Agency", "url": "https://example.com/synthetic-registry", "source_kind": "official_data", "quality": "high", "quality_rationale": "Direct registry for the measured program, with a published counting method.", "published_at": "2026-02-15", "accessed_at": "2026-08-30" },
+    { "source_id": "source-02", "title": "Audit of Sample Enrollment Counts", "publisher": "Synthetic Audit Office", "url": "https://example.com/synthetic-audit", "source_kind": "expert_synthesis", "quality": "medium", "quality_rationale": "Independent review, but it samples records rather than recounting the full registry.", "published_at": "2026-05-01", "accessed_at": "2026-08-30" },
+    { "source_id": "source-03", "title": "Who Counts as Enrolled?", "publisher": "Synthetic Methods Lab", "url": "https://example.com/synthetic-methods", "source_kind": "primary_research", "quality": "medium", "quality_rationale": "Relevant methods analysis with a narrower geography than the program claim.", "published_at": "2026-06-12", "accessed_at": "2026-08-30" }
+  ],
+  "links": [
+    { "link_id": "link-01", "canonical_claim_id": "canonical-01", "source_id": "source-01", "direction": "supports", "quoted_context": "The synthetic registry reports 20,184 active participants at year end.", "relevance_note": "Directly measures the claimed program and period.", "reviewer_confidence": "high", "review_state": "editor_reviewed" },
+    { "link_id": "link-02", "canonical_claim_id": "canonical-01", "source_id": "source-02", "direction": "supports", "quoted_context": "The audit estimate is consistent with a total between 19,600 and 20,500.", "relevance_note": "Independent range includes the rounded claim.", "reviewer_confidence": "medium", "review_state": "editor_reviewed" },
+    { "link_id": "link-03", "canonical_claim_id": "canonical-01", "source_id": "source-03", "direction": "qualifies", "quoted_context": "Enrollment totals vary when inactive records are excluded.", "relevance_note": "Shows that the word enrolled depends on the registry's active-status rule.", "reviewer_confidence": "medium", "review_state": "editor_reviewed" }
+  ]
+}
+
