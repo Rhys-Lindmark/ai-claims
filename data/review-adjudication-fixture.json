@@ -1,0 +1,10 @@
+{
+  "fixture_notice": "Synthetic reviewer disagreement and adjudication; no real claim, reviewer, or verdict is represented.",
+  "adjudication_id": "adjudication-01", "finding_id": "finding-01", "state": "resolved", "adjudicator_id": "editor-nova",
+  "proposals": [
+    { "proposal_id": "proposal-01", "reviewer_id": "reviewer-aria", "accuracy": "supported", "framing": "missing_context", "confidence": "medium", "rationale": "The synthetic count matches the table, but the speaker omits a changed eligibility rule." },
+    { "proposal_id": "proposal-02", "reviewer_id": "reviewer-orin", "accuracy": "mixed", "framing": "misleading", "confidence": "medium", "rationale": "The headline count combines two cohorts, so both the number and its framing need qualification." }
+  ],
+  "resolution": "Preserve both proposals. The final finding is mixed accuracy and missing context because the published table supports the total while its changed cohort definition limits comparability.",
+  "final_accuracy": "mixed", "final_framing": "missing_context", "resulting_analysis_version_id": "analysis-demo-v4", "resolved_at": "2026-08-30T20:00:00Z"
+}
