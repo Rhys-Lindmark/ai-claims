@@ -25,6 +25,8 @@ YouTube detection never triggers transcript scraping. Creator-authorized API acc
 
 Goodreads detection uses only the numeric page ID. Book identity comes from the reviewed registry, a supplied ISBN, or permitted publisher/library metadata under the [Goodreads source decision](../docs/GOODREADS_SOURCE_POLICY.md); ratings, reviews, and page metadata are not scraped.
 
+Local product metrics retain only event type, timestamp, and coarse page kind for up to 30 days/500 events. They never store page identity and never leave `chrome.storage.local`.
+
 ## Architecture
 
 - `lib/page-identity.js` canonicalizes YouTube, Goodreads, and ordinary page URLs.
@@ -33,6 +35,7 @@ Goodreads detection uses only the numeric page ID. Book identity comes from the 
 - `lib/analysis-requests.js` provides idempotent request records and guarded lifecycle transitions.
 - `lib/truth-score.js` computes the gated, versioned 0–100 score.
 - `lib/source-policy.js` blocks undocumented YouTube transcript acquisition paths.
+- `lib/local-metrics.js` provides identity-free local event counts and retention limits.
 - `sidepanel.*` renders the page identity, score state, coverage, and evidence link.
 - `service-worker.js` makes the toolbar action open the Chrome side panel.
 

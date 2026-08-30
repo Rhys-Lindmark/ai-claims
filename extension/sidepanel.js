@@ -2,15 +2,24 @@ import { identifyPage } from './lib/page-identity.js';
 import { createConfiguredResolver } from './lib/analysis-resolver.js';
 import { createRequestStore } from './lib/analysis-requests.js';
 import { sourceNotice } from './lib/source-policy.js';
+import { createMetricsStore } from './lib/local-metrics.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
 const pageUrl = document.querySelector('#page-url');
 const result = document.querySelector('#result');
 const permissionButton = document.querySelector('#permission');
+const localMetrics = document.querySelector('#local-metrics');
 let currentTab;
 let currentIdentity;
 const requestStore = createRequestStore({ storageArea: chrome.storage.local });
+const metricsStore = createMetricsStore({ storageArea: chrome.storage.local });
+const checkedThisSession = new Set();
+
+async function refreshMetrics() {
+  const summary = await metricsStore.summary(7);
+  localMetrics.textContent = `7D CHECKS: ${summary.counts.page_checked}`;
+}
 
 async function loadResolver() {
   const response = await fetch(chrome.runtime.getURL('data/resolver-config.json'));
@@ -56,6 +65,12 @@ async function refresh() {
 
   const resolver = await loadResolver();
   const score = await resolver.resolve(identity.entityKey);
+  if (!checkedThisSession.has(identity.entityKey)) {
+    checkedThisSession.add(identity.entityKey);
+    await metricsStore.record('page_checked', { kind: identity.kind });
+    await metricsStore.record(score.state === 'published' ? 'score_published' : 'score_pending', { kind: identity.kind });
+    await refreshMetrics();
+  }
   const requestRecord = score.state === 'not_analyzed' ? await requestStore.get(identity.entityKey) : null;
   renderResult(score, identity, requestRecord);
   const origin = new URL(identity.canonicalUrl).origin;
@@ -74,6 +89,8 @@ result.addEventListener('click', async (event) => {
   if (!(event.target instanceof HTMLElement) || event.target.id !== 'request-analysis' || !currentIdentity?.entityKey) return;
   event.target.setAttribute('disabled', 'true');
   const { record } = await requestStore.submit(currentIdentity);
+  await metricsStore.record('analysis_requested', { kind: currentIdentity.kind });
+  await refreshMetrics();
   renderResult({ state: 'not_analyzed', reason: 'No shared analysis exists for this page yet.' }, currentIdentity, record);
 });
 
@@ -82,4 +99,5 @@ chrome.tabs.onUpdated.addListener((_tabId, changeInfo) => {
   if (changeInfo.status === 'complete' || changeInfo.url) refresh();
 });
 
+refreshMetrics();
 refresh();

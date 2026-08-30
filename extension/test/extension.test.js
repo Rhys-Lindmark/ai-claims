@@ -7,6 +7,7 @@ import { createRequestStore } from '../lib/analysis-requests.js';
 import { computeTruthScore } from '../lib/truth-score.js';
 import { goodreadsBookResolution, sourceNotice, transcriptAcquisition } from '../lib/source-policy.js';
 import { createBookIdentityRecord, isValidIsbn } from '../lib/book-identity.js';
+import { createMetricsStore } from '../lib/local-metrics.js';
 import { identifyPage } from '../lib/page-identity.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -197,4 +198,21 @@ test('stages a browser-local Goodreads-to-edition mapping without page metadata'
   assert.equal(result.record.entity_key, 'goodreads:12345');
   assert.equal(result.record.isbn, '9780306406157');
   assert.equal(Object.hasOwn(result.record, 'title'), false);
+});
+
+test('local metrics omit page identity and summarize seven-day activity', async () => {
+  const storage = memoryStorage();
+  const store = createMetricsStore({ storageArea: storage, now: () => '2026-08-30T12:00:00.000Z' });
+  const event = await store.record('page_checked', { kind: 'youtube', entity_key: 'youtube:secret', url: 'https://youtube.com/watch?v=secret', title: 'Secret' });
+  await store.record('score_pending', { kind: 'youtube' });
+  assert.deepEqual(Object.keys(event).sort(), ['kind', 'timestamp', 'type']);
+  assert.equal(JSON.stringify(event).includes('secret'), false);
+  const summary = await store.summary(7);
+  assert.equal(summary.counts.page_checked, 1);
+  assert.equal(summary.counts.score_pending, 1);
+});
+
+test('local metrics reject unknown event types', async () => {
+  const store = createMetricsStore({ storageArea: memoryStorage() });
+  await assert.rejects(store.record('page_url'), /Unknown metric event/);
 });
