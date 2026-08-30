@@ -1,0 +1,8 @@
+{
+  "fixture_notice": "Synthetic episode-selection record; no real show or episode is represented.",
+  "selection_id": "selection-demo-01", "episode_id": "episode-synthetic-104", "canonical_url": "https://example.com/podcasts/synthetic-show/104",
+  "episode_title": "Synthetic Show 104: Growth, Rules, and Tradeoffs", "selected_at": "2026-08-30T18:00:00Z", "catalog_checked_at": "2026-08-30T17:55:00Z",
+  "latest_episode_id_at_check": "episode-synthetic-104", "selection_basis": "latest_at_snapshot", "transcript_status": "ready_permitted", "claim_density": "high",
+  "rationale": "Chosen as the latest catalog episode at the recorded snapshot, with a permitted transcript and enough checkable claims for the fixture workflow.",
+  "coverage_limitations": ["Latest means latest observed at the recorded catalog check, not latest forever.", "The transcript omits non-speech visual context and may underrepresent interruptions.", "Claim density is an editorial estimate and does not imply factual quality."]
+}
