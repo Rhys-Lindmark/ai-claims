@@ -1,0 +1,9 @@
+{
+  "fixture_notice": "Synthetic source-diversity audit; no real publisher, geography, or evidence base is represented.", "audit_id": "diversity-audit-01", "finding_id": "finding-01", "reviewed_by": "Fixture editor", "limitation_note": "Source variety can reveal concentration and blind spots; it does not independently establish accuracy or balance.",
+  "sources": [
+    { "source_id": "source-demo-01", "publisher_id": "publisher-alpha", "geography": "North region", "source_type": "primary_data", "independence_group": "public-system-a" },
+    { "source_id": "source-demo-02", "publisher_id": "publisher-alpha", "geography": "North region", "source_type": "official_document", "independence_group": "public-system-a" },
+    { "source_id": "source-demo-03", "publisher_id": "publisher-beta", "geography": "West region", "source_type": "peer_reviewed", "independence_group": "university-b" },
+    { "source_id": "source-demo-04", "publisher_id": "publisher-gamma", "geography": "National", "source_type": "reporting", "independence_group": "newsroom-c" }
+  ]
+}
