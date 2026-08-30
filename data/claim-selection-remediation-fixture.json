@@ -1,0 +1,33 @@
+{
+  "fixture_notice": "Synthetic calibration remediation records; no real method, editor, sample, or production result is represented.",
+  "records": [
+    {
+      "remediation_id": "remediation-low-confidence",
+      "trigger_batch_id": "calibration-batch-03",
+      "affected_stratum_ids": ["confidence-low"],
+      "root_cause_hypothesis": "The selection rule does not distinguish hedged factual assertions from speculative framing clearly enough.",
+      "method_change_id": "method-change-selection-07",
+      "resulting_methodology_version": "1.1.0",
+      "owner": "Fixture methods editor",
+      "due_at": "2026-09-05T23:59:59Z",
+      "re_review_sample_ids": ["audit-02", "audit-06", "audit-07", "audit-08"],
+      "required_evidence": ["Re-review log under both method versions", "Resolved editor rationales", "Fresh calibration batch at or above threshold"],
+      "state": "verified",
+      "verification": { "calibration_batch_id": "calibration-batch-04-low-confidence", "reviewed_records": 12, "agreements": 10, "required_threshold": 0.8, "unresolved_disagreements": 0, "evidence_links": ["https://example.com/fixtures/calibration-batch-04-low-confidence"], "verified_by": "Fixture methods lead", "verified_at": "2026-09-04T18:00:00Z" }
+    },
+    {
+      "remediation_id": "remediation-overlap",
+      "trigger_batch_id": "calibration-batch-03",
+      "affected_stratum_ids": ["speaker-unknown"],
+      "root_cause_hypothesis": "Editors apply different rules when an embedded premise spans overlapping speakers.",
+      "method_change_id": "method-change-selection-08",
+      "resulting_methodology_version": "1.1.0",
+      "owner": "Fixture transcript editor",
+      "due_at": "2026-09-07T23:59:59Z",
+      "re_review_sample_ids": ["audit-03", "audit-09", "audit-10"],
+      "required_evidence": ["Written overlap boundary rule", "Independent re-review by two editors", "Adjudication of every disagreement", "Fresh calibration batch at or above threshold"],
+      "state": "in_progress",
+      "verification": null
+    }
+  ]
+}

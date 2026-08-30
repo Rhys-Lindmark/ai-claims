@@ -7,6 +7,8 @@ import calibrationFixture from '../data/claim-selection-calibration-fixture.json
 import { claimSelectionCalibrationDecision, validateClaimSelectionCalibration } from '../lib/claim-selection-calibration.ts';
 import driftFixture from '../data/claim-selection-drift-fixture.json' with { type: 'json' };
 import { claimSelectionDriftDecision, validateClaimSelectionCalibrationBatches } from '../lib/claim-selection-drift.ts';
+import remediationFixture from '../data/claim-selection-remediation-fixture.json' with { type: 'json' };
+import { claimSelectionRemediationDecision, validateClaimSelectionRemediations } from '../lib/claim-selection-remediation.ts';
 
 assert.deepEqual(validateClaimSelectionAudit(fixture.samples), []);
 const summary = selectionAuditSummary(fixture.samples);
@@ -33,4 +35,8 @@ assert.equal(driftDecision.denominator_publication_paused, true);
 assert.equal(driftDecision.latest_agreement, 0.65);
 assert.equal(driftDecision.rolling_three_batch_agreement, 0.8);
 assert.ok(Math.abs(driftDecision.change_from_previous - (-0.2)) < Number.EPSILON * 4);
+assert.deepEqual(validateClaimSelectionRemediations(remediationFixture.records), []);
+const remediationDecision = claimSelectionRemediationDecision(remediationFixture.records);
+assert.equal(remediationDecision.denominator_publication_resumes, false);
+assert.deepEqual(remediationDecision.blockers, ['remediation-overlap is in progress.']);
 console.log('Claim-selection audit fixture passed.');
