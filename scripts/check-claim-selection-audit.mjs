@@ -9,6 +9,9 @@ import driftFixture from '../data/claim-selection-drift-fixture.json' with { typ
 import { claimSelectionDriftDecision, validateClaimSelectionCalibrationBatches } from '../lib/claim-selection-drift.ts';
 import remediationFixture from '../data/claim-selection-remediation-fixture.json' with { type: 'json' };
 import { claimSelectionRemediationDecision, validateClaimSelectionRemediations } from '../lib/claim-selection-remediation.ts';
+import historyFixture from '../data/analysis-history-fixture.json' with { type: 'json' };
+import resumptionFixture from '../data/publication-resumption-fixture.json' with { type: 'json' };
+import { publicationResumptionDecision } from '../lib/publication-resumption.ts';
 
 assert.deepEqual(validateClaimSelectionAudit(fixture.samples), []);
 const summary = selectionAuditSummary(fixture.samples);
@@ -39,4 +42,9 @@ assert.deepEqual(validateClaimSelectionRemediations(remediationFixture.records),
 const remediationDecision = claimSelectionRemediationDecision(remediationFixture.records);
 assert.equal(remediationDecision.denominator_publication_resumes, false);
 assert.deepEqual(remediationDecision.blockers, ['remediation-overlap is in progress.']);
+const resumptionDecision = publicationResumptionDecision(historyFixture.versions, resumptionFixture);
+assert.equal(resumptionDecision.can_resume_publication, true);
+assert.equal(resumptionDecision.previous_public_version_id, 'analysis-demo-v3');
+assert.equal(resumptionDecision.new_public_version_id, 'analysis-demo-v4');
+assert.equal(historyFixture.versions.at(-1).version_id, 'analysis-demo-v3');
 console.log('Claim-selection audit fixture passed.');

@@ -1,0 +1,37 @@
+{
+  "fixture_notice": "Synthetic publication-resumption decision; no real analysis, score, editor, method, or remediation is represented.",
+  "decision_id": "resumption-decision-01",
+  "analysis_id": "analysis-demo",
+  "paused_public_version_id": "analysis-demo-v3",
+  "pause_reason": "claim_selection_calibration_drift",
+  "previous_methodology_version": "1.0.0",
+  "resumed_methodology_version": "1.1.0",
+  "gate_snapshot": {
+    "drift_batch_id": "calibration-batch-04",
+    "observed_agreement": 0.85,
+    "required_threshold": 0.8,
+    "unresolved_disagreements": 0,
+    "calibration_set_ids": ["selection-calibration-demo-02"],
+    "remediation_ids": ["remediation-low-confidence", "remediation-overlap"],
+    "all_remediations_verified": true,
+    "publication_readiness_passed": true,
+    "evidence_digest": "sha256:8f38a0b5dc4219e7",
+    "captured_at": "2026-09-08T17:00:00Z",
+    "captured_by": "Fixture methods lead"
+  },
+  "proposed_version": {
+    "version_id": "analysis-demo-v4",
+    "analysis_id": "analysis-demo",
+    "version_number": 4,
+    "parent_version_id": "analysis-demo-v3",
+    "created_at": "2026-09-08T17:30:00Z",
+    "created_by": "Fixture publishing editor",
+    "review_state": "published",
+    "change_kinds": ["claim_split", "editorial_note"],
+    "change_summary": "Resumed publication under claim-selection method 1.1.0 after independent calibration and remediation verification.",
+    "changed_record_ids": ["resumption-decision-01", "method-change-selection-07", "method-change-selection-08", "calibration-batch-04"],
+    "supersedes_public_version": true
+  },
+  "approved_by": "Fixture publishing editor",
+  "approved_at": "2026-09-08T17:25:00Z"
+}
