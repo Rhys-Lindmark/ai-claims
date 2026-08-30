@@ -54,7 +54,7 @@ export function AnalysisLookup() {
             <p className="font-mono text-[9px] font-bold uppercase text-coral">Registry state</p>
             <h2 className="mt-4 text-4xl font-black leading-none">{entityKey ? 'NOT ANALYZED YET' : 'OPENED WITHOUT A PAGE'}</h2>
             <p className="mt-4 text-sm leading-relaxed text-ink/60">No reviewed public score is available for this entity. AI Claims will not substitute a guess or partial percentage.</p>
-            <a className="mt-6 inline-flex border-2 border-ink bg-acid px-4 py-3 font-mono text-[9px] font-bold uppercase shadow-[3px_3px_0_#1c1c1a]" href="https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.2">Get the extension</a>
+            <a className="mt-6 inline-flex border-2 border-ink bg-acid px-4 py-3 font-mono text-[9px] font-bold uppercase shadow-[3px_3px_0_#1c1c1a]" href="https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.3">Get the extension</a>
           </article>
         )}
       </section>

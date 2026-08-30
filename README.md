@@ -10,7 +10,7 @@ The current site contains synthetic fixtures that test the review machinery with
 
 ## Install the prototype
 
-Download the [`extension-v0.1.2` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.2), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. It contains synthetic registry data only; no real-world truth scores ship in this release.
+Download the [`extension-v0.1.3` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.1.3), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. It contains synthetic registry data only; no real-world truth scores ship in this release.
 
 ## Validate
 
