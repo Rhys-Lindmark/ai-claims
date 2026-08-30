@@ -1,0 +1,14 @@
+{
+  "fixture_notice": "Synthetic episode coverage counts; no real episode or review is represented.",
+  "coverage": {
+    "transcript_segments": 284,
+    "candidate_claims": 42,
+    "canonical_claims": 31,
+    "checkable_claims": 24,
+    "editor_reviewed_claims": 9,
+    "unresolved_claims": 2,
+    "transcript_duration_seconds": 5520,
+    "last_calculated_at": "2026-08-30T19:30:00Z"
+  }
+}
+
