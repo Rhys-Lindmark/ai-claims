@@ -37,18 +37,18 @@ function renderResult(state, identity, requestRecord = null) {
     result.innerHTML = `
       <p class="score-label">Reviewed truth score</p>
       <p class="score">${state.score}<span>/100</span></p>
-      <p class="meta">${state.reviewedClaims}/${state.eligibleClaims} eligible claims reviewed<br>Method ${state.methodologyVersion}<br>Reviewed ${state.lastReviewedAt}</p>
+      <p class="meta">${state.reviewedClaims}/${state.eligibleClaims} eligible claims reviewed<br>Version ${state.analysisVersionId}${state.resumedFromVersionId ? ` · resumed from ${state.resumedFromVersionId}` : ''}<br>Method ${state.methodologyVersion}<br>Reviewed ${state.lastReviewedAt}</p>
       <a class="request" href="${state.analysisUrl}" target="_blank" rel="noreferrer">Open evidence trail ↗</a>`;
     return;
   }
 
-  const heading = requestRecord ? `ANALYSIS ${requestRecord.state.replaceAll('_', ' ').toUpperCase()}` : state.state === 'not_analyzed' ? 'NOT ANALYZED YET' : 'SCORE PENDING';
+  const heading = requestRecord ? `ANALYSIS ${requestRecord.state.replaceAll('_', ' ').toUpperCase()}` : state.state === 'not_analyzed' ? 'NOT ANALYZED YET' : state.state === 'paused' ? 'SCORE PAUSED' : 'SCORE PENDING';
   const explanation = requestRecord ? `Request ${requestRecord.request_id} is stored for this canonical page. Duplicate visits reuse it. ${sourceNotice(identity.kind)}` : `${state.reason} AI Claims never invents a score from partial review. ${sourceNotice(identity.kind)}`;
   result.className = 'result pending';
   result.innerHTML = `
     <h3>${heading}</h3>
     <p>${explanation}</p>
-    ${requestRecord ? identity.kind === 'youtube' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Supply permitted transcript ↗</a>` : identity.kind === 'goodreads' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/book-intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Confirm book edition ↗</a>` : '' : '<button class="request" id="request-analysis">Request analysis</button>'}`;
+    ${state.state === 'paused' && state.analysisUrl ? `<a class="request" href="${state.analysisUrl}" target="_blank" rel="noreferrer">Open pause context ↗</a>` : requestRecord ? identity.kind === 'youtube' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Supply permitted transcript ↗</a>` : identity.kind === 'goodreads' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/book-intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Confirm book edition ↗</a>` : '' : '<button class="request" id="request-analysis">Request analysis</button>'}`;
 }
 
 async function refresh() {

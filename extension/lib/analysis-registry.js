@@ -1,6 +1,8 @@
 export function scoreState(analysis) {
   if (!analysis) return { state: 'not_analyzed', reason: 'No shared analysis exists for this page yet.' };
   if (analysis.status !== 'published') return { state: 'pending', reason: `Analysis is ${analysis.status.replaceAll('_', ' ')}.` };
+  if (analysis.publication_state === 'paused') return { state: 'paused', reason: `Score publication is paused: ${(analysis.paused_reason ?? 'editorial review').replaceAll('_', ' ')}.`, analysisVersionId: analysis.analysis_version_id, supersededVersionIds: analysis.superseded_version_ids ?? [], analysisUrl: analysis.analysis_url };
+  if (analysis.publication_state !== 'active') return { state: 'pending', reason: 'The current analysis version is not active.' };
 
   const checks = [
     [analysis.eligible_claims > 0, 'No eligible claims were defined.'],
@@ -21,6 +23,10 @@ export function scoreState(analysis) {
     methodologyVersion: analysis.methodology_version,
     analysisUrl: analysis.analysis_url,
     lastReviewedAt: analysis.last_reviewed_at,
+    publicationState: analysis.publication_state,
+    analysisVersionId: analysis.analysis_version_id,
+    supersededVersionIds: analysis.superseded_version_ids ?? [],
+    resumedFromVersionId: analysis.resumed_from_version_id ?? null,
   };
 }
 

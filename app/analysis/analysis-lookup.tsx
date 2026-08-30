@@ -14,7 +14,8 @@ export function AnalysisLookup() {
   }, []);
 
   const analysis = registry.analyses.find((entry) => entry.entity_key === entityKey) as Analysis | undefined;
-  const published = analysis?.status === 'published' && analysis.score_0_100 !== null;
+  const published = analysis?.status === 'published' && analysis.publication_state === 'active' && analysis.score_0_100 !== null;
+  const paused = analysis?.publication_state === 'paused';
 
   return (
     <main className="min-h-screen bg-paper text-ink">
@@ -46,15 +47,17 @@ export function AnalysisLookup() {
               <div className="bg-paper p-3"><dt className="text-ink/45">Unresolved</dt><dd className="mt-1">{analysis.unresolved_claims}</dd></div>
               <div className="bg-paper p-3"><dt className="text-ink/45">Method</dt><dd className="mt-1">{analysis.methodology_version}</dd></div>
               <div className="bg-paper p-3"><dt className="text-ink/45">Reviewed</dt><dd className="mt-1">{analysis.last_reviewed_at}</dd></div>
+              <div className="bg-paper p-3"><dt className="text-ink/45">Version</dt><dd className="mt-1">{analysis.analysis_version_id}</dd></div>
+              <div className="bg-paper p-3"><dt className="text-ink/45">Lineage</dt><dd className="mt-1">{analysis.superseded_version_ids.length} superseded</dd></div>
             </dl>
             <a className="mt-5 inline-flex items-center gap-2 font-mono text-[9px] font-bold uppercase text-cobalt underline" href="https://github.com/Rhys-Lindmark/ai-claims/blob/main/docs/TRUTH_SCORE_METHOD.md" target="_blank" rel="noreferrer">Read score method <ExternalLink className="h-3 w-3" /></a>
           </article>
         ) : (
           <article className="border-2 border-ink border-l-[12px] border-l-coral bg-white p-6 shadow-[7px_7px_0_#1c1c1a]">
             <p className="font-mono text-[9px] font-bold uppercase text-coral">Registry state</p>
-            <h2 className="mt-4 text-4xl font-black leading-none">{entityKey ? 'NOT ANALYZED YET' : 'OPENED WITHOUT A PAGE'}</h2>
-            <p className="mt-4 text-sm leading-relaxed text-ink/60">No reviewed public score is available for this entity. AI Claims will not substitute a guess or partial percentage.</p>
-            <a className="mt-6 inline-flex border-2 border-ink bg-acid px-4 py-3 font-mono text-[9px] font-bold uppercase shadow-[3px_3px_0_#1c1c1a]" href="https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.2">Get the extension</a>
+            <h2 className="mt-4 text-4xl font-black leading-none">{paused ? 'SCORE PAUSED' : entityKey ? 'NOT ANALYZED YET' : 'OPENED WITHOUT A PAGE'}</h2>
+            <p className="mt-4 text-sm leading-relaxed text-ink/60">{paused ? `Version ${analysis.analysis_version_id} is preserved, but its score is suppressed while ${analysis.paused_reason?.replaceAll('_', ' ')} is resolved.` : 'No reviewed public score is available for this entity. AI Claims will not substitute a guess or partial percentage.'}</p>
+            <a className="mt-6 inline-flex border-2 border-ink bg-acid px-4 py-3 font-mono text-[9px] font-bold uppercase shadow-[3px_3px_0_#1c1c1a]" href="https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.3">Get the extension</a>
           </article>
         )}
       </section>

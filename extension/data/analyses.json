@@ -1,10 +1,15 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "fixture_notice": "Synthetic records for extension development; not claims about real media.",
   "analyses": [
     {
       "entity_key": "web:example.invalid/reviewed-fixture",
       "status": "published",
+      "publication_state": "active",
+      "analysis_version_id": "analysis-demo-v4",
+      "superseded_version_ids": ["analysis-demo-v1", "analysis-demo-v2", "analysis-demo-v3"],
+      "resumed_from_version_id": "analysis-demo-v3",
+      "paused_reason": null,
       "score_0_100": 84,
       "eligible_claims": 25,
       "reviewed_claims": 25,
@@ -18,6 +23,11 @@
     {
       "entity_key": "web:example.invalid/incomplete-fixture",
       "status": "editor_review",
+      "publication_state": "draft",
+      "analysis_version_id": "analysis-incomplete-v1",
+      "superseded_version_ids": [],
+      "resumed_from_version_id": null,
+      "paused_reason": null,
       "score_0_100": null,
       "eligible_claims": 25,
       "reviewed_claims": 18,
@@ -27,6 +37,24 @@
       "methodology_version": "0.4.0-fixture",
       "last_reviewed_at": null,
       "analysis_url": null
+    },
+    {
+      "entity_key": "web:example.invalid/paused-fixture",
+      "status": "published",
+      "publication_state": "paused",
+      "analysis_version_id": "analysis-paused-v2",
+      "superseded_version_ids": ["analysis-paused-v1"],
+      "resumed_from_version_id": null,
+      "paused_reason": "claim_selection_calibration_drift",
+      "score_0_100": 91,
+      "eligible_claims": 20,
+      "reviewed_claims": 20,
+      "unresolved_claims": 0,
+      "publication_gates_passed": true,
+      "provenance_complete": true,
+      "methodology_version": "1.0.0-fixture",
+      "last_reviewed_at": "2026-08-30",
+      "analysis_url": "https://ai.rhyslindmark.com/claims/analysis?entity_key=web%3Aexample.invalid%2Fpaused-fixture"
     }
   ]
 }

@@ -6,6 +6,7 @@ export function resolveAnalysisEnvelope(entityKey: string) {
   const analysis = registry.analyses.find((entry) => entry.entity_key === entityKey) ?? null;
   return {
     contract_version: ANALYSIS_RESOLVER_CONTRACT,
+    analysis_schema_version: registry.schema_version,
     entity_key: entityKey,
     analysis,
   };

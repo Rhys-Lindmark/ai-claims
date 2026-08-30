@@ -42,6 +42,16 @@ test('publishes only complete, reviewed scores', () => {
   assert.equal(state.state, 'published');
   assert.equal(state.score, 84);
   assert.equal(state.reviewedClaims, 25);
+  assert.equal(state.analysisVersionId, 'analysis-demo-v4');
+  assert.equal(state.resumedFromVersionId, 'analysis-demo-v3');
+});
+
+test('paused analysis versions suppress otherwise complete scores', () => {
+  const state = resolveAnalysis(registry, 'web:example.invalid/paused-fixture');
+  assert.equal(state.state, 'paused');
+  assert.equal(state.analysisVersionId, 'analysis-paused-v2');
+  assert.equal(Object.hasOwn(state, 'score'), false);
+  assert.match(state.reason, /calibration drift/);
 });
 
 test('suppresses partial or malformed scores', () => {
