@@ -11,6 +11,11 @@ assert.match(currentResponse.headers.get('cache-control') ?? '', /stale-while-re
 const current = await currentResponse.json();
 assert.equal(current.contract_version, '1.0.0');
 assert.equal(current.current_version, current.release.extension_version);
+assert.deepEqual(current.available_versions.map((entry) => entry.version), ['0.2.17', '0.2.16']);
+for (const entry of current.available_versions) {
+  assert.equal(entry.immutable_url, `${currentUrl}/${entry.version}`);
+  assert.match(entry.package_digest, /^[0-9a-f]{64}$/);
+}
 assert.equal(current.release.privacy.installation_telemetry_collected, false);
 assert.deepEqual(current.release.privacy.retained_installation_fields, []);
 const expectedEtag = `"sha256-${current.release.package.integrity.digest_hex}"`;

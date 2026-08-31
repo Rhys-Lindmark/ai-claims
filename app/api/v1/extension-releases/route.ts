@@ -1,4 +1,5 @@
 import release from '@/releases/extension-v0.2.17.json';
+import previousRelease from '@/releases/extension-v0.2.16.json';
 import { currentExtensionReleaseEnvelope, extensionReleaseEtag } from '@/extension/lib/extension-release-api.js';
 
 const baseHeaders = { 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=60, stale-while-revalidate=300', 'content-type': 'application/json; charset=utf-8' };
@@ -9,7 +10,10 @@ export async function GET(request: Request) {
   const etag = extensionReleaseEtag(release);
   const headers = { ...baseHeaders, etag };
   if (request.headers.get('if-none-match') === etag) return new Response(null, { status: 304, headers });
-  return Response.json(currentExtensionReleaseEnvelope(release, immutableUrl), { status: 200, headers });
+  const envelope = currentExtensionReleaseEnvelope(release, immutableUrl);
+  const versionBaseUrl = immutableUrl.slice(0, immutableUrl.lastIndexOf('/'));
+  const availableVersions = [release, previousRelease].map((entry) => ({ version: entry.extension_version, immutable_url: `${versionBaseUrl}/${entry.extension_version}`, package_digest: entry.package.integrity.digest_hex }));
+  return Response.json({ ...envelope, available_versions: availableVersions }, { status: 200, headers });
 }
 
 export async function OPTIONS() {
