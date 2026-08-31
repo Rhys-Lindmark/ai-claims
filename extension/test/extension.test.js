@@ -20,6 +20,8 @@ import syntheticEpisode from '../data/synthetic-youtube-fixture.json' with { typ
 import { syntheticEpisodeScore, validateSyntheticEpisodeFixture } from '../lib/episode-fixture.js';
 import syntheticBook from '../data/synthetic-goodreads-fixture.json' with { type: 'json' };
 import { syntheticBookScore, validateSyntheticBookFixture } from '../lib/book-fixture.js';
+import syntheticWeb from '../data/synthetic-web-fixture.json' with { type: 'json' };
+import { syntheticWebScore, validateSyntheticWebFixture } from '../lib/web-fixture.js';
 import { probeResolverUrl } from '../lib/resolver-probe.js';
 import architecture from '../data/architecture.json' with { type: 'json' };
 import compatibility from '../data/compatibility.json' with { type: 'json' };
@@ -88,6 +90,23 @@ test('synthetic book packet is internally linked and score-reproducible', () => 
   assert.equal(syntheticBookScore(syntheticBook), 75);
   assert.match(syntheticBook.fixture_notice, /no real book/i);
   assert.equal(syntheticBook.claims.length, 4);
+});
+
+test('synthetic generic page resolves through the reviewed gate to its web route', async () => {
+  const identity = identifyPage(`${syntheticWeb.canonical_url}?utm_source=fixture`);
+  const analysis = registry.analyses.find((entry) => entry.entity_key === syntheticWeb.entity_key);
+  const result = await probeResolverUrl(`${syntheticWeb.canonical_url}?utm_source=fixture`, { fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '1.0.0', entity_key: syntheticWeb.entity_key, analysis }) }) });
+  assert.equal(identity.entityKey, syntheticWeb.entity_key);
+  assert.equal(result.state, 'reviewed');
+  assert.equal(result.score, 50);
+  assert.match(result.analysisUrl, /\/claims\/web\?entity_key=web%3Aexample.invalid%2Fai-claims-synthetic-page$/);
+});
+
+test('synthetic web packet is internally linked and score-reproducible', () => {
+  assert.deepEqual(validateSyntheticWebFixture(syntheticWeb), []);
+  assert.equal(syntheticWebScore(syntheticWeb), 50);
+  assert.match(syntheticWeb.fixture_notice, /no real site/i);
+  assert.equal(syntheticWeb.claims.length, 4);
 });
 
 test('resolver probe publishes only complete reviewed YouTube analyses', async () => {

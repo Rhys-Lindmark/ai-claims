@@ -1,0 +1,24 @@
+{
+  "fixture_notice": "Entirely synthetic closed-world webpage packet hosted at the reserved .invalid domain; no real site, organization, or world claim is represented.",
+  "entity_key": "web:example.invalid/ai-claims-synthetic-page",
+  "canonical_url": "https://example.invalid/ai-claims-synthetic-page",
+  "title": "Synthetic Pelago Observatory Briefing",
+  "passages": [
+    { "passage_id": "web-passage-01", "selector": "main > section:nth-of-type(1)", "text": "Pelago Observatory operates four fictional telescopes." },
+    { "passage_id": "web-passage-02", "selector": "main > section:nth-of-type(2)", "text": "Each telescope records exactly ten signals per cycle." },
+    { "passage_id": "web-passage-03", "selector": "main > section:nth-of-type(3)", "text": "The archive doubled during the latest fictional cycle." },
+    { "passage_id": "web-passage-04", "selector": "main > section:nth-of-type(4)", "text": "No signal has ever been discarded." }
+  ],
+  "evidence_records": [
+    { "evidence_id": "web-evidence-01", "title": "Synthetic equipment register", "finding": "Lists four telescopes." },
+    { "evidence_id": "web-evidence-02", "title": "Synthetic cycle log", "finding": "Shows counts ranging from eight to ten signals." },
+    { "evidence_id": "web-evidence-03", "title": "Synthetic archive ledger", "finding": "Shows material growth, but not a precise doubling." },
+    { "evidence_id": "web-evidence-04", "title": "Synthetic retention log", "finding": "Records three discarded test signals." }
+  ],
+  "claims": [
+    { "claim_id": "web-claim-01", "passage_id": "web-passage-01", "claim_type": "quantitative", "evidence_ids": ["web-evidence-01"], "verdict": "accurate", "truth_credit": 1 },
+    { "claim_id": "web-claim-02", "passage_id": "web-passage-02", "claim_type": "quantitative", "evidence_ids": ["web-evidence-02"], "verdict": "mixed", "truth_credit": 0.5 },
+    { "claim_id": "web-claim-03", "passage_id": "web-passage-03", "claim_type": "quantitative", "evidence_ids": ["web-evidence-03"], "verdict": "mixed", "truth_credit": 0.5 },
+    { "claim_id": "web-claim-04", "passage_id": "web-passage-04", "claim_type": "factual", "evidence_ids": ["web-evidence-04"], "verdict": "inaccurate", "truth_credit": 0 }
+  ]
+}

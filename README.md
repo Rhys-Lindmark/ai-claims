@@ -22,6 +22,8 @@ Open the [synthetic YouTube pipeline](https://ai.rhyslindmark.com/claims/episode
 
 Open the [synthetic Goodreads pipeline](https://ai.rhyslindmark.com/claims/book?entity_key=goodreads%3A999999999999), or verify its deployed resolver-to-route contract with `npm run test:deployed-goodreads`.
 
+Open the [synthetic generic-web pipeline](https://ai.rhyslindmark.com/claims/web?entity_key=web%3Aexample.invalid%2Fai-claims-synthetic-page), or verify its deployed resolver-to-route contract with `npm run test:deployed-web`.
+
 ## Validate
 
 ```bash

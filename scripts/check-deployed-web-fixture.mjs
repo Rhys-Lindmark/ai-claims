@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';
+
+const claimsBase = (process.argv[2] ?? 'https://ai.rhyslindmark.com/claims').replace(/\/$/, '');
+const entityKey = 'web:example.invalid/ai-claims-synthetic-page';
+const resolverUrl = `${claimsBase}/api/v1/analyses/resolve?entity_key=${encodeURIComponent(entityKey)}`;
+const resolverResponse = await fetch(resolverUrl, { headers: { 'x-ai-claims-correction-feed-accept': '1.0.0, 1.1.0' } });
+assert.equal(resolverResponse.status, 200, `Resolver returned ${resolverResponse.status}.`);
+const envelope = await resolverResponse.json();
+assert.equal(envelope.contract_version, '1.0.0');
+assert.equal(envelope.entity_key, entityKey);
+assert.equal(envelope.analysis?.publication_state, 'active');
+assert.equal(envelope.analysis?.score_0_100, 50);
+assert.equal(envelope.analysis?.reviewed_claims, envelope.analysis?.eligible_claims);
+assert.equal(envelope.analysis?.unresolved_claims, 0);
+assert.equal(envelope.analysis?.analysis_url, `${claimsBase}/web?entity_key=${encodeURIComponent(entityKey)}`);
+const webResponse = await fetch(envelope.analysis.analysis_url);
+assert.equal(webResponse.status, 200, `Web route returned ${webResponse.status}.`);
+const webHtml = await webResponse.text();
+assert.match(webHtml, /Synthetic end-to-end fixture/);
+assert.match(webHtml, /synthetic end-to-end generic webpage identity, publication-gate, and passage-evidence fixture/i);
+console.log(`Deployed web fixture passed: ${resolverUrl} -> ${envelope.analysis.analysis_url}`);

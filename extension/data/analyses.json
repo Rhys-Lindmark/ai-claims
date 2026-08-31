@@ -41,6 +41,25 @@
       "analysis_url": "https://ai.rhyslindmark.com/claims/book?entity_key=goodreads%3A999999999999"
     },
     {
+      "entity_key": "web:example.invalid/ai-claims-synthetic-page",
+      "status": "published",
+      "publication_state": "active",
+      "analysis_version_id": "web-synthetic-v1",
+      "superseded_version_ids": [],
+      "version_history": [],
+      "resumed_from_version_id": null,
+      "paused_reason": null,
+      "score_0_100": 50,
+      "eligible_claims": 4,
+      "reviewed_claims": 4,
+      "unresolved_claims": 0,
+      "publication_gates_passed": true,
+      "provenance_complete": true,
+      "methodology_version": "equal-claim-truth-credit@0.1.0-fixture",
+      "last_reviewed_at": "2026-08-30",
+      "analysis_url": "https://ai.rhyslindmark.com/claims/web?entity_key=web%3Aexample.invalid%2Fai-claims-synthetic-page"
+    },
+    {
       "entity_key": "web:example.invalid/reviewed-fixture",
       "status": "published",
       "publication_state": "active",
