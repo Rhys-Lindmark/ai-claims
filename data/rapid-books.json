@@ -839,6 +839,270 @@
         }
       ],
       "other_claims": ["Humboldt warned that colonial agriculture and deforestation could alter climate.", "His scientific diagrams changed how complex environmental relationships were communicated."]
+    },
+    {
+      "slug": "the-code-breaker",
+      "entity_key": "web:simonandschuster.com/books/The-Code-Breaker/Walter-Isaacson/9781982115876",
+      "title": "The Code Breaker",
+      "subtitle": "Jennifer Doudna, Gene Editing, and the Future of the Human Race",
+      "author": "Walter Isaacson",
+      "year": 2021,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "Its CRISPR science and ethical stakes are strong; the Doudna-centered biography is useful narrative compression, not a complete allocation of credit across the international research network.",
+      "claims": [
+        {
+          "claim": "CRISPR began as a microbial defense system that could be re-engineered into a programmable tool for cutting DNA.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Bacteria and archaea use CRISPR-associated systems to retain and target sequences from invading genetic material. The 2012 work showed that Cas9 could be guided by designed RNA to cleave chosen DNA sequences, establishing the core programmable mechanism.",
+          "sources": [
+            { "title": "A programmable dual-RNA-guided DNA endonuclease", "url": "https://doi.org/10.1126/science.1225829" },
+            { "title": "Jennifer Doudna Nobel lecture", "url": "https://www.nobelprize.org/uploads/2024/03/doudna-lecture.pdf" }
+          ]
+        },
+        {
+          "claim": "CRISPR-Cas systems made genome editing substantially easier and opened credible routes to treating genetic disease.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Programmable targeting simplified experimental genome changes across organisms and has led to approved or clinically advanced therapies, especially for blood disorders. Delivery, off-target effects, immune responses, cost, and the biology of complex diseases still constrain its reach.",
+          "sources": [
+            { "title": "NHGRI: Genome Editing", "url": "https://www.genome.gov/dna-day/15-ways/genome-editing" },
+            { "title": "Jennifer Doudna Nobel lecture", "url": "https://www.nobelprize.org/uploads/2024/03/doudna-lecture.pdf" }
+          ]
+        },
+        {
+          "claim": "Jennifer Doudna was the central code breaker whose discovery created the CRISPR gene-editing revolution.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Doudna and Emmanuelle Charpentier made a pivotal, Nobel-recognized contribution by demonstrating programmable Cas9 cleavage. CRISPR's path also depended on microbial discovery, spacer-function work, Cas biology, adaptation to eukaryotic cells, engineering, and parallel teams, so singular credit misstates convergence.",
+          "sources": [
+            { "title": "Nobel Prize in Chemistry 2020", "url": "https://www.nobelprize.org/prizes/chemistry/2020/press-release/" },
+            { "title": "Review: The Code Breaker", "url": "https://www.theguardian.com/books/2021/mar/11/the-code-breaker-by-walter-isaacson-review-a-science-page-turner" }
+          ]
+        }
+      ],
+      "other_claims": ["Heritable human editing raises consent and inequality problems distinct from somatic therapy.", "Patent competition shaped how CRISPR's history and credit were narrated."]
+    },
+    {
+      "slug": "hidden-figures",
+      "entity_key": "web:margotleeshetterly.com/hidden-figures-nasas-african-american-computers",
+      "title": "Hidden Figures",
+      "subtitle": "The American Dream and the Untold Story of the Black Women Mathematicians Who Helped Win the Space Race",
+      "author": "Margot Lee Shetterly",
+      "year": 2016,
+      "score": 100,
+      "confidence": "high",
+      "summary": "NASA's own records strongly corroborate the book's core story: Black women performed essential technical work, did so within formal segregation and gender barriers, and contributed directly to landmark flight programs.",
+      "claims": [
+        {
+          "claim": "Black women mathematicians performed essential aeronautics and spaceflight calculations for NACA and NASA.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Langley recruited African American women as human computers during World War II, and their work converted experimental data into engineering results across decades. NASA records identify long careers and specific contributions by Dorothy Vaughan, Katherine Johnson, Mary Jackson, and colleagues.",
+          "sources": [
+            { "title": "NASA: When the Computer Wore a Skirt", "url": "https://www.nasa.gov/history/langleys-computers-1935-1970/" },
+            { "title": "NASA: Dorothy Vaughan", "url": "https://www.nasa.gov/people/dorothy-vaughan/" }
+          ]
+        },
+        {
+          "claim": "These women worked through formal racial segregation and persistent gender barriers that restricted recognition and advancement.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "NASA histories document a separate West Area Computing unit, segregated dining and bathrooms, and barriers to professional roles, alongside gendered pools of computing labor. Individual careers varied, but the institutional constraints described by the book are directly recorded.",
+          "sources": [
+            { "title": "NASA: Women at Langley", "url": "https://www.nasa.gov/general/from-computers-to-leaders-women-at-nasa-langley/" },
+            { "title": "NASA: When the Computer Wore a Skirt", "url": "https://www.nasa.gov/history/langleys-computers-1935-1970/" }
+          ]
+        },
+        {
+          "claim": "Katherine Johnson's trajectory and control calculations materially supported Projects Mercury and Apollo.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "NASA credits Johnson with spacecraft trajectory and control calculations, orbital work for John Glenn's Mercury flight, and contributions to Apollo. The missions were large team efforts, but the book's claim of meaningful—not solitary—technical contribution is well supported.",
+          "sources": [
+            { "title": "NASA: Katherine G. Johnson", "url": "https://www.nasa.gov/people-of-nasa/katherine-g-johnson/" },
+            { "title": "NASA: Katherine Johnson, a lifetime of STEM", "url": "https://www.nasa.gov/learning-resources/katherine-johnson-a-lifetime-of-stem/" }
+          ]
+        }
+      ],
+      "other_claims": ["Dorothy Vaughan became NACA's first Black supervisor and adapted to electronic computing.", "Mary Jackson crossed institutional barriers to become an engineer."]
+    },
+    {
+      "slug": "the-wright-brothers",
+      "entity_key": "web:davidmccullough.com/the-wright-brothers",
+      "title": "The Wright Brothers",
+      "subtitle": "The story of Wilbur and Orville Wright",
+      "author": "David McCullough",
+      "year": 2015,
+      "score": 100,
+      "confidence": "high",
+      "summary": "The book's central invention story is unusually secure: the 1903 flights, three-axis control, and iterative glider and wind-tunnel program are all well preserved in technical records and artifacts.",
+      "claims": [
+        {
+          "claim": "Wilbur and Orville Wright achieved the first sustained, controlled, powered flight by a piloted heavier-than-air aircraft in December 1903.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Contemporary photographs, witnesses, correspondence, and the surviving Flyer document four flights at Kitty Hawk on December 17, 1903. Earlier experimenters achieved important glides or powered hops, but the Wright flights combined power, a pilot, sustained motion, and control.",
+          "sources": [
+            { "title": "Smithsonian National Air and Space Museum: 1903 Wright Flyer", "url": "https://airandspace.si.edu/collection-objects/1903-wright-flyer/nasm_A19610048000" },
+            { "title": "NASA: 120 Years Ago, First Powered Flight", "url": "https://www.nasa.gov/history/120-years-ago-the-first-powered-flight-at-kitty-hawk/" }
+          ]
+        },
+        {
+          "claim": "Their decisive conceptual breakthrough was a practical three-axis control system, not merely adding an engine to a glider.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Wing warping controlled roll, a movable rudder coordinated yaw, and the forward elevator controlled pitch. Smithsonian and NASA technical histories identify controllability and equilibrium as the Wrights' central focus and a key distinction from competing designs.",
+          "sources": [
+            { "title": "Smithsonian: Researching the Wright Way", "url": "https://airandspace.si.edu/explore/stories/researching-wright-way" },
+            { "title": "NASA: Learning to Fly", "url": "https://www.nasa.gov/pdf/58225main_Wright.Brothers_508.pdf" }
+          ]
+        },
+        {
+          "claim": "Systematic glider testing and a homemade wind tunnel let the brothers correct bad aerodynamic data and converge on a working design.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "After disappointing 1900–1901 gliders, the brothers tested many wing shapes and measured lift and drag with custom balances. The resulting data improved the 1902 glider, while repeated piloting exposed control problems before power was added in 1903.",
+          "sources": [
+            { "title": "NASA: Wright 1901 Wind Tunnel", "url": "https://www.grc.nasa.gov/WWW/K-12/airplane/wrights/tunnel.html" },
+            { "title": "Smithsonian: 1903 Wright Flyer", "url": "https://airandspace.si.edu/collection-objects/1903-wright-flyer/nasm_A19610048000" }
+          ]
+        }
+      ],
+      "other_claims": ["Their bicycle-shop experience contributed practical skills and a culture of iterative testing.", "Patent conflict later consumed time and damaged relationships within early aviation."]
+    },
+    {
+      "slug": "the-radium-girls",
+      "entity_key": "web:katemooreauthor.com/the-radium-girls",
+      "title": "The Radium Girls",
+      "subtitle": "The Dark Story of America's Shining Women",
+      "author": "Kate Moore",
+      "year": 2016,
+      "score": 83,
+      "confidence": "medium",
+      "summary": "The poisoning and legal struggle are firmly documented. The women clearly advanced occupational-disease recognition, though popular retellings overstate a direct line from their cases to every later federal safety reform.",
+      "claims": [
+        {
+          "claim": "Young dial painters ingested radium while shaping paintbrushes with their lips, causing severe occupational radiation poisoning.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Historical medical literature identifies dial painters among the first industrial radiation-poisoning victims and links ingestion of luminous paint to anemia, bone injury, necrosis, and cancers. Internal exposure concentrated radium in bone and persisted long after employment.",
+          "sources": [
+            { "title": "Physicians, reformers and occupational disease: radium poisoning", "url": "https://pubmed.ncbi.nlm.nih.gov/3321721/" },
+            { "title": "History: Radium Girls and workplace safety", "url": "https://www.history.com/articles/radium-girls-workplace-safety" }
+          ]
+        },
+        {
+          "claim": "The employers minimized or disputed the danger while affected workers struggled to obtain medical and legal recognition.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Company reassurances, contested diagnoses, delayed claims, and litigation are documented across New Jersey and Illinois. Knowledge and conduct differed by firm and year, so one coordinated conspiracy is too simple, but the broad asymmetry of information and resistance is real.",
+          "sources": [
+            { "title": "Physicians, reformers and occupational disease: radium poisoning", "url": "https://pubmed.ncbi.nlm.nih.gov/3321721/" },
+            { "title": "History: Radium Girls and workplace safety", "url": "https://www.history.com/articles/radium-girls-workplace-safety" }
+          ]
+        },
+        {
+          "claim": "The women's lawsuits helped establish occupational disease as compensable harm and materially advanced workplace-safety reform.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The cases generated publicity, settlements and judgments, strengthened recognition of slow occupational injury, and accompanied state occupational-disease reforms. OSHA arrived decades later through many movements and disasters, so portraying these suits as its direct singular cause overstates the chain.",
+          "sources": [
+            { "title": "History: Radium Girls and workplace safety", "url": "https://www.history.com/articles/radium-girls-workplace-safety" },
+            { "title": "Physicians, reformers and occupational disease: radium poisoning", "url": "https://pubmed.ncbi.nlm.nih.gov/3321721/" }
+          ]
+        }
+      ],
+      "other_claims": ["Gender and class made workers' testimony easier for companies to dismiss.", "Radium's medical reputation delayed public acceptance of low-dose industrial harm."]
+    },
+    {
+      "slug": "the-map-that-changed-the-world",
+      "entity_key": "web:simonwinchester.com/books/the-map-that-changed-the-world",
+      "title": "The Map That Changed the World",
+      "subtitle": "William Smith and the Birth of Modern Geology",
+      "author": "Simon Winchester",
+      "year": 2001,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "Smith's 1815 map and fossil succession were landmark achievements. The map changed geology, but modern stratigraphy emerged from a wider European network than the book's isolated-genius subtitle implies.",
+      "claims": [
+        {
+          "claim": "William Smith's 1815 map was the first detailed geological map covering most of a country.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The surviving map, publication records, and institutional histories establish its 1815 issue and unprecedented national scale and stratigraphic detail. Earlier local and mineral maps existed, but Smith integrated formations across England, Wales, and part of Scotland.",
+          "sources": [
+            { "title": "Geological Society: A Delineation of the Strata", "url": "https://www.geolsoc.org.uk/about-us/history/visiting-the-william-smith-map/a-delineation-of-the-strata-of-england-and-wales-with-part-of-scotland/" },
+            { "title": "Natural History Museum: Britain's first geological map", "url": "https://www.nhm.ac.uk/discover/first-geological-map-of-britain.html" }
+          ]
+        },
+        {
+          "claim": "Smith mapped strata by recognizing that characteristic fossil assemblages recur in a predictable vertical sequence.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Smith used fossils to identify and correlate rock layers across distance, combining superposition with faunal succession. The method is visible in the map and associated collections and became foundational to relative dating and the geologic timescale.",
+          "sources": [
+            { "title": "Geological Society: William Smith's 1815 map", "url": "https://www.geolsoc.org.uk/about-us/history/visiting-the-william-smith-map/a-delineation-of-the-strata-of-england-and-wales-with-part-of-scotland/" },
+            { "title": "GSA Today: digital analysis of the 1815 map", "url": "https://www.geosociety.org/gsa-today/july-2016/the-development-and-evolution-of-the-william-smith-1815-geological-map-from-a" }
+          ]
+        },
+        {
+          "claim": "Smith single-handedly founded modern geology, only to have gentleman geologists steal his map and suppress recognition.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Smith suffered financial failure, debtors' prison, delayed recognition, and direct competition from Greenough's map. Yet he had influential supporters, and contemporaries including Cuvier, Brongniart, surveyors, collectors, and Geological Society members independently developed stratigraphic practices.",
+          "sources": [
+            { "title": "NASA Earth Observatory: William Smith", "url": "https://science.nasa.gov/earth/earth-observatory/william-smith/" },
+            { "title": "Geological Society: Publishing maps, a cautionary tale", "url": "https://blog.geolsoc.org.uk/2013/03/04/publishing-maps-a-cautionary-tale/" }
+          ]
+        }
+      ],
+      "other_claims": ["Canal and coal work gave Smith an unusually broad view of English strata.", "The map helped make underground resources and engineering risks legible."]
+    },
+    {
+      "slug": "the-man-who-knew-infinity",
+      "entity_key": "web:robertkanigel.com/the-man-who-knew-infinity",
+      "title": "The Man Who Knew Infinity",
+      "subtitle": "A Life of the Genius Ramanujan",
+      "author": "Robert Kanigel",
+      "year": 1991,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "Ramanujan's originality and transformative collaboration with Hardy are exceptionally well documented. The medical and cultural tragedy is real, but the exact cause of his death and simple England-made-him-ill narrative remain uncertain.",
+      "claims": [
+        {
+          "claim": "Srinivasa Ramanujan developed highly original, important mathematics largely outside formal elite training before Cambridge recognized him.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Ramanujan published in India before contacting Hardy, and his 1913 letter contained a large body of striking results. His later election certificate and papers document major work in partitions, modular forms, continued fractions, number theory, and asymptotic analysis.",
+          "sources": [
+            { "title": "Royal Society: Revisiting Ramanujan", "url": "https://royalsociety.org/blog/2018/10/revisiting-ramanujan/" },
+            { "title": "Ramanujan's Royal Society election certificate", "url": "https://catalogues.royalsociety.org/CalmView/Record.aspx?id=EC%2F1918%2F18&src=CalmView.Catalog" }
+          ]
+        },
+        {
+          "claim": "G. H. Hardy recognized Ramanujan's ability and their Cambridge collaboration produced lasting results in number theory.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Hardy's response led to Ramanujan's move to Cambridge, and their joint work includes the partition asymptotic, circle method, prime-factor distribution, and modular-function research. Archival papers and a century of subsequent research confirm lasting mathematical influence.",
+          "sources": [
+            { "title": "Royal Society: Revisiting Ramanujan", "url": "https://royalsociety.org/blog/2018/10/revisiting-ramanujan/" },
+            { "title": "Living with Ramanujan for 40 years", "url": "https://doi.org/10.1098/rsta.2018.0437" }
+          ]
+        },
+        {
+          "claim": "Wartime England, racism, isolation, cold, and a vegetarian diet caused the tuberculosis that killed Ramanujan.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Ramanujan suffered isolation, dietary difficulty, wartime shortages, and serious illness in England, all of which may have worsened his condition. Tuberculosis was one diagnosis, but a later medical reconstruction argues that relapsing hepatic amoebiasis better fits the records; causal certainty is impossible.",
+          "sources": [
+            { "title": "Living with Ramanujan for 40 years", "url": "https://doi.org/10.1098/rsta.2018.0437" },
+            { "title": "The Man Who Knew Infinity: Royal Society history", "url": "https://royalsociety.org/blog/2016/04/the-man-who-knew-infinity-the-story-of-srinivasa-ramanujan-frs/" }
+          ]
+        }
+      ],
+      "other_claims": ["Ramanujan's intuition and Hardy's proof culture sometimes complemented and sometimes frustrated each other.", "Later work extracted major mathematics from Ramanujan's unpublished notebooks."]
     }
   ]
 }
