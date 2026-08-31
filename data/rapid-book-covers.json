@@ -1675,6 +1675,122 @@
       "source_authors": [
         "Joe Studwell"
       ]
+    },
+    {
+      "slug": "thinking-fast-and-slow",
+      "match_state": "exact_title_author",
+      "cover_id": 13290711,
+      "cover_url": "https://covers.openlibrary.org/b/id/13290711-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15992072W",
+      "source_title": "Thinking, fast and slow",
+      "source_authors": [
+        "Daniel Kahneman",
+        "Daniel Kahneman"
+      ]
+    },
+    {
+      "slug": "nudge",
+      "match_state": "exact_title_author",
+      "cover_id": 6402116,
+      "cover_url": "https://covers.openlibrary.org/b/id/6402116-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3936258W",
+      "source_title": "Nudge",
+      "source_authors": [
+        "Richard H. Thaler",
+        "Cass R. Sunstein"
+      ]
+    },
+    {
+      "slug": "predictably-irrational",
+      "match_state": "exact_title_author",
+      "cover_id": 2314080,
+      "cover_url": "https://covers.openlibrary.org/b/id/2314080-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL9302660W",
+      "source_title": "Predictably Irrational",
+      "source_authors": [
+        "Dan Ariely"
+      ]
+    },
+    {
+      "slug": "the-blank-slate",
+      "match_state": "exact_title_author",
+      "cover_id": 100207,
+      "cover_url": "https://covers.openlibrary.org/b/id/100207-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL477826W",
+      "source_title": "The Blank Slate",
+      "source_authors": [
+        "Steven Pinker",
+        "Victor Bevine",
+        "Roc Filella Escolà",
+        "ʻImanuʾel Loṭem"
+      ]
+    },
+    {
+      "slug": "the-righteous-mind",
+      "match_state": "exact_title_author",
+      "cover_id": 7256782,
+      "cover_url": "https://covers.openlibrary.org/b/id/7256782-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16568840W",
+      "source_title": "The Righteous Mind",
+      "source_authors": [
+        "Jonathan Haidt"
+      ]
+    },
+    {
+      "slug": "outliers",
+      "match_state": "exact_title_author",
+      "cover_id": 10021591,
+      "cover_url": "https://covers.openlibrary.org/b/id/10021591-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL5749847W",
+      "source_title": "Outliers",
+      "source_authors": [
+        "Malcolm Gladwell"
+      ]
+    },
+    {
+      "slug": "grit",
+      "match_state": "exact_title_author",
+      "cover_id": 7438753,
+      "cover_url": "https://covers.openlibrary.org/b/id/7438753-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17361140W",
+      "source_title": "Grit",
+      "source_authors": [
+        "Angela Duckworth"
+      ]
+    },
+    {
+      "slug": "quiet",
+      "match_state": "exact_title_author",
+      "cover_id": 7079753,
+      "cover_url": "https://covers.openlibrary.org/b/id/7079753-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16484595W",
+      "source_title": "Quiet",
+      "source_authors": [
+        "Susan Cain"
+      ]
+    },
+    {
+      "slug": "range",
+      "match_state": "exact_title_author",
+      "cover_id": 10101241,
+      "cover_url": "https://covers.openlibrary.org/b/id/10101241-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20803380W",
+      "source_title": "Range",
+      "source_authors": [
+        "David Epstein"
+      ]
+    },
+    {
+      "slug": "the-coddling-of-the-american-mind",
+      "match_state": "exact_title_author",
+      "cover_id": 10138103,
+      "cover_url": "https://covers.openlibrary.org/b/id/10138103-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19664112W",
+      "source_title": "The Coddling of the American Mind",
+      "source_authors": [
+        "Greg Lukianoff",
+        "Jonathan Haidt"
+      ]
     }
   ]
 }
