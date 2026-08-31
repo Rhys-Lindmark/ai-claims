@@ -55,8 +55,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": ["ggs-evidence-03a", "ggs-evidence-03b", "ggs-evidence-03c", "ggs-evidence-03d", "ggs-evidence-03e", "ggs-evidence-03f", "ggs-evidence-03g"],
-      "source_ids": ["ggs-source-02", "ggs-source-13", "ggs-source-14", "ggs-source-15", "ggs-source-16", "ggs-source-17", "ggs-source-18", "ggs-source-19"]
+      "evidence_record_ids": ["ggs-evidence-03a", "ggs-evidence-03b", "ggs-evidence-03c", "ggs-evidence-03d", "ggs-evidence-03e", "ggs-evidence-03f", "ggs-evidence-03g", "ggs-evidence-03h", "ggs-evidence-03i", "ggs-evidence-03j"],
+      "source_ids": ["ggs-source-02", "ggs-source-13", "ggs-source-14", "ggs-source-15", "ggs-source-16", "ggs-source-17", "ggs-source-18", "ggs-source-19", "ggs-source-20", "ggs-source-21", "ggs-source-22"]
     },
     {
       "claim_id": "ggs-claim-07",
@@ -262,6 +262,42 @@
       "last_verified_at": "2026-08-31",
       "finding": "Ancient genomes show that Anatolian domestic pigs were transported into Europe about 8,500 years ago, but their Near Eastern genomic ancestry then fell below 50 percent by the late Neolithic and to 0–4 percent in modern European domestic pigs.",
       "scope_and_limits": "The initial westward transfer supports livestock dispersal, while three millennia of hybridization with local wild boar show that a domestic animal can spread without its original genome remaining intact. This is a Europe-specific history, not a global axis comparison."
+    },
+    {
+      "evidence_id": "ggs-evidence-03h",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-20",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "A spatial model fitted to more than 300 Neolithic sites found faster farming dispersal along coasts and rivers than across inland terrain, with the size of this waterway effect varying between European regions.",
+      "scope_and_limits": "The result makes route connectivity an explicit alternative to latitude alone, but it is a model of European Neolithization rather than a direct global comparison or a species-specific transfer history."
+    },
+    {
+      "evidence_id": "ggs-evidence-03i",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-21",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "An agent-based model evaluated against four radiocarbon datasets best reproduced the first West Mediterranean farming sites with northern and southern routes, leapfrog movement, preference for favorable land, and avoidance of already settled regions.",
+      "scope_and_limits": "Model fit does not uniquely prove these mechanisms, and the result is regional. It nevertheless shows that ecology, demography, and settlement networks can generate dispersal timing that a continental-axis label leaves unexplained."
+    },
+    {
+      "evidence_id": "ggs-evidence-03j",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-22",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Spatial interpolation of 3,072 audited radiocarbon dates from 940 early Neolithic European sites identified renewed expansion centers, contact zones, major routes, and a spread that proceeded in leaps rather than uniformly.",
+      "scope_and_limits": "Radiocarbon surfaces reveal timing and route structure but cannot by themselves separate demic migration from cultural adoption or identify the causal contribution of waterways, terrain, and institutions."
     },
     {
       "evidence_id": "ggs-evidence-08a",
@@ -500,6 +536,36 @@
       "year": 2019,
       "url": "https://doi.org/10.1073/pnas.1901169116",
       "source_class": "primary_ancient_livestock_genomics",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-20",
+      "title": "Regional variations in the European Neolithic dispersal: the role of the coastlines",
+      "publisher": "Antiquity",
+      "year": 2014,
+      "url": "https://doi.org/10.1017/S0003598X00115467",
+      "source_class": "archaeological_spatiotemporal_model",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-21",
+      "title": "Modeling initial Neolithic dispersal: The first agricultural groups in West Mediterranean",
+      "publisher": "Ecological Modelling",
+      "year": 2015,
+      "url": "https://doi.org/10.1016/j.ecolmodel.2015.03.015",
+      "source_class": "archaeological_agent_based_model",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-22",
+      "title": "Detection of diffusion and contact zones of early farming in Europe from the space-time distribution of 14C dates",
+      "publisher": "Journal of Archaeological Science",
+      "year": 2009,
+      "url": "https://doi.org/10.1016/j.jas.2008.11.004",
+      "source_class": "archaeological_radiocarbon_spatial_analysis",
       "independence": "independent",
       "assessment_state": "assessed"
     }
