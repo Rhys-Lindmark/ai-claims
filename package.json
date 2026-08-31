@@ -13,6 +13,7 @@
     "test:deployed-youtube": "node scripts/check-deployed-youtube-fixture.mjs",
     "test:deployed-goodreads": "node scripts/check-deployed-goodreads-fixture.mjs",
     "test:deployed-web": "node scripts/check-deployed-web-fixture.mjs",
+    "test:deployed-compatibility": "node scripts/check-deployed-compatibility.mjs",
     "package:extension": "sh scripts/package-extension.sh .",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",

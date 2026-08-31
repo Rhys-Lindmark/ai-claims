@@ -55,6 +55,9 @@ test('compatibility matrix discloses all page kinds and source rules', () => {
     assert.match(surface.acquisition, /./);
     assert.match(surface.evidence_destination, /^\/claims\//);
     assert.match(surface.proof, /synthetic/i);
+    assert.match(surface.proof_entity_key, /^(youtube|goodreads|web):/);
+    assert.equal(Number.isInteger(surface.proof_score), true);
+    assert.match(surface.proof_route, /^\/(episode|book|web)$/);
   }
   assert.equal(compatibility.surfaces[0].proof_level, 'end_to_end');
 });
