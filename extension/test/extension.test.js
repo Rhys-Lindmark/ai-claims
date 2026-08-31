@@ -28,6 +28,7 @@ import architecture from '../data/architecture.json' with { type: 'json' };
 import compatibility from '../data/compatibility.json' with { type: 'json' };
 import attestation from '../data/deployment-attestation.json' with { type: 'json' };
 import { validateDeploymentAttestation } from '../lib/deployment-attestation.js';
+import { currentDeploymentAttestationEnvelope, deploymentAttestationEtag, immutableDeploymentAttestationEnvelope } from '../lib/deployment-attestation-api.js';
 import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -73,6 +74,18 @@ test('deployment attestation is intact, privacy-safe, and manifest-complete', ()
   assert.equal(createHash('sha256').update(JSON.stringify(payload)).digest('hex'), integrity.digest_hex);
   assert.equal(attestation.privacy.visitor_data_collected, false);
   assert.deepEqual(attestation.privacy.retained_visitor_fields, []);
+});
+
+test('deployment attestation API exposes a revalidating pointer and immutable digest record', () => {
+  const digest = attestation.integrity.digest_hex;
+  const immutableUrl = `https://ai.rhyslindmark.com/claims/api/v1/deployment-attestations/${digest}`;
+  const current = currentDeploymentAttestationEnvelope(attestation, immutableUrl);
+  assert.equal(current.contract_version, '1.0.0');
+  assert.equal(current.current_digest, digest);
+  assert.equal(current.immutable_url, immutableUrl);
+  assert.equal(deploymentAttestationEtag(attestation), `"sha256-${digest}"`);
+  assert.equal(immutableDeploymentAttestationEnvelope(attestation, digest).attestation.integrity.digest_hex, digest);
+  assert.equal(immutableDeploymentAttestationEnvelope(attestation, '0'.repeat(64)).attestation, null);
 });
 
 test('synthetic YouTube page resolves through the reviewed gate to its episode route', () => {
