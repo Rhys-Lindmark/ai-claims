@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { existsSync } from 'node:fs';
 import registry from '../data/analyses.json' with { type: 'json' };
 import resolverConfig from '../data/resolver-config.json' with { type: 'json' };
 import manifest from '../manifest.json' with { type: 'json' };
@@ -18,6 +19,7 @@ import { canonicalPrivacyReceipt, privacyReceiptArtifact, SUPPORTED_PRIVACY_RECE
 import syntheticEpisode from '../data/synthetic-youtube-fixture.json' with { type: 'json' };
 import { syntheticEpisodeScore, validateSyntheticEpisodeFixture } from '../lib/episode-fixture.js';
 import { probeResolverUrl } from '../lib/resolver-probe.js';
+import architecture from '../data/architecture.json' with { type: 'json' };
 import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -28,6 +30,16 @@ test('canonicalizes common YouTube URL forms to one entity', () => {
     'https://www.youtube.com/embed/abc123xyz00',
   ];
   assert.deepEqual(urls.map((url) => identifyPage(url).entityKey), Array(4).fill('youtube:abc123xyz00'));
+});
+
+test('public architecture map is backed by packaged implementation files', () => {
+  assert.equal(architecture.schema_version, 'ai-claims.extension-architecture/1.0.0');
+  assert.equal(architecture.boundaries.length, 5);
+  assert.deepEqual(architecture.boundaries.map((boundary) => boundary.number), ['01', '02', '03', '04', '05']);
+  for (const boundary of architecture.boundaries) {
+    assert.match(boundary.privacy, /./);
+    assert.equal(existsSync(boundary.file), true, `${boundary.file} must exist`);
+  }
 });
 
 test('synthetic YouTube page resolves through the reviewed gate to its episode route', () => {

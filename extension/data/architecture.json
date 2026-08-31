@@ -1,0 +1,11 @@
+{
+  "schema_version": "ai-claims.extension-architecture/1.0.0",
+  "contract": "No reviewed evidence means no score.",
+  "boundaries": [
+    { "number": "01", "title": "Detect", "detail": "Recognize YouTube, Goodreads, or an ordinary public page after a user action.", "file": "extension/lib/page-identity.js", "privacy": "URL and title stay in the browser." },
+    { "number": "02", "title": "Canonicalize", "detail": "Reduce the page to one stable source key and strip tracking parameters.", "file": "extension/lib/page-identity.js", "privacy": "Page text, cookies, and account data never enter the key." },
+    { "number": "03", "title": "Resolve", "detail": "Ask the public read-only API whether a matching analysis version exists.", "file": "extension/lib/analysis-resolver.js", "privacy": "Only the canonical entity key is sent." },
+    { "number": "04", "title": "Gate", "detail": "Suppress scores until every eligible claim is reviewed and provenance is complete.", "file": "extension/lib/analysis-registry.js", "privacy": "Pending and partial work cannot leak a number." },
+    { "number": "05", "title": "Show", "detail": "Render a badge and a link to the versioned evidence trail, or a no-score state.", "file": "extension/service-worker.js", "privacy": "Local metrics retain category counts, never page identity." }
+  ]
+}
