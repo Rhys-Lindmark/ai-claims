@@ -355,6 +355,14 @@ test('API resolver maps 404 to not analyzed and rejects incompatible contracts',
   const missing = createApiResolver({ endpoint: 'https://api.example.invalid', fetchImpl: async () => ({ ok: false, status: 404 }) });
   assert.equal((await missing.resolve('web:missing.invalid')).state, 'not_analyzed');
 
+  const entityKey = 'web:missing-with-proof.invalid';
+  const discovery = { contract_version: '1.0.0', current_digest: attestation.integrity.digest_hex, current_url: 'https://ai.rhyslindmark.com/claims/api/v1/deployment-attestations', immutable_url: `https://ai.rhyslindmark.com/claims/api/v1/deployment-attestations/${attestation.integrity.digest_hex}`, verified_at: attestation.verified_at, visitor_data_collected: false };
+  const discoveredMissing = createApiResolver({ endpoint: 'https://api.example.invalid', fetchImpl: async () => ({ ok: false, status: 404, json: async () => ({ contract_version: '1.0.0', entity_key: entityKey, correction_feed_discovery: { contract_version: '1.1.0' }, deployment_attestation_discovery: discovery, analysis: null }) }) });
+  const missingState = await discoveredMissing.resolve(entityKey);
+  assert.equal(missingState.state, 'not_analyzed');
+  assert.equal(missingState.deploymentAttestationCompatibility, 'supported');
+  assert.equal(deploymentProofForState(missingState)?.url, discovery.immutable_url);
+
   const incompatible = createApiResolver({ endpoint: 'https://api.example.invalid', fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '2.0.0', entity_key: 'web:x', analysis: null }) }) });
   await assert.rejects(incompatible.resolve('web:x'), /Unsupported resolver contract/);
 });

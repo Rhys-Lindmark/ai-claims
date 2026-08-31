@@ -63,7 +63,12 @@ export function createApiResolver({ endpoint, fetchImpl = fetch }) {
       const url = new URL('v1/analyses/resolve', endpoint.endsWith('/') ? endpoint : `${endpoint}/`);
       url.searchParams.set('entity_key', entityKey);
       const response = await fetchImpl(url, { cache: 'default', headers: { accept: 'application/json', 'x-ai-claims-correction-feed-accept': SUPPORTED_CORRECTION_FEED_CONTRACTS.join(', ') } });
-      if (response.status === 404) return scoreState(null);
+      if (response.status === 404) {
+        if (typeof response.json !== 'function') return scoreState(null);
+        const envelope = assertEnvelope(await response.json());
+        if (envelope.entity_key !== entityKey) throw new Error('Resolver returned a mismatched entity key.');
+        return scoreResolverEnvelope(envelope);
+      }
       if (!response.ok) throw new Error(`Analysis resolver failed with ${response.status}.`);
       const envelope = assertEnvelope(await response.json());
       if (envelope.entity_key !== entityKey) throw new Error('Resolver returned a mismatched entity key.');

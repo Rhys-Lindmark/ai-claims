@@ -25,7 +25,7 @@ The open scoring contract is documented in [`docs/TRUTH_SCORE_METHOD.md`](../doc
 
 `data/analyses.json` contains synthetic development fixtures only. `data/resolver-config.json` selects the public API adapter by default; changing it to `local` keeps development fully offline without changing the panel or score gate. The public `GET https://ai.rhyslindmark.com/claims/api/v1/analyses/resolve?entity_key=…` contract returns 404 for unknown entities.
 
-On an unknown page, **Request analysis** creates one browser-local request per canonical entity. Repeated visits reuse that record across the `queued → in_review → published` lifecycle, with `failed → queued` as the only retry path. Requests are not yet synchronized to a server.
+On an unknown page, **Request analysis** creates one browser-local request per canonical entity. The resolver's supported deployment proof remains visible before and after that request, even though the score is correctly absent. Repeated visits reuse the request record across the `queued → in_review → published` lifecycle, with `failed → queued` as the only retry path. Requests are not yet synchronized to a server.
 
 YouTube detection never triggers transcript scraping. Creator-authorized API access, a licensed publisher source, or a rights-confirmed supplied transcript is required under the [transcript acquisition decision](../docs/YOUTUBE_TRANSCRIPT_ACQUISITION.md).
 

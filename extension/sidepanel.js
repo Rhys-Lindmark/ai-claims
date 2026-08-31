@@ -22,6 +22,7 @@ const verifyReceiptButton = document.querySelector('#verify-receipt');
 const receiptVerification = document.querySelector('#receipt-verification');
 let currentTab;
 let currentIdentity;
+let currentResolvedState;
 let currentAutoCheck = false;
 const requestStore = createRequestStore({ storageArea: chrome.storage.local });
 const metricsStore = createMetricsStore({ storageArea: chrome.storage.local, extensionVersion: chrome.runtime.getManifest().version });
@@ -91,11 +92,11 @@ async function refresh() {
   pageUrl.textContent = identity.canonicalUrl ?? 'Click the extension icon on this page to grant temporary access.';
 
   if (!identity.entityKey) {
+    currentResolvedState = null;
     renderResult({ state: 'pending', reason: 'The extension cannot read this page yet.' }, identity);
     permissionButton.hidden = true;
     return;
   }
-
   let score;
   try {
     const resolver = await loadResolver();
@@ -103,6 +104,7 @@ async function refresh() {
   } catch {
     score = { state: 'pending', reason: 'The shared analysis service is temporarily unavailable.' };
   }
+  currentResolvedState = score;
   if (!checkedThisSession.has(identity.entityKey)) {
     checkedThisSession.add(identity.entityKey);
     await metricsStore.record('page_checked', { kind: identity.kind });
@@ -144,7 +146,7 @@ result.addEventListener('click', async (event) => {
   const { record } = await requestStore.submit(currentIdentity);
   await metricsStore.record('analysis_requested', { kind: currentIdentity.kind });
   await refreshMetrics();
-  renderResult({ state: 'not_analyzed', reason: 'No shared analysis exists for this page yet.' }, currentIdentity, record);
+  renderResult({ ...currentResolvedState, state: 'not_analyzed', reason: 'No shared analysis exists for this page yet.' }, currentIdentity, record);
 });
 
 resetMetricsButton.addEventListener('click', async () => {
