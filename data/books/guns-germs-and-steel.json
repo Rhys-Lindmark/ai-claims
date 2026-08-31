@@ -29,8 +29,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": ["ggs-evidence-02a", "ggs-evidence-02b", "ggs-evidence-02c", "ggs-evidence-02d"],
-      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05", "ggs-source-35", "ggs-source-36", "ggs-source-37", "ggs-source-38"]
+      "evidence_record_ids": [],
+      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05"]
     },
     {
       "claim_id": "ggs-claim-02",
@@ -42,8 +42,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": [],
-      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05"]
+      "evidence_record_ids": ["ggs-evidence-02a", "ggs-evidence-02b", "ggs-evidence-02c", "ggs-evidence-02d"],
+      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05", "ggs-source-35", "ggs-source-36", "ggs-source-37", "ggs-source-38"]
     },
     {
       "claim_id": "ggs-claim-03",

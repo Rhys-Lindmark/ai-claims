@@ -36,6 +36,11 @@ const evidenceIds = new Set(packet.evidence_records.map((record) => record.evide
 assert.equal(evidenceIds.size, packet.evidence_records.length);
 assert.equal(packet.evidence_records.length, 31);
 assert.ok(packet.claims.every((claim) => claim.evidence_record_ids.every((evidenceId) => evidenceIds.has(evidenceId))));
+assert.ok(packet.claims.every((claim) => {
+  const declared = [...claim.evidence_record_ids].sort();
+  const owned = packet.evidence_records.filter((record) => record.claim_id === claim.claim_id).map((record) => record.evidence_id).sort();
+  return JSON.stringify(declared) === JSON.stringify(owned);
+}));
 assert.ok(packet.evidence_records.every((record) => ['supports', 'complicates', 'contradicts'].includes(record.direction)));
 assert.ok(packet.evidence_records.every((record) => record.finding.length > 50 && record.scope_and_limits.length > 50));
 assert.ok(packet.evidence_records.every((record) => record.review_state === 'machine_draft_unreviewed'));
@@ -53,6 +58,9 @@ const sourceIds = new Set(packet.sources.map((source) => source.source_id));
 assert.equal(sourceIds.size, packet.sources.length);
 assert.ok(packet.sources.every((source) => source.url.startsWith('https://')));
 assert.ok(packet.claims.every((claim) => claim.source_ids.length > 0 && claim.source_ids.every((sourceId) => sourceIds.has(sourceId))));
+assert.ok(packet.claims.every((claim) => packet.evidence_records
+  .filter((record) => record.claim_id === claim.claim_id)
+  .every((record) => claim.source_ids.includes(record.source_id))));
 assert.ok(packet.evidence_records.every((record) => sourceIds.has(record.source_id)));
 assert.ok(packet.evidence_records.every((record) => packet.claims.some((claim) => claim.claim_id === record.claim_id)));
 assert.ok(packet.sources.some((source) => source.independence === 'independent'));
