@@ -18,17 +18,25 @@ for (const entry of current.available_versions) {
 }
 assert.equal(current.release.privacy.installation_telemetry_collected, false);
 assert.deepEqual(current.release.privacy.retained_installation_fields, []);
-const expectedEtag = `"sha256-${current.release.package.integrity.digest_hex}"`;
-assert.equal(currentResponse.headers.get('etag')?.replace(/^W\//, ''), expectedEtag);
-assert.equal((await fetch(currentUrl, { headers: { 'if-none-match': expectedEtag } })).status, 304);
+assert.equal(current.channel_policy.schema_version, 'ai-claims.extension-release-channel/1.0.0');
+assert.equal(current.channel_policy.current_version, current.current_version);
+assert.deepEqual(current.channel_policy.retained_versions, current.available_versions.map((entry) => entry.version));
+assert.equal(current.channel_policy.signing.publisher_signed, false);
+assert.equal(current.channel_policy.privacy.installation_telemetry_collected, false);
+assert.equal(current.channel_policy.privacy.update_check_identity_collected, false);
+assert.equal(current.channel_policy.rollback.score_gate_may_not_be_bypassed, true);
+const releaseEtag = `"sha256-${current.release.package.integrity.digest_hex}"`;
+const pointerEtag = `"release-${current.release.package.integrity.digest_hex}-policy-${current.channel_policy.policy_revision}"`;
+assert.equal(currentResponse.headers.get('etag')?.replace(/^W\//, ''), pointerEtag);
+assert.equal((await fetch(currentUrl, { headers: { 'if-none-match': pointerEtag } })).status, 304);
 
 const immutableResponse = await fetch(current.immutable_url);
 assert.equal(immutableResponse.status, 200);
 assert.match(immutableResponse.headers.get('cache-control') ?? '', /max-age=31536000/);
 assert.match(immutableResponse.headers.get('cache-control') ?? '', /immutable/);
-assert.equal(immutableResponse.headers.get('etag')?.replace(/^W\//, ''), expectedEtag);
+assert.equal(immutableResponse.headers.get('etag')?.replace(/^W\//, ''), releaseEtag);
 assert.equal((await immutableResponse.json()).release.extension_version, current.current_version);
-assert.equal((await fetch(current.immutable_url, { headers: { 'if-none-match': expectedEtag } })).status, 304);
+assert.equal((await fetch(current.immutable_url, { headers: { 'if-none-match': releaseEtag } })).status, 304);
 
 const [packageResponse, manifestResponse] = await Promise.all([fetch(current.package_url), fetch(current.manifest_url)]);
 assert.equal(packageResponse.status, 200);
@@ -49,7 +57,7 @@ assert.equal(previous.requested_version, previousVersion);
 assert.equal(previous.release.extension_version, previousVersion);
 const previousEtag = `"sha256-${previous.release.package.integrity.digest_hex}"`;
 assert.equal(previousResponse.headers.get('etag')?.replace(/^W\//, ''), previousEtag);
-assert.notEqual(previousEtag, expectedEtag);
+assert.notEqual(previousEtag, releaseEtag);
 const previousPackageResponse = await fetch(previous.package_url);
 assert.equal(previousPackageResponse.status, 200);
 const previousPackageBytes = Buffer.from(await previousPackageResponse.arrayBuffer());

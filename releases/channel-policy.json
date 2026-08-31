@@ -1,0 +1,28 @@
+{
+  "schema_version": "ai-claims.extension-release-channel/1.0.0",
+  "policy_revision": "1",
+  "channel": "prototype",
+  "current_version": "0.2.17",
+  "retained_versions": ["0.2.17", "0.2.16"],
+  "minimum_supported_version": "0.2.16",
+  "distribution": {
+    "provider": "github_releases",
+    "chrome_web_store_reviewed": false,
+    "automatic_install_or_update": false
+  },
+  "signing": {
+    "publisher_signed": false,
+    "integrity_manifest_required": true,
+    "sha256_required": true
+  },
+  "privacy": {
+    "installation_telemetry_collected": false,
+    "update_check_identity_collected": false
+  },
+  "rollback": {
+    "allowed": true,
+    "target_must_be_retained": true,
+    "immutable_manifest_required": true,
+    "score_gate_may_not_be_bypassed": true
+  }
+}
