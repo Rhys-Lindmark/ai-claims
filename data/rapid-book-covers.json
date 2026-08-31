@@ -51,7 +51,15 @@
     },
     {
       "slug": "why-nations-fail",
-      "match_state": "unresolved"
+      "match_state": "exact_title_author",
+      "cover_id": 7253519,
+      "cover_url": "https://covers.openlibrary.org/b/id/7253519-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16568759W",
+      "source_title": "Why Nations Fail",
+      "source_authors": [
+        "Daron Acemoglu",
+        "James A. Robinson"
+      ]
     },
     {
       "slug": "the-better-angels-of-our-nature",
@@ -77,7 +85,15 @@
     },
     {
       "slug": "the-dawn-of-everything",
-      "match_state": "unresolved"
+      "match_state": "exact_title_author",
+      "cover_id": 11359192,
+      "cover_url": "https://covers.openlibrary.org/b/id/11359192-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL24663287W",
+      "source_title": "The Dawn of Everything",
+      "source_authors": [
+        "David Graeber",
+        "David Wengrow"
+      ]
     },
     {
       "slug": "the-silk-roads",
@@ -377,12 +393,13 @@
     {
       "slug": "cod",
       "match_state": "exact_title_author",
-      "cover_id": 13798848,
-      "cover_url": "https://covers.openlibrary.org/b/id/13798848-M.jpg",
-      "source_url": "https://openlibrary.org/works/OL26307662W",
-      "source_title": "Cod",
+      "cover_id": 415115,
+      "cover_url": "https://covers.openlibrary.org/b/id/415115-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2652869W",
+      "source_title": "COD; A BIOGRAPHY OF THE FISH THAT CHANGED THE WORLD",
       "source_authors": [
-        "Mark Kurlansky"
+        "Mark Kurlansky",
+        "S. D. Schindler"
       ]
     },
     {
@@ -530,7 +547,15 @@
     },
     {
       "slug": "rabid",
-      "match_state": "unresolved"
+      "match_state": "exact_title_author",
+      "cover_id": 9021948,
+      "cover_url": "https://covers.openlibrary.org/b/id/9021948-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16318255W",
+      "source_title": "Rabid",
+      "source_authors": [
+        "Bill Wasik",
+        "Monica Murphy"
+      ]
     },
     {
       "slug": "the-hot-zone",
@@ -804,7 +829,16 @@
     },
     {
       "slug": "skunk-works",
-      "match_state": "unresolved"
+      "match_state": "exact_title_author",
+      "cover_id": 7321776,
+      "cover_url": "https://covers.openlibrary.org/b/id/7321776-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3466236W",
+      "source_title": "Skunk Works",
+      "source_authors": [
+        "Ben R. Rich",
+        "Leo Janos",
+        "Ben R./Janos, Leo Rich"
+      ]
     },
     {
       "slug": "the-box",
@@ -941,15 +975,41 @@
     },
     {
       "slug": "the-smartest-guys-in-the-room",
-      "match_state": "unresolved"
+      "match_state": "exact_title_author",
+      "cover_id": 6968592,
+      "cover_url": "https://covers.openlibrary.org/b/id/6968592-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL13294327W",
+      "source_title": "The Smartest Guys in the Room",
+      "source_authors": [
+        "Bethany McLean",
+        "Peter Elkind"
+      ]
     },
     {
       "slug": "billion-dollar-whale",
-      "match_state": "unresolved"
+      "match_state": "exact_title_author",
+      "cover_id": 8813060,
+      "cover_url": "https://covers.openlibrary.org/b/id/8813060-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19760961W",
+      "source_title": "Billion dollar whale",
+      "source_authors": [
+        "Wright, Tom (Wall Street Journal reporter)",
+        "Bradley Hope",
+        "Tom Wright",
+        "Wright, Tom, Hope, Bradley"
+      ]
     },
     {
       "slug": "barbarians-at-the-gate",
-      "match_state": "unresolved"
+      "match_state": "exact_title_author",
+      "cover_id": 4095854,
+      "cover_url": "https://covers.openlibrary.org/b/id/4095854-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1975260W",
+      "source_title": "Barbarians at the gate",
+      "source_authors": [
+        "Bryan Burrough",
+        "John Helyar"
+      ]
     },
     {
       "slug": "cosmos",
@@ -1191,7 +1251,14 @@
     },
     {
       "slug": "the-power-broker",
-      "match_state": "unresolved"
+      "match_state": "exact_title_author",
+      "cover_id": 253659,
+      "cover_url": "https://covers.openlibrary.org/b/id/253659-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL4195860W",
+      "source_title": "The power broker: Robert Moses and the fall of New York",
+      "source_authors": [
+        "Robert A. Caro"
+      ]
     },
     {
       "slug": "the-rise-and-fall-of-the-third-reich",

@@ -15,23 +15,27 @@ function normalize(value = '') {
 }
 
 function authorMatches(expected, candidates = []) {
-  const wanted = normalize(expected);
-  return candidates.some((candidate) => {
-    const actual = normalize(candidate);
-    return actual === wanted || actual.includes(wanted) || wanted.includes(actual);
-  });
+  const wantedAuthors = expected.split(/\s+(?:and|&)\s+/i).map(normalize).filter(Boolean);
+  const actualAuthors = candidates.map(normalize);
+  return wantedAuthors.every((wanted) => actualAuthors.some((actual) =>
+    actual === wanted || actual.includes(wanted) || wanted.includes(actual)));
+}
+
+function titleMatches(book, candidate) {
+  const actual = normalize(candidate);
+  return actual === normalize(book.title) || (book.subtitle && actual === normalize(`${book.title} ${book.subtitle}`));
 }
 
 async function lookup(book) {
   const query = new URLSearchParams({
     title: book.title,
-    author: book.author,
+    author: book.author.split(/\s+(?:and|&)\s+/i)[0],
     limit: '5',
     fields: 'key,title,author_name,cover_i',
   });
   const payload = await requestJson(`https://openlibrary.org/search.json?${query}`);
   const match = (payload.docs || []).find((candidate) =>
-    candidate.cover_i && normalize(candidate.title) === normalize(book.title) && authorMatches(book.author, candidate.author_name));
+    candidate.cover_i && titleMatches(book, candidate.title) && authorMatches(book.author, candidate.author_name));
   if (!match) return { slug: book.slug, match_state: 'unresolved' };
   const workKey = match.key.startsWith('/') ? match.key : `/works/${match.key}`;
   return {
