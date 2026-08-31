@@ -19,7 +19,7 @@ export async function GET(request: Request) {
   if (versionId && versionId.length > 200) return Response.json({ contract_version: '1.0.0', error: 'A valid version_id is required.' }, { status: 400, headers });
   const envelope = resolveAnalysisEnvelope(entityKey, versionId, acceptedCorrectionContracts);
   const etag = analysisEtag(envelope);
-  const responseHeaders = { ...headers, etag, 'x-ai-claims-correction-feed-contract': envelope.correction_feed_discovery.contract_version ?? 'none' };
+  const responseHeaders = { ...headers, etag, 'x-ai-claims-correction-feed-contract': envelope.correction_feed_discovery.contract_version ?? 'none', 'x-ai-claims-deployment-attestation-contract': envelope.deployment_attestation_discovery.contract_version };
   if (request.headers.get('if-none-match') === etag) return new Response(null, { status: 304, headers: responseHeaders });
   if (!envelope.analysis) return Response.json(envelope, { status: 404, headers: responseHeaders });
   return Response.json(envelope, { status: 200, headers: responseHeaders });
@@ -32,7 +32,7 @@ export async function OPTIONS() {
       'access-control-allow-origin': '*',
       'access-control-allow-methods': 'GET, OPTIONS',
       'access-control-allow-headers': 'accept, if-none-match, x-ai-claims-correction-feed-accept',
-      'access-control-expose-headers': 'etag, x-ai-claims-correction-feed-contract',
+      'access-control-expose-headers': 'etag, x-ai-claims-correction-feed-contract, x-ai-claims-deployment-attestation-contract',
       'access-control-max-age': '86400',
     },
   });

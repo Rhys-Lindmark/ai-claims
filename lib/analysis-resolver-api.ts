@@ -1,7 +1,9 @@
 import registry from '@/extension/data/analyses.json';
+import deploymentAttestation from '@/extension/data/deployment-attestation.json';
 import { CORRECTION_EVENT_URL_TEMPLATE, CORRECTION_FEED_DEFAULT_PAGE_SIZE, CORRECTION_FEED_MAX_PAGE_SIZE, CORRECTION_FEED_SUPPORTED_CONTRACTS, latestCorrectionForEntity, negotiateCorrectionFeedContract } from '@/lib/correction-feed-api';
 
 export const ANALYSIS_RESOLVER_CONTRACT = '1.0.0';
+export const DEPLOYMENT_ATTESTATION_URL = 'https://ai.rhyslindmark.com/claims/api/v1/deployment-attestations';
 
 function stableHash(value: string) {
   let hash = 2166136261;
@@ -55,6 +57,14 @@ export function resolveAnalysisEnvelope(entityKey: string, versionId?: string | 
     contract_version: ANALYSIS_RESOLVER_CONTRACT,
     analysis_schema_version: registry.schema_version,
     correction_feed_discovery: correctionFeedDiscovery,
+    deployment_attestation_discovery: {
+      contract_version: '1.0.0',
+      current_digest: deploymentAttestation.integrity.digest_hex,
+      current_url: DEPLOYMENT_ATTESTATION_URL,
+      immutable_url: `${DEPLOYMENT_ATTESTATION_URL}/${deploymentAttestation.integrity.digest_hex}`,
+      verified_at: deploymentAttestation.verified_at,
+      visitor_data_collected: false,
+    },
     entity_key: entityKey,
     requested_version_id: requestedVersion,
     analysis: requestedVersion && version ? { entity_key: entityKey, ...version } : requestedVersion ? null : analysis ? { ...analysis, ...correctionPointers } : null,
@@ -64,5 +74,5 @@ export function resolveAnalysisEnvelope(entityKey: string, versionId?: string | 
 
 export function analysisEtag(envelope: ReturnType<typeof resolveAnalysisEnvelope>) {
   const revision = envelope.requested_version_id ?? envelope.analysis?.analysis_version_id ?? 'missing';
-  return `\"claims-${stableHash(`${envelope.analysis_schema_version}:${envelope.correction_feed_discovery.contract_version ?? 'none'}:${envelope.entity_key}:${revision}`)}\"`;
+  return `\"claims-${stableHash(`${envelope.analysis_schema_version}:${envelope.correction_feed_discovery.contract_version ?? 'none'}:${envelope.deployment_attestation_discovery.current_digest}:${envelope.entity_key}:${revision}`)}\"`;
 }

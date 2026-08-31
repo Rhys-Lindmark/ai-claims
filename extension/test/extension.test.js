@@ -6,7 +6,7 @@ import registry from '../data/analyses.json' with { type: 'json' };
 import resolverConfig from '../data/resolver-config.json' with { type: 'json' };
 import manifest from '../manifest.json' with { type: 'json' };
 import { resolveAnalysis, scoreState } from '../lib/analysis-registry.js';
-import { correctionFeedCompatibility, createApiResolver, createLocalResolver } from '../lib/analysis-resolver.js';
+import { correctionFeedCompatibility, createApiResolver, createLocalResolver, deploymentAttestationCompatibility } from '../lib/analysis-resolver.js';
 import { createRequestStore } from '../lib/analysis-requests.js';
 import { computeTruthScore } from '../lib/truth-score.js';
 import { goodreadsBookResolution, sourceNotice, transcriptAcquisition } from '../lib/source-policy.js';
@@ -290,6 +290,18 @@ test('API resolver uses the versioned envelope and exact entity key', async () =
   assert.equal(requestedUrl.pathname, '/v1/analyses/resolve');
   assert.equal(requestedUrl.searchParams.get('entity_key'), analysis.entity_key);
   assert.equal(state.state, 'published');
+});
+
+test('resolver advertises a supported privacy-safe deployment attestation', async () => {
+  const analysis = registry.analyses.find((entry) => entry.entity_key === syntheticWeb.entity_key);
+  const discovery = { contract_version: '1.0.0', current_digest: attestation.integrity.digest_hex, current_url: 'https://ai.rhyslindmark.com/claims/api/v1/deployment-attestations', immutable_url: `https://ai.rhyslindmark.com/claims/api/v1/deployment-attestations/${attestation.integrity.digest_hex}`, verified_at: attestation.verified_at, visitor_data_collected: false };
+  const resolver = createApiResolver({ endpoint: 'https://api.example.invalid', fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '1.0.0', entity_key: analysis.entity_key, deployment_attestation_discovery: discovery, analysis }) }) });
+  const state = await resolver.resolve(analysis.entity_key);
+  assert.equal(state.deploymentAttestationCompatibility, 'supported');
+  assert.equal(state.deploymentAttestationContractVersion, '1.0.0');
+  assert.equal(state.deploymentAttestationUrl, discovery.current_url);
+  assert.equal(state.deploymentAttestationDigest, discovery.current_digest);
+  assert.deepEqual(deploymentAttestationCompatibility({ contract_version: '9.0.0' }), { state: 'unsupported', contractVersion: '9.0.0' });
 });
 
 test('API resolver opts into browser HTTP-cache revalidation', async () => {
