@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-08-31",
-  "checked_at": "2026-08-31T20:21:34.619Z",
+  "checked_at": "2026-08-31T21:04:00.336Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,41 +10,41 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 100,
-    "claims": 300,
-    "citations": 600,
-    "unique_urls": 455,
-    "repeated_citations": 145,
-    "redirected_urls": 75,
+    "books": 110,
+    "claims": 330,
+    "citations": 660,
+    "unique_urls": 492,
+    "repeated_citations": 168,
+    "redirected_urls": 81,
     "states": {
-      "access_blocked": 88,
-      "network_error": 5,
-      "reachable": 358,
-      "transient": 4
+      "access_blocked": 91,
+      "network_error": 6,
+      "reachable": 390,
+      "transient": 5
     },
     "score_distribution": {
       "50": 1,
       "58": 2,
-      "67": 11,
-      "75": 17,
-      "83": 22,
+      "67": 15,
+      "75": 22,
+      "83": 23,
       "92": 37,
       "100": 10
     },
     "confidence_distribution": {
       "high": 45,
-      "medium": 12,
-      "medium-high": 35,
+      "medium": 16,
+      "medium-high": 41,
       "medium-low": 8
     }
   },
   "domain_summary": [
     {
       "host": "doi.org",
-      "unique_urls": 49,
-      "citations": 63,
+      "unique_urls": 50,
+      "citations": 64,
       "states": {
-        "reachable": 24,
+        "reachable": 25,
         "access_blocked": 25
       }
     },
@@ -58,11 +58,11 @@
     },
     {
       "host": "cambridge.org",
-      "unique_urls": 11,
-      "citations": 15,
+      "unique_urls": 18,
+      "citations": 27,
       "states": {
         "transient": 1,
-        "reachable": 10
+        "reachable": 17
       }
     },
     {
@@ -83,10 +83,10 @@
     },
     {
       "host": "time.com",
-      "unique_urls": 10,
-      "citations": 11,
+      "unique_urls": 11,
+      "citations": 12,
       "states": {
-        "reachable": 10
+        "reachable": 11
       }
     },
     {
@@ -122,11 +122,35 @@
       }
     },
     {
+      "host": "sciencedirect.com",
+      "unique_urls": 7,
+      "citations": 9,
+      "states": {
+        "access_blocked": 7
+      }
+    },
+    {
+      "host": "en.wikipedia.org",
+      "unique_urls": 3,
+      "citations": 8,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
       "host": "nsa.gov",
       "unique_urls": 7,
       "citations": 8,
       "states": {
         "access_blocked": 7
+      }
+    },
+    {
+      "host": "onlinelibrary.wiley.com",
+      "unique_urls": 5,
+      "citations": 8,
+      "states": {
+        "access_blocked": 5
       }
     },
     {
@@ -154,19 +178,11 @@
       }
     },
     {
-      "host": "onlinelibrary.wiley.com",
-      "unique_urls": 4,
-      "citations": 7,
-      "states": {
-        "access_blocked": 4
-      }
-    },
-    {
-      "host": "sciencedirect.com",
+      "host": "nps.gov",
       "unique_urls": 5,
       "citations": 7,
       "states": {
-        "access_blocked": 5
+        "reachable": 5
       }
     },
     {
@@ -210,7 +226,7 @@
       }
     },
     {
-      "host": "nps.gov",
+      "host": "jstor.org",
       "unique_urls": 4,
       "citations": 6,
       "states": {
@@ -307,11 +323,27 @@
       }
     },
     {
+      "host": "escholarship.org",
+      "unique_urls": 2,
+      "citations": 4,
+      "states": {
+        "access_blocked": 2
+      }
+    },
+    {
       "host": "fao.org",
       "unique_urls": 2,
       "citations": 4,
       "states": {
         "reachable": 2
+      }
+    },
+    {
+      "host": "journals.sagepub.com",
+      "unique_urls": 3,
+      "citations": 4,
+      "states": {
+        "access_blocked": 3
       }
     },
     {
@@ -347,14 +379,6 @@
       }
     },
     {
-      "host": "americanhistory.si.edu",
-      "unique_urls": 2,
-      "citations": 3,
-      "states": {
-        "access_blocked": 2
-      }
-    },
-    {
       "host": "arts.gov",
       "unique_urls": 2,
       "citations": 3,
@@ -367,7 +391,8 @@
       "unique_urls": 3,
       "citations": 3,
       "states": {
-        "access_blocked": 3
+        "reachable": 2,
+        "access_blocked": 1
       }
     },
     {
@@ -403,6 +428,14 @@
       }
     },
     {
+      "host": "eprints.gla.ac.uk",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "fbi.gov",
       "unique_urls": 1,
       "citations": 3,
@@ -419,14 +452,6 @@
       }
     },
     {
-      "host": "jstor.org",
-      "unique_urls": 2,
-      "citations": 3,
-      "states": {
-        "reachable": 2
-      }
-    },
-    {
       "host": "nationalarchives.gov.uk",
       "unique_urls": 3,
       "citations": 3,
@@ -435,11 +460,19 @@
       }
     },
     {
+      "host": "openurl.ebsco.com",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "oro.open.ac.uk",
       "unique_urls": 1,
       "citations": 3,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -472,6 +505,14 @@
       "citations": 3,
       "states": {
         "access_blocked": 1
+      }
+    },
+    {
+      "host": "repository.essex.ac.uk",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -515,6 +556,14 @@
       }
     },
     {
+      "host": "thereader.mitpress.mit.edu",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "vlab.noaa.gov",
       "unique_urls": 2,
       "citations": 3,
@@ -528,6 +577,14 @@
       "citations": 2,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "americanhistory.si.edu",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "access_blocked": 1
       }
     },
     {
@@ -549,6 +606,14 @@
     },
     {
       "host": "blogs.lse.ac.uk",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "dialnet.unirioja.es",
       "unique_urls": 1,
       "citations": 2,
       "states": {
@@ -642,7 +707,8 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "access_blocked": 2
+        "reachable": 1,
+        "access_blocked": 1
       }
     },
     {
@@ -659,14 +725,6 @@
       "citations": 2,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "journals.sagepub.com",
-      "unique_urls": 2,
-      "citations": 2,
-      "states": {
-        "access_blocked": 2
       }
     },
     {
@@ -782,6 +840,14 @@
       }
     },
     {
+      "host": "reddit.com",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "reviews.history.ac.uk",
       "unique_urls": 1,
       "citations": 2,
@@ -847,6 +913,14 @@
     },
     {
       "host": "annualreviews.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
+      "host": "anthropologyreview.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -950,6 +1024,14 @@
       }
     },
     {
+      "host": "compass.onlinelibrary.wiley.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "csrc.nist.gov",
       "unique_urls": 1,
       "citations": 1,
@@ -1007,6 +1089,14 @@
     },
     {
       "host": "english.cam.ac.uk",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "network_error": 1
+      }
+    },
+    {
+      "host": "epublications.marquette.edu",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1106,7 +1196,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -1178,7 +1268,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -1191,6 +1281,14 @@
     },
     {
       "host": "lib.uchicago.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "lionofjudah1.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1243,6 +1341,14 @@
       "citations": 1,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "mei.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
       }
     },
     {
@@ -1338,6 +1444,14 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
+        "transient": 1
+      }
+    },
+    {
+      "host": "nybooks.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
         "reachable": 1
       }
     },
@@ -1407,6 +1521,14 @@
     },
     {
       "host": "people.cs.rutgers.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "people.willamette.edu",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1542,7 +1664,23 @@
       }
     },
     {
+      "host": "tandfonline.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "theatlantic.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "tile.loc.gov",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1567,6 +1705,14 @@
     },
     {
       "host": "upload.wikimedia.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "us.sagepub.com",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1602,7 +1748,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -1645,6 +1791,42 @@
       ]
     },
     {
+      "url": "https://en.wikipedia.org/wiki/A_People%27s_History_of_the_United_States",
+      "host": "en.wikipedia.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "a-peoples-history-of-the-united-states"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Making_of_the_English_Working_Class",
+      "host": "en.wikipedia.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-making-of-the-english-working-class"
+      ]
+    },
+    {
+      "url": "https://eprints.gla.ac.uk/224159/",
+      "host": "eprints.gla.ac.uk",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-black-jacobins"
+      ]
+    },
+    {
+      "url": "https://escholarship.org/uc/item/5qp086z8",
+      "host": "escholarship.org",
+      "citation_count": 3,
+      "state": "access_blocked",
+      "books": [
+        "the-mediterranean"
+      ]
+    },
+    {
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/jbi.13616",
       "host": "onlinelibrary.wiley.com",
       "citation_count": 3,
@@ -1657,7 +1839,7 @@
       "url": "https://oro.open.ac.uk/7761/",
       "host": "oro.open.ac.uk",
       "citation_count": 3,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-guns-of-august"
       ]
@@ -1687,6 +1869,42 @@
       "state": "reachable",
       "books": [
         "the-radium-girls"
+      ]
+    },
+    {
+      "url": "https://repository.essex.ac.uk/10513/",
+      "host": "repository.essex.ac.uk",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-making-of-the-english-working-class"
+      ]
+    },
+    {
+      "url": "https://thereader.mitpress.mit.edu/the-cheese-and-the-worms-carlo-ginzburg-launches-microhistory/",
+      "host": "thereader.mitpress.mit.edu",
+      "citation_count": 3,
+      "state": "access_blocked",
+      "books": [
+        "the-cheese-and-the-worms"
+      ]
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/annales-histoire-sciences-sociales-english-edition/article/global-histories-of-modern-europe/84A5E6756DF4850DAD89911037C228D3",
+      "host": "cambridge.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-age-of-revolution"
+      ]
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/international-review-of-social-history/article/eric-j-hobsbawm-19172012/608B6BD01721D05F0623CD4CA32567D4",
+      "host": "cambridge.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-age-of-revolution"
       ]
     },
     {
@@ -1855,6 +2073,15 @@
       ]
     },
     {
+      "url": "https://dialnet.unirioja.es/servlet/articulo?codigo=5151895",
+      "host": "dialnet.unirioja.es",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-cheese-and-the-worms"
+      ]
+    },
+    {
       "url": "https://doi.org/10.1016/j.fishres.2025.107325",
       "host": "doi.org",
       "citation_count": 2,
@@ -1955,6 +2182,15 @@
       ]
     },
     {
+      "url": "https://en.wikipedia.org/wiki/The_Great_Transformation_(book)",
+      "host": "en.wikipedia.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-great-transformation"
+      ]
+    },
+    {
       "url": "https://guides.loc.gov/chronicling-america-h-h-holmes",
       "host": "guides.loc.gov",
       "citation_count": 2,
@@ -1970,6 +2206,15 @@
       "state": "reachable",
       "books": [
         "the-wager"
+      ]
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/00471178221098913",
+      "host": "journals.sagepub.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "imagined-communities"
       ]
     },
     {
@@ -2024,6 +2269,15 @@
       "state": "access_blocked",
       "books": [
         "the-dawn-of-everything"
+      ]
+    },
+    {
+      "url": "https://openurl.ebsco.com/contentitem/doi%3A10.1023/a%3A1024420102334?id=ebsco%3Adoi%3A10.1023%2Fa%3A1024420102334",
+      "host": "openurl.ebsco.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-great-transformation"
       ]
     },
     {
@@ -2272,6 +2526,15 @@
       ]
     },
     {
+      "url": "https://www.cambridge.org/core/journals/nationalities-papers/article/ethnoimagined-communities-rethinking-benedict-anderson-and-anthony-smiths-theories-of-nations-through-bernard-stieglers-theory-of-epiphylogenesis/32B510A66CA3862C8957373D61C520C3",
+      "host": "cambridge.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "imagined-communities"
+      ]
+    },
+    {
       "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B60A986B656E8C0A6A45A97CBCD3FD30/9781108838313AR.pdf",
       "host": "cambridge.org",
       "citation_count": 2,
@@ -2464,6 +2727,15 @@
       ]
     },
     {
+      "url": "https://www.jstor.org/stable/j.ctv11smtct",
+      "host": "jstor.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-black-jacobins"
+      ]
+    },
+    {
       "url": "https://www.jstor.org/stable/j.ctv15r58dw",
       "host": "jstor.org",
       "citation_count": 2,
@@ -2587,6 +2859,15 @@
       "state": "reachable",
       "books": [
         "the-johnstown-flood"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/AskHistorians/comments/1plsyyi/howard_zinn_and_a_peoples_history_of_the_united/",
+      "host": "reddit.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "a-peoples-history-of-the-united-states"
       ]
     },
     {
@@ -2948,19 +3229,19 @@
       "error": null
     },
     {
-      "url": "https://americanhistory.si.edu/explore/exhibitions/food/online/transforming-american-table/columbian-exchange",
+      "url": "https://anthropologyreview.org/anthropology-explainers/a-critical-evaluation-of-edward-saids-orientalism/",
       "citations": [
         {
-          "slug": "1493",
-          "claim_index": 1,
-          "source_title": "Smithsonian: The Columbian Exchange"
+          "slug": "orientalism",
+          "claim_index": 3,
+          "source_title": "A critical evaluation of Edward Said's Orientalism"
         }
       ],
-      "host": "americanhistory.si.edu",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 403,
-      "final_url": "https://americanhistory.si.edu/explore/exhibitions/food/online/transforming-american-table/columbian-exchange",
+      "host": "anthropologyreview.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://anthropologyreview.org/anthropology-explainers/a-critical-evaluation-of-edward-saids-orientalism/",
       "redirected": false,
       "error": null
     },
@@ -3178,10 +3459,10 @@
       "host": "catalogues.royalsociety.org",
       "state": "transient",
       "method": "GET",
-      "status": null,
-      "final_url": null,
+      "status": 502,
+      "final_url": "https://catalogues.royalsociety.org/CalmView/Record.aspx?id=EC%2F1918%2F18&src=CalmView.Catalog",
       "redirected": false,
-      "error": "AbortError: This operation was aborted"
+      "error": null
     },
     {
       "url": "https://cdn.penguin.co.uk/dam-assets/books/9781802067798/9781802067798-sample.pdf",
@@ -3313,6 +3594,23 @@
       "error": null
     },
     {
+      "url": "https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/lic3.12222",
+      "citations": [
+        {
+          "slug": "orientalism",
+          "claim_index": 1,
+          "source_title": "Eighteenth-Century Orientalism in Contemporary Historiography"
+        }
+      ],
+      "host": "compass.onlinelibrary.wiley.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/lic3.12222",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://computerhistory.org/blog/insight-into-the-innovators/",
       "citations": [
         {
@@ -3382,6 +3680,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://dgrahamburnett.net/wp-content/uploads/2015/11/BurnettDG_KnowledgeOfLeviathan_JEarlyRepub_2008.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://dialnet.unirioja.es/servlet/articulo?codigo=5151895",
+      "citations": [
+        {
+          "slug": "the-cheese-and-the-worms",
+          "claim_index": 1,
+          "source_title": "The Cheese and the Worms: historiographic impact"
+        },
+        {
+          "slug": "the-cheese-and-the-worms",
+          "claim_index": 2,
+          "source_title": "The Cheese and the Worms: historiographic impact"
+        }
+      ],
+      "host": "dialnet.unirioja.es",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://dialnet.unirioja.es/servlet/articulo?codigo=5151895",
       "redirected": false,
       "error": null
     },
@@ -3700,7 +4020,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=e745ee41-72fa-4119-8aca-968482c61f7c",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=0755bc50-677b-4f5f-af07-0fe1f399f7d8",
       "redirected": true,
       "error": null
     },
@@ -3717,7 +4037,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=d57473d1-60c2-4ded-9a22-a2f14f47f557",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574",
       "redirected": true,
       "error": null
     },
@@ -3761,7 +4081,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=abceb3f6-bc6d-4ac0-b0ef-8d714c53e15c",
       "redirected": true,
       "error": null
     },
@@ -3778,7 +4098,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=588f639c-91e8-469e-87ea-f480ab5f4ddc",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=322a86d2-bdfb-4a03-8bc8-15dbafb0f8d7",
       "redirected": true,
       "error": null
     },
@@ -3795,7 +4115,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=7033d78b-4f19-47a3-81bb-90e8433fffbb",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=01a3237b-d2dd-403a-a7a5-344f9cb010e7",
       "redirected": true,
       "error": null
     },
@@ -3812,7 +4132,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=f2e043ec-b7ea-4325-b6ee-63d30767df0b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=890c85af-7d81-4beb-a7c3-7dc709c982a3",
       "redirected": true,
       "error": null
     },
@@ -3829,7 +4149,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=84eac8a1-01cd-4b88-951d-d9403c6306e3",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=9c785911-0f81-4ac9-a9d3-eb17a57899f3",
       "redirected": true,
       "error": null
     },
@@ -3846,7 +4166,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=7152fc9b-9ec3-46da-bfc7-a684441c2be7",
+      "final_url": "https://www.nature.com/articles/s41893-019-0293-3",
       "redirected": true,
       "error": null
     },
@@ -4250,6 +4570,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.22024/UniKent/03/klr.1098",
+      "citations": [
+        {
+          "slug": "orientalism",
+          "claim_index": 3,
+          "source_title": "Did Orientalism inaugurate a new study of colonialism?"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://journals.kent.ac.uk/index.php/klr/article/view/1098",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.3109/03014460.2013.807878",
       "citations": [
         {
@@ -4340,6 +4677,126 @@
       "error": null
     },
     {
+      "url": "https://en.wikipedia.org/wiki/A_People%27s_History_of_the_United_States",
+      "citations": [
+        {
+          "slug": "a-peoples-history-of-the-united-states",
+          "claim_index": 1,
+          "source_title": "A People's History: reception and criticism"
+        },
+        {
+          "slug": "a-peoples-history-of-the-united-states",
+          "claim_index": 2,
+          "source_title": "A People's History: reception and criticism"
+        },
+        {
+          "slug": "a-peoples-history-of-the-united-states",
+          "claim_index": 3,
+          "source_title": "A People's History: reception and criticism"
+        }
+      ],
+      "host": "en.wikipedia.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/A_People%27s_History_of_the_United_States",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Great_Transformation_(book)",
+      "citations": [
+        {
+          "slug": "the-great-transformation",
+          "claim_index": 2,
+          "source_title": "The Great Transformation: overview and debates"
+        },
+        {
+          "slug": "the-great-transformation",
+          "claim_index": 3,
+          "source_title": "The Great Transformation: Speenhamland debate"
+        }
+      ],
+      "host": "en.wikipedia.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/The_Great_Transformation_(book)",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Making_of_the_English_Working_Class",
+      "citations": [
+        {
+          "slug": "the-making-of-the-english-working-class",
+          "claim_index": 1,
+          "source_title": "The Making of the English Working Class: overview"
+        },
+        {
+          "slug": "the-making-of-the-english-working-class",
+          "claim_index": 2,
+          "source_title": "The Making of the English Working Class: overview"
+        },
+        {
+          "slug": "the-making-of-the-english-working-class",
+          "claim_index": 3,
+          "source_title": "The Making of the English Working Class: overview"
+        }
+      ],
+      "host": "en.wikipedia.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/The_Making_of_the_English_Working_Class",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://eprints.gla.ac.uk/224159/",
+      "citations": [
+        {
+          "slug": "the-black-jacobins",
+          "claim_index": 1,
+          "source_title": "Unsilencing the Haitian Revolution"
+        },
+        {
+          "slug": "the-black-jacobins",
+          "claim_index": 2,
+          "source_title": "Unsilencing the Haitian Revolution"
+        },
+        {
+          "slug": "the-black-jacobins",
+          "claim_index": 3,
+          "source_title": "Unsilencing the Haitian Revolution"
+        }
+      ],
+      "host": "eprints.gla.ac.uk",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://eprints.gla.ac.uk/224159/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://epublications.marquette.edu/hist_fac/84/",
+      "citations": [
+        {
+          "slug": "the-origins-of-totalitarianism",
+          "claim_index": 3,
+          "source_title": "Hannah Arendt's analysis of antisemitism"
+        }
+      ],
+      "host": "epublications.marquette.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://epublications.marquette.edu/hist_fac/84/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://epubs.nsla.nv.gov/statepubs/epubs/210777-1987-4Winter.pdf",
       "citations": [
         {
@@ -4370,6 +4827,50 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://erenow.org/common/why-the-west-rules-for-now/14.php",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://escholarship.org/uc/item/0cg864cz",
+      "citations": [
+        {
+          "slug": "the-origins-of-totalitarianism",
+          "claim_index": 3,
+          "source_title": "Hannah Arendt, the Jews, and the Labor of Superfluity"
+        }
+      ],
+      "host": "escholarship.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://escholarship.org/uc/item/0cg864cz",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://escholarship.org/uc/item/5qp086z8",
+      "citations": [
+        {
+          "slug": "the-mediterranean",
+          "claim_index": 1,
+          "source_title": "Braudel's Mediterranean and Italy"
+        },
+        {
+          "slug": "the-mediterranean",
+          "claim_index": 2,
+          "source_title": "Braudel's Mediterranean and Italy"
+        },
+        {
+          "slug": "the-mediterranean",
+          "claim_index": 3,
+          "source_title": "Braudel's Mediterranean and Italy"
+        }
+      ],
+      "host": "escholarship.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://escholarship.org/uc/item/5qp086z8",
       "redirected": false,
       "error": null
     },
@@ -4580,9 +5081,9 @@
         }
       ],
       "host": "journals.aps.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.28.2960",
       "redirected": false,
       "error": null
@@ -4622,6 +5123,28 @@
       "error": null
     },
     {
+      "url": "https://journals.sagepub.com/doi/10.1177/00471178221098913",
+      "citations": [
+        {
+          "slug": "imagined-communities",
+          "claim_index": 2,
+          "source_title": "Imagined communities: from subjecthood to nationality"
+        },
+        {
+          "slug": "imagined-communities",
+          "claim_index": 3,
+          "source_title": "Imagined communities: from subjecthood to nationality"
+        }
+      ],
+      "host": "journals.sagepub.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/10.1177/00471178221098913",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://journals.sagepub.com/doi/10.1177/0306312720927781",
       "citations": [
         {
@@ -4651,7 +5174,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=b1dd69bb-2831-4c23-8e5e-9e0093099765",
+      "final_url": "https://link.springer.com/article/10.1007/s10602-026-09503-9?error=cookies_not_supported&code=db01b946-9a27-44d6-8d9e-f94717048ef6",
       "redirected": true,
       "error": null
     },
@@ -4702,7 +5225,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=5adc9435-4cd0-4ffa-9b79-e26c22c9c6ad",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=6164373d-11c1-4b4b-8b1b-c271c53ce4f4",
       "redirected": true,
       "error": null
     },
@@ -4719,8 +5242,25 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=dfddcec5-4ade-4336-94b2-177b58aff520",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=33319ac5-6c79-46e7-b0e7-86c15ca1183b",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://lionofjudah1.org/Historypdf/Carlo%20Ginzburg%20The%20Cheese%20and%20the%20Worms%20Reviewed.pdf",
+      "citations": [
+        {
+          "slug": "the-cheese-and-the-worms",
+          "claim_index": 3,
+          "source_title": "Review of The Cheese and the Worms"
+        }
+      ],
+      "host": "lionofjudah1.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://lionofjudah1.org/Historypdf/Carlo%20Ginzburg%20The%20Cheese%20and%20the%20Worms%20Reviewed.pdf",
+      "redirected": false,
       "error": null
     },
     {
@@ -4996,12 +5536,12 @@
         }
       ],
       "host": "ntrs.nasa.gov",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
-      "final_url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20040006526.pdf",
+      "state": "transient",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
       "redirected": false,
-      "error": null
+      "error": "AbortError: This operation was aborted"
     },
     {
       "url": "https://online.ucpress.edu/SLA/article-abstract/1/2/100/83319/Review-The-Silk-Roads-A-New-History-of-the-World",
@@ -5104,6 +5644,62 @@
       "error": null
     },
     {
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/socf.12871",
+      "citations": [
+        {
+          "slug": "the-origins-of-totalitarianism",
+          "claim_index": 2,
+          "source_title": "The Imperial Origins of Nation-States"
+        }
+      ],
+      "host": "onlinelibrary.wiley.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/socf.12871",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://openurl.ebsco.com/contentitem/doi%3A10.1023/a%3A1024420102334?id=ebsco%3Adoi%3A10.1023%2Fa%3A1024420102334",
+      "citations": [
+        {
+          "slug": "the-great-transformation",
+          "claim_index": 1,
+          "source_title": "Karl Polanyi and the writing of The Great Transformation"
+        },
+        {
+          "slug": "the-great-transformation",
+          "claim_index": 2,
+          "source_title": "Karl Polanyi and the writing of The Great Transformation"
+        }
+      ],
+      "host": "openurl.ebsco.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://openurl.ebsco.com/contentitem/doi%3A10.1023/a%3A1024420102334?id=ebsco%3Adoi%3A10.1023%2Fa%3A1024420102334",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://openurl.ebsco.com/contentitem/doi%3A10.1023/a%3A1024420102334?id=ebsco%3Adoi%3A10.1024420102334",
+      "citations": [
+        {
+          "slug": "the-great-transformation",
+          "claim_index": 3,
+          "source_title": "Karl Polanyi and the writing of The Great Transformation"
+        }
+      ],
+      "host": "openurl.ebsco.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://openurl.ebsco.com/contentitem/doi%3A10.1023/a%3A1024420102334?id=ebsco%3Adoi%3A10.1024420102334",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://ora.ox.ac.uk/objects/uuid:c648a83e-aa80-49e1-91a0-d9dda05e80e3",
       "citations": [
         {
@@ -5157,9 +5753,9 @@
         }
       ],
       "host": "oro.open.ac.uk",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://oro.open.ac.uk/7761/",
       "redirected": false,
       "error": null
@@ -5268,6 +5864,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://people.willamette.edu/~pwogan/ImaginedCommunitiesReconsidered.pdf",
+      "citations": [
+        {
+          "slug": "imagined-communities",
+          "claim_index": 1,
+          "source_title": "Imagined Communities reconsidered"
+        }
+      ],
+      "host": "people.willamette.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://people.willamette.edu/~pwogan/ImaginedCommunitiesReconsidered.pdf",
       "redirected": false,
       "error": null
     },
@@ -6278,6 +6891,33 @@
       "error": null
     },
     {
+      "url": "https://repository.essex.ac.uk/10513/",
+      "citations": [
+        {
+          "slug": "the-making-of-the-english-working-class",
+          "claim_index": 1,
+          "source_title": "History and Commitment: E. P. Thompson's Legacy"
+        },
+        {
+          "slug": "the-making-of-the-english-working-class",
+          "claim_index": 2,
+          "source_title": "History and Commitment: E. P. Thompson's Legacy"
+        },
+        {
+          "slug": "the-making-of-the-english-working-class",
+          "claim_index": 3,
+          "source_title": "History and Commitment: E. P. Thompson's Legacy"
+        }
+      ],
+      "host": "repository.essex.ac.uk",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://repository.essex.ac.uk/10513/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://repozytorium.amu.edu.pl/items/189c4d74-4985-4e89-8629-9938e5f2ba8a",
       "citations": [
         {
@@ -6366,7 +7006,7 @@
       ],
       "host": "revistas.unal.edu.co",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://revistas.unal.edu.co/index.php/achsc/article/view/71038",
       "redirected": false,
@@ -6665,6 +7305,50 @@
       "error": null
     },
     {
+      "url": "https://thereader.mitpress.mit.edu/the-cheese-and-the-worms-carlo-ginzburg-launches-microhistory/",
+      "citations": [
+        {
+          "slug": "the-cheese-and-the-worms",
+          "claim_index": 1,
+          "source_title": "The Cheese and the Worms launches microhistory"
+        },
+        {
+          "slug": "the-cheese-and-the-worms",
+          "claim_index": 2,
+          "source_title": "The Cheese and the Worms launches microhistory"
+        },
+        {
+          "slug": "the-cheese-and-the-worms",
+          "claim_index": 3,
+          "source_title": "The Cheese and the Worms launches microhistory"
+        }
+      ],
+      "host": "thereader.mitpress.mit.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://thereader.mitpress.mit.edu/the-cheese-and-the-worms-carlo-ginzburg-launches-microhistory/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/66/74/82/2019667482/2019667482.pdf",
+      "citations": [
+        {
+          "slug": "the-mediterranean",
+          "claim_index": 1,
+          "source_title": "Library of Congress introduction to the longue durée"
+        }
+      ],
+      "host": "tile.loc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/66/74/82/2019667482/2019667482.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://time.com/3069914/world-war-i-history/",
       "citations": [
         {
@@ -6806,6 +7490,23 @@
       "error": null
     },
     {
+      "url": "https://time.com/6128421/teaching-reconstruction-study/",
+      "citations": [
+        {
+          "slug": "a-peoples-history-of-the-united-states",
+          "claim_index": 1,
+          "source_title": "Reconstruction history and the Zinn Education Project"
+        }
+      ],
+      "host": "time.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://time.com/6128421/teaching-reconstruction-study/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://time.com/6325586/killers-of-the-flower-moon-true-story/",
       "citations": [
         {
@@ -6891,6 +7592,23 @@
       "error": null
     },
     {
+      "url": "https://us.sagepub.com/sites/default/files/upm-assets/36582_book_item_36582.pdf",
+      "citations": [
+        {
+          "slug": "imagined-communities",
+          "claim_index": 2,
+          "source_title": "Benedict Anderson: critical overview"
+        }
+      ],
+      "host": "us.sagepub.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://us2.sagepub.com/sites/default/files/upm-assets/36582_book_item_36582.pdf",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://virginiahistory.org/learn/ghosts-eden-park",
       "citations": [
         {
@@ -6956,9 +7674,9 @@
         }
       ],
       "host": "volcano.si.edu",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://volcano.si.edu/volcano.cfm?vn=262000",
       "redirected": false,
       "error": null
@@ -7007,9 +7725,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-genet-021920-011805",
       "redirected": false,
       "error": null
@@ -7158,9 +7876,9 @@
         }
       ],
       "host": "britannica.com",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.britannica.com/biography/Genghis-Khan",
       "redirected": false,
       "error": null
@@ -7175,9 +7893,9 @@
         }
       ],
       "host": "britannica.com",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.britannica.com/biography/Henry-II-king-of-England",
       "redirected": false,
       "error": null
@@ -7251,6 +7969,50 @@
       "error": null
     },
     {
+      "url": "https://www.cambridge.org/core/journals/american-political-science-review/article/singular-enlightenment-clr-james-anticolonialism-and-transatlantic-political-thought/EA9A4D54704BE19B5913F0F1F44E953E",
+      "citations": [
+        {
+          "slug": "the-black-jacobins",
+          "claim_index": 2,
+          "source_title": "A Singular Enlightenment: C. L. R. James"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/american-political-science-review/article/singular-enlightenment-clr-james-anticolonialism-and-transatlantic-political-thought/EA9A4D54704BE19B5913F0F1F44E953E",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/annales-histoire-sciences-sociales-english-edition/article/global-histories-of-modern-europe/84A5E6756DF4850DAD89911037C228D3",
+      "citations": [
+        {
+          "slug": "the-age-of-revolution",
+          "claim_index": 1,
+          "source_title": "Global histories of modern Europe"
+        },
+        {
+          "slug": "the-age-of-revolution",
+          "claim_index": 2,
+          "source_title": "Global histories of modern Europe"
+        },
+        {
+          "slug": "the-age-of-revolution",
+          "claim_index": 3,
+          "source_title": "Global histories of modern Europe"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/annales-histoire-sciences-sociales-english-edition/article/abs/global-histories-of-modern-europe/84A5E6756DF4850DAD89911037C228D3",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://www.cambridge.org/core/journals/central-european-history/article/guilt-or-responsibility-the-hundredyear-debate-on-the-origins-of-world-war-i/35B5E58FD27F872B9B2AF3D5DB552661",
       "citations": [
         {
@@ -7279,6 +8041,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.cambridge.org/core/journals/central-european-history/article/guilt-or-responsibility-the-hundredyear-debate-on-the-origins-of-world-war-i/35B5E58FD27F872B9B2AF3D5DB552661",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/international-review-of-social-history/article/eric-j-hobsbawm-19172012/608B6BD01721D05F0623CD4CA32567D4",
+      "citations": [
+        {
+          "slug": "the-age-of-revolution",
+          "claim_index": 1,
+          "source_title": "Eric J. Hobsbawm 1917–2012"
+        },
+        {
+          "slug": "the-age-of-revolution",
+          "claim_index": 2,
+          "source_title": "Eric J. Hobsbawm 1917–2012"
+        },
+        {
+          "slug": "the-age-of-revolution",
+          "claim_index": 3,
+          "source_title": "Eric J. Hobsbawm 1917–2012"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/international-review-of-social-history/article/eric-j-hobsbawm-19172012/608B6BD01721D05F0623CD4CA32567D4",
       "redirected": false,
       "error": null
     },
@@ -7365,6 +8154,79 @@
       "status": 200,
       "final_url": "https://www.cambridge.org/core/journals/modern-asian-studies/article/abs/secular-empire-estates-nom-and-religions-in-the-mongol-empire/7A385BFBF5E34768F7DF32BF176576FC",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/modern-intellectual-history/article/hannah-arendt-and-marxist-theories-of-totalitarianism/BBBE9F1CDF3893E640378922DC33EF7E",
+      "citations": [
+        {
+          "slug": "the-origins-of-totalitarianism",
+          "claim_index": 1,
+          "source_title": "Hannah Arendt and Marxist theories of totalitarianism"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/modern-intellectual-history/article/hannah-arendt-and-marxist-theories-of-totalitarianism/BBBE9F1CDF3893E640378922DC33EF7E",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/nationalities-papers/article/ethnoimagined-communities-rethinking-benedict-anderson-and-anthony-smiths-theories-of-nations-through-bernard-stieglers-theory-of-epiphylogenesis/32B510A66CA3862C8957373D61C520C3",
+      "citations": [
+        {
+          "slug": "imagined-communities",
+          "claim_index": 1,
+          "source_title": "Ethno-Imagined Communities"
+        },
+        {
+          "slug": "imagined-communities",
+          "claim_index": 3,
+          "source_title": "Ethno-Imagined Communities"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/nationalities-papers/article/ethnoimagined-communities-rethinking-benedict-anderson-and-anthony-smiths-theories-of-nations-through-bernard-stieglers-theory-of-epiphylogenesis/32B510A66CA3862C8957373D61C520C3",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/review-of-politics/article/abs/arendt-and-the-modern-state-variations-on-hegel-in-the-origins-of-totalitarianism/77B7E42C2AB0096A67DAC368416789EB",
+      "citations": [
+        {
+          "slug": "the-origins-of-totalitarianism",
+          "claim_index": 1,
+          "source_title": "Arendt and the modern state"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/review-of-politics/article/abs/arendt-and-the-modern-state-variations-on-hegel-in-the-origins-of-totalitarianism/77B7E42C2AB0096A67DAC368416789EB",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/world-politics/article/braudels-mediterranean-un-defi-latin/D8981CD076B725DA461D4AD6895B2C00",
+      "citations": [
+        {
+          "slug": "the-mediterranean",
+          "claim_index": 2,
+          "source_title": "Braudel's Mediterranean: Un Défi Latin"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/world-politics/article/abs/braudels-mediterranean-un-defi-latin/D8981CD076B725DA461D4AD6895B2C00",
+      "redirected": true,
       "error": null
     },
     {
@@ -7859,12 +8721,12 @@
         }
       ],
       "host": "english.cam.ac.uk",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
-      "final_url": "https://www.english.cam.ac.uk/spenseronline/review/volume-42/issue-422-3/reviews/stephen-greenblatt-the-swerve-and-gerard-passanante-the-lucretian-renaissance/index.html",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
       "redirected": false,
-      "error": null
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://www.epa.gov/archive/epa/sites/production/files/documents/DDT.pdf",
@@ -8692,9 +9554,9 @@
         }
       ],
       "host": "historians.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.historians.org/perspectives-article/weird-science-incest-and-history-may-2020/",
       "redirected": false,
       "error": null
@@ -8792,9 +9654,9 @@
         }
       ],
       "host": "hopkinsmedicine.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.hopkinsmedicine.org/henrietta-lacks/upholding-the-highest-bioethical-standards",
       "redirected": false,
       "error": null
@@ -8944,6 +9806,23 @@
       "error": null
     },
     {
+      "url": "https://www.jstor.org/stable/10.5325/j.ctv1c9hpnp",
+      "citations": [
+        {
+          "slug": "the-mediterranean",
+          "claim_index": 3,
+          "source_title": "Early Modern History and the Social Sciences"
+        }
+      ],
+      "host": "jstor.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/10.5325/j.ctv1c9hpnp",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.jstor.org/stable/j.ctt7sv80",
       "citations": [
         {
@@ -8957,6 +9836,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.jstor.org/stable/j.ctt7sv80",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.jstor.org/stable/j.ctv11smtct",
+      "citations": [
+        {
+          "slug": "the-black-jacobins",
+          "claim_index": 1,
+          "source_title": "The Black Jacobins Reader"
+        },
+        {
+          "slug": "the-black-jacobins",
+          "claim_index": 3,
+          "source_title": "The Black Jacobins Reader"
+        }
+      ],
+      "host": "jstor.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/j.ctv11smtct",
       "redirected": false,
       "error": null
     },
@@ -9272,6 +10173,23 @@
       "status": 200,
       "final_url": "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics/skunkworks/skunk-works-origin-story.html",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.mei.edu/index.php/publications/edward-said-and-two-critiques-orientalism",
+      "citations": [
+        {
+          "slug": "orientalism",
+          "claim_index": 2,
+          "source_title": "Edward Said and the Two Critiques of Orientalism"
+        }
+      ],
+      "host": "mei.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://mei.edu/publications/edward-said-and-two-critiques-orientalism",
+      "redirected": true,
       "error": null
     },
     {
@@ -9591,7 +10509,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=e999860d-1df3-4a12-9cdb-907302dcf0d2",
+      "final_url": "https://www.nature.com/articles/nature09678?error=cookies_not_supported&code=c39cd678-ce8f-4944-b4a0-0bb750fd545f",
       "redirected": true,
       "error": null
     },
@@ -9613,7 +10531,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=83efaf1b-57cb-4ac7-8351-e16d54dda77b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=fb18e73f-859e-47de-a96f-2350c91db65c",
       "redirected": true,
       "error": null
     },
@@ -9630,8 +10548,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=e757e0de-0961-446b-8dbd-faa6b4683b0e",
+      "redirected": true,
       "error": null
     },
     {
@@ -9664,7 +10582,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=bfb13e82-3a1f-44e2-a1ab-a35bf572235e",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=0ecf1264-d79c-4084-b7d8-6700496d9c45",
       "redirected": true,
       "error": null
     },
@@ -9681,8 +10599,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-022-00537-x&code=d5e9f470-334c-4c7d-8e47-0d1987aeb065",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41576-022-00537-x",
+      "redirected": false,
       "error": null
     },
     {
@@ -9698,7 +10616,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=2b5e3688-8568-4eb5-9151-ae605957182a",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=51fc6f43-59db-4bbe-bae2-f7df38b34ca8",
       "redirected": true,
       "error": null
     },
@@ -9720,7 +10638,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=8f1044f9-0b77-404a-9031-aae956935d56",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=7f7558e2-cbdb-4f38-8bce-8d28b8185d10",
       "redirected": true,
       "error": null
     },
@@ -10056,6 +10974,23 @@
       "error": null
     },
     {
+      "url": "https://www.nps.gov/casa/learn/historyculture/columbian-exchange.htm",
+      "citations": [
+        {
+          "slug": "1493",
+          "claim_index": 1,
+          "source_title": "National Park Service: The Columbian Exchange"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/casa/learn/historyculture/columbian-exchange.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.nps.gov/grte/learn/nature/firehistory.htm",
       "citations": [
         {
@@ -10236,6 +11171,23 @@
       "error": null
     },
     {
+      "url": "https://www.nybooks.com/articles/1979/03/08/the-road-to-morocco/",
+      "citations": [
+        {
+          "slug": "orientalism",
+          "claim_index": 1,
+          "source_title": "The Road to Morocco"
+        }
+      ],
+      "host": "nybooks.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nybooks.com/articles/1979/03/08/the-road-to-morocco/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.osti.gov/opennet/manhattan-project-history/publications/smyth_report.pdf",
       "citations": [
         {
@@ -10282,8 +11234,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/England-and-Europe-in-1420/",
-      "redirected": false,
+      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/england-and-europe-in-1420/",
+      "redirected": true,
       "error": null
     },
     {
@@ -10418,6 +11370,28 @@
       "status": 200,
       "final_url": "https://www.rct.uk/collection",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.reddit.com/r/AskHistorians/comments/1plsyyi/howard_zinn_and_a_peoples_history_of_the_united/",
+      "citations": [
+        {
+          "slug": "a-peoples-history-of-the-united-states",
+          "claim_index": 2,
+          "source_title": "Howard Zinn and historians' debate"
+        },
+        {
+          "slug": "a-peoples-history-of-the-united-states",
+          "claim_index": 3,
+          "source_title": "Howard Zinn and historians' debate"
+        }
+      ],
+      "host": "reddit.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.reddit.com/r/AskHistorians/comments/1plsyyi/howard_zinn_and_a_peoples_history_of_the_united/",
+      "redirected": false,
       "error": null
     },
     {
@@ -10561,6 +11535,40 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.science.org/doi/10.1126/science.aau5141",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0048721X04000156",
+      "citations": [
+        {
+          "slug": "orientalism",
+          "claim_index": 2,
+          "source_title": "Orientalism, representation and religion"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/abs/pii/S0048721X04000156",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/036233199290016B",
+      "citations": [
+        {
+          "slug": "the-great-transformation",
+          "claim_index": 1,
+          "source_title": "A re-examination of the great transformation"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/036233199290016B",
       "redirected": false,
       "error": null
     },
@@ -10817,6 +11825,23 @@
       "method": "GET",
       "status": 200,
       "final_url": "https://www.smithsonianmag.com/history/the-real-history-behind-killers-of-the-flower-moon-180983086/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/13668250500488819",
+      "citations": [
+        {
+          "slug": "the-origins-of-totalitarianism",
+          "claim_index": 2,
+          "source_title": "From colonialism to National Socialism to postcolonialism"
+        }
+      ],
+      "host": "tandfonline.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/13668250500488819",
       "redirected": false,
       "error": null
     },

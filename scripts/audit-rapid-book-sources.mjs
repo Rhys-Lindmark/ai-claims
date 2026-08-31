@@ -151,10 +151,10 @@ const audit = {
   results: checked.sort((a, b) => a.url.localeCompare(b.url)),
 };
 
-assert.equal(audit.summary.books, 100);
-assert.equal(audit.summary.claims, 300);
-assert.equal(audit.summary.citations, 600);
-assert.ok(audit.summary.unique_urls >= 400, 'source reuse unexpectedly collapsed the evidence base');
+assert.equal(audit.summary.books, catalog.books.length);
+assert.equal(audit.summary.claims, catalog.books.length * 3);
+assert.equal(audit.summary.citations, catalog.books.length * 6);
+assert.ok(audit.summary.unique_urls >= catalog.books.length * 4, 'source reuse unexpectedly collapsed the evidence base');
 await mkdir(new URL('../data/audits/', import.meta.url), { recursive: true });
 await writeFile(outputUrl, `${JSON.stringify(audit, null, 2)}\n`);
 console.log(JSON.stringify(audit.summary, null, 2));

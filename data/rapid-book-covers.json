@@ -1049,6 +1049,108 @@
         "Thomas S. Kuhn",
         "Dennis Holland"
       ]
+    },
+    {
+      "slug": "imagined-communities",
+      "match_state": "exact_title_author",
+      "cover_id": 652236,
+      "cover_url": "https://covers.openlibrary.org/b/id/652236-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1702855W",
+      "source_title": "Imagined communities",
+      "source_authors": [
+        "Benedict Anderson"
+      ]
+    },
+    {
+      "slug": "the-great-transformation",
+      "match_state": "exact_title_author",
+      "cover_id": 966056,
+      "cover_url": "https://covers.openlibrary.org/b/id/966056-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3617884W",
+      "source_title": "The Great Transformation",
+      "source_authors": [
+        "Karl Polanyi"
+      ]
+    },
+    {
+      "slug": "the-black-jacobins",
+      "match_state": "exact_title_author",
+      "cover_id": 14349219,
+      "cover_url": "https://covers.openlibrary.org/b/id/14349219-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1155988W",
+      "source_title": "The Black Jacobins",
+      "source_authors": [
+        "C. L. R. James"
+      ]
+    },
+    {
+      "slug": "the-origins-of-totalitarianism",
+      "match_state": "exact_title_author",
+      "cover_id": 10793645,
+      "cover_url": "https://covers.openlibrary.org/b/id/10793645-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL10460640W",
+      "source_title": "The Origins of Totalitarianism",
+      "source_authors": [
+        "Hannah Arendt"
+      ]
+    },
+    {
+      "slug": "orientalism",
+      "match_state": "exact_title_author",
+      "cover_id": 254331,
+      "cover_url": "https://covers.openlibrary.org/b/id/254331-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL27405W",
+      "source_title": "Orientalism",
+      "source_authors": [
+        "Edward W. Said"
+      ]
+    },
+    {
+      "slug": "a-peoples-history-of-the-united-states",
+      "match_state": "exact_title_author",
+      "cover_id": 10592817,
+      "cover_url": "https://covers.openlibrary.org/b/id/10592817-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL50283W",
+      "source_title": "A People's History of the United States",
+      "source_authors": [
+        "Howard Zinn",
+        "Kathy Emery",
+        "Ellen Reeves",
+        "Matt Damon",
+        "Howard Zinn"
+      ]
+    },
+    {
+      "slug": "the-making-of-the-english-working-class",
+      "match_state": "exact_title_author",
+      "cover_id": 254045,
+      "cover_url": "https://covers.openlibrary.org/b/id/254045-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2761522W",
+      "source_title": "The making of the English working class",
+      "source_authors": [
+        "E. P. Thompson",
+        "E. P. Thompson",
+        "E.P. Thompson"
+      ]
+    },
+    {
+      "slug": "the-cheese-and-the-worms",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-mediterranean",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-age-of-revolution",
+      "match_state": "exact_title_author",
+      "cover_id": 4765129,
+      "cover_url": "https://covers.openlibrary.org/b/id/4765129-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL495659W",
+      "source_title": "The Age of Revolution",
+      "source_authors": [
+        "Eric Hobsbawm"
+      ]
     }
   ]
 }
