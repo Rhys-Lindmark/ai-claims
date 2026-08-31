@@ -55,8 +55,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": ["ggs-evidence-03a"],
-      "source_ids": ["ggs-source-02", "ggs-source-13"]
+      "evidence_record_ids": ["ggs-evidence-03a", "ggs-evidence-03b", "ggs-evidence-03c", "ggs-evidence-03d"],
+      "source_ids": ["ggs-source-02", "ggs-source-13", "ggs-source-14", "ggs-source-15", "ggs-source-16"]
     },
     {
       "claim_id": "ggs-claim-07",
@@ -190,6 +190,42 @@
       "last_verified_at": "2026-08-31",
       "finding": "Across 678 microsatellite loci in 68 Indigenous populations, genetic differentiation increased faster with north-south distance in the Americas than with east-west distance in Eurasia, consistent with easier movement along Eurasia's major axis.",
       "scope_and_limits": "This is a migration proxy, not direct evidence of crop or technology transmission. Its relevance depends on technology having moved with people, present populations retaining older spatial signals, and the sampled continental comparison being adequate."
+    },
+    {
+      "evidence_id": "ggs-evidence-03b",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-14",
+      "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Directly dated wheat and broomcorn millet at Begash in southeast Kazakhstan place Southwest Asian and East Asian crops together in the central Eurasian steppe during the later third millennium BCE.",
+      "scope_and_limits": "The find demonstrates long-distance east-west crop movement through a mobile-pastoralist corridor, but the grains came from a cremation burial and may reflect ritual exchange rather than local staple cultivation or easy ecological transfer."
+    },
+    {
+      "evidence_id": "ggs-evidence-03c",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-15",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Seventy new direct barley dates plus published records indicate wheat and barley reached prehistoric China by distinct routes and schedules, while barley crossed more than 40 degrees of latitude and over 3,500 meters of elevation.",
+      "scope_and_limits": "The evidence confirms major eastward crop movement but makes route diversity and flowering-time adaptation central; a continental east-west label alone does not predict the observed crop-specific chronology."
+    },
+    {
+      "evidence_id": "ggs-evidence-03d",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-16",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Bayesian modeling of directly dated millet grains places initial cultivation around 5800 BCE and finds a discontinuous westward spread across eastern Asia, including average gaps of about 1,200 years between neighboring regions.",
+      "scope_and_limits": "This is strong crop-specific chronology within eastern Asia, not a direct intercontinental axis comparison. The discontinuities show that orientation did not remove cultural, demographic, or regional barriers to adoption."
     },
     {
       "evidence_id": "ggs-evidence-08a",
@@ -368,6 +404,36 @@
       "year": 2024,
       "url": "https://doi.org/10.1017/ehs.2023.34",
       "source_class": "global_ecological_and_cultural_analysis",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-14",
+      "title": "Earliest direct evidence for broomcorn millet and wheat in the central Eurasian steppe region",
+      "publisher": "Antiquity",
+      "year": 2010,
+      "url": "https://doi.org/10.1017/S0003598X0006703X",
+      "source_class": "primary_archaeobotany_and_radiocarbon",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-15",
+      "title": "Journey to the east: Diverse routes and variable flowering times for wheat and barley en route to prehistoric China",
+      "publisher": "PLOS ONE",
+      "year": 2017,
+      "url": "https://doi.org/10.1371/journal.pone.0187405",
+      "source_class": "primary_archaeobotany_and_crop_genetics",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-16",
+      "title": "Discontinuous spread of millet agriculture in eastern Asia and prehistoric population dynamics",
+      "publisher": "Science Advances",
+      "year": 2019,
+      "url": "https://doi.org/10.1126/sciadv.aax6225",
+      "source_class": "primary_archaeobotanical_chronology",
       "independence": "independent",
       "assessment_state": "assessed"
     }
