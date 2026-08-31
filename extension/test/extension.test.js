@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import registry from '../data/analyses.json' with { type: 'json' };
 import resolverConfig from '../data/resolver-config.json' with { type: 'json' };
 import manifest from '../manifest.json' with { type: 'json' };
@@ -25,6 +26,8 @@ import { syntheticWebScore, validateSyntheticWebFixture } from '../lib/web-fixtu
 import { probeResolverUrl } from '../lib/resolver-probe.js';
 import architecture from '../data/architecture.json' with { type: 'json' };
 import compatibility from '../data/compatibility.json' with { type: 'json' };
+import attestation from '../data/deployment-attestation.json' with { type: 'json' };
+import { validateDeploymentAttestation } from '../lib/deployment-attestation.js';
 import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -60,6 +63,16 @@ test('compatibility matrix discloses all page kinds and source rules', () => {
     assert.match(surface.proof_route, /^\/(episode|book|web)$/);
   }
   assert.equal(compatibility.surfaces[0].proof_level, 'end_to_end');
+});
+
+test('deployment attestation is intact, privacy-safe, and manifest-complete', () => {
+  assert.deepEqual(validateDeploymentAttestation(attestation, compatibility), []);
+  const { integrity, ...payload } = attestation;
+  assert.equal(integrity.algorithm, 'SHA-256');
+  assert.equal(integrity.digest_scope, 'attestation_without_integrity');
+  assert.equal(createHash('sha256').update(JSON.stringify(payload)).digest('hex'), integrity.digest_hex);
+  assert.equal(attestation.privacy.visitor_data_collected, false);
+  assert.deepEqual(attestation.privacy.retained_visitor_fields, []);
 });
 
 test('synthetic YouTube page resolves through the reviewed gate to its episode route', () => {

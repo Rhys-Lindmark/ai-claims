@@ -1,0 +1,61 @@
+{
+  "schema_version": "ai-claims.deployment-attestation/1.0.0",
+  "verified_at": "2026-08-31T02:12:49.844Z",
+  "claims_base": "https://ai.rhyslindmark.com/claims",
+  "tested_site_version": 71,
+  "tested_commit_sha": "a26c823272738bf5a6c5a59d151e9ceefa7e19bc",
+  "verifier": "scripts/check-deployed-compatibility.mjs",
+  "verification_command": "npm run test:deployed-compatibility",
+  "privacy": {
+    "visitor_data_collected": false,
+    "retained_visitor_fields": [],
+    "request_scope": "published synthetic fixture entity keys only"
+  },
+  "all_passed": true,
+  "results": [
+    {
+      "kind": "youtube",
+      "entity_key": "youtube:ai-claims-synthetic-001",
+      "expected_score": 75,
+      "observed_score": 75,
+      "reviewed_claims": 4,
+      "eligible_claims": 4,
+      "unresolved_claims": 0,
+      "resolver_status": 200,
+      "route_status": 200,
+      "evidence_url": "https://ai.rhyslindmark.com/claims/episode?entity_key=youtube%3Aai-claims-synthetic-001",
+      "verified": true
+    },
+    {
+      "kind": "goodreads",
+      "entity_key": "goodreads:999999999999",
+      "expected_score": 75,
+      "observed_score": 75,
+      "reviewed_claims": 4,
+      "eligible_claims": 4,
+      "unresolved_claims": 0,
+      "resolver_status": 200,
+      "route_status": 200,
+      "evidence_url": "https://ai.rhyslindmark.com/claims/book?entity_key=goodreads%3A999999999999",
+      "verified": true
+    },
+    {
+      "kind": "web",
+      "entity_key": "web:example.invalid/ai-claims-synthetic-page",
+      "expected_score": 50,
+      "observed_score": 50,
+      "reviewed_claims": 4,
+      "eligible_claims": 4,
+      "unresolved_claims": 0,
+      "resolver_status": 200,
+      "route_status": 200,
+      "evidence_url": "https://ai.rhyslindmark.com/claims/web?entity_key=web%3Aexample.invalid%2Fai-claims-synthetic-page",
+      "verified": true
+    }
+  ],
+  "integrity": {
+    "algorithm": "SHA-256",
+    "digest_scope": "attestation_without_integrity",
+    "digest_hex": "cbeca0990cee4c2255a1374c5ac2e4c59503b81aa8290c4610478635ddec1b18"
+  }
+}
