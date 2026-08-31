@@ -17,6 +17,7 @@ import { correctionLinkForState, correctionPreviewForState, escapeHtml } from '.
 import { canonicalPrivacyReceipt, privacyReceiptArtifact, SUPPORTED_PRIVACY_RECEIPT_SCHEMAS, verifyPrivacyReceiptDocument } from '../lib/privacy-receipt.js';
 import syntheticEpisode from '../data/synthetic-youtube-fixture.json' with { type: 'json' };
 import { syntheticEpisodeScore, validateSyntheticEpisodeFixture } from '../lib/episode-fixture.js';
+import { probeResolverUrl } from '../lib/resolver-probe.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -42,6 +43,30 @@ test('synthetic episode packet is internally linked and score-reproducible', () 
   assert.equal(syntheticEpisodeScore(syntheticEpisode), 75);
   assert.match(syntheticEpisode.fixture_notice, /no real episode/i);
   assert.equal(syntheticEpisode.claims.length, 4);
+});
+
+test('resolver probe publishes only complete reviewed YouTube analyses', async () => {
+  let requestedUrl;
+  const analysis = registry.analyses.find((entry) => entry.entity_key === syntheticEpisode.entity_key);
+  const result = await probeResolverUrl(syntheticEpisode.canonical_url, { endpoint: 'https://api.example.invalid/', fetchImpl: async (url) => { requestedUrl = url; return { ok: true, status: 200, json: async () => ({ contract_version: '1.0.0', entity_key: syntheticEpisode.entity_key, analysis }) }; } });
+  assert.equal(requestedUrl.searchParams.get('entity_key'), syntheticEpisode.entity_key);
+  assert.equal(result.state, 'reviewed');
+  assert.equal(result.score, 75);
+  assert.equal(result.analysisUrl, analysis.analysis_url);
+
+  const pendingAnalysis = { ...analysis, reviewed_claims: 3, score_0_100: 99 };
+  const pending = await probeResolverUrl(syntheticEpisode.canonical_url, { fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '1.0.0', entity_key: syntheticEpisode.entity_key, analysis: pendingAnalysis }) }) });
+  assert.equal(pending.state, 'pending');
+  assert.equal(Object.hasOwn(pending, 'score'), false);
+});
+
+test('resolver probe distinguishes unknown videos and invalid inputs', async () => {
+  const missing = await probeResolverUrl('https://youtu.be/unreviewed-demo-001', { fetchImpl: async () => ({ ok: false, status: 404 }) });
+  assert.equal(missing.state, 'not_analyzed');
+  let called = false;
+  const invalid = await probeResolverUrl('https://example.com/not-youtube', { fetchImpl: async () => { called = true; } });
+  assert.equal(invalid.state, 'invalid');
+  assert.equal(called, false);
 });
 
 test('recognizes Goodreads books without edition-slug noise', () => {
