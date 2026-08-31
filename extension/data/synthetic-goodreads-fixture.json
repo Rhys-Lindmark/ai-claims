@@ -1,0 +1,27 @@
+{
+  "fixture_notice": "Entirely synthetic closed-world book packet; no real book, author, Goodreads record, or world claim is represented.",
+  "entity_key": "goodreads:999999999999",
+  "goodreads_page_id": "999999999999",
+  "canonical_url": "https://www.goodreads.com/book/show/999999999999.ai-claims-synthetic-book",
+  "edition_id": "synthetic-edition-001",
+  "title": "The Closed-World Almanac",
+  "author": "Synthetic Author 01",
+  "passages": [
+    { "passage_id": "passage-01", "locator": "Chapter 1 · paragraph 2", "text": "The island of Pelago has three charted moons." },
+    { "passage_id": "passage-02", "locator": "Chapter 2 · paragraph 1", "text": "Its northern observatory opened in year 40 of the local calendar." },
+    { "passage_id": "passage-03", "locator": "Chapter 3 · paragraph 4", "text": "Every chart in the archive uses blue ink." },
+    { "passage_id": "passage-04", "locator": "Chapter 4 · paragraph 3", "text": "The archive contains twelve complete star charts." }
+  ],
+  "evidence_records": [
+    { "evidence_id": "book-evidence-01", "title": "Synthetic appendix: lunar register", "finding": "Lists three charted moons." },
+    { "evidence_id": "book-evidence-02", "title": "Synthetic appendix: observatory ledger", "finding": "Records the opening in local year 40." },
+    { "evidence_id": "book-evidence-03", "title": "Synthetic archive inventory", "finding": "Lists blue and black ink charts, contradicting an all-blue claim." },
+    { "evidence_id": "book-evidence-04", "title": "Synthetic archive inventory", "finding": "Lists twelve complete star charts." }
+  ],
+  "claims": [
+    { "claim_id": "book-claim-01", "passage_id": "passage-01", "claim_type": "factual", "evidence_ids": ["book-evidence-01"], "verdict": "accurate", "truth_credit": 1 },
+    { "claim_id": "book-claim-02", "passage_id": "passage-02", "claim_type": "factual", "evidence_ids": ["book-evidence-02"], "verdict": "accurate", "truth_credit": 1 },
+    { "claim_id": "book-claim-03", "passage_id": "passage-03", "claim_type": "factual", "evidence_ids": ["book-evidence-03"], "verdict": "inaccurate", "truth_credit": 0 },
+    { "claim_id": "book-claim-04", "passage_id": "passage-04", "claim_type": "quantitative", "evidence_ids": ["book-evidence-04"], "verdict": "accurate", "truth_credit": 1 }
+  ]
+}

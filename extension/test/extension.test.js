@@ -18,6 +18,8 @@ import { correctionLinkForState, correctionPreviewForState, escapeHtml } from '.
 import { canonicalPrivacyReceipt, privacyReceiptArtifact, SUPPORTED_PRIVACY_RECEIPT_SCHEMAS, verifyPrivacyReceiptDocument } from '../lib/privacy-receipt.js';
 import syntheticEpisode from '../data/synthetic-youtube-fixture.json' with { type: 'json' };
 import { syntheticEpisodeScore, validateSyntheticEpisodeFixture } from '../lib/episode-fixture.js';
+import syntheticBook from '../data/synthetic-goodreads-fixture.json' with { type: 'json' };
+import { syntheticBookScore, validateSyntheticBookFixture } from '../lib/book-fixture.js';
 import { probeResolverUrl } from '../lib/resolver-probe.js';
 import architecture from '../data/architecture.json' with { type: 'json' };
 import compatibility from '../data/compatibility.json' with { type: 'json' };
@@ -69,6 +71,23 @@ test('synthetic episode packet is internally linked and score-reproducible', () 
   assert.equal(syntheticEpisodeScore(syntheticEpisode), 75);
   assert.match(syntheticEpisode.fixture_notice, /no real episode/i);
   assert.equal(syntheticEpisode.claims.length, 4);
+});
+
+test('synthetic Goodreads page resolves through the reviewed gate to its book route', async () => {
+  const identity = identifyPage(syntheticBook.canonical_url);
+  const analysis = registry.analyses.find((entry) => entry.entity_key === syntheticBook.entity_key);
+  const result = await probeResolverUrl(syntheticBook.canonical_url, { fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '1.0.0', entity_key: syntheticBook.entity_key, analysis }) }) });
+  assert.equal(identity.entityKey, syntheticBook.entity_key);
+  assert.equal(result.state, 'reviewed');
+  assert.equal(result.score, 75);
+  assert.match(result.analysisUrl, /\/claims\/book\?entity_key=goodreads%3A999999999999$/);
+});
+
+test('synthetic book packet is internally linked and score-reproducible', () => {
+  assert.deepEqual(validateSyntheticBookFixture(syntheticBook), []);
+  assert.equal(syntheticBookScore(syntheticBook), 75);
+  assert.match(syntheticBook.fixture_notice, /no real book/i);
+  assert.equal(syntheticBook.claims.length, 4);
 });
 
 test('resolver probe publishes only complete reviewed YouTube analyses', async () => {

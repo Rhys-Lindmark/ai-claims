@@ -20,6 +20,8 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the credential-free setup, privacy 
 
 Open the [synthetic YouTube pipeline](https://ai.rhyslindmark.com/claims/episode?entity_key=youtube%3Aai-claims-synthetic-001), or verify its deployed resolver-to-route contract with `npm run test:deployed-youtube`.
 
+Open the [synthetic Goodreads pipeline](https://ai.rhyslindmark.com/claims/book?entity_key=goodreads%3A999999999999), or verify its deployed resolver-to-route contract with `npm run test:deployed-goodreads`.
+
 ## Validate
 
 ```bash
