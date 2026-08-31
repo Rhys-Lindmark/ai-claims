@@ -1,6 +1,13 @@
 import { ExternalLink, FlaskConical, PanelRightOpen, ShieldCheck } from 'lucide-react';
+import channelPolicy from '@/releases/channel-policy.json';
+import release016 from '@/releases/extension-v0.2.16.json';
+import release017 from '@/releases/extension-v0.2.17.json';
 import release from '@/releases/extension-v0.2.18.json';
 import { releaseDownloadUrls } from '@/extension/lib/extension-release-api.js';
+
+const retainedReleases = [release, release017, release016].filter((item) =>
+  channelPolicy.retained_versions.includes(item.extension_version),
+);
 
 export function ExtensionNorthStarDemo() {
   const releaseUrls = releaseDownloadUrls(release.extension_version);
@@ -27,6 +34,24 @@ export function ExtensionNorthStarDemo() {
             <div className="mt-4 grid gap-2 font-mono text-[8px] font-bold uppercase text-ink/55 sm:grid-cols-2"><p>ZIP · {release.package.bytes.toLocaleString()} bytes<br />SHA-256 {release.package.integrity.digest_hex.slice(0, 16)}…</p><p>Source {release.source_commit_sha.slice(0, 7)}<br />Proof {release.contracts.deployment_attestation_digest.slice(0, 16)}…</p></div>
             <p className="mt-3 border-t border-ink/20 pt-3 font-mono text-[7px] font-bold uppercase leading-relaxed text-coral">Prototype · not Chrome Web Store reviewed · not publisher-signed · installation telemetry: none</p>
             <div className="mt-3 flex flex-wrap gap-3 font-mono text-[8px] font-bold uppercase"><a className="text-cobalt underline" href={releaseUrls.package_url}>Download ZIP →</a><a className="text-cobalt underline" href={releaseUrls.manifest_url}>Integrity manifest →</a><a className="text-cobalt underline" href={`https://github.com/Rhys-Lindmark/ai-claims/commit/${release.source_commit_sha}`}>Source commit →</a></div>
+          </div>
+          <div className="mt-5 border-2 border-ink bg-paper p-4" aria-label="Retained extension releases">
+            <div className="flex flex-wrap items-end justify-between gap-2 border-b border-ink/25 pb-3">
+              <div><p className="font-mono text-[8px] font-bold uppercase text-cobalt">Open release channel</p><h3 className="mt-1 text-xl font-black">RETAINED, HASHED, REVERSIBLE.</h3></div>
+              <span className="font-mono text-[7px] font-bold uppercase text-ink/50">Policy {channelPolicy.policy_revision} · {channelPolicy.channel}</span>
+            </div>
+            <div className="divide-y divide-ink/20">
+              {retainedReleases.map((item) => {
+                const isCurrent = item.extension_version === channelPolicy.current_version;
+                const isMinimum = item.extension_version === channelPolicy.minimum_supported_version;
+                return <div className="grid gap-2 py-3 sm:grid-cols-[.55fr_1fr_auto] sm:items-center" key={item.extension_version}>
+                  <div className="flex flex-wrap items-center gap-2"><strong className="font-mono text-[10px]">V{item.extension_version}</strong>{isCurrent ? <span className="bg-cobalt px-2 py-1 font-mono text-[6px] font-bold uppercase text-white">Current</span> : null}{isMinimum ? <span className="border border-ink px-2 py-1 font-mono text-[6px] font-bold uppercase">Minimum</span> : null}</div>
+                  <p className="font-mono text-[7px] font-bold uppercase text-ink/55">{item.package.bytes.toLocaleString()} bytes · SHA-256 {item.package.integrity.digest_hex.slice(0, 16)}…</p>
+                  <a className="font-mono text-[7px] font-bold uppercase text-cobalt underline" href={`https://ai.rhyslindmark.com/claims/api/v1/extension-releases/${item.extension_version}`}>Immutable API →</a>
+                </div>;
+              })}
+            </div>
+            <p className="border-t border-ink/25 pt-3 font-mono text-[7px] font-bold uppercase leading-relaxed text-ink/50">Manual prototype distribution · no install identity · rollback only to retained, integrity-verified releases</p>
           </div>
         </div>
         <aside className="border-2 border-ink bg-paper p-4 shadow-[7px_7px_0_#1c1c1a]" aria-label="Synthetic extension preview">

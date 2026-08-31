@@ -12,7 +12,7 @@ The public resolver contract is available at [`/claims/api/v1/analyses/resolve?e
 
 ## Install the prototype
 
-Download the [`extension-v0.2.16` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.16), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. A fully synthetic YouTube packet now proves page detection, canonical resolution, reviewed-score gating, and a dedicated timestamped episode evidence route end to end. It also retains the local-only privacy receipt, export, verifier, and feed-negotiation controls; no new permission or upload path is added. Only synthetic reviewed fixtures are currently published.
+Download the current [`v0.2.18` prototype release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/v0.2.18), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. A fully synthetic YouTube packet now proves page detection, canonical resolution, reviewed-score gating, and a dedicated timestamped episode evidence route end to end. It also retains the local-only privacy receipt, export, verifier, and feed-negotiation controls; no new permission or upload path is added. Only synthetic reviewed fixtures are currently published.
 
 The public Claims page includes an open-source architecture map linking each extension boundary—detection, canonicalization, resolution, publication gate, and badge/evidence output—to its implementation and privacy rule.
 
