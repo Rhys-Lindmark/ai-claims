@@ -20,6 +20,7 @@ import syntheticEpisode from '../data/synthetic-youtube-fixture.json' with { typ
 import { syntheticEpisodeScore, validateSyntheticEpisodeFixture } from '../lib/episode-fixture.js';
 import { probeResolverUrl } from '../lib/resolver-probe.js';
 import architecture from '../data/architecture.json' with { type: 'json' };
+import compatibility from '../data/compatibility.json' with { type: 'json' };
 import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -40,6 +41,18 @@ test('public architecture map is backed by packaged implementation files', () =>
     assert.match(boundary.privacy, /./);
     assert.equal(existsSync(boundary.file), true, `${boundary.file} must exist`);
   }
+});
+
+test('compatibility matrix discloses all page kinds and source rules', () => {
+  assert.equal(compatibility.schema_version, 'ai-claims.page-compatibility/1.0.0');
+  assert.deepEqual(compatibility.surfaces.map((surface) => surface.kind), ['youtube', 'goodreads', 'web']);
+  for (const surface of compatibility.surfaces) {
+    assert.equal(surface.resolver, 'Public canonical-key lookup');
+    assert.match(surface.acquisition, /./);
+    assert.match(surface.evidence_destination, /^\/claims\//);
+    assert.match(surface.proof, /synthetic/i);
+  }
+  assert.equal(compatibility.surfaces[0].proof_level, 'end_to_end');
 });
 
 test('synthetic YouTube page resolves through the reviewed gate to its episode route', () => {
