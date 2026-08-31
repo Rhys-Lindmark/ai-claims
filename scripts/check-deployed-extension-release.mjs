@@ -35,6 +35,23 @@ const publicManifest = await manifestResponse.json();
 assert.equal(publicManifest.package.integrity.digest_hex, current.release.package.integrity.digest_hex);
 assert.equal(publicManifest.source_commit_sha, current.release.source_commit_sha);
 
+const previousVersion = process.argv[3] ?? '0.2.16';
+const previousResponse = await fetch(`${currentUrl}/${previousVersion}`);
+assert.equal(previousResponse.status, 200);
+assert.match(previousResponse.headers.get('cache-control') ?? '', /immutable/);
+const previous = await previousResponse.json();
+assert.equal(previous.requested_version, previousVersion);
+assert.equal(previous.release.extension_version, previousVersion);
+const previousEtag = `"sha256-${previous.release.package.integrity.digest_hex}"`;
+assert.equal(previousResponse.headers.get('etag')?.replace(/^W\//, ''), previousEtag);
+assert.notEqual(previousEtag, expectedEtag);
+const previousPackageResponse = await fetch(previous.package_url);
+assert.equal(previousPackageResponse.status, 200);
+const previousPackageBytes = Buffer.from(await previousPackageResponse.arrayBuffer());
+assert.equal(previousPackageBytes.byteLength, previous.release.package.bytes);
+assert.equal(createHash('sha256').update(previousPackageBytes).digest('hex'), previous.release.package.integrity.digest_hex);
+assert.equal((await fetch(`${currentUrl}/${previousVersion}`, { headers: { 'if-none-match': previousEtag } })).status, 304);
+
 assert.equal((await fetch(`${currentUrl}/9.9.9`)).status, 404);
 assert.equal((await fetch(`${currentUrl}/not-a-version`)).status, 400);
-console.log(`Extension release API passed: ${current.current_version} · ${packageBytes.byteLength} bytes · ${current.release.package.integrity.digest_hex}`);
+console.log(`Extension release API passed: current ${current.current_version} · history ${previousVersion} · distinct immutable digests verified`);
