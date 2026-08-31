@@ -23,7 +23,7 @@ let currentTab;
 let currentIdentity;
 let currentAutoCheck = false;
 const requestStore = createRequestStore({ storageArea: chrome.storage.local });
-const metricsStore = createMetricsStore({ storageArea: chrome.storage.local });
+const metricsStore = createMetricsStore({ storageArea: chrome.storage.local, extensionVersion: chrome.runtime.getManifest().version });
 const originOptIns = createOriginOptInStore({ storageArea: chrome.storage.local });
 const checkedThisSession = new Set();
 
@@ -31,7 +31,7 @@ async function refreshMetrics() {
   const [summary, negotiation, receipt] = await Promise.all([metricsStore.summary(7), metricsStore.negotiationSummary(7), metricsStore.privacyReceipt()]);
   const artifact = await privacyReceiptArtifact(receipt);
   localMetrics.textContent = `7D CHECKS: ${summary.counts.page_checked} · FEED 1.1: ${negotiation.counts.supported_1_1} · LEGACY: ${negotiation.counts.legacy_1_0} · UNSUPPORTED: ${negotiation.counts.unsupported}`;
-  privacyReceipt.textContent = `LOCAL ONLY · ${receipt.retention_days}-DAY RETENTION · NEVER TRANSMITTED · LAST RESET ${receipt.last_reset_at ?? 'NEVER'} · SHA-256 ${artifact.digestHex}`;
+  privacyReceipt.textContent = `EXTENSION ${receipt.generator.extension_version} · LOCAL ONLY · ${receipt.retention_days}-DAY RETENTION · NEVER TRANSMITTED · LAST RESET ${receipt.last_reset_at ?? 'NEVER'} · SHA-256 ${artifact.digestHex}`;
 }
 
 function negotiationOutcome(state) {

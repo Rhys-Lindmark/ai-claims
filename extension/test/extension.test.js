@@ -338,7 +338,7 @@ test('negotiation telemetry stores daily outcome aggregates without page identit
 
 test('privacy receipt is machine-readable and negotiation reset preserves unrelated metrics', async () => {
   const storage = memoryStorage();
-  const store = createMetricsStore({ storageArea: storage, now: () => '2026-08-30T12:34:56.000Z' });
+  const store = createMetricsStore({ storageArea: storage, now: () => '2026-08-30T12:34:56.000Z', extensionVersion: manifest.version });
   await store.record('page_checked', { kind: 'web' });
   await store.recordNegotiation('supported_1_1');
   const initialReceipt = await store.privacyReceipt();
@@ -349,6 +349,7 @@ test('privacy receipt is machine-readable and negotiation reset preserves unrela
     retention_days: 30,
     retained_fields: ['date', 'outcome_count'],
     prohibited_fields: ['url', 'entity_key', 'title', 'page_kind', 'per_check_timestamp'],
+    generator: { product: 'ai-claims-extension', extension_version: manifest.version },
     last_reset_at: null,
   });
   const resetReceipt = await store.resetNegotiations();
@@ -404,4 +405,18 @@ test('privacy receipt verifier rejects intact but unknown receipt schemas', asyn
   assert.equal(verification.state, 'unsupported');
   assert.match(verification.reason, /schema 2\.0\.0/);
   assert.deepEqual(verification.supportedSchemas, ['1.0.0']);
+});
+
+test('receipt verification is tied to schema, not generating extension release', async () => {
+  const receipt = {
+    schema_version: '1.0.0',
+    storage_scope: 'chrome.storage.local',
+    transmitted: false,
+    generator: { product: 'ai-claims-extension', extension_version: '99.88.77' },
+    last_reset_at: null,
+  };
+  const artifact = await privacyReceiptArtifact(receipt);
+  const verification = await verifyPrivacyReceiptDocument(artifact.content);
+  assert.equal(verification.state, 'valid');
+  assert.equal(JSON.parse(artifact.content).generator.extension_version, '99.88.77');
 });

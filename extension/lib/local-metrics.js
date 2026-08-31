@@ -14,7 +14,12 @@ const PRIVACY_RECEIPT = Object.freeze({
   prohibited_fields: ['url', 'entity_key', 'title', 'page_kind', 'per_check_timestamp'],
 });
 
-export function createMetricsStore({ storageArea, now = () => new Date().toISOString() }) {
+export function createMetricsStore({ storageArea, now = () => new Date().toISOString(), extensionVersion = null }) {
+  const receipt = (lastResetAt) => ({
+    ...PRIVACY_RECEIPT,
+    ...(extensionVersion ? { generator: { product: 'ai-claims-extension', extension_version: extensionVersion } } : {}),
+    last_reset_at: lastResetAt,
+  });
   return {
     async record(type, dimensions = {}) {
       if (!METRIC_EVENT_TYPES.includes(type)) throw new Error(`Unknown metric event: ${type}`);
@@ -66,14 +71,14 @@ export function createMetricsStore({ storageArea, now = () => new Date().toISOSt
     async privacyReceipt() {
       const stored = await storageArea.get(PRIVACY_RECEIPT_STORAGE_KEY);
       const state = stored[PRIVACY_RECEIPT_STORAGE_KEY];
-      return { ...PRIVACY_RECEIPT, last_reset_at: typeof state?.last_reset_at === 'string' ? state.last_reset_at : null };
+      return receipt(typeof state?.last_reset_at === 'string' ? state.last_reset_at : null);
     },
 
     async resetNegotiations() {
       const lastResetAt = now();
       await storageArea.remove(NEGOTIATION_STORAGE_KEY);
       await storageArea.set({ [PRIVACY_RECEIPT_STORAGE_KEY]: { last_reset_at: lastResetAt } });
-      return { ...PRIVACY_RECEIPT, last_reset_at: lastResetAt };
+      return receipt(lastResetAt);
     },
   };
 }
