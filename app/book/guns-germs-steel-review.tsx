@@ -11,7 +11,7 @@ export function GunsGermsSteelReview() {
     <header className="border-b border-[#20211f]/10">
       <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-5">
         <a className="inline-flex items-center gap-2 text-sm font-bold" href="https://ai.rhyslindmark.com/claims"><ArrowLeft className="h-4 w-4" /> AI Claims</a>
-        <span className="text-xs font-semibold text-[#20211f]/45">Claim inventory</span>
+        <span className="text-xs text-[#20211f]/45">In review</span>
       </div>
     </header>
 
@@ -26,16 +26,16 @@ export function GunsGermsSteelReview() {
           <p className="mt-4 max-w-md text-sm leading-relaxed text-[#20211f]/60 sm:mt-0">{packet.score_hidden_reason}</p>
         </div>
 
-        <div className="mt-8 flex items-center justify-between text-sm font-bold"><span>0 of {packet.claims.length} claims reviewed</span><span>Scoping</span></div>
-        <div aria-label="Zero of six claims reviewed" className="mt-3 h-2 overflow-hidden rounded-full bg-[#e7e8e5]"><div className="h-full w-0 bg-[#20211f]" /></div>
+        <div className="mt-8 flex items-center justify-between text-sm"><span>{packet.coverage.candidate_claims} candidate claims</span><span>{packet.coverage.eligible_claims} passage-confirmed</span></div>
+        <div aria-label="Zero of six candidate claims passage-confirmed" className="mt-3 h-px bg-[#20211f]/15" />
         <p className="mt-5 max-w-2xl text-sm leading-relaxed text-[#20211f]/55">{packet.scope_note}</p>
       </section>
 
       <section className="mt-14">
-        <h2 className="text-xl font-black">Claims to check</h2>
+        <h2 className="text-xl font-black">Candidate claims</h2>
         <div className="mt-5 divide-y divide-[#20211f]/10 border-y border-[#20211f]/10">
           {packet.claims.map((claim, index) => <article className="py-6" key={claim.claim_id}>
-            <div className="flex items-center justify-between gap-4 text-xs font-semibold text-[#20211f]/40"><span>{String(index + 1).padStart(2, '0')} · {claimTypeLabel[claim.claim_type] ?? claim.claim_type}</span><span>Unreviewed</span></div>
+            <div className="flex items-center justify-between gap-4 text-xs text-[#20211f]/40"><span>{String(index + 1).padStart(2, '0')} · {claimTypeLabel[claim.claim_type] ?? claim.claim_type}</span><span>Passage needed</span></div>
             <h3 className="mt-3 text-xl font-bold leading-snug tracking-[-.015em]">{claim.text}</h3>
             <details className="mt-4 text-sm">
               <summary className="cursor-pointer font-semibold text-[#20211f]/55">{claim.source_ids.length} source {claim.source_ids.length === 1 ? 'lead' : 'leads'}</summary>

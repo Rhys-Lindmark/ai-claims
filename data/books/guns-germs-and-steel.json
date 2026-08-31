@@ -1,5 +1,5 @@
 {
-  "schema_version": "ai-claims.book-review/0.1.0",
+  "schema_version": "ai-claims.book-review/0.2.0",
   "entity_key": "goodreads:1842",
   "goodreads_page_id": "1842",
   "canonical_url": "https://www.goodreads.com/book/show/1842",
@@ -10,6 +10,11 @@
   "score_0_100": null,
   "publication_gates_passed": false,
   "last_reviewed_at": null,
+  "coverage": {
+    "candidate_claims": 6,
+    "eligible_claims": 0,
+    "reviewed_claims": 0
+  },
   "scope_note": "A provisional high-consequence claim inventory derived from the official PBS book companion. The complete book has not yet been checked passage by passage.",
   "score_hidden_reason": "The eligible claim denominator, passage locators, independent evidence, and editor findings are incomplete.",
   "claims": [
@@ -19,6 +24,9 @@
       "claim_type": "causal",
       "importance": "central",
       "attribution_confidence": "high",
+      "canonical_group_id": "ggs-group-food-production",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
       "review_state": "unreviewed",
       "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05"]
     },
@@ -28,6 +36,9 @@
       "claim_type": "factual",
       "importance": "supporting",
       "attribution_confidence": "medium",
+      "canonical_group_id": "ggs-group-domesticable-package",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
       "review_state": "unreviewed",
       "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05"]
     },
@@ -37,6 +48,9 @@
       "claim_type": "causal",
       "importance": "central",
       "attribution_confidence": "high",
+      "canonical_group_id": "ggs-group-continental-axis",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
       "review_state": "unreviewed",
       "source_ids": ["ggs-source-02"]
     },
@@ -46,6 +60,9 @@
       "claim_type": "causal",
       "importance": "central",
       "attribution_confidence": "high",
+      "canonical_group_id": "ggs-group-density-specialization",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
       "review_state": "unreviewed",
       "source_ids": ["ggs-source-01", "ggs-source-03"]
     },
@@ -55,6 +72,9 @@
       "claim_type": "causal",
       "importance": "central",
       "attribution_confidence": "high",
+      "canonical_group_id": "ggs-group-infectious-disease",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
       "review_state": "unreviewed",
       "source_ids": ["ggs-source-01", "ggs-source-04"]
     },
@@ -64,8 +84,43 @@
       "claim_type": "causal",
       "importance": "central",
       "attribution_confidence": "high",
+      "canonical_group_id": "ggs-group-proximate-conquest",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
       "review_state": "unreviewed",
       "source_ids": ["ggs-source-01", "ggs-source-06", "ggs-source-07"]
+    }
+  ],
+  "dependencies": [
+    {
+      "from_group_id": "ggs-group-domesticable-package",
+      "to_group_id": "ggs-group-food-production",
+      "relation": "supports"
+    },
+    {
+      "from_group_id": "ggs-group-continental-axis",
+      "to_group_id": "ggs-group-food-production",
+      "relation": "supports_diffusion"
+    },
+    {
+      "from_group_id": "ggs-group-food-production",
+      "to_group_id": "ggs-group-density-specialization",
+      "relation": "proposed_causal_path"
+    },
+    {
+      "from_group_id": "ggs-group-food-production",
+      "to_group_id": "ggs-group-infectious-disease",
+      "relation": "proposed_causal_path"
+    },
+    {
+      "from_group_id": "ggs-group-density-specialization",
+      "to_group_id": "ggs-group-proximate-conquest",
+      "relation": "proposed_causal_path"
+    },
+    {
+      "from_group_id": "ggs-group-infectious-disease",
+      "to_group_id": "ggs-group-proximate-conquest",
+      "relation": "proposed_causal_path"
     }
   ],
   "sources": [
