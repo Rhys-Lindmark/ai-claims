@@ -1,0 +1,1054 @@
+{
+  "schema_version": "ai-claims.rapid-book-covers/0.1.0",
+  "provider": "Open Library",
+  "provider_url": "https://openlibrary.org/dev/docs/api/covers",
+  "match_policy": "Exact normalized title and compatible normalized author; unmatched records render a local placeholder.",
+  "last_verified": "2026-08-31",
+  "covers": [
+    {
+      "slug": "guns-germs-and-steel",
+      "match_state": "exact_title_author",
+      "cover_id": 7884018,
+      "cover_url": "https://covers.openlibrary.org/b/id/7884018-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL276558W",
+      "source_title": "Guns, Germs, and Steel",
+      "source_authors": [
+        "Jared Diamond"
+      ]
+    },
+    {
+      "slug": "sapiens",
+      "match_state": "exact_title_author",
+      "cover_id": 8634250,
+      "cover_url": "https://covers.openlibrary.org/b/id/8634250-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17075811W",
+      "source_title": "Sapiens",
+      "source_authors": [
+        "Yuval Noah Harari"
+      ]
+    },
+    {
+      "slug": "breakneck",
+      "match_state": "exact_title_author",
+      "cover_id": 15121652,
+      "cover_url": "https://covers.openlibrary.org/b/id/15121652-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL42416011W",
+      "source_title": "Breakneck",
+      "source_authors": [
+        "Dan Wang"
+      ]
+    },
+    {
+      "slug": "1491",
+      "match_state": "exact_title_author",
+      "cover_id": 803118,
+      "cover_url": "https://covers.openlibrary.org/b/id/803118-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3494320W",
+      "source_title": "1491",
+      "source_authors": [
+        "Charles C. Mann"
+      ]
+    },
+    {
+      "slug": "why-nations-fail",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-better-angels-of-our-nature",
+      "match_state": "exact_title_author",
+      "cover_id": 7906239,
+      "cover_url": "https://covers.openlibrary.org/b/id/7906239-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16239379W",
+      "source_title": "The better angels of our nature",
+      "source_authors": [
+        "Steven Pinker"
+      ]
+    },
+    {
+      "slug": "collapse",
+      "match_state": "exact_title_author",
+      "cover_id": 12915198,
+      "cover_url": "https://covers.openlibrary.org/b/id/12915198-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL276557W",
+      "source_title": "Collapse",
+      "source_authors": [
+        "Jared Diamond"
+      ]
+    },
+    {
+      "slug": "the-dawn-of-everything",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-silk-roads",
+      "match_state": "exact_title_author",
+      "cover_id": 8963642,
+      "cover_url": "https://covers.openlibrary.org/b/id/8963642-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19666939W",
+      "source_title": "The Silk Roads",
+      "source_authors": [
+        "Peter Frankopan"
+      ]
+    },
+    {
+      "slug": "the-weirdest-people-in-the-world",
+      "match_state": "exact_title_author",
+      "cover_id": 10154462,
+      "cover_url": "https://covers.openlibrary.org/b/id/10154462-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20844844W",
+      "source_title": "The WEIRDest People in the World",
+      "source_authors": [
+        "Joseph Patrick Henrich",
+        "Joseph Henrich",
+        "Korey Jackson"
+      ]
+    },
+    {
+      "slug": "the-great-divergence",
+      "match_state": "exact_title_author",
+      "cover_id": 442605,
+      "cover_url": "https://covers.openlibrary.org/b/id/442605-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2000267W",
+      "source_title": "The Great Divergence",
+      "source_authors": [
+        "Kenneth Pomeranz"
+      ]
+    },
+    {
+      "slug": "the-ghost-map",
+      "match_state": "exact_title_author",
+      "cover_id": 1989039,
+      "cover_url": "https://covers.openlibrary.org/b/id/1989039-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2668651W",
+      "source_title": "The Ghost Map",
+      "source_authors": [
+        "Steven Johnson"
+      ]
+    },
+    {
+      "slug": "the-sixth-extinction",
+      "match_state": "exact_title_author",
+      "cover_id": 7910870,
+      "cover_url": "https://covers.openlibrary.org/b/id/7910870-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16820830W",
+      "source_title": "The Sixth Extinction",
+      "source_authors": [
+        "Elizabeth Kolbert",
+        "Marcel Blanc"
+      ]
+    },
+    {
+      "slug": "a-short-history-of-nearly-everything",
+      "match_state": "exact_title_author",
+      "cover_id": 12725620,
+      "cover_url": "https://covers.openlibrary.org/b/id/12725620-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL74128W",
+      "source_title": "A short history of nearly everything",
+      "source_authors": [
+        "Bill Bryson"
+      ]
+    },
+    {
+      "slug": "the-gene",
+      "match_state": "exact_title_author",
+      "cover_id": 11320163,
+      "cover_url": "https://covers.openlibrary.org/b/id/11320163-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17762235W",
+      "source_title": "The Gene",
+      "source_authors": [
+        "Siddhartha Mukherjee",
+        "Dennis Boutsikaris"
+      ]
+    },
+    {
+      "slug": "the-emperor-of-all-maladies",
+      "match_state": "exact_title_author",
+      "cover_id": 11320203,
+      "cover_url": "https://covers.openlibrary.org/b/id/11320203-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15540668W",
+      "source_title": "The Emperor of All Maladies",
+      "source_authors": [
+        "Siddhartha Mukherjee",
+        "Nessa Carey"
+      ]
+    },
+    {
+      "slug": "the-immortal-life-of-henrietta-lacks",
+      "match_state": "exact_title_author",
+      "cover_id": 8364866,
+      "cover_url": "https://covers.openlibrary.org/b/id/8364866-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL13850788W",
+      "source_title": "The Immortal Life of Henrietta Lacks",
+      "source_authors": [
+        "Rebecca Skloot"
+      ]
+    },
+    {
+      "slug": "longitude",
+      "match_state": "exact_title_author",
+      "cover_id": 13654,
+      "cover_url": "https://covers.openlibrary.org/b/id/13654-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL265465W",
+      "source_title": "Longitude",
+      "source_authors": [
+        "Dava Sobel",
+        "William J. H. Andrewes",
+        "Irene Aldasoro Katarain"
+      ]
+    },
+    {
+      "slug": "the-invention-of-nature",
+      "match_state": "exact_title_author",
+      "cover_id": 7401911,
+      "cover_url": "https://covers.openlibrary.org/b/id/7401911-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17323380W",
+      "source_title": "The Invention of Nature",
+      "source_authors": [
+        "Andrea Wulf"
+      ]
+    },
+    {
+      "slug": "the-code-breaker",
+      "match_state": "exact_title_author",
+      "cover_id": 10675496,
+      "cover_url": "https://covers.openlibrary.org/b/id/10675496-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL24217656W",
+      "source_title": "The Code Breaker",
+      "source_authors": [
+        "Walter Isaacson",
+        "Kathe Mazur",
+        "Sarah Durand"
+      ]
+    },
+    {
+      "slug": "hidden-figures",
+      "match_state": "exact_title_author",
+      "cover_id": 10661694,
+      "cover_url": "https://covers.openlibrary.org/b/id/10661694-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17598637W",
+      "source_title": "Hidden Figures",
+      "source_authors": [
+        "Margot Lee Shetterly"
+      ]
+    },
+    {
+      "slug": "the-wright-brothers",
+      "match_state": "exact_title_author",
+      "cover_id": 7317364,
+      "cover_url": "https://covers.openlibrary.org/b/id/7317364-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17077409W",
+      "source_title": "The Wright Brothers",
+      "source_authors": [
+        "David McCullough"
+      ]
+    },
+    {
+      "slug": "the-radium-girls",
+      "match_state": "exact_title_author",
+      "cover_id": 10667235,
+      "cover_url": "https://covers.openlibrary.org/b/id/10667235-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19663676W",
+      "source_title": "The radium girls",
+      "source_authors": [
+        "Kate Moore"
+      ]
+    },
+    {
+      "slug": "the-map-that-changed-the-world",
+      "match_state": "exact_title_author",
+      "cover_id": 6807178,
+      "cover_url": "https://covers.openlibrary.org/b/id/6807178-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15843987W",
+      "source_title": "The map that changed the world",
+      "source_authors": [
+        "Simon Winchester"
+      ]
+    },
+    {
+      "slug": "the-man-who-knew-infinity",
+      "match_state": "exact_title_author",
+      "cover_id": 408314,
+      "cover_url": "https://covers.openlibrary.org/b/id/408314-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3333455W",
+      "source_title": "The Man Who Knew Infinity",
+      "source_authors": [
+        "Robert Kanigel"
+      ]
+    },
+    {
+      "slug": "the-body",
+      "match_state": "exact_title_author",
+      "cover_id": 12722746,
+      "cover_url": "https://covers.openlibrary.org/b/id/12722746-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20333471W",
+      "source_title": "The Body",
+      "source_authors": [
+        "Bill Bryson"
+      ]
+    },
+    {
+      "slug": "the-code-book",
+      "match_state": "exact_title_author",
+      "cover_id": 8231826,
+      "cover_url": "https://covers.openlibrary.org/b/id/8231826-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL31157W",
+      "source_title": "The Code Book",
+      "source_authors": [
+        "Simon Singh"
+      ]
+    },
+    {
+      "slug": "the-information",
+      "match_state": "exact_title_author",
+      "cover_id": 6699475,
+      "cover_url": "https://covers.openlibrary.org/b/id/6699475-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15586927W",
+      "source_title": "The Information",
+      "source_authors": [
+        "James Gleick"
+      ]
+    },
+    {
+      "slug": "the-disappearing-spoon",
+      "match_state": "exact_title_author",
+      "cover_id": 10069131,
+      "cover_url": "https://covers.openlibrary.org/b/id/10069131-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15368067W",
+      "source_title": "The Disappearing Spoon",
+      "source_authors": [
+        "Sam Kean"
+      ]
+    },
+    {
+      "slug": "krakatoa",
+      "match_state": "exact_title_author",
+      "cover_id": 37675,
+      "cover_url": "https://covers.openlibrary.org/b/id/37675-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1840031W",
+      "source_title": "Krakatoa",
+      "source_authors": [
+        "Simon Winchester"
+      ]
+    },
+    {
+      "slug": "the-poisoners-handbook",
+      "match_state": "exact_title_author",
+      "cover_id": 6608485,
+      "cover_url": "https://covers.openlibrary.org/b/id/6608485-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15299710W",
+      "source_title": "The poisoner's handbook",
+      "source_authors": [
+        "Deborah Blum"
+      ]
+    },
+    {
+      "slug": "the-making-of-the-atomic-bomb",
+      "match_state": "exact_title_author",
+      "cover_id": 6919988,
+      "cover_url": "https://covers.openlibrary.org/b/id/6919988-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2617750W",
+      "source_title": "The making of the atomic bomb",
+      "source_authors": [
+        "Richard Rhodes"
+      ]
+    },
+    {
+      "slug": "command-and-control",
+      "match_state": "exact_title_author",
+      "cover_id": 7267261,
+      "cover_url": "https://covers.openlibrary.org/b/id/7267261-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16809886W",
+      "source_title": "Command and Control",
+      "source_authors": [
+        "Eric Schlosser"
+      ]
+    },
+    {
+      "slug": "salt",
+      "match_state": "exact_title_author",
+      "cover_id": 6873606,
+      "cover_url": "https://covers.openlibrary.org/b/id/6873606-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16026786W",
+      "source_title": "Salt",
+      "source_authors": [
+        "Mark Kurlansky"
+      ]
+    },
+    {
+      "slug": "cod",
+      "match_state": "exact_title_author",
+      "cover_id": 13798848,
+      "cover_url": "https://covers.openlibrary.org/b/id/13798848-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL26307662W",
+      "source_title": "Cod",
+      "source_authors": [
+        "Mark Kurlansky"
+      ]
+    },
+    {
+      "slug": "the-butchering-art",
+      "match_state": "exact_title_author",
+      "cover_id": 14431289,
+      "cover_url": "https://covers.openlibrary.org/b/id/14431289-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19718770W",
+      "source_title": "The butchering art",
+      "source_authors": [
+        "Lindsey Fitzharris"
+      ]
+    },
+    {
+      "slug": "the-warmth-of-other-suns",
+      "match_state": "exact_title_author",
+      "cover_id": 10129368,
+      "cover_url": "https://covers.openlibrary.org/b/id/10129368-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15380640W",
+      "source_title": "The Warmth of Other Suns",
+      "source_authors": [
+        "Isabel Wilkerson"
+      ]
+    },
+    {
+      "slug": "the-devil-in-the-white-city",
+      "match_state": "exact_title_author",
+      "cover_id": 541027,
+      "cover_url": "https://covers.openlibrary.org/b/id/541027-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20262W",
+      "source_title": "The Devil in the White City",
+      "source_authors": [
+        "Erik Larson"
+      ]
+    },
+    {
+      "slug": "the-big-burn",
+      "match_state": "exact_title_author",
+      "cover_id": 7412064,
+      "cover_url": "https://covers.openlibrary.org/b/id/7412064-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16516522W",
+      "source_title": "The big burn",
+      "source_authors": [
+        "Timothy Egan"
+      ]
+    },
+    {
+      "slug": "the-worst-hard-time",
+      "match_state": "exact_title_author",
+      "cover_id": 394261,
+      "cover_url": "https://covers.openlibrary.org/b/id/394261-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2751755W",
+      "source_title": "The worst hard time",
+      "source_authors": [
+        "Timothy Egan"
+      ]
+    },
+    {
+      "slug": "empire-of-pain",
+      "match_state": "exact_title_author",
+      "cover_id": 10678221,
+      "cover_url": "https://covers.openlibrary.org/b/id/10678221-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL24218388W",
+      "source_title": "Empire of Pain",
+      "source_authors": [
+        "Patrick Radden Keefe",
+        "Ricard Gil"
+      ]
+    },
+    {
+      "slug": "the-radium-century",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-ghosts-of-eden-park",
+      "match_state": "exact_title_author",
+      "cover_id": 8759554,
+      "cover_url": "https://covers.openlibrary.org/b/id/8759554-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20096193W",
+      "source_title": "The Ghosts of Eden Park",
+      "source_authors": [
+        "Karen Abbott"
+      ]
+    },
+    {
+      "slug": "the-great-influenza",
+      "match_state": "exact_title_author",
+      "cover_id": 402769,
+      "cover_url": "https://covers.openlibrary.org/b/id/402769-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL7989229W",
+      "source_title": "The Great Influenza",
+      "source_authors": [
+        "John M. Barry",
+        "Amelia Pérez de Villlar",
+        "John M. Barry"
+      ]
+    },
+    {
+      "slug": "spillover",
+      "match_state": "exact_title_author",
+      "cover_id": 8425473,
+      "cover_url": "https://covers.openlibrary.org/b/id/8425473-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19167303W",
+      "source_title": "Spillover",
+      "source_authors": [
+        "David Quammen",
+        "Cécile Dutheil de La Rochère",
+        "Eva Roques",
+        "Laurence Decréau",
+        "Pascal Picq"
+      ]
+    },
+    {
+      "slug": "the-premonition",
+      "match_state": "exact_title_author",
+      "cover_id": 10706277,
+      "cover_url": "https://covers.openlibrary.org/b/id/10706277-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL24232256W",
+      "source_title": "The Premonition",
+      "source_authors": [
+        "Michael Lewis"
+      ]
+    },
+    {
+      "slug": "the-mosquito",
+      "match_state": "exact_title_author",
+      "cover_id": 8757149,
+      "cover_url": "https://covers.openlibrary.org/b/id/8757149-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20091459W",
+      "source_title": "The Mosquito",
+      "source_authors": [
+        "Timothy C. Winegard"
+      ]
+    },
+    {
+      "slug": "the-coming-plague",
+      "match_state": "exact_title_author",
+      "cover_id": 6479591,
+      "cover_url": "https://covers.openlibrary.org/b/id/6479591-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3373979W",
+      "source_title": "The coming plague",
+      "source_authors": [
+        "Laurie Garrett"
+      ]
+    },
+    {
+      "slug": "rabid",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-hot-zone",
+      "match_state": "exact_title_author",
+      "cover_id": 417976,
+      "cover_url": "https://covers.openlibrary.org/b/id/417976-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL761342W",
+      "source_title": "The Hot Zone",
+      "source_authors": [
+        "Richard Preston",
+        "Richard Preston",
+        "Preston, Richard"
+      ]
+    },
+    {
+      "slug": "polio-an-american-story",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-vaccine-race",
+      "match_state": "exact_title_author",
+      "cover_id": 14767507,
+      "cover_url": "https://covers.openlibrary.org/b/id/14767507-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20052312W",
+      "source_title": "The vaccine race",
+      "source_authors": [
+        "Meredith Wadman"
+      ]
+    },
+    {
+      "slug": "the-great-mortality",
+      "match_state": "exact_title_author",
+      "cover_id": 20480,
+      "cover_url": "https://covers.openlibrary.org/b/id/20480-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL4170661W",
+      "source_title": "The Great Mortality",
+      "source_authors": [
+        "John Kelly"
+      ]
+    },
+    {
+      "slug": "pale-rider",
+      "match_state": "exact_title_author",
+      "cover_id": 10098905,
+      "cover_url": "https://covers.openlibrary.org/b/id/10098905-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19751298W",
+      "source_title": "Pale rider",
+      "source_authors": [
+        "Laura Spinney"
+      ]
+    },
+    {
+      "slug": "the-american-plague",
+      "match_state": "exact_title_author",
+      "cover_id": 273686,
+      "cover_url": "https://covers.openlibrary.org/b/id/273686-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL8110309W",
+      "source_title": "The American Plague",
+      "source_authors": [
+        "Molly Caldwell Crosby"
+      ]
+    },
+    {
+      "slug": "spqr",
+      "match_state": "exact_title_author",
+      "cover_id": 7418788,
+      "cover_url": "https://covers.openlibrary.org/b/id/7418788-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17340134W",
+      "source_title": "SPQR",
+      "source_authors": [
+        "Mary Beard",
+        "Silvia Furió"
+      ]
+    },
+    {
+      "slug": "the-fate-of-rome",
+      "match_state": "exact_title_author",
+      "cover_id": 8132874,
+      "cover_url": "https://covers.openlibrary.org/b/id/8132874-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17837917W",
+      "source_title": "The Fate of Rome",
+      "source_authors": [
+        "Kyle Harper"
+      ]
+    },
+    {
+      "slug": "1177-bc",
+      "match_state": "exact_title_author",
+      "cover_id": 13046612,
+      "cover_url": "https://covers.openlibrary.org/b/id/13046612-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17323768W",
+      "source_title": "1177 B.C.",
+      "source_authors": [
+        "Eric H. Cline",
+        "Eric H. Cline",
+        "Cecilia Belza"
+      ]
+    },
+    {
+      "slug": "the-guns-of-august",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-sleepwalkers",
+      "match_state": "exact_title_author",
+      "cover_id": 7445065,
+      "cover_url": "https://covers.openlibrary.org/b/id/7445065-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17366836W",
+      "source_title": "The Sleepwalkers",
+      "source_authors": [
+        "Christopher Clark"
+      ]
+    },
+    {
+      "slug": "postwar",
+      "match_state": "exact_title_author",
+      "cover_id": 111385,
+      "cover_url": "https://covers.openlibrary.org/b/id/111385-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1894813W",
+      "source_title": "Postwar",
+      "source_authors": [
+        "Tony Judt"
+      ]
+    },
+    {
+      "slug": "the-wager",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "killers-of-the-flower-moon",
+      "match_state": "exact_title_author",
+      "cover_id": 8055064,
+      "cover_url": "https://covers.openlibrary.org/b/id/8055064-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17778665W",
+      "source_title": "Killers of the Flower Moon",
+      "source_authors": [
+        "David Grann",
+        "Luis Murillo Fort"
+      ]
+    },
+    {
+      "slug": "the-lost-city-of-z",
+      "match_state": "exact_title_author",
+      "cover_id": 7895353,
+      "cover_url": "https://covers.openlibrary.org/b/id/7895353-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL11930023W",
+      "source_title": "The Lost City of Z",
+      "source_authors": [
+        "David Grann",
+        "James Gray"
+      ]
+    },
+    {
+      "slug": "endurance",
+      "match_state": "exact_title_author",
+      "cover_id": 542833,
+      "cover_url": "https://covers.openlibrary.org/b/id/542833-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL874159W",
+      "source_title": "Endurance",
+      "source_authors": [
+        "Alfred Lansing",
+        "Elena Grau"
+      ]
+    },
+    {
+      "slug": "in-the-heart-of-the-sea",
+      "match_state": "exact_title_author",
+      "cover_id": 402602,
+      "cover_url": "https://covers.openlibrary.org/b/id/402602-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL800722W",
+      "source_title": "In the Heart of the Sea",
+      "source_authors": [
+        "Nathaniel Philbrick"
+      ]
+    },
+    {
+      "slug": "the-indifferent-stars-above",
+      "match_state": "exact_title_author",
+      "cover_id": 10765861,
+      "cover_url": "https://covers.openlibrary.org/b/id/10765861-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL5616448W",
+      "source_title": "The indifferent stars above",
+      "source_authors": [
+        "Daniel James Brown"
+      ]
+    },
+    {
+      "slug": "isaacs-storm",
+      "match_state": "exact_title_author",
+      "cover_id": 13202042,
+      "cover_url": "https://covers.openlibrary.org/b/id/13202042-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL34312383W",
+      "source_title": "Isaac's Storm",
+      "source_authors": [
+        "Erik Larson",
+        "Richard M. Davidson"
+      ]
+    },
+    {
+      "slug": "dead-wake",
+      "match_state": "exact_title_author",
+      "cover_id": 7317226,
+      "cover_url": "https://covers.openlibrary.org/b/id/7317226-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17077268W",
+      "source_title": "Dead Wake",
+      "source_authors": [
+        "Erik Larson"
+      ]
+    },
+    {
+      "slug": "the-johnstown-flood",
+      "match_state": "exact_title_author",
+      "cover_id": 405366,
+      "cover_url": "https://covers.openlibrary.org/b/id/405366-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2820750W",
+      "source_title": "The Johnstown flood",
+      "source_authors": [
+        "David McCullough"
+      ]
+    },
+    {
+      "slug": "midnight-in-chernobyl",
+      "match_state": "exact_title_author",
+      "cover_id": 9266992,
+      "cover_url": "https://covers.openlibrary.org/b/id/9266992-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19915768W",
+      "source_title": "Midnight in Chernobyl",
+      "source_authors": [
+        "Adam Higginbotham"
+      ]
+    },
+    {
+      "slug": "five-days-at-memorial",
+      "match_state": "exact_title_author",
+      "cover_id": 9146668,
+      "cover_url": "https://covers.openlibrary.org/b/id/9146668-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19978147W",
+      "source_title": "Five days at Memorial",
+      "source_authors": [
+        "Sheri Fink"
+      ]
+    },
+    {
+      "slug": "fire-weather",
+      "match_state": "exact_title_author",
+      "cover_id": 14818181,
+      "cover_url": "https://covers.openlibrary.org/b/id/14818181-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL28867302W",
+      "source_title": "Fire Weather",
+      "source_authors": [
+        "John Vaillant"
+      ]
+    },
+    {
+      "slug": "the-innovators",
+      "match_state": "exact_title_author",
+      "cover_id": 7313659,
+      "cover_url": "https://covers.openlibrary.org/b/id/7313659-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17074268W",
+      "source_title": "The Innovators",
+      "source_authors": [
+        "Walter Isaacson",
+        "Francisco José Ramos Mena",
+        "Marcos Pérez Sánchez",
+        "Inga Pellisa Díaz"
+      ]
+    },
+    {
+      "slug": "the-idea-factory",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "skunk-works",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-box",
+      "match_state": "exact_title_author",
+      "cover_id": 2549298,
+      "cover_url": "https://covers.openlibrary.org/b/id/2549298-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL4988033W",
+      "source_title": "The Box",
+      "source_authors": [
+        "Marc Levinson"
+      ]
+    },
+    {
+      "slug": "code-girls",
+      "match_state": "exact_title_author",
+      "cover_id": 13759938,
+      "cover_url": "https://covers.openlibrary.org/b/id/13759938-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19716718W",
+      "source_title": "Code girls",
+      "source_authors": [
+        "Liza Mundy"
+      ]
+    },
+    {
+      "slug": "the-woman-who-smashed-codes",
+      "match_state": "exact_title_author",
+      "cover_id": 8114918,
+      "cover_url": "https://covers.openlibrary.org/b/id/8114918-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17823897W",
+      "source_title": "The Woman Who Smashed Codes",
+      "source_authors": [
+        "Jason Fagone"
+      ]
+    },
+    {
+      "slug": "1493",
+      "match_state": "exact_title_author",
+      "cover_id": 6899279,
+      "cover_url": "https://covers.openlibrary.org/b/id/6899279-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16084255W",
+      "source_title": "1493",
+      "source_authors": [
+        "Charles C. Mann"
+      ]
+    },
+    {
+      "slug": "genghis-khan-and-the-making-of-the-modern-world",
+      "match_state": "exact_title_author",
+      "cover_id": 390818,
+      "cover_url": "https://covers.openlibrary.org/b/id/390818-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL8162628W",
+      "source_title": "Genghis Khan and the Making of the Modern World",
+      "source_authors": [
+        "Jack Weatherford"
+      ]
+    },
+    {
+      "slug": "the-horse-the-wheel-and-language",
+      "match_state": "exact_title_author",
+      "cover_id": 2549072,
+      "cover_url": "https://covers.openlibrary.org/b/id/2549072-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL9561422W",
+      "source_title": "The Horse, the Wheel, and Language",
+      "source_authors": [
+        "David W. Anthony"
+      ]
+    },
+    {
+      "slug": "why-the-west-rules-for-now",
+      "match_state": "exact_title_author",
+      "cover_id": 9124466,
+      "cover_url": "https://covers.openlibrary.org/b/id/9124466-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20458538W",
+      "source_title": "Why the West Rules - For Now",
+      "source_authors": [
+        "Ian Morris"
+      ]
+    },
+    {
+      "slug": "the-swerve",
+      "match_state": "exact_title_author",
+      "cover_id": 6989637,
+      "cover_url": "https://covers.openlibrary.org/b/id/6989637-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16175780W",
+      "source_title": "The swerve",
+      "source_authors": [
+        "Stephen Greenblatt"
+      ]
+    },
+    {
+      "slug": "the-plantagenets",
+      "match_state": "exact_title_author",
+      "cover_id": 12133058,
+      "cover_url": "https://covers.openlibrary.org/b/id/12133058-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19963865W",
+      "source_title": "The Plantagenets",
+      "source_authors": [
+        "Dan Jones"
+      ]
+    },
+    {
+      "slug": "the-big-short",
+      "match_state": "exact_title_author",
+      "cover_id": 6386926,
+      "cover_url": "https://covers.openlibrary.org/b/id/6386926-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15118378W",
+      "source_title": "The big short",
+      "source_authors": [
+        "Michael Lewis",
+        "Francisco José Ramos Mena"
+      ]
+    },
+    {
+      "slug": "too-big-to-fail",
+      "match_state": "exact_title_author",
+      "cover_id": 6714080,
+      "cover_url": "https://covers.openlibrary.org/b/id/6714080-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15188988W",
+      "source_title": "Too Big to Fail",
+      "source_authors": [
+        "Andrew Ross Sorkin"
+      ]
+    },
+    {
+      "slug": "bad-blood",
+      "match_state": "exact_title_author",
+      "cover_id": 12735651,
+      "cover_url": "https://covers.openlibrary.org/b/id/12735651-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17892614W",
+      "source_title": "Bad Blood",
+      "source_authors": [
+        "John Carreyrou"
+      ]
+    },
+    {
+      "slug": "the-smartest-guys-in-the-room",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "billion-dollar-whale",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "barbarians-at-the-gate",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "cosmos",
+      "match_state": "exact_title_author",
+      "cover_id": 8283901,
+      "cover_url": "https://covers.openlibrary.org/b/id/8283901-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15829966W",
+      "source_title": "Cosmos",
+      "source_authors": [
+        "Carl Sagan"
+      ]
+    },
+    {
+      "slug": "silent-spring",
+      "match_state": "exact_title_author",
+      "cover_id": 3825693,
+      "cover_url": "https://covers.openlibrary.org/b/id/3825693-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1884862W",
+      "source_title": "Silent Spring",
+      "source_authors": [
+        "Rachel Carson"
+      ]
+    },
+    {
+      "slug": "the-omnivores-dilemma",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-botany-of-desire",
+      "match_state": "exact_title_author",
+      "cover_id": 3232846,
+      "cover_url": "https://covers.openlibrary.org/b/id/3232846-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3296480W",
+      "source_title": "The botany of desire",
+      "source_authors": [
+        "Michael Pollan",
+        "Michael Pollan",
+        "Sébastien Marty"
+      ]
+    },
+    {
+      "slug": "a-brief-history-of-time",
+      "match_state": "exact_title_author",
+      "cover_id": 10432365,
+      "cover_url": "https://covers.openlibrary.org/b/id/10432365-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1892617W",
+      "source_title": "A Brief History of Time",
+      "source_authors": [
+        "Stephen Hawking"
+      ]
+    },
+    {
+      "slug": "entangled-life",
+      "match_state": "exact_title_author",
+      "cover_id": 10152882,
+      "cover_url": "https://covers.openlibrary.org/b/id/10152882-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20758206W",
+      "source_title": "Entangled Life",
+      "source_authors": [
+        "Merlin Sheldrake"
+      ]
+    },
+    {
+      "slug": "the-double-helix",
+      "match_state": "exact_title_author",
+      "cover_id": 4613920,
+      "cover_url": "https://covers.openlibrary.org/b/id/4613920-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2125469W",
+      "source_title": "The double helix",
+      "source_authors": [
+        "James D. Watson",
+        "Grover Gardner narrator",
+        "Alexander Gann",
+        "Jan Witkowski",
+        "David Maule"
+      ]
+    },
+    {
+      "slug": "chaos-making-a-new-science",
+      "match_state": "exact_title_author",
+      "cover_id": 94249,
+      "cover_url": "https://covers.openlibrary.org/b/id/94249-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15899W",
+      "source_title": "Chaos",
+      "source_authors": [
+        "James Gleick"
+      ]
+    },
+    {
+      "slug": "the-structure-of-scientific-revolutions",
+      "match_state": "exact_title_author",
+      "cover_id": 6566386,
+      "cover_url": "https://covers.openlibrary.org/b/id/6566386-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3259254W",
+      "source_title": "The Structure of Scientific Revolutions",
+      "source_authors": [
+        "Thomas S. Kuhn",
+        "Dennis Holland"
+      ]
+    }
+  ]
+}

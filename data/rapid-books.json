@@ -1,7 +1,7 @@
 {
   "schema_version": "ai-claims.rapid-books/0.1.0",
   "method_version": "three-central-claims/0.1.0",
-  "target_books": 100,
+  "target_books": 1000,
   "last_updated": "2026-08-31",
   "books": [
     {
@@ -31,7 +31,7 @@
           "credit": 0.5,
           "rationale": "Latitude and ecological similarity matter, and some migration patterns fit the hypothesis. Direct quantitative work finds Eurasia was not uniquely homogeneous, while mountains, deserts, waterways, adaptation, and trade routes often mattered more than continental orientation.",
           "sources": [
-            { "title": "Geography is not destiny: a quantitative test", "url": "https://doi.org/10.1017/ehs.2023.1" },
+            { "title": "Geography is not destiny: a quantitative test", "url": "https://doi.org/10.1017/ehs.2023.34" },
             { "title": "Questioning Collapse", "url": "https://www.cambridge.org/core/books/questioning-collapse/BC36D3A4EB6DC9BE60E7FFB6D6C340E4" }
           ]
         },
@@ -86,7 +86,7 @@
           "rationale": "Bioarchaeology frequently finds early-farming costs alongside demographic expansion, but outcomes vary across time, ecology, class, and sex. Calling agriculture history's biggest fraud turns a heterogeneous transition into a universal verdict.",
           "sources": [
             { "title": "Stature and robusticity during the agricultural transition", "url": "https://doi.org/10.1016/j.ehb.2011.03.004" },
-            { "title": "The Neolithic Demographic Transition", "url": "https://doi.org/10.1086/658706" }
+            { "title": "The Neolithic Demographic Transition", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7120555/" }
           ]
         }
       ],
@@ -198,7 +198,7 @@
           "rationale": "A large empirical literature links constraints on elites, secure rights, state capacity, and broad opportunity to development. Measurement and reverse causality remain difficult, and different institutional bundles can produce growth.",
           "sources": [
             { "title": "The Colonial Origins of Comparative Development", "url": "https://doi.org/10.1257/aer.91.5.1369" },
-            { "title": "Understanding Prosperity and Poverty", "url": "https://doi.org/10.1093/acprof:oso/9780195305197.003.0002" }
+            { "title": "Understanding Prosperity and Poverty", "url": "https://doi.org/10.1093/0195305191.003.0002" }
           ]
         },
         {
@@ -242,7 +242,7 @@
           "rationale": "Historical homicide series show a large European decline and modern data support lower rates in many societies. Early records are selective, definitions change, and the global generalization is stronger than the best time series.",
           "sources": [
             { "title": "Homicides", "url": "https://ourworldindata.org/homicides" },
-            { "title": "Hard numbers? The decline in violence reassessed", "url": "https://doi.org/10.1017/S026841602000012X" }
+            { "title": "Hard numbers? The decline in violence reassessed", "url": "https://doi.org/10.1017/S0268416021000096" }
           ]
         },
         {
@@ -956,7 +956,7 @@
           "rationale": "Wing warping controlled roll, a movable rudder coordinated yaw, and the forward elevator controlled pitch. Smithsonian and NASA technical histories identify controllability and equilibrium as the Wrights' central focus and a key distinction from competing designs.",
           "sources": [
             { "title": "Smithsonian: Researching the Wright Way", "url": "https://airandspace.si.edu/explore/stories/researching-wright-way" },
-            { "title": "NASA: Learning to Fly", "url": "https://www.nasa.gov/pdf/58225main_Wright.Brothers_508.pdf" }
+            { "title": "NASA: Learning to Fly", "url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20040006526.pdf" }
           ]
         },
         {
@@ -1220,7 +1220,7 @@
           "rationale": "Shannon's source-coding and noisy-channel results distinguish achievable rates from impossible ones and explain how redundancy can support error correction. Modern compression and communications engineering elaborate those limits rather than overturning them.",
           "sources": [
             { "title": "Claude Shannon: A Mathematical Theory of Communication", "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf" },
-            { "title": "NIST: Claude Shannon and the Information Age", "url": "https://www.nist.gov/blogs/taking-measure/claude-shannon-and-information-age" }
+            { "title": "MIT: Explained — the Shannon limit", "url": "https://news.mit.edu/2010/explained-shannon-0115" }
           ]
         },
         {
@@ -1669,7 +1669,7 @@
           "credit": 0.25,
           "rationale": "The building existed and Holmes likely killed some associates, but claims of gas chambers, trapdoors, a crematorium, two hundred victims, and murdered fair tourists grew through yellow journalism. Modern research finds little evidence for that dramatic system.",
           "sources": [
-            { "title": "History: Did H. H. Holmes Really Build a Murder Castle?", "url": "https://www.history.com/articles/murder-castle-h-holmes-chicago" },
+            { "title": "History: Did H. H. Holmes Really Build a Murder Castle?", "url": "https://www.history.com/articles/murder-castle-h-h-holmes-chicago" },
             { "title": "Library of Congress: H. H. Holmes and the Murder Castle", "url": "https://guides.loc.gov/chronicling-america-h-h-holmes" }
           ]
         }
@@ -1694,7 +1694,7 @@
           "rationale": "Forest Service syntheses estimate more than 3.5 million acres across northern Idaho and western Montana, with about 2.65 million burning on August 20–21. Severe drought, heat, and gale-force winds caused extraordinary spread.",
           "sources": [
             { "title": "U.S. Forest Service: Northern Rockies fire regimes", "url": "https://research.fs.usda.gov/feis/fire-regimes/northern-rocky-mountain-ponderosa-pine" },
-            { "title": "U.S. Forest Service: The 1910 Fires", "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5343877.pdf" }
+            { "title": "U.S. Forest Service: One hundred years of wildfire research", "url": "https://research.fs.usda.gov/treesearch/46890" }
           ]
         },
         {
@@ -1703,7 +1703,7 @@
           "credit": 1,
           "rationale": "Agency histories describe the fire as pivotal to the Forest Service's identity, firefighting culture, research, and public standing. It reinforced the idea that a national agency and organized crews were needed to defend public forests.",
           "sources": [
-            { "title": "U.S. Forest Service: The 1910 Fires", "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5343877.pdf" },
+            { "title": "U.S. Forest Service: One hundred years of wildfire research", "url": "https://research.fs.usda.gov/treesearch/46890" },
             { "title": "U.S. Forest Service: Fire Management Today", "url": "https://www.fs.usda.gov/sites/default/files/fire-management-today/FS-Pubs-FMT-79-4.pdf" }
           ]
         },
@@ -3189,7 +3189,7 @@
           "credit": 1,
           "rationale": "Official and insurance reviews document the rapid urban evacuation, widespread structure loss, and unprecedented insured cost. Wind, dry fuels, ember transport, and vulnerable building edges helped the forest fire become an urban conflagration.",
           "sources": [
-            { "title": "Institute for Catastrophic Loss Reduction: Fort McMurray report", "url": "https://www.iclr.org/wp-content/uploads/PDFS/Westhaver_Fort_McMurray_Preliminary_Aug_2016.pdf" },
+            { "title": "Institute for Catastrophic Loss Reduction: Wildfire research", "url": "https://www.iclr.org/wildfire/" },
             { "title": "BioScience: Fires in the Petrocene", "url": "https://academic.oup.com/bioscience/article/75/8/682/8234455" }
           ]
         },
@@ -3210,7 +3210,7 @@
           "rationale": "The city exists at large scale because of bitumen production, and fossil emissions drive global warming that worsens fire risk. The specific disaster also depended on ignition, weather, boreal ecology, land use, building materials, preparedness, and chance.",
           "sources": [
             { "title": "Canada's Changing Climate Report", "url": "https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/energy/Climate-change/pdf/CCCR_FULLREPORT-EN-FINAL.pdf" },
-            { "title": "Institute for Catastrophic Loss Reduction: Fort McMurray report", "url": "https://www.iclr.org/wp-content/uploads/PDFS/Westhaver_Fort_McMurray_Preliminary_Aug_2016.pdf" }
+            { "title": "Institute for Catastrophic Loss Reduction: Wildfire research", "url": "https://www.iclr.org/wildfire/" }
           ]
         }
       ],
@@ -3625,7 +3625,7 @@
     {
       "slug":"entangled-life","entity_key":"web:penguinrandomhouse.com/books/entangled-life-merlin-sheldrake","title":"Entangled Life","subtitle":"How Fungi Make Our Worlds, Change Our Minds, and Shape Our Futures","author":"Merlin Sheldrake","year":2020,"score":83,"confidence":"medium-high","summary":"Its account of fungi as metabolically and ecologically foundational is strong, and mycorrhizal exchange is real. Network metaphors can outrun field evidence when they imply forest-wide communication, cooperation, or intelligence.",
       "claims":[
-        {"claim":"Fungi are major decomposers, symbionts, pathogens, and biochemical partners that make terrestrial ecosystems and human life possible.","assessment":"supported","credit":1,"rationale":"Fungal decomposition drives nutrient cycling, mycorrhizae support most land-plant lineages, and yeasts and molds shape food, medicine, and disease. 'Possible' is broad rhetoric, but their ecological and biochemical importance is unquestioned.","sources":[{"title":"Annual Review: The state of the world's fungi","url":"https://www.annualreviews.org/content/journals/10.1146/annurev-environ-012420-043715"},{"title":"Nature Reviews Microbiology: Mycobiome diversity","url":"https://www.nature.com/articles/s41579-018-0116-y"}]},
+        {"claim":"Fungi are major decomposers, symbionts, pathogens, and biochemical partners that make terrestrial ecosystems and human life possible.","assessment":"supported","credit":1,"rationale":"Fungal decomposition drives nutrient cycling, mycorrhizae support most land-plant lineages, and yeasts and molds shape food, medicine, and disease. 'Possible' is broad rhetoric, but their ecological and biochemical importance is unquestioned.","sources":[{"title":"Annual Review: Global fungal diversity and conservation","url":"https://doi.org/10.1146/annurev-environ-112621-090937"},{"title":"Nature Reviews Microbiology: Mycobiome diversity","url":"https://www.nature.com/articles/s41579-018-0116-y"}]},
         {"claim":"Mycorrhizal fungi trade mineral nutrients for plant carbon and can physically link multiple plants in shared underground networks.","assessment":"supported","credit":1,"rationale":"Root-fungus nutrient exchange is one of biology's most widespread symbioses, and genetic and tracing studies demonstrate shared mycelial connections and compound transfer under some conditions. Effects depend strongly on species and environment.","sources":[{"title":"Fungal Ecology: Mycorrhizal networks review","url":"https://www.sciencedirect.com/science/article/pii/S1749461312000048"},{"title":"Nature: Ploughing up the wood-wide web?","url":"https://www.nature.com/articles/28764"}]},
         {"claim":"Common fungal networks function like an intelligent forest internet through which plants communicate, cooperate, and redistribute resources.","assessment":"mixed","credit":0.5,"rationale":"Signals and compounds can move in experimental systems, but recent reviews find citation bias, alternative pathways, and weak field evidence for adaptive plant-to-plant communication or large cooperative benefits. The internet analogy exceeds present proof.","sources":[{"title":"Nature Ecology & Evolution: Overinterpreted mycorrhizal networks","url":"https://www.nature.com/articles/s41559-023-01986-1"},{"title":"Fungal Ecology: Mycorrhizal network mechanisms","url":"https://www.sciencedirect.com/science/article/pii/S1749461312000048"}]}
       ],"other_claims":["Lichens blur conventional definitions of individual organisms.","Fungal materials and remediation could support useful new technologies."]

@@ -1,9 +1,11 @@
 'use client';
 
 import { ArrowRight, BookOpen, Check, Copy, ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
-import { SyntheticEvent, useState } from 'react';
+import { SyntheticEvent, useMemo, useState } from 'react';
 import rapidBooks from '@/data/rapid-books.json';
+import rapidBookCovers from '@/data/rapid-book-covers.json';
 
 type BookIdentity = {
   title: string;
@@ -13,6 +15,8 @@ type BookIdentity = {
   kind: 'goodreads' | 'web';
   reviewUrl?: string;
   rapidScore?: number;
+  coverUrl?: string;
+  coverSourceUrl?: string;
 };
 
 type CheckResult = {
@@ -26,7 +30,11 @@ type CheckResult = {
   message?: string;
 };
 
-const starterBooks: Array<BookIdentity & { aliases: string[] }> = rapidBooks.books.map((book) => ({
+const coversBySlug = new Map(rapidBookCovers.covers.map((cover) => [cover.slug, cover]));
+
+const starterBooks: Array<BookIdentity & { aliases: string[] }> = rapidBooks.books.map((book) => {
+  const cover = coversBySlug.get(book.slug);
+  return ({
   title: book.title,
   author: book.author,
   entityKey: book.entity_key,
@@ -34,8 +42,11 @@ const starterBooks: Array<BookIdentity & { aliases: string[] }> = rapidBooks.boo
   kind: book.entity_key.startsWith('goodreads:') ? 'goodreads' : 'web',
   reviewUrl: `https://ai.rhyslindmark.com/claims/book?slug=${book.slug}`,
   rapidScore: book.score,
+  coverUrl: cover?.match_state === 'exact_title_author' ? cover.cover_url : undefined,
+  coverSourceUrl: cover?.match_state === 'exact_title_author' ? cover.source_url : undefined,
   aliases: [normalizeTitle(book.title), normalizeTitle(`${book.title} ${book.subtitle}`)],
-}));
+  });
+});
 
 function normalizeTitle(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
@@ -78,6 +89,12 @@ export function BookChecker() {
   const [query, setQuery] = useState('');
   const [result, setResult] = useState<CheckResult | null>(null);
   const [copied, setCopied] = useState(false);
+  const [sort, setSort] = useState<'score' | 'title' | 'catalog'>('score');
+  const sortedBooks = useMemo(() => [...starterBooks].sort((a, b) => {
+    if (sort === 'score') return (b.rapidScore ?? 0) - (a.rapidScore ?? 0) || a.title.localeCompare(b.title);
+    if (sort === 'title') return a.title.localeCompare(b.title);
+    return 0;
+  }), [sort]);
 
   async function checkBook(event: SyntheticEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -171,14 +188,14 @@ export function BookChecker() {
       </section> : null}
 
       <section className="mx-auto mt-16 max-w-2xl border-t border-[#20211f]/10 pt-8">
-        <div className="flex items-end justify-between gap-4"><div><h2 className="text-sm font-black uppercase tracking-[.12em] text-[#20211f]/40">Scored books</h2><p className="mt-2 text-sm text-[#20211f]/50">{rapidBooks.books.length} of {rapidBooks.target_books}</p></div></div>
+        <div className="flex flex-wrap items-end justify-between gap-4"><div><h2 className="text-sm font-black uppercase tracking-[.12em] text-[#20211f]/40">Scored books</h2><p className="mt-2 text-sm text-[#20211f]/50">{rapidBooks.books.length} of {rapidBooks.target_books.toLocaleString()}</p></div><label className="flex items-center gap-2 text-sm text-[#20211f]/50">Sort <select aria-label="Sort books" className="rounded-lg border border-[#20211f]/15 bg-white px-3 py-2 font-semibold text-[#20211f] outline-none focus:border-[#20211f]" onChange={(event) => setSort(event.target.value as typeof sort)} value={sort}><option value="score">Top rated</option><option value="title">Title A–Z</option><option value="catalog">Catalog order</option></select></label></div>
         <div className="mt-4 divide-y divide-[#20211f]/10 border-y border-[#20211f]/10">
-          {starterBooks.map((book) => <a className="flex w-full items-center justify-between gap-4 py-4 text-left" href={book.reviewUrl} key={book.entityKey}><span><strong className="block">{book.title}</strong><span className="mt-1 block text-sm text-[#20211f]/45">{book.author}</span></span><span className="text-xl font-black">{book.rapidScore}<span className="text-xs text-[#20211f]/35">/100</span></span></a>)}
+          {sortedBooks.map((book) => <a className="group flex w-full items-center gap-4 py-4 text-left" href={book.reviewUrl} key={book.entityKey}>{book.coverUrl ? <Image alt="" className="h-[72px] w-12 shrink-0 rounded-sm bg-[#f0f1ef] object-cover shadow-sm" height={72} loading="lazy" src={book.coverUrl} unoptimized width={48} /> : <span aria-hidden="true" className="flex h-[72px] w-12 shrink-0 items-center justify-center rounded-sm bg-[#efefed] text-[#20211f]/25"><BookOpen className="h-5 w-5" /></span>}<span className="min-w-0 flex-1"><strong className="block leading-snug group-hover:underline">{book.title}</strong><span className="mt-1 block text-sm text-[#20211f]/45">{book.author}</span></span><span className="shrink-0 text-xl font-black">{book.rapidScore}<span className="text-xs text-[#20211f]/35">/100</span></span></a>)}
         </div>
-        <p className="mt-5 text-sm leading-relaxed text-[#20211f]/45">Rapid reviews use three central claims so the catalog can grow quickly. Each page keeps the reasoning summary, uncertainty, and sources visible.</p>
+        <p className="mt-5 text-sm leading-relaxed text-[#20211f]/45">Rapid reviews use three central claims so the catalog can grow quickly. Each page keeps the reasoning summary, uncertainty, and sources visible. Covers are matched by exact title and author via <a className="underline underline-offset-2" href="https://openlibrary.org" rel="noreferrer" target="_blank">Open Library</a>.</p>
       </section>
 
-      <footer className="mx-auto mt-16 max-w-2xl border-t border-[#20211f]/10 pt-6 text-xs leading-relaxed text-[#20211f]/40">Scores are not ratings. They summarize reviewed factual and causal claims, with the denominator, method, uncertainty, and sources kept visible.</footer>
+      <footer className="mx-auto mt-16 max-w-2xl border-t border-[#20211f]/10 pt-6 text-xs leading-relaxed text-[#20211f]/40">Scores are not ratings. They summarize three selected factual or causal claims. <a className="font-semibold text-[#20211f]/60 underline underline-offset-2" href="https://ai.rhyslindmark.com/claims/methods">Read the method, audit, and limits.</a></footer>
     </div>
   </main>;
 }

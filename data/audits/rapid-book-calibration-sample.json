@@ -1,0 +1,33 @@
+{
+  "schema_version": "ai-claims.rapid-book-calibration-sample/0.1.0",
+  "checked_at": "2026-08-31",
+  "review_state": "rough_ai_audit",
+  "method_note": "A purposive 15-book sample checks whether score ranges behave plausibly across five topical domains. This is not an independent re-review of the underlying evidence or claim selection.",
+  "domains": [
+    {
+      "domain": "Broad macrohistory",
+      "slugs": ["guns-germs-and-steel", "sapiens", "the-dawn-of-everything"],
+      "observation": "All three land at 67 because the selected claims mix durable broad patterns with disputed universal or deterministic framing. Passage-level selection review remains the main calibration risk."
+    },
+    {
+      "domain": "Science and medicine",
+      "slugs": ["the-gene", "the-emperor-of-all-maladies", "the-structure-of-scientific-revolutions"],
+      "observation": "Evidence-rich scientific histories score highly; Kuhn lands lower because two selected universal claims remain contested. The spread is directionally plausible, not proof of accuracy."
+    },
+    {
+      "domain": "Disasters and outbreaks",
+      "slugs": ["the-great-influenza", "the-hot-zone", "midnight-in-chernobyl"],
+      "observation": "Documentary histories score strongly while The Hot Zone loses credit for sensationalized transmission and symptom framing."
+    },
+    {
+      "domain": "Technology and business",
+      "slugs": ["the-innovators", "the-box", "bad-blood"],
+      "observation": "Specific institutional and fraud records score higher than sweeping innovation narratives. This domain may be easier to source than ancient macrohistory."
+    },
+    {
+      "domain": "Social and institutional history",
+      "slugs": ["the-warmth-of-other-suns", "the-better-angels-of-our-nature", "why-nations-fail"],
+      "observation": "Narrow documentary claims score higher than global decline or single-cause institutional theories. Selection and causal-scope judgments deserve expert review."
+    }
+  ]
+}
