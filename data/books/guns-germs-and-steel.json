@@ -42,8 +42,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": ["ggs-evidence-02a", "ggs-evidence-02b", "ggs-evidence-02c", "ggs-evidence-02d"],
-      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05", "ggs-source-35", "ggs-source-36", "ggs-source-37", "ggs-source-38"]
+      "evidence_record_ids": ["ggs-evidence-02a", "ggs-evidence-02b", "ggs-evidence-02c", "ggs-evidence-02d", "ggs-evidence-02e"],
+      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05", "ggs-source-35", "ggs-source-36", "ggs-source-37", "ggs-source-38", "ggs-source-39"]
     },
     {
       "claim_id": "ggs-claim-03",
@@ -214,6 +214,18 @@
       "last_verified_at": "2026-08-31",
       "finding": "A phylogenetic comparison of ungulates found body mass, dietary breadth, and gregariousness did not significantly predict progression toward domestication; vulnerability to capture myopathy, used as a response-to-humans proxy, was the only tested significant obstacle.",
       "scope_and_limits": "The result challenges several commonly proposed domesticability filters rather than continental outcome counts. It is limited to ungulates, uses a newly constructed domestication-pathway index, and the capture-myopathy mechanism requires testing beyond the sampled lineages."
+    },
+    {
+      "evidence_id": "ggs-evidence-02e",
+      "claim_id": "ggs-claim-02",
+      "source_id": "ggs-source-39",
+      "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "low",
+      "last_verified_at": "2026-08-31",
+      "finding": "Mitochondrial DNA from 844 zebu cattle across 19 Asian countries supports a domestic origin for zebu in the northern Indian subcontinent, with the Indus Valley the strongest identified center for the I1 lineage and the I2 lineage less geographically resolved.",
+      "scope_and_limits": "This adds a distinct South Asian cattle lineage to the realized Eurasian livestock package. It does not compare zebu with candidate species on other continents, establish a biological domesticability denominator, or directly genome-confirm the paper's proposed South Asian aurochs progenitor. Mitochondrial ancestry also captures only maternal history."
     },
     {
       "evidence_id": "ggs-evidence-03a",
@@ -918,6 +930,16 @@
       "year": 2024,
       "url": "https://doi.org/10.3390/ani14162355",
       "source_class": "ungulate_phylogenetic_comparative_model",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-39",
+      "title": "Zebu Cattle Are an Exclusive Legacy of the South Asia Neolithic",
+      "publisher": "Molecular Biology and Evolution",
+      "year": 2010,
+      "url": "https://doi.org/10.1093/molbev/msp213",
+      "source_class": "primary_modern_mitochondrial_phylogeography",
       "independence": "independent",
       "assessment_state": "assessed"
     }
