@@ -8,6 +8,8 @@ The panel's **Show scores as I browse this site** control grants an optional per
 
 ## Try it
 
+From a fresh clone with Node 22.13 or newer, run `npm ci && npm run test:extension`. No production credentials are required; tests use synthetic fixtures. `npm run package:extension` creates a deterministic `ai-claims-extension.zip` for inspection or distribution.
+
 1. Open `chrome://extensions` in Chrome.
 2. Enable **Developer mode**.
 3. Choose **Load unpacked** and select this `extension` directory.
