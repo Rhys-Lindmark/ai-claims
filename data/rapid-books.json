@@ -1895,6 +1895,270 @@
         }
       ],
       "other_claims": ["Mabel Walker Willebrandt built unusually aggressive federal Prohibition prosecutions.", "Contemporary gender norms shaped the press and jury treatment of Imogene Remus."]
+    },
+    {
+      "slug": "the-great-influenza",
+      "entity_key": "web:johnmbarry.com/the-great-influenza",
+      "title": "The Great Influenza",
+      "subtitle": "The Story of the Deadliest Pandemic in History",
+      "author": "John M. Barry",
+      "year": 2004,
+      "score": 83,
+      "confidence": "high",
+      "summary": "The pandemic's scale, unusual mortality pattern, and importance of nonpharmaceutical response are sound. The book's confident Kansas-origin story remains a prominent but unresolved hypothesis.",
+      "claims": [
+        {
+          "claim": "The 1918 influenza pandemic killed at least fifty million people worldwide and unusually struck many young adults.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "CDC historical syntheses estimate at least fifty million deaths and document an exceptional mortality burden below age sixty-five, including people aged twenty to forty. Exact global totals remain uncertain because vital registration was incomplete.",
+          "sources": [
+            { "title": "CDC: 1918 pandemic key messages", "url": "https://archive.cdc.gov/www_cdc_gov/flu/pandemic-resources/1918-commemoration/key-messages.htm" },
+            { "title": "1918 Influenza: The Mother of All Pandemics", "url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article/" }
+          ]
+        },
+        {
+          "claim": "The pandemic virus originated in Haskell County, Kansas, before spreading through Camp Funston and wartime troop movements.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Kansas experienced an early outbreak and Camp Funston provides a plausible transmission pathway, but surviving epidemiology and viral phylogeny cannot establish a geographic origin. Competing hypotheses place early emergence in Europe or Asia.",
+          "sources": [
+            { "title": "1918 Influenza: The Mother of All Pandemics", "url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article/" },
+            { "title": "CDC: Concurrent Conflicts and the 1918 Pandemic", "url": "https://wwwnc.cdc.gov/eid/article/24/10/ac-2410_article" }
+          ]
+        },
+        {
+          "claim": "Early, layered public-health measures and honest risk communication could reduce harm even without vaccines or antiviral drugs.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Comparative city studies associate earlier, sustained combinations of closures, isolation, and gathering limits with lower peak mortality, while delayed or brief measures performed worse. Effects varied and no intervention stopped transmission completely.",
+          "sources": [
+            { "title": "CDC: Nonpharmaceutical Influenza Mitigation Strategies", "url": "https://wwwnc.cdc.gov/eid/article/12/12/06-0506_article" },
+            { "title": "CDC: 1918 Pandemic history", "url": "https://archive.cdc.gov/www_cdc_gov/flu/pandemic-resources/1918-pandemic-h1n1.html" }
+          ]
+        }
+      ],
+      "other_claims": ["Wartime censorship helped produce the misleading name Spanish flu.", "Secondary bacterial pneumonia contributed heavily to mortality before antibiotics."]
+    },
+    {
+      "slug": "spillover",
+      "entity_key": "web:davidquammen.com/spillover",
+      "title": "Spillover",
+      "subtitle": "Animal Infections and the Next Human Pandemic",
+      "author": "David Quammen",
+      "year": 2012,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The zoonotic majority, reservoir-host logic, and ecological drivers of emergence are strongly supported. Predicting that a particular next pandemic will be zoonotic is probabilistic, not a prophecy.",
+      "claims": [
+        {
+          "claim": "Most newly emerging infectious-disease events are zoonotic, and most of those zoonoses originate in wildlife.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "A global event analysis estimated that about sixty percent of emerging-disease events were zoonotic and nearly seventy-two percent of those had wildlife origins. Definitions and surveillance bias affect the exact fractions, not the broad pattern.",
+          "sources": [
+            { "title": "Nature: Global trends in emerging infectious diseases", "url": "https://doi.org/10.1038/nature06536" },
+            { "title": "FAO: Spilling Over", "url": "https://www.fao.org/fileadmin/templates/faovn/files/Administration/ECTAD/RSGS_Geographer_Winter.pdf" }
+          ]
+        },
+        {
+          "claim": "Spillover risk is shaped by reservoir ecology, human-animal contact, land-use change, travel, and opportunities for onward transmission.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Pathogen presence in wildlife is only one step: contact rates, host density, environmental disruption, intermediate hosts, adaptation, and human networks determine whether infection crosses species and spreads. The book accurately resists a single-cause account.",
+          "sources": [
+            { "title": "Nature: Global trends in emerging infectious diseases", "url": "https://doi.org/10.1038/nature06536" },
+            { "title": "IPBES Workshop Report on Biodiversity and Pandemics", "url": "https://doi.org/10.5281/zenodo.4147317" }
+          ]
+        },
+        {
+          "claim": "The next great pandemic would probably be caused by a rapidly evolving zoonotic virus.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Zoonotic RNA viruses are a well-grounded high-risk class, and SARS-CoV-2 made the forecast look prescient. Pandemic probability spans many agents, however, and a correct class-level warning does not identify a specific virus, timing, or pathway.",
+          "sources": [
+            { "title": "FAO: Spilling Over", "url": "https://www.fao.org/fileadmin/templates/faovn/files/Administration/ECTAD/RSGS_Geographer_Winter.pdf" },
+            { "title": "Nature: Global trends in emerging infectious diseases", "url": "https://doi.org/10.1038/nature06536" }
+          ]
+        }
+      ],
+      "other_claims": ["HIV emerged through multiple simian-to-human transmissions before global spread.", "Finding a reservoir host does not by itself reveal the route or frequency of spillover."]
+    },
+    {
+      "slug": "the-premonition",
+      "entity_key": "web:michaellewiswrites.com/the-premonition",
+      "title": "The Premonition",
+      "subtitle": "A Pandemic Story",
+      "author": "Michael Lewis",
+      "year": 2021,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The early testing, surveillance, and coordination failures are well documented. The book's outsider-heroes-versus-bureaucracy structure reveals real problems but simplifies scientific uncertainty and distributed responsibility.",
+      "claims": [
+        {
+          "claim": "Limited testing and cryptic transmission prevented the United States from seeing the scale of early COVID-19 spread in time.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "CDC's retrospective identifies limited testing, influenza-season confusion, asymptomatic and presymptomatic spread, imported cases, and amplification events as contributors to rapid dissemination before surveillance captured it.",
+          "sources": [
+            { "title": "CDC: Public Health Response to Early COVID-19 Spread", "url": "https://www.cdc.gov/mmwr/volumes/69/wr/mm6918e2.htm" },
+            { "title": "CDC: Initial U.S. Public Health Response", "url": "https://www.cdc.gov/mmwr/volumes/69/wr/mm6905e1.htm" }
+          ]
+        },
+        {
+          "claim": "Fragmented authority and underbuilt data systems made U.S. pandemic response slower and less coherent.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Federal, state, local, clinical, and laboratory systems had divided powers, incompatible data, uneven staffing, and unclear operational command. Those weaknesses mattered, though decentralization also enabled some local experimentation and rapid independent work.",
+          "sources": [
+            { "title": "CDC: Public Health Response to Early COVID-19 Spread", "url": "https://www.cdc.gov/mmwr/volumes/69/wr/mm6918e2.htm" },
+            { "title": "CDC: Initial U.S. Public Health Response", "url": "https://www.cdc.gov/mmwr/volumes/69/wr/mm6905e1.htm" }
+          ]
+        },
+        {
+          "claim": "A small group of farsighted outsiders had the correct pandemic plan, and institutional leaders mainly failed by ignoring them.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "The featured scientists and local officials made important contributions and identified genuine gaps. The hero frame is selective: evidence and feasible interventions changed quickly, other experts contributed, and decisions mixed science with law, logistics, and public compliance.",
+          "sources": [
+            { "title": "CDC: Public Health Response to Early COVID-19 Spread", "url": "https://www.cdc.gov/mmwr/volumes/69/wr/mm6918e2.htm" },
+            { "title": "The Premonition review", "url": "https://www.theguardian.com/books/2021/may/05/the-premonition-by-michael-lewis-review-a-pandemic-story" }
+          ]
+        }
+      ],
+      "other_claims": ["Pandemic planning exercises can reveal failure modes without guaranteeing operational readiness.", "Local health officers often hold broad legal power but lack resources and political support."]
+    },
+    {
+      "slug": "the-mosquito",
+      "entity_key": "web:timothywinegard.com/the-mosquito",
+      "title": "The Mosquito",
+      "subtitle": "A Human History of Our Deadliest Predator",
+      "author": "Timothy C. Winegard",
+      "year": 2019,
+      "score": 67,
+      "confidence": "medium",
+      "summary": "Mosquito-borne disease has unquestionably shaped health, war, settlement, and empire. The book's global one-animal framing and headline death fractions outrun what sparse historical records can securely quantify.",
+      "claims": [
+        {
+          "claim": "Mosquitoes transmit malaria, yellow fever, dengue, and other diseases that have caused an enormous burden across human history.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Multiple mosquito genera transmit parasites and viruses responsible for major mortality and morbidity. Historical and evolutionary reviews document malaria's ancient burden and the repeated urban and military effects of yellow fever and other infections.",
+          "sources": [
+            { "title": "Evolutionary and Historical Aspects of Malaria", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC126857/" },
+            { "title": "CDC: History of Mosquitoborne Diseases in the United States", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5938790/" }
+          ]
+        },
+        {
+          "claim": "Mosquito-borne disease materially altered military campaigns, colonial expansion, settlement patterns, and state power.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Case studies show malaria and yellow fever changing troop losses, labor regimes, canal construction, and the viability of colonial settlements. The magnitude varies sharply by place, and disease interacted with logistics, immunity, politics, and violence.",
+          "sources": [
+            { "title": "The influence of vector-borne disease on human history", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7969392/" },
+            { "title": "CDC: History of Mosquitoborne Diseases in the United States", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5938790/" }
+          ]
+        },
+        {
+          "claim": "Mosquitoes have killed about half of all humans who have ever lived.",
+          "assessment": "weak",
+          "credit": 0.25,
+          "rationale": "Mosquito-borne mortality has been vast, but no historical dataset can support a precise fraction across all human existence. The estimate compounds uncertain ancient population, cause-of-death, endemicity, and counterfactual assumptions and should be treated as rhetoric.",
+          "sources": [
+            { "title": "Evolutionary and Historical Aspects of Malaria", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC126857/" },
+            { "title": "The influence of vector-borne disease on human history", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7969392/" }
+          ]
+        }
+      ],
+      "other_claims": ["Vector control made completion of the Panama Canal substantially safer.", "Sickle-cell trait frequencies reflect powerful historical selection by malaria."]
+    },
+    {
+      "slug": "the-coming-plague",
+      "entity_key": "web:lauriegarrett.com/the-coming-plague",
+      "title": "The Coming Plague",
+      "subtitle": "Newly Emerging Diseases in a World Out of Balance",
+      "author": "Laurie Garrett",
+      "year": 1994,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The book's central warning—that ecological disruption, global mobility, inequality, and microbial evolution would keep producing infectious threats—has aged remarkably well. Some case narratives are journalistic rather than archival history.",
+      "claims": [
+        {
+          "claim": "Infectious disease had not been conquered; new pathogens and familiar infections would continue to emerge and re-emerge.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "HIV/AIDS, Ebola, Legionnaires' disease, drug-resistant tuberculosis, and later outbreaks decisively refuted any simple postinfectious era. Contemporary Institute of Medicine work independently identified emerging infections as a durable threat.",
+          "sources": [
+            { "title": "NEJM review: The Coming Plague", "url": "https://www.nejm.org/doi/full/10.1056/NEJM199508033330523" },
+            { "title": "U.S. Senate record on the 1992 Emerging Infections report", "url": "https://www.govinfo.gov/content/pkg/CHRG-108shrg89038/pdf/CHRG-108shrg89038.pdf" }
+          ]
+        },
+        {
+          "claim": "Urbanization, ecological disruption, travel, poverty, weak health systems, and conflict create opportunities for disease emergence and spread.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Later global analyses confirm that emergence clusters where land use, wildlife contact, population change, mobility, and surveillance interact. These are risk factors rather than a deterministic formula, and their importance differs by pathogen.",
+          "sources": [
+            { "title": "Nature: Global trends in emerging infectious diseases", "url": "https://doi.org/10.1038/nature06536" },
+            { "title": "IPBES Workshop Report on Biodiversity and Pandemics", "url": "https://doi.org/10.5281/zenodo.4147317" }
+          ]
+        },
+        {
+          "claim": "Antimicrobial resistance would erode major twentieth-century medical gains unless drug use and surveillance changed.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Resistance has expanded across bacterial, parasitic, and fungal pathogens and is recognized as a major global health threat. The trajectory is serious but heterogeneous, and new drugs, diagnostics, vaccination, and stewardship have prevented a uniform return to the pre-antibiotic era.",
+          "sources": [
+            { "title": "WHO: Global antimicrobial resistance and use surveillance", "url": "https://www.who.int/initiatives/glass" },
+            { "title": "U.S. Senate record on emerging infections and resistance", "url": "https://www.govinfo.gov/content/pkg/CHRG-108shrg89038/pdf/CHRG-108shrg89038.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["Public-health capacity is a shared security infrastructure, not only a domestic service.", "Fear and stigma can undermine outbreak response as surely as technical shortages."]
+    },
+    {
+      "slug": "rabid",
+      "entity_key": "web:billwasik.com/rabid",
+      "title": "Rabid",
+      "subtitle": "A Cultural History of the World's Most Diabolical Virus",
+      "author": "Bill Wasik and Monica Murphy",
+      "year": 2012,
+      "score": 100,
+      "confidence": "high",
+      "summary": "Its core medical history is strong: symptomatic rabies is nearly always fatal, Pasteur's post-exposure vaccination was transformative, and modern prevention depends on wound care, vaccination, immunoglobulin, and dog control.",
+      "claims": [
+        {
+          "claim": "Once clinical rabies symptoms appear, the disease is nearly always fatal.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Rabies virus travels through peripheral nerves to the central nervous system, and established encephalitic disease has only exceptionally documented survival. This extreme prognosis explains the urgency of treatment before symptoms begin.",
+          "sources": [
+            { "title": "WHO: Rabies fact sheet", "url": "https://www.who.int/news-room/fact-sheets/detail/rabies" },
+            { "title": "Rabid: review in Journal of Microbiology and Biology Education", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3706157/" }
+          ]
+        },
+        {
+          "claim": "Pasteur's 1885 treatment introduced effective post-exposure vaccination and helped establish modern microbiology and immunization.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Pasteur's team attenuated infected nervous tissue and administered a sequence of inoculations after exposure, beginning with Joseph Meister. Methods and ethics changed substantially, but the work established that vaccination could prevent disease after a bite.",
+          "sources": [
+            { "title": "Four Thousand Years of Concepts Relating to Rabies", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6082082/" },
+            { "title": "WHO: Rabies vaccines position paper", "url": "https://www.who.int/publications/i/item/who-wer9316" }
+          ]
+        },
+        {
+          "claim": "Modern post-exposure prophylaxis and mass dog vaccination can prevent almost all human rabies deaths.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Immediate wound washing, vaccine, and immunoglobulin when indicated are almost invariably effective before symptoms, while dog vaccination interrupts the principal transmission route to humans. Remaining deaths mainly reflect delayed or unequal access.",
+          "sources": [
+            { "title": "WHO: Rabies vaccinations and immunization", "url": "https://www.who.int/teams/control-of-neglected-tropical-diseases/rabies/vaccinations-and-immunization" },
+            { "title": "WHO: Rabies fact sheet", "url": "https://www.who.int/news-room/fact-sheets/detail/rabies" }
+          ]
+        }
+      ],
+      "other_claims": ["Rabies fear influenced folklore about monstrous transformation and animality.", "The domestic dog's double role as companion and vector shaped unusually emotional control policies."]
     }
   ]
 }
