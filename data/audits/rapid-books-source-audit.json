@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-08-31",
-  "checked_at": "2026-08-31T21:20:44.108Z",
+  "checked_at": "2026-08-31T22:36:37.871Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,60 +10,60 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 120,
-    "claims": 360,
-    "citations": 720,
-    "unique_urls": 533,
-    "repeated_citations": 187,
-    "redirected_urls": 84,
+    "books": 130,
+    "claims": 390,
+    "citations": 780,
+    "unique_urls": 562,
+    "repeated_citations": 218,
+    "redirected_urls": 87,
     "states": {
-      "access_blocked": 101,
-      "network_error": 5,
+      "access_blocked": 111,
+      "network_error": 4,
       "other_http": 1,
-      "reachable": 422,
+      "reachable": 442,
       "transient": 4
     },
     "score_distribution": {
       "50": 1,
       "58": 4,
-      "67": 16,
-      "75": 27,
-      "83": 24,
-      "92": 38,
+      "67": 18,
+      "75": 29,
+      "83": 27,
+      "92": 41,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 46,
+      "high": 53,
       "medium": 19,
-      "medium-high": 47,
+      "medium-high": 50,
       "medium-low": 8
     }
   },
   "domain_summary": [
     {
-      "host": "doi.org",
-      "unique_urls": 50,
-      "citations": 64,
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "unique_urls": 45,
+      "citations": 70,
       "states": {
-        "reachable": 25,
-        "access_blocked": 25
+        "reachable": 45
       }
     },
     {
-      "host": "pmc.ncbi.nlm.nih.gov",
-      "unique_urls": 38,
-      "citations": 50,
+      "host": "doi.org",
+      "unique_urls": 51,
+      "citations": 67,
       "states": {
-        "reachable": 38
+        "reachable": 25,
+        "access_blocked": 26
       }
     },
     {
       "host": "cambridge.org",
-      "unique_urls": 20,
-      "citations": 32,
+      "unique_urls": 21,
+      "citations": 34,
       "states": {
         "transient": 1,
-        "reachable": 19
+        "reachable": 20
       }
     },
     {
@@ -75,19 +75,19 @@
       }
     },
     {
+      "host": "nature.com",
+      "unique_urls": 12,
+      "citations": 18,
+      "states": {
+        "reachable": 12
+      }
+    },
+    {
       "host": "justice.gov",
       "unique_urls": 11,
       "citations": 14,
       "states": {
         "reachable": 11
-      }
-    },
-    {
-      "host": "nature.com",
-      "unique_urls": 10,
-      "citations": 14,
-      "states": {
-        "reachable": 10
       }
     },
     {
@@ -99,11 +99,27 @@
       }
     },
     {
+      "host": "sciencedirect.com",
+      "unique_urls": 10,
+      "citations": 12,
+      "states": {
+        "access_blocked": 10
+      }
+    },
+    {
       "host": "wwwnc.cdc.gov",
       "unique_urls": 6,
       "citations": 11,
       "states": {
         "reachable": 6
+      }
+    },
+    {
+      "host": "academic.oup.com",
+      "unique_urls": 9,
+      "citations": 10,
+      "states": {
+        "access_blocked": 9
       }
     },
     {
@@ -115,14 +131,6 @@
       }
     },
     {
-      "host": "sciencedirect.com",
-      "unique_urls": 8,
-      "citations": 10,
-      "states": {
-        "access_blocked": 8
-      }
-    },
-    {
       "host": "cdc.gov",
       "unique_urls": 6,
       "citations": 9,
@@ -131,11 +139,27 @@
       }
     },
     {
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "unique_urls": 5,
+      "citations": 9,
+      "states": {
+        "reachable": 5
+      }
+    },
+    {
       "host": "science.nasa.gov",
       "unique_urls": 7,
       "citations": 9,
       "states": {
         "reachable": 7
+      }
+    },
+    {
+      "host": "journals.uchicago.edu",
+      "unique_urls": 4,
+      "citations": 8,
+      "states": {
+        "access_blocked": 4
       }
     },
     {
@@ -152,14 +176,6 @@
       "citations": 8,
       "states": {
         "access_blocked": 5
-      }
-    },
-    {
-      "host": "academic.oup.com",
-      "unique_urls": 7,
-      "citations": 7,
-      "states": {
-        "access_blocked": 7
       }
     },
     {
@@ -243,14 +259,6 @@
       }
     },
     {
-      "host": "journals.uchicago.edu",
-      "unique_urls": 3,
-      "citations": 6,
-      "states": {
-        "access_blocked": 3
-      }
-    },
-    {
       "host": "rmg.co.uk",
       "unique_urls": 3,
       "citations": 6,
@@ -324,7 +332,7 @@
       }
     },
     {
-      "host": "pubmed.ncbi.nlm.nih.gov",
+      "host": "nick-lane.net",
       "unique_urls": 3,
       "citations": 5,
       "states": {
@@ -372,6 +380,14 @@
       }
     },
     {
+      "host": "smithsonianmag.com",
+      "unique_urls": 2,
+      "citations": 4,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "airandspace.si.edu",
       "unique_urls": 2,
       "citations": 3,
@@ -380,11 +396,28 @@
       }
     },
     {
+      "host": "annualreviews.org",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "reachable": 1,
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "arts.gov",
       "unique_urls": 2,
       "citations": 3,
       "states": {
         "reachable": 2
+      }
+    },
+    {
+      "host": "biointeractive.org",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -417,6 +450,14 @@
       "citations": 3,
       "states": {
         "reachable": 2
+      }
+    },
+    {
+      "host": "environmentandsociety.org",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -472,7 +513,7 @@
       "unique_urls": 1,
       "citations": 3,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -536,8 +577,7 @@
       "unique_urls": 2,
       "citations": 3,
       "states": {
-        "reachable": 1,
-        "access_blocked": 1
+        "access_blocked": 2
       }
     },
     {
@@ -606,6 +646,14 @@
       }
     },
     {
+      "host": "arxiv.org",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "assets.cambridge.org",
       "unique_urls": 1,
       "citations": 2,
@@ -626,8 +674,7 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "reachable": 1,
-        "access_blocked": 1
+        "access_blocked": 2
       }
     },
     {
@@ -937,14 +984,6 @@
       }
     },
     {
-      "host": "smithsonianmag.com",
-      "unique_urls": 1,
-      "citations": 2,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
       "host": "tandfonline.com",
       "unique_urls": 2,
       "citations": 2,
@@ -994,14 +1033,6 @@
     },
     {
       "host": "aeon.co",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
-      "host": "annualreviews.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1106,6 +1137,14 @@
     },
     {
       "host": "christiancentury.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "chronicle.uchicago.edu",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1265,6 +1304,14 @@
       }
     },
     {
+      "host": "faculty.uca.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "foreignpolicy.com",
       "unique_urls": 1,
       "citations": 1,
@@ -1341,7 +1388,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -1601,6 +1648,14 @@
       }
     },
     {
+      "host": "ojs.victoria.ac.nz",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "online.ucpress.edu",
       "unique_urls": 1,
       "citations": 1,
@@ -1733,7 +1788,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -1797,7 +1852,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "network_error": 1
+        "reachable": 1
       }
     },
     {
@@ -1939,6 +1994,16 @@
   ],
   "repeated_urls": [
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454256/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 6,
+      "state": "reachable",
+      "books": [
+        "on-the-origin-of-species",
+        "the-blind-watchmaker"
+      ]
+    },
+    {
       "url": "https://doi.org/10.1038/nature06536",
       "host": "doi.org",
       "citation_count": 4,
@@ -1965,6 +2030,17 @@
       "state": "reachable",
       "books": [
         "the-ghosts-of-eden-park"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1126/science.aam5979",
+      "host": "doi.org",
+      "citation_count": 3,
+      "state": "access_blocked",
+      "books": [
+        "on-the-origin-of-species",
+        "the-blind-watchmaker",
+        "wonderful-life"
       ]
     },
     {
@@ -2043,7 +2119,7 @@
       "url": "https://oro.open.ac.uk/7761/",
       "host": "oro.open.ac.uk",
       "citation_count": 3,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-guns-of-august"
       ]
@@ -2055,6 +2131,25 @@
       "state": "reachable",
       "books": [
         "the-poisoners-handbook"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4817804/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-blind-watchmaker",
+        "the-tangled-tree"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5804262/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-selfish-gene"
       ]
     },
     {
@@ -2091,6 +2186,15 @@
       "state": "access_blocked",
       "books": [
         "the-cheese-and-the-worms"
+      ]
+    },
+    {
+      "url": "https://www.biointeractive.org/sites/default/files/TeacherGuide_YourInnerFish.pdf",
+      "host": "biointeractive.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "your-inner-fish"
       ]
     },
     {
@@ -2136,6 +2240,15 @@
       "state": "reachable",
       "books": [
         "dead-wake"
+      ]
+    },
+    {
+      "url": "https://www.environmentandsociety.org/sites/default/files/key_docs/rcc_00097007_1_1.pdf",
+      "host": "environmentandsociety.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-song-of-the-dodo"
       ]
     },
     {
@@ -2185,6 +2298,15 @@
       ]
     },
     {
+      "url": "https://www.nature.com/articles/nature09985",
+      "host": "nature.com",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-song-of-the-dodo"
+      ]
+    },
+    {
       "url": "https://www.nps.gov/cali/learn/historyculture/donner-reed-party.htm",
       "host": "nps.gov",
       "citation_count": 3,
@@ -2230,6 +2352,15 @@
       ]
     },
     {
+      "url": "https://academic.oup.com/chicago-scholarship-online/book/35754/chapter-abstract/307617965",
+      "host": "academic.oup.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "wonderful-life"
+      ]
+    },
+    {
       "url": "https://airandspace.si.edu/collection-objects/1903-wright-flyer/nasm_A19610048000",
       "host": "airandspace.si.edu",
       "citation_count": 2,
@@ -2264,6 +2395,15 @@
       "books": [
         "the-great-influenza",
         "pale-rider"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1907.02730",
+      "host": "arxiv.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "your-inner-fish"
       ]
     },
     {
@@ -2539,6 +2679,24 @@
       ]
     },
     {
+      "url": "https://nick-lane.net/chapters/vital-question-introduction-life-way/",
+      "host": "nick-lane.net",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-vital-question"
+      ]
+    },
+    {
+      "url": "https://nick-lane.net/wp-content/uploads/2016/12/Lane-Martin-Cell-origin-membrane-bioenergetics.pdf",
+      "host": "nick-lane.net",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-vital-question"
+      ]
+    },
+    {
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/taja.70012",
       "host": "onlinelibrary.wiley.com",
       "citation_count": 2,
@@ -2611,6 +2769,15 @@
       ]
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2702796/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-descent-of-man"
+      ]
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2928990/",
       "host": "pmc.ncbi.nlm.nih.gov",
       "citation_count": 2,
@@ -2635,6 +2802,34 @@
       "state": "reachable",
       "books": [
         "the-emperor-of-all-maladies"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3310512/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "on-the-origin-of-species",
+        "the-blind-watchmaker"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4508532/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-tangled-tree"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4774003/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-selfish-gene"
       ]
     },
     {
@@ -2680,6 +2875,24 @@
       "state": "reachable",
       "books": [
         "salt"
+      ]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-beak-of-the-finch"
+      ]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24572480/",
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-tangled-tree"
       ]
     },
     {
@@ -2775,6 +2988,15 @@
       ]
     },
     {
+      "url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-ecolsys-110218-024717",
+      "host": "annualreviews.org",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "the-beak-of-the-finch"
+      ]
+    },
+    {
       "url": "https://www.archives.gov/news/articles/code-girls-instramental-in-wwii-victory",
       "host": "archives.gov",
       "citation_count": 2,
@@ -2799,6 +3021,15 @@
       "state": "reachable",
       "books": [
         "in-the-heart-of-the-sea"
+      ]
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/paleontology/diversity-disparity-and-the-burgess-shale/D8EE896BE5EC513A96D90CB00EBD21B2",
+      "host": "cambridge.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "wonderful-life"
       ]
     },
     {
@@ -3018,6 +3249,16 @@
       "state": "access_blocked",
       "books": [
         "the-swerve"
+      ]
+    },
+    {
+      "url": "https://www.journals.uchicago.edu/doi/pdf/10.1086/284924",
+      "host": "journals.uchicago.edu",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "on-the-origin-of-species",
+        "the-beak-of-the-finch"
       ]
     },
     {
@@ -3249,7 +3490,7 @@
       "url": "https://www.si.edu/object/five-days-memorial-life-and-death-storm-ravaged-hospital-sheri-fink%3Asiris_sil_1056647",
       "host": "si.edu",
       "citation_count": 2,
-      "state": "reachable",
+      "state": "access_blocked",
       "books": [
         "five-days-at-memorial"
       ]
@@ -3261,6 +3502,15 @@
       "state": "reachable",
       "books": [
         "killers-of-the-flower-moon"
+      ]
+    },
+    {
+      "url": "https://www.smithsonianmag.com/science-nature/how-darwins-descent-man-holds-150-years-after-publication-180977091/",
+      "host": "smithsonianmag.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-descent-of-man"
       ]
     },
     {
@@ -3398,6 +3648,28 @@
       "error": null
     },
     {
+      "url": "https://academic.oup.com/chicago-scholarship-online/book/35754/chapter-abstract/307617965",
+      "citations": [
+        {
+          "slug": "wonderful-life",
+          "claim_index": 1,
+          "source_title": "Wonderful Life revisited"
+        },
+        {
+          "slug": "wonderful-life",
+          "claim_index": 3,
+          "source_title": "Wonderful Life revisited"
+        }
+      ],
+      "host": "academic.oup.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://academic.oup.com/chicago-scholarship-online/book/35754/chapter-abstract/307617965",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://academic.oup.com/ehr/article-abstract/120/488/1097/376432",
       "citations": [
         {
@@ -3428,6 +3700,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://academic.oup.com/emph/article/2018/1/13/4774983",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://academic.oup.com/evolut/article/75/10/2326/6728613",
+      "citations": [
+        {
+          "slug": "the-selfish-gene",
+          "claim_index": 1,
+          "source_title": "Sewall Wright's criticism of the gene's-eye view"
+        }
+      ],
+      "host": "academic.oup.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://academic.oup.com/evolut/article/75/10/2326/6728613",
       "redirected": false,
       "error": null
     },
@@ -3707,6 +3996,28 @@
       "error": null
     },
     {
+      "url": "https://arxiv.org/abs/1907.02730",
+      "citations": [
+        {
+          "slug": "your-inner-fish",
+          "claim_index": 1,
+          "source_title": "Systems biology of the fin-to-limb transition"
+        },
+        {
+          "slug": "your-inner-fish",
+          "claim_index": 3,
+          "source_title": "Systems biology of the fin-to-limb transition"
+        }
+      ],
+      "host": "arxiv.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1907.02730",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://assets.cambridge.org/97805215/15726/excerpt/9780521515726_excerpt.htm",
       "citations": [
         {
@@ -3932,6 +4243,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://chpl.org/blogs/post/throwback-thursday-george-remus/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://chronicle.uchicago.edu/081023/tiktaalik.shtml",
+      "citations": [
+        {
+          "slug": "your-inner-fish",
+          "claim_index": 2,
+          "source_title": "Tiktaalik internal anatomy and the water-to-land shift"
+        }
+      ],
+      "host": "chronicle.uchicago.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://chronicle.uchicago.edu/081023/tiktaalik.shtml",
       "redirected": false,
       "error": null
     },
@@ -4398,7 +4726,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-023-01313-5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=29bdfc18-2ae3-4689-b56e-dd5db9b3ab6f",
       "redirected": true,
       "error": null
     },
@@ -4430,7 +4758,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=7dd35ff2-d8be-4572-a192-cef8b221844b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=26537bcf-2238-4e94-b815-d9312e391cbf",
       "redirected": true,
       "error": null
     },
@@ -4447,7 +4775,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=b8a92f83-8646-4ba6-bc44-acf0b1ebe4b8",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=91d6d431-da2a-4d7e-b491-eda0b08d5502",
       "redirected": true,
       "error": null
     },
@@ -4469,7 +4797,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nplants201793",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnplants201793&code=bd2758fd-5fe2-4ca2-aba7-415b6cb14c48",
       "redirected": true,
       "error": null
     },
@@ -4491,7 +4819,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=7e8a6eaf-96ca-4d25-ba6c-58dbe23f1714",
       "redirected": true,
       "error": null
     },
@@ -4508,7 +4836,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=2d65f8a3-5f22-405c-bc83-3e3559368208",
+      "final_url": "https://www.nature.com/articles/s41467-023-43426-5",
       "redirected": true,
       "error": null
     },
@@ -4525,7 +4853,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-019-0907-1",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=807a3d14-bd04-4282-8282-1b2602458ab1",
       "redirected": true,
       "error": null
     },
@@ -4542,7 +4870,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=b27057e9-03e3-4119-991b-c9a56a18fc98",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=a7d15297-494b-45c1-b096-01e87ce66c33",
       "redirected": true,
       "error": null
     },
@@ -4576,7 +4904,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=e8a7b5dc-e628-4af1-bfbe-8a9795843cee",
       "redirected": true,
       "error": null
     },
@@ -4745,6 +5073,33 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.science.org/doi/10.1126/science.208.4448.1095",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1126/science.aam5979",
+      "citations": [
+        {
+          "slug": "on-the-origin-of-species",
+          "claim_index": 3,
+          "source_title": "Contingency and determinism in evolution"
+        },
+        {
+          "slug": "the-blind-watchmaker",
+          "claim_index": 2,
+          "source_title": "Contingency and determinism in evolution"
+        },
+        {
+          "slug": "wonderful-life",
+          "claim_index": 2,
+          "source_title": "Contingency and determinism in evolution"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.science.org/doi/10.1126/science.aam5979",
       "redirected": true,
       "error": null
     },
@@ -5478,6 +5833,23 @@
       "error": null
     },
     {
+      "url": "https://faculty.uca.edu/benw/biol4415/papers/GrantGrant2002b.pdf",
+      "citations": [
+        {
+          "slug": "the-beak-of-the-finch",
+          "claim_index": 2,
+          "source_title": "Unpredictable evolution in a 30-year finch study"
+        }
+      ],
+      "host": "faculty.uca.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://faculty.uca.edu/benw/biol4415/papers/GrantGrant2002b.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://files.eric.ed.gov/fulltext/ED069010.pdf",
       "citations": [
         {
@@ -5855,7 +6227,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s10602-026-09503-9?error=cookies_not_supported&code=f6ce3a2e-0714-4631-9ab9-a100e7395e64",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=4a14d931-4324-418e-9d68-2b9058fd76d5",
       "redirected": true,
       "error": null
     },
@@ -5906,7 +6278,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=9bdbcc43-9d77-4be7-aca4-eb5f43e65f7d",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=b793b20a-01a1-4056-be71-683bc44d01ea",
       "redirected": true,
       "error": null
     },
@@ -5923,7 +6295,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=ceb95f01-2714-413f-806f-61fa6a5bea54",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=155d1f70-185b-4eca-88ca-2d6da1e738ac",
       "redirected": true,
       "error": null
     },
@@ -6247,6 +6619,67 @@
       "error": null
     },
     {
+      "url": "https://nick-lane.net/chapters/vital-question-introduction-life-way/",
+      "citations": [
+        {
+          "slug": "the-vital-question",
+          "claim_index": 1,
+          "source_title": "The Vital Question: introduction"
+        },
+        {
+          "slug": "the-vital-question",
+          "claim_index": 2,
+          "source_title": "The Vital Question: introduction"
+        }
+      ],
+      "host": "nick-lane.net",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nick-lane.net/chapters/vital-question-introduction-life-way/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://nick-lane.net/wp-content/uploads/2016/12/Lane-Martin-Cell-origin-membrane-bioenergetics.pdf",
+      "citations": [
+        {
+          "slug": "the-vital-question",
+          "claim_index": 1,
+          "source_title": "The origin of membrane bioenergetics"
+        },
+        {
+          "slug": "the-vital-question",
+          "claim_index": 3,
+          "source_title": "The origin of membrane bioenergetics"
+        }
+      ],
+      "host": "nick-lane.net",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nick-lane.net/wp-content/uploads/2016/12/Lane-Martin-Cell-origin-membrane-bioenergetics.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://nick-lane.net/wp-content/uploads/2020/12/Lane-Current-Biology-2020.pdf",
+      "citations": [
+        {
+          "slug": "the-vital-question",
+          "claim_index": 2,
+          "source_title": "Bioenergetics and the origin of complex life"
+        }
+      ],
+      "host": "nick-lane.net",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nick-lane.net/wp-content/uploads/2020/12/Lane-Current-Biology-2020.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20040006526.pdf",
       "citations": [
         {
@@ -6260,6 +6693,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20040006526.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://ojs.victoria.ac.nz/nzsr/article/download/9414/8324/14577",
+      "citations": [
+        {
+          "slug": "the-descent-of-man",
+          "claim_index": 3,
+          "source_title": "Darwin, sexual selection, and human evolution"
+        }
+      ],
+      "host": "ojs.victoria.ac.nz",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ojs.victoria.ac.nz/nzsr/article/download/9414/8324/14577",
       "redirected": false,
       "error": null
     },
@@ -6473,9 +6923,9 @@
         }
       ],
       "host": "oro.open.ac.uk",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://oro.open.ac.uk/7761/",
       "redirected": false,
       "error": null
@@ -6817,6 +7267,28 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2702796/",
+      "citations": [
+        {
+          "slug": "the-descent-of-man",
+          "claim_index": 1,
+          "source_title": "Mate choice and sexual selection since Darwin"
+        },
+        {
+          "slug": "the-descent-of-man",
+          "claim_index": 2,
+          "source_title": "Mate choice and sexual selection since Darwin"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2702796/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862336/",
       "citations": [
         {
@@ -6978,6 +7450,28 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3310512/",
+      "citations": [
+        {
+          "slug": "on-the-origin-of-species",
+          "claim_index": 1,
+          "source_title": "Darwinian natural selection: enduring explanatory power"
+        },
+        {
+          "slug": "the-blind-watchmaker",
+          "claim_index": 1,
+          "source_title": "Darwinian natural selection: enduring explanatory power"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3310512/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3325506/",
       "citations": [
         {
@@ -7063,6 +7557,28 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4508532/",
+      "citations": [
+        {
+          "slug": "the-tangled-tree",
+          "claim_index": 1,
+          "source_title": "The universal tree of life: an update"
+        },
+        {
+          "slug": "the-tangled-tree",
+          "claim_index": 2,
+          "source_title": "The universal tree of life: an update"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4508532/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4521606/",
       "citations": [
         {
@@ -7114,6 +7630,55 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4774003/",
+      "citations": [
+        {
+          "slug": "the-selfish-gene",
+          "claim_index": 2,
+          "source_title": "Forty years of The Selfish Gene"
+        },
+        {
+          "slug": "the-selfish-gene",
+          "claim_index": 3,
+          "source_title": "Forty years of The Selfish Gene"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4774003/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4817804/",
+      "citations": [
+        {
+          "slug": "the-blind-watchmaker",
+          "claim_index": 3,
+          "source_title": "Horizontal gene transfer and the history of life"
+        },
+        {
+          "slug": "the-tangled-tree",
+          "claim_index": 1,
+          "source_title": "Horizontal gene transfer and the history of life"
+        },
+        {
+          "slug": "the-tangled-tree",
+          "claim_index": 3,
+          "source_title": "Horizontal gene transfer and the history of life"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4817804/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4946313/",
       "citations": [
         {
@@ -7153,6 +7718,48 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454256/",
+      "citations": [
+        {
+          "slug": "on-the-origin-of-species",
+          "claim_index": 1,
+          "source_title": "The sources of adaptive variation"
+        },
+        {
+          "slug": "on-the-origin-of-species",
+          "claim_index": 2,
+          "source_title": "The sources of adaptive variation"
+        },
+        {
+          "slug": "on-the-origin-of-species",
+          "claim_index": 3,
+          "source_title": "The sources of adaptive variation"
+        },
+        {
+          "slug": "the-blind-watchmaker",
+          "claim_index": 1,
+          "source_title": "The sources of adaptive variation"
+        },
+        {
+          "slug": "the-blind-watchmaker",
+          "claim_index": 2,
+          "source_title": "The sources of adaptive variation"
+        },
+        {
+          "slug": "the-blind-watchmaker",
+          "claim_index": 3,
+          "source_title": "The sources of adaptive variation"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454256/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5689800/",
       "citations": [
         {
@@ -7175,6 +7782,33 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5804262/",
+      "citations": [
+        {
+          "slug": "the-selfish-gene",
+          "claim_index": 1,
+          "source_title": "Selfish genetic elements and the gene's-eye view"
+        },
+        {
+          "slug": "the-selfish-gene",
+          "claim_index": 2,
+          "source_title": "Selfish genetic elements and levels of selection"
+        },
+        {
+          "slug": "the-selfish-gene",
+          "claim_index": 3,
+          "source_title": "Selfish genetic elements and the gene's-eye view"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5804262/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5938790/",
       "citations": [
         {
@@ -7190,7 +7824,7 @@
       ],
       "host": "pmc.ncbi.nlm.nih.gov",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5938790/",
       "redirected": false,
@@ -7472,6 +8106,28 @@
       "error": null
     },
     {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
+      "citations": [
+        {
+          "slug": "the-beak-of-the-finch",
+          "claim_index": 1,
+          "source_title": "Evolution in Darwin's finches: a review"
+        },
+        {
+          "slug": "the-beak-of-the-finch",
+          "claim_index": 3,
+          "source_title": "Evolution in Darwin's finches: a review"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pubmed.ncbi.nlm.nih.gov/20481116/",
       "citations": [
         {
@@ -7485,6 +8141,28 @@
       "method": "HEAD",
       "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/20481116/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24572480/",
+      "citations": [
+        {
+          "slug": "the-tangled-tree",
+          "claim_index": 2,
+          "source_title": "Carl Woese's vision and the domains of life"
+        },
+        {
+          "slug": "the-tangled-tree",
+          "claim_index": 3,
+          "source_title": "Carl Woese's vision and the domains of life"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/24572480/",
       "redirected": false,
       "error": null
     },
@@ -7798,12 +8476,12 @@
         }
       ],
       "host": "ruj.uj.edu.pl",
-      "state": "network_error",
+      "state": "reachable",
       "method": "GET",
-      "status": null,
-      "final_url": null,
-      "redirected": false,
-      "error": "TypeError: fetch failed"
+      "status": 200,
+      "final_url": "https://ruj.uj.edu.pl//handle/item/68230",
+      "redirected": true,
+      "error": null
     },
     {
       "url": "https://scholarsarchive.byu.edu/ccr/vol85/iss85/17/",
@@ -8521,6 +9199,28 @@
       "error": null
     },
     {
+      "url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-ecolsys-110218-024717",
+      "citations": [
+        {
+          "slug": "the-beak-of-the-finch",
+          "claim_index": 2,
+          "source_title": "Evolution and long-term field studies"
+        },
+        {
+          "slug": "the-beak-of-the-finch",
+          "claim_index": 3,
+          "source_title": "Evolution and long-term field studies"
+        }
+      ],
+      "host": "annualreviews.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-ecolsys-110218-024717",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.aphis.usda.gov/sites/default/files/10_16101p.pdf",
       "citations": [
         {
@@ -8655,6 +9355,33 @@
       "error": null
     },
     {
+      "url": "https://www.biointeractive.org/sites/default/files/TeacherGuide_YourInnerFish.pdf",
+      "citations": [
+        {
+          "slug": "your-inner-fish",
+          "claim_index": 1,
+          "source_title": "Your Inner Fish teaching guide"
+        },
+        {
+          "slug": "your-inner-fish",
+          "claim_index": 2,
+          "source_title": "Your Inner Fish teaching guide"
+        },
+        {
+          "slug": "your-inner-fish",
+          "claim_index": 3,
+          "source_title": "Your Inner Fish teaching guide"
+        }
+      ],
+      "host": "biointeractive.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.biointeractive.org/sites/default/files/TeacherGuide_YourInnerFish.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.britannica.com/biography/Genghis-Khan",
       "citations": [
         {
@@ -8664,9 +9391,9 @@
         }
       ],
       "host": "britannica.com",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.britannica.com/biography/Genghis-Khan",
       "redirected": false,
       "error": null
@@ -8720,6 +9447,28 @@
       "status": 200,
       "final_url": "https://www.cambridge.org/core/books/abs/cambridge-economic-history-of-modern-europe/europe-in-an-asian-mirror-the-great-divergence/D4E6D284CD8B03533C229CEE5D669CB3",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/paleontology/diversity-disparity-and-the-burgess-shale/D8EE896BE5EC513A96D90CB00EBD21B2",
+      "citations": [
+        {
+          "slug": "wonderful-life",
+          "claim_index": 1,
+          "source_title": "Diversity, disparity, and the Burgess Shale"
+        },
+        {
+          "slug": "wonderful-life",
+          "claim_index": 3,
+          "source_title": "Diversity, disparity, and the Burgess Shale"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/books/abs/paleontology/diversity-disparity-and-the-burgess-shale/D8EE896BE5EC513A96D90CB00EBD21B2",
+      "redirected": true,
       "error": null
     },
     {
@@ -9601,6 +10350,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.english.cam.ac.uk/spenseronline/review/volume-42/issue-422-3/reviews/stephen-greenblatt-the-swerve-and-gerard-passanante-the-lucretian-renaissance/index.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.environmentandsociety.org/sites/default/files/key_docs/rcc_00097007_1_1.pdf",
+      "citations": [
+        {
+          "slug": "the-song-of-the-dodo",
+          "claim_index": 1,
+          "source_title": "The Song of the Dodo review"
+        },
+        {
+          "slug": "the-song-of-the-dodo",
+          "claim_index": 2,
+          "source_title": "The Song of the Dodo review"
+        },
+        {
+          "slug": "the-song-of-the-dodo",
+          "claim_index": 3,
+          "source_title": "The Song of the Dodo review"
+        }
+      ],
+      "host": "environmentandsociety.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.environmentandsociety.org/sites/default/files/key_docs/rcc_00097007_1_1.pdf",
       "redirected": false,
       "error": null
     },
@@ -10564,9 +11340,9 @@
         }
       ],
       "host": "hopkinsmedicine.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.hopkinsmedicine.org/henrietta-lacks/upholding-the-highest-bioethical-standards",
       "redirected": false,
       "error": null
@@ -10712,6 +11488,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.journals.uchicago.edu/doi/full/10.1086/720603",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.journals.uchicago.edu/doi/pdf/10.1086/284924",
+      "citations": [
+        {
+          "slug": "on-the-origin-of-species",
+          "claim_index": 2,
+          "source_title": "Natural selection in Darwin's finches"
+        },
+        {
+          "slug": "the-beak-of-the-finch",
+          "claim_index": 1,
+          "source_title": "Natural selection in a population of Darwin's finches"
+        }
+      ],
+      "host": "journals.uchicago.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.journals.uchicago.edu/doi/pdf/10.1086/284924",
       "redirected": false,
       "error": null
     },
@@ -11436,6 +12234,23 @@
       "error": null
     },
     {
+      "url": "https://www.nature.com/articles/d41586-024-00544-4",
+      "citations": [
+        {
+          "slug": "the-vital-question",
+          "claim_index": 3,
+          "source_title": "To unravel life's origin, assemble the larger puzzle"
+        }
+      ],
+      "host": "nature.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=955b9fbb-e563-4d30-9ff9-d7a06e2c4638",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://www.nature.com/articles/nature09678",
       "citations": [
         {
@@ -11458,7 +12273,34 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=d9b90b8e-bb9b-45fd-ac84-88d064ac17ab",
+      "final_url": "https://www.nature.com/articles/nature09678?error=cookies_not_supported&code=8f8122c6-4042-4063-bb60-2a1fc0ec9acc",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.nature.com/articles/nature09985",
+      "citations": [
+        {
+          "slug": "the-song-of-the-dodo",
+          "claim_index": 1,
+          "source_title": "Species-area relationships and extinction forecasts"
+        },
+        {
+          "slug": "the-song-of-the-dodo",
+          "claim_index": 2,
+          "source_title": "Species-area relationships and extinction forecasts"
+        },
+        {
+          "slug": "the-song-of-the-dodo",
+          "claim_index": 3,
+          "source_title": "Species-area relationships and extinction forecasts"
+        }
+      ],
+      "host": "nature.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=e8e6a539-48c1-498b-b082-34c5a7ff0031",
       "redirected": true,
       "error": null
     },
@@ -11480,7 +12322,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=95101381-c5ac-4c09-975f-9f0270325df6",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=108c0328-a6a2-4fb5-8b2a-5fb7e182f4d6",
       "redirected": true,
       "error": null
     },
@@ -11497,8 +12339,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=f0ad93cc-9279-414e-b92d-9f743ceaf7b8",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
+      "redirected": false,
       "error": null
     },
     {
@@ -11531,7 +12373,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-020-00305-9?error=cookies_not_supported&code=dbf32231-79da-4a57-8f42-15fead2f83a5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=b0933cb5-3bae-449d-8686-cbff2831464a",
       "redirected": true,
       "error": null
     },
@@ -11548,8 +12390,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-022-00537-x?error=cookies_not_supported&code=f34ac364-6ff9-4014-a040-a0ef69ec7d91",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41576-022-00537-x",
+      "redirected": false,
       "error": null
     },
     {
@@ -11565,7 +12407,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41579-018-0116-y?error=cookies_not_supported&code=68d6c1e7-f00b-485e-a9ee-3a35d0c2e689",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=4f517031-f6f6-4459-80ce-9b64e8e2d357",
       "redirected": true,
       "error": null
     },
@@ -11587,7 +12429,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=cbd9fa1a-b681-4576-b2b3-9b16f87933c4",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=467a1dbe-70f4-4af7-bc13-ba7bc11592a6",
       "redirected": true,
       "error": null
     },
@@ -12217,8 +13059,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/england-and-europe-in-1420/",
-      "redirected": true,
+      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/England-and-Europe-in-1420/",
+      "redirected": false,
       "error": null
     },
     {
@@ -12348,9 +13190,9 @@
         }
       ],
       "host": "rct.uk",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
       "final_url": "https://www.rct.uk/collection",
       "redirected": true,
       "error": null
@@ -12624,8 +13466,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.sciencedirect.com/user/identity/landing?code=1AVTsyLKRIKtY_Nq2iC6svFIBkAjJwKeHgpOZPNh&state=retryCounter%3D0%26csrfToken%3D5ba56510-19e2-4786-bd55-ed169aff53b2%26idpPolicy%3Durn%253Acom%253Aelsevier%253Aidp%253Apolicy%253Aproduct%253Ainst_assoc%26returnUrl%3D%252Fscience%252Farticle%252Fpii%252FS0167814098001431%26migrated%3DMIGRATED%26prompt%3Dnone%26cid%3Darp-de96d498-7ccb-49e3-8fba-d73747064c9b",
-      "redirected": true,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0167814098001431",
+      "redirected": false,
       "error": null
     },
     {
@@ -12676,6 +13518,40 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.sciencedirect.com/science/article/pii/S0308597X04000600",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S136984861500182X",
+      "citations": [
+        {
+          "slug": "wonderful-life",
+          "claim_index": 2,
+          "source_title": "Replaying Life's Tape"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S136984861500182X",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S1631069109003060",
+      "citations": [
+        {
+          "slug": "the-descent-of-man",
+          "claim_index": 2,
+          "source_title": "Darwin and sexual selection: a century of misunderstanding"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S1631069109003060",
       "redirected": false,
       "error": null
     },
@@ -12833,9 +13709,9 @@
         }
       ],
       "host": "si.edu",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.si.edu/object/five-days-memorial-life-and-death-storm-ravaged-hospital-sheri-fink%3Asiris_sil_1056647",
       "redirected": false,
       "error": null
@@ -12859,6 +13735,28 @@
       "method": "GET",
       "status": 200,
       "final_url": "https://www.smithsonianmag.com/history/the-real-history-behind-killers-of-the-flower-moon-180983086/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.smithsonianmag.com/science-nature/how-darwins-descent-man-holds-150-years-after-publication-180977091/",
+      "citations": [
+        {
+          "slug": "the-descent-of-man",
+          "claim_index": 1,
+          "source_title": "How Descent of Man holds up after 150 years"
+        },
+        {
+          "slug": "the-descent-of-man",
+          "claim_index": 3,
+          "source_title": "How Descent of Man holds up after 150 years"
+        }
+      ],
+      "host": "smithsonianmag.com",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.smithsonianmag.com/science-nature/how-darwins-descent-man-holds-150-years-after-publication-180977091/",
       "redirected": false,
       "error": null
     },
@@ -13216,8 +14114,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/article/1/3/95-0307_article",
-      "redirected": false,
+      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/1/3/95-0307_article",
+      "redirected": true,
       "error": null
     },
     {
@@ -13233,8 +14131,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article",
-      "redirected": false,
+      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/1/05-0979_article",
+      "redirected": true,
       "error": null
     },
     {

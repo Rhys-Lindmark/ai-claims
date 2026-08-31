@@ -1295,6 +1295,109 @@
         "Marion Wiesel",
         "Wiesel,Elie"
       ]
+    },
+    {
+      "slug": "on-the-origin-of-species",
+      "match_state": "exact_title_author",
+      "cover_id": 7153600,
+      "cover_url": "https://covers.openlibrary.org/b/id/7153600-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL515051W",
+      "source_title": "On the origin of species by means of natural selection",
+      "source_authors": [
+        "Charles Darwin"
+      ]
+    },
+    {
+      "slug": "the-descent-of-man",
+      "match_state": "exact_title_author",
+      "cover_id": 5634198,
+      "cover_url": "https://covers.openlibrary.org/b/id/5634198-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL515361W",
+      "source_title": "The descent of man",
+      "source_authors": [
+        "Charles Darwin"
+      ]
+    },
+    {
+      "slug": "the-selfish-gene",
+      "match_state": "exact_title_author",
+      "cover_id": 133936,
+      "cover_url": "https://covers.openlibrary.org/b/id/133936-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1966488W",
+      "source_title": "The Selfish Gene",
+      "source_authors": [
+        "Richard Dawkins"
+      ]
+    },
+    {
+      "slug": "the-blind-watchmaker",
+      "match_state": "exact_title_author",
+      "cover_id": 95763,
+      "cover_url": "https://covers.openlibrary.org/b/id/95763-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1966501W",
+      "source_title": "The Blind Watchmaker",
+      "source_authors": [
+        "Richard Dawkins"
+      ]
+    },
+    {
+      "slug": "wonderful-life",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-beak-of-the-finch",
+      "match_state": "exact_title_author",
+      "cover_id": 420144,
+      "cover_url": "https://covers.openlibrary.org/b/id/420144-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1974714W",
+      "source_title": "The beak of the finch",
+      "source_authors": [
+        "Jonathan Weiner"
+      ]
+    },
+    {
+      "slug": "the-song-of-the-dodo",
+      "match_state": "exact_title_author",
+      "cover_id": 1019514,
+      "cover_url": "https://covers.openlibrary.org/b/id/1019514-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2699033W",
+      "source_title": "The Song of the Dodo",
+      "source_authors": [
+        "David Quammen"
+      ]
+    },
+    {
+      "slug": "your-inner-fish",
+      "match_state": "exact_title_author",
+      "cover_id": 4609000,
+      "cover_url": "https://covers.openlibrary.org/b/id/4609000-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL8036314W",
+      "source_title": "Your inner fish",
+      "source_authors": [
+        "Neil Shubin"
+      ]
+    },
+    {
+      "slug": "the-vital-question",
+      "match_state": "exact_title_author",
+      "cover_id": 10014850,
+      "cover_url": "https://covers.openlibrary.org/b/id/10014850-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19663289W",
+      "source_title": "The vital question",
+      "source_authors": [
+        "Nick Lane"
+      ]
+    },
+    {
+      "slug": "the-tangled-tree",
+      "match_state": "exact_title_author",
+      "cover_id": 10417483,
+      "cover_url": "https://covers.openlibrary.org/b/id/10417483-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19749017W",
+      "source_title": "The tangled tree",
+      "source_authors": [
+        "David Quammen"
+      ]
     }
   ]
 }
