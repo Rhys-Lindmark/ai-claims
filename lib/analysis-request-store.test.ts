@@ -1,8 +1,14 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { identifyPage } from '../extension/lib/page-identity.js';
 import { ANALYSIS_REQUEST_CONTRACT_VERSION, analysisRequestId, getAnalysisRequestById, getAnalysisRequestLifecycle, submitAnalysisRequest, transitionAnalysisRequest, validateAnalysisRequestInput } from './analysis-request-store.ts';
 
 const input = { contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, entity_key: 'web:example.com/article', canonical_url: 'https://example.com/article', page_kind: 'web' as const };
+
+function requestInput(canonicalUrl: string) {
+  const identity = identifyPage(canonicalUrl);
+  return { contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, entity_key: identity.entityKey, canonical_url: identity.canonicalUrl, page_kind: identity.kind };
+}
 
 function memoryD1() {
   const rows = new Map<string, Record<string, unknown>>();
@@ -57,6 +63,24 @@ test('analysis request input accepts canonical identity and rejects broader payl
   assert.match(validateAnalysisRequestInput({ ...input, page_title: 'Private title' }).error, /Page text, titles, and account data are not accepted/);
   assert.match(validateAnalysisRequestInput({ ...input, entity_key: 'web:example.com/other' }).error, /do not describe the same page/);
   assert.match(validateAnalysisRequestInput({ ...input, canonical_url: 'https://example.com/article?utm_source=x' }).error, /do not describe the same page/);
+});
+
+test('analysis request input rejects credential-bearing and private-network targets', () => {
+  for (const url of [
+    'https://user:password@example.com/article',
+    'http://localhost/admin',
+    'http://127.0.0.1/admin',
+    'http://10.0.0.1/admin',
+    'http://172.20.0.1/admin',
+    'http://192.168.1.1/admin',
+    'http://[::1]/admin',
+    'https://example.com:8443/admin',
+  ]) {
+    const result = validateAnalysisRequestInput(requestInput(url));
+    if (result.ok) assert.fail('Unsafe analysis target was accepted: ' + url);
+    assert.match(result.error, /credentials|local|private-network/, url);
+  }
+  assert.equal(validateAnalysisRequestInput(requestInput('https://example.com/article')).ok, true);
 });
 
 test('request transitions enforce guarded edges and append retry attempts', async () => {
