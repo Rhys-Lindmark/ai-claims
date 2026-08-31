@@ -21,8 +21,15 @@ const originOptIns = createOriginOptInStore({ storageArea: chrome.storage.local 
 const checkedThisSession = new Set();
 
 async function refreshMetrics() {
-  const summary = await metricsStore.summary(7);
-  localMetrics.textContent = `7D CHECKS: ${summary.counts.page_checked}`;
+  const [summary, negotiation] = await Promise.all([metricsStore.summary(7), metricsStore.negotiationSummary(7)]);
+  localMetrics.textContent = `7D CHECKS: ${summary.counts.page_checked} · FEED 1.1: ${negotiation.counts.supported_1_1} · LEGACY: ${negotiation.counts.legacy_1_0} · UNSUPPORTED: ${negotiation.counts.unsupported}`;
+}
+
+function negotiationOutcome(state) {
+  if (state.correctionFeedCompatibility === 'supported' && state.correctionFeedContractVersion === '1.1.0') return 'supported_1_1';
+  if (state.correctionFeedCompatibility === 'supported' && state.correctionFeedContractVersion === '1.0.0') return 'legacy_1_0';
+  if (state.correctionFeedCompatibility === 'unsupported') return 'unsupported';
+  return 'not_advertised';
 }
 
 async function loadResolver() {
@@ -86,6 +93,7 @@ async function refresh() {
     checkedThisSession.add(identity.entityKey);
     await metricsStore.record('page_checked', { kind: identity.kind });
     await metricsStore.record(score.state === 'published' ? 'score_published' : 'score_pending', { kind: identity.kind });
+    await metricsStore.recordNegotiation(negotiationOutcome(score));
     await refreshMetrics();
   }
   const requestRecord = score.state === 'not_analyzed' ? await requestStore.get(identity.entityKey) : null;

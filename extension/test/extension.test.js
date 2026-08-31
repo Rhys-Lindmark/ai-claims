@@ -317,3 +317,19 @@ test('local metrics reject unknown event types', async () => {
   const store = createMetricsStore({ storageArea: memoryStorage() });
   await assert.rejects(store.record('page_url'), /Unknown metric event/);
 });
+
+test('negotiation telemetry stores daily outcome aggregates without page identity', async () => {
+  const values = {};
+  const storageArea = { get: async (key) => ({ [key]: values[key] }), set: async (updates) => Object.assign(values, updates) };
+  const store = createMetricsStore({ storageArea, now: () => '2026-08-30T12:34:56.000Z' });
+  await store.recordNegotiation('supported_1_1');
+  await store.recordNegotiation('supported_1_1');
+  await store.recordNegotiation('legacy_1_0');
+  const serialized = JSON.stringify(values);
+  assert.equal(serialized.includes('entity'), false);
+  assert.equal(serialized.includes('url'), false);
+  assert.equal(serialized.includes('title'), false);
+  assert.equal(serialized.includes('12:34:56'), false);
+  assert.deepEqual((await store.negotiationSummary(7)).counts, { supported_1_1: 2, legacy_1_0: 1, unsupported: 0, not_advertised: 0 });
+  await assert.rejects(store.recordNegotiation('page-specific'), /Unknown negotiation outcome/);
+});
