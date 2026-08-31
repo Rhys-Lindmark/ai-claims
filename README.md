@@ -12,7 +12,7 @@ The public resolver contract is available at [`/claims/api/v1/analyses/resolve?e
 
 ## Install the prototype
 
-Download the [`extension-v0.2.7` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.7), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. It negotiates the advertised correction-feed contract, gracefully hides incompatible transition details while preserving reviewed scores, suppresses paused scores, and supports reversible origin-scoped toolbar badges; only synthetic reviewed fixtures are currently published.
+Download the [`extension-v0.2.8` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.8), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. It sends a machine-readable correction-feed capability header, negotiates the richest shared contract, gracefully hides incompatible transition details while preserving reviewed scores, and suppresses paused scores; only synthetic reviewed fixtures are currently published.
 
 ## Validate
 

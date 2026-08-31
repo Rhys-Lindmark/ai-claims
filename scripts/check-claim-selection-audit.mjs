@@ -14,7 +14,7 @@ import resumptionFixture from '../data/publication-resumption-fixture.json' with
 import { publicationResumptionDecision } from '../lib/publication-resumption.ts';
 import correctionFeedFixture from '../data/correction-event-feed-fixture.json' with { type: 'json' };
 import { validateCorrectionEventFeed, validateEntityCorrectionFeeds } from '../lib/correction-event-feed.ts';
-import { resolveCorrectionEventEnvelope, resolveCorrectionFeedEnvelope } from '../lib/correction-feed-api.ts';
+import { negotiateCorrectionFeedContract, resolveCorrectionEventEnvelope, resolveCorrectionFeedEnvelope } from '../lib/correction-feed-api.ts';
 
 assert.deepEqual(validateClaimSelectionAudit(fixture.samples), []);
 const summary = selectionAuditSummary(fixture.samples);
@@ -62,4 +62,8 @@ const secondPage = resolveCorrectionFeedEnvelope('web:example.invalid/reviewed-f
 assert.equal(secondPage.events[0].event_id, 'correction-event-002');
 assert.equal(resolveCorrectionFeedEnvelope('web:example.invalid/reviewed-fixture', 'missing', 1).cursor_valid, false);
 assert.equal(resolveCorrectionEventEnvelope('web:example.invalid/reviewed-fixture', 'correction-event-002').event.public_score_state, 'paused');
+assert.equal(negotiateCorrectionFeedContract(['1.0.0', '1.1.0']), '1.1.0');
+assert.equal(negotiateCorrectionFeedContract(['1.0.0']), '1.0.0');
+assert.equal(negotiateCorrectionFeedContract(null), '1.0.0');
+assert.equal(negotiateCorrectionFeedContract(['9.0.0']), null);
 console.log('Claim-selection audit fixture passed.');

@@ -120,6 +120,7 @@ test('API resolver opts into browser HTTP-cache revalidation', async () => {
   });
   await resolver.resolve(analysis.entity_key);
   assert.equal(requestOptions.cache, 'default');
+  assert.equal(requestOptions.headers['x-ai-claims-correction-feed-accept'], '1.0.0, 1.1.0');
 });
 
 test('API resolver preserves a custom endpoint path', async () => {

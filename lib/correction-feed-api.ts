@@ -6,6 +6,11 @@ export const CORRECTION_FEED_DEFAULT_PAGE_SIZE = 20;
 export const CORRECTION_FEED_MAX_PAGE_SIZE = 100;
 export const CORRECTION_EVENT_URL_TEMPLATE = 'https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections/{event_id}?entity_key={entity_key}';
 
+export function negotiateCorrectionFeedContract(acceptedContracts: string[] | null) {
+  if (acceptedContracts === null) return '1.0.0';
+  return [...CORRECTION_FEED_SUPPORTED_CONTRACTS].reverse().find((version) => acceptedContracts.includes(version)) ?? null;
+}
+
 function stableHash(value: string) {
   let hash = 2166136261;
   for (let index = 0; index < value.length; index += 1) {

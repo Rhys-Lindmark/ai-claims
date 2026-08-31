@@ -1,5 +1,5 @@
 import registry from '@/extension/data/analyses.json';
-import { CORRECTION_EVENT_URL_TEMPLATE, CORRECTION_FEED_CONTRACT, CORRECTION_FEED_DEFAULT_PAGE_SIZE, CORRECTION_FEED_MAX_PAGE_SIZE, CORRECTION_FEED_SUPPORTED_CONTRACTS, latestCorrectionForEntity } from '@/lib/correction-feed-api';
+import { CORRECTION_EVENT_URL_TEMPLATE, CORRECTION_FEED_DEFAULT_PAGE_SIZE, CORRECTION_FEED_MAX_PAGE_SIZE, CORRECTION_FEED_SUPPORTED_CONTRACTS, latestCorrectionForEntity, negotiateCorrectionFeedContract } from '@/lib/correction-feed-api';
 
 export const ANALYSIS_RESOLVER_CONTRACT = '1.0.0';
 
@@ -12,10 +12,11 @@ function stableHash(value: string) {
   return (hash >>> 0).toString(36);
 }
 
-export function resolveAnalysisEnvelope(entityKey: string, versionId?: string | null) {
+export function resolveAnalysisEnvelope(entityKey: string, versionId?: string | null, acceptedCorrectionContracts: string[] | null = null) {
   const analysis = registry.analyses.find((entry) => entry.entity_key === entityKey) ?? null;
   const latestCorrection = latestCorrectionForEntity(entityKey);
-  const correctionPointers = latestCorrection ? {
+  const negotiatedCorrectionContract = negotiateCorrectionFeedContract(acceptedCorrectionContracts);
+  const correctionPointers = latestCorrection && negotiatedCorrectionContract ? {
     latest_correction_event_id: latestCorrection.event_id,
     latest_correction_public_score_state: latestCorrection.public_score_state,
     latest_correction_summary: latestCorrection.summary,
@@ -32,17 +33,28 @@ export function resolveAnalysisEnvelope(entityKey: string, versionId?: string | 
       ? { analysis_version_id: requestedVersion, publication_state: analysis.publication_state }
       : analysis.version_history.find((entry) => entry.analysis_version_id === requestedVersion) ?? null;
   const version = matchedVersion ? { analysis_version_id: matchedVersion.analysis_version_id, publication_state: matchedVersion.publication_state } : null;
+  const correctionFeedDiscovery = negotiatedCorrectionContract === '1.1.0' ? {
+    contract_version: negotiatedCorrectionContract,
+    supported_contract_versions: CORRECTION_FEED_SUPPORTED_CONTRACTS,
+    compatible: true,
+    default_page_size: CORRECTION_FEED_DEFAULT_PAGE_SIZE,
+    max_page_size: CORRECTION_FEED_MAX_PAGE_SIZE,
+    feed_url: `https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections?entity_key=${encodeURIComponent(entityKey)}`,
+    immutable_event_url_template: CORRECTION_EVENT_URL_TEMPLATE,
+  } : negotiatedCorrectionContract === '1.0.0' ? {
+    contract_version: negotiatedCorrectionContract,
+    supported_contract_versions: CORRECTION_FEED_SUPPORTED_CONTRACTS,
+    compatible: true,
+    feed_url: `https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections?entity_key=${encodeURIComponent(entityKey)}`,
+  } : {
+    contract_version: null,
+    supported_contract_versions: CORRECTION_FEED_SUPPORTED_CONTRACTS,
+    compatible: false,
+  };
   return {
     contract_version: ANALYSIS_RESOLVER_CONTRACT,
     analysis_schema_version: registry.schema_version,
-    correction_feed_discovery: {
-      contract_version: CORRECTION_FEED_CONTRACT,
-      supported_contract_versions: CORRECTION_FEED_SUPPORTED_CONTRACTS,
-      default_page_size: CORRECTION_FEED_DEFAULT_PAGE_SIZE,
-      max_page_size: CORRECTION_FEED_MAX_PAGE_SIZE,
-      feed_url: `https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections?entity_key=${encodeURIComponent(entityKey)}`,
-      immutable_event_url_template: CORRECTION_EVENT_URL_TEMPLATE,
-    },
+    correction_feed_discovery: correctionFeedDiscovery,
     entity_key: entityKey,
     requested_version_id: requestedVersion,
     analysis: requestedVersion && version ? { entity_key: entityKey, ...version } : requestedVersion ? null : analysis ? { ...analysis, ...correctionPointers } : null,
@@ -52,5 +64,5 @@ export function resolveAnalysisEnvelope(entityKey: string, versionId?: string | 
 
 export function analysisEtag(envelope: ReturnType<typeof resolveAnalysisEnvelope>) {
   const revision = envelope.requested_version_id ?? envelope.analysis?.analysis_version_id ?? 'missing';
-  return `\"claims-${stableHash(`${envelope.analysis_schema_version}:${envelope.entity_key}:${revision}`)}\"`;
+  return `\"claims-${stableHash(`${envelope.analysis_schema_version}:${envelope.correction_feed_discovery.contract_version ?? 'none'}:${envelope.entity_key}:${revision}`)}\"`;
 }

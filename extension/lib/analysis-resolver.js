@@ -54,7 +54,7 @@ export function createApiResolver({ endpoint, fetchImpl = fetch }) {
     async resolve(entityKey) {
       const url = new URL('v1/analyses/resolve', endpoint.endsWith('/') ? endpoint : `${endpoint}/`);
       url.searchParams.set('entity_key', entityKey);
-      const response = await fetchImpl(url, { cache: 'default', headers: { accept: 'application/json' } });
+      const response = await fetchImpl(url, { cache: 'default', headers: { accept: 'application/json', 'x-ai-claims-correction-feed-accept': SUPPORTED_CORRECTION_FEED_CONTRACTS.join(', ') } });
       if (response.status === 404) return scoreState(null);
       if (!response.ok) throw new Error(`Analysis resolver failed with ${response.status}.`);
       const envelope = assertEnvelope(await response.json());
