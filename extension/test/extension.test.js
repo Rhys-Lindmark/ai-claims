@@ -14,6 +14,7 @@ import { identifyPage } from '../lib/page-identity.js';
 import { actionBadgeForState } from '../lib/action-badge.js';
 import { createOriginOptInStore } from '../lib/origin-opt-in.js';
 import { correctionLinkForState, correctionPreviewForState, escapeHtml } from '../lib/correction-links.js';
+import { downloadablePrivacyReceipt } from '../lib/privacy-receipt.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -358,4 +359,22 @@ test('privacy receipt is machine-readable and negotiation reset preserves unrela
   assert.equal(serialized.includes('https://'), false);
   assert.equal(serialized.includes('entity_key'), true);
   assert.equal((await store.privacyReceipt()).transmitted, false);
+});
+
+test('privacy receipt export is deterministic and needs no download permission', () => {
+  const receipt = {
+    schema_version: '1.0.0',
+    storage_scope: 'chrome.storage.local',
+    transmitted: false,
+    retention_days: 30,
+    retained_fields: ['date', 'outcome_count'],
+    prohibited_fields: ['url'],
+    last_reset_at: '2026-08-30T12:34:56.000Z',
+  };
+  const download = downloadablePrivacyReceipt(receipt);
+  assert.equal(download.filename, 'ai-claims-privacy-receipt-2026-08-30.json');
+  assert.equal(download.mimeType, 'application/json');
+  assert.deepEqual(JSON.parse(download.content), receipt);
+  assert.equal(manifest.permissions.includes('downloads'), false);
+  assert.equal(manifest.host_permissions.length, 1);
 });

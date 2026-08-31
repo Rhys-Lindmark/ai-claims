@@ -5,6 +5,7 @@ import { sourceNotice } from './lib/source-policy.js';
 import { createMetricsStore } from './lib/local-metrics.js';
 import { createOriginOptInStore } from './lib/origin-opt-in.js';
 import { correctionLinkForState, correctionPreviewForState, escapeHtml } from './lib/correction-links.js';
+import { downloadablePrivacyReceipt } from './lib/privacy-receipt.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
@@ -14,6 +15,7 @@ const permissionButton = document.querySelector('#permission');
 const localMetrics = document.querySelector('#local-metrics');
 const privacyReceipt = document.querySelector('#privacy-receipt');
 const resetMetricsButton = document.querySelector('#reset-metrics');
+const downloadReceiptButton = document.querySelector('#download-receipt');
 let currentTab;
 let currentIdentity;
 let currentAutoCheck = false;
@@ -142,6 +144,16 @@ resetMetricsButton.addEventListener('click', async () => {
   await refreshMetrics();
   resetMetricsButton.textContent = 'Compatibility metrics reset';
   resetMetricsButton.disabled = false;
+});
+
+downloadReceiptButton.addEventListener('click', async () => {
+  const download = downloadablePrivacyReceipt(await metricsStore.privacyReceipt());
+  const objectUrl = URL.createObjectURL(new Blob([download.content], { type: download.mimeType }));
+  const anchor = document.createElement('a');
+  anchor.href = objectUrl;
+  anchor.download = download.filename;
+  anchor.click();
+  URL.revokeObjectURL(objectUrl);
 });
 
 chrome.tabs.onActivated.addListener(refresh);

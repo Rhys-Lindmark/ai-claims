@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "AI Claims — page truth layer",
   "description": "See reviewed truth scores, coverage, and sources for YouTube, Goodreads, and the web.",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "minimum_chrome_version": "114",
   "permissions": ["activeTab", "sidePanel", "storage"],
   "host_permissions": ["https://ai.rhyslindmark.com/*"],
