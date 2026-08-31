@@ -34,7 +34,7 @@ assert.ok(packet.dependencies.every((edge) => edge.from_group_id !== edge.to_gro
 
 const evidenceIds = new Set(packet.evidence_records.map((record) => record.evidence_id));
 assert.equal(evidenceIds.size, packet.evidence_records.length);
-assert.equal(packet.evidence_records.length, 29);
+assert.equal(packet.evidence_records.length, 31);
 assert.ok(packet.claims.every((claim) => claim.evidence_record_ids.every((evidenceId) => evidenceIds.has(evidenceId))));
 assert.ok(packet.evidence_records.every((record) => ['supports', 'complicates', 'contradicts'].includes(record.direction)));
 assert.ok(packet.evidence_records.every((record) => record.finding.length > 50 && record.scope_and_limits.length > 50));
@@ -64,6 +64,6 @@ assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs
 assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs-claim-03' && record.direction === 'complicates').length, 13);
 assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs-claim-04' && record.direction === 'complicates').length, 4);
 assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs-claim-04' && record.direction === 'supports').length, 3);
-assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs-claim-02' && record.direction === 'supports').length, 1);
-assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs-claim-02' && record.direction === 'complicates').length, 1);
-console.log('real book packet: 8 passage-unconfirmed candidates, 29 scoped evidence records, aggregate score locked');
+assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs-claim-02' && record.direction === 'supports').length, 2);
+assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs-claim-02' && record.direction === 'complicates').length, 2);
+console.log('real book packet: 8 passage-unconfirmed candidates, 31 scoped evidence records, aggregate score locked');

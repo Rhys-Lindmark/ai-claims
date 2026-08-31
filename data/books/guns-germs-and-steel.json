@@ -29,8 +29,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": ["ggs-evidence-02a", "ggs-evidence-02b"],
-      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05", "ggs-source-35", "ggs-source-36"]
+      "evidence_record_ids": ["ggs-evidence-02a", "ggs-evidence-02b", "ggs-evidence-02c", "ggs-evidence-02d"],
+      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05", "ggs-source-35", "ggs-source-36", "ggs-source-37", "ggs-source-38"]
     },
     {
       "claim_id": "ggs-claim-02",
@@ -190,6 +190,30 @@
       "last_verified_at": "2026-08-31",
       "finding": "Ancient-genomic synthesis shows that domestication histories are reticulate rather than clean continental events: livestock repeatedly mixed with local wild populations, African cattle preserve multiple ancestries, and American dogs trace to animals that dispersed from Siberia.",
       "scope_and_limits": "These histories complicate continent-level origin counts and simple ownership of a domestic package, but they do not overturn the concentration of several major livestock origins in Eurasia. The review does not compare every extinct and extant candidate species across continents."
+    },
+    {
+      "evidence_id": "ggs-evidence-02c",
+      "claim_id": "ggs-claim-02",
+      "source_id": "ggs-source-37",
+      "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "A global phylogenetic and trait comparison found livestock are more phylogenetically clustered than crops and occupy a reduced mammalian trait space, tending to be relatively large mammals with low basal metabolic rates and moderate-to-slow life histories.",
+      "scope_and_limits": "This supports real biological differences in domestication potential among mammal lineages, but it does not show that those traits were uniquely concentrated in Eurasia or define every candidate species. The analysis concerns realized food livestock, not draft, transport, or companionship value."
+    },
+    {
+      "evidence_id": "ggs-evidence-02d",
+      "claim_id": "ggs-claim-02",
+      "source_id": "ggs-source-38",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "A phylogenetic comparison of ungulates found body mass, dietary breadth, and gregariousness did not significantly predict progression toward domestication; vulnerability to capture myopathy, used as a response-to-humans proxy, was the only tested significant obstacle.",
+      "scope_and_limits": "The result challenges several commonly proposed domesticability filters rather than continental outcome counts. It is limited to ungulates, uses a newly constructed domestication-pathway index, and the capture-myopathy mechanism requires testing beyond the sampled lineages."
     },
     {
       "evidence_id": "ggs-evidence-03a",
@@ -874,6 +898,26 @@
       "year": 2020,
       "url": "https://doi.org/10.1038/s41576-020-0225-0",
       "source_class": "ancient_genomics_review",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-37",
+      "title": "Phylogenetic patterns and phenotypic profiles of the species of plants and mammals farmed for food",
+      "publisher": "Nature Ecology & Evolution",
+      "year": 2018,
+      "url": "https://doi.org/10.1038/s41559-018-0690-4",
+      "source_class": "global_phylogenetic_and_trait_comparison",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-38",
+      "title": "Why Were Zebras Not Domesticated? A Review of Domesticability Traits and Tests of Their Role in Ungulate Domestications with Macroevolutionary Models",
+      "publisher": "Animals",
+      "year": 2024,
+      "url": "https://doi.org/10.3390/ani14162355",
+      "source_class": "ungulate_phylogenetic_comparative_model",
       "independence": "independent",
       "assessment_state": "assessed"
     }
