@@ -311,6 +311,270 @@
         }
       ],
       "other_claims": ["Elite insulation can delay a society's response to environmental harm.", "Modern globalization creates both resilience and correlated risk."]
+    },
+    {
+      "slug": "the-dawn-of-everything",
+      "entity_key": "web:us.macmillan.com/books/9780374157357/thedawnofeverything",
+      "title": "The Dawn of Everything",
+      "subtitle": "A New History of Humanity",
+      "author": "David Graeber and David Wengrow",
+      "year": 2021,
+      "score": 67,
+      "confidence": "medium-low",
+      "summary": "Its attack on a simple ladder from foraging to farming to hierarchy fits current archaeology; its stronger story about deliberate political experimentation is stimulating but selectively evidenced.",
+      "claims": [
+        {
+          "claim": "Prehistoric foragers lived under diverse political arrangements rather than universally small, simple, egalitarian bands.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Archaeology no longer supports one uniform forager type, and evidence includes large aggregations, monumental construction, and seasonal changes in organization. The surviving record is sparse, however, and cannot reveal political life evenly across places or millennia.",
+          "sources": [
+            { "title": "American Journal of Archaeology review", "url": "https://www.journals.uchicago.edu/doi/full/10.1086/720603" },
+            { "title": "Australian Journal of Anthropology review", "url": "https://onlinelibrary.wiley.com/doi/10.1111/taja.70012" }
+          ]
+        },
+        {
+          "claim": "Agriculture did not trigger an immediate, irreversible transition to private property, hierarchy, and the state.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Sedentism, cultivation, domestication, inequality, and state formation occurred in different sequences and were often separated by millennia. Recent economic-history synthesis likewise places durable inequality well after initial farming in many regions, though agriculture altered the possibilities for accumulation.",
+          "sources": [
+            { "title": "The Origins of Enduring Economic Inequality", "url": "https://doi.org/10.1257/jel.20241718" },
+            { "title": "American Journal of Archaeology review", "url": "https://www.journals.uchicago.edu/doi/full/10.1086/720603" }
+          ]
+        },
+        {
+          "claim": "Early people repeatedly and consciously designed, tested, and rejected political systems over long stretches of history.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Changing settlement forms and seasonal institutions make experimentation plausible, and the book usefully restores agency to ancient people. Archaeological remains rarely identify collective intention directly, while critics find that selected cases sometimes carry more interpretive weight than the evidence warrants.",
+          "sources": [
+            { "title": "Australian Journal of Anthropology review", "url": "https://onlinelibrary.wiley.com/doi/10.1111/taja.70012" },
+            { "title": "American Journal of Archaeology review", "url": "https://www.journals.uchicago.edu/doi/full/10.1086/720603" }
+          ]
+        }
+      ],
+      "other_claims": ["Cities could exist without kings or centralized administration.", "Indigenous critiques materially shaped Enlightenment political thought."]
+    },
+    {
+      "slug": "the-silk-roads",
+      "entity_key": "web:peterfrankopan.com/the-silk-roads",
+      "title": "The Silk Roads",
+      "subtitle": "A New History of the World",
+      "author": "Peter Frankopan",
+      "year": 2015,
+      "score": 75,
+      "confidence": "medium-low",
+      "summary": "The book offers a valuable Eurasian corrective and vividly captures long-distance exchange, but its single Silk Roads spine sometimes turns fluid, changing networks into an overly tidy master narrative.",
+      "claims": [
+        {
+          "claim": "Central Eurasia and West Asia belong near the center, not the margins, of world history.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Empires and trading zones between the eastern Mediterranean and Central Asia repeatedly connected major populations and economies. Re-centering them corrects many Europe-first surveys, although no single region remains the center across every period and the book's geographic core shifts.",
+          "sources": [
+            { "title": "Studies in Late Antiquity review", "url": "https://online.ucpress.edu/SLA/article-abstract/1/2/100/83319/Review-The-Silk-Roads-A-New-History-of-the-World" },
+            { "title": "LSE Review of Books", "url": "https://blogs.lse.ac.uk/lsereviewofbooks/2016/02/25/lse-lit-fest-2016-book-review-the-silk-roads-a-new-history-of-the-world-by-peter-frankopan/" }
+          ]
+        },
+        {
+          "claim": "Long-distance Eurasian networks transmitted goods, technologies, beliefs, and pathogens that reshaped distant societies.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Archaeological, textual, and biological evidence strongly establishes sustained if uneven exchange across Eurasia. Commodities, religions, technical knowledge, people, and disease traveled through overlapping land and sea networks, though transmission was rarely a simple end-to-end journey.",
+          "sources": [
+            { "title": "Ancient Rome and the Eurasian trade networks", "url": "https://journals.sagepub.com/doi/10.1016/j.euras.2016.12.001" },
+            { "title": "Beyond the Silk Roads", "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B60A986B656E8C0A6A45A97CBCD3FD30/9781108838313AR.pdf" }
+          ]
+        },
+        {
+          "claim": "The Silk Roads provide a coherent organizing spine for explaining global history from antiquity to the present.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "The frame produces illuminating connections across conventional regional boundaries. Specialists caution that there was no fixed road or stable system, while maritime routes and regions outside the chosen corridor can disappear from view; the device organizes history better than it explains all of it.",
+          "sources": [
+            { "title": "Beyond the Silk Roads", "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B60A986B656E8C0A6A45A97CBCD3FD30/9781108838313AR.pdf" },
+            { "title": "LSE Review of Books", "url": "https://blogs.lse.ac.uk/lsereviewofbooks/2016/02/25/lse-lit-fest-2016-book-review-the-silk-roads-a-new-history-of-the-world-by-peter-frankopan/" }
+          ]
+        }
+      ],
+      "other_claims": ["The discovery of the Americas redirected older Eurasian circuits.", "Modern competition over energy and infrastructure revives the importance of the book's central corridor."]
+    },
+    {
+      "slug": "the-weirdest-people-in-the-world",
+      "entity_key": "web:weirdpeople.fas.harvard.edu/book",
+      "title": "The WEIRDest People in the World",
+      "subtitle": "How the West Became Psychologically Peculiar and Particularly Prosperous",
+      "author": "Joseph Henrich",
+      "year": 2020,
+      "score": 58,
+      "confidence": "medium-low",
+      "summary": "Western populations are genuinely unusual research subjects, but the proposed chain from medieval marriage rules through kinship and psychology to modern prosperity is much less settled than the book's sweep suggests.",
+      "claims": [
+        {
+          "claim": "Western, educated, industrialized, rich, democratic populations are psychologically unusual and poor stand-ins for humanity.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Cross-cultural studies find striking variation in perception, reasoning, fairness, cooperation, and self-conception, with common Western samples often near distributional extremes. The WEIRD label still bundles diverse societies and effects that vary by task, so it is a warning rather than one universal psychological profile.",
+          "sources": [
+            { "title": "The weirdest people in the world?", "url": "https://doi.org/10.1017/S0140525X0999152X" },
+            { "title": "The Church, intensive kinship, and global psychological variation", "url": "https://www.science.org/doi/10.1126/science.aau5141" }
+          ]
+        },
+        {
+          "claim": "The medieval Western Church's marriage rules substantially weakened Europe's intensive kinship institutions.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Church exposure correlates with weaker cousin marriage and clan organization, and prohibitions plausibly contributed. Historians dispute the exposure measures, timing, enforcement, and causal direction; kinship patterns were changing unevenly and may also have influenced where Church institutions took hold.",
+          "sources": [
+            { "title": "The Church, intensive kinship, and global psychological variation", "url": "https://www.science.org/doi/10.1126/science.aau5141" },
+            { "title": "WEIRD Science: Incest and History", "url": "https://www.historians.org/perspectives-article/weird-science-incest-and-history-may-2020/" }
+          ]
+        },
+        {
+          "claim": "Weakened kinship caused Western individualism, impersonal institutions, innovation, and eventual economic prosperity.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "The proposed mechanism links a broad set of correlations and offers testable predictions, but the multi-century causal chain is not cleanly identified. State capacity, markets, urbanization, literacy, religious change, and economic development may be causes as well as consequences of kinship and psychology.",
+          "sources": [
+            { "title": "The Church, intensive kinship, and global psychological variation", "url": "https://historicalpsychology.fas.harvard.edu/assets/files/schulz-et-al.-2019-the-church-intensive-kinship-and-global-psychological-variation.pdf" },
+            { "title": "Kinship, institutions and psychological variation: a critical review", "url": "https://pure.mpg.de/rest/items/item_3347983/component/file_3369468/content" }
+          ]
+        }
+      ],
+      "other_claims": ["Voluntary associations replaced kin-based institutions in Western Europe.", "Psychological variation helps explain differences in institutions and innovation."]
+    },
+    {
+      "slug": "the-great-divergence",
+      "entity_key": "web:press.princeton.edu/books/paperback/9780691090108/the-great-divergence",
+      "title": "The Great Divergence",
+      "subtitle": "China, Europe, and the Making of the Modern World Economy",
+      "author": "Kenneth Pomeranz",
+      "year": 2000,
+      "score": 67,
+      "confidence": "medium-low",
+      "summary": "Its comparative reset permanently improved the debate, yet the degree of eighteenth-century parity remains contested and coal, colonies, institutions, and innovation resist a single decisive weighting.",
+      "claims": [
+        {
+          "claim": "Europe's richest regions and the most developed parts of China were economically comparable until late in the eighteenth century.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Comparisons of consumption, markets, life expectancy, and land pressure overturned older assumptions of a uniformly stagnant China. Reconstructed wages and output often place the Yangzi Delta nearer poorer European regions than England or the Netherlands, so strong parity depends on indicator and date.",
+          "sources": [
+            { "title": "Europe in an Asian mirror: the great divergence", "url": "https://www.cambridge.org/core/books/abs/cambridge-economic-history-of-modern-europe/europe-in-an-asian-mirror-the-great-divergence/D4E6D284CD8B03533C229CEE5D669CB3" },
+            { "title": "Still Room for Debate: The Great Divergence", "url": "https://www.ebhsoc.org/journal/index.php/ebhs/article/view/536" }
+          ]
+        },
+        {
+          "claim": "The decisive economic divergence between northwestern Europe and advanced Asian regions accelerated mainly after 1800.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Industrialization produced an unmistakable nineteenth-century break in energy use, productivity, and incomes. Evidence of earlier English advantages in wages, state finance, technology, and structural change means that divergence had important pre-1800 roots even if its scale became decisive later.",
+          "sources": [
+            { "title": "Development or involution in eighteenth-century Britain and China?", "url": "https://www.cambridge.org/core/journals/journal-of-asian-studies/article/abs/development-or-involution-in-eighteenthcentury-britain-and-china-a-review-of-kenneth-pomeranzs-the-great-divergence-china-europe-and-the-making-of-the-modern-world-economy/8113826986A88670DC1B91C64796E320" },
+            { "title": "The Great Divergence in European wages and prices", "url": "https://www.economics.ox.ac.uk/publication/1161191/ora-hyrax" }
+          ]
+        },
+        {
+          "claim": "Accessible coal and resources from the Americas were decisive in letting Europe escape ecological constraints.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Coal supplied concentrated energy near British industry, while American land and coerced labor supplied food, fiber, and raw materials. These were major enabling conditions, but their causal weight remains debated alongside technological capability, institutions, wages, capital, and imperial power.",
+          "sources": [
+            { "title": "The Great Divergence", "url": "https://www.jstor.org/stable/j.ctt7sv80" },
+            { "title": "Kenneth Pomeranz: AHA profile", "url": "https://www.historians.org/person/kenneth-pomeranz/" }
+          ]
+        }
+      ],
+      "other_claims": ["European and Asian cores faced similar ecological constraints before industrialization.", "New World resources functioned as a large land-saving windfall for Europe."]
+    },
+    {
+      "slug": "the-ghost-map",
+      "entity_key": "web:stevenberlinjohnson.com/the-ghost-map",
+      "title": "The Ghost Map",
+      "subtitle": "The Story of London's Most Terrifying Epidemic—and How It Changed Science, Cities, and the Modern World",
+      "author": "Steven Johnson",
+      "year": 2006,
+      "score": 75,
+      "confidence": "medium",
+      "summary": "The waterborne account and Snow's investigative achievement are secure; the pump-handle climax is a useful symbol, not a clean causal ending, and the urban lesson depends on functioning infrastructure.",
+      "claims": [
+        {
+          "claim": "John Snow's investigation correctly linked the 1854 Broad Street cholera outbreak to contaminated pump water.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Snow combined the clustering of deaths with detailed inquiries about water use and comparison groups, correctly identifying the pump as the outbreak's common source before the cholera bacterium was accepted. Later historical and epidemiological work supports the waterborne explanation.",
+          "sources": [
+            { "title": "CDC Principles of Epidemiology: John Snow", "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section2.html" },
+            { "title": "John Snow, Cholera, the Broad Street Pump", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7150208/" }
+          ]
+        },
+        {
+          "claim": "Removing the Broad Street pump handle stopped the epidemic and decisively proved Snow's theory.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Disabling the pump was prudent and prevented further exposure, but cases were already declining as residents left and susceptible users fell ill. The intervention did not by itself prove the theory, which gained force from Snow's broader evidence and later bacteriology and sanitation experience.",
+          "sources": [
+            { "title": "CDC disease detective lesson: John Snow's methods", "url": "https://archive.cdc.gov/www_cdc_gov/healthyschools/bam/teachers/documents/epi_4_johnsnow.pdf" },
+            { "title": "The mortality rates and space-time patterns of John Snow's map", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4521606/" }
+          ]
+        },
+        {
+          "claim": "Dense cities can be healthy and scalable when clean water, sewage removal, and public-health systems manage density's risks.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Modern sanitation sharply reduces waterborne disease, and urban systems can deliver protected water and waste treatment efficiently at scale. Density still amplifies exposure when systems fail, while unequal access, crowding, drainage, maintenance, and treatment capacity determine who receives the benefit.",
+          "sources": [
+            { "title": "Water, Sanitation, and Cholera in Sub-Saharan Africa", "url": "https://pubs.acs.org/doi/10.1021/acs.est.3c01317" },
+            { "title": "Oral Rehydration Salts, Cholera, and the Unfinished Urban Health Agenda", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9143002/" }
+          ]
+        }
+      ],
+      "other_claims": ["Henry Whitehead's local knowledge was important to confirming the source.", "The miasma model persisted partly because it fit everyday sensory experience of dirty cities."]
+    },
+    {
+      "slug": "the-sixth-extinction",
+      "entity_key": "web:elizabethkolbert.com/the-sixth-extinction",
+      "title": "The Sixth Extinction",
+      "subtitle": "An Unnatural History",
+      "author": "Elizabeth Kolbert",
+      "year": 2014,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "The biodiversity crisis and its human causes are strongly established. Calling the present a completed mass extinction is premature under the geological threshold, but the trajectory and risk described by the book are real.",
+      "claims": [
+        {
+          "claim": "Current extinction rates are far above long-run background rates.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Conservative comparisons of documented modern losses with fossil-background estimates find a large acceleration. Exact multiples vary substantially with the species group, time window, extinction definition, and incomplete knowledge of both living species and the fossil record.",
+          "sources": [
+            { "title": "Accelerated modern human-induced species losses", "url": "https://www.science.org/doi/10.1126/sciadv.1400253" },
+            { "title": "Has the Earth's sixth mass extinction already arrived?", "url": "https://www.nature.com/articles/nature09678" }
+          ]
+        },
+        {
+          "claim": "Human activity is the dominant driver of the current global biodiversity crisis.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Global assessment attributes biodiversity decline primarily to land and sea use change, direct exploitation, climate change, pollution, and invasive species, all driven by human activity. The relative contribution varies across ecosystems, but the aggregate causal conclusion is exceptionally well supported.",
+          "sources": [
+            { "title": "IPBES Global Assessment Report", "url": "https://www.ipbes.net/system/files/2021-06/2020%20IPBES%20GLOBAL%20REPORT%28FIRST%20PART%29_V3_SINGLE.pdf" },
+            { "title": "Accelerated modern human-induced species losses", "url": "https://www.science.org/doi/10.1126/sciadv.1400253" }
+          ]
+        },
+        {
+          "claim": "Earth is entering a sixth mass extinction comparable in kind to the five great losses in the geological record.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The rate, breadth, and human cause justify warning that a sixth mass extinction is under way or imminent. Strictly, the commonly used geological benchmark is loss of at least 75 percent of species in a short interval, a magnitude not yet observed, so this is a trajectory claim rather than a completed classification.",
+          "sources": [
+            { "title": "Has the Earth's sixth mass extinction already arrived?", "url": "https://www.nature.com/articles/nature09678" },
+            { "title": "IPBES Global Assessment Report", "url": "https://www.ipbes.net/system/files/2021-06/2020%20IPBES%20GLOBAL%20REPORT%28FIRST%20PART%29_V3_SINGLE.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["Ocean acidification threatens calcifying organisms and reef systems.", "Moving species around the planet creates a new, human-directed form of ecological selection."]
     }
   ]
 }
