@@ -1,6 +1,33 @@
 import { scoreState } from './analysis-registry.js';
 
 export const RESOLVER_CONTRACT_VERSION = '1.0.0';
+export const SUPPORTED_CORRECTION_FEED_CONTRACTS = ['1.0.0', '1.1.0'];
+
+const CORRECTION_POINTER_FIELDS = [
+  'latest_correction_event_id',
+  'latest_correction_public_score_state',
+  'latest_correction_summary',
+  'latest_correction_from_version_id',
+  'latest_correction_to_version_id',
+  'latest_correction_url',
+  'latest_correction_event_api_url',
+  'correction_feed_api_url',
+];
+
+export function correctionFeedCompatibility(discovery) {
+  if (!discovery) return { state: 'not_advertised', contractVersion: null };
+  const supported = SUPPORTED_CORRECTION_FEED_CONTRACTS.includes(discovery.contract_version);
+  return { state: supported ? 'supported' : 'unsupported', contractVersion: discovery.contract_version ?? null };
+}
+
+function scoreResolverEnvelope(envelope) {
+  const compatibility = correctionFeedCompatibility(envelope.correction_feed_discovery);
+  const analysis = envelope.analysis ? { ...envelope.analysis } : null;
+  if (analysis && compatibility.state === 'unsupported') {
+    for (const field of CORRECTION_POINTER_FIELDS) delete analysis[field];
+  }
+  return { ...scoreState(analysis), correctionFeedCompatibility: compatibility.state, correctionFeedContractVersion: compatibility.contractVersion };
+}
 
 function assertEnvelope(envelope) {
   if (envelope.contract_version !== RESOLVER_CONTRACT_VERSION) {
@@ -32,7 +59,7 @@ export function createApiResolver({ endpoint, fetchImpl = fetch }) {
       if (!response.ok) throw new Error(`Analysis resolver failed with ${response.status}.`);
       const envelope = assertEnvelope(await response.json());
       if (envelope.entity_key !== entityKey) throw new Error('Resolver returned a mismatched entity key.');
-      return scoreState(envelope.analysis);
+      return scoreResolverEnvelope(envelope);
     },
   };
 }

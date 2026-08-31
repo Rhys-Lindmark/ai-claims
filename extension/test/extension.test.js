@@ -4,7 +4,7 @@ import registry from '../data/analyses.json' with { type: 'json' };
 import resolverConfig from '../data/resolver-config.json' with { type: 'json' };
 import manifest from '../manifest.json' with { type: 'json' };
 import { resolveAnalysis, scoreState } from '../lib/analysis-registry.js';
-import { createApiResolver, createLocalResolver } from '../lib/analysis-resolver.js';
+import { correctionFeedCompatibility, createApiResolver, createLocalResolver } from '../lib/analysis-resolver.js';
 import { createRequestStore } from '../lib/analysis-requests.js';
 import { computeTruthScore } from '../lib/truth-score.js';
 import { goodreadsBookResolution, sourceNotice, transcriptAcquisition } from '../lib/source-policy.js';
@@ -153,6 +153,20 @@ test('API resolver maps 404 to not analyzed and rejects incompatible contracts',
 
   const incompatible = createApiResolver({ endpoint: 'https://api.example.invalid', fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '2.0.0', entity_key: 'web:x', analysis: null }) }) });
   await assert.rejects(incompatible.resolve('web:x'), /Unsupported resolver contract/);
+});
+
+test('resolver keeps scores but removes correction pointers for newer unsupported feed contracts', async () => {
+  const analysis = { ...registry.analyses[0], latest_correction_summary: 'Fixture transition.', latest_correction_url: 'https://ai.rhyslindmark.com/claims#event' };
+  const resolver = createApiResolver({
+    endpoint: 'https://api.example.invalid',
+    fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '1.0.0', entity_key: analysis.entity_key, correction_feed_discovery: { contract_version: '9.0.0' }, analysis }) }),
+  });
+  const state = await resolver.resolve(analysis.entity_key);
+  assert.equal(state.state, 'published');
+  assert.equal(state.score, 84);
+  assert.equal(state.correctionFeedCompatibility, 'unsupported');
+  assert.equal(state.latestCorrectionUrl, null);
+  assert.deepEqual(correctionFeedCompatibility({ contract_version: '1.1.0' }), { state: 'supported', contractVersion: '1.1.0' });
 });
 
 function memoryStorage() {

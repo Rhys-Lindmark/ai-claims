@@ -1,5 +1,5 @@
 import registry from '@/extension/data/analyses.json';
-import { latestCorrectionForEntity } from '@/lib/correction-feed-api';
+import { CORRECTION_EVENT_URL_TEMPLATE, CORRECTION_FEED_CONTRACT, CORRECTION_FEED_DEFAULT_PAGE_SIZE, CORRECTION_FEED_MAX_PAGE_SIZE, CORRECTION_FEED_SUPPORTED_CONTRACTS, latestCorrectionForEntity } from '@/lib/correction-feed-api';
 
 export const ANALYSIS_RESOLVER_CONTRACT = '1.0.0';
 
@@ -35,6 +35,14 @@ export function resolveAnalysisEnvelope(entityKey: string, versionId?: string | 
   return {
     contract_version: ANALYSIS_RESOLVER_CONTRACT,
     analysis_schema_version: registry.schema_version,
+    correction_feed_discovery: {
+      contract_version: CORRECTION_FEED_CONTRACT,
+      supported_contract_versions: CORRECTION_FEED_SUPPORTED_CONTRACTS,
+      default_page_size: CORRECTION_FEED_DEFAULT_PAGE_SIZE,
+      max_page_size: CORRECTION_FEED_MAX_PAGE_SIZE,
+      feed_url: `https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections?entity_key=${encodeURIComponent(entityKey)}`,
+      immutable_event_url_template: CORRECTION_EVENT_URL_TEMPLATE,
+    },
     entity_key: entityKey,
     requested_version_id: requestedVersion,
     analysis: requestedVersion && version ? { entity_key: entityKey, ...version } : requestedVersion ? null : analysis ? { ...analysis, ...correctionPointers } : null,

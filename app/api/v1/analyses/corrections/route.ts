@@ -1,4 +1,4 @@
-import { correctionFeedEtag, resolveCorrectionFeedEnvelope } from '@/lib/correction-feed-api';
+import { CORRECTION_FEED_DEFAULT_PAGE_SIZE, CORRECTION_FEED_MAX_PAGE_SIZE, correctionFeedEtag, resolveCorrectionFeedEnvelope } from '@/lib/correction-feed-api';
 
 const baseHeaders = {
   'access-control-allow-origin': '*',
@@ -10,12 +10,12 @@ export async function GET(request: Request) {
   const params = new URL(request.url).searchParams;
   const entityKey = params.get('entity_key')?.trim() ?? '';
   const cursor = params.get('cursor')?.trim() || null;
-  const requestedLimit = Number(params.get('limit') ?? '20');
+  const requestedLimit = Number(params.get('limit') ?? String(CORRECTION_FEED_DEFAULT_PAGE_SIZE));
   if (!entityKey || entityKey.length > 500) {
     return Response.json({ contract_version: '1.1.0', error: 'A valid entity_key query parameter is required.' }, { status: 400, headers: baseHeaders });
   }
-  if (!Number.isInteger(requestedLimit) || requestedLimit < 1 || requestedLimit > 100) {
-    return Response.json({ contract_version: '1.1.0', error: 'limit must be an integer from 1 to 100.' }, { status: 400, headers: baseHeaders });
+  if (!Number.isInteger(requestedLimit) || requestedLimit < 1 || requestedLimit > CORRECTION_FEED_MAX_PAGE_SIZE) {
+    return Response.json({ contract_version: '1.1.0', error: `limit must be an integer from 1 to ${CORRECTION_FEED_MAX_PAGE_SIZE}.` }, { status: 400, headers: baseHeaders });
   }
   const envelope = resolveCorrectionFeedEnvelope(entityKey, cursor, requestedLimit);
   const etag = correctionFeedEtag(entityKey, cursor, requestedLimit);

@@ -1,6 +1,10 @@
 import fixture from '../data/correction-event-feed-fixture.json' with { type: 'json' };
 
 export const CORRECTION_FEED_CONTRACT = '1.1.0';
+export const CORRECTION_FEED_SUPPORTED_CONTRACTS = ['1.0.0', '1.1.0'] as const;
+export const CORRECTION_FEED_DEFAULT_PAGE_SIZE = 20;
+export const CORRECTION_FEED_MAX_PAGE_SIZE = 100;
+export const CORRECTION_EVENT_URL_TEMPLATE = 'https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections/{event_id}?entity_key={entity_key}';
 
 function stableHash(value: string) {
   let hash = 2166136261;
