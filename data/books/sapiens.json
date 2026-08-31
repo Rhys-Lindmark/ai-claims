@@ -1,0 +1,117 @@
+{
+  "schema_version": "ai-claims.book-review/0.2.0",
+  "entity_key": "goodreads:23692271",
+  "goodreads_page_id": "23692271",
+  "canonical_url": "https://www.goodreads.com/book/show/23692271",
+  "title": "Sapiens",
+  "subtitle": "A Brief History of Humankind",
+  "author": "Yuval Noah Harari",
+  "review_state": "claim_inventory",
+  "score_0_100": null,
+  "publication_gates_passed": false,
+  "last_reviewed_at": null,
+  "coverage": {
+    "candidate_claims": 6,
+    "eligible_claims": 0,
+    "reviewed_claims": 0
+  },
+  "scope_note": "A provisional high-consequence claim inventory derived from the author's official book page, authorized excerpts, and independent research leads. The complete book has not yet been checked passage by passage.",
+  "score_hidden_reason": "The eligible claim denominator, passage locators, independent evidence, and editor findings are incomplete.",
+  "claims": [
+    {
+      "claim_id": "sapiens-claim-01",
+      "text": "Humans' capacity to sustain shared imagined realities enabled unusually flexible cooperation among large numbers of strangers.",
+      "claim_type": "causal",
+      "importance": "central",
+      "attribution_confidence": "high",
+      "canonical_group_id": "sapiens-group-imagined-cooperation",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
+      "review_state": "unreviewed",
+      "evidence_record_ids": [],
+      "source_ids": ["sapiens-source-01", "sapiens-source-02", "sapiens-source-04", "sapiens-source-05", "sapiens-source-08"]
+    },
+    {
+      "claim_id": "sapiens-claim-02",
+      "text": "Pre-agricultural human expansion was a major cause of the loss of roughly half the planet's large terrestrial mammal species.",
+      "claim_type": "causal",
+      "importance": "central",
+      "attribution_confidence": "high",
+      "canonical_group_id": "sapiens-group-megafauna-loss",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
+      "review_state": "unreviewed",
+      "evidence_record_ids": [],
+      "source_ids": ["sapiens-source-01", "sapiens-source-04", "sapiens-source-06"]
+    },
+    {
+      "claim_id": "sapiens-claim-03",
+      "text": "Agriculture expanded population and collective capacity while often worsening the health, diet, workload, or autonomy of individual farmers.",
+      "claim_type": "causal",
+      "importance": "central",
+      "attribution_confidence": "high",
+      "canonical_group_id": "sapiens-group-agricultural-tradeoff",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
+      "review_state": "unreviewed",
+      "evidence_record_ids": [],
+      "source_ids": ["sapiens-source-01", "sapiens-source-04", "sapiens-source-07"]
+    },
+    {
+      "claim_id": "sapiens-claim-04",
+      "text": "Money, universal religions, and empires acted as powerful cross-cultural trust or coordination systems that unified previously separate societies.",
+      "claim_type": "causal",
+      "importance": "central",
+      "attribution_confidence": "high",
+      "canonical_group_id": "sapiens-group-unifying-orders",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
+      "review_state": "unreviewed",
+      "evidence_record_ids": [],
+      "source_ids": ["sapiens-source-01", "sapiens-source-03", "sapiens-source-08"]
+    },
+    {
+      "claim_id": "sapiens-claim-05",
+      "text": "Modern science's admission of ignorance became unusually productive through alliances with European empire and credit-driven capitalism.",
+      "claim_type": "causal",
+      "importance": "central",
+      "attribution_confidence": "medium",
+      "canonical_group_id": "sapiens-group-science-empire-capital",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
+      "review_state": "unreviewed",
+      "evidence_record_ids": [],
+      "source_ids": ["sapiens-source-03", "sapiens-source-04"]
+    },
+    {
+      "claim_id": "sapiens-claim-06",
+      "text": "Humanity's large increase in power and material capability has not produced a comparable increase in individual happiness.",
+      "claim_type": "comparative",
+      "importance": "central",
+      "attribution_confidence": "high",
+      "canonical_group_id": "sapiens-group-power-happiness",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
+      "review_state": "unreviewed",
+      "evidence_record_ids": [],
+      "source_ids": ["sapiens-source-01", "sapiens-source-09"]
+    }
+  ],
+  "dependencies": [
+    { "from_group_id": "sapiens-group-imagined-cooperation", "to_group_id": "sapiens-group-unifying-orders", "relation": "proposed_causal_path" },
+    { "from_group_id": "sapiens-group-agricultural-tradeoff", "to_group_id": "sapiens-group-unifying-orders", "relation": "proposed_demographic_path" },
+    { "from_group_id": "sapiens-group-unifying-orders", "to_group_id": "sapiens-group-science-empire-capital", "relation": "proposed_institutional_path" }
+  ],
+  "evidence_records": [],
+  "sources": [
+    { "source_id": "sapiens-source-01", "title": "Sapiens: A Brief History of Humankind", "publisher": "Yuval Noah Harari", "year": null, "url": "https://www.ynharari.com/book/sapiens/", "source_class": "official_book_overview", "independence": "author_aligned", "assessment_state": "attribution_only" },
+    { "source_id": "sapiens-source-02", "title": "Power and Imagination", "publisher": "Yuval Noah Harari", "year": null, "url": "https://www.ynharari.com/topic/power-and-imagination/", "source_class": "authorized_excerpt", "independence": "author_authored", "assessment_state": "attribution_only" },
+    { "source_id": "sapiens-source-03", "title": "Money and Politics", "publisher": "Yuval Noah Harari", "year": null, "url": "https://www.ynharari.com/topic/money-and-politics/", "source_class": "authorized_excerpt", "independence": "author_authored", "assessment_state": "attribution_only" },
+    { "source_id": "sapiens-source-04", "title": "Survival Contingencies: A Review of Sapiens", "publisher": "Journal of the Experimental Analysis of Behavior", "year": 2019, "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7198686/", "source_class": "scholarly_review", "independence": "independent", "assessment_state": "assessed_for_attribution" },
+    { "source_id": "sapiens-source-05", "title": "The revolution that wasn't: A new interpretation of the origin of modern human behavior", "publisher": "Journal of Human Evolution", "year": 2000, "url": "https://doi.org/10.1006/jhev.2000.0435", "source_class": "peer_reviewed_synthesis", "independence": "independent", "assessment_state": "candidate" },
+    { "source_id": "sapiens-source-06", "title": "Global late Quaternary megafauna extinctions linked to humans, not climate change", "publisher": "Proceedings of the Royal Society B", "year": 2014, "url": "https://doi.org/10.1098/rspb.2013.3254", "source_class": "peer_reviewed_comparative_study", "independence": "independent", "assessment_state": "candidate" },
+    { "source_id": "sapiens-source-07", "title": "Stature and robusticity during the agricultural transition", "publisher": "Economics & Human Biology", "year": 2011, "url": "https://doi.org/10.1016/j.ehb.2011.03.004", "source_class": "peer_reviewed_synthesis", "independence": "independent", "assessment_state": "candidate" },
+    { "source_id": "sapiens-source-08", "title": "Markets, Religion, Community Size, and the Evolution of Fairness and Punishment", "publisher": "Science", "year": 2010, "url": "https://doi.org/10.1126/science.1182238", "source_class": "cross_cultural_behavioral_study", "independence": "independent", "assessment_state": "candidate" },
+    { "source_id": "sapiens-source-09", "title": "Experienced well-being rises with income, even above $75,000 per year", "publisher": "Proceedings of the National Academy of Sciences", "year": 2021, "url": "https://doi.org/10.1073/pnas.2016976118", "source_class": "experience_sampling_study", "independence": "independent", "assessment_state": "candidate" }
+  ]
+}

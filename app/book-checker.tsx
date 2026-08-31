@@ -39,6 +39,7 @@ const starterBooks: Array<BookIdentity & { aliases: string[] }> = [
     entityKey: 'goodreads:23692271',
     canonicalUrl: 'https://www.goodreads.com/book/show/23692271',
     kind: 'goodreads',
+    reviewUrl: 'https://ai.rhyslindmark.com/claims/book?entity_key=goodreads%3A23692271',
     aliases: ['sapiens', 'sapiens a brief history of humankind'],
   },
 ];

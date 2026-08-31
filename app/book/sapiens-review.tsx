@@ -1,6 +1,6 @@
-import packet from '@/data/books/guns-germs-and-steel.json';
+import packet from '@/data/books/sapiens.json';
 import { CandidateBookReview } from './candidate-book-review';
 
-export function GunsGermsSteelReview() {
+export function SapiensReview() {
   return <CandidateBookReview packet={packet} />;
 }

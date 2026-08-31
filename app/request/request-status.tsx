@@ -36,6 +36,7 @@ const stateCopy = {
 
 const activeReviews: Record<string, string> = {
   'goodreads:1842': '/claims/book?entity_key=goodreads%3A1842',
+  'goodreads:23692271': '/claims/book?entity_key=goodreads%3A23692271',
 };
 
 export function RequestStatus() {

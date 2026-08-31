@@ -13,6 +13,7 @@
     "test:extension-release": "node scripts/check-extension-release.mjs",
     "test:analysis-requests": "node --experimental-strip-types --test lib/analysis-request-store.test.ts",
     "test:book-packet": "node scripts/check-real-book-packet.mjs",
+    "test:sapiens-packet": "node scripts/check-sapiens-packet.mjs",
     "test:methods": "node --experimental-strip-types scripts/check-claim-selection-audit.mjs",
     "test:deployed-youtube": "node scripts/check-deployed-youtube-fixture.mjs",
     "test:deployed-goodreads": "node scripts/check-deployed-goodreads-fixture.mjs",
