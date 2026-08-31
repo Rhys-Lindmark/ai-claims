@@ -1,0 +1,316 @@
+{
+  "schema_version": "ai-claims.rapid-books/0.1.0",
+  "method_version": "three-central-claims/0.1.0",
+  "target_books": 100,
+  "last_updated": "2026-08-31",
+  "books": [
+    {
+      "slug": "guns-germs-and-steel",
+      "entity_key": "goodreads:1842",
+      "title": "Guns, Germs, and Steel",
+      "subtitle": "The Fates of Human Societies",
+      "author": "Jared Diamond",
+      "year": 1997,
+      "score": 67,
+      "confidence": "medium",
+      "summary": "Strong on environmental starting conditions and epidemic advantage; much weaker when geography becomes a near-total explanation for later history.",
+      "claims": [
+        {
+          "claim": "Uneven access to domesticable plants and animals materially shaped the timing of food production and state development.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Archaeology and ancient genomics support large regional differences in domestication opportunities and diffusion, while also showing multiple origins, adaptation, exchange networks, and human agency that the simple package story underplays.",
+          "sources": [
+            { "title": "Animal domestication in the era of ancient genomics", "url": "https://doi.org/10.1038/s41576-020-0225-0" },
+            { "title": "The evolution of guns and germs", "url": "https://doi.org/10.1017/CBO9780511629044.004" }
+          ]
+        },
+        {
+          "claim": "Eurasia's east–west axis made crops, livestock, people, and technologies diffuse more easily than on north–south continents.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Latitude and ecological similarity matter, and some migration patterns fit the hypothesis. Direct quantitative work finds Eurasia was not uniquely homogeneous, while mountains, deserts, waterways, adaptation, and trade routes often mattered more than continental orientation.",
+          "sources": [
+            { "title": "Geography is not destiny: a quantitative test", "url": "https://doi.org/10.1017/ehs.2023.1" },
+            { "title": "Questioning Collapse", "url": "https://www.cambridge.org/core/books/questioning-collapse/BC36D3A4EB6DC9BE60E7FFB6D6C340E4" }
+          ]
+        },
+        {
+          "claim": "Agriculture, dense populations, technology, political organization, and epidemic disease created major proximate advantages in European conquest.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The disease and food-production pathways are well supported at broad scale. Particular conquests also depended on Indigenous alliances, political fractures, replenishment, strategy, and contingency, so the named package is important but not sufficient.",
+          "sources": [
+            { "title": "Emerging human infectious diseases and global food production", "url": "https://doi.org/10.1038/s41893-019-0293-3" },
+            { "title": "Questioning Collapse", "url": "https://assets.cambridge.org/97805215/15726/excerpt/9780521515726_excerpt.htm" }
+          ]
+        }
+      ],
+      "other_claims": ["Food production enabled denser, more specialized societies.", "Eurasia had an unusually useful package of large domestic mammals."]
+    },
+    {
+      "slug": "sapiens",
+      "entity_key": "goodreads:23692271",
+      "title": "Sapiens",
+      "subtitle": "A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "year": 2011,
+      "score": 67,
+      "confidence": "medium-low",
+      "summary": "A memorable synthesis whose ecological and agricultural claims fare better than its sweeping single-cause stories about cognition and institutions.",
+      "claims": [
+        {
+          "claim": "Shared imagined realities let humans cooperate flexibly in very large groups.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Norms, identities, religion, punishment, and institutions clearly support large-scale cooperation. The evidence does not isolate imagined stories as the decisive cognitive revolution, and enforcement, kinship, reputation, and material incentives remain competing mechanisms.",
+          "sources": [
+            { "title": "Markets, religion, community size, fairness and punishment", "url": "https://doi.org/10.1126/science.1182238" },
+            { "title": "Enforcement is central to the evolution of cooperation", "url": "https://doi.org/10.1038/s41559-019-0907-1" }
+          ]
+        },
+        {
+          "claim": "Human expansion was a major cause of Late Quaternary megafauna decline and extinction.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Global comparative and genomic studies associate declines strongly with human expansion. Species-level and North American work still finds climate effects and mixed regional histories, so a uniform human-only account is too strong.",
+          "sources": [
+            { "title": "Worldwide megafauna declines associated with Homo sapiens expansion", "url": "https://doi.org/10.1038/s41467-023-43426-5" },
+            { "title": "Species-specific responses of megafauna to climate and humans", "url": "https://doi.org/10.1038/nature10574" }
+          ]
+        },
+        {
+          "claim": "Agriculture expanded populations while often worsening health, diet, workload, or autonomy for individual farmers.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Bioarchaeology frequently finds early-farming costs alongside demographic expansion, but outcomes vary across time, ecology, class, and sex. Calling agriculture history's biggest fraud turns a heterogeneous transition into a universal verdict.",
+          "sources": [
+            { "title": "Stature and robusticity during the agricultural transition", "url": "https://doi.org/10.1016/j.ehb.2011.03.004" },
+            { "title": "The Neolithic Demographic Transition", "url": "https://doi.org/10.1086/658706" }
+          ]
+        }
+      ],
+      "other_claims": ["Money, empires, and universal religions unified societies.", "Modern power has not produced a comparable increase in happiness."]
+    },
+    {
+      "slug": "breakneck",
+      "entity_key": "web:wwnorton.com/books/9781324106036",
+      "title": "Breakneck",
+      "subtitle": "China's Quest to Engineer the Future",
+      "author": "Dan Wang",
+      "year": 2025,
+      "score": 67,
+      "confidence": "medium-low",
+      "summary": "The engineering-state lens captures real differences in capacity and constraint, but it is a useful heuristic rather than a demonstrated general theory of either country.",
+      "claims": [
+        {
+          "claim": "China behaves like an engineering state, favoring construction, scale, industrial capacity, and technical intervention.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "China's infrastructure buildout, manufacturing depth, industrial policy, and technically trained leadership fit the description. Critics correctly note that personnel backgrounds vary and that party discipline and local incentives may explain as much as an engineering worldview.",
+          "sources": [
+            { "title": "A Nation of Lawyers Confronts China's Engineering State", "url": "https://www.theatlantic.com/ideas/archive/2025/08/china-america-tariffs-trump-economy/683895/" },
+            { "title": "On the Optimal Ratio of Engineers to Lawyers", "url": "https://www.thesling.org/on-the-optimal-ratio-of-engineers-to-lawyers-a-review-of-dan-wangs-breakneck/" }
+          ]
+        },
+        {
+          "claim": "The same state capacity that builds rapidly also enables destructive social engineering and weak protections for individuals.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The one-child policy, zero-COVID controls, urban demolition, and other campaigns show the costs of coercive implementation. The causal label is interpretive, but the tension between execution capacity and individual safeguards is well documented.",
+          "sources": [
+            { "title": "Breakneck sample", "url": "https://cdn.penguin.co.uk/dam-assets/books/9781802067798/9781802067798-sample.pdf" },
+            { "title": "On China's Engineering Mindset", "url": "https://ippr.in/index.php/ippr/article/view/454" }
+          ]
+        },
+        {
+          "claim": "The United States is a lawyerly society whose procedural constraints explain its inability to build.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Permitting, litigation, fragmented authority, and incumbent vetoes plainly slow some projects. The book's American side is thinner: fiscal choices, state capacity, procurement, labor, market structure, and political coalitions compete with lawyerliness as explanations.",
+          "sources": [
+            { "title": "Breakneck is great on China but light on America", "url": "https://foreignpolicy.com/2025/09/19/breakneck-dan-wang-lawyerly-engineering-state-china/" },
+            { "title": "On the Optimal Ratio of Engineers to Lawyers", "url": "https://www.thesling.org/on-the-optimal-ratio-of-engineers-to-lawyers-a-review-of-dan-wangs-breakneck/" }
+          ]
+        }
+      ],
+      "other_claims": ["Industrial capability is a strategic form of power.", "Each superpower would benefit from adopting some of the other's constraints and capacities."]
+    },
+    {
+      "slug": "1491",
+      "entity_key": "web:penguinrandomhouse.com/books/106276/1491-by-charles-c-mann",
+      "title": "1491",
+      "subtitle": "New Revelations of the Americas Before Columbus",
+      "author": "Charles C. Mann",
+      "year": 2005,
+      "score": 83,
+      "confidence": "medium",
+      "summary": "Its corrective picture of populous, complex, actively managed Americas has aged well, while exact population totals and the extent of modification remain contested.",
+      "claims": [
+        {
+          "claim": "The pre-contact Americas were more populous than older low estimates suggested.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Archaeology, settlement surveys, and post-contact mortality reconstructions support rejecting a sparsely populated hemisphere. Exact totals remain unusually uncertain and regional genetic work has revised some high estimates downward.",
+          "sources": [
+            { "title": "Earth system impacts of the European arrival and Great Dying", "url": "https://doi.org/10.1016/j.quascirev.2018.12.004" },
+            { "title": "A genetic history of the pre-contact Caribbean", "url": "https://doi.org/10.1038/s41586-020-03053-2" }
+          ]
+        },
+        {
+          "claim": "Indigenous societies included large, politically complex, technically sophisticated urban and regional systems.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Extensive archaeological evidence from Mesoamerica, the Andes, the Amazon, and North America supports cities, monumental landscapes, long-distance exchange, intensive agriculture, and complex governance. The broad corrective is now mainstream even though regions differed sharply.",
+          "sources": [
+            { "title": "Pre-Columbian earth-builders settled along the entire southern rim of the Amazon", "url": "https://doi.org/10.1038/s41467-018-03510-7" },
+            { "title": "The deep human prehistory of global tropical forests", "url": "https://doi.org/10.1038/nplants.2017.93" }
+          ]
+        },
+        {
+          "claim": "Many landscapes Europeans treated as pristine wilderness were actively shaped by long-term human management.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Fire, cultivation, soil creation, species selection, and settlement left durable ecological legacies. The scale was uneven: evidence for extensive modification does not make every forest or grassland a human artifact.",
+          "sources": [
+            { "title": "The deep human prehistory of global tropical forests", "url": "https://doi.org/10.1038/nplants.2017.93" },
+            { "title": "Pre-Columbian earth-builders in the Amazon", "url": "https://doi.org/10.1038/s41467-018-03510-7" }
+          ]
+        }
+      ],
+      "other_claims": ["Epidemics transformed societies before many direct European encounters.", "The timing and routes of the first peopling were more complex than the old Clovis-first model."]
+    },
+    {
+      "slug": "why-nations-fail",
+      "entity_key": "web:whynationsfail.com",
+      "title": "Why Nations Fail",
+      "subtitle": "The Origins of Power, Prosperity, and Poverty",
+      "author": "Daron Acemoglu and James A. Robinson",
+      "year": 2012,
+      "score": 67,
+      "confidence": "medium",
+      "summary": "Institutions are crucial and the extractive/inclusive distinction is useful, but the book overreaches when it turns that insight into a universal, nation-sized explanation.",
+      "claims": [
+        {
+          "claim": "Inclusive political and economic institutions are a major cause of sustained broad-based prosperity.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "A large empirical literature links constraints on elites, secure rights, state capacity, and broad opportunity to development. Measurement and reverse causality remain difficult, and different institutional bundles can produce growth.",
+          "sources": [
+            { "title": "The Colonial Origins of Comparative Development", "url": "https://doi.org/10.1257/aer.91.5.1369" },
+            { "title": "Understanding Prosperity and Poverty", "url": "https://doi.org/10.1093/acprof:oso/9780195305197.003.0002" }
+          ]
+        },
+        {
+          "claim": "Extractive institutions concentrate power and income, obstruct creative destruction, and tend to undermine durable growth.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Elite capture and weak constraints often depress investment and public capacity, and resource-curse work identifies conditional institutional mechanisms. Extractive regimes can nevertheless generate long growth episodes, making timing and transition mechanisms important.",
+          "sources": [
+            { "title": "What Have We Learned about the Resource Curse?", "url": "https://doi.org/10.1146/annurev-polisci-052213-040359" },
+            { "title": "Rethinking the Resource Curse", "url": "https://doi.org/10.1146/annurev.polisci.9.062404.170436" }
+          ]
+        },
+        {
+          "claim": "Geography and culture are broadly inadequate alternatives to an institutional explanation of national success.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Natural experiments and historical reversals show institutions matter beyond geography. The book's near-dismissal is too categorical: disease ecology, resources, trade access, state formation, colonialism, and culture interact with institutions and help explain where they come from.",
+          "sources": [
+            { "title": "Review of Why Nations Fail", "url": "https://doi.org/10.1017/S0020859013000187" },
+            { "title": "Understanding Prosperity and Poverty", "url": "https://academic.oup.com/book/32736/chapter-abstract/272744767" }
+          ]
+        }
+      ],
+      "other_claims": ["Small institutional differences at critical junctures can create divergent paths.", "Sustained authoritarian growth is unlikely without political inclusion."]
+    },
+    {
+      "slug": "the-better-angels-of-our-nature",
+      "entity_key": "web:stevenpinker.com/publications/better-angels-our-nature",
+      "title": "The Better Angels of Our Nature",
+      "subtitle": "Why Violence Has Declined",
+      "author": "Steven Pinker",
+      "year": 2011,
+      "score": 58,
+      "confidence": "medium-low",
+      "summary": "The modern decline in many forms of violence is real; its depth in prehistory, statistical inevitability, and grand causal story are much less secure.",
+      "claims": [
+        {
+          "claim": "Rates of homicide and many forms of interpersonal violence have declined dramatically over the long run.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Historical homicide series show a large European decline and modern data support lower rates in many societies. Early records are selective, definitions change, and the global generalization is stronger than the best time series.",
+          "sources": [
+            { "title": "Homicides", "url": "https://ourworldindata.org/homicides" },
+            { "title": "Hard numbers? The decline in violence reassessed", "url": "https://doi.org/10.1017/S026841602000012X" }
+          ]
+        },
+        {
+          "claim": "War and organized violence have declined, especially in the modern and post-1945 periods.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Battle deaths and interstate war fell markedly after the world wars, especially per capita. Statistical work cautions that extreme wars are rare, heavy-tailed events, so the record was not yet long enough to establish an irreversible regime change.",
+          "sources": [
+            { "title": "Trends and fluctuations in the severity of interstate wars", "url": "https://doi.org/10.1126/sciadv.aao3580" },
+            { "title": "War and Peace", "url": "https://ourworldindata.org/war-and-peace" }
+          ]
+        },
+        {
+          "claim": "States, commerce, feminization, cosmopolitanism, and reason explain the broad decline in violence.",
+          "assessment": "weak",
+          "credit": 0.25,
+          "rationale": "Several proposed mechanisms are plausible and locally evidenced, but the book's five-part causal package is not identified as a unified explanation. State formation can suppress private violence while producing coercion and war, and prehistoric comparisons are especially fragile.",
+          "sources": [
+            { "title": "Review: The Better Angels of Our Nature", "url": "https://doi.org/10.1080/03057240.2012.723941" },
+            { "title": "Data review: violent deaths", "url": "https://ourworldindata.org/ethnographic-and-archaeological-evidence-on-violent-deaths" }
+          ]
+        }
+      ],
+      "other_claims": ["Non-state societies were much more violent than states.", "Public perception systematically misses improvements because bad events remain salient."]
+    },
+    {
+      "slug": "collapse",
+      "entity_key": "web:jareddiamond.org/Jared_Diamond/Collapse.html",
+      "title": "Collapse",
+      "subtitle": "How Societies Choose to Fail or Succeed",
+      "author": "Jared Diamond",
+      "year": 2005,
+      "score": 50,
+      "confidence": "medium-low",
+      "summary": "Environmental stress belongs in explanations of societal change, but the case studies often flatten political conflict, adaptation, and transformation into a misleading success-or-failure frame.",
+      "claims": [
+        {
+          "claim": "Environmental damage and resource pressure contributed materially to the decline of several past societies.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Paleoenvironmental and archaeological research supports environmental stress in multiple cases. Its importance varies, and decline, migration, political reorganization, and demographic contraction should not automatically be labeled total collapse.",
+          "sources": [
+            { "title": "Societal collapse: a literature review", "url": "https://doi.org/10.1016/j.futures.2022.103075" },
+            { "title": "Perspectives on Diamond's Collapse", "url": "https://doi.org/10.1086/497663" }
+          ]
+        },
+        {
+          "claim": "A five-factor framework—environment, climate, enemies, trade partners, and social response—explains why societies collapse or survive.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "The framework usefully forces multi-causal comparison and Diamond does not say environment explains every case. It is a checklist rather than a validated causal model, with unclear weighting, case selection, and counterfactual tests.",
+          "sources": [
+            { "title": "Are We Collapsing?", "url": "https://doi.org/10.1257/002205105775362032" },
+            { "title": "Societal collapse: a literature review", "url": "https://doi.org/10.1016/j.futures.2022.103075" }
+          ]
+        },
+        {
+          "claim": "Societies meaningfully choose to fail or succeed through their responses to problems.",
+          "assessment": "weak",
+          "credit": 0.25,
+          "rationale": "Collective response matters, but treating a society as one chooser hides unequal power, conflicting interests, colonial pressure, and constrained options. Archaeological critics find the success/failure framing overly voluntarist and presentist.",
+          "sources": [
+            { "title": "Questioning Collapse", "url": "https://assets.cambridge.org/97805215/15726/excerpt/9780521515726_excerpt.htm" },
+            { "title": "Perspectives on Diamond's Collapse", "url": "https://doi.org/10.1086/497663" }
+          ]
+        }
+      ],
+      "other_claims": ["Elite insulation can delay a society's response to environmental harm.", "Modern globalization creates both resilience and correlated risk."]
+    }
+  ]
+}
