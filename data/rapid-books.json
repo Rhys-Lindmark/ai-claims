@@ -2687,6 +2687,270 @@
         }
       ],
       "other_claims": ["The revolutions of 1989 exposed the brittleness of Soviet-bloc legitimacy.", "European integration advanced through pragmatic bargains as much as a shared federal vision."]
+    },
+    {
+      "slug": "the-wager",
+      "entity_key": "web:davidgrann.com/the-wager",
+      "title": "The Wager",
+      "subtitle": "A Tale of Shipwreck, Mutiny and Murder",
+      "author": "David Grann",
+      "year": 2023,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "The wreck, deprivation, factional break, and court martial are archival facts. Grann's larger point is strongest when he shows how conflicting survivor narratives made a clean verdict impossible.",
+      "claims": [
+        {
+          "claim": "HMS Wager wrecked on a remote island off Chile in 1741 after rounding Cape Horn as part of George Anson's wartime squadron.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Naval and survivor records place the 28-gun Wager in Anson's expedition during the War of Jenkins' Ear. Storm damage, navigational uncertainty, illness, and a lee shore culminated in the wreck in the Chonos Archipelago.",
+          "sources": [
+            { "title": "Royal Museums Greenwich: The Wager disaster", "url": "https://www.rmg.co.uk/collections/library/rmgl-153039" },
+            { "title": "Historical Society review of The Wager", "url": "https://hhsociety.org/wp-content/uploads/2023/11/The-Wager.pdf" }
+          ]
+        },
+        {
+          "claim": "Starvation, command conflict, and Captain David Cheap's killing of a midshipman split the castaways into rival factions, one of which deposed him and sailed away.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Competing eyewitness accounts agree on extreme scarcity, Cheap's shooting of Henry Cozens, the breakdown of naval authority, and separate escape attempts. They disagree sharply about lawful command, mutiny, violence, and culpability.",
+          "sources": [
+            { "title": "Royal Museums Greenwich: The Wager disaster", "url": "https://www.rmg.co.uk/collections/library/rmgl-153039" },
+            { "title": "A chronological history of discoveries in the South Sea: Wreck of the Wager", "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/A_chronological_history_of_the_discoveries_in_the_South_Sea_or_Pacific_Ocean_%3B_illustrated_with_charts_%28IA_chronologicalhis05burn%29.pdf" }
+          ]
+        },
+        {
+          "claim": "The Admiralty court martial avoided the explosive mutiny dispute in order to protect an imperial story of British naval order.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "The proceeding narrowed its inquiry and punished no survivor for mutiny, allowing incompatible public accounts to persist. Institutional reputation plausibly mattered, but the evidentiary difficulty, legal jurisdiction, and wartime context also explain the limited verdict.",
+          "sources": [
+            { "title": "Historical Society review of The Wager", "url": "https://hhsociety.org/wp-content/uploads/2023/11/The-Wager.pdf" },
+            { "title": "Royal Museums Greenwich: The Wager disaster", "url": "https://www.rmg.co.uk/collections/library/rmgl-153039" }
+          ]
+        }
+      ],
+      "other_claims": ["Scurvy and inaccurate longitude were structural threats to eighteenth-century naval expeditions.", "Printed survivor narratives became weapons in a contest over legal and public legitimacy."]
+    },
+    {
+      "slug": "killers-of-the-flower-moon",
+      "entity_key": "web:davidgrann.com/killers-of-the-flower-moon",
+      "title": "Killers of the Flower Moon",
+      "subtitle": "The Osage Murders and the Birth of the FBI",
+      "author": "David Grann",
+      "year": 2017,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The oil wealth, guardianship exploitation, and Hale conspiracy are strongly documented. The FBI solved an important cluster, but the book correctly shows that a much larger field of suspicious deaths remained outside that victory story.",
+      "claims": [
+        {
+          "claim": "Oil headrights made Osage citizens extraordinarily wealthy while federal guardianship rules exposed many to coercion, fraud, and predatory control.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The Osage retained communal mineral rights during allotment, generating immense royalty income. Congress then imposed racially administered guardianships that gave white officials and businessmen power over many members' finances and estates.",
+          "sources": [
+            { "title": "Smithsonian: The real history behind Killers of the Flower Moon", "url": "https://www.smithsonianmag.com/history/the-real-history-behind-killers-of-the-flower-moon-180983086/" },
+            { "title": "FBI: Osage Murders Case", "url": "https://www.fbi.gov/history/cases-and-criminals/osage-murders-case" }
+          ]
+        },
+        {
+          "claim": "William Hale organized murders within Mollie Burkhart's family so that valuable Osage headrights would concentrate in his orbit.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Testimony, confessions, financial motives, and prosecutions linked Hale, Ernest Burkhart, John Ramsey, and others to the murders of Anna Brown, Henry Roan, Rita Smith, and Bill Smith. Multiple defendants received life sentences.",
+          "sources": [
+            { "title": "FBI: Osage Murders Case", "url": "https://www.fbi.gov/history/cases-and-criminals/osage-murders-case" },
+            { "title": "Smithsonian: The real history behind Killers of the Flower Moon", "url": "https://www.smithsonianmag.com/history/the-real-history-behind-killers-of-the-flower-moon-180983086/" }
+          ]
+        },
+        {
+          "claim": "The Bureau of Investigation's case was a real breakthrough but solved only one part of a broader, institutionally enabled campaign of violence against the Osage.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Tom White's undercover team built a successful case against Hale's group and strengthened the Bureau's reputation. Many other suspicious deaths were never prosecuted, and local officials, guardians, doctors, lawyers, and businessmen enabled systematic dispossession.",
+          "sources": [
+            { "title": "FBI: Osage Murders Case", "url": "https://www.fbi.gov/history/cases-and-criminals/osage-murders-case" },
+            { "title": "TIME: Systemic violence behind Killers of the Flower Moon", "url": "https://time.com/6325586/killers-of-the-flower-moon-true-story/" }
+          ]
+        }
+      ],
+      "other_claims": ["Newspaper and law-enforcement indifference helped conceal the scale of the Reign of Terror.", "Mollie Burkhart survived suspected poisoning and later regained control of her estate."]
+    },
+    {
+      "slug": "the-lost-city-of-z",
+      "entity_key": "web:davidgrann.com/the-lost-city-of-z",
+      "title": "The Lost City of Z",
+      "subtitle": "A Tale of Deadly Obsession in the Amazon",
+      "author": "David Grann",
+      "year": 2009,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "Fawcett's expeditions and disappearance are well documented, and archaeology vindicates his broad intuition that Amazonia supported complex settlements. No evidence identifies one excavated center as his exact Z or resolves his fate.",
+      "claims": [
+        {
+          "claim": "Percy Fawcett, his son Jack, and Raleigh Rimell disappeared in 1925 while searching Brazil's interior for a complex civilization Fawcett called Z.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Fawcett's correspondence and expedition record establish the party's route, purpose, and final communications from the Upper Xingu. Later searches produced stories and speculation but no verified remains or conclusive account of their deaths.",
+          "sources": [
+            { "title": "HISTORY: The enduring mystery of Percy Fawcett", "url": "https://www.history.com/articles/explorer-percy-fawcett-disappears-in-the-amazon" },
+            { "title": "TIME: The true story behind The Lost City of Z", "url": "https://time.com/4735505/the-lost-city-of-z-true-story/" }
+          ]
+        },
+        {
+          "claim": "Pre-Columbian Amazonia supported populous, planned settlements that substantially modified forests and landscapes.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Archaeology, lidar, earthworks, roads, managed soils, and ecological proxies document large and connected Indigenous settlements in several Amazon regions. The evidence rejects an old image of a uniformly pristine forest incapable of complex societies.",
+          "sources": [
+            { "title": "Science: Archaeology with Kuikuro communities in the Upper Xingu", "url": "https://doi.org/10.1126/science.aed6115" },
+            { "title": "Quaternary Science Reviews: Detecting pre-Columbian Amazon activity", "url": "https://www.sciencedirect.com/science/article/pii/S027737912300402X" }
+          ]
+        },
+        {
+          "claim": "The Upper Xingu complex sometimes called Kuhikugu was Fawcett's lost city Z.",
+          "assessment": "weak",
+          "credit": 0.25,
+          "rationale": "Large settlements existed near Fawcett's search region and validate part of his general intuition. Z was an evolving, partly speculative target shaped by incomplete reports and racial assumptions, so matching it to one archaeological complex is conjecture.",
+          "sources": [
+            { "title": "TIME: The true story behind The Lost City of Z", "url": "https://time.com/4735505/the-lost-city-of-z-true-story/" },
+            { "title": "Science: Ancient cities of the Upper Xingu", "url": "https://doi.org/10.1126/science.aed6115" }
+          ]
+        }
+      ],
+      "other_claims": ["Fawcett combined exceptional surveying skill with spiritualism and racial assumptions.", "Repeated rescue and search expeditions enlarged the human cost of the mystery."]
+    },
+    {
+      "slug": "endurance",
+      "entity_key": "web:basicbooks.com/endurance",
+      "title": "Endurance",
+      "subtitle": "Shackleton's Incredible Voyage",
+      "author": "Alfred Lansing",
+      "year": 1959,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The expedition sequence and rescue are exceptionally well documented in logs, diaries, photographs, and the wreck itself. Lansing's leadership emphasis is fair but should not eclipse Worsley, Wild, the crew, and luck.",
+      "claims": [
+        {
+          "claim": "Endurance became trapped, drifted with pack ice, was crushed, and sank before Shackleton's trans-Antarctic crossing could begin.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Expedition logs, Frank Hurley's photographs, later navigational reconstruction, and the 2022 wreck discovery confirm the sequence and location. The ship was abandoned in October 1915 and sank in the Weddell Sea the following month.",
+          "sources": [
+            { "title": "Journal of Navigation: On the location of Endurance", "url": "https://www.cambridge.org/core/journals/journal-of-navigation/article/abs/on-the-location-of-shackletons-vessel-endurance/5F1AD80B3445C2653F1C24EAD4B7460D" },
+            { "title": "National Geographic: Finding Endurance", "url": "https://www.nationalgeographic.com/history/article/explorers-found-lost-ship-shackleton-endurance" }
+          ]
+        },
+        {
+          "claim": "Shackleton and five companions crossed roughly 1,300 kilometers of the Southern Ocean in the James Caird to seek rescue for the Elephant Island party.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The open-boat voyage, Worsley's navigation, landfall on South Georgia, and subsequent island crossing are documented in expedition accounts. After several failed rescue attempts, all twenty-two men on Elephant Island were recovered.",
+          "sources": [
+            { "title": "Canterbury Museum: Navigation of the James Caird", "url": "https://cms.canterburymuseum.com/assets/Navigation-of-the-James-Caird-on-the-Shackleton-Expedition.pdf?v=1678156674" },
+            { "title": "Shackleton Foundation: Expedition resources", "url": "https://www.shackletonfoundation.org/resources/" }
+          ]
+        },
+        {
+          "claim": "Shackleton's flexible leadership was the decisive reason every member of the Endurance ship's company survived.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Shackleton repeatedly changed objectives, maintained cohesion, rationed risk, and prioritized rescue, making his leadership genuinely important. Survival also depended on Worsley's navigation, Wild's command, McNeish's work, collective discipline, weather, and fortune.",
+          "sources": [
+            { "title": "James Caird Society: The James Caird", "url": "https://jamescairdsociety.com/the-james-caird/" },
+            { "title": "Royal Collection: Elephant Island 1916", "url": "https://www.rct.uk/collection/exhibitions/the-heart-of-the-great-alone/the-queens-gallery-palace-of-holyroodhouse/explore-the-exhibition/imperial-transatlantic-expedition-1914-1916/elephant-island-1916" }
+          ]
+        }
+      ],
+      "other_claims": ["Nearly every expedition diary was available to Lansing.", "The separate Ross Sea Party suffered deaths while laying depots for a crossing that never occurred."]
+    },
+    {
+      "slug": "in-the-heart-of-the-sea",
+      "entity_key": "web:nathanielphilbrick.com/in-the-heart-of-the-sea",
+      "title": "In the Heart of the Sea",
+      "subtitle": "The Tragedy of the Whaleship Essex",
+      "author": "Nathaniel Philbrick",
+      "year": 2000,
+      "score": 100,
+      "confidence": "high",
+      "summary": "The whale strike, open-boat ordeal, survival cannibalism, and literary legacy are anchored in survivor accounts and Nantucket records. Its three central narrative claims are unusually secure.",
+      "claims": [
+        {
+          "claim": "A large sperm whale repeatedly struck and sank the Nantucket whaleship Essex in the Pacific in November 1820.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "First mate Owen Chase and cabin boy Thomas Nickerson left independent accounts of the attack and sinking. Their central descriptions agree that an unusually large sperm whale rammed the hull far from the South American coast.",
+          "sources": [
+            { "title": "National Endowment for the Arts: In the Heart of the Sea", "url": "https://www.arts.gov/initiatives/nea-big-read/heart-sea" },
+            { "title": "Smithsonian: The history behind In the Heart of the Sea", "url": "https://public-media.smithsonianmag.com/magazine/downloads/Smithsonian_Magazine_December_2015.pdf" }
+          ]
+        },
+        {
+          "claim": "The survivors spent about three months in small whaleboats, where starvation led them to eat the dead and eventually draw lots to kill one man.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Survivor accounts document dehydration, starvation, deaths, consumption of bodies, and the lot that selected Owen Coffin, who was shot and eaten. Eight of the twenty men who left the wreck ultimately survived the ordeal.",
+          "sources": [
+            { "title": "TIME: The true history of cannibalism behind In the Heart of the Sea", "url": "https://time.com/4134573/in-the-heart-of-the-sea-cannibalism/" },
+            { "title": "National Endowment for the Arts reader resources", "url": "https://www.arts.gov/sites/default/files/Reader-Resources-In-the-Heart-of-the-Sea.pdf" }
+          ]
+        },
+        {
+          "claim": "The Essex disaster directly helped inspire Herman Melville's Moby-Dick.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Melville encountered Chase's published narrative before writing the novel and later met Chase's son. The Essex supplied the climactic image of a whale sinking a ship, though Moby-Dick combines it with many other literary and whaling sources.",
+          "sources": [
+            { "title": "National Endowment for the Arts: In the Heart of the Sea", "url": "https://www.arts.gov/initiatives/nea-big-read/heart-sea" },
+            { "title": "Journal of the Early Republic: Knowledge of Leviathan", "url": "https://dgrahamburnett.net/wp-content/uploads/2015/11/BurnettDG_KnowledgeOfLeviathan_JEarlyRepub_2008.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["Nantucket's economy depended on dangerous long-distance extraction as nearby whale populations declined.", "Crew hierarchy, ethnicity, and kinship shaped allocation and survival."]
+    },
+    {
+      "slug": "the-indifferent-stars-above",
+      "entity_key": "web:danieljamesbrown.com/the-indifferent-stars-above",
+      "title": "The Indifferent Stars Above",
+      "subtitle": "The Harrowing Saga of the Donner Party",
+      "author": "Daniel James Brown",
+      "year": 2009,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The route, entrapment, mortality, rescue, and cannibalism are well established. The book is strongest when it treats the tragedy as compounding decisions and conditions rather than one bad shortcut.",
+      "claims": [
+        {
+          "claim": "Choosing the poorly tested Hastings Cutoff consumed time, livestock, and supplies and left the Donner-Reed party dangerously late for the Sierra crossing.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The route required road building through the Wasatch Range and an exhausting Great Salt Lake Desert crossing, taking longer than the established trail. It was a major delay alongside the party's already late start and later conflicts.",
+          "sources": [
+            { "title": "National Park Service: Donner and Reed Wagon Train Incident", "url": "https://www.nps.gov/cali/learn/historyculture/donner-reed-party.htm" },
+            { "title": "National Park Service: Eliza Donner Houghton and the California Trail", "url": "https://www.nps.gov/articles/000/eliza-donner-houghton-the-california-trail.htm" }
+          ]
+        },
+        {
+          "claim": "Early Sierra snowfall trapped the migrants near Truckee Lake and Alder Creek, where starvation killed roughly forty people before staged relief arrived.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The exhausted party reached the mountains with depleted provisions and was blocked by snow in late October 1846. Four relief efforts and self-rescue attempts gradually removed survivors; records count about forty deaths among roughly eighty-seven migrants.",
+          "sources": [
+            { "title": "National Park Service: Donner and Reed Wagon Train Incident", "url": "https://www.nps.gov/cali/learn/historyculture/donner-reed-party.htm" },
+            { "title": "Nevada Historical Society: Archaeology of the Donner Party", "url": "https://epubs.nsla.nv.gov/statepubs/epubs/210777-1987-4Winter.pdf" }
+          ]
+        },
+        {
+          "claim": "Some Donner Party members resorted to survival cannibalism, but the sensational label obscures different camps, choices, and disputed accusations.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Survivor testimony and rescuers document consumption of people who had died, and the snowshoe party drew lots before deaths occurred. Exact acts and accusations vary by witness, and not every family or camp participated in the same way.",
+          "sources": [
+            { "title": "National Park Service: Donner and Reed Wagon Train Incident", "url": "https://www.nps.gov/cali/learn/historyculture/donner-reed-party.htm" },
+            { "title": "California State Parks: Donner Memorial State Park history", "url": "https://www.parks.ca.gov/pages/503/files/DonnerMemorialSPFinalWebLayout2017.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["Sarah Graves's perspective makes family obligation as important as famous male leadership.", "Survivor memory and later journalism repeatedly reshaped the party's public image."]
     }
   ]
 }
