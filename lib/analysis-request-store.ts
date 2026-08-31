@@ -32,6 +32,32 @@ export type AnalysisRequestEvent = {
 
 const allowedInputKeys = new Set(['contract_version', 'entity_key', 'canonical_url', 'page_kind']);
 
+function isUnsafeAnalysisTarget(rawUrl: string) {
+  const url = new URL(rawUrl);
+  if (url.username || url.password || url.port) return true;
+
+  const hostname = url.hostname.toLowerCase().replace(/^\[|\]$/g, '').replace(/\.$/, '');
+  if (!hostname || hostname === 'localhost' || hostname.endsWith('.localhost') || hostname.endsWith('.local') || hostname.endsWith('.internal') || hostname.endsWith('.home') || hostname.endsWith('.lan')) return true;
+  if (!hostname.includes('.') && !hostname.includes(':')) return true;
+
+  const ipv4 = hostname.split('.').map(Number);
+  if (ipv4.length === 4 && ipv4.every((part) => Number.isInteger(part) && part >= 0 && part <= 255)) {
+    const [a, b] = ipv4;
+    return a === 0 || a === 10 || a === 127 || a >= 224
+      || (a === 100 && b >= 64 && b <= 127)
+      || (a === 169 && b === 254)
+      || (a === 172 && b >= 16 && b <= 31)
+      || (a === 192 && (b === 0 || b === 168))
+      || (a === 198 && (b === 18 || b === 19));
+  }
+
+  if (hostname.includes(':')) {
+    return hostname === '::' || hostname === '::1' || hostname.startsWith('::ffff:')
+      || /^f[cd]/.test(hostname) || /^fe[89ab]/.test(hostname) || hostname.startsWith('ff');
+  }
+  return false;
+}
+
 export function validateAnalysisRequestInput(value: unknown): { ok: true; input: AnalysisRequestInput } | { ok: false; error: string } {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return { ok: false, error: 'A JSON object is required.' };
   const object = value as Record<string, unknown>;
@@ -43,6 +69,7 @@ export function validateAnalysisRequestInput(value: unknown): { ok: true; input:
   if (!['youtube', 'goodreads', 'web'].includes(String(object.page_kind))) return { ok: false, error: 'Page kind must be youtube, goodreads, or web.' };
   const identity = identifyPage(object.canonical_url);
   if (identity.entityKey !== object.entity_key || identity.canonicalUrl !== object.canonical_url || identity.kind !== object.page_kind) return { ok: false, error: 'The canonical URL, entity key, and page kind do not describe the same page.' };
+  if (isUnsafeAnalysisTarget(object.canonical_url)) return { ok: false, error: 'Analysis requests cannot contain URL credentials or target local or private-network services.' };
   return { ok: true, input: object as AnalysisRequestInput };
 }
 
