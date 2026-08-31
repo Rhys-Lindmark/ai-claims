@@ -18,6 +18,18 @@ export type AnalysisRequestRecord = {
 
 export type AnalysisRequestInput = Pick<AnalysisRequestRecord, 'contract_version' | 'entity_key' | 'canonical_url' | 'page_kind'>;
 
+export type AnalysisRequestEvent = {
+  event_id: string;
+  contract_version: string;
+  request_id: string;
+  sequence: number;
+  from_state: AnalysisRequestState | null;
+  to_state: AnalysisRequestState;
+  attempt: number;
+  public_summary: string;
+  occurred_at: string;
+};
+
 const allowedInputKeys = new Set(['contract_version', 'entity_key', 'canonical_url', 'page_kind']);
 
 export function validateAnalysisRequestInput(value: unknown): { ok: true; input: AnalysisRequestInput } | { ok: false; error: string } {
@@ -48,11 +60,23 @@ export async function getAnalysisRequestById(db: D1Database, requestId: string) 
   return db.prepare('SELECT request_id, contract_version, entity_key, canonical_url, page_kind, state, attempt, created_at, updated_at FROM analysis_requests WHERE request_id = ? LIMIT 1').bind(requestId).first<AnalysisRequestRecord>();
 }
 
+export async function getAnalysisRequestLifecycle(db: D1Database, requestId: string) {
+  const result = await db.prepare('SELECT event_id, contract_version, request_id, sequence, from_state, to_state, attempt, public_summary, occurred_at FROM analysis_request_events WHERE request_id = ? ORDER BY sequence ASC').bind(requestId).all<AnalysisRequestEvent>();
+  return result.results ?? [];
+}
+
+export async function getAnalysisRequestStatus(db: D1Database, requestId: string) {
+  const record = await getAnalysisRequestById(db, requestId);
+  if (!record) return null;
+  return { record, lifecycle_events: await getAnalysisRequestLifecycle(db, requestId) };
+}
+
 export async function submitAnalysisRequest(db: D1Database, input: AnalysisRequestInput, now = () => new Date().toISOString()) {
   const timestamp = now();
   const requestId = await analysisRequestId(input.entity_key);
   const result = await db.prepare('INSERT OR IGNORE INTO analysis_requests (request_id, contract_version, entity_key, canonical_url, page_kind, state, attempt, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)').bind(requestId, input.contract_version, input.entity_key, input.canonical_url, input.page_kind, 'queued', 1, timestamp, timestamp).run();
   const record = await getAnalysisRequestByEntity(db, input.entity_key);
   if (!record) throw new Error('The analysis request could not be read after submission.');
-  return { created: Number(result.meta.changes ?? 0) === 1, record };
+  await db.prepare('INSERT OR IGNORE INTO analysis_request_events (event_id, contract_version, request_id, sequence, from_state, to_state, attempt, public_summary, occurred_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)').bind(`${record.request_id}_1`, ANALYSIS_REQUEST_CONTRACT_VERSION, record.request_id, 1, null, 'queued', record.attempt, 'Canonical page added to the public analysis queue.', record.created_at).run();
+  return { created: Number(result.meta.changes ?? 0) === 1, record, lifecycle_events: await getAnalysisRequestLifecycle(db, record.request_id) };
 }

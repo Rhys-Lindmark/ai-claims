@@ -1,0 +1,245 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "76f89b43-2efe-4e47-b085-6b07ca9538db",
+  "prevId": "edec2805-ce81-4340-9dca-3e568da655ee",
+  "tables": {
+    "analysis_request_events": {
+      "name": "analysis_request_events",
+      "columns": {
+        "event_id": {
+          "name": "event_id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "contract_version": {
+          "name": "contract_version",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "'1.0.0'"
+        },
+        "request_id": {
+          "name": "request_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "sequence": {
+          "name": "sequence",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "from_state": {
+          "name": "from_state",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "to_state": {
+          "name": "to_state",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "attempt": {
+          "name": "attempt",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "public_summary": {
+          "name": "public_summary",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "occurred_at": {
+          "name": "occurred_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "analysis_request_events_request_sequence_unique": {
+          "name": "analysis_request_events_request_sequence_unique",
+          "columns": [
+            "request_id",
+            "sequence"
+          ],
+          "isUnique": true
+        },
+        "analysis_request_events_request_sequence_idx": {
+          "name": "analysis_request_events_request_sequence_idx",
+          "columns": [
+            "request_id",
+            "sequence"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "analysis_request_events_request_id_analysis_requests_request_id_fk": {
+          "name": "analysis_request_events_request_id_analysis_requests_request_id_fk",
+          "tableFrom": "analysis_request_events",
+          "tableTo": "analysis_requests",
+          "columnsFrom": [
+            "request_id"
+          ],
+          "columnsTo": [
+            "request_id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "analysis_request_events_sequence_check": {
+          "name": "analysis_request_events_sequence_check",
+          "value": "\"analysis_request_events\".\"sequence\" >= 1"
+        },
+        "analysis_request_events_state_check": {
+          "name": "analysis_request_events_state_check",
+          "value": "\"analysis_request_events\".\"to_state\" IN ('queued', 'in_review', 'published', 'failed')"
+        },
+        "analysis_request_events_from_state_check": {
+          "name": "analysis_request_events_from_state_check",
+          "value": "\"analysis_request_events\".\"from_state\" IS NULL OR \"analysis_request_events\".\"from_state\" IN ('queued', 'in_review', 'published', 'failed')"
+        },
+        "analysis_request_events_attempt_check": {
+          "name": "analysis_request_events_attempt_check",
+          "value": "\"analysis_request_events\".\"attempt\" >= 1"
+        }
+      }
+    },
+    "analysis_requests": {
+      "name": "analysis_requests",
+      "columns": {
+        "request_id": {
+          "name": "request_id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "contract_version": {
+          "name": "contract_version",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "'1.0.0'"
+        },
+        "entity_key": {
+          "name": "entity_key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "canonical_url": {
+          "name": "canonical_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "page_kind": {
+          "name": "page_kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "state": {
+          "name": "state",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "'queued'"
+        },
+        "attempt": {
+          "name": "attempt",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 1
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "analysis_requests_entity_key_unique": {
+          "name": "analysis_requests_entity_key_unique",
+          "columns": [
+            "entity_key"
+          ],
+          "isUnique": true
+        },
+        "analysis_requests_state_updated_idx": {
+          "name": "analysis_requests_state_updated_idx",
+          "columns": [
+            "state",
+            "updated_at"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "analysis_requests_page_kind_check": {
+          "name": "analysis_requests_page_kind_check",
+          "value": "\"analysis_requests\".\"page_kind\" IN ('youtube', 'goodreads', 'web')"
+        },
+        "analysis_requests_state_check": {
+          "name": "analysis_requests_state_check",
+          "value": "\"analysis_requests\".\"state\" IN ('queued', 'in_review', 'published', 'failed')"
+        },
+        "analysis_requests_attempt_check": {
+          "name": "analysis_requests_attempt_check",
+          "value": "\"analysis_requests\".\"attempt\" >= 1"
+        }
+      }
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}

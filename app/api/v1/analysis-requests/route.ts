@@ -1,5 +1,5 @@
 import { getD1 } from '@/db';
-import { ANALYSIS_REQUEST_CONTRACT_VERSION, getAnalysisRequestByEntity, submitAnalysisRequest, validateAnalysisRequestInput } from '@/lib/analysis-request-store';
+import { ANALYSIS_REQUEST_CONTRACT_VERSION, getAnalysisRequestByEntity, getAnalysisRequestLifecycle, submitAnalysisRequest, validateAnalysisRequestInput } from '@/lib/analysis-request-store';
 
 const headers = { 'access-control-allow-origin': '*', 'cache-control': 'no-store', 'content-type': 'application/json; charset=utf-8', 'x-ai-claims-contract': ANALYSIS_REQUEST_CONTRACT_VERSION };
 
@@ -8,7 +8,7 @@ export async function GET(request: Request) {
   if (!entityKey || entityKey.length > 2048) return Response.json({ contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, error: 'A bounded entity_key query is required.' }, { status: 400, headers });
   const record = await getAnalysisRequestByEntity(getD1(), entityKey);
   if (!record) return Response.json({ contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, entity_key: entityKey, analysis_request: null }, { status: 404, headers });
-  return Response.json({ contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, entity_key: entityKey, analysis_request: record }, { status: 200, headers });
+  return Response.json({ contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, entity_key: entityKey, analysis_request: record, lifecycle_events: await getAnalysisRequestLifecycle(getD1(), record.request_id) }, { status: 200, headers });
 }
 
 export async function POST(request: Request) {
@@ -21,7 +21,7 @@ export async function POST(request: Request) {
   const validated = validateAnalysisRequestInput(value);
   if (!validated.ok) return Response.json({ contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, error: validated.error }, { status: 400, headers });
   const submission = await submitAnalysisRequest(getD1(), validated.input);
-  return Response.json({ contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, created: submission.created, analysis_request: submission.record }, { status: submission.created ? 201 : 200, headers });
+  return Response.json({ contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, created: submission.created, analysis_request: submission.record, lifecycle_events: submission.lifecycle_events }, { status: submission.created ? 201 : 200, headers });
 }
 
 export async function OPTIONS() {

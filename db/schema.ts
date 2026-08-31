@@ -18,3 +18,22 @@ export const analysisRequests = sqliteTable('analysis_requests', {
   check('analysis_requests_state_check', sql`${table.state} IN ('queued', 'in_review', 'published', 'failed')`),
   check('analysis_requests_attempt_check', sql`${table.attempt} >= 1`),
 ]);
+
+export const analysisRequestEvents = sqliteTable('analysis_request_events', {
+  eventId: text('event_id').primaryKey(),
+  contractVersion: text('contract_version').notNull().default('1.0.0'),
+  requestId: text('request_id').notNull().references(() => analysisRequests.requestId, { onDelete: 'cascade' }),
+  sequence: integer('sequence').notNull(),
+  fromState: text('from_state'),
+  toState: text('to_state').notNull(),
+  attempt: integer('attempt').notNull(),
+  publicSummary: text('public_summary').notNull(),
+  occurredAt: text('occurred_at').notNull(),
+}, (table) => [
+  uniqueIndex('analysis_request_events_request_sequence_unique').on(table.requestId, table.sequence),
+  index('analysis_request_events_request_sequence_idx').on(table.requestId, table.sequence),
+  check('analysis_request_events_sequence_check', sql`${table.sequence} >= 1`),
+  check('analysis_request_events_state_check', sql`${table.toState} IN ('queued', 'in_review', 'published', 'failed')`),
+  check('analysis_request_events_from_state_check', sql`${table.fromState} IS NULL OR ${table.fromState} IN ('queued', 'in_review', 'published', 'failed')`),
+  check('analysis_request_events_attempt_check', sql`${table.attempt} >= 1`),
+]);
