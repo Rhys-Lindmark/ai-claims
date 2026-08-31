@@ -6,7 +6,7 @@ import registry from '../data/analyses.json' with { type: 'json' };
 import resolverConfig from '../data/resolver-config.json' with { type: 'json' };
 import manifest from '../manifest.json' with { type: 'json' };
 import { resolveAnalysis, scoreState } from '../lib/analysis-registry.js';
-import { correctionFeedCompatibility, createApiResolver, createLocalResolver, deploymentAttestationCompatibility } from '../lib/analysis-resolver.js';
+import { correctionFeedCompatibility, createApiResolver, createLocalResolver, deploymentAttestationCompatibility, extensionReleaseCompatibility } from '../lib/analysis-resolver.js';
 import { createRequestStore } from '../lib/analysis-requests.js';
 import { computeTruthScore } from '../lib/truth-score.js';
 import { goodreadsBookResolution, sourceNotice, transcriptAcquisition } from '../lib/source-policy.js';
@@ -323,6 +323,19 @@ test('resolver advertises a supported privacy-safe deployment attestation', asyn
   assert.equal(deploymentProofForState({ ...state, deploymentAttestationCompatibility: 'unsupported' }), null);
   assert.equal(deploymentProofForState({ ...state, deploymentAttestationVisitorDataCollected: true }), null);
   assert.deepEqual(deploymentAttestationCompatibility({ contract_version: '9.0.0' }), { state: 'unsupported', contractVersion: '9.0.0' });
+});
+
+test('resolver advertises a supported telemetry-free extension release', async () => {
+  const analysis = registry.analyses.find((entry) => entry.entity_key === syntheticWeb.entity_key);
+  const discovery = { contract_version: '1.0.0', current_version: release.extension_version, current_url: 'https://ai.rhyslindmark.com/claims/api/v1/extension-releases', immutable_url: `https://ai.rhyslindmark.com/claims/api/v1/extension-releases/${release.extension_version}`, package_digest: release.package.integrity.digest_hex, package_url: `https://github.com/Rhys-Lindmark/ai-claims/releases/download/v${release.extension_version}/${release.package.filename}`, manifest_url: `https://github.com/Rhys-Lindmark/ai-claims/releases/download/v${release.extension_version}/extension-v${release.extension_version}.json`, installation_telemetry_collected: false };
+  const resolver = createApiResolver({ endpoint: 'https://api.example.invalid', fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '1.0.0', entity_key: analysis.entity_key, extension_release_discovery: discovery, analysis }) }) });
+  const state = await resolver.resolve(analysis.entity_key);
+  assert.equal(state.extensionReleaseCompatibility, 'supported');
+  assert.equal(state.extensionReleaseVersion, release.extension_version);
+  assert.equal(state.extensionReleasePackageUrl, discovery.package_url);
+  assert.equal(state.extensionReleasePackageDigest, release.package.integrity.digest_hex);
+  assert.equal(state.extensionReleaseInstallationTelemetryCollected, false);
+  assert.deepEqual(extensionReleaseCompatibility({ contract_version: '9.0.0' }), { state: 'unsupported', contractVersion: '9.0.0' });
 });
 
 test('API resolver opts into browser HTTP-cache revalidation', async () => {

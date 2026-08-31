@@ -3,6 +3,7 @@ import { scoreState } from './analysis-registry.js';
 export const RESOLVER_CONTRACT_VERSION = '1.0.0';
 export const SUPPORTED_CORRECTION_FEED_CONTRACTS = ['1.0.0', '1.1.0'];
 export const SUPPORTED_DEPLOYMENT_ATTESTATION_CONTRACTS = ['1.0.0'];
+export const SUPPORTED_EXTENSION_RELEASE_CONTRACTS = ['1.0.0'];
 
 const CORRECTION_POINTER_FIELDS = [
   'latest_correction_event_id',
@@ -27,14 +28,21 @@ export function deploymentAttestationCompatibility(discovery) {
   return { state: supported ? 'supported' : 'unsupported', contractVersion: discovery.contract_version ?? null };
 }
 
+export function extensionReleaseCompatibility(discovery) {
+  if (!discovery) return { state: 'not_advertised', contractVersion: null };
+  const supported = SUPPORTED_EXTENSION_RELEASE_CONTRACTS.includes(discovery.contract_version);
+  return { state: supported ? 'supported' : 'unsupported', contractVersion: discovery.contract_version ?? null };
+}
+
 function scoreResolverEnvelope(envelope) {
   const compatibility = correctionFeedCompatibility(envelope.correction_feed_discovery);
   const attestationCompatibility = deploymentAttestationCompatibility(envelope.deployment_attestation_discovery);
+  const releaseCompatibility = extensionReleaseCompatibility(envelope.extension_release_discovery);
   const analysis = envelope.analysis ? { ...envelope.analysis } : null;
   if (analysis && compatibility.state === 'unsupported') {
     for (const field of CORRECTION_POINTER_FIELDS) delete analysis[field];
   }
-  return { ...scoreState(analysis), correctionFeedCompatibility: compatibility.state, correctionFeedContractVersion: compatibility.contractVersion, deploymentAttestationCompatibility: attestationCompatibility.state, deploymentAttestationContractVersion: attestationCompatibility.contractVersion, deploymentAttestationUrl: attestationCompatibility.state === 'supported' ? envelope.deployment_attestation_discovery.current_url : null, deploymentAttestationImmutableUrl: attestationCompatibility.state === 'supported' ? envelope.deployment_attestation_discovery.immutable_url : null, deploymentAttestationDigest: attestationCompatibility.state === 'supported' ? envelope.deployment_attestation_discovery.current_digest : null, deploymentAttestationVerifiedAt: attestationCompatibility.state === 'supported' ? envelope.deployment_attestation_discovery.verified_at : null, deploymentAttestationVisitorDataCollected: attestationCompatibility.state === 'supported' ? envelope.deployment_attestation_discovery.visitor_data_collected : null };
+  return { ...scoreState(analysis), correctionFeedCompatibility: compatibility.state, correctionFeedContractVersion: compatibility.contractVersion, deploymentAttestationCompatibility: attestationCompatibility.state, deploymentAttestationContractVersion: attestationCompatibility.contractVersion, deploymentAttestationUrl: attestationCompatibility.state === 'supported' ? envelope.deployment_attestation_discovery.current_url : null, deploymentAttestationImmutableUrl: attestationCompatibility.state === 'supported' ? envelope.deployment_attestation_discovery.immutable_url : null, deploymentAttestationDigest: attestationCompatibility.state === 'supported' ? envelope.deployment_attestation_discovery.current_digest : null, deploymentAttestationVerifiedAt: attestationCompatibility.state === 'supported' ? envelope.deployment_attestation_discovery.verified_at : null, deploymentAttestationVisitorDataCollected: attestationCompatibility.state === 'supported' ? envelope.deployment_attestation_discovery.visitor_data_collected : null, extensionReleaseCompatibility: releaseCompatibility.state, extensionReleaseContractVersion: releaseCompatibility.contractVersion, extensionReleaseVersion: releaseCompatibility.state === 'supported' ? envelope.extension_release_discovery.current_version : null, extensionReleaseUrl: releaseCompatibility.state === 'supported' ? envelope.extension_release_discovery.current_url : null, extensionReleasePackageUrl: releaseCompatibility.state === 'supported' ? envelope.extension_release_discovery.package_url : null, extensionReleasePackageDigest: releaseCompatibility.state === 'supported' ? envelope.extension_release_discovery.package_digest : null, extensionReleaseInstallationTelemetryCollected: releaseCompatibility.state === 'supported' ? envelope.extension_release_discovery.installation_telemetry_collected : null };
 }
 
 function assertEnvelope(envelope) {
