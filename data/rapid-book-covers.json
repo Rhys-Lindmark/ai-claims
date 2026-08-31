@@ -1398,6 +1398,119 @@
       "source_authors": [
         "David Quammen"
       ]
+    },
+    {
+      "slug": "the-soul-of-a-new-machine",
+      "match_state": "exact_title_author",
+      "cover_id": 5290886,
+      "cover_url": "https://covers.openlibrary.org/b/id/5290886-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL98218W",
+      "source_title": "The Soul of a New Machine",
+      "source_authors": [
+        "Tracy Kidder"
+      ]
+    },
+    {
+      "slug": "hackers-heroes-of-the-computer-revolution",
+      "match_state": "exact_title_author",
+      "cover_id": 106396,
+      "cover_url": "https://covers.openlibrary.org/b/id/106396-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL804638W",
+      "source_title": "Hackers",
+      "source_authors": [
+        "Steven Levy"
+      ]
+    },
+    {
+      "slug": "the-cuckoos-egg",
+      "match_state": "exact_title_author",
+      "cover_id": 7880307,
+      "cover_url": "https://covers.openlibrary.org/b/id/7880307-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3741565W",
+      "source_title": "The Cuckoo’s Egg",
+      "source_authors": [
+        "Clifford Stoll"
+      ]
+    },
+    {
+      "slug": "where-wizards-stay-up-late",
+      "match_state": "exact_title_author",
+      "cover_id": 425341,
+      "cover_url": "https://covers.openlibrary.org/b/id/425341-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3270089W",
+      "source_title": "Where wizards stay up late",
+      "source_authors": [
+        "Katie Hafner",
+        "Katie Hefner",
+        "Matthew Lyon"
+      ]
+    },
+    {
+      "slug": "the-victorian-internet",
+      "match_state": "exact_title_author",
+      "cover_id": 570752,
+      "cover_url": "https://covers.openlibrary.org/b/id/570752-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1906743W",
+      "source_title": "The Victorian Internet",
+      "source_authors": [
+        "Tom Standage"
+      ]
+    },
+    {
+      "slug": "dealers-of-lightning",
+      "match_state": "exact_title_author",
+      "cover_id": 684348,
+      "cover_url": "https://covers.openlibrary.org/b/id/684348-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1987733W",
+      "source_title": "Dealers of Lightning",
+      "source_authors": [
+        "Michael A. Hiltzik"
+      ]
+    },
+    {
+      "slug": "the-cathedral-and-the-bazaar",
+      "match_state": "exact_title_author",
+      "cover_id": 805932,
+      "cover_url": "https://covers.openlibrary.org/b/id/805932-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL6036025W",
+      "source_title": "The Cathedral and the Bazaar",
+      "source_authors": [
+        "Eric S. Raymond"
+      ]
+    },
+    {
+      "slug": "the-dream-machine",
+      "match_state": "exact_title_author",
+      "cover_id": 402828,
+      "cover_url": "https://covers.openlibrary.org/b/id/402828-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL4300550W",
+      "source_title": "The Dream Machine",
+      "source_authors": [
+        "M. Mitchell Waldrop"
+      ]
+    },
+    {
+      "slug": "tubes",
+      "match_state": "exact_title_author",
+      "cover_id": 7238914,
+      "cover_url": "https://covers.openlibrary.org/b/id/7238914-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16572261W",
+      "source_title": "Tubes",
+      "source_authors": [
+        "Andrew Blum"
+      ]
+    },
+    {
+      "slug": "chip-war",
+      "match_state": "exact_title_author",
+      "cover_id": 12968901,
+      "cover_url": "https://covers.openlibrary.org/b/id/12968901-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL27846746W",
+      "source_title": "Chip War",
+      "source_authors": [
+        "Chris Miller",
+        "Chris Miller"
+      ]
     }
   ]
 }

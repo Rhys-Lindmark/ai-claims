@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-08-31",
-  "checked_at": "2026-08-31T22:36:37.871Z",
+  "checked_at": "2026-08-31T22:49:50.791Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,31 +10,31 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 130,
-    "claims": 390,
-    "citations": 780,
-    "unique_urls": 562,
-    "repeated_citations": 218,
-    "redirected_urls": 87,
+    "books": 140,
+    "claims": 420,
+    "citations": 840,
+    "unique_urls": 580,
+    "repeated_citations": 260,
+    "redirected_urls": 89,
     "states": {
-      "access_blocked": 111,
-      "network_error": 4,
+      "access_blocked": 114,
+      "network_error": 5,
       "other_http": 1,
-      "reachable": 442,
-      "transient": 4
+      "reachable": 455,
+      "transient": 5
     },
     "score_distribution": {
       "50": 1,
       "58": 4,
       "67": 18,
-      "75": 29,
-      "83": 27,
+      "75": 34,
+      "83": 32,
       "92": 41,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 53,
-      "medium": 19,
+      "high": 57,
+      "medium": 25,
       "medium-high": 50,
       "medium-low": 8
     }
@@ -67,6 +67,14 @@
       }
     },
     {
+      "host": "computerhistory.org",
+      "unique_urls": 8,
+      "citations": 24,
+      "states": {
+        "reachable": 8
+      }
+    },
+    {
       "host": "en.wikipedia.org",
       "unique_urls": 9,
       "citations": 20,
@@ -96,6 +104,14 @@
       "citations": 13,
       "states": {
         "reachable": 12
+      }
+    },
+    {
+      "host": "internetsociety.org",
+      "unique_urls": 1,
+      "citations": 12,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -152,6 +168,14 @@
       "citations": 9,
       "states": {
         "reachable": 7
+      }
+    },
+    {
+      "host": "darpa.mil",
+      "unique_urls": 2,
+      "citations": 8,
+      "states": {
+        "reachable": 2
       }
     },
     {
@@ -259,6 +283,14 @@
       }
     },
     {
+      "host": "opensource.org",
+      "unique_urls": 2,
+      "citations": 6,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "rmg.co.uk",
       "unique_urls": 3,
       "citations": 6,
@@ -348,6 +380,14 @@
       }
     },
     {
+      "host": "everycrsreport.com",
+      "unique_urls": 2,
+      "citations": 4,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "fao.org",
       "unique_urls": 2,
       "citations": 4,
@@ -388,6 +428,14 @@
       }
     },
     {
+      "host": "timeshighereducation.com",
+      "unique_urls": 2,
+      "citations": 4,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "airandspace.si.edu",
       "unique_urls": 2,
       "citations": 3,
@@ -400,8 +448,7 @@
       "unique_urls": 2,
       "citations": 3,
       "states": {
-        "reachable": 1,
-        "access_blocked": 1
+        "access_blocked": 2
       }
     },
     {
@@ -434,22 +481,6 @@
       "citations": 3,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "computerhistory.org",
-      "unique_urls": 2,
-      "citations": 3,
-      "states": {
-        "reachable": 2
-      }
-    },
-    {
-      "host": "darpa.mil",
-      "unique_urls": 2,
-      "citations": 3,
-      "states": {
-        "reachable": 2
       }
     },
     {
@@ -493,6 +524,14 @@
       }
     },
     {
+      "host": "nsarchive.gwu.edu",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "nybooks.com",
       "unique_urls": 3,
       "citations": 3,
@@ -513,7 +552,7 @@
       "unique_urls": 1,
       "citations": 3,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -605,7 +644,7 @@
       }
     },
     {
-      "host": "timeshighereducation.com",
+      "host": "victorianweb.org",
       "unique_urls": 1,
       "citations": 3,
       "states": {
@@ -848,6 +887,14 @@
       }
     },
     {
+      "host": "mark.people.clemson.edu",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "mdpi.com",
       "unique_urls": 1,
       "citations": 2,
@@ -976,6 +1023,15 @@
       }
     },
     {
+      "host": "semi.org",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "access_blocked": 1,
+        "reachable": 1
+      }
+    },
+    {
       "host": "shc.stanford.edu",
       "unique_urls": 1,
       "citations": 2,
@@ -1064,6 +1120,14 @@
       }
     },
     {
+      "host": "arstechnica.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "artefacts-discovery.researcher.life",
       "unique_urls": 1,
       "citations": 1,
@@ -1108,7 +1172,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "transient": 1
       }
     },
     {
@@ -1588,7 +1652,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "network_error": 1
       }
     },
     {
@@ -1788,7 +1852,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -1876,7 +1940,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -1994,6 +2058,31 @@
   ],
   "repeated_urls": [
     {
+      "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+      "host": "internetsociety.org",
+      "citation_count": 12,
+      "state": "reachable",
+      "books": [
+        "hackers-heroes-of-the-computer-revolution",
+        "the-cuckoos-egg",
+        "where-wizards-stay-up-late",
+        "the-victorian-internet",
+        "the-dream-machine",
+        "tubes"
+      ]
+    },
+    {
+      "url": "https://www.computerhistory.org/timeline/computers/",
+      "host": "computerhistory.org",
+      "citation_count": 7,
+      "state": "reachable",
+      "books": [
+        "the-soul-of-a-new-machine",
+        "hackers-heroes-of-the-computer-revolution",
+        "dealers-of-lightning"
+      ]
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454256/",
       "host": "pmc.ncbi.nlm.nih.gov",
       "citation_count": 6,
@@ -2001,6 +2090,31 @@
       "books": [
         "on-the-origin-of-species",
         "the-blind-watchmaker"
+      ]
+    },
+    {
+      "url": "https://www.computerhistory.org/timeline/networking-the-web/",
+      "host": "computerhistory.org",
+      "citation_count": 6,
+      "state": "reachable",
+      "books": [
+        "the-soul-of-a-new-machine",
+        "where-wizards-stay-up-late",
+        "dealers-of-lightning",
+        "the-dream-machine",
+        "tubes"
+      ]
+    },
+    {
+      "url": "https://www.darpa.mil/news/features/arpanet",
+      "host": "darpa.mil",
+      "citation_count": 6,
+      "state": "reachable",
+      "books": [
+        "the-innovators",
+        "hackers-heroes-of-the-computer-revolution",
+        "where-wizards-stay-up-late",
+        "the-dream-machine"
       ]
     },
     {
@@ -2030,6 +2144,15 @@
       "state": "reachable",
       "books": [
         "the-ghosts-of-eden-park"
+      ]
+    },
+    {
+      "url": "https://computerhistory.org/blog/xerox-alto-source-code/",
+      "host": "computerhistory.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "dealers-of-lightning"
       ]
     },
     {
@@ -2107,6 +2230,15 @@
       ]
     },
     {
+      "url": "https://nsarchive.gwu.edu/document/17601-clifford-stoll-communications-acm",
+      "host": "nsarchive.gwu.edu",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-cuckoos-egg"
+      ]
+    },
+    {
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/jbi.13616",
       "host": "onlinelibrary.wiley.com",
       "citation_count": 3,
@@ -2116,10 +2248,28 @@
       ]
     },
     {
+      "url": "https://opensource.org/articles-books",
+      "host": "opensource.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-cathedral-and-the-bazaar"
+      ]
+    },
+    {
+      "url": "https://opensource.org/wp-content/uploads/2015/10/Report-on-the-International-Status-of-Open-Source-Software-2010.pdf",
+      "host": "opensource.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-cathedral-and-the-bazaar"
+      ]
+    },
+    {
       "url": "https://oro.open.ac.uk/7761/",
       "host": "oro.open.ac.uk",
       "citation_count": 3,
-      "state": "reachable",
+      "state": "access_blocked",
       "books": [
         "the-guns-of-august"
       ]
@@ -2343,6 +2493,15 @@
       ]
     },
     {
+      "url": "https://www.victorianweb.org/technology/letters/networks.html",
+      "host": "victorianweb.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-victorian-internet"
+      ]
+    },
+    {
       "url": "https://wwwnc.cdc.gov/eid/article/24/5/17-1609_article",
       "host": "wwwnc.cdc.gov",
       "citation_count": 3,
@@ -2441,6 +2600,16 @@
       "state": "reachable",
       "books": [
         "the-innovators"
+      ]
+    },
+    {
+      "url": "https://computerhistory.org/blog/silicon-valley-a-century-of-entrepreneurial-innovation/",
+      "host": "computerhistory.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "hackers-heroes-of-the-computer-revolution",
+        "dealers-of-lightning"
       ]
     },
     {
@@ -2631,6 +2800,15 @@
       "state": "reachable",
       "books": [
         "the-rise-and-fall-of-the-third-reich"
+      ]
+    },
+    {
+      "url": "https://mark.people.clemson.edu/330/eagle.html",
+      "host": "mark.people.clemson.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-soul-of-a-new-machine"
       ]
     },
     {
@@ -3078,12 +3256,23 @@
       ]
     },
     {
-      "url": "https://www.darpa.mil/news/features/arpanet",
+      "url": "https://www.computerhistory.org/internethistory/",
+      "host": "computerhistory.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-cuckoos-egg",
+        "tubes"
+      ]
+    },
+    {
+      "url": "https://www.darpa.mil/about/innovation-timeline/arpanet",
       "host": "darpa.mil",
       "citation_count": 2,
       "state": "reachable",
       "books": [
-        "the-innovators"
+        "the-innovators",
+        "the-dream-machine"
       ]
     },
     {
@@ -3120,6 +3309,24 @@
       "state": "reachable",
       "books": [
         "postwar"
+      ]
+    },
+    {
+      "url": "https://www.everycrsreport.com/files/2023-04-19_R47508_75f471ca8669816886ef7f732a2db33480aa487c.pdf",
+      "host": "everycrsreport.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "chip-war"
+      ]
+    },
+    {
+      "url": "https://www.everycrsreport.com/reports/R47558.html",
+      "host": "everycrsreport.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "chip-war"
       ]
     },
     {
@@ -3979,6 +4186,23 @@
       "error": null
     },
     {
+      "url": "https://arstechnica.com/gadgets/2012/06/what-the-internet-looks-like-physically/",
+      "citations": [
+        {
+          "slug": "tubes",
+          "claim_index": 3,
+          "source_title": "Ars Technica review of Tubes"
+        }
+      ],
+      "host": "arstechnica.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://arstechnica.com/gadgets/2012/06/what-the-internet-looks-like-physically/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://artefacts-discovery.researcher.life/full_text/DA-2/a2/a2750c7af1e83d94b8f4bf5b7643762d/full_text/5052d761f5a53095b8f3e077377807e7.pdf",
       "citations": [
         {
@@ -4139,9 +4363,9 @@
         }
       ],
       "host": "catalogues.royalsociety.org",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "transient",
+      "method": "GET",
+      "status": 502,
       "final_url": "https://catalogues.royalsociety.org/CalmView/Record.aspx?id=EC%2F1918%2F18&src=CalmView.Catalog",
       "redirected": false,
       "error": null
@@ -4350,6 +4574,55 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://computerhistory.org/blog/insight-into-the-innovators/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://computerhistory.org/blog/silicon-valley-a-century-of-entrepreneurial-innovation/",
+      "citations": [
+        {
+          "slug": "hackers-heroes-of-the-computer-revolution",
+          "claim_index": 2,
+          "source_title": "Computer History Museum Silicon Valley history"
+        },
+        {
+          "slug": "dealers-of-lightning",
+          "claim_index": 2,
+          "source_title": "Computer History Museum Silicon Valley history"
+        }
+      ],
+      "host": "computerhistory.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://computerhistory.org/blog/silicon-valley-a-century-of-entrepreneurial-innovation/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://computerhistory.org/blog/xerox-alto-source-code/",
+      "citations": [
+        {
+          "slug": "dealers-of-lightning",
+          "claim_index": 1,
+          "source_title": "Computer History Museum Xerox Alto source history"
+        },
+        {
+          "slug": "dealers-of-lightning",
+          "claim_index": 2,
+          "source_title": "Computer History Museum Xerox Alto source history"
+        },
+        {
+          "slug": "dealers-of-lightning",
+          "claim_index": 3,
+          "source_title": "Computer History Museum Xerox Alto source history"
+        }
+      ],
+      "host": "computerhistory.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://computerhistory.org/blog/xerox-alto-source-code/",
       "redirected": false,
       "error": null
     },
@@ -4726,7 +4999,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=29bdfc18-2ae3-4689-b56e-dd5db9b3ab6f",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5",
       "redirected": true,
       "error": null
     },
@@ -4758,7 +5031,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=26537bcf-2238-4e94-b815-d9312e391cbf",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=a8abc299-763e-42cd-8f79-a864199ee5d5",
       "redirected": true,
       "error": null
     },
@@ -4775,7 +5048,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=91d6d431-da2a-4d7e-b491-eda0b08d5502",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=08e7ac74-8b2b-40dc-9f0e-30a3b6f5b622",
       "redirected": true,
       "error": null
     },
@@ -4797,7 +5070,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnplants201793&code=bd2758fd-5fe2-4ca2-aba7-415b6cb14c48",
+      "final_url": "https://www.nature.com/articles/nplants201793",
       "redirected": true,
       "error": null
     },
@@ -4819,7 +5092,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=7e8a6eaf-96ca-4d25-ba6c-58dbe23f1714",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=3664fe22-b490-4d14-948f-6640edd0deb1",
       "redirected": true,
       "error": null
     },
@@ -4836,7 +5109,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-023-43426-5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=92b8207a-4d68-4dd9-be02-9b1b8f92789b",
       "redirected": true,
       "error": null
     },
@@ -4853,7 +5126,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=807a3d14-bd04-4282-8282-1b2602458ab1",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=7bd9c1df-cd80-4784-b5a6-4e5167cf66d3",
       "redirected": true,
       "error": null
     },
@@ -4870,7 +5143,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=a7d15297-494b-45c1-b096-01e87ce66c33",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=67c919a9-1c05-4c29-a05b-2f989a7bc2cd",
       "redirected": true,
       "error": null
     },
@@ -4904,7 +5177,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=e8a7b5dc-e628-4af1-bfbe-8a9795843cee",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=2c3b1721-2740-4094-8be7-69d20a630fa7",
       "redirected": true,
       "error": null
     },
@@ -6227,7 +6500,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=4a14d931-4324-418e-9d68-2b9058fd76d5",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=10c82be7-84dd-4942-8d27-8bba0f609323",
       "redirected": true,
       "error": null
     },
@@ -6278,7 +6551,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=b793b20a-01a1-4056-be71-683bc44d01ea",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=913abda9-6dfa-44ac-9ea0-e580a0b895a5",
       "redirected": true,
       "error": null
     },
@@ -6295,7 +6568,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=155d1f70-185b-4eca-88ca-2d6da1e738ac",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=84701c9a-d18c-4d1f-a4f0-a36326310090",
       "redirected": true,
       "error": null
     },
@@ -6352,6 +6625,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://marcuse.faculty.history.ucsb.edu/classes/201/articles/94RosenfeldShirerJCH.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://mark.people.clemson.edu/330/eagle.html",
+      "citations": [
+        {
+          "slug": "the-soul-of-a-new-machine",
+          "claim_index": 1,
+          "source_title": "Data General Eagle project notes"
+        },
+        {
+          "slug": "the-soul-of-a-new-machine",
+          "claim_index": 2,
+          "source_title": "Data General Eagle project notes"
+        }
+      ],
+      "host": "mark.people.clemson.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://mark.people.clemson.edu/330/eagle.html",
       "redirected": false,
       "error": null
     },
@@ -6680,6 +6975,33 @@
       "error": null
     },
     {
+      "url": "https://nsarchive.gwu.edu/document/17601-clifford-stoll-communications-acm",
+      "citations": [
+        {
+          "slug": "the-cuckoos-egg",
+          "claim_index": 1,
+          "source_title": "Stalking the Wily Hacker archival copy"
+        },
+        {
+          "slug": "the-cuckoos-egg",
+          "claim_index": 2,
+          "source_title": "Stalking the Wily Hacker archival copy"
+        },
+        {
+          "slug": "the-cuckoos-egg",
+          "claim_index": 3,
+          "source_title": "Stalking the Wily Hacker archival copy"
+        }
+      ],
+      "host": "nsarchive.gwu.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nsarchive.gwu.edu/document/17601-clifford-stoll-communications-acm",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20040006526.pdf",
       "citations": [
         {
@@ -6831,6 +7153,60 @@
       "error": null
     },
     {
+      "url": "https://opensource.org/articles-books",
+      "citations": [
+        {
+          "slug": "the-cathedral-and-the-bazaar",
+          "claim_index": 1,
+          "source_title": "Open Source Initiative articles and books"
+        },
+        {
+          "slug": "the-cathedral-and-the-bazaar",
+          "claim_index": 2,
+          "source_title": "Open Source Initiative articles and books"
+        },
+        {
+          "slug": "the-cathedral-and-the-bazaar",
+          "claim_index": 3,
+          "source_title": "Open Source Initiative articles and books"
+        }
+      ],
+      "host": "opensource.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://opensource.org/articles-books",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://opensource.org/wp-content/uploads/2015/10/Report-on-the-International-Status-of-Open-Source-Software-2010.pdf",
+      "citations": [
+        {
+          "slug": "the-cathedral-and-the-bazaar",
+          "claim_index": 1,
+          "source_title": "OSI report on open-source ecosystem models"
+        },
+        {
+          "slug": "the-cathedral-and-the-bazaar",
+          "claim_index": 2,
+          "source_title": "OSI report on open-source ecosystem models"
+        },
+        {
+          "slug": "the-cathedral-and-the-bazaar",
+          "claim_index": 3,
+          "source_title": "OSI report on open-source ecosystem models"
+        }
+      ],
+      "host": "opensource.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://opensource.org/wp-content/uploads/2015/10/Report-on-the-International-Status-of-Open-Source-Software-2010.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://openurl.ebsco.com/contentitem/doi%3A10.1023/a%3A1024420102334?id=ebsco%3Adoi%3A10.1023%2Fa%3A1024420102334",
       "citations": [
         {
@@ -6923,9 +7299,9 @@
         }
       ],
       "host": "oro.open.ac.uk",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://oro.open.ac.uk/7761/",
       "redirected": false,
       "error": null
@@ -8477,7 +8853,7 @@
       ],
       "host": "ruj.uj.edu.pl",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://ruj.uj.edu.pl//handle/item/68230",
       "redirected": true,
@@ -8656,9 +9032,9 @@
         }
       ],
       "host": "search.worldcat.org",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 429,
       "final_url": "https://search.worldcat.org/title/1028660910",
       "redirected": false,
       "error": null
@@ -9191,9 +9567,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-genet-021920-011805",
       "redirected": false,
       "error": null
@@ -10191,12 +10567,145 @@
       "error": null
     },
     {
+      "url": "https://www.computerhistory.org/internethistory/",
+      "citations": [
+        {
+          "slug": "the-cuckoos-egg",
+          "claim_index": 3,
+          "source_title": "Computer History Museum internet history"
+        },
+        {
+          "slug": "tubes",
+          "claim_index": 2,
+          "source_title": "Computer History Museum internet history"
+        }
+      ],
+      "host": "computerhistory.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.computerhistory.org/internethistory/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.computerhistory.org/internethistory/1980s/",
+      "citations": [
+        {
+          "slug": "the-cuckoos-egg",
+          "claim_index": 2,
+          "source_title": "Computer History Museum 1980s internet history"
+        }
+      ],
+      "host": "computerhistory.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.computerhistory.org/internethistory/1980s/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.computerhistory.org/timeline/computers/",
+      "citations": [
+        {
+          "slug": "the-soul-of-a-new-machine",
+          "claim_index": 1,
+          "source_title": "Computer History Museum computer timeline"
+        },
+        {
+          "slug": "the-soul-of-a-new-machine",
+          "claim_index": 2,
+          "source_title": "Computer History Museum computer timeline"
+        },
+        {
+          "slug": "the-soul-of-a-new-machine",
+          "claim_index": 3,
+          "source_title": "Computer History Museum computer timeline"
+        },
+        {
+          "slug": "hackers-heroes-of-the-computer-revolution",
+          "claim_index": 1,
+          "source_title": "Computer History Museum computer timeline"
+        },
+        {
+          "slug": "hackers-heroes-of-the-computer-revolution",
+          "claim_index": 2,
+          "source_title": "Computer History Museum computer timeline"
+        },
+        {
+          "slug": "hackers-heroes-of-the-computer-revolution",
+          "claim_index": 3,
+          "source_title": "Computer History Museum computer timeline"
+        },
+        {
+          "slug": "dealers-of-lightning",
+          "claim_index": 3,
+          "source_title": "Computer History Museum computer timeline"
+        }
+      ],
+      "host": "computerhistory.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.computerhistory.org/timeline/computers/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.computerhistory.org/timeline/networking-the-web/",
+      "citations": [
+        {
+          "slug": "the-soul-of-a-new-machine",
+          "claim_index": 3,
+          "source_title": "Computer History Museum networking timeline"
+        },
+        {
+          "slug": "where-wizards-stay-up-late",
+          "claim_index": 2,
+          "source_title": "Computer History Museum networking timeline"
+        },
+        {
+          "slug": "where-wizards-stay-up-late",
+          "claim_index": 3,
+          "source_title": "Computer History Museum networking timeline"
+        },
+        {
+          "slug": "dealers-of-lightning",
+          "claim_index": 1,
+          "source_title": "Computer History Museum networking timeline"
+        },
+        {
+          "slug": "the-dream-machine",
+          "claim_index": 3,
+          "source_title": "Computer History Museum networking timeline"
+        },
+        {
+          "slug": "tubes",
+          "claim_index": 1,
+          "source_title": "Computer History Museum networking timeline"
+        }
+      ],
+      "host": "computerhistory.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.computerhistory.org/timeline/networking-the-web/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.darpa.mil/about/innovation-timeline/arpanet",
       "citations": [
         {
           "slug": "the-innovators",
           "claim_index": 3,
           "source_title": "DARPA innovation timeline: ARPANET"
+        },
+        {
+          "slug": "the-dream-machine",
+          "claim_index": 1,
+          "source_title": "DARPA ARPANET innovation timeline"
         }
       ],
       "host": "darpa.mil",
@@ -10219,6 +10728,26 @@
           "slug": "the-innovators",
           "claim_index": 3,
           "source_title": "DARPA: Evolution of ARPANET"
+        },
+        {
+          "slug": "hackers-heroes-of-the-computer-revolution",
+          "claim_index": 1,
+          "source_title": "DARPA history of ARPANET"
+        },
+        {
+          "slug": "where-wizards-stay-up-late",
+          "claim_index": 1,
+          "source_title": "DARPA history of ARPANET"
+        },
+        {
+          "slug": "the-dream-machine",
+          "claim_index": 1,
+          "source_title": "DARPA history of ARPANET"
+        },
+        {
+          "slug": "the-dream-machine",
+          "claim_index": 2,
+          "source_title": "DARPA history of ARPANET"
         }
       ],
       "host": "darpa.mil",
@@ -10494,6 +11023,50 @@
       "method": "HEAD",
       "status": 202,
       "final_url": "https://www.europarl.europa.eu/100books/en/downloadPDF?details=true&id=124",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.everycrsreport.com/files/2023-04-19_R47508_75f471ca8669816886ef7f732a2db33480aa487c.pdf",
+      "citations": [
+        {
+          "slug": "chip-war",
+          "claim_index": 1,
+          "source_title": "CRS semiconductor supply chain report"
+        },
+        {
+          "slug": "chip-war",
+          "claim_index": 2,
+          "source_title": "CRS mature semiconductor technologies report"
+        }
+      ],
+      "host": "everycrsreport.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.everycrsreport.com/files/2023-04-19_R47508_75f471ca8669816886ef7f732a2db33480aa487c.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.everycrsreport.com/reports/R47558.html",
+      "citations": [
+        {
+          "slug": "chip-war",
+          "claim_index": 2,
+          "source_title": "CRS Semiconductors and the CHIPS Act global context"
+        },
+        {
+          "slug": "chip-war",
+          "claim_index": 3,
+          "source_title": "CRS Semiconductors and the CHIPS Act global context"
+        }
+      ],
+      "host": "everycrsreport.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.everycrsreport.com/reports/R47558.html",
       "redirected": false,
       "error": null
     },
@@ -11404,6 +11977,78 @@
       "error": null
     },
     {
+      "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+      "citations": [
+        {
+          "slug": "hackers-heroes-of-the-computer-revolution",
+          "claim_index": 3,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "the-cuckoos-egg",
+          "claim_index": 1,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "where-wizards-stay-up-late",
+          "claim_index": 1,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "where-wizards-stay-up-late",
+          "claim_index": 2,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "where-wizards-stay-up-late",
+          "claim_index": 3,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "the-victorian-internet",
+          "claim_index": 1,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "the-victorian-internet",
+          "claim_index": 3,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "the-dream-machine",
+          "claim_index": 2,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "the-dream-machine",
+          "claim_index": 3,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "tubes",
+          "claim_index": 1,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "tubes",
+          "claim_index": 2,
+          "source_title": "Internet Society brief history"
+        },
+        {
+          "slug": "tubes",
+          "claim_index": 3,
+          "source_title": "Internet Society brief history"
+        }
+      ],
+      "host": "internetsociety.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.ipbes.net/system/files/2021-06/2020%20IPBES%20GLOBAL%20REPORT%28FIRST%20PART%29_V3_SINGLE.pdf",
       "citations": [
         {
@@ -12192,12 +12837,12 @@
         }
       ],
       "host": "nationalmuseum.af.mil",
-      "state": "access_blocked",
+      "state": "network_error",
       "method": "GET",
-      "status": 403,
-      "final_url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/198056/lockheed-f-117a-nighthawk/",
+      "status": null,
+      "final_url": null,
       "redirected": false,
-      "error": null
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://www.nature.com/articles/171737a0",
@@ -12212,8 +12857,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/171737a0",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2F171737a0&code=96d6a97a-cc01-4c47-907a-6c688ca763e4",
+      "redirected": true,
       "error": null
     },
     {
@@ -12246,8 +12891,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=955b9fbb-e563-4d30-9ff9-d7a06e2c4638",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/d41586-024-00544-4",
+      "redirected": false,
       "error": null
     },
     {
@@ -12273,7 +12918,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature09678?error=cookies_not_supported&code=8f8122c6-4042-4063-bb60-2a1fc0ec9acc",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=1fde1600-c399-4bcd-a64c-8871f62ab259",
       "redirected": true,
       "error": null
     },
@@ -12300,7 +12945,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=e8e6a539-48c1-498b-b082-34c5a7ff0031",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=ea65c077-e72b-45bc-ba59-ed7b5a314452",
       "redirected": true,
       "error": null
     },
@@ -12322,7 +12967,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=108c0328-a6a2-4fb5-8b2a-5fb7e182f4d6",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=17ab7b8d-330a-43bf-85a5-c06f22cc6614",
       "redirected": true,
       "error": null
     },
@@ -12339,8 +12984,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4",
+      "redirected": true,
       "error": null
     },
     {
@@ -12373,7 +13018,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=b0933cb5-3bae-449d-8686-cbff2831464a",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=dfb9526a-007e-4548-a8a8-e19a48f0e9b2",
       "redirected": true,
       "error": null
     },
@@ -12390,8 +13035,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-022-00537-x",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-022-00537-x&code=357eb4de-c00c-403f-8b41-63fb041347aa",
+      "redirected": true,
       "error": null
     },
     {
@@ -12407,7 +13052,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=4f517031-f6f6-4459-80ce-9b64e8e2d357",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=2925e49a-d688-4c3f-948f-f15bbd5317c5",
       "redirected": true,
       "error": null
     },
@@ -12429,7 +13074,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=467a1dbe-70f4-4af7-bc13-ba7bc11592a6",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=18263d85-0b70-4e4c-8b8a-7c7502f86da5",
       "redirected": true,
       "error": null
     },
@@ -13190,9 +13835,9 @@
         }
       ],
       "host": "rct.uk",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 403,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://www.rct.uk/collection",
       "redirected": true,
       "error": null
@@ -13661,6 +14306,40 @@
       "error": null
     },
     {
+      "url": "https://www.semi.org/en/about-semi-membership/about-semi",
+      "citations": [
+        {
+          "slug": "chip-war",
+          "claim_index": 3,
+          "source_title": "SEMI industry history and scope"
+        }
+      ],
+      "host": "semi.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.semi.org/en/about-semi-membership/about-semi",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.semi.org/en/industry-groups/supply-chain-management",
+      "citations": [
+        {
+          "slug": "chip-war",
+          "claim_index": 1,
+          "source_title": "SEMI supply chain initiative"
+        }
+      ],
+      "host": "semi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.semi.org/en/industry-groups/supply-chain-management",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.shackletonfoundation.org/resources/",
       "citations": [
         {
@@ -13885,6 +14564,23 @@
       "error": null
     },
     {
+      "url": "https://www.timeshighereducation.com/books/19th-century-cyberspace/161000.article",
+      "citations": [
+        {
+          "slug": "the-victorian-internet",
+          "claim_index": 2,
+          "source_title": "The Victorian Internet review"
+        }
+      ],
+      "host": "timeshighereducation.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.timeshighereducation.com/books/19th-century-cyberspace/161000.article",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.timeshighereducation.com/books/the-canon-the-origins-of-the-second-world-war-by-ajp-taylor/406820.article",
       "citations": [
         {
@@ -13964,6 +14660,33 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.usni.org/magazines/naval-history-magazine/2015/june/looking-back-fatal-chain",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.victorianweb.org/technology/letters/networks.html",
+      "citations": [
+        {
+          "slug": "the-victorian-internet",
+          "claim_index": 1,
+          "source_title": "Victorian Web communications networks history"
+        },
+        {
+          "slug": "the-victorian-internet",
+          "claim_index": 2,
+          "source_title": "Victorian Web communications networks history"
+        },
+        {
+          "slug": "the-victorian-internet",
+          "claim_index": 3,
+          "source_title": "Victorian Web communications networks history"
+        }
+      ],
+      "host": "victorianweb.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.victorianweb.org/technology/letters/networks.html",
       "redirected": false,
       "error": null
     },
