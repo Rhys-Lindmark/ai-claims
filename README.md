@@ -16,6 +16,8 @@ Download the [`extension-v0.2.16` pre-release](https://github.com/Rhys-Lindmark/
 
 The public Claims page includes an open-source architecture map linking each extension boundary—detection, canonicalization, resolution, publication gate, and badge/evidence output—to its implementation and privacy rule.
 
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the credential-free setup, privacy invariants, required checks, and safe first-issue workflow.
+
 Open the [synthetic YouTube pipeline](https://ai.rhyslindmark.com/claims/episode?entity_key=youtube%3Aai-claims-synthetic-001), or verify its deployed resolver-to-route contract with `npm run test:deployed-youtube`.
 
 ## Validate
