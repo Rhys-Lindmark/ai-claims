@@ -575,6 +575,270 @@
         }
       ],
       "other_claims": ["Ocean acidification threatens calcifying organisms and reef systems.", "Moving species around the planet creates a new, human-directed form of ecological selection."]
+    },
+    {
+      "slug": "a-short-history-of-nearly-everything",
+      "entity_key": "web:billbrysonbooks.com/book/a-short-history-of-nearly-everything",
+      "title": "A Short History of Nearly Everything",
+      "subtitle": "A journey through modern science",
+      "author": "Bill Bryson",
+      "year": 2003,
+      "score": 92,
+      "confidence": "medium",
+      "summary": "Its deep-time scaffold and account of a catastrophe-shaped Earth remain strong, while a book spanning nearly all science inevitably contains dated details and turns provisional estimates into cleaner stories.",
+      "claims": [
+        {
+          "claim": "The universe is about 13.8 billion years old, while Earth formed roughly 4.5 billion years ago.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Modern cosmological observations converge near 13.8 billion years, and radiometric evidence places Earth at about 4.54 billion years. These are model-based estimates with uncertainties, but the book's basic deep-time scale remains consistent with current institutional summaries.",
+          "sources": [
+            { "title": "NASA: What is the Universe?", "url": "https://science.nasa.gov/exoplanets/what-is-the-universe/" },
+            { "title": "USGS: Time's Ruler", "url": "https://pubs.usgs.gov/fs/2007/3004/pdf/FS07-3004_508.pdf" }
+          ]
+        },
+        {
+          "claim": "Earth's biological history has been repeatedly redirected by rare catastrophes and mass extinctions.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The geological record securely identifies five unusually large extinction intervals, and the end-Cretaceous impact provides a strong example of abrupt external forcing. Causes and selectivity differ across events, with volcanism, climate, oceans, and ecological feedbacks resisting one catastrophe template.",
+          "sources": [
+            { "title": "Extraterrestrial cause for the Cretaceous-Tertiary extinction", "url": "https://doi.org/10.1126/science.208.4448.1095" },
+            { "title": "Has the Earth's sixth mass extinction already arrived?", "url": "https://www.nature.com/articles/nature09678" }
+          ]
+        },
+        {
+          "claim": "Modern humans occupy only a tiny final interval of Earth's history and arose through the same evolutionary processes as other life.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Earth's 4.54-billion-year chronology places Homo sapiens in only the latest roughly 300,000 years. Fossils, archaeology, comparative anatomy, and genetics jointly support human common ancestry and evolutionary emergence rather than a separate or ancient human origin.",
+          "sources": [
+            { "title": "Smithsonian Human Evolution", "url": "https://humanorigins.si.edu/education/introduction-human-evolution" },
+            { "title": "USGS: Time's Ruler", "url": "https://pubs.usgs.gov/fs/2007/3004/pdf/FS07-3004_508.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["Most of the universe's mass-energy is not ordinary matter.", "Large parts of Earth's biodiversity remain undescribed."]
+    },
+    {
+      "slug": "the-gene",
+      "entity_key": "web:siddharthamukherjee.com/the-gene",
+      "title": "The Gene",
+      "subtitle": "An Intimate History",
+      "author": "Siddhartha Mukherjee",
+      "year": 2016,
+      "score": 92,
+      "confidence": "medium-high",
+      "summary": "The molecular history and warning against simple genetic fate are well grounded; its frontier discussion of epigenetic inheritance and future intervention is necessarily more provisional.",
+      "claims": [
+        {
+          "claim": "Genes are DNA-based units of inheritance whose information helps specify biological traits.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Genes are inherited DNA segments that encode functional RNA or contribute instructions for proteins, and DNA sequence carries biological information. The modern definition has fuzzy boundaries and includes regulation, but the book's central molecular account is secure.",
+          "sources": [
+            { "title": "NHGRI genetics glossary: Gene", "url": "https://www.genome.gov/genetics-glossary/Gene" },
+            { "title": "NHGRI DNA fact sheet", "url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet" }
+          ]
+        },
+        {
+          "claim": "Most human traits and common diseases cannot be reduced to one gene because genes interact with other genes and environments.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Complex traits generally reflect many variants, regulatory systems, development, and physical and social exposures. Both genome-science guidance and later conceptual reviews reject the idea that a DNA variant mechanically fixes most phenotypes while preserving real genetic causation.",
+          "sources": [
+            { "title": "NHGRI: Gene–Environment Interaction", "url": "https://www.genome.gov/genetics-glossary/Gene-Environment-Interaction" },
+            { "title": "Genetic determinism, essentialism and reductionism", "url": "https://www.nature.com/articles/s41576-022-00537-x" }
+          ]
+        },
+        {
+          "claim": "Genome editing makes deliberate inherited biological change technically plausible and creates serious medical and ethical risks.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "CRISPR and related tools can alter DNA with unprecedented precision, including changes that could enter the germ line. Safe, predictable enhancement remains far from routine because off-target effects, mosaicism, polygenic traits, consent across generations, and social inequality remain unresolved.",
+          "sources": [
+            { "title": "NHGRI: Genome Editing", "url": "https://www.genome.gov/dna-day/15-ways/genome-editing" },
+            { "title": "National Academies: Human Genome Editing", "url": "https://www.nationalacademies.org/projects/HMD-HSP-18-18/publication/25665" }
+          ]
+        }
+      ],
+      "other_claims": ["Eugenics repeatedly converted heredity research into coercive social policy.", "The definition of a gene has changed as molecular biology has exposed regulatory complexity."]
+    },
+    {
+      "slug": "the-emperor-of-all-maladies",
+      "entity_key": "web:siddharthamukherjee.com/the-emperor-of-all-maladies",
+      "title": "The Emperor of All Maladies",
+      "subtitle": "A Biography of Cancer",
+      "author": "Siddhartha Mukherjee",
+      "year": 2010,
+      "score": 92,
+      "confidence": "medium-high",
+      "summary": "Its core biology and treatment history are strong. The biography metaphor captures continuity while current oncology reinforces the book's deeper point: cancer is many evolving diseases, not one enemy awaiting one cure.",
+      "claims": [
+        {
+          "claim": "Cancer is a collection of related diseases in which genetic changes let abnormal cells grow, survive, and sometimes spread.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Cancer begins in many tissues and contains heterogeneous genetic and cellular states, but uncontrolled growth and invasion connect the category. Mutations, chromosomal alterations, epigenetic change, immune evasion, and the tumor environment all contribute, matching the book's plural account.",
+          "sources": [
+            { "title": "National Cancer Institute: What Is Cancer?", "url": "https://www.cancer.gov/about-cancer/understanding/what-is-cancer" },
+            { "title": "National Cancer Institute: Understanding Cancer", "url": "https://www.cancer.gov/about-cancer/understanding" }
+          ]
+        },
+        {
+          "claim": "Cancer treatment advanced through surgery, radiation, chemotherapy, and later molecularly targeted therapies rather than one linear breakthrough.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The historical record documents distinct treatment modalities, repeated failures, combination regimens, and later drugs selected by tumor features. Older approaches remain essential, while targeted treatment and immunotherapy extend rather than erase the prior therapeutic history.",
+          "sources": [
+            { "title": "NCI milestones in cancer research and discovery", "url": "https://www.cancer.gov/research/progress/250-years-milestones" },
+            { "title": "The Emperor of All Maladies: clinical review", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3007170/" }
+          ]
+        },
+        {
+          "claim": "There will not be one universal cure for cancer; progress comes unevenly through prevention, early detection, control, and subtype-specific treatment.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Biological diversity within and across cancers makes one intervention implausible, while outcomes have improved dramatically for some cancers and little for others. The categorical prediction cannot be proved, and platform therapies can cross tissue types, but the portfolio view fits current practice.",
+          "sources": [
+            { "title": "NCI cancer genome research and precision medicine", "url": "https://www.cancer.gov/ccg/research/cancer-genomics-overview" },
+            { "title": "The Emperor of All Maladies: clinical review", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3007170/" }
+          ]
+        }
+      ],
+      "other_claims": ["The link between smoking and lung cancer made prevention central to cancer control.", "Patient advocacy changed research priorities and treatment norms."]
+    },
+    {
+      "slug": "the-immortal-life-of-henrietta-lacks",
+      "entity_key": "web:rebeccaskloot.com/the-immortal-life",
+      "title": "The Immortal Life of Henrietta Lacks",
+      "subtitle": "The woman behind the HeLa cell line",
+      "author": "Rebecca Skloot",
+      "year": 2010,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The book's central factual account is exceptionally well corroborated: the cells were taken without her knowledge, transformed research, and exposed lasting failures of consent, privacy, communication, and benefit sharing.",
+      "claims": [
+        {
+          "claim": "Cells taken during Henrietta Lacks's 1951 cervical-cancer treatment became HeLa without her knowledge or consent.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "NIH records identify the biopsy source, patient, hospital, year, diagnosis, and absence of knowledge or consent. Tissue collection followed practices then common and not clearly prohibited, but that historical legal context does not change the factual absence of permission.",
+          "sources": [
+            { "title": "NIH–Lacks Family Agreement", "url": "https://www.grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms/privacy/nih-lacks-family-agreement" },
+            { "title": "JAMA: Remembering the Legacy of Henrietta Lacks", "url": "https://jamanetwork.com/journals/jama/fullarticle/2769506" }
+          ]
+        },
+        {
+          "claim": "HeLa cells became an unusually durable and important tool across biomedical research.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "HeLa's ability to proliferate made it a widely distributed experimental system. NIH found more than 110,000 publications citing HeLa use from 1953 through 2018 and connects the line to work in cancer, infectious disease, vaccines, cloning, and other fields.",
+          "sources": [
+            { "title": "NIH Office of Science Policy: HeLa Cells", "url": "https://osp.od.nih.gov/hela-cells/" },
+            { "title": "NIH HeLa Genome Data Access Working Group charge", "url": "https://acd.od.nih.gov/documents/charges/HeLaWGcharge.pdf" }
+          ]
+        },
+        {
+          "claim": "The Lacks family's experience reveals serious failures of consent, privacy, communication, and respect in biospecimen research.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Later disclosure of identity and genome data affected relatives who had not chosen participation, and institutions now cite the case when strengthening autonomy and family involvement. Some modern consent expectations postdate 1951, so present standards should not be projected backward without context.",
+          "sources": [
+            { "title": "Lessons from HeLa Cells: ethics and policy of biospecimens", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5072843/" },
+            { "title": "Johns Hopkins: Upholding Bioethical Standards", "url": "https://www.hopkinsmedicine.org/henrietta-lacks/upholding-the-highest-bioethical-standards" }
+          ]
+        }
+      ],
+      "other_claims": ["The family's lack of access to health care sharpened the injustice of commercial use of HeLa.", "HeLa contamination also created major problems for cell-culture science."]
+    },
+    {
+      "slug": "longitude",
+      "entity_key": "web:davasobel.com/longitude",
+      "title": "Longitude",
+      "subtitle": "The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time",
+      "author": "Dava Sobel",
+      "year": 1995,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "Harrison's timekeepers were extraordinary and central to practical longitude, but the subtitle's lone-genius story understates lunar methods, institutional support, replication, cost, and later makers.",
+      "claims": [
+        {
+          "claim": "Determining longitude at sea required either an accurate reference time or demanding astronomical observations that eighteenth-century navigation struggled to supply.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Longitude follows from the difference between local time and a reference meridian, but ship motion, temperature, friction, and imperfect clocks defeated ordinary timekeepers. Lunar distances became viable through instruments, tables, and almanacs, yet required more calculation and observation.",
+          "sources": [
+            { "title": "Royal Observatory: the quest for longitude", "url": "https://www.royalobservatorygreenwich.org/articles.php?article=1290" },
+            { "title": "Royal Museums Greenwich: Harrison's clocks", "url": "https://www.rmg.co.uk/stories/time/harrisons-clocks-longitude-problem" }
+          ]
+        },
+        {
+          "claim": "John Harrison's marine timekeepers demonstrated that sufficiently accurate shipboard clocks could determine longitude.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Harrison's sequence from H1 through H4 culminated in a watch that met the Board's accuracy standard on sea trials and established the technical principle. Practical mass adoption depended on later, cheaper chronometers and continued trials rather than H4 alone.",
+          "sources": [
+            { "title": "Royal Museums Greenwich: Harrison's clocks", "url": "https://www.rmg.co.uk/stories/time/harrisons-clocks-longitude-problem" },
+            { "title": "Royal Museums Greenwich: Board of Longitude explainer", "url": "https://www.rmg.co.uk/sites/default/files/import/media/pdf/H4.pdf" }
+          ]
+        },
+        {
+          "claim": "A hostile scientific establishment withheld recognition from a lone craftsman whose clock straightforwardly solved the longitude problem.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Harrison endured genuine conflict over tests, disclosure, replication, and payment, and ultimately appealed to Parliament. Historians show that the Board also gave him exceptional long-term financial support, that lunar methods worked, and that expensive prototypes were not yet a fleet-wide solution.",
+          "sources": [
+            { "title": "Challenging Tropes: Genius, Heroic Invention, and the Longitude Problem", "url": "https://www.journals.uchicago.edu/doi/full/10.1086/692691" },
+            { "title": "Prizes, patents and the search for longitude", "url": "https://www.hbs.edu/ris/Publication%20Files/Longitude_e207c234-9b02-4be8-b5c2-252b42c04ec7.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["The 1707 Scilly disaster helped create political urgency for a longitude reward.", "Nevil Maskelyne's role was more complex than the book's antagonist framing."]
+    },
+    {
+      "slug": "the-invention-of-nature",
+      "entity_key": "web:andreawulf.com/about-the-invention-of-nature.html",
+      "title": "The Invention of Nature",
+      "subtitle": "Alexander von Humboldt's New World",
+      "author": "Andrea Wulf",
+      "year": 2015,
+      "score": 83,
+      "confidence": "medium",
+      "summary": "Humboldt's integrative science and immense influence are real; describing him as the forgotten inventor of environmentalism makes a compelling biography but compresses collaborative traditions and later reinvention into one heroic lineage.",
+      "claims": [
+        {
+          "claim": "Alexander von Humboldt treated nature as an interconnected system in which organisms, climate, geology, and human action interact.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Humboldt deliberately combined measurement across disciplines and described reciprocal relations between organisms and environments. His work connected vegetation, altitude, temperature, geography, and land use in ways recognizable within later ecological and Earth-system thinking.",
+          "sources": [
+            { "title": "Humboldt's legacy", "url": "https://www.nature.com/articles/s41559-019-0980-5" },
+            { "title": "Humboldt's relevance to biogeography today", "url": "https://onlinelibrary.wiley.com/doi/10.1111/jbi.13616" }
+          ]
+        },
+        {
+          "claim": "Humboldt helped found modern plant geography by relating species distributions to climate, latitude, and elevation.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "His comparative measurements and visualizations linked vegetation zones with physical gradients across regions, shaping biogeography's later questions and methods. He did not work in isolation, but his synthesis, global comparisons, and communication had durable disciplinary impact.",
+          "sources": [
+            { "title": "Humboldt's relevance to biogeography today", "url": "https://onlinelibrary.wiley.com/doi/10.1111/jbi.13616" },
+            { "title": "Humboldt's legacy", "url": "https://www.nature.com/articles/s41559-019-0980-5" }
+          ]
+        },
+        {
+          "claim": "Humboldt was the singular forgotten source of Darwin's evolutionary thinking and modern environmentalism.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Darwin read and admired Humboldt, and scholars trace real influence on evolutionary, conservation, and nature-writing traditions. The singular-source formulation is biographical compression: Humboldt drew on networks of collaborators and predecessors, while later environmentalism had many independent roots.",
+          "sources": [
+            { "title": "Humboldt's relevance to biogeography today", "url": "https://onlinelibrary.wiley.com/doi/10.1111/jbi.13616" },
+            { "title": "Historical review of The Invention of Nature", "url": "https://revistas.unal.edu.co/index.php/achsc/article/view/71038" }
+          ]
+        }
+      ],
+      "other_claims": ["Humboldt warned that colonial agriculture and deforestation could alter climate.", "His scientific diagrams changed how complex environmental relationships were communicated."]
     }
   ]
 }
