@@ -34,7 +34,7 @@ assert.ok(packet.dependencies.every((edge) => edge.from_group_id !== edge.to_gro
 
 const evidenceIds = new Set(packet.evidence_records.map((record) => record.evidence_id));
 assert.equal(evidenceIds.size, packet.evidence_records.length);
-assert.equal(packet.evidence_records.length, 15);
+assert.equal(packet.evidence_records.length, 17);
 assert.ok(packet.claims.every((claim) => claim.evidence_record_ids.every((evidenceId) => evidenceIds.has(evidenceId))));
 assert.ok(packet.evidence_records.every((record) => ['supports', 'complicates', 'contradicts'].includes(record.direction)));
 assert.ok(packet.evidence_records.every((record) => record.finding.length > 50 && record.scope_and_limits.length > 50));
@@ -44,7 +44,7 @@ assert.ok(packet.evidence_records.every((record) => ['low', 'medium', 'high'].in
 assert.ok(packet.evidence_records.every((record) => /^2026-08-(30|31)$/.test(record.last_verified_at)));
 const axisClaims = packet.claims.filter((claim) => ['ggs-claim-03', 'ggs-claim-07', 'ggs-claim-08'].includes(claim.claim_id));
 assert.equal(axisClaims.length, 3);
-assert.deepEqual(axisClaims.map((claim) => claim.evidence_record_ids.length), [10, 1, 1]);
+assert.deepEqual(axisClaims.map((claim) => claim.evidence_record_ids.length), [12, 1, 1]);
 assert.equal(packet.evidence_records.find((record) => record.claim_id === 'ggs-claim-03').direction, 'complicates');
 assert.equal(packet.evidence_records.find((record) => record.claim_id === 'ggs-claim-07').direction, 'supports');
 assert.equal(packet.evidence_records.find((record) => record.claim_id === 'ggs-claim-08').direction, 'supports');
@@ -61,5 +61,5 @@ assert.ok(packet.sources.filter((source) => source.independence === 'independent
 const serialized = JSON.stringify(packet);
 assert.ok(!serialized.match(/"score_0_100":\s*\d/));
 assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs-claim-03' && record.direction === 'supports').length, 2);
-assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs-claim-03' && record.direction === 'complicates').length, 8);
-console.log('real book packet: 8 passage-unconfirmed candidates, 15 scoped evidence records, aggregate score locked');
+assert.equal(packet.evidence_records.filter((record) => record.claim_id === 'ggs-claim-03' && record.direction === 'complicates').length, 10);
+console.log('real book packet: 8 passage-unconfirmed candidates, 17 scoped evidence records, aggregate score locked');

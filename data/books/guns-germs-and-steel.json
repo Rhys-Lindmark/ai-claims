@@ -55,8 +55,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": ["ggs-evidence-03a", "ggs-evidence-03b", "ggs-evidence-03c", "ggs-evidence-03d", "ggs-evidence-03e", "ggs-evidence-03f", "ggs-evidence-03g", "ggs-evidence-03h", "ggs-evidence-03i", "ggs-evidence-03j"],
-      "source_ids": ["ggs-source-02", "ggs-source-13", "ggs-source-14", "ggs-source-15", "ggs-source-16", "ggs-source-17", "ggs-source-18", "ggs-source-19", "ggs-source-20", "ggs-source-21", "ggs-source-22"]
+      "evidence_record_ids": ["ggs-evidence-03a", "ggs-evidence-03b", "ggs-evidence-03c", "ggs-evidence-03d", "ggs-evidence-03e", "ggs-evidence-03f", "ggs-evidence-03g", "ggs-evidence-03h", "ggs-evidence-03i", "ggs-evidence-03j", "ggs-evidence-03k", "ggs-evidence-03l"],
+      "source_ids": ["ggs-source-02", "ggs-source-13", "ggs-source-14", "ggs-source-15", "ggs-source-16", "ggs-source-17", "ggs-source-18", "ggs-source-19", "ggs-source-20", "ggs-source-21", "ggs-source-22", "ggs-source-23", "ggs-source-24"]
     },
     {
       "claim_id": "ggs-claim-07",
@@ -298,6 +298,30 @@
       "last_verified_at": "2026-08-31",
       "finding": "Spatial interpolation of 3,072 audited radiocarbon dates from 940 early Neolithic European sites identified renewed expansion centers, contact zones, major routes, and a spread that proceeded in leaps rather than uniformly.",
       "scope_and_limits": "Radiocarbon surfaces reveal timing and route structure but cannot by themselves separate demic migration from cultural adoption or identify the causal contribution of waterways, terrain, and institutions."
+    },
+    {
+      "evidence_id": "ggs-evidence-03k",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-23",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Dozens of direct radiocarbon dates on charred grains from 22 Hexi Corridor sites place Southwest Asian wheat and barley together with North Chinese broomcorn and foxtail millet in a documented focus of prehistoric trans-continental exchange.",
+      "scope_and_limits": "The co-location and chronology show a bidirectional exchange corridor, not the isolated effect of latitude. Material culture and direct dates clarify the network, but they do not quantify how much route connectivity versus ecology caused each transfer."
+    },
+    {
+      "evidence_id": "ggs-evidence-03l",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-24",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Stable-isotope analysis at two Bronze Age Hexi Corridor sites found eastern and western crops together and ecologically varied grazing signatures consistent with long-distance transport of cattle, sheep, or goats through the region.",
+      "scope_and_limits": "The isotopes directly inform diet and grazing rather than proving the animals' exact origins or travel paths. Combined with the mixed domesticates, they support exchange and herding networks as mechanisms that a continental-axis variable does not capture."
     },
     {
       "evidence_id": "ggs-evidence-08a",
@@ -566,6 +590,26 @@
       "year": 2009,
       "url": "https://doi.org/10.1016/j.jas.2008.11.004",
       "source_class": "archaeological_radiocarbon_spatial_analysis",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-23",
+      "title": "Prehistoric trans-continental cultural exchange in the Hexi Corridor, northwest China",
+      "publisher": "The Holocene",
+      "year": 2018,
+      "url": "https://doi.org/10.1177/0959683617735585",
+      "source_class": "primary_archaeobotany_and_radiocarbon",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-24",
+      "title": "Subsistence and the isotopic signature of herding in the Bronze Age Hexi Corridor, NW Gansu, China",
+      "publisher": "Journal of Archaeological Science",
+      "year": 2011,
+      "url": "https://doi.org/10.1016/j.jas.2011.03.006",
+      "source_class": "primary_stable_isotope_and_archaeobotany",
       "independence": "independent",
       "assessment_state": "assessed"
     }
