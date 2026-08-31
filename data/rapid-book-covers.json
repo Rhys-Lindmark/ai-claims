@@ -1511,6 +1511,95 @@
         "Chris Miller",
         "Chris Miller"
       ]
+    },
+    {
+      "slug": "the-wealth-of-nations",
+      "match_state": "exact_title_author",
+      "cover_id": 12816911,
+      "cover_url": "https://covers.openlibrary.org/b/id/12816911-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL76827W",
+      "source_title": "The Wealth of Nations",
+      "source_authors": [
+        "Adam Smith"
+      ]
+    },
+    {
+      "slug": "capital-volume-one",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-general-theory",
+      "match_state": "exact_title_author",
+      "cover_id": 116182,
+      "cover_url": "https://covers.openlibrary.org/b/id/116182-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL35951W",
+      "source_title": "The general theory of employment, interest and money",
+      "source_authors": [
+        "John Maynard Keynes"
+      ]
+    },
+    {
+      "slug": "the-rise-and-fall-of-the-great-powers",
+      "match_state": "exact_title_author",
+      "cover_id": 15053021,
+      "cover_url": "https://covers.openlibrary.org/b/id/15053021-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL31766945W",
+      "source_title": "The Rise and Fall of the Great Powers",
+      "source_authors": [
+        "Paul Kennedy"
+      ]
+    },
+    {
+      "slug": "the-ascent-of-money",
+      "match_state": "exact_title_author",
+      "cover_id": 6327852,
+      "cover_url": "https://covers.openlibrary.org/b/id/6327852-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL792952W",
+      "source_title": "The ascent of money",
+      "source_authors": [
+        "Niall Ferguson"
+      ]
+    },
+    {
+      "slug": "debt-the-first-5000-years",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "capital-in-the-twenty-first-century",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-origins-of-political-order",
+      "match_state": "exact_title_author",
+      "cover_id": 7895385,
+      "cover_url": "https://covers.openlibrary.org/b/id/7895385-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15539013W",
+      "source_title": "The origins of political order",
+      "source_authors": [
+        "Francis Fukuyama"
+      ]
+    },
+    {
+      "slug": "seeing-like-a-state",
+      "match_state": "exact_title_author",
+      "cover_id": 12242192,
+      "cover_url": "https://covers.openlibrary.org/b/id/12242192-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL26241985W",
+      "source_title": "Seeing Like a State",
+      "source_authors": [
+        "James C. Scott"
+      ]
+    },
+    {
+      "slug": "the-end-of-history-and-the-last-man",
+      "match_state": "exact_title_author",
+      "cover_id": 18768,
+      "cover_url": "https://covers.openlibrary.org/b/id/18768-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2670501W",
+      "source_title": "The End of History and the Last Man",
+      "source_authors": [
+        "Francis Fukuyama"
+      ]
     }
   ]
 }
