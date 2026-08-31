@@ -54,8 +54,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": [],
-      "source_ids": ["ggs-source-02"]
+      "evidence_record_ids": ["ggs-evidence-03a", "ggs-evidence-03b", "ggs-evidence-03c"],
+      "source_ids": ["ggs-source-02", "ggs-source-11", "ggs-source-12", "ggs-source-13"]
     },
     {
       "claim_id": "ggs-claim-04",
@@ -131,10 +131,50 @@
   ],
   "evidence_records": [
     {
+      "evidence_id": "ggs-evidence-03a",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-11",
+      "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "A spatial-econometric analysis of technology adoption around 1000 BCE, 1 CE, and 1500 CE found east-west correlations were generally larger, more often positive, and more often statistically significant than north-south correlations.",
+      "scope_and_limits": "The unit is the modern country and the outcomes combine several technology sectors. East-west and north-south differences were not significant in every model, so this is patterned support rather than a universal diffusion law."
+    },
+    {
+      "evidence_id": "ggs-evidence-03b",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-12",
+      "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Across 678 microsatellite loci in 68 Indigenous populations, genetic differentiation increased faster with north-south distance in the Americas than with east-west distance in Eurasia, consistent with easier movement along Eurasia's major axis.",
+      "scope_and_limits": "This is a migration proxy, not direct evidence of crop or technology transmission. Its relevance depends on technology having moved with people, present populations retaining older spatial signals, and the sampled continental comparison being adequate."
+    },
+    {
+      "evidence_id": "ggs-evidence-03c",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-13",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "A global test found ecological similarity is associated with cultural similarity, but Eurasian corridors from agricultural origin areas were not significantly more environmentally homogeneous than comparable corridors on other continents.",
+      "scope_and_limits": "The study tests key ecological and geographic premises rather than every historical diffusion event. It supports environmental barriers in general while rejecting a simple claim that Eurasia was uniquely favored by orientation alone."
+    },
+    {
       "evidence_id": "ggs-evidence-05a",
       "claim_id": "ggs-claim-05",
       "source_id": "ggs-source-08",
       "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-30",
       "finding": "A screen of 1,313 ancient Eurasian humans detected zoonotic pathogens only from about 6,500 years ago, with a peak around 5,000 years ago that coincided with widespread livestock domestication.",
       "scope_and_limits": "Direct ancient-DNA evidence for Eurasia, but preservation, tissue choice, bloodstream abundance, and taxonomic classification affect what the screen can detect. Temporal coincidence alone does not identify one universal causal pathway."
     },
@@ -143,6 +183,10 @@
       "claim_id": "ggs-claim-05",
       "source_id": "ggs-source-09",
       "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-30",
       "finding": "Eight ancient Salmonella genomes from people spanning transitional foraging, pastoralist, and agropastoralist contexts trace a branch containing human-adapted Paratyphi C and show host adaptation over roughly 5,000 years.",
       "scope_and_limits": "One bacterial lineage supports a Neolithization-linked pathway; it cannot establish the origin story of all major infectious diseases."
     },
@@ -151,6 +195,10 @@
       "claim_id": "ggs-claim-05",
       "source_id": "ggs-source-10",
       "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-30",
       "finding": "Late Neolithic plague genomes from two humans represented distinct infection events, and the study found no evidence that these cases produced a major outbreak; a contemporaneous dog offers a possible animal-contact bridge.",
       "scope_and_limits": "The result supports zoonotic exposure while cautioning against treating animal contact as sufficient for epidemic persistence or later pandemic-scale disease."
     }
@@ -253,6 +301,36 @@
       "year": 2024,
       "url": "https://doi.org/10.1038/s42003-024-06676-7",
       "source_class": "primary_archaeogenomics",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-11",
+      "title": "Did technology transfer more rapidly East-West than North-South?",
+      "publisher": "European Economic Review",
+      "year": 2019,
+      "url": "https://doi.org/10.1016/j.euroecorev.2019.07.006",
+      "source_class": "historical_spatial_econometrics",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-12",
+      "title": "A test of the influence of continental axes of orientation on patterns of human gene flow",
+      "publisher": "American Journal of Physical Anthropology",
+      "year": 2011,
+      "url": "https://doi.org/10.1002/ajpa.21533",
+      "source_class": "population_genetic_spatial_analysis",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-13",
+      "title": "Geography is not destiny: A quantitative test of Diamond's axis of orientation hypothesis",
+      "publisher": "Evolutionary Human Sciences",
+      "year": 2024,
+      "url": "https://doi.org/10.1017/ehs.2023.34",
+      "source_class": "global_ecological_and_cultural_analysis",
       "independence": "independent",
       "assessment_state": "assessed"
     }

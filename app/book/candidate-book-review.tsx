@@ -1,6 +1,15 @@
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 
-type EvidenceRecord = { evidence_id: string; direction: string; finding: string; scope_and_limits: string };
+type EvidenceRecord = {
+  evidence_id: string;
+  direction: string;
+  review_state?: string;
+  evidence_basis?: string;
+  confidence?: string;
+  last_verified_at?: string;
+  finding: string;
+  scope_and_limits: string;
+};
 type CandidateBookPacket = {
   author: string;
   title: string;
@@ -35,7 +44,7 @@ export function CandidateBookReview({ packet }: { packet: CandidateBookPacket })
             <div className="flex items-center justify-between gap-4 text-xs text-[#20211f]/40"><span>{String(index + 1).padStart(2, '0')} · {claimTypeLabel[claim.claim_type] ?? claim.claim_type}</span><span>Passage needed</span></div>
             <h3 className="mt-3 text-xl font-bold leading-snug tracking-[-.015em]">{claim.text}</h3>
             <details className="mt-4 text-sm"><summary className="cursor-pointer font-semibold text-[#20211f]/55">{claim.source_ids.length} source {claim.source_ids.length === 1 ? 'lead' : 'leads'}</summary><ul className="mt-3 space-y-2">{claim.source_ids.map((sourceId) => { const source = packet.sources.find((item) => item.source_id === sourceId)!; return <li key={sourceId}><a className="inline-flex items-start gap-1 font-semibold underline" href={source.url} target="_blank" rel="noreferrer">{source.title} <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" /></a><span className="ml-2 text-[#20211f]/40">{source.assessment_state.replaceAll('_', ' ')}</span></li>; })}</ul></details>
-            {claim.evidence_record_ids.length > 0 ? <details className="mt-3 text-sm"><summary className="cursor-pointer font-semibold text-[#20211f]/55">Evidence notes</summary><div className="mt-3 space-y-4">{claim.evidence_record_ids.map((evidenceId) => { const evidence = packet.evidence_records.find((item) => item.evidence_id === evidenceId)!; return <div className="border-l border-[#20211f]/20 pl-4" key={evidenceId}><p className="text-xs font-semibold capitalize text-[#20211f]/40">{evidence.direction}</p><p className="mt-1 leading-relaxed text-[#20211f]/70">{evidence.finding}</p><p className="mt-2 text-xs leading-relaxed text-[#20211f]/45">{evidence.scope_and_limits}</p></div>; })}</div></details> : null}
+            {claim.evidence_record_ids.length > 0 ? <details className="mt-3 text-sm"><summary className="cursor-pointer font-semibold text-[#20211f]/55">Evidence notes</summary><div className="mt-3 space-y-4">{claim.evidence_record_ids.map((evidenceId) => { const evidence = packet.evidence_records.find((item) => item.evidence_id === evidenceId)!; return <div className="border-l border-[#20211f]/20 pl-4" key={evidenceId}><p className="text-xs font-semibold capitalize text-[#20211f]/40">{evidence.direction}</p><p className="mt-1 leading-relaxed text-[#20211f]/70">{evidence.finding}</p><p className="mt-2 text-xs leading-relaxed text-[#20211f]/45">{evidence.scope_and_limits}</p>{evidence.review_state ? <p className="mt-2 text-[11px] text-[#20211f]/35">Machine draft · {evidence.evidence_basis} · {evidence.confidence} confidence · checked {evidence.last_verified_at}</p> : null}</div>; })}</div></details> : null}
           </article>)}
         </div>
       </section>

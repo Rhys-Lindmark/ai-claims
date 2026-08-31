@@ -38,6 +38,10 @@ assert.ok(packet.evidence_records.every((evidence) => ['supports', 'complicates'
 assert.equal(packet.evidence_records.filter((evidence) => evidence.direction === 'supports').length, 2);
 assert.equal(packet.evidence_records.filter((evidence) => evidence.direction === 'complicates').length, 2);
 assert.ok(packet.evidence_records.every((evidence) => evidence.finding.length > 80 && evidence.scope_and_limits.length > 80));
+assert.ok(packet.evidence_records.every((evidence) => evidence.review_state === 'machine_draft_unreviewed'));
+assert.ok(packet.evidence_records.every((evidence) => evidence.evidence_basis === 'sourced'));
+assert.ok(packet.evidence_records.every((evidence) => evidence.confidence === 'medium'));
+assert.ok(packet.evidence_records.every((evidence) => evidence.last_verified_at === '2026-08-31'));
 assert.ok(!JSON.stringify(packet).match(/"score_0_100":\s*\d/));
 
 console.log('Sapiens packet: 6 passage-unconfirmed candidates, 12 sources, 4 bounded evidence records, aggregate score locked');

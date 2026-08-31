@@ -108,6 +108,10 @@
       "claim_id": "sapiens-claim-02",
       "source_id": "sapiens-source-06",
       "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
       "finding": "A global country-level comparison found extinction severity was strongly associated with hominin paleobiogeography and only weakly associated with glacial-interglacial climate change, with stronger human-linked patterns outside sub-Saharan Africa.",
       "scope_and_limits": "The macroecological association supports a major human role, but country-level data, body-size thresholds, chronology, and spatial aggregation cannot prove one mechanism or verify the book's exact species fraction."
     },
@@ -116,6 +120,10 @@
       "claim_id": "sapiens-claim-02",
       "source_id": "sapiens-source-10",
       "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
       "finding": "Genomic reconstructions for 139 surviving terrestrial megafauna species found declines in 91% of species, with global breakpoints 32,000–76,000 years ago and models keyed to Homo sapiens arrival outperforming climate-only models.",
       "scope_and_limits": "The study examines effective population histories of surviving species rather than an extinction denominator; its human-arrival predictors are indirect and its climate models use broad temperature and precipitation summaries."
     },
@@ -124,6 +132,10 @@
       "claim_id": "sapiens-claim-02",
       "source_id": "sapiens-source-11",
       "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
       "finding": "Ancient DNA, range models, and human fossil records for six northern megafauna showed species-specific histories: climate alone could explain some losses, while combined climatic and anthropogenic effects best fit others.",
       "scope_and_limits": "Six cold-adapted Eurasian and North American taxa cannot settle the global pattern, but they directly caution against treating every extinction as a uniform human-driven event."
     },
@@ -132,6 +144,10 @@
       "claim_id": "sapiens-claim-02",
       "source_id": "sapiens-source-12",
       "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
       "finding": "A North American radiocarbon event-count analysis found megafauna declines correlated with temperature decreases and found no persistent relationship with its proxy for human population levels from 15,000 to 11,700 years ago.",
       "scope_and_limits": "This regional result does not exclude hunting, habitat disruption, or a final human contribution, and radiocarbon-based population proxies have preservation and sampling limits."
     }
