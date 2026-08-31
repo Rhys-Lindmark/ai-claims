@@ -12,7 +12,7 @@ The public resolver contract is available at [`/claims/api/v1/analyses/resolve?e
 
 ## Install the prototype
 
-Download the current extension release from the release card on `/claims`, unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. Unknown pages use the shared [analysis-request API](./docs/ANALYSIS_REQUEST_API.md) when available, with canonical D1 deduplication and a visibly device-only fallback during service failure; neither path accepts page text, titles, cookies, account data, ratings, or reviews. Only synthetic reviewed fixtures are currently published.
+Download the current extension release from the release card on `/claims`, unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. Unknown pages use the shared [analysis-request API](./docs/ANALYSIS_REQUEST_API.md) when available, with canonical D1 deduplication and a visibly device-only fallback during service failure. Shared requests link to a public, append-only lifecycle receipt at `/claims/request`; neither path accepts page text, titles, cookies, account data, ratings, reviews, or visitor identity. Only synthetic reviewed fixtures are currently published.
 
 The public Claims page includes an open-source architecture map linking each extension boundary—detection, canonicalization, resolution, publication gate, and badge/evidence output—to its implementation and privacy rule.
 
