@@ -1600,6 +1600,81 @@
       "source_authors": [
         "Francis Fukuyama"
       ]
+    },
+    {
+      "slug": "the-mystery-of-capital",
+      "match_state": "exact_title_author",
+      "cover_id": 298378,
+      "cover_url": "https://covers.openlibrary.org/b/id/298378-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL8203186W",
+      "source_title": "The Mystery of Capital",
+      "source_authors": [
+        "Hernando De Soto"
+      ]
+    },
+    {
+      "slug": "the-bottom-billion",
+      "match_state": "exact_title_author",
+      "cover_id": 1128787,
+      "cover_url": "https://covers.openlibrary.org/b/id/1128787-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3478148W",
+      "source_title": "The bottom billion",
+      "source_authors": [
+        "Paul Collier"
+      ]
+    },
+    {
+      "slug": "the-end-of-poverty",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "poor-economics",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "why-growth-matters",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-great-escape-deaton",
+      "match_state": "exact_title_author",
+      "cover_id": 8977010,
+      "cover_url": "https://covers.openlibrary.org/b/id/8977010-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20315800W",
+      "source_title": "The Great Escape",
+      "source_authors": [
+        "Angus Deaton"
+      ]
+    },
+    {
+      "slug": "the-tyranny-of-experts",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "dead-aid",
+      "match_state": "exact_title_author",
+      "cover_id": 6293811,
+      "cover_url": "https://covers.openlibrary.org/b/id/6293811-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL13758524W",
+      "source_title": "Dead aid",
+      "source_authors": [
+        "Dambisa Moyo"
+      ]
+    },
+    {
+      "slug": "the-white-mans-burden",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "how-asia-works",
+      "match_state": "exact_title_author",
+      "cover_id": 7651497,
+      "cover_url": "https://covers.openlibrary.org/b/id/7651497-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17474661W",
+      "source_title": "How Asia Works",
+      "source_authors": [
+        "Joe Studwell"
+      ]
     }
   ]
 }

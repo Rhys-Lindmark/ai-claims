@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-08-31",
-  "checked_at": "2026-08-31T23:21:07.182Z",
+  "checked_at": "2026-08-31T23:31:16.602Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,33 +10,33 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 150,
-    "claims": 450,
-    "citations": 900,
-    "unique_urls": 629,
-    "repeated_citations": 271,
-    "redirected_urls": 93,
+    "books": 160,
+    "claims": 480,
+    "citations": 960,
+    "unique_urls": 669,
+    "repeated_citations": 291,
+    "redirected_urls": 98,
     "states": {
-      "access_blocked": 128,
+      "access_blocked": 141,
       "network_error": 4,
       "other_http": 1,
-      "reachable": 491,
+      "reachable": 518,
       "transient": 5
     },
     "score_distribution": {
       "42": 1,
-      "50": 1,
-      "58": 5,
-      "67": 22,
-      "75": 35,
-      "83": 35,
+      "50": 2,
+      "58": 7,
+      "67": 25,
+      "75": 37,
+      "83": 37,
       "92": 41,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 60,
-      "medium": 32,
-      "medium-high": 50,
+      "high": 62,
+      "medium": 39,
+      "medium-high": 51,
       "medium-low": 8
     }
   },
@@ -76,6 +76,14 @@
       }
     },
     {
+      "host": "sciencedirect.com",
+      "unique_urls": 17,
+      "citations": 22,
+      "states": {
+        "access_blocked": 17
+      }
+    },
+    {
       "host": "en.wikipedia.org",
       "unique_urls": 9,
       "citations": 20,
@@ -92,19 +100,27 @@
       }
     },
     {
-      "host": "sciencedirect.com",
-      "unique_urls": 13,
-      "citations": 16,
-      "states": {
-        "access_blocked": 13
-      }
-    },
-    {
       "host": "justice.gov",
       "unique_urls": 11,
       "citations": 14,
       "states": {
         "reachable": 11
+      }
+    },
+    {
+      "host": "academic.oup.com",
+      "unique_urls": 10,
+      "citations": 13,
+      "states": {
+        "access_blocked": 10
+      }
+    },
+    {
+      "host": "jstor.org",
+      "unique_urls": 9,
+      "citations": 13,
+      "states": {
+        "reachable": 9
       }
     },
     {
@@ -124,11 +140,11 @@
       }
     },
     {
-      "host": "jstor.org",
-      "unique_urls": 8,
-      "citations": 12,
+      "host": "onlinelibrary.wiley.com",
+      "unique_urls": 7,
+      "citations": 11,
       "states": {
-        "reachable": 8
+        "access_blocked": 7
       }
     },
     {
@@ -140,14 +156,6 @@
       }
     },
     {
-      "host": "academic.oup.com",
-      "unique_urls": 9,
-      "citations": 10,
-      "states": {
-        "access_blocked": 9
-      }
-    },
-    {
       "host": "federalreserve.gov",
       "unique_urls": 8,
       "citations": 10,
@@ -156,11 +164,11 @@
       }
     },
     {
-      "host": "onlinelibrary.wiley.com",
-      "unique_urls": 6,
+      "host": "worldbank.org",
+      "unique_urls": 8,
       "citations": 10,
       "states": {
-        "access_blocked": 6
+        "reachable": 8
       }
     },
     {
@@ -177,6 +185,14 @@
       "citations": 9,
       "states": {
         "access_blocked": 4
+      }
+    },
+    {
+      "host": "nobelprize.org",
+      "unique_urls": 6,
+      "citations": 9,
+      "states": {
+        "reachable": 6
       }
     },
     {
@@ -201,6 +217,14 @@
       "citations": 8,
       "states": {
         "reachable": 2
+      }
+    },
+    {
+      "host": "imf.org",
+      "unique_urls": 7,
+      "citations": 8,
+      "states": {
+        "reachable": 7
       }
     },
     {
@@ -233,14 +257,6 @@
       "citations": 7,
       "states": {
         "reachable": 6
-      }
-    },
-    {
-      "host": "nobelprize.org",
-      "unique_urls": 5,
-      "citations": 7,
-      "states": {
-        "reachable": 5
       }
     },
     {
@@ -292,6 +308,14 @@
       }
     },
     {
+      "host": "ourworldindata.org",
+      "unique_urls": 6,
+      "citations": 6,
+      "states": {
+        "reachable": 6
+      }
+    },
+    {
       "host": "rmg.co.uk",
       "unique_urls": 3,
       "citations": 6,
@@ -324,12 +348,29 @@
       }
     },
     {
+      "host": "cfr.org",
+      "unique_urls": 3,
+      "citations": 5,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
       "host": "cia.gov",
       "unique_urls": 5,
       "citations": 5,
       "states": {
         "network_error": 1,
         "reachable": 4
+      }
+    },
+    {
+      "host": "elibrary.imf.org",
+      "unique_urls": 4,
+      "citations": 5,
+      "states": {
+        "access_blocked": 2,
+        "reachable": 2
       }
     },
     {
@@ -365,19 +406,19 @@
       }
     },
     {
+      "host": "nber.org",
+      "unique_urls": 4,
+      "citations": 5,
+      "states": {
+        "reachable": 4
+      }
+    },
+    {
       "host": "nick-lane.net",
       "unique_urls": 3,
       "citations": 5,
       "states": {
         "reachable": 3
-      }
-    },
-    {
-      "host": "ourworldindata.org",
-      "unique_urls": 5,
-      "citations": 5,
-      "states": {
-        "reachable": 5
       }
     },
     {
@@ -389,11 +430,27 @@
       }
     },
     {
-      "host": "worldbank.org",
+      "host": "tandfonline.com",
       "unique_urls": 5,
       "citations": 5,
       "states": {
-        "reachable": 5
+        "access_blocked": 5
+      }
+    },
+    {
+      "host": "v-dem.net",
+      "unique_urls": 3,
+      "citations": 5,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
+      "host": "adb.org",
+      "unique_urls": 1,
+      "citations": 4,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -461,27 +518,11 @@
       }
     },
     {
-      "host": "tandfonline.com",
-      "unique_urls": 4,
-      "citations": 4,
-      "states": {
-        "access_blocked": 4
-      }
-    },
-    {
       "host": "timeshighereducation.com",
       "unique_urls": 2,
       "citations": 4,
       "states": {
         "reachable": 2
-      }
-    },
-    {
-      "host": "v-dem.net",
-      "unique_urls": 3,
-      "citations": 4,
-      "states": {
-        "reachable": 3
       }
     },
     {
@@ -525,7 +566,7 @@
       }
     },
     {
-      "host": "cfr.org",
+      "host": "chpl.org",
       "unique_urls": 1,
       "citations": 3,
       "states": {
@@ -533,11 +574,19 @@
       }
     },
     {
-      "host": "chpl.org",
-      "unique_urls": 1,
+      "host": "documents.worldbank.org",
+      "unique_urls": 3,
       "citations": 3,
       "states": {
-        "reachable": 1
+        "reachable": 3
+      }
+    },
+    {
+      "host": "documents1.worldbank.org",
+      "unique_urls": 3,
+      "citations": 3,
+      "states": {
+        "reachable": 3
       }
     },
     {
@@ -589,14 +638,6 @@
       }
     },
     {
-      "host": "nber.org",
-      "unique_urls": 3,
-      "citations": 3,
-      "states": {
-        "reachable": 3
-      }
-    },
-    {
       "host": "nsarchive.gwu.edu",
       "unique_urls": 1,
       "citations": 3,
@@ -618,6 +659,14 @@
       "citations": 3,
       "states": {
         "access_blocked": 1
+      }
+    },
+    {
+      "host": "pip.worldbank.org",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -646,6 +695,14 @@
     },
     {
       "host": "repository.essex.ac.uk",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "repository.unescap.org",
       "unique_urls": 1,
       "citations": 3,
       "states": {
@@ -717,6 +774,14 @@
       }
     },
     {
+      "host": "aeaweb.org",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "ajaonline.org",
       "unique_urls": 1,
       "citations": 2,
@@ -774,6 +839,14 @@
       }
     },
     {
+      "host": "brookings.edu",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "ccnmtl.columbia.edu",
       "unique_urls": 1,
       "citations": 2,
@@ -798,27 +871,10 @@
       }
     },
     {
-      "host": "documents1.worldbank.org",
-      "unique_urls": 2,
-      "citations": 2,
-      "states": {
-        "reachable": 2
-      }
-    },
-    {
       "host": "econlib.org",
       "unique_urls": 1,
       "citations": 2,
       "states": {
-        "reachable": 1
-      }
-    },
-    {
-      "host": "elibrary.imf.org",
-      "unique_urls": 2,
-      "citations": 2,
-      "states": {
-        "access_blocked": 1,
         "reachable": 1
       }
     },
@@ -925,8 +981,7 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "reachable": 1,
-        "access_blocked": 1
+        "access_blocked": 2
       }
     },
     {
@@ -951,14 +1006,6 @@
       "citations": 2,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "imf.org",
-      "unique_urls": 2,
-      "citations": 2,
-      "states": {
-        "reachable": 2
       }
     },
     {
@@ -1066,6 +1113,14 @@
       }
     },
     {
+      "host": "parliament.uk",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "access_blocked": 2
+      }
+    },
+    {
       "host": "people.math.harvard.edu",
       "unique_urls": 1,
       "citations": 2,
@@ -1098,6 +1153,14 @@
       }
     },
     {
+      "host": "pubs.aeaweb.org",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "rcseng.ac.uk",
       "unique_urls": 2,
       "citations": 2,
@@ -1118,8 +1181,7 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "access_blocked": 1,
-        "reachable": 1
+        "access_blocked": 2
       }
     },
     {
@@ -1156,14 +1218,6 @@
     },
     {
       "host": "acd.od.nih.gov",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
-      "host": "aeaweb.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1244,6 +1298,14 @@
     },
     {
       "host": "brill.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "carnegieendowment.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1387,14 +1449,6 @@
       }
     },
     {
-      "host": "documents.worldbank.org",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
       "host": "drought.unl.edu",
       "unique_urls": 1,
       "citations": 1,
@@ -1484,6 +1538,14 @@
     },
     {
       "host": "foreignpolicy.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "fsi.stanford.edu",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1584,6 +1646,22 @@
       "citations": 1,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "ids.ac.uk",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "ifs.org.uk",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
       }
     },
     {
@@ -1700,6 +1778,14 @@
     },
     {
       "host": "media.nature.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "media.odi.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1843,6 +1929,14 @@
       }
     },
     {
+      "host": "openknowledge.worldbank.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "ora.ox.ac.uk",
       "unique_urls": 1,
       "citations": 1,
@@ -1880,14 +1974,6 @@
       "citations": 1,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "parliament.uk",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "access_blocked": 1
       }
     },
     {
@@ -1975,7 +2061,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -2087,7 +2173,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -2116,6 +2202,14 @@
     },
     {
       "host": "tradecosts.wto.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "unstats.un.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2275,6 +2369,18 @@
       ]
     },
     {
+      "url": "https://www.adb.org/publications/determinants-structural-transformation-asia",
+      "host": "adb.org",
+      "citation_count": 4,
+      "state": "reachable",
+      "books": [
+        "why-growth-matters",
+        "the-tyranny-of-experts",
+        "the-white-mans-burden",
+        "how-asia-works"
+      ]
+    },
+    {
       "url": "https://www.cambridge.org/core/journals/central-european-history/article/guilt-or-responsibility-the-hundredyear-debate-on-the-origins-of-world-war-i/35B5E58FD27F872B9B2AF3D5DB552661",
       "host": "cambridge.org",
       "citation_count": 4,
@@ -2282,6 +2388,17 @@
       "books": [
         "the-guns-of-august",
         "the-sleepwalkers"
+      ]
+    },
+    {
+      "url": "https://academic.oup.com/wber/article/30/3/446/2449739",
+      "host": "academic.oup.com",
+      "citation_count": 3,
+      "state": "access_blocked",
+      "books": [
+        "the-bottom-billion",
+        "the-great-escape-deaton",
+        "dead-aid"
       ]
     },
     {
@@ -2422,6 +2539,17 @@
       ]
     },
     {
+      "url": "https://pip.worldbank.org/home",
+      "host": "pip.worldbank.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-bottom-billion",
+        "the-end-of-poverty",
+        "why-growth-matters"
+      ]
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2972336/",
       "host": "pmc.ncbi.nlm.nih.gov",
       "citation_count": 3,
@@ -2474,6 +2602,15 @@
       "state": "reachable",
       "books": [
         "the-making-of-the-english-working-class"
+      ]
+    },
+    {
+      "url": "https://repository.unescap.org/items/15ffc534-5b2e-41a0-9253-69db26bffb72",
+      "host": "repository.unescap.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "how-asia-works"
       ]
     },
     {
@@ -2640,6 +2777,17 @@
       ]
     },
     {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0176268007000614",
+      "host": "sciencedirect.com",
+      "citation_count": 3,
+      "state": "access_blocked",
+      "books": [
+        "the-bottom-billion",
+        "the-great-escape-deaton",
+        "dead-aid"
+      ]
+    },
+    {
       "url": "https://www.timeshighereducation.com/books/the-canon-the-origins-of-the-second-world-war-by-ajp-taylor/406820.article",
       "host": "timeshighereducation.com",
       "citation_count": 3,
@@ -2655,6 +2803,17 @@
       "state": "reachable",
       "books": [
         "the-victorian-internet"
+      ]
+    },
+    {
+      "url": "https://www.worldbank.org/en/publication/wdr2017",
+      "host": "worldbank.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-wealth-of-nations",
+        "the-mystery-of-capital",
+        "the-tyranny-of-experts"
       ]
     },
     {
@@ -3248,6 +3407,16 @@
       ]
     },
     {
+      "url": "https://pubs.aeaweb.org/doi/10.1257/jep.22.2.29",
+      "host": "pubs.aeaweb.org",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "dead-aid",
+        "the-white-mans-burden"
+      ]
+    },
+    {
       "url": "https://pubs.usgs.gov/fs/2007/3004/pdf/FS07-3004_508.pdf",
       "host": "pubs.usgs.gov",
       "citation_count": 2,
@@ -3386,6 +3555,15 @@
       ]
     },
     {
+      "url": "https://www.brookings.edu/articles/bill-easterlys-tyranny-of-experts-do-development-experts-just-make-things-worse/",
+      "host": "brookings.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-tyranny-of-experts"
+      ]
+    },
+    {
       "url": "https://www.cambridge.org/core/books/paleontology/diversity-disparity-and-the-burgess-shale/D8EE896BE5EC513A96D90CB00EBD21B2",
       "host": "cambridge.org",
       "citation_count": 2,
@@ -3466,6 +3644,16 @@
       "state": "reachable",
       "books": [
         "the-wealth-of-nations"
+      ]
+    },
+    {
+      "url": "https://www.elibrary.imf.org/display/book/9781589065208/ch003.xml",
+      "host": "elibrary.imf.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-bottom-billion",
+        "the-end-of-poverty"
       ]
     },
     {
@@ -3634,6 +3822,15 @@
       ]
     },
     {
+      "url": "https://www.imf.org/en/publications/fandd/issues/2020/06/mit-poverty-fighters-abhijit-banerjee-and-esther-duflo",
+      "host": "imf.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "poor-economics"
+      ]
+    },
+    {
       "url": "https://www.ipbes.net/system/files/2021-06/2020%20IPBES%20GLOBAL%20REPORT%28FIRST%20PART%29_V3_SINGLE.pdf",
       "host": "ipbes.net",
       "citation_count": 2,
@@ -3779,12 +3976,30 @@
       ]
     },
     {
+      "url": "https://www.nber.org/papers/w14467",
+      "host": "nber.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "poor-economics"
+      ]
+    },
+    {
       "url": "https://www.nobelprize.org/prizes/physics/1956/summary/",
       "host": "nobelprize.org",
       "citation_count": 2,
       "state": "reachable",
       "books": [
         "the-idea-factory"
+      ]
+    },
+    {
+      "url": "https://www.nobelprize.org/uploads/2019/10/advanced-economicsciencesprize2019.pdf",
+      "host": "nobelprize.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "poor-economics"
       ]
     },
     {
@@ -3965,6 +4180,16 @@
       "state": "access_blocked",
       "books": [
         "dead-wake"
+      ]
+    },
+    {
+      "url": "https://www.v-dem.net/data/the-v-dem-dataset/",
+      "host": "v-dem.net",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-end-of-history-and-the-last-man",
+        "the-tyranny-of-experts"
       ]
     },
     {
@@ -4179,6 +4404,33 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://academic.oup.com/jah/article-abstract/99/2/415/860501",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://academic.oup.com/wber/article/30/3/446/2449739",
+      "citations": [
+        {
+          "slug": "the-bottom-billion",
+          "claim_index": 3,
+          "source_title": "World Bank Economic Review on returns to foreign aid"
+        },
+        {
+          "slug": "the-great-escape-deaton",
+          "claim_index": 3,
+          "source_title": "World Bank Economic Review on aggregate returns to aid"
+        },
+        {
+          "slug": "dead-aid",
+          "claim_index": 1,
+          "source_title": "World Bank Economic Review on aid returns"
+        }
+      ],
+      "host": "academic.oup.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://academic.oup.com/wber/article/30/3/446/2449739",
       "redirected": false,
       "error": null
     },
@@ -4592,6 +4844,23 @@
       "error": null
     },
     {
+      "url": "https://carnegieendowment.org/research/2006/06/planners-and-seekers",
+      "citations": [
+        {
+          "slug": "the-white-mans-burden",
+          "claim_index": 3,
+          "source_title": "Carnegie review of planners and searchers"
+        }
+      ],
+      "host": "carnegieendowment.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://carnegieendowment.org/research/2006/06/planners-and-seekers",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://catalogues.royalsociety.org/CalmView/Record.aspx?id=EC%2F1918%2F18&src=CalmView.Catalog",
       "citations": [
         {
@@ -4892,7 +5161,7 @@
       ],
       "host": "csrc.nist.gov",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://csrc.nist.gov/nist-cyber-history/cryptography/chapter",
       "redirected": false,
@@ -5006,6 +5275,23 @@
       "error": null
     },
     {
+      "url": "https://documents.worldbank.org/curated/en/628371468015595253/pdf/879760WP0Box380or0Poverty0Reduction.pdf",
+      "citations": [
+        {
+          "slug": "the-mystery-of-capital",
+          "claim_index": 1,
+          "source_title": "World Bank review of secure tenure and informal land delivery"
+        }
+      ],
+      "host": "documents.worldbank.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://documents1.worldbank.org/curated/en/628371468015595253/pdf/879760WP0Box380or0Poverty0Reduction.pdf",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/194291468766487705",
       "citations": [
         {
@@ -5020,6 +5306,23 @@
       "status": 200,
       "final_url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/194291468766487705",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/761501468765882964/agrarian-reform-as-unfinished-business-the-selected-papers-of-wolf-ladejinsky",
+      "citations": [
+        {
+          "slug": "how-asia-works",
+          "claim_index": 1,
+          "source_title": "World Bank archive on agrarian reform in Asia"
+        }
+      ],
+      "host": "documents.worldbank.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/761501468765882964",
+      "redirected": true,
       "error": null
     },
     {
@@ -5040,6 +5343,23 @@
       "error": null
     },
     {
+      "url": "https://documents1.worldbank.org/curated/en/702431468135921492/pdf/331490rev0crawfordlecture120041web.pdf",
+      "citations": [
+        {
+          "slug": "the-mystery-of-capital",
+          "claim_index": 3,
+          "source_title": "World Bank review of de Soto's property-rights thesis"
+        }
+      ],
+      "host": "documents1.worldbank.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://documents1.worldbank.org/curated/en/702431468135921492/pdf/331490rev0crawfordlecture120041web.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://documents1.worldbank.org/curated/en/825071468316170479/pdf/wps3955.pdf",
       "citations": [
         {
@@ -5050,7 +5370,7 @@
       ],
       "host": "documents1.worldbank.org",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://documents1.worldbank.org/curated/en/825071468316170479/pdf/wps3955.pdf",
       "redirected": false,
@@ -5354,7 +5674,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=b21dcfd2-9608-485a-98f3-78de9fb5bb25",
+      "final_url": "https://www.nature.com/articles/nature06536?error=cookies_not_supported&code=1be302e8-115e-4b61-9dcd-57cfd8d82127",
       "redirected": true,
       "error": null
     },
@@ -5371,7 +5691,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=2064aa65-4e4f-4c34-931a-4835f2375b03",
       "redirected": true,
       "error": null
     },
@@ -5393,7 +5713,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnplants201793&code=b633a183-9911-40b3-9e28-5a08b99b5485",
+      "final_url": "https://www.nature.com/articles/nplants201793",
       "redirected": true,
       "error": null
     },
@@ -5415,7 +5735,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=4549a48b-e444-45ab-9a2b-9658941ea669",
+      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
       "redirected": true,
       "error": null
     },
@@ -5432,7 +5752,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=dfee82c5-5c3b-458e-9f4a-03c28e2d7660",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=209f7fd8-9e75-40e3-bdc1-a3139a9411c4",
       "redirected": true,
       "error": null
     },
@@ -5449,7 +5769,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-019-0907-1",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=e8111b84-c7c0-4eaa-9d8e-8a6766108963",
       "redirected": true,
       "error": null
     },
@@ -5483,7 +5803,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=9b32aefc-1831-4c16-8158-35703ea44b88",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=b64ca07c-7fbc-4cdf-be34-2f9037702dfc",
       "redirected": true,
       "error": null
     },
@@ -6524,6 +6844,23 @@
       "error": null
     },
     {
+      "url": "https://fsi.stanford.edu/news/fog-development-evaluating-millennium-villages-project",
+      "citations": [
+        {
+          "slug": "the-end-of-poverty",
+          "claim_index": 3,
+          "source_title": "Stanford review of Millennium Villages evaluation"
+        }
+      ],
+      "host": "fsi.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://fsi.stanford.edu/news/fog-development-evaluating-millennium-villages-project",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://go.gale.com/ps/i.do?asid=8af6e3e0&id=GALE%7CA289359802&it=r&p=AONE&u=googlescholar&v=2.1",
       "citations": [
         {
@@ -6671,6 +7008,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://humanorigins.si.edu/education/introduction-human-evolution",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://ifs.org.uk/inequality",
+      "citations": [
+        {
+          "slug": "the-great-escape-deaton",
+          "claim_index": 2,
+          "source_title": "Institute for Fiscal Studies Deaton Review of inequality"
+        }
+      ],
+      "host": "ifs.org.uk",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://ifs.org.uk/inequality",
       "redirected": false,
       "error": null
     },
@@ -6896,7 +7250,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=0de8f3f4-e8ba-4d9a-b972-7df1ddd3d1aa",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=546ecc65-44f1-4128-90c5-5422295e7d78",
       "redirected": true,
       "error": null
     },
@@ -6930,8 +7284,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s11229-024-04527-w",
-      "redirected": false,
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11229-024-04527-w&code=5d2e4adc-b57f-4114-bbbb-ed25a659fdf6",
+      "redirected": true,
       "error": null
     },
     {
@@ -6947,7 +7301,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=32cf50ab-d46c-4284-b703-6095ff86a108",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=5f0acd8f-bec2-41fe-9e34-83c8670a8be1",
       "redirected": true,
       "error": null
     },
@@ -6964,7 +7318,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=ff82eacf-0f76-4ba8-ada4-dfe571e60cfb",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=8e5fd5c2-08c8-4fc5-88d4-53a7b5bcfb12",
       "redirected": true,
       "error": null
     },
@@ -7077,6 +7431,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://media.nature.com/original/magazine-assets/d41586-019-02554-z/d41586-019-02554-z.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://media.odi.org/documents/The20White20Mans20Burden20SM20Review20Sept2006.pdf",
+      "citations": [
+        {
+          "slug": "the-white-mans-burden",
+          "claim_index": 1,
+          "source_title": "Overseas Development Institute review"
+        }
+      ],
+      "host": "media.odi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://media.odi.org/documents/The20White20Mans20Burden20SM20Review20Sept2006.pdf",
       "redirected": false,
       "error": null
     },
@@ -7532,6 +7903,23 @@
       "error": null
     },
     {
+      "url": "https://onlinelibrary.wiley.com/doi/10.4073/csr.2014.1",
+      "citations": [
+        {
+          "slug": "the-mystery-of-capital",
+          "claim_index": 2,
+          "source_title": "Systematic review of land-rights interventions"
+        }
+      ],
+      "host": "onlinelibrary.wiley.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.4073/csr.2014.1",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/socf.12871",
       "citations": [
         {
@@ -7567,6 +7955,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1467-8497.2012.01627.x",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/5d83c24e-c434-40a9-ac31-ffc96ced057a/content",
+      "citations": [
+        {
+          "slug": "dead-aid",
+          "claim_index": 2,
+          "source_title": "World Bank review of development effectiveness"
+        }
+      ],
+      "host": "openknowledge.worldbank.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/5d83c24e-c434-40a9-ac31-ffc96ced057a/content",
       "redirected": false,
       "error": null
     },
@@ -7810,6 +8215,23 @@
       "error": null
     },
     {
+      "url": "https://ourworldindata.org/life-expectancy",
+      "citations": [
+        {
+          "slug": "the-great-escape-deaton",
+          "claim_index": 1,
+          "source_title": "Our World in Data life expectancy history"
+        }
+      ],
+      "host": "ourworldindata.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ourworldindata.org/life-expectancy",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://ourworldindata.org/war-and-peace",
       "citations": [
         {
@@ -7940,6 +8362,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://physicstoday.aip.org/reviews/command-and-control-nuclear-weapons-the-damascus-accident-and-the-illusion-of-safety",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pip.worldbank.org/home",
+      "citations": [
+        {
+          "slug": "the-bottom-billion",
+          "claim_index": 1,
+          "source_title": "World Bank Poverty and Inequality Platform"
+        },
+        {
+          "slug": "the-end-of-poverty",
+          "claim_index": 1,
+          "source_title": "World Bank Poverty and Inequality Platform"
+        },
+        {
+          "slug": "why-growth-matters",
+          "claim_index": 1,
+          "source_title": "World Bank Poverty and Inequality Platform"
+        }
+      ],
+      "host": "pip.worldbank.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://pip.worldbank.org/home",
       "redirected": false,
       "error": null
     },
@@ -9056,6 +9505,28 @@
       "error": null
     },
     {
+      "url": "https://pubs.aeaweb.org/doi/10.1257/jep.22.2.29",
+      "citations": [
+        {
+          "slug": "dead-aid",
+          "claim_index": 1,
+          "source_title": "AEA review of foreign-aid practices"
+        },
+        {
+          "slug": "the-white-mans-burden",
+          "claim_index": 2,
+          "source_title": "AEA analysis of best and worst foreign-aid practices"
+        }
+      ],
+      "host": "pubs.aeaweb.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://pubs.aeaweb.org/doi/10.1257/jep.22.2.29",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pubs.usgs.gov/fs/2007/3004/pdf/FS07-3004_508.pdf",
       "citations": [
         {
@@ -9157,6 +9628,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://repository.essex.ac.uk/10513/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://repository.unescap.org/items/15ffc534-5b2e-41a0-9253-69db26bffb72",
+      "citations": [
+        {
+          "slug": "how-asia-works",
+          "claim_index": 1,
+          "source_title": "UN ESCAP review of How Asia Works"
+        },
+        {
+          "slug": "how-asia-works",
+          "claim_index": 2,
+          "source_title": "UN ESCAP review of the book's three-step thesis"
+        },
+        {
+          "slug": "how-asia-works",
+          "claim_index": 3,
+          "source_title": "UN ESCAP review of How Asia Works"
+        }
+      ],
+      "host": "repository.unescap.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://repository.unescap.org/items/15ffc534-5b2e-41a0-9253-69db26bffb72",
       "redirected": false,
       "error": null
     },
@@ -9528,9 +10026,9 @@
         }
       ],
       "host": "search.worldcat.org",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://search.worldcat.org/title/1028660910",
       "redirected": false,
       "error": null
@@ -9879,6 +10377,23 @@
       "error": null
     },
     {
+      "url": "https://unstats.un.org/sdgs/report/2025/",
+      "citations": [
+        {
+          "slug": "the-end-of-poverty",
+          "claim_index": 1,
+          "source_title": "United Nations Sustainable Development Goals report"
+        }
+      ],
+      "host": "unstats.un.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://unstats.un.org/sdgs/report/2025/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://upcommons.upc.edu/bitstreams/3738f5fc-9b77-4a44-a345-d4ac5ab2c331/download",
       "citations": [
         {
@@ -10093,6 +10608,38 @@
       "error": null
     },
     {
+      "url": "https://www.adb.org/publications/determinants-structural-transformation-asia",
+      "citations": [
+        {
+          "slug": "why-growth-matters",
+          "claim_index": 3,
+          "source_title": "Asian Development Bank review of structural transformation"
+        },
+        {
+          "slug": "the-tyranny-of-experts",
+          "claim_index": 3,
+          "source_title": "Asian Development Bank review of state and market failures"
+        },
+        {
+          "slug": "the-white-mans-burden",
+          "claim_index": 3,
+          "source_title": "Asian Development Bank review of structural transformation"
+        },
+        {
+          "slug": "how-asia-works",
+          "claim_index": 2,
+          "source_title": "Asian Development Bank review of structural transformation"
+        }
+      ],
+      "host": "adb.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.adb.org/publications/determinants-structural-transformation-asia",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20130604",
       "citations": [
         {
@@ -10106,6 +10653,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.aeaweb.org/articles?id=10.1257/aer.20130604",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.aeaweb.org/articles?id=10.1257%2Fjel.53.1.102",
+      "citations": [
+        {
+          "slug": "the-great-escape-deaton",
+          "claim_index": 2,
+          "source_title": "American Economic Association review of The Great Escape"
+        }
+      ],
+      "host": "aeaweb.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.aeaweb.org/articles?id=10.1257%2Fjel.53.1.102",
       "redirected": false,
       "error": null
     },
@@ -10340,6 +10904,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.britannica.com/biography/Henry-II-king-of-England",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.brookings.edu/articles/bill-easterlys-tyranny-of-experts-do-development-experts-just-make-things-worse/",
+      "citations": [
+        {
+          "slug": "the-tyranny-of-experts",
+          "claim_index": 1,
+          "source_title": "Brookings review of The Tyranny of Experts"
+        },
+        {
+          "slug": "the-tyranny-of-experts",
+          "claim_index": 3,
+          "source_title": "Brookings critique of the book's rights-only alternative"
+        }
+      ],
+      "host": "brookings.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.brookings.edu/articles/bill-easterlys-tyranny-of-experts-do-development-experts-just-make-things-worse/",
       "redirected": false,
       "error": null
     },
@@ -10995,6 +11581,40 @@
       "error": null
     },
     {
+      "url": "https://www.cfr.org/books/why-growth-matters",
+      "citations": [
+        {
+          "slug": "why-growth-matters",
+          "claim_index": 2,
+          "source_title": "Council on Foreign Relations synopsis of Why Growth Matters"
+        }
+      ],
+      "host": "cfr.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cfr.org/books/why-growth-matters",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cfr.org/sites/default/files/Teaching%20Notes%20-%20Why%20Growth%20Matters.pdf",
+      "citations": [
+        {
+          "slug": "why-growth-matters",
+          "claim_index": 3,
+          "source_title": "CFR teaching notes on the book's transferable claims"
+        }
+      ],
+      "host": "cfr.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://static.cfr.org/sites/default/files/Teaching%20Notes%20-%20Why%20Growth%20Matters.pdf",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://www.christiancentury.org/reviews/2005-11/team-rivals-political-genius-abraham-lincoln",
       "citations": [
         {
@@ -11401,6 +12021,28 @@
       "error": null
     },
     {
+      "url": "https://www.elibrary.imf.org/display/book/9781589065208/ch003.xml",
+      "citations": [
+        {
+          "slug": "the-bottom-billion",
+          "claim_index": 2,
+          "source_title": "IMF review of poverty traps, aid, and growth"
+        },
+        {
+          "slug": "the-end-of-poverty",
+          "claim_index": 2,
+          "source_title": "IMF review of aid, growth, and poverty traps"
+        }
+      ],
+      "host": "elibrary.imf.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.elibrary.imf.org/display/book/9781589065208/ch003.xml",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.elibrary.imf.org/view/journals/001/1995/007/article-A001-en.xml",
       "citations": [
         {
@@ -11414,6 +12056,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.elibrary.imf.org/view/journals/001/1995/007/article-A001-en.xml",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.elibrary.imf.org/view/journals/022/0043/003/article-A016-en.xml",
+      "citations": [
+        {
+          "slug": "the-white-mans-burden",
+          "claim_index": 1,
+          "source_title": "IMF review of The White Man's Burden"
+        }
+      ],
+      "host": "elibrary.imf.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.elibrary.imf.org/view/journals/022/0043/003/article-A016-en.xml",
       "redirected": false,
       "error": null
     },
@@ -12404,9 +13063,9 @@
         }
       ],
       "host": "historians.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.historians.org/perspectives-article/weird-science-incest-and-history-may-2020/",
       "redirected": false,
       "error": null
@@ -12602,6 +13261,23 @@
       "error": null
     },
     {
+      "url": "https://www.ids.ac.uk/publications/the-new-bottom-billion-what-if-most-of-the-worlds-poor-live-in-middle-income-countries/",
+      "citations": [
+        {
+          "slug": "the-bottom-billion",
+          "claim_index": 1,
+          "source_title": "Institute of Development Studies review of the new bottom billion"
+        }
+      ],
+      "host": "ids.ac.uk",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ids.ac.uk/publications/the-new-bottom-billion-what-if-most-of-the-worlds-poor-live-in-middle-income-countries/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.imf.org/-/media/files/publications/weo/2020/april/english/ch2.pdf",
       "citations": [
         {
@@ -12619,6 +13295,28 @@
       "error": null
     },
     {
+      "url": "https://www.imf.org/en/publications/fandd/issues/2020/06/mit-poverty-fighters-abhijit-banerjee-and-esther-duflo",
+      "citations": [
+        {
+          "slug": "poor-economics",
+          "claim_index": 1,
+          "source_title": "IMF profile of Banerjee and Duflo's poverty research"
+        },
+        {
+          "slug": "poor-economics",
+          "claim_index": 3,
+          "source_title": "IMF discussion of external validity and RCT limits"
+        }
+      ],
+      "host": "imf.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.imf.org/en/publications/fandd/issues/2020/06/mit-poverty-fighters-abhijit-banerjee-and-esther-duflo",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.imf.org/en/publications/wp/issues/2016/12/30/the-effectiveness-of-fiscal-policy-in-stimulating-economic-activity-a-review-of-the-16198",
       "citations": [
         {
@@ -12632,6 +13330,74 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.imf.org/en/publications/wp/issues/2016/12/30/the-effectiveness-of-fiscal-policy-in-stimulating-economic-activity-a-review-of-the-16198",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.imf.org/external/pubs/ft/dsa/lic.aspx",
+      "citations": [
+        {
+          "slug": "dead-aid",
+          "claim_index": 3,
+          "source_title": "IMF debt-sustainability framework for low-income countries"
+        }
+      ],
+      "host": "imf.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.imf.org/redirect/default.aspx?aspxerrorpath=/external/pubs/ft/dsa/lic.aspx",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.imf.org/external/pubs/ft/fandd/2001/03/desoto.htm",
+      "citations": [
+        {
+          "slug": "the-mystery-of-capital",
+          "claim_index": 1,
+          "source_title": "IMF précis of The Mystery of Capital"
+        }
+      ],
+      "host": "imf.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.imf.org/external/pubs/ft/fandd/2001/03/desoto.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.imf.org/external/pubs/ft/fandd/2010/09/panagariya.htm",
+      "citations": [
+        {
+          "slug": "why-growth-matters",
+          "claim_index": 1,
+          "source_title": "IMF analysis of growth and poverty in India"
+        }
+      ],
+      "host": "imf.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.imf.org/external/pubs/ft/fandd/2010/09/panagariya.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.imf.org/external/pubs/ft/fandd/2014/06/pdf/book2.pdf",
+      "citations": [
+        {
+          "slug": "the-tyranny-of-experts",
+          "claim_index": 1,
+          "source_title": "IMF review of The Tyranny of Experts"
+        }
+      ],
+      "host": "imf.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.imf.org/external/pubs/ft/fandd/2014/06/pdf/book2.pdf",
       "redirected": false,
       "error": null
     },
@@ -12970,6 +13736,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.jstor.org/stable/j.ctvxkn7ds",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.jstor.org/stable/jj.14736610",
+      "citations": [
+        {
+          "slug": "the-great-escape-deaton",
+          "claim_index": 1,
+          "source_title": "JSTOR record and synopsis of The Great Escape"
+        }
+      ],
+      "host": "jstor.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/jj.14736610",
       "redirected": false,
       "error": null
     },
@@ -13650,8 +14433,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/171737a0?error=cookies_not_supported&code=414e5fe1-1207-425e-86e3-0390304b33b7",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/171737a0",
+      "redirected": false,
       "error": null
     },
     {
@@ -13667,8 +14450,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/28764",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2F28764&code=efaea704-53a5-447e-889f-3521badd3a3f",
+      "redirected": true,
       "error": null
     },
     {
@@ -13684,8 +14467,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-024-00544-4",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-024-00544-4&code=6f327f25-35b7-40e2-9f3c-1c04dc5a331c",
+      "redirected": true,
       "error": null
     },
     {
@@ -13711,7 +14494,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=22a32b26-d58d-4fd6-9f46-aeb4bce47ac0",
+      "final_url": "https://www.nature.com/articles/nature09678?error=cookies_not_supported&code=c4f1fcb6-afde-4af9-b1f3-ee1a490515a9",
       "redirected": true,
       "error": null
     },
@@ -13738,7 +14521,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=912eddae-9068-4d08-a78b-3ca24d8bf342",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=e21760dc-1386-4d08-bb84-91a075a49b73",
       "redirected": true,
       "error": null
     },
@@ -13760,7 +14543,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=30b7761c-243f-4cdc-8fe2-8a4c73617539",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=cdb3a9e6-ca40-48bd-9f88-4665580d95c6",
       "redirected": true,
       "error": null
     },
@@ -13777,7 +14560,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=587295e7-f295-45ea-aefe-de098d2d0f37",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=726769a6-adb2-49da-a4b0-58217c7dab2e",
       "redirected": true,
       "error": null
     },
@@ -13794,8 +14577,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-023-01986-1&code=e41b5ccc-b831-47d7-a51a-e3bc4b2c75a1",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41559-023-01986-1",
+      "redirected": false,
       "error": null
     },
     {
@@ -13811,7 +14594,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=2b47fd65-1b81-4153-aa66-2fc1dd7389eb",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=f2b219b3-d352-4be4-8268-adb687e0e12d",
       "redirected": true,
       "error": null
     },
@@ -13828,8 +14611,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-022-00537-x&code=28f50f39-7ae9-4bcc-8461-6296658191c2",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41576-022-00537-x",
+      "redirected": false,
       "error": null
     },
     {
@@ -13845,7 +14628,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=e9eb1ce2-a8eb-466f-bb59-cf6dc1bc88f8",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=7220529e-baa4-4d26-b07f-f6fe7af1ee9a",
       "redirected": true,
       "error": null
     },
@@ -13867,7 +14650,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=f6a7890b-ca10-4c01-b02d-88690782cab4",
       "redirected": true,
       "error": null
     },
@@ -13885,6 +14668,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nber.org/papers/w14258",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nber.org/papers/w14467",
+      "citations": [
+        {
+          "slug": "poor-economics",
+          "claim_index": 2,
+          "source_title": "NBER review of the experimental approach to development"
+        },
+        {
+          "slug": "poor-economics",
+          "claim_index": 3,
+          "source_title": "NBER experimental-development methodology review"
+        }
+      ],
+      "host": "nber.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nber.org/papers/w14467",
       "redirected": false,
       "error": null
     },
@@ -14128,6 +14933,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nobelprize.org/uploads/2018/06/shockley-lecture.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nobelprize.org/uploads/2019/10/advanced-economicsciencesprize2019.pdf",
+      "citations": [
+        {
+          "slug": "poor-economics",
+          "claim_index": 1,
+          "source_title": "Nobel Prize scientific background on experimental poverty research"
+        },
+        {
+          "slug": "poor-economics",
+          "claim_index": 2,
+          "source_title": "Nobel Prize scientific background on experimental poverty research"
+        }
+      ],
+      "host": "nobelprize.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nobelprize.org/uploads/2019/10/advanced-economicsciencesprize2019.pdf",
       "redirected": false,
       "error": null
     },
@@ -14553,6 +15380,23 @@
       "error": null
     },
     {
+      "url": "https://www.parliament.uk/globalassets/documents/lords-committees/economic-affairs/DevelopmentAid/DevAidEvidenceVol.pdf",
+      "citations": [
+        {
+          "slug": "the-white-mans-burden",
+          "claim_index": 2,
+          "source_title": "UK Parliament evidence on development-aid effectiveness"
+        }
+      ],
+      "host": "parliament.uk",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.parliament.uk/globalassets/documents/lords-committees/economic-affairs/DevelopmentAid/DevAidEvidenceVol.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.pbs.org/wgbh/americanexperience/features/poisoners-handbook-Chemistry-and-Forensic-Science-in-America/",
       "citations": [
         {
@@ -14696,9 +15540,9 @@
         }
       ],
       "host": "rct.uk",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
       "final_url": "https://www.rct.uk/collection",
       "redirected": true,
       "error": null
@@ -15028,6 +15872,33 @@
       "error": null
     },
     {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0176268007000614",
+      "citations": [
+        {
+          "slug": "the-bottom-billion",
+          "claim_index": 3,
+          "source_title": "Aid effectiveness meta-study"
+        },
+        {
+          "slug": "the-great-escape-deaton",
+          "claim_index": 3,
+          "source_title": "Aid effectiveness meta-study"
+        },
+        {
+          "slug": "dead-aid",
+          "claim_index": 2,
+          "source_title": "Aid effectiveness meta-study"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0176268007000614",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.sciencedirect.com/science/article/pii/S027737912300402X",
       "citations": [
         {
@@ -15063,6 +15934,40 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.sciencedirect.com/science/article/pii/S0278416521000118",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304387802000184",
+      "citations": [
+        {
+          "slug": "why-growth-matters",
+          "claim_index": 2,
+          "source_title": "Study of why Indian growth was more pro-poor in some states"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0304387802000184",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304387806000393",
+      "citations": [
+        {
+          "slug": "the-end-of-poverty",
+          "claim_index": 2,
+          "source_title": "Empirical test of poverty traps, aid, and growth"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0304387806000393",
       "redirected": false,
       "error": null
     },
@@ -15114,6 +16019,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.sciencedirect.com/science/article/pii/S136984861500182X",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S1573521408800243",
+      "citations": [
+        {
+          "slug": "the-mystery-of-capital",
+          "claim_index": 2,
+          "source_title": "Peru evidence on titling, investment, and credit"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S1573521408800243",
       "redirected": false,
       "error": null
     },
@@ -15266,9 +16188,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.semi.org/en/about-semi-membership/about-semi",
       "redirected": false,
       "error": null
@@ -15455,6 +16377,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.tandfonline.com/doi/full/10.1080/13668250500488819",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/2330443X.2021.2019152",
+      "citations": [
+        {
+          "slug": "the-end-of-poverty",
+          "claim_index": 3,
+          "source_title": "Reconciliation of Millennium Villages evaluations"
+        }
+      ],
+      "host": "tandfonline.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/2330443X.2021.2019152",
       "redirected": false,
       "error": null
     },
@@ -15655,6 +16594,11 @@
           "slug": "the-end-of-history-and-the-last-man",
           "claim_index": 1,
           "source_title": "V-Dem country-year democracy dataset"
+        },
+        {
+          "slug": "the-tyranny-of-experts",
+          "claim_index": 2,
+          "source_title": "V-Dem dataset for democratic institutions and rights"
         }
       ],
       "host": "v-dem.net",
@@ -15839,6 +16783,23 @@
       "error": null
     },
     {
+      "url": "https://www.worldbank.org/en/programs/debt-statistics/idr/products",
+      "citations": [
+        {
+          "slug": "dead-aid",
+          "claim_index": 3,
+          "source_title": "World Bank International Debt Report"
+        }
+      ],
+      "host": "worldbank.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.worldbank.org/en/programs/debt-statistics/idr/products",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.worldbank.org/en/programs/knowledge-for-change/brief/Financial-Development",
       "citations": [
         {
@@ -15852,6 +16813,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.worldbank.org/en/programs/knowledge-for-change/brief/Financial-Development",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.worldbank.org/en/publication/gfdr/gfdr-2016",
+      "citations": [
+        {
+          "slug": "how-asia-works",
+          "claim_index": 3,
+          "source_title": "World Bank Global Financial Development Report"
+        }
+      ],
+      "host": "worldbank.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.worldbank.org/en/publication/gfdr/gfdr-2016",
       "redirected": false,
       "error": null
     },
@@ -15879,6 +16857,16 @@
           "slug": "the-wealth-of-nations",
           "claim_index": 3,
           "source_title": "World Development Report 2017 on governance and development"
+        },
+        {
+          "slug": "the-mystery-of-capital",
+          "claim_index": 3,
+          "source_title": "World Development Report 2017 on governance"
+        },
+        {
+          "slug": "the-tyranny-of-experts",
+          "claim_index": 2,
+          "source_title": "World Development Report 2017 on power and governance"
         }
       ],
       "host": "worldbank.org",
@@ -15921,6 +16909,23 @@
       "status": 200,
       "final_url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.worldbank.org/en/topic/fragilityconflictviolence/overview",
+      "citations": [
+        {
+          "slug": "the-bottom-billion",
+          "claim_index": 2,
+          "source_title": "World Bank conflict and development overview"
+        }
+      ],
+      "host": "worldbank.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.worldbank.org/ext/en/topic/fragility-conflict-and-violence",
+      "redirected": true,
       "error": null
     },
     {
