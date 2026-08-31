@@ -2423,6 +2423,270 @@
         }
       ],
       "other_claims": ["Commercial resistance and stigma delayed official recognition of outbreaks.", "Yellow-fever control helped make sustained Panama Canal construction possible."]
+    },
+    {
+      "slug": "spqr",
+      "entity_key": "web:profilebooks.com/spqr",
+      "title": "SPQR",
+      "subtitle": "A History of Ancient Rome",
+      "author": "Mary Beard",
+      "year": 2015,
+      "score": 92,
+      "confidence": "high",
+      "summary": "Beard's revisionist core holds up: foundation stories are myths, republican politics mixed elite rule with real popular power, and expanding citizenship was a distinctive engine of Roman incorporation.",
+      "claims": [
+        {
+          "claim": "Rome's familiar Romulus-and-Remus foundation story is a later, internally inconsistent myth rather than recoverable eighth-century history.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Ancient authors preserved many incompatible foundation versions, none based on contemporary evidence. Archaeology shows gradual settlement development and cannot identify a historical Romulus, so the stories illuminate Roman identity more than literal origins.",
+          "sources": [
+            { "title": "Antiquity: Authors, archaeology and arguments about early Roman politics", "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C8EE2E46724CCBF510DF58788863215E/S006647741700003Xa.pdf" },
+            { "title": "TIME interview with Mary Beard on SPQR", "url": "https://time.com/4105915/mary-beard-spqr-ancient-rome/" }
+          ]
+        },
+        {
+          "claim": "The Roman Republic was elite-dominated but not a sham: assemblies, elections, and popular pressure gave non-elite male citizens meaningful political agency.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Wealth, patronage, and aristocratic competition structured officeholding, yet citizens voted, legislated, elected magistrates, and could constrain elites. Scholars still dispute how independent popular power was, so neither pure oligarchy nor modern democracy fits.",
+          "sources": [
+            { "title": "Wiley: Interstate Relations and Empire during the Roman Republic", "url": "https://onlinelibrary.wiley.com/doi/10.1002/9781118878347.ch19" },
+            { "title": "Constitutional Political Economy: Democratic institutions of the Roman Republic", "url": "https://link.springer.com/article/10.1007/s10602-026-09503-9" }
+          ]
+        },
+        {
+          "claim": "Rome repeatedly extended graded rights and citizenship to outsiders, helping turn a city-state into an unusually durable territorial empire.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Allies, freed people, Italian communities, provincial elites, and eventually nearly all free imperial inhabitants gained forms of Roman status. Coercion and inequality persisted, but incorporation expanded the governing and military constituency beyond Rome.",
+          "sources": [
+            { "title": "Integration in Rome and in the Roman World", "url": "https://brill.com/downloadpdf/edcollbook-oa/title/24380.pdf" },
+            { "title": "TIME: Ancient Rome and extending citizenship", "url": "https://time.com/5850622/rome-immigrants/" }
+          ]
+        }
+      ],
+      "other_claims": ["Augustus preserved republican language while building durable one-man rule.", "Most surviving Roman voices belong to elites, making ordinary experience unusually difficult to reconstruct."]
+    },
+    {
+      "slug": "the-fate-of-rome",
+      "entity_key": "web:press.princeton.edu/the-fate-of-rome",
+      "title": "The Fate of Rome",
+      "subtitle": "Climate, Disease, and the End of an Empire",
+      "author": "Kyle Harper",
+      "year": 2017,
+      "score": 67,
+      "confidence": "medium",
+      "summary": "Climate and pathogens plainly belong in Rome's story, and Harper integrates important new evidence. The stronger claim that nature decided the empire's fate remains contested and often outruns local chronology.",
+      "claims": [
+        {
+          "claim": "A relatively favorable Roman-era climate supported imperial agriculture before greater late-antique variability created additional stress.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Tree rings, ice cores, speleothems, and other proxies reveal meaningful climatic shifts that affected harvests and mobility. The direction and timing varied across Rome's enormous territory, making one uniform 'optimum' and decline sequence too simple.",
+          "sources": [
+            { "title": "Daedalus: The Environmental Fall of the Roman Empire", "url": "https://doi.org/10.1162/DAED_a_00380" },
+            { "title": "Oxford review: Environmental history of late antiquity", "url": "https://ora.ox.ac.uk/objects/uuid:c648a83e-aa80-49e1-91a0-d9dda05e80e3" }
+          ]
+        },
+        {
+          "claim": "The Antonine, Cyprianic, and Justinianic pandemics damaged Roman demography, revenue, armies, and social stability.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Textual and biological evidence confirms major epidemic episodes, and Justinianic plague is securely linked to Yersinia pestis. Exact death tolls and state effects remain disputed, especially for earlier outbreaks with uncertain pathogens and sparse records.",
+          "sources": [
+            { "title": "American Historical Review: The Fate of Rome", "url": "https://academic.oup.com/ahr/article-abstract/123/5/1627/5221071" },
+            { "title": "Bryn Mawr Classical Review: The Fate of Rome", "url": "https://bmcr.brynmawr.edu/2019/2019.10.21/" }
+          ]
+        },
+        {
+          "claim": "Climate change and pandemic disease were the decisive forces that brought down Roman power.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Environmental shocks plausibly weakened resilience and altered migration, food supply, and fiscal capacity. Critics show that the book sometimes compresses proxy uncertainty and underweights political fragmentation, civil war, institutions, military choices, and regional survival.",
+          "sources": [
+            { "title": "Journal of Roman Studies: Fates of Romes", "url": "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/fates-of-romes/582207A45A234E88E0B7159CD94C27B6" },
+            { "title": "Plagues, climate change, and the end of an empire", "url": "https://ruj.uj.edu.pl/xmlui/handle/item/68230" }
+          ]
+        }
+      ],
+      "other_claims": ["Roman urbanization and trade created unusually favorable disease ecologies.", "The sixth-century volcanic shocks contributed to a colder late-antique climate."]
+    },
+    {
+      "slug": "1177-bc",
+      "entity_key": "web:press.princeton.edu/1177-bc",
+      "title": "1177 B.C.",
+      "subtitle": "The Year Civilization Collapsed",
+      "author": "Eric H. Cline",
+      "year": 2014,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "The interconnected Late Bronze Age world and multi-causal collapse are well supported. The title's single year and a tidy systems-failure mechanism are useful shorthand, not literal chronology or a settled causal model.",
+      "claims": [
+        {
+          "claim": "Late Bronze Age kingdoms around the eastern Mediterranean formed an unusually interconnected diplomatic and trading system.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Letters, shipwrecks, imported ceramics, metals, luxury goods, and royal archives document sustained exchange among Egypt, Anatolia, the Aegean, Cyprus, the Levant, and Mesopotamia. The network was extensive even if 'globalized' is an analogy.",
+          "sources": [
+            { "title": "American Journal of Archaeology review of 1177 B.C.", "url": "https://ajaonline.org/book-review/2825/" },
+            { "title": "JSTOR: 1177 B.C., revised edition", "url": "https://www.jstor.org/stable/j.ctv15r58dw" }
+          ]
+        },
+        {
+          "claim": "The Late Bronze Age collapse resulted from interacting drought, famine, warfare, migration, internal revolt, earthquakes, and trade disruption—not the Sea Peoples alone.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Archaeology supports destruction, abandonment, climatic stress, migration, and political upheaval across different sites and decades. No single mechanism explains every region, while causal ordering and the relative weight of each stressor remain uncertain.",
+          "sources": [
+            { "title": "American Journal of Archaeology review of 1177 B.C.", "url": "https://ajaonline.org/book-review/2825/" },
+            { "title": "Classics for All review of 1177 B.C.", "url": "https://classicsforall.org.uk/reading-room/book-reviews/1177-bc-year-civilisation-collapsed" }
+          ]
+        },
+        {
+          "claim": "Interdependence made palace societies brittle enough for local shocks to cascade into a system-wide collapse centered on 1177 BCE.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Specialized palace economies depended on long-distance inputs and political coordination, so disruptions could compound. But collapses unfolded unevenly across much of the twelfth century BCE; Assyria, Egypt, and successor societies adapted rather than simply vanishing.",
+          "sources": [
+            { "title": "JSTOR: 1177 B.C., revised edition", "url": "https://www.jstor.org/stable/j.ctv15r58dw" },
+            { "title": "Ghent University review of 1177 B.C.", "url": "https://backoffice.biblio.ugent.be/download/7065689/7082391" }
+          ]
+        }
+      ],
+      "other_claims": ["The Sea Peoples were heterogeneous groups whose origins remain uncertain.", "Collapse created opportunities for Phoenician, Aramaean, and other successor societies."]
+    },
+    {
+      "slug": "the-guns-of-august",
+      "entity_key": "web:barbarawtuchman.com/the-guns-of-august",
+      "title": "The Guns of August",
+      "subtitle": "The Outbreak of World War I",
+      "author": "Barbara W. Tuchman",
+      "year": 1962,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "Its campaign narrative remains powerful and broadly reliable. The book overstates how mechanically plans dictated leaders and how completely the opening stalemate determined the rest of the century.",
+      "claims": [
+        {
+          "claim": "Germany's western war plan drove the invasion of neutral Belgium and made a rapid clash with France and Britain central to the opening campaign.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "German planning under Schlieffen and Moltke assumed a major western offensive through Belgium before turning east. Belgium's invasion, strategic commitments, and treaty obligations helped bring Britain into the war, though British motives were broader.",
+          "sources": [
+            { "title": "Open University: War plans and war guilt", "url": "https://oro.open.ac.uk/7761/" },
+            { "title": "English Historical Review: German War Planning, 1891–1914", "url": "https://academic.oup.com/ehr/article-abstract/120/488/1097/376432" }
+          ]
+        },
+        {
+          "claim": "Rigid mobilization timetables and inherited offensive plans narrowed options during the July Crisis and early August.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Rail schedules, alliance expectations, and fears about an opponent's mobilization created powerful pressure for speed. Later scholarship stresses that political and military leaders still made contingent choices and sometimes revised plans, so machinery did not decide by itself.",
+          "sources": [
+            { "title": "Central European History: The debate on World War I origins", "url": "https://www.cambridge.org/core/journals/central-european-history/article/guilt-or-responsibility-the-hundredyear-debate-on-the-origins-of-world-war-i/35B5E58FD27F872B9B2AF3D5DB552661" },
+            { "title": "Open University: War plans and war guilt", "url": "https://oro.open.ac.uk/7761/" }
+          ]
+        },
+        {
+          "claim": "Failure of the French and German opening plans fixed the trench stalemate, peace settlement, and later Second World War in one causal chain.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "The Marne and failed offensives helped produce prolonged positional war, but the later conflict depended on adaptation, coalition resources, domestic politics, U.S. entry, revolution, the peace settlement, and interwar choices. Tuchman's chain is too deterministic.",
+          "sources": [
+            { "title": "Open University: War plans and war guilt", "url": "https://oro.open.ac.uk/7761/" },
+            { "title": "Review of The Guns of August", "url": "https://centerforfutureconsciousness.com/wp-content/uploads/2023/07/a-review-of-the-guns-of-august-by-barbara-w.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["German atrocities in Belgium were real but were also amplified by Allied propaganda.", "The Battle of the Marne resulted from multiple command failures and improvisations rather than one decisive mistake."]
+    },
+    {
+      "slug": "the-sleepwalkers",
+      "entity_key": "web:harpercollins.com/the-sleepwalkers",
+      "title": "The Sleepwalkers",
+      "subtitle": "How Europe Went to War in 1914",
+      "author": "Christopher Clark",
+      "year": 2012,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "Clark convincingly restores Balkan politics and multi-state interaction. Shared agency is sound; the sleepwalking metaphor can understate how knowingly several leaders accepted the risk of continental war.",
+      "claims": [
+        {
+          "claim": "The Sarajevo assassination and July Crisis cannot be understood without Serbian nationalism, Austro-Hungarian insecurity, and prior Balkan conflict.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The assassination emerged from transnational Serbian networks and a region reshaped by the Balkan Wars, imperial decline, and rival national projects. Restoring this context corrects accounts that treat the Balkans as merely a trigger for decisions elsewhere.",
+          "sources": [
+            { "title": "Central European History: Hundred-year debate on World War I origins", "url": "https://www.cambridge.org/core/journals/central-european-history/article/guilt-or-responsibility-the-hundredyear-debate-on-the-origins-of-world-war-i/35B5E58FD27F872B9B2AF3D5DB552661" },
+            { "title": "New Left Review: Pathbreakers High and Low", "url": "https://newleftreview.org/issues/ii146/articles/perry-anderson-pathbreakers-high-and-low" }
+          ]
+        },
+        {
+          "claim": "Responsibility for the First World War was distributed across interacting decisions by several governments rather than belonging to Germany alone.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Austria-Hungary, Germany, Russia, France, Serbia, and Britain all made choices that shaped escalation. Germany and Austria-Hungary nevertheless exercised especially consequential agency through the blank cheque, ultimatum, and acceptance of a wider-war risk.",
+          "sources": [
+            { "title": "Central European History: Hundred-year debate on World War I origins", "url": "https://www.cambridge.org/core/journals/central-european-history/article/guilt-or-responsibility-the-hundredyear-debate-on-the-origins-of-world-war-i/35B5E58FD27F872B9B2AF3D5DB552661" },
+            { "title": "TIME: What historians get wrong about World War I", "url": "https://time.com/3069914/world-war-i-history/" }
+          ]
+        },
+        {
+          "claim": "European leaders were sleepwalkers: watchful but blind to the reality of the catastrophe they were about to create.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Misperception, fragmented authority, and optimism about limited war were real. Yet multiple leaders explicitly contemplated continental conflict, used threats strategically, and accepted escalation; the metaphor risks turning deliberate gambles into unconscious drift.",
+          "sources": [
+            { "title": "Central European History: Hundred-year debate on World War I origins", "url": "https://www.cambridge.org/core/journals/central-european-history/article/guilt-or-responsibility-the-hundredyear-debate-on-the-origins-of-world-war-i/35B5E58FD27F872B9B2AF3D5DB552661" },
+            { "title": "New Left Review: Pathbreakers High and Low", "url": "https://newleftreview.org/issues/ii146/articles/perry-anderson-pathbreakers-high-and-low" }
+          ]
+        }
+      ],
+      "other_claims": ["Alliance commitments were interpreted and renegotiated rather than mechanically automatic.", "The July Crisis became dangerous through sequential interaction, not one synchronized master plan."]
+    },
+    {
+      "slug": "postwar",
+      "entity_key": "web:penguinrandomhouse.com/postwar",
+      "title": "Postwar",
+      "subtitle": "A History of Europe Since 1945",
+      "author": "Tony Judt",
+      "year": 2005,
+      "score": 92,
+      "confidence": "high",
+      "summary": "Judt's continental synthesis is strong on division, reconstruction, welfare, and memory. Its social-democratic European model is persuasive but more normative and West-centered than a neutral endpoint.",
+      "claims": [
+        {
+          "claim": "Postwar Europe was built under a durable division between a U.S.-aligned West and Soviet-dominated East, with radically different political economies.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Occupation zones, communist takeovers, the Marshall Plan, NATO, Comecon, and the Warsaw Pact institutionalized the divide. Each bloc contained major national variation, but the geopolitical and economic partition structured European life until 1989.",
+          "sources": [
+            { "title": "European Parliament: Postwar, a history of Europe since 1945", "url": "https://www.europarl.europa.eu/100books/en/downloadPDF?details=true&id=124" },
+            { "title": "New Left Review: Tony Judt, A Cooler Look", "url": "https://newleftreview.org/issues/ii71/articles/dylan-riley-tony-judt-a-cooler-look" }
+          ]
+        },
+        {
+          "claim": "Western Europe's stability and prosperity rested heavily on reconstruction, social insurance, regulated capitalism, and expanding welfare states.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Rapid growth, public housing, health care, pensions, education, labor bargaining, and mixed economies reduced insecurity and helped legitimate democratic states. U.S. aid, catch-up growth, trade, and national institutions also mattered substantially.",
+          "sources": [
+            { "title": "New Left Review: Tony Judt, A Cooler Look", "url": "https://newleftreview.org/issues/ii71/articles/dylan-riley-tony-judt-a-cooler-look" },
+            { "title": "The welfare state and European integration according to Tony Judt", "url": "https://repozytorium.amu.edu.pl/items/189c4d74-4985-4e89-8629-9938e5f2ba8a" }
+          ]
+        },
+        {
+          "claim": "Europe's public memory of the Holocaust moved from early avoidance toward a central role in late-century identity and integration.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Many states initially foregrounded resistance, national suffering, or antifascist victory while marginalizing Jewish specificity and local complicity. Trials, survivor testimony, scholarship, memorials, and generational change later made the Holocaust more central, unevenly.",
+          "sources": [
+            { "title": "European Parliament: Postwar, a history of Europe since 1945", "url": "https://www.europarl.europa.eu/100books/en/downloadPDF?details=true&id=124" },
+            { "title": "TIME: Differing versions of European historical memory", "url": "https://time.com/3699612/ukraine-historical-memory/" }
+          ]
+        }
+      ],
+      "other_claims": ["The revolutions of 1989 exposed the brittleness of Soviet-bloc legitimacy.", "European integration advanced through pragmatic bargains as much as a shared federal vision."]
     }
   ]
 }
