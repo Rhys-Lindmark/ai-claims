@@ -1,0 +1,65 @@
+import { ArrowLeft, ExternalLink } from 'lucide-react';
+import packet from '@/data/books/guns-germs-and-steel.json';
+
+const claimTypeLabel: Record<string, string> = {
+  factual: 'Factual claim',
+  causal: 'Causal claim',
+};
+
+export function GunsGermsSteelReview() {
+  return <main className="min-h-screen bg-[#fbfbfa] text-[#20211f]">
+    <header className="border-b border-[#20211f]/10">
+      <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-5">
+        <a className="inline-flex items-center gap-2 text-sm font-bold" href="https://ai.rhyslindmark.com/claims"><ArrowLeft className="h-4 w-4" /> AI Claims</a>
+        <span className="text-xs font-semibold text-[#20211f]/45">Claim inventory</span>
+      </div>
+    </header>
+
+    <div className="mx-auto max-w-3xl px-5 py-14 sm:py-20">
+      <section>
+        <p className="text-sm font-semibold text-[#20211f]/45">{packet.author}</p>
+        <h1 className="mt-2 text-4xl font-black leading-tight tracking-[-.04em] sm:text-6xl">{packet.title}</h1>
+        <p className="mt-2 text-lg text-[#20211f]/55">{packet.subtitle}</p>
+
+        <div className="mt-8 rounded-2xl border border-[#20211f]/15 bg-white p-6 sm:flex sm:items-center sm:justify-between sm:gap-8">
+          <div><p className="text-xs font-bold uppercase tracking-[.14em] text-[#20211f]/40">Truth score</p><p className="mt-2 text-3xl font-black">Not ready</p></div>
+          <p className="mt-4 max-w-md text-sm leading-relaxed text-[#20211f]/60 sm:mt-0">{packet.score_hidden_reason}</p>
+        </div>
+
+        <div className="mt-8 flex items-center justify-between text-sm font-bold"><span>0 of {packet.claims.length} claims reviewed</span><span>Scoping</span></div>
+        <div aria-label="Zero of six claims reviewed" className="mt-3 h-2 overflow-hidden rounded-full bg-[#e7e8e5]"><div className="h-full w-0 bg-[#20211f]" /></div>
+        <p className="mt-5 max-w-2xl text-sm leading-relaxed text-[#20211f]/55">{packet.scope_note}</p>
+      </section>
+
+      <section className="mt-14">
+        <h2 className="text-xl font-black">Claims to check</h2>
+        <div className="mt-5 divide-y divide-[#20211f]/10 border-y border-[#20211f]/10">
+          {packet.claims.map((claim, index) => <article className="py-6" key={claim.claim_id}>
+            <div className="flex items-center justify-between gap-4 text-xs font-semibold text-[#20211f]/40"><span>{String(index + 1).padStart(2, '0')} · {claimTypeLabel[claim.claim_type] ?? claim.claim_type}</span><span>Unreviewed</span></div>
+            <h3 className="mt-3 text-xl font-bold leading-snug tracking-[-.015em]">{claim.text}</h3>
+            <details className="mt-4 text-sm">
+              <summary className="cursor-pointer font-semibold text-[#20211f]/55">{claim.source_ids.length} source {claim.source_ids.length === 1 ? 'lead' : 'leads'}</summary>
+              <ul className="mt-3 space-y-2">
+                {claim.source_ids.map((sourceId) => {
+                  const source = packet.sources.find((item) => item.source_id === sourceId)!;
+                  return <li key={sourceId}><a className="inline-flex items-start gap-1 font-semibold underline" href={source.url} target="_blank" rel="noreferrer">{source.title} <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" /></a><span className="ml-2 text-[#20211f]/40">{source.assessment_state.replaceAll('_', ' ')}</span></li>;
+                })}
+              </ul>
+            </details>
+          </article>)}
+        </div>
+      </section>
+
+      <section className="mt-14 border-t border-[#20211f]/10 pt-8">
+        <h2 className="text-xl font-black">Method</h2>
+        <ol className="mt-5 grid gap-4 text-sm leading-relaxed text-[#20211f]/60 sm:grid-cols-3">
+          <li><strong className="block text-[#20211f]">1. Find the claims</strong>Confirm the book's passages and define the eligible denominator.</li>
+          <li><strong className="block text-[#20211f]">2. Check the evidence</strong>Log independent support, counterevidence, alternatives, and scope.</li>
+          <li><strong className="block text-[#20211f]">3. Publish carefully</strong>Show a score only after every eligible claim passes review gates.</li>
+        </ol>
+      </section>
+
+      <footer className="mt-14 border-t border-[#20211f]/10 pt-6 text-xs leading-relaxed text-[#20211f]/40">This is a public research receipt, not a verdict. Author-aligned sources establish what the book argues; they do not independently prove it.</footer>
+    </div>
+  </main>;
+}

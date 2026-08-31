@@ -9,6 +9,7 @@ type BookIdentity = {
   entityKey: string;
   canonicalUrl: string;
   kind: 'goodreads' | 'web';
+  reviewUrl?: string;
 };
 
 type CheckResult = {
@@ -29,6 +30,7 @@ const starterBooks: Array<BookIdentity & { aliases: string[] }> = [
     entityKey: 'goodreads:1842',
     canonicalUrl: 'https://www.goodreads.com/book/show/1842',
     kind: 'goodreads',
+    reviewUrl: 'https://ai.rhyslindmark.com/claims/book?entity_key=goodreads%3A1842',
     aliases: ['guns germs and steel', 'guns germs & steel', 'guns, germs, and steel', 'guns germs and steel the fates of human societies'],
   },
   {
@@ -169,7 +171,7 @@ export function BookChecker() {
         {result.state === 'published' ? <div className="mt-6 border-t border-[#20211f]/10 pt-5"><div className="flex items-center gap-2 text-sm font-bold"><Check className="h-4 w-4" /> {result.reviewedClaims}/{result.eligibleClaims} claims reviewed</div>{result.analysisUrl ? <a className="mt-4 inline-flex items-center gap-1 text-sm font-bold underline" href={result.analysisUrl}>See every claim and source <ExternalLink className="h-3 w-3" /></a> : null}</div> : null}
         {result.state === 'failed' ? <p className="mt-6 border-t border-[#20211f]/10 pt-5 text-sm text-[#20211f]/60">{result.message}</p> : null}
 
-        {result.requestId ? <div className="mt-6 flex flex-wrap items-center gap-4 border-t border-[#20211f]/10 pt-5"><a className="text-sm font-bold underline" href={`/claims/request?request_id=${encodeURIComponent(result.requestId)}`}>View review status</a><button className="inline-flex items-center gap-1 text-sm text-[#20211f]/55 hover:text-[#20211f]" onClick={copyStatus}><Copy className="h-3.5 w-3.5" /> {copied ? 'Copied' : 'Share'}</button></div> : null}
+        {result.requestId ? <div className="mt-6 flex flex-wrap items-center gap-4 border-t border-[#20211f]/10 pt-5">{result.identity.reviewUrl ? <a className="text-sm font-bold underline" href={result.identity.reviewUrl}>Open claim map</a> : null}<a className="text-sm font-bold underline" href={`/claims/request?request_id=${encodeURIComponent(result.requestId)}`}>View review status</a><button className="inline-flex items-center gap-1 text-sm text-[#20211f]/55 hover:text-[#20211f]" onClick={copyStatus}><Copy className="h-3.5 w-3.5" /> {copied ? 'Copied' : 'Share'}</button></div> : null}
       </section> : null}
 
       <section className="mx-auto mt-16 max-w-2xl border-t border-[#20211f]/10 pt-8">

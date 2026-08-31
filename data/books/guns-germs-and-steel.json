@@ -1,0 +1,143 @@
+{
+  "schema_version": "ai-claims.book-review/0.1.0",
+  "entity_key": "goodreads:1842",
+  "goodreads_page_id": "1842",
+  "canonical_url": "https://www.goodreads.com/book/show/1842",
+  "title": "Guns, Germs, and Steel",
+  "subtitle": "The Fates of Human Societies",
+  "author": "Jared Diamond",
+  "review_state": "claim_inventory",
+  "score_0_100": null,
+  "publication_gates_passed": false,
+  "last_reviewed_at": null,
+  "scope_note": "A provisional high-consequence claim inventory derived from the official PBS book companion. The complete book has not yet been checked passage by passage.",
+  "score_hidden_reason": "The eligible claim denominator, passage locators, independent evidence, and editor findings are incomplete.",
+  "claims": [
+    {
+      "claim_id": "ggs-claim-01",
+      "text": "Uneven access to productive domesticable plants and animals contributed materially to divergent societal trajectories.",
+      "claim_type": "causal",
+      "importance": "central",
+      "attribution_confidence": "high",
+      "review_state": "unreviewed",
+      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05"]
+    },
+    {
+      "claim_id": "ggs-claim-02",
+      "text": "Eurasia possessed a more advantageous package of domesticable large mammals than other continents.",
+      "claim_type": "factual",
+      "importance": "supporting",
+      "attribution_confidence": "medium",
+      "review_state": "unreviewed",
+      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05"]
+    },
+    {
+      "claim_id": "ggs-claim-03",
+      "text": "Eurasia's east–west extent made diffusion easier than movement across strong north–south climate gradients.",
+      "claim_type": "causal",
+      "importance": "central",
+      "attribution_confidence": "high",
+      "review_state": "unreviewed",
+      "source_ids": ["ggs-source-02"]
+    },
+    {
+      "claim_id": "ggs-claim-04",
+      "text": "Food production enabled larger, denser, more specialized and politically centralized societies.",
+      "claim_type": "causal",
+      "importance": "central",
+      "attribution_confidence": "high",
+      "review_state": "unreviewed",
+      "source_ids": ["ggs-source-01", "ggs-source-03"]
+    },
+    {
+      "claim_id": "ggs-claim-05",
+      "text": "Agriculture and sustained animal contact helped generate many major infectious diseases and differential population exposure.",
+      "claim_type": "causal",
+      "importance": "central",
+      "attribution_confidence": "high",
+      "review_state": "unreviewed",
+      "source_ids": ["ggs-source-01", "ggs-source-04"]
+    },
+    {
+      "claim_id": "ggs-claim-06",
+      "text": "Weapons, steel, horses, disease and political organization were important proximate advantages in early European conquests.",
+      "claim_type": "causal",
+      "importance": "central",
+      "attribution_confidence": "high",
+      "review_state": "unreviewed",
+      "source_ids": ["ggs-source-01", "ggs-source-06", "ggs-source-07"]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "ggs-source-01",
+      "title": "Variables: The Story of…",
+      "publisher": "PBS",
+      "year": 2005,
+      "url": "https://www.pbs.org/gunsgermssteel/variables/index.html",
+      "source_class": "official_companion",
+      "independence": "author_aligned",
+      "assessment_state": "attribution_only"
+    },
+    {
+      "source_id": "ggs-source-02",
+      "title": "The Shapes of the Continents",
+      "publisher": "PBS",
+      "year": 2005,
+      "url": "https://www.pbs.org/gunsgermssteel/variables/continents.html",
+      "source_class": "official_companion",
+      "independence": "author_aligned",
+      "assessment_state": "attribution_only"
+    },
+    {
+      "source_id": "ggs-source-03",
+      "title": "Domestication and early agriculture in the Mediterranean Basin: Origins, diffusion, and impact",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2008,
+      "url": "https://doi.org/10.1073/pnas.0801317105",
+      "source_class": "peer_reviewed_synthesis",
+      "independence": "independent",
+      "assessment_state": "candidate"
+    },
+    {
+      "source_id": "ggs-source-04",
+      "title": "Origins of major human infectious diseases",
+      "publisher": "Nature",
+      "year": 2007,
+      "url": "https://doi.org/10.1038/nature05775",
+      "source_class": "peer_reviewed_synthesis",
+      "independence": "author_coauthored",
+      "assessment_state": "candidate"
+    },
+    {
+      "source_id": "ggs-source-05",
+      "title": "Evolution, consequences and future of plant and animal domestication",
+      "publisher": "Nature",
+      "year": 2002,
+      "url": "https://doi.org/10.1038/nature01019",
+      "source_class": "author_synthesis",
+      "independence": "author_authored",
+      "assessment_state": "attribution_only"
+    },
+    {
+      "source_id": "ggs-source-06",
+      "title": "Review of Guns, Germs, and Steel",
+      "publisher": "Technology and Culture",
+      "year": 2000,
+      "url": "https://doi.org/10.1353/tech.2000.0123",
+      "source_class": "scholarly_review",
+      "independence": "independent",
+      "assessment_state": "candidate_unread"
+    },
+    {
+      "source_id": "ggs-source-07",
+      "title": "Review exchange on Guns, Germs, and Steel",
+      "publisher": "International Journal of African Historical Studies",
+      "year": 1999,
+      "url": "https://doi.org/10.2307/220367",
+      "source_class": "scholarly_review_and_response",
+      "independence": "mixed",
+      "assessment_state": "candidate_unread"
+    }
+  ]
+}
