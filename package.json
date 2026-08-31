@@ -14,6 +14,7 @@
     "test:deployed-goodreads": "node scripts/check-deployed-goodreads-fixture.mjs",
     "test:deployed-web": "node scripts/check-deployed-web-fixture.mjs",
     "test:deployed-compatibility": "node scripts/check-deployed-compatibility.mjs",
+    "test:deployed-attestation": "node scripts/check-deployed-attestation-api.mjs",
     "package:extension": "sh scripts/package-extension.sh .",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
