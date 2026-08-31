@@ -14,7 +14,7 @@ import { identifyPage } from '../lib/page-identity.js';
 import { actionBadgeForState } from '../lib/action-badge.js';
 import { createOriginOptInStore } from '../lib/origin-opt-in.js';
 import { correctionLinkForState, correctionPreviewForState, escapeHtml } from '../lib/correction-links.js';
-import { canonicalPrivacyReceipt, privacyReceiptArtifact, verifyPrivacyReceiptDocument } from '../lib/privacy-receipt.js';
+import { canonicalPrivacyReceipt, privacyReceiptArtifact, SUPPORTED_PRIVACY_RECEIPT_SCHEMAS, verifyPrivacyReceiptDocument } from '../lib/privacy-receipt.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -395,4 +395,13 @@ test('privacy receipt verifier distinguishes valid, altered, unsupported, and in
   unsupported.integrity.canonicalization = 'unknown';
   assert.equal((await verifyPrivacyReceiptDocument(JSON.stringify(unsupported))).state, 'unsupported');
   assert.equal((await verifyPrivacyReceiptDocument('{not json')).state, 'invalid');
+});
+
+test('privacy receipt verifier rejects intact but unknown receipt schemas', async () => {
+  assert.deepEqual(SUPPORTED_PRIVACY_RECEIPT_SCHEMAS, ['1.0.0']);
+  const artifact = await privacyReceiptArtifact({ schema_version: '2.0.0', storage_scope: 'chrome.storage.local', transmitted: false });
+  const verification = await verifyPrivacyReceiptDocument(artifact.content);
+  assert.equal(verification.state, 'unsupported');
+  assert.match(verification.reason, /schema 2\.0\.0/);
+  assert.deepEqual(verification.supportedSchemas, ['1.0.0']);
 });

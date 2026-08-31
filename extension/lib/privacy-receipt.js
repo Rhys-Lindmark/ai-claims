@@ -1,3 +1,5 @@
+export const SUPPORTED_PRIVACY_RECEIPT_SCHEMAS = ['1.0.0'];
+
 function canonicalValue(value) {
   if (Array.isArray(value)) return value.map(canonicalValue);
   if (value && typeof value === 'object') return Object.fromEntries(Object.keys(value).sort().map((key) => [key, canonicalValue(value[key])]));
@@ -41,6 +43,9 @@ export async function verifyPrivacyReceiptDocument(jsonText, cryptoImpl = global
   const integrity = document?.integrity;
   if (integrity?.algorithm !== 'SHA-256' || integrity?.canonicalization !== 'recursive-key-sort-json-utf8' || integrity?.digest_scope !== 'receipt_without_integrity') {
     return { state: 'unsupported', reason: 'The receipt uses an unsupported integrity format.' };
+  }
+  if (!SUPPORTED_PRIVACY_RECEIPT_SCHEMAS.includes(document.schema_version)) {
+    return { state: 'unsupported', reason: `Receipt schema ${document.schema_version ?? 'missing'} is not supported by this extension.`, supportedSchemas: [...SUPPORTED_PRIVACY_RECEIPT_SCHEMAS] };
   }
   const { integrity: _ignored, ...receipt } = document;
   const expected = (await privacyReceiptArtifact(receipt, cryptoImpl)).digestHex;

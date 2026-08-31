@@ -12,7 +12,7 @@ The public resolver contract is available at [`/claims/api/v1/analyses/resolve?e
 
 ## Install the prototype
 
-Download the [`extension-v0.2.13` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.13), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. It records only daily, browser-local aggregates of correction-contract outcomes—never page identity or per-check timestamps—and exposes a machine-readable privacy receipt, an explicit reset control, a local JSON export with an offline-verifiable SHA-256 digest, and a paste-in local verifier. No new permission or upload path is added. It negotiates compatible feeds, preserves reviewed scores, and suppresses paused scores; only synthetic reviewed fixtures are currently published.
+Download the [`extension-v0.2.14` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.14), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. It records only daily, browser-local aggregates of correction-contract outcomes—never page identity or per-check timestamps—and exposes a machine-readable privacy receipt, an explicit reset control, a local JSON export with an offline-verifiable SHA-256 digest, and a paste-in local verifier with explicit schema-version compatibility. No new permission or upload path is added. It negotiates compatible feeds, preserves reviewed scores, and suppresses paused scores; only synthetic reviewed fixtures are currently published.
 
 ## Validate
 
