@@ -14,7 +14,7 @@ import { identifyPage } from '../lib/page-identity.js';
 import { actionBadgeForState } from '../lib/action-badge.js';
 import { createOriginOptInStore } from '../lib/origin-opt-in.js';
 import { correctionLinkForState, correctionPreviewForState, escapeHtml } from '../lib/correction-links.js';
-import { canonicalPrivacyReceipt, privacyReceiptArtifact } from '../lib/privacy-receipt.js';
+import { canonicalPrivacyReceipt, privacyReceiptArtifact, verifyPrivacyReceiptDocument } from '../lib/privacy-receipt.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -382,4 +382,17 @@ test('privacy receipt export is deterministic and needs no download permission',
   assert.equal(canonicalPrivacyReceipt({ b: 2, a: 1 }), '{"a":1,"b":2}');
   assert.equal(manifest.permissions.includes('downloads'), false);
   assert.equal(manifest.host_permissions.length, 1);
+});
+
+test('privacy receipt verifier distinguishes valid, altered, unsupported, and invalid documents', async () => {
+  const receipt = { schema_version: '1.0.0', storage_scope: 'chrome.storage.local', transmitted: false, retention_days: 30, last_reset_at: null };
+  const artifact = await privacyReceiptArtifact(receipt);
+  assert.equal((await verifyPrivacyReceiptDocument(artifact.content)).state, 'valid');
+  const altered = JSON.parse(artifact.content);
+  altered.retention_days = 365;
+  assert.equal((await verifyPrivacyReceiptDocument(JSON.stringify(altered))).state, 'altered');
+  const unsupported = JSON.parse(artifact.content);
+  unsupported.integrity.canonicalization = 'unknown';
+  assert.equal((await verifyPrivacyReceiptDocument(JSON.stringify(unsupported))).state, 'unsupported');
+  assert.equal((await verifyPrivacyReceiptDocument('{not json')).state, 'invalid');
 });

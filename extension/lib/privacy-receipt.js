@@ -30,3 +30,20 @@ export async function privacyReceiptArtifact(receipt, cryptoImpl = globalThis.cr
     digestHex,
   };
 }
+
+export async function verifyPrivacyReceiptDocument(jsonText, cryptoImpl = globalThis.crypto) {
+  let document;
+  try {
+    document = JSON.parse(jsonText);
+  } catch {
+    return { state: 'invalid', reason: 'The receipt is not valid JSON.' };
+  }
+  const integrity = document?.integrity;
+  if (integrity?.algorithm !== 'SHA-256' || integrity?.canonicalization !== 'recursive-key-sort-json-utf8' || integrity?.digest_scope !== 'receipt_without_integrity') {
+    return { state: 'unsupported', reason: 'The receipt uses an unsupported integrity format.' };
+  }
+  const { integrity: _ignored, ...receipt } = document;
+  const expected = (await privacyReceiptArtifact(receipt, cryptoImpl)).digestHex;
+  if (integrity.digest_hex !== expected) return { state: 'altered', reason: 'The saved receipt does not match its integrity digest.', expected, actual: integrity.digest_hex };
+  return { state: 'valid', reason: 'The saved receipt matches its local SHA-256 digest.', digestHex: expected };
+}

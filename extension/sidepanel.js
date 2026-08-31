@@ -5,7 +5,7 @@ import { sourceNotice } from './lib/source-policy.js';
 import { createMetricsStore } from './lib/local-metrics.js';
 import { createOriginOptInStore } from './lib/origin-opt-in.js';
 import { correctionLinkForState, correctionPreviewForState, escapeHtml } from './lib/correction-links.js';
-import { privacyReceiptArtifact } from './lib/privacy-receipt.js';
+import { privacyReceiptArtifact, verifyPrivacyReceiptDocument } from './lib/privacy-receipt.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
@@ -16,6 +16,9 @@ const localMetrics = document.querySelector('#local-metrics');
 const privacyReceipt = document.querySelector('#privacy-receipt');
 const resetMetricsButton = document.querySelector('#reset-metrics');
 const downloadReceiptButton = document.querySelector('#download-receipt');
+const receiptInput = document.querySelector('#receipt-input');
+const verifyReceiptButton = document.querySelector('#verify-receipt');
+const receiptVerification = document.querySelector('#receipt-verification');
 let currentTab;
 let currentIdentity;
 let currentAutoCheck = false;
@@ -155,6 +158,11 @@ downloadReceiptButton.addEventListener('click', async () => {
   anchor.download = download.filename;
   anchor.click();
   setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
+});
+
+verifyReceiptButton.addEventListener('click', async () => {
+  const verification = await verifyPrivacyReceiptDocument(receiptInput.value);
+  receiptVerification.textContent = `${verification.state.toUpperCase()} · ${verification.reason}`;
 });
 
 chrome.tabs.onActivated.addListener(refresh);

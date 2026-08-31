@@ -28,6 +28,10 @@
         <p id="privacy-receipt">LOCAL ONLY · 30-DAY RETENTION · NEVER TRANSMITTED</p>
         <button class="reset-metrics" id="reset-metrics">Reset compatibility metrics</button>
         <button class="reset-metrics" id="download-receipt">Download JSON receipt</button>
+        <label class="receipt-label" for="receipt-input">Verify pasted receipt JSON</label>
+        <textarea id="receipt-input" rows="4" spellcheck="false" placeholder="Paste an AI Claims privacy receipt"></textarea>
+        <button class="reset-metrics" id="verify-receipt">Verify receipt locally</button>
+        <p id="receipt-verification" aria-live="polite"></p>
       </details>
     </main>
     <footer>
