@@ -94,8 +94,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": ["ggs-evidence-04a", "ggs-evidence-04b", "ggs-evidence-04c"],
-      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-28", "ggs-source-29", "ggs-source-30"]
+      "evidence_record_ids": ["ggs-evidence-04a", "ggs-evidence-04b", "ggs-evidence-04c", "ggs-evidence-04d", "ggs-evidence-04e"],
+      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-28", "ggs-source-29", "ggs-source-30", "ggs-source-31", "ggs-source-32"]
     },
     {
       "claim_id": "ggs-claim-05",
@@ -406,6 +406,30 @@
       "last_verified_at": "2026-08-31",
       "finding": "A phylogenetic study of 155 Austronesian-speaking societies found intensive land-modifying agriculture and sociopolitical hierarchy coevolved reciprocally; intensification was not the prime mover, and political complexity often promoted intensification more than the reverse.",
       "scope_and_limits": "The study examines one form of agricultural intensification in an Austronesian sample, not the first emergence of states worldwide. It supports association while rejecting a deterministic one-way path from food production to hierarchy."
+    },
+    {
+      "evidence_id": "ggs-evidence-04d",
+      "claim_id": "ggs-claim-04",
+      "source_id": "ggs-source-31",
+      "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Across more than 1,100 archaeological sites and 47,000 residential units, house-size inequality was consistently greater in settlements at or near the top of multilevel settlement systems; higher-ranked systems became more common after cultivation spread.",
+      "scope_and_limits": "This supports a food-production-to-population-scale-to-settlement-hierarchy pathway, not an automatic transition. Persistent inequality usually lagged cultivation by more than a millennium, and settlements outside hierarchical systems often remained relatively egalitarian long after domestication."
+    },
+    {
+      "evidence_id": "ggs-evidence-04e",
+      "claim_id": "ggs-claim-04",
+      "source_id": "ggs-source-32",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Archaeometallurgical analyses from 42 sites in Arctic Norway, Sweden, and Finland identified advanced iron and steel production in hunter-gatherer contexts about 2,000 years ago, including smelting and smithing practices comparable to contemporary agricultural regions.",
+      "scope_and_limits": "The study shows that agriculture was not a necessary precondition for intricate technical production and knowledge networks. It does not establish full-time occupational specialists, population density, or political centralization at these sites."
     },
     {
       "evidence_id": "ggs-evidence-05a",
@@ -742,6 +766,26 @@
       "year": 2018,
       "url": "https://doi.org/10.1073/pnas.1714558115",
       "source_class": "cross_cultural_phylogenetic_analysis",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-31",
+      "title": "Economic inequality is fueled by population scale, land-limited production, and settlement hierarchies across the archaeological record",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2025,
+      "url": "https://doi.org/10.1073/pnas.2400691122",
+      "source_class": "global_archaeological_house_size_inequality_analysis",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-32",
+      "title": "Advanced Ancient Steelmaking Across the Arctic European Landscape",
+      "publisher": "Open Archaeology",
+      "year": 2024,
+      "url": "https://doi.org/10.1515/opar-2024-0017",
+      "source_class": "primary_archaeometallurgical_multi_site_analysis",
       "independence": "independent",
       "assessment_state": "assessed"
     }
