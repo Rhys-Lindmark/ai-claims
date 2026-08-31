@@ -3,7 +3,7 @@
 import { ArrowRight, ExternalLink, SearchCheck } from 'lucide-react';
 import { FormEvent, useEffect, useState } from 'react';
 import { probeResolverUrl, type ResolverProbeResult } from '@/extension/lib/resolver-probe.js';
-import { addProbeHistory, parseProbeHistory, type ProbeHistoryEntry } from '@/extension/lib/probe-history.js';
+import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, type ProbeHistoryEntry } from '@/extension/lib/probe-history.js';
 
 const fixtureUrl = 'https://www.youtube.com/watch?v=ai-claims-synthetic-001';
 const historyKey = 'ai-claims:resolver-probe-history:v1';
@@ -31,6 +31,21 @@ export function ResolverProbe() {
     setLoading(false);
   }
 
+  function clearHistory() {
+    try { window.localStorage.removeItem(historyKey); } catch { /* History is optional. */ }
+    setHistory([]);
+  }
+
+  function exportHistory() {
+    const blob = new Blob([`${JSON.stringify(probeHistoryReceipt(history), null, 2)}\n`], { type: 'application/json' });
+    const downloadUrl = URL.createObjectURL(blob);
+    const anchor = document.createElement('a');
+    anchor.href = downloadUrl;
+    anchor.download = 'ai-claims-probe-history-receipt.json';
+    anchor.click();
+    URL.revokeObjectURL(downloadUrl);
+  }
+
   return <section className="border-b-2 border-ink bg-[#ffd76a]">
     <div className="mx-auto grid max-w-6xl gap-7 px-5 py-10 md:px-10 lg:grid-cols-[1.05fr_.95fr]">
       <div>
@@ -51,6 +66,7 @@ export function ResolverProbe() {
         <div className="mt-6 border-t-2 border-ink pt-3">
           <div className="flex items-center justify-between gap-3 font-mono text-[8px] font-bold uppercase"><span>Last five checks · this browser only</span><span>No page identity stored</span></div>
           {history.length ? <ol className="mt-3 flex flex-wrap gap-2">{history.map((entry, index) => <li className="border border-ink bg-white px-2 py-1 font-mono text-[8px] font-bold uppercase" key={`${entry.kind}-${entry.state}-${index}`}>{entry.kind} · {entry.state.replaceAll('_', ' ')}</li>)}</ol> : <p className="mt-3 text-xs text-ink/50">No checks saved on this device.</p>}
+          <div className="mt-3 flex gap-3 font-mono text-[8px] font-bold uppercase"><button className="underline disabled:opacity-40" disabled={!history.length} onClick={clearHistory} type="button">Clear local history</button><button className="underline" onClick={exportHistory} type="button">Export privacy receipt</button></div>
         </div>
       </article>
     </div>

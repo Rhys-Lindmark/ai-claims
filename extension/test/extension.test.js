@@ -18,7 +18,7 @@ import { canonicalPrivacyReceipt, privacyReceiptArtifact, SUPPORTED_PRIVACY_RECE
 import syntheticEpisode from '../data/synthetic-youtube-fixture.json' with { type: 'json' };
 import { syntheticEpisodeScore, validateSyntheticEpisodeFixture } from '../lib/episode-fixture.js';
 import { probeResolverUrl } from '../lib/resolver-probe.js';
-import { addProbeHistory, parseProbeHistory, PROBE_HISTORY_LIMIT } from '../lib/probe-history.js';
+import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -92,6 +92,16 @@ test('resolver probe history keeps five identity-free local outcomes', () => {
   assert.doesNotMatch(serialized, /private-video|Private title|canonicalUrl|entityKey|score/i);
   assert.deepEqual(parseProbeHistory('{bad json'), []);
   assert.deepEqual(parseProbeHistory('[{"state":"reviewed","kind":"youtube","url":"secret"}]'), [{ state: 'reviewed', kind: 'youtube' }]);
+});
+
+test('resolver probe history receipt discloses its narrow local schema', () => {
+  const receipt = probeHistoryReceipt([{ state: 'reviewed', kind: 'goodreads', url: 'secret', score: 100 }]);
+  assert.equal(receipt.schema_version, PROBE_HISTORY_RECEIPT_SCHEMA);
+  assert.equal(receipt.storage_scope, 'browser-local');
+  assert.equal(receipt.identity_fields_retained, false);
+  assert.deepEqual(receipt.retained_fields, ['kind', 'state']);
+  assert.deepEqual(receipt.entries, [{ state: 'reviewed', kind: 'goodreads' }]);
+  assert.doesNotMatch(JSON.stringify(receipt), /secret|score|url/i);
 });
 
 test('recognizes Goodreads books without edition-slug noise', () => {
