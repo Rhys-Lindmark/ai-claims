@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_notice": "Synthetic transcript and evidence for pipeline testing only; no real episode, speaker, or world claim is represented.",
+  "entity_key": "youtube:ai-claims-synthetic-001",
+  "video_id": "ai-claims-synthetic-001",
+  "canonical_url": "https://www.youtube.com/watch?v=ai-claims-synthetic-001",
+  "title": "Synthetic inventory briefing",
+  "duration_seconds": 90,
+  "speakers": [
+    { "speaker_id": "speaker-a", "label": "Synthetic speaker A", "attribution_confidence": 1 }
+  ],
+  "transcript_segments": [
+    { "segment_id": "segment-001", "start_seconds": 5, "end_seconds": 12, "speaker_id": "speaker-a", "text": "The demonstration inventory contains four tokens." },
+    { "segment_id": "segment-002", "start_seconds": 21, "end_seconds": 28, "speaker_id": "speaker-a", "text": "Most of the tokens are blue." },
+    { "segment_id": "segment-003", "start_seconds": 39, "end_seconds": 46, "speaker_id": "speaker-a", "text": "Exactly one token is coral." },
+    { "segment_id": "segment-004", "start_seconds": 58, "end_seconds": 65, "speaker_id": "speaker-a", "text": "The inventory includes one green token." }
+  ],
+  "evidence_records": [
+    {
+      "evidence_id": "evidence-inventory-ledger-v1",
+      "source_kind": "synthetic_fixture",
+      "title": "Synthetic inventory ledger",
+      "statement": "The closed fixture inventory contains four tokens: two blue, one coral, and one green.",
+      "last_verified_at": "2026-08-30"
+    }
+  ],
+  "claims": [
+    { "claim_id": "claim-001", "segment_id": "segment-001", "evidence_ids": ["evidence-inventory-ledger-v1"], "claim_type": "quantitative", "verdict": "accurate", "truth_credit": 1 },
+    { "claim_id": "claim-002", "segment_id": "segment-002", "evidence_ids": ["evidence-inventory-ledger-v1"], "claim_type": "quantitative", "verdict": "inaccurate", "truth_credit": 0 },
+    { "claim_id": "claim-003", "segment_id": "segment-003", "evidence_ids": ["evidence-inventory-ledger-v1"], "claim_type": "quantitative", "verdict": "accurate", "truth_credit": 1 },
+    { "claim_id": "claim-004", "segment_id": "segment-004", "evidence_ids": ["evidence-inventory-ledger-v1"], "claim_type": "factual", "verdict": "accurate", "truth_credit": 1 }
+  ]
+}

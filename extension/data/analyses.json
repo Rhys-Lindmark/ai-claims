@@ -3,6 +3,25 @@
   "fixture_notice": "Synthetic records for extension development; not claims about real media.",
   "analyses": [
     {
+      "entity_key": "youtube:ai-claims-synthetic-001",
+      "status": "published",
+      "publication_state": "active",
+      "analysis_version_id": "episode-synthetic-v1",
+      "superseded_version_ids": [],
+      "version_history": [],
+      "resumed_from_version_id": null,
+      "paused_reason": null,
+      "score_0_100": 75,
+      "eligible_claims": 4,
+      "reviewed_claims": 4,
+      "unresolved_claims": 0,
+      "publication_gates_passed": true,
+      "provenance_complete": true,
+      "methodology_version": "equal-claim-truth-credit@0.1.0-fixture",
+      "last_reviewed_at": "2026-08-30",
+      "analysis_url": "https://ai.rhyslindmark.com/claims/episode?entity_key=youtube%3Aai-claims-synthetic-001"
+    },
+    {
       "entity_key": "web:example.invalid/reviewed-fixture",
       "status": "published",
       "publication_state": "active",

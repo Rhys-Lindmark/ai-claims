@@ -15,6 +15,8 @@ import { actionBadgeForState } from '../lib/action-badge.js';
 import { createOriginOptInStore } from '../lib/origin-opt-in.js';
 import { correctionLinkForState, correctionPreviewForState, escapeHtml } from '../lib/correction-links.js';
 import { canonicalPrivacyReceipt, privacyReceiptArtifact, SUPPORTED_PRIVACY_RECEIPT_SCHEMAS, verifyPrivacyReceiptDocument } from '../lib/privacy-receipt.js';
+import syntheticEpisode from '../data/synthetic-youtube-fixture.json' with { type: 'json' };
+import { syntheticEpisodeScore, validateSyntheticEpisodeFixture } from '../lib/episode-fixture.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -24,6 +26,22 @@ test('canonicalizes common YouTube URL forms to one entity', () => {
     'https://www.youtube.com/embed/abc123xyz00',
   ];
   assert.deepEqual(urls.map((url) => identifyPage(url).entityKey), Array(4).fill('youtube:abc123xyz00'));
+});
+
+test('synthetic YouTube page resolves through the reviewed gate to its episode route', () => {
+  const identity = identifyPage(syntheticEpisode.canonical_url);
+  const state = resolveAnalysis(registry, identity.entityKey);
+  assert.equal(identity.entityKey, syntheticEpisode.entity_key);
+  assert.equal(state.state, 'published');
+  assert.equal(state.score, 75);
+  assert.match(state.analysisUrl, /\/claims\/episode\?entity_key=youtube%3Aai-claims-synthetic-001$/);
+});
+
+test('synthetic episode packet is internally linked and score-reproducible', () => {
+  assert.deepEqual(validateSyntheticEpisodeFixture(syntheticEpisode), []);
+  assert.equal(syntheticEpisodeScore(syntheticEpisode), 75);
+  assert.match(syntheticEpisode.fixture_notice, /no real episode/i);
+  assert.equal(syntheticEpisode.claims.length, 4);
 });
 
 test('recognizes Goodreads books without edition-slug noise', () => {
@@ -66,7 +84,8 @@ test('correction links distinguish paused, resumed, and superseded transitions',
 
 test('score state propagates correction pointers without adding a paused score', () => {
   const latestCorrectionUrl = 'https://ai.rhyslindmark.com/claims#correction-event-paused-001';
-  const state = scoreState({ ...registry.analyses[2], latest_correction_event_id: 'correction-event-paused-001', latest_correction_url: latestCorrectionUrl, correction_feed_api_url: 'https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections' });
+  const pausedFixture = registry.analyses.find((analysis) => analysis.entity_key === 'web:example.invalid/paused-fixture');
+  const state = scoreState({ ...pausedFixture, latest_correction_event_id: 'correction-event-paused-001', latest_correction_url: latestCorrectionUrl, correction_feed_api_url: 'https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections' });
   assert.equal(state.latestCorrectionEventId, 'correction-event-paused-001');
   assert.equal(state.latestCorrectionUrl, latestCorrectionUrl);
   assert.equal(Object.hasOwn(state, 'score'), false);
@@ -95,7 +114,7 @@ test('local resolver preserves the score gate behind an adapter', async () => {
 
 test('API resolver uses the versioned envelope and exact entity key', async () => {
   let requestedUrl;
-  const analysis = registry.analyses[0];
+  const analysis = registry.analyses.find((entry) => entry.entity_key === 'web:example.invalid/reviewed-fixture');
   const resolver = createApiResolver({
     endpoint: 'https://api.example.invalid',
     fetchImpl: async (url) => {
@@ -111,7 +130,7 @@ test('API resolver uses the versioned envelope and exact entity key', async () =
 
 test('API resolver opts into browser HTTP-cache revalidation', async () => {
   let requestOptions;
-  const analysis = registry.analyses[0];
+  const analysis = registry.analyses.find((entry) => entry.entity_key === 'web:example.invalid/reviewed-fixture');
   const resolver = createApiResolver({
     endpoint: 'https://api.example.invalid',
     fetchImpl: async (_url, options) => {
@@ -158,7 +177,7 @@ test('API resolver maps 404 to not analyzed and rejects incompatible contracts',
 });
 
 test('resolver keeps scores but removes correction pointers for newer unsupported feed contracts', async () => {
-  const analysis = { ...registry.analyses[0], latest_correction_summary: 'Fixture transition.', latest_correction_url: 'https://ai.rhyslindmark.com/claims#event' };
+  const analysis = { ...registry.analyses.find((entry) => entry.entity_key === 'web:example.invalid/reviewed-fixture'), latest_correction_summary: 'Fixture transition.', latest_correction_url: 'https://ai.rhyslindmark.com/claims#event' };
   const resolver = createApiResolver({
     endpoint: 'https://api.example.invalid',
     fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '1.0.0', entity_key: analysis.entity_key, correction_feed_discovery: { contract_version: '9.0.0' }, analysis }) }),
