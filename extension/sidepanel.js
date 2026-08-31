@@ -4,7 +4,7 @@ import { createRequestStore } from './lib/analysis-requests.js';
 import { sourceNotice } from './lib/source-policy.js';
 import { createMetricsStore } from './lib/local-metrics.js';
 import { createOriginOptInStore } from './lib/origin-opt-in.js';
-import { correctionLinkForState } from './lib/correction-links.js';
+import { correctionLinkForState, correctionPreviewForState, escapeHtml } from './lib/correction-links.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
@@ -34,14 +34,16 @@ async function loadResolver() {
 
 function renderResult(state, identity, requestRecord = null) {
   const correctionLink = correctionLinkForState(state);
+  const correctionPreview = correctionPreviewForState(state);
   if (state.state === 'published') {
     result.className = 'result';
     result.innerHTML = `
       <p class="score-label">Reviewed truth score</p>
       <p class="score">${state.score}<span>/100</span></p>
       <p class="meta">${state.reviewedClaims}/${state.eligibleClaims} eligible claims reviewed<br>Version ${state.analysisVersionId}${state.resumedFromVersionId ? ` · resumed from ${state.resumedFromVersionId}` : ''}<br>Method ${state.methodologyVersion}<br>Reviewed ${state.lastReviewedAt}</p>
+      ${correctionPreview ? `<p class="meta"><strong>${escapeHtml(correctionPreview.lineage)}</strong><br>${escapeHtml(correctionPreview.summary)}</p>` : ''}
       <a class="request" href="${state.analysisUrl}" target="_blank" rel="noreferrer">Open evidence trail ↗</a>
-      ${correctionLink ? `<a class="request" href="${correctionLink.url}" target="_blank" rel="noreferrer">${correctionLink.label} ↗</a>` : ''}`;
+      ${correctionLink ? `<a class="request" href="${escapeHtml(correctionLink.url)}" target="_blank" rel="noreferrer">${escapeHtml(correctionLink.label)} ↗</a>` : ''}`;
     return;
   }
 
@@ -51,7 +53,8 @@ function renderResult(state, identity, requestRecord = null) {
   result.innerHTML = `
     <h3>${heading}</h3>
     <p>${explanation}</p>
-    ${state.state === 'paused' && state.analysisUrl ? `<a class="request" href="${state.analysisUrl}" target="_blank" rel="noreferrer">Open pause context ↗</a>${correctionLink ? `<a class="request" href="${correctionLink.url}" target="_blank" rel="noreferrer">${correctionLink.label} ↗</a>` : ''}` : requestRecord ? identity.kind === 'youtube' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Supply permitted transcript ↗</a>` : identity.kind === 'goodreads' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/book-intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Confirm book edition ↗</a>` : '' : '<button class="request" id="request-analysis">Request analysis</button>'}`;
+    ${correctionPreview ? `<p class="meta"><strong>${escapeHtml(correctionPreview.lineage)}</strong><br>${escapeHtml(correctionPreview.summary)}</p>` : ''}
+    ${state.state === 'paused' && state.analysisUrl ? `<a class="request" href="${state.analysisUrl}" target="_blank" rel="noreferrer">Open pause context ↗</a>${correctionLink ? `<a class="request" href="${escapeHtml(correctionLink.url)}" target="_blank" rel="noreferrer">${escapeHtml(correctionLink.label)} ↗</a>` : ''}` : requestRecord ? identity.kind === 'youtube' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Supply permitted transcript ↗</a>` : identity.kind === 'goodreads' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/book-intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Confirm book edition ↗</a>` : '' : '<button class="request" id="request-analysis">Request analysis</button>'}`;
 }
 
 async function refresh() {

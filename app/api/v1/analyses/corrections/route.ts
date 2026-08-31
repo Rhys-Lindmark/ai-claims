@@ -7,14 +7,21 @@ const baseHeaders = {
 };
 
 export async function GET(request: Request) {
-  const entityKey = new URL(request.url).searchParams.get('entity_key')?.trim() ?? '';
+  const params = new URL(request.url).searchParams;
+  const entityKey = params.get('entity_key')?.trim() ?? '';
+  const cursor = params.get('cursor')?.trim() || null;
+  const requestedLimit = Number(params.get('limit') ?? '20');
   if (!entityKey || entityKey.length > 500) {
-    return Response.json({ contract_version: '1.0.0', error: 'A valid entity_key query parameter is required.' }, { status: 400, headers: baseHeaders });
+    return Response.json({ contract_version: '1.1.0', error: 'A valid entity_key query parameter is required.' }, { status: 400, headers: baseHeaders });
   }
-  const envelope = resolveCorrectionFeedEnvelope(entityKey);
-  const etag = correctionFeedEtag(entityKey);
+  if (!Number.isInteger(requestedLimit) || requestedLimit < 1 || requestedLimit > 100) {
+    return Response.json({ contract_version: '1.1.0', error: 'limit must be an integer from 1 to 100.' }, { status: 400, headers: baseHeaders });
+  }
+  const envelope = resolveCorrectionFeedEnvelope(entityKey, cursor, requestedLimit);
+  const etag = correctionFeedEtag(entityKey, cursor, requestedLimit);
   const headers = { ...baseHeaders, etag };
   if (request.headers.get('if-none-match') === etag) return new Response(null, { status: 304, headers });
+  if (!envelope.cursor_valid) return Response.json({ ...envelope, error: 'cursor does not identify an event in this entity feed.' }, { status: 400, headers });
   if (!envelope.events) return Response.json(envelope, { status: 404, headers });
   return Response.json(envelope, { status: 200, headers });
 }

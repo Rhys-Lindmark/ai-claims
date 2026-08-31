@@ -18,7 +18,11 @@ export function resolveAnalysisEnvelope(entityKey: string, versionId?: string | 
   const correctionPointers = latestCorrection ? {
     latest_correction_event_id: latestCorrection.event_id,
     latest_correction_public_score_state: latestCorrection.public_score_state,
+    latest_correction_summary: latestCorrection.summary,
+    latest_correction_from_version_id: latestCorrection.from_version_id,
+    latest_correction_to_version_id: latestCorrection.to_version_id,
     latest_correction_url: `https://ai.rhyslindmark.com/claims#${latestCorrection.event_id}`,
+    latest_correction_event_api_url: `https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections/${latestCorrection.event_id}?entity_key=${encodeURIComponent(entityKey)}`,
     correction_feed_api_url: `https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections?entity_key=${encodeURIComponent(entityKey)}`,
   } : {};
   const requestedVersion = versionId?.trim() || null;

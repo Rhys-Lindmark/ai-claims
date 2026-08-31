@@ -13,7 +13,7 @@ import { createMetricsStore } from '../lib/local-metrics.js';
 import { identifyPage } from '../lib/page-identity.js';
 import { actionBadgeForState } from '../lib/action-badge.js';
 import { createOriginOptInStore } from '../lib/origin-opt-in.js';
-import { correctionLinkForState } from '../lib/correction-links.js';
+import { correctionLinkForState, correctionPreviewForState, escapeHtml } from '../lib/correction-links.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -69,6 +69,13 @@ test('score state propagates correction pointers without adding a paused score',
   assert.equal(state.latestCorrectionEventId, 'correction-event-paused-001');
   assert.equal(state.latestCorrectionUrl, latestCorrectionUrl);
   assert.equal(Object.hasOwn(state, 'score'), false);
+});
+
+test('correction previews are compact and escaped before side-panel rendering', () => {
+  const preview = correctionPreviewForState({ latestCorrectionEventId: 'event-1', latestCorrectionFromVersionId: 'v1', latestCorrectionToVersionId: 'v2', latestCorrectionSummary: 'A concise change.' });
+  assert.deepEqual(preview, { lineage: 'v1 → v2', summary: 'A concise change.' });
+  assert.equal(escapeHtml('<img src=x onerror="bad">'), '&lt;img src=x onerror=&quot;bad&quot;&gt;');
+  assert.equal(correctionPreviewForState({}), null);
 });
 
 test('suppresses partial or malformed scores', () => {

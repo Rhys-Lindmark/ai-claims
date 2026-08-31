@@ -14,6 +14,7 @@ import resumptionFixture from '../data/publication-resumption-fixture.json' with
 import { publicationResumptionDecision } from '../lib/publication-resumption.ts';
 import correctionFeedFixture from '../data/correction-event-feed-fixture.json' with { type: 'json' };
 import { validateCorrectionEventFeed, validateEntityCorrectionFeeds } from '../lib/correction-event-feed.ts';
+import { resolveCorrectionEventEnvelope, resolveCorrectionFeedEnvelope } from '../lib/correction-feed-api.ts';
 
 assert.deepEqual(validateClaimSelectionAudit(fixture.samples), []);
 const summary = selectionAuditSummary(fixture.samples);
@@ -52,4 +53,13 @@ assert.equal(historyFixture.versions.at(-1).version_id, 'analysis-demo-v3');
 assert.deepEqual(validateEntityCorrectionFeeds(correctionFeedFixture.feeds), []);
 const leakingEvent = { ...correctionFeedFixture.feeds[0].events[0], truth_score_0_100: 84 };
 assert.match(validateCorrectionEventFeed([leakingEvent])[0], /must not carry score fields/);
+const replayingEvent = { ...correctionFeedFixture.feeds[1].events[0], summary: 'The withdrawn score was 91/100.' };
+assert.match(validateCorrectionEventFeed([replayingEvent])[0], /must not replay/);
+const firstPage = resolveCorrectionFeedEnvelope('web:example.invalid/reviewed-fixture', null, 1);
+assert.equal(firstPage.events.length, 1);
+assert.equal(firstPage.next_cursor, 'correction-event-001');
+const secondPage = resolveCorrectionFeedEnvelope('web:example.invalid/reviewed-fixture', firstPage.next_cursor, 1);
+assert.equal(secondPage.events[0].event_id, 'correction-event-002');
+assert.equal(resolveCorrectionFeedEnvelope('web:example.invalid/reviewed-fixture', 'missing', 1).cursor_valid, false);
+assert.equal(resolveCorrectionEventEnvelope('web:example.invalid/reviewed-fixture', 'correction-event-002').event.public_score_state, 'paused');
 console.log('Claim-selection audit fixture passed.');

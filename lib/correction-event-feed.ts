@@ -27,6 +27,7 @@ export function validateCorrectionEventFeed(events: CorrectionEvent[]) {
     if (index > 0 && events[index - 1].to_version_id !== event.from_version_id) errors.push(`${event.event_id} must continue the prior version chain.`);
     const serializedKeys = Object.keys(event).concat(event.changed_records.flatMap((record) => Object.keys(record)));
     if (serializedKeys.some((key) => forbiddenScoreKeys.test(key))) errors.push(`${event.event_id} must not carry score fields.`);
+    if (event.public_score_state !== 'active' && /\b\d{1,3}\s*(?:%|\/\s*100)\b/.test(event.summary)) errors.push(`${event.event_id} must not replay a paused or superseded score in its summary.`);
   }
   return errors;
 }
