@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
-import { ClaimReviewFixture } from './claims/review-fixture';
+import { BookChecker } from './book-checker';
 
 export const metadata: Metadata = {
-  title: 'Claims — Website Accelerator',
-  description: 'Source-traceable experiments for splitting, grouping, and evaluating claims in books and podcasts.',
+  title: 'AI Claims — How true is this book?',
+  description: 'Type a book title to see its reviewed claims and source-traceable truth score—or add it to the review queue.',
 };
 
 export default function ClaimsPage() {
-  return <ClaimReviewFixture />;
+  return <BookChecker />;
 }
-

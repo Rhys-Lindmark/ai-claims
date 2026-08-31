@@ -3,11 +3,11 @@
   "slug": "claims",
   "name": "AI Claims",
   "stage": "prototype",
-  "pitch": "A browser truth layer for YouTube, Goodreads, and the web, with every score traceable to reviewed claims.",
+  "pitch": "Type a book title to see how its major claims hold up, with every score traceable to reviewed evidence.",
   "owner": "Rhys Lindmark",
   "public_url": "https://ai.rhyslindmark.com/claims",
   "repository_url": "https://github.com/Rhys-Lindmark/ai-claims",
-  "artifact_url": "https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.3",
+  "artifact_url": "https://github.com/Rhys-Lindmark/ai-claims/releases/tag/v0.2.21",
   "north_star_metric": {
     "name": "weekly_pages_checked",
     "current": null,
@@ -18,8 +18,8 @@
     {
       "kind": "shipped_prototype",
       "date": "2026-08-30",
-      "url": "https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.3",
-      "note": "Installable Manifest V3 side-panel prototype; registry fixtures remain synthetic."
+      "url": "https://github.com/Rhys-Lindmark/ai-claims/releases/tag/v0.2.21",
+      "note": "Installable Manifest V3 side-panel prototype with a shared server request lifecycle; registry fixtures remain synthetic."
     }
   ],
   "next_review_date": "2026-09-06",
