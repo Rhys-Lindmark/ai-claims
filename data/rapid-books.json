@@ -2159,6 +2159,270 @@
         }
       ],
       "other_claims": ["Rabies fear influenced folklore about monstrous transformation and animality.", "The domestic dog's double role as companion and vector shaped unusually emotional control policies."]
+    },
+    {
+      "slug": "the-hot-zone",
+      "entity_key": "web:richard-preston.net/the-hot-zone",
+      "title": "The Hot Zone",
+      "subtitle": "A Terrifying True Story",
+      "author": "Richard Preston",
+      "year": 1994,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The Reston incident and Ebola's genuine lethality are solid. The book's bodily-liquefaction imagery and near-airborne-apocalypse framing substantially exaggerate the evidence.",
+      "claims": [
+        {
+          "claim": "A previously unknown Ebola-related virus caused a lethal outbreak among imported macaques in a Reston, Virginia, quarantine facility in 1989.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "CDC records confirm that Reston virus was identified during a hemorrhagic-fever outbreak in macaques imported from the Philippines. The animals became seriously ill, and the virus proved distinct from the African ebolaviruses then known.",
+          "sources": [
+            { "title": "CDC: History of Ebola outbreaks", "url": "https://www.cdc.gov/ebola/outbreaks/index.html" },
+            { "title": "CDC Emerging Infectious Diseases: Reemergence of Ebola Virus in Africa", "url": "https://wwwnc.cdc.gov/eid/article/1/3/95-0307_article" }
+          ]
+        },
+        {
+          "claim": "African Ebola outbreaks can produce severe, frequently fatal disease and require rigorous protection from infected blood and body fluids.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Documented Ebola outbreaks have produced high case-fatality rates, especially without early supportive care. Transmission is associated principally with direct contact with infectious blood, secretions, organs, and contaminated materials—not ordinary casual contact.",
+          "sources": [
+            { "title": "CDC: Ebola disease basics", "url": "https://www.cdc.gov/ebola/about/index.html" },
+            { "title": "WHO: Ebola virus disease fact sheet", "url": "https://www.who.int/news-room/fact-sheets/detail/ebola-virus-disease" }
+          ]
+        },
+        {
+          "claim": "Ebola characteristically dissolves organs and was close to causing an airborne human catastrophe in suburban Washington.",
+          "assessment": "weak",
+          "credit": 0.25,
+          "rationale": "Reston virus spread efficiently among confined monkeys, and several handlers developed antibodies, but none became ill. Specialists have criticized the book's liquefaction language and airborne-catastrophe implication as vivid amplification rather than clinical description.",
+          "sources": [
+            { "title": "CDC: Reemergence of Ebola Virus in Africa", "url": "https://wwwnc.cdc.gov/eid/article/1/3/95-0307_article" },
+            { "title": "Social Studies of Science: Who's afraid of Ebola?", "url": "https://journals.sagepub.com/doi/10.1177/0306312720927781" }
+          ]
+        }
+      ],
+      "other_claims": ["Marburg virus was first recognized after laboratory workers handled infected African green monkeys.", "Biosafety institutions often learn through near misses as well as declared emergencies."]
+    },
+    {
+      "slug": "polio-an-american-story",
+      "entity_key": "web:penguinrandomhouse.com/polio-an-american-story",
+      "title": "Polio: An American Story",
+      "subtitle": "The Crusade That Mobilized the Nation Against the 20th Century's Most Feared Disease",
+      "author": "David M. Oshinsky",
+      "year": 2005,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The mass philanthropy, vaccine breakthrough, and Salk–Sabin contest are well documented. The book rightly complicates triumph with the Cutter disaster and regulatory change.",
+      "claims": [
+        {
+          "claim": "The National Foundation for Infantile Paralysis turned small public donations into a mass campaign that funded polio care, research, and the Salk field trial.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The organization later known as the March of Dimes built a national grassroots fundraising network, supported patients and laboratories, recruited Salk, and financed and organized the enormous 1954 field trial. Its public mobilization was central, not incidental.",
+          "sources": [
+            { "title": "Lessons from the Salk Polio Vaccine", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2928990/" },
+            { "title": "Immunity for the People: High Vaccine Coverage in American History", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1820430/" }
+          ]
+        },
+        {
+          "claim": "Salk's inactivated vaccine and Sabin's oral vaccine transformed polio prevention and drove a steep fall in U.S. paralytic disease.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The 1954 trial established the effectiveness of Salk's vaccine, and U.S. paralytic incidence fell dramatically after rollout. Sabin's oral vaccine later simplified mass administration and reduced intestinal transmission, while carrying its own rare vaccine-derived risks.",
+          "sources": [
+            { "title": "History of polio vaccination", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3782271/" },
+            { "title": "Jonas Salk: A vaccine against polio", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6351694/" }
+          ]
+        },
+        {
+          "claim": "Scientific rivalry and the Cutter incident materially shaped which polio vaccine prevailed and how the United States regulated vaccine safety.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Salk, Sabin, their allies, and competing institutions fought over killed versus live vaccine. Cutter's incompletely inactivated lots caused paralysis and deaths, prompting tighter federal lot review; many other scientific, logistical, and geopolitical factors also shaped adoption.",
+          "sources": [
+            { "title": "Lessons from the Salk Polio Vaccine", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2928990/" },
+            { "title": "The Cutter Incident and its implications", "url": "https://pubmed.ncbi.nlm.nih.gov/20481116/" }
+          ]
+        }
+      ],
+      "other_claims": ["Polio's terror reflected its concentration among children and visibility in braces and iron lungs.", "Post-polio syndrome complicates a simple victory narrative decades after acute infection."]
+    },
+    {
+      "slug": "the-vaccine-race",
+      "entity_key": "web:meredithwadman.com/the-vaccine-race",
+      "title": "The Vaccine Race",
+      "subtitle": "Science, Politics, and the Human Costs of Defeating Disease",
+      "author": "Meredith Wadman",
+      "year": 2017,
+      "score": 92,
+      "confidence": "high",
+      "summary": "Its medical core is strong: congenital rubella was devastating, WI-38 enabled reliable vaccine work, and RA 27/3 became the dominant strain. Its ethical critique is also well grounded, though practices varied.",
+      "claims": [
+        {
+          "claim": "The 1964–65 rubella epidemic caused a large burden of fetal death and congenital blindness, deafness, heart disease, and developmental disability.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "CDC estimates for the U.S. epidemic include 12.5 million infections, thousands of fetal and neonatal deaths, and roughly 20,000 infants born with congenital rubella syndrome. Maternal infection early in pregnancy carries the greatest fetal risk.",
+          "sources": [
+            { "title": "CDC: Elimination of Rubella and Congenital Rubella Syndrome", "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm54e321a1.htm" },
+            { "title": "CDC surveillance manual: Congenital Rubella Syndrome", "url": "https://www.cdc.gov/surv-manual/php/table-of-contents/chapter-15-congenital-rubella-syndrome.html" }
+          ]
+        },
+        {
+          "claim": "Leonard Hayflick's WI-38 human diploid cell strain enabled safer, standardized viral-vaccine production and Stanley Plotkin's RA 27/3 rubella vaccine.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "WI-38 offered well-characterized normal human cells without the contamination problems of some primary animal cultures. Plotkin attenuated RA 27/3 in WI-38; that strain became the predominant rubella vaccine and remains part of MMR programs.",
+          "sources": [
+            { "title": "The Role of the WI-38 Cell Strain in Saving Lives", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5689800/" },
+            { "title": "NCBI: Histories of Pertussis and Rubella Vaccines", "url": "https://www.ncbi.nlm.nih.gov/books/NBK234373/" }
+          ]
+        },
+        {
+          "claim": "Rubella-vaccine development exposed weak consent practices, institutional rivalry, and conflicts over ownership and commercialization in mid-century biomedicine.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The fetal tissue behind WI-38 was obtained without modern informed consent, and trials included institutionalized children under standards now judged inadequate. NIH, Wistar, manufacturers, and researchers also disputed preferred strains and control; the details resist one villain.",
+          "sources": [
+            { "title": "National Network of Libraries of Medicine: The Vaccine Race", "url": "https://www.nnlm.gov/resources/reading-club/book/vaccine-race" },
+            { "title": "The Role of the WI-38 Cell Strain in Saving Lives", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5689800/" }
+          ]
+        }
+      ],
+      "other_claims": ["The Hayflick limit changed ideas about cellular aging.", "Regulatory institutions sometimes favored locally controlled technologies over technically stronger competitors."]
+    },
+    {
+      "slug": "the-great-mortality",
+      "entity_key": "web:harpercollins.com/the-great-mortality",
+      "title": "The Great Mortality",
+      "subtitle": "An Intimate History of the Black Death, the Most Devastating Plague of All Time",
+      "author": "John Kelly",
+      "year": 2005,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The book is right about the pathogen and extraordinary mortality. Its broad European fraction is plausible but uneven, while its older origin-and-route narrative predates decisive Central Asian ancient-DNA evidence.",
+      "claims": [
+        {
+          "claim": "The fourteenth-century Black Death was caused by the bacterium Yersinia pestis.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Independent ancient-DNA and protein studies have recovered Y. pestis from Black Death burials across Europe and reconstructed medieval genomes. That evidence resolves the older debate over alternative pathogens while leaving transmission ecology contested.",
+          "sources": [
+            { "title": "Distinct Clones of Yersinia pestis Caused the Black Death", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2951374/" },
+            { "title": "Nature: Source of the Black Death in central Eurasia", "url": "https://www.nature.com/articles/s41586-022-04800-3" }
+          ]
+        },
+        {
+          "claim": "The Black Death killed roughly one-third or more of Europe's population within a few years.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Documentary, archaeological, and environmental evidence supports catastrophic continental mortality, with many regions losing a third or more. New pollen work shows pronounced spatial heterogeneity, so a single Europe-wide fraction conceals spared and devastated areas.",
+          "sources": [
+            { "title": "Nature Ecology & Evolution: Black Death mortality heterogeneity", "url": "https://www.nature.com/articles/s41559-021-01652-4" },
+            { "title": "Cambridge: The Great Pestilence", "url": "https://www.cambridge.org/core/books/abs/biology-of-plagues/great-pestilence/A03A8259F974E06CF36A708E9F92D8E2" }
+          ]
+        },
+        {
+          "claim": "The pandemic began far to the east and reached Europe through a simple Mongol siege-and-trade chain from China.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Trade and maritime routes from the Black Sea clearly mattered to European arrival, but recent genomes place a pivotal 1338–39 outbreak near Lake Issyk-Kul in the Tian Shan. They do not establish the book's longer, linear China-to-Caffa narrative.",
+          "sources": [
+            { "title": "Nature: Source of the Black Death in central Eurasia", "url": "https://www.nature.com/articles/s41586-022-04800-3" },
+            { "title": "PNAS: Origins of European plagues after the Black Death", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8433512/" }
+          ]
+        }
+      ],
+      "other_claims": ["Religious persecution turned Jewish communities into scapegoats despite their shared vulnerability.", "Labor scarcity strengthened some survivors' bargaining power but did not produce one uniform social outcome."]
+    },
+    {
+      "slug": "pale-rider",
+      "entity_key": "web:lauraspinney.com/pale-rider",
+      "title": "Pale Rider",
+      "subtitle": "The Spanish Flu of 1918 and How It Changed the World",
+      "author": "Laura Spinney",
+      "year": 2017,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "Its global account and emphasis on social conditions are strong. Wartime failures clearly worsened response, but claims that influenza itself drove broad political and health-system transformations remain difficult to isolate.",
+      "claims": [
+        {
+          "claim": "The 1918 influenza pandemic killed tens of millions worldwide, with unusually high mortality among young adults and enormous variation across populations.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Global estimates remain uncertain but converge on at least tens of millions of deaths. Mortality was exceptionally high among working-age adults, while crowding, nutrition, prior exposure, access to care, and colonial inequality produced sharply unequal burdens.",
+          "sources": [
+            { "title": "CDC: 1918 pandemic key messages", "url": "https://archive.cdc.gov/www_cdc_gov/flu/pandemic-resources/1918-commemoration/key-messages.htm" },
+            { "title": "CDC Emerging Infectious Diseases: 1918 Influenza", "url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article" }
+          ]
+        },
+        {
+          "claim": "World War I mobilization, crowded transport and camps, censorship, and delayed reporting amplified the pandemic and weakened public-health response.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Troop movement and mass gatherings created powerful transmission networks, while belligerent governments constrained some information and prioritized war production. Censorship was uneven, however, and viral biology and limited medical tools also drove the disaster.",
+          "sources": [
+            { "title": "WHO Europe: Historical roots of the COVID-19 infodemic", "url": "https://www.ncbi.nlm.nih.gov/books/NBK585505/" },
+            { "title": "CDC: Concurrent Conflicts and the 1918 Pandemic", "url": "https://wwwnc.cdc.gov/eid/article/24/10/ac-2410_article" }
+          ]
+        },
+        {
+          "claim": "The pandemic directly accelerated socialized medicine, national public-health systems, anticolonial politics, and other major twentieth-century changes.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "The crisis exposed fragmented care, expanded some local health work, and became evidence in later political struggles. Yet war, labor movements, state-building, and preexisting reform agendas were major independent causes, making a single pandemic effect hard to identify.",
+          "sources": [
+            { "title": "The 1918 Influenza Epidemic in New York City", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862336/" },
+            { "title": "Evolution: Education and Outreach review of Pale Rider", "url": "https://link.springer.com/article/10.1186/s12052-018-0079-5" }
+          ]
+        }
+      ],
+      "other_claims": ["The name Spanish flu reflects neutral Spain's relatively open reporting, not a secure place of origin.", "The pandemic's disappearance from public memory was uneven rather than complete."]
+    },
+    {
+      "slug": "the-american-plague",
+      "entity_key": "web:mollycaldwellcrosby.com/the-american-plague",
+      "title": "The American Plague",
+      "subtitle": "The Untold Story of Yellow Fever, the Epidemic That Shaped Our History",
+      "author": "Molly Caldwell Crosby",
+      "year": 2006,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The disease burden, mosquito breakthrough, and 1905 control campaign are strongly documented. The familiar Walter Reed hero story needs the book's own qualification: Carlos Finlay supplied the key hypothesis.",
+      "claims": [
+        {
+          "claim": "Yellow fever repeatedly devastated U.S. port cities and the Mississippi Valley, shaping migration, commerce, public authority, and urban life.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Historical surveillance attributes at least 100,000 U.S. deaths to yellow fever from 1693 to 1905, including major epidemics in Philadelphia, New Orleans, and the Mississippi Valley. Quarantines, flight, trade disruption, and political conflict followed.",
+          "sources": [
+            { "title": "CDC: History of Mosquitoborne Diseases in the United States", "url": "https://wwwnc.cdc.gov/eid/article/24/5/17-1609_article" },
+            { "title": "CDC: Aedes aegypti Eradication Program", "url": "https://stacks.cdc.gov/view/cdc/7592/cdc_7592_DS1.pdf" }
+          ]
+        },
+        {
+          "claim": "Walter Reed's commission proved that Aedes aegypti transmitted yellow fever and thereby solved the disease's central mystery.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The commission's controlled experiments decisively established mosquito transmission, but Cuban physician Carlos Finlay had proposed the mechanism and supplied mosquitoes and practical insight years earlier. The breakthrough was cumulative, not Reed's alone.",
+          "sources": [
+            { "title": "CDC: History of Mosquitoborne Diseases in the United States", "url": "https://wwwnc.cdc.gov/eid/article/24/5/17-1609_article" },
+            { "title": "CDC: Aedes aegypti and yellow fever history", "url": "https://stacks.cdc.gov/view/cdc/3908/cdc_3908_DS1.pdf" }
+          ]
+        },
+        {
+          "claim": "Mosquito control ended the 1905 New Orleans epidemic and marked the end of major locally acquired yellow-fever outbreaks in the United States.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Federal and local teams screened patients, inspected homes, oiled or covered water containers, fumigated buildings, and destroyed breeding sites. The campaign contained the outbreak, and New Orleans and nearby Pearlington recorded the last major local U.S. cases.",
+          "sources": [
+            { "title": "U.S. Public Health Reports: Yellow fever in New Orleans, 1905", "url": "https://stacks.cdc.gov/view/cdc/66947/cdc_66947_DS1.pdf" },
+            { "title": "CDC: History of Mosquitoborne Diseases in the United States", "url": "https://wwwnc.cdc.gov/eid/article/24/5/17-1609_article" }
+          ]
+        }
+      ],
+      "other_claims": ["Commercial resistance and stigma delayed official recognition of outbreaks.", "Yellow-fever control helped make sustained Panama Canal construction possible."]
     }
   ]
 }
