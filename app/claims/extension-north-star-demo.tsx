@@ -1,4 +1,4 @@
-import { ExternalLink, PanelRightOpen, ShieldCheck } from 'lucide-react';
+import { ExternalLink, FlaskConical, PanelRightOpen, ShieldCheck } from 'lucide-react';
 
 export function ExtensionNorthStarDemo() {
   return (
@@ -11,6 +11,7 @@ export function ExtensionNorthStarDemo() {
           <div className="mt-6 flex flex-wrap gap-3">
             <a className="inline-flex items-center gap-2 border-2 border-ink bg-ink px-4 py-3 font-mono text-[9px] font-bold uppercase text-paper shadow-[4px_4px_0_#214de8]" href="https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.16" target="_blank" rel="noreferrer"><PanelRightOpen className="h-4 w-4" /> Download prototype <ExternalLink className="h-3 w-3" /></a>
             <a className="inline-flex items-center gap-2 border-2 border-ink bg-white px-4 py-3 font-mono text-[9px] font-bold uppercase" href="https://ai.rhyslindmark.com/claims/analysis?entity_key=web%3Aexample.invalid%2Freviewed-fixture">Open synthetic analysis <ExternalLink className="h-3 w-3" /></a>
+            <a className="inline-flex items-center gap-2 border-2 border-ink bg-coral px-4 py-3 font-mono text-[9px] font-bold uppercase" href="https://ai.rhyslindmark.com/claims/episode?entity_key=youtube%3Aai-claims-synthetic-001"><FlaskConical className="h-4 w-4" /> Open YouTube pipeline <ExternalLink className="h-3 w-3" /></a>
             <a className="inline-flex items-center gap-2 border-2 border-ink bg-white px-4 py-3 font-mono text-[9px] font-bold uppercase" href="https://ai.rhyslindmark.com/claims/intake">Supply a transcript <ExternalLink className="h-3 w-3" /></a>
             <a className="inline-flex items-center gap-2 border-2 border-ink bg-white px-4 py-3 font-mono text-[9px] font-bold uppercase" href="https://ai.rhyslindmark.com/claims/book-intake">Confirm a book edition <ExternalLink className="h-3 w-3" /></a>
             <span className="inline-flex items-center gap-2 border-2 border-ink bg-white px-4 py-3 font-mono text-[9px] font-bold uppercase"><ShieldCheck className="h-4 w-4 text-cobalt" /> Score gates stay on</span>

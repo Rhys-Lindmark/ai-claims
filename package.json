@@ -10,6 +10,7 @@
     "build": "vinext build",
     "test:extension": "node --test extension/test/*.test.js",
     "test:methods": "node --experimental-strip-types scripts/check-claim-selection-audit.mjs",
+    "test:deployed-youtube": "node scripts/check-deployed-youtube-fixture.mjs",
     "package:extension": "sh scripts/package-extension.sh .",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",

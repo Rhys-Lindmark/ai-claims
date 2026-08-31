@@ -14,6 +14,8 @@ The public resolver contract is available at [`/claims/api/v1/analyses/resolve?e
 
 Download the [`extension-v0.2.16` pre-release](https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.16), unzip it, and load the folder from `chrome://extensions` with Developer mode enabled. A fully synthetic YouTube packet now proves page detection, canonical resolution, reviewed-score gating, and a dedicated timestamped episode evidence route end to end. It also retains the local-only privacy receipt, export, verifier, and feed-negotiation controls; no new permission or upload path is added. Only synthetic reviewed fixtures are currently published.
 
+Open the [synthetic YouTube pipeline](https://ai.rhyslindmark.com/claims/episode?entity_key=youtube%3Aai-claims-synthetic-001), or verify its deployed resolver-to-route contract with `npm run test:deployed-youtube`.
+
 ## Validate
 
 ```bash
