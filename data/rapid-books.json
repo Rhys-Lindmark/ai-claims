@@ -1103,6 +1103,270 @@
         }
       ],
       "other_claims": ["Ramanujan's intuition and Hardy's proof culture sometimes complemented and sometimes frustrated each other.", "Later work extracted major mathematics from Ramanujan's unpublished notebooks."]
+    },
+    {
+      "slug": "the-body",
+      "entity_key": "web:billbrysonbooks.com/the-body",
+      "title": "The Body",
+      "subtitle": "A Guide for Occupants",
+      "author": "Bill Bryson",
+      "year": 2019,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "Bryson's big biological numbers and evolutionary framing are broadly sound. Exact totals vary with definitions and the reference body, so the book works better as a scale guide than as a source of immutable counts.",
+      "claims": [
+        {
+          "claim": "A typical adult human body contains roughly 37 trillion human cells.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "A widely cited census estimated about 3.72 × 10^13 cells in a reference adult. Newer estimates differ with sex, mass, tissue definitions, and counting assumptions, so 37 trillion is a useful order-of-magnitude figure rather than a universal body constant.",
+          "sources": [
+            { "title": "An estimation of the number of cells in the human body", "url": "https://doi.org/10.3109/03014460.2013.807878" },
+            { "title": "The human cell count and size distribution", "url": "https://doi.org/10.1073/pnas.2303077120" }
+          ]
+        },
+        {
+          "claim": "Microbial cells in the human body are roughly as numerous as human cells, not ten times more numerous.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Revised inventories estimate about 3.8 × 10^13 bacterial cells and about 3.0 × 10^13 human cells in a reference adult male. Both totals vary substantially, but the evidence rejects the old, repeatedly quoted ten-to-one ratio.",
+          "sources": [
+            { "title": "Revised Estimates for the Number of Human and Bacteria Cells", "url": "https://doi.org/10.1371/journal.pbio.1002533" },
+            { "title": "The human cell count and size distribution", "url": "https://doi.org/10.1073/pnas.2303077120" }
+          ]
+        },
+        {
+          "claim": "The human body is an evolutionary compromise with trade-offs and mismatches, not an optimally engineered machine.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Evolutionary medicine documents trade-offs, historical constraints, defenses, and mismatches between inherited biology and modern environments. The framework is strong, but it explains different traits with different evidence and should not become a catch-all story for every disease.",
+          "sources": [
+            { "title": "Evolutionary medicine: a powerful tool for improving human health", "url": "https://academic.oup.com/emph/article/2018/1/13/4774983" },
+            { "title": "The influence of evolutionary history on human health and disease", "url": "https://www.nature.com/articles/s41576-020-00305-9" }
+          ]
+        }
+      ],
+      "other_claims": ["Many familiar anatomical terms preserve accidental historical stories.", "Modern longevity exposes failure modes that natural selection only weakly filtered."]
+    },
+    {
+      "slug": "the-code-book",
+      "entity_key": "web:simonsingh.net/books/the-code-book",
+      "title": "The Code Book",
+      "subtitle": "The Science of Secrecy from Ancient Egypt to Quantum Cryptography",
+      "author": "Simon Singh",
+      "year": 1999,
+      "score": 100,
+      "confidence": "high",
+      "summary": "Its three central technical and historical claims hold up: language statistics break simple ciphers, Enigma was a cumulative Allied achievement, and public-key methods transformed digital security.",
+      "claims": [
+        {
+          "claim": "Frequency analysis can break many monoalphabetic substitution ciphers because ciphertext preserves statistical patterns of the underlying language.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "A fixed substitution changes symbols but preserves repeated letters, common digrams, and other distributional structure. Cryptanalysts can combine those frequencies with word patterns and context, although short texts and homophonic or polyalphabetic systems weaken the attack.",
+          "sources": [
+            { "title": "NSA: Military Cryptanalysis, Part I", "url": "https://www.nsa.gov/Portals/75/documents/news-features/declassified-documents/friedman-documents/publications/FOLDER_247/41748699078793.pdf" },
+            { "title": "Rutgers: Classical Cryptography and Cryptanalysis", "url": "https://people.cs.rutgers.edu/~pxk/classes/419/notes/crypto-2.html" }
+          ]
+        },
+        {
+          "claim": "Breaking Enigma was a cumulative Polish, French, and British effort rather than the achievement of a single codebreaker.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Polish mathematicians reconstructed Enigma and built the bomba before sharing their work with France and Britain in 1939. Turing, Welchman, and large Bletchley Park teams then extended that foundation against changing wartime systems and operating procedures.",
+          "sources": [
+            { "title": "GCHQ: The Pyry Forest Meeting", "url": "https://www.gchq.gov.uk/information/the-pyry-forest-meeting" },
+            { "title": "NSA: Marian Rejewski", "url": "https://www.nsa.gov/History/Cryptologic-History/Historical-Figures/Historical-Figures-View/Article/1621548/marian-rejewski/" }
+          ]
+        },
+        {
+          "claim": "Public-key cryptography solved central key-distribution and digital-signature problems and became foundational to secure digital communication.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Public-key systems let parties establish confidentiality and verify signatures without first sharing one secret key through a secure channel. Real systems still depend on authentication, implementation, and hybrid symmetric encryption, but the architectural breakthrough is accurately stated.",
+          "sources": [
+            { "title": "NIST: Public Key Cryptography", "url": "https://www.nist.gov/publications/public-key-cryptography-0" },
+            { "title": "NIST Cybersecurity History: Cryptography", "url": "https://csrc.nist.gov/nist-cyber-history/cryptography/chapter" }
+          ]
+        }
+      ],
+      "other_claims": ["Cryptographic advantage repeatedly shifts between codemakers and codebreakers.", "Quantum key distribution changes some security assumptions but does not replace all classical cryptography."]
+    },
+    {
+      "slug": "the-information",
+      "entity_key": "web:jamesgleick.com/books/the-information",
+      "title": "The Information",
+      "subtitle": "A History, a Theory, a Flood",
+      "author": "James Gleick",
+      "year": 2011,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "The Shannon core is solid and the book accurately conveys information theory's reach. Its broader unification of biology, culture, and physics is provocative but crosses domains where information has different meanings.",
+      "claims": [
+        {
+          "claim": "Claude Shannon defined a quantitative measure of information based on uncertainty, deliberately separate from semantic meaning.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Shannon's 1948 theory measures the choices and uncertainty in a message source and explicitly sets semantic aspects aside for the engineering problem. Entropy, measured in bits under base-two logarithms, became the theory's central quantity.",
+          "sources": [
+            { "title": "Claude Shannon: A Mathematical Theory of Communication", "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf" },
+            { "title": "IEEE REACH: A Mathematical Theory of Communication", "url": "https://reach.ieee.org/primary-sources/a-mathematical-theory-of-communication/" }
+          ]
+        },
+        {
+          "claim": "Information theory establishes fundamental limits for compression and reliable communication through noisy channels.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Shannon's source-coding and noisy-channel results distinguish achievable rates from impossible ones and explain how redundancy can support error correction. Modern compression and communications engineering elaborate those limits rather than overturning them.",
+          "sources": [
+            { "title": "Claude Shannon: A Mathematical Theory of Communication", "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf" },
+            { "title": "NIST: Claude Shannon and the Information Age", "url": "https://www.nist.gov/blogs/taking-measure/claude-shannon-and-information-age" }
+          ]
+        },
+        {
+          "claim": "One information concept straightforwardly unifies communication, genetics, cultural transmission, and physical reality.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Formal information measures are productive in genetics, neuroscience, and physics, but they do not automatically supply biological function, reference, or meaning. Researchers disagree about when information language is explanatory and when it is metaphorical.",
+          "sources": [
+            { "title": "The Meaning of Biological Information", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4760125/" },
+            { "title": "Informational limits on the evolution of biological organisms", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5978287/" }
+          ]
+        }
+      ],
+      "other_claims": ["Telegraphy and symbolic logic prepared the conceptual ground for Shannon's work.", "Digital abundance creates new filtering and attention problems rather than simply more knowledge."]
+    },
+    {
+      "slug": "the-disappearing-spoon",
+      "entity_key": "web:samkean.com/the-disappearing-spoon",
+      "title": "The Disappearing Spoon",
+      "subtitle": "And Other True Tales of Madness, Love, and the History of the World from the Periodic Table of the Elements",
+      "author": "Sam Kean",
+      "year": 2010,
+      "score": 92,
+      "confidence": "medium-high",
+      "summary": "The periodic-table science and its core historical milestones are reliable. The colorful element stories are grounded in real properties and events, though their causal role is sometimes simplified for narrative force.",
+      "claims": [
+        {
+          "claim": "Mendeleev's periodic table organized recurring chemical properties and successfully predicted multiple missing elements.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Mendeleev left deliberate gaps and predicted properties of elements later identified as gallium, scandium, and germanium. The successes made periodic organization a predictive scientific framework rather than only a tidy list of known substances.",
+          "sources": [
+            { "title": "Royal Society of Chemistry: Development of the periodic table", "url": "https://periodic-table.rsc.org/about" },
+            { "title": "RSC: Ida Noddack and the missing elements", "url": "https://edu.rsc.org/feature/ida-noddack-and-the-missing-elements/2020167.article" }
+          ]
+        },
+        {
+          "claim": "Moseley's atomic numbers corrected periodic order, while electron structure explains the recurrence of chemical properties.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "X-ray measurements tied element identity to nuclear charge and resolved ordering anomalies left by atomic weight. Quantum electron configurations, especially valence structure, then supplied the modern physical explanation for periodic chemical behavior.",
+          "sources": [
+            { "title": "Royal Society of Chemistry: Development of the periodic table", "url": "https://periodic-table.rsc.org/about" },
+            { "title": "IUPAC: Periodic Table of Elements", "url": "https://iupac.org/what-we-do/periodic-table-of-elements/" }
+          ]
+        },
+        {
+          "claim": "The distinctive properties and availability of elements materially shaped technologies, medicine, economies, and historical events.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Elemental properties constrain materials, energy, toxicity, and industrial processes, so chemistry genuinely channels history. Individual anecdotes can compress multicausal events into one element-centered story, making the book strongest as connected case studies rather than a total theory.",
+          "sources": [
+            { "title": "Royal Society of Chemistry: Periodic Table", "url": "https://www.rsc.org/periodic-table" },
+            { "title": "The Disappearing Spoon review", "url": "https://www.theguardian.com/science/2011/nov/10/disappearing-spoon-sam-kean-review" }
+          ]
+        }
+      ],
+      "other_claims": ["Gallium can melt in a person's hand and inspired the book's title story.", "Scientific priority disputes often reflect institutions and nationalism as well as discovery dates."]
+    },
+    {
+      "slug": "krakatoa",
+      "entity_key": "web:simonwinchester.com/books/krakatoa",
+      "title": "Krakatoa",
+      "subtitle": "The Day the World Exploded: August 27, 1883",
+      "author": "Simon Winchester",
+      "year": 2003,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The book's volcanic, tsunami, and global-atmosphere story is well supported. Precise causal mechanisms and temperature estimates have been refined, but its central account remains strong.",
+      "claims": [
+        {
+          "claim": "Krakatau's 1883 eruption and caldera collapse generated tsunamis that caused more than 36,000 deaths around the Sunda Strait.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Smithsonian and USGS histories identify caldera destruction, far-reaching pyroclastic flows, and tsunami as the dominant causes of death. Contemporary counts are necessarily approximate, but the scale and primary hazard are securely documented.",
+          "sources": [
+            { "title": "Smithsonian Global Volcanism Program: Krakatau", "url": "https://volcano.si.edu/volcano.cfm?vn=262000" },
+            { "title": "USGS: Plate tectonics and people", "url": "https://pubs.usgs.gov/gip/dynamic/tectonics.html" }
+          ]
+        },
+        {
+          "claim": "The eruption produced atmospheric and oceanic signals observed around the world, including pressure waves, distant tsunami records, and vivid sunsets.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Barographs repeatedly recorded the pressure wave, tide gauges detected waves thousands of kilometers away, and widespread optical observations tracked the stratospheric veil. These records helped make Krakatau an early globally instrumented disaster.",
+          "sources": [
+            { "title": "USGS: Mixing Magmas at Krakatau", "url": "https://www.usgs.gov/news/volcano-watch-mixing-magmas-krakatau" },
+            { "title": "USGS: Plate tectonics and people", "url": "https://pubs.usgs.gov/gip/dynamic/tectonics.html" }
+          ]
+        },
+        {
+          "claim": "Stratospheric aerosols from Krakatau caused modest global cooling for several years after the eruption.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Observations and reconstructions show a major aerosol perturbation and cooling of a few tenths of a degree, with timing and regional magnitude varying against natural climate noise. Older dramatic temperature claims are less defensible than this bounded version.",
+          "sources": [
+            { "title": "Historic eruptions, stratospheric aerosols, and climatic impact", "url": "https://doi.org/10.1016/0033-5894(82)90065-5" },
+            { "title": "Major optical depth perturbations from volcanic eruptions", "url": "https://doi.org/10.1029/95JD03237" }
+          ]
+        }
+      ],
+      "other_claims": ["Telegraph networks helped turn the eruption into a rapidly shared global news event.", "The disaster influenced scientific understanding of volcanic tsunamis and atmospheric aerosols."]
+    },
+    {
+      "slug": "the-poisoners-handbook",
+      "entity_key": "web:deborahblum.com/the-poisoners-handbook",
+      "title": "The Poisoner's Handbook",
+      "subtitle": "Murder and the Birth of Forensic Medicine in Jazz Age New York",
+      "author": "Deborah Blum",
+      "year": 2010,
+      "score": 92,
+      "confidence": "medium-high",
+      "summary": "Norris and Gettler's institutional and technical contributions, along with the poisoned-alcohol crisis, are well documented. The book reasonably treats them as foundational while simplifying a broader national history of forensic medicine.",
+      "claims": [
+        {
+          "claim": "Charles Norris and Alexander Gettler helped professionalize forensic toxicology in New York City after 1918.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Norris became the city's first chief medical examiner in 1918 and hired Gettler to lead toxicology. Their laboratory developed and applied chemical methods to identify poisons in tissues, replacing a patronage coroner system with more systematic medical investigation.",
+          "sources": [
+            { "title": "Poison's legacy", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2972336/" },
+            { "title": "What's a Poison Got to Do with It?", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2995754/" }
+          ]
+        },
+        {
+          "claim": "Prohibition-era use and intensified denaturing of industrial alcohol contributed to preventable mass poisonings.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Bootleggers diverted industrial alcohol into drinks, while federal formulas deliberately made it unpalatable or toxic and were strengthened in the 1920s. Methanol and other contaminants killed and blinded consumers, and Norris publicly attacked the policy.",
+          "sources": [
+            { "title": "PBS American Experience: Chemistry and Forensic Science in America", "url": "https://www.pbs.org/wgbh/americanexperience/features/poisoners-handbook-Chemistry-and-Forensic-Science-in-America/" },
+            { "title": "Poison's legacy", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2972336/" }
+          ]
+        },
+        {
+          "claim": "The New York laboratory was a foundational turning point for American forensic medicine, even though early toxicology still had serious limits.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Norris and Gettler created influential methods, testimony, training, and institutional credibility at a crucial moment. Yet forensic toxicology had earlier roots elsewhere, and analytical detection did not eliminate sampling errors, uncertain dose interpretation, or contested causation.",
+          "sources": [
+            { "title": "What's a Poison Got to Do with It?", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2995754/" },
+            { "title": "Poison's legacy", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2972336/" }
+          ]
+        }
+      ],
+      "other_claims": ["Carbon monoxide, radium, lead, and thallium cases exposed gaps between industrial innovation and public health.", "Forensic evidence gained authority through institutions and courtroom practice, not laboratory technique alone."]
     }
   ]
 }
