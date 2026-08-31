@@ -35,6 +35,7 @@ import release from '../../releases/extension-v0.2.19.json' with { type: 'json' 
 import { extensionReleaseStatusForState } from '../lib/extension-release-status.js';
 import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 import { unknownPageFlow } from '../lib/unknown-page-flow.js';
+import { ANALYSIS_REQUEST_CONTRACT_VERSION, createRequestApiStore, createResilientRequestStore } from '../lib/analysis-request-api.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -399,6 +400,35 @@ test('unknown pages show the canonical shared-registry path before any score', (
   assert.equal(requested.steps[1].state, 'complete');
   assert.match(requested.steps[1].detail, /duplicate visits reuse this record/);
   assert.equal(unknownPageFlow({}), null);
+});
+
+test('shared request adapter sends canonical identity only and resolves status across visits', async () => {
+  const identity = identifyPage('https://example.com/article?utm_source=test');
+  const requestId = `req_${'a'.repeat(64)}`;
+  const record = { request_id: requestId, contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, entity_key: identity.entityKey, canonical_url: identity.canonicalUrl, page_kind: identity.kind, state: 'queued', attempt: 1, created_at: '2026-08-31T00:00:00Z', updated_at: '2026-08-31T00:00:00Z' };
+  const calls = [];
+  const store = createRequestApiStore({ endpoint: 'https://ai.example/claims/api/', fetchImpl: async (url, options = {}) => {
+    calls.push({ url, options });
+    return { ok: true, status: options.method === 'POST' ? 201 : 200, json: async () => ({ contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, created: true, analysis_request: record }) };
+  } });
+  assert.equal((await store.get(identity.entityKey)).sync_scope, 'shared');
+  assert.equal((await store.submit(identity)).record.request_id, requestId);
+  assert.match(calls[0].url, /v1\/analysis-requests\?entity_key=web%3Aexample\.com%2Farticle$/);
+  assert.deepEqual(JSON.parse(calls[1].options.body), { contract_version: ANALYSIS_REQUEST_CONTRACT_VERSION, entity_key: identity.entityKey, canonical_url: identity.canonicalUrl, page_kind: 'web' });
+});
+
+test('request adapter falls back locally only for recoverable service failures', async () => {
+  const identity = identifyPage('https://example.com/fallback');
+  const local = createRequestStore({ storageArea: memoryStorage(), now: () => '2026-08-31T00:00:00Z', createId: () => 'local-fixture' });
+  const recoverable = createResilientRequestStore({ remoteStore: { get: async () => { throw new Error('offline'); }, submit: async () => { throw new Error('offline'); } }, localStore: local });
+  const submission = await recoverable.submit(identity);
+  assert.equal(submission.record.sync_scope, 'device_only');
+  assert.equal((await recoverable.get(identity.entityKey)).sync_scope, 'device_only');
+
+  const incompatible = new Error('unsupported');
+  incompatible.recoverable = false;
+  const strict = createResilientRequestStore({ remoteStore: { get: async () => { throw incompatible; }, submit: async () => { throw incompatible; } }, localStore: local });
+  await assert.rejects(strict.get(identity.entityKey), /unsupported/);
 });
 
 test('API resolver maps 404 to not analyzed and rejects incompatible contracts', async () => {

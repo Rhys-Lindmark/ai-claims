@@ -1,6 +1,7 @@
 import { identifyPage } from './lib/page-identity.js';
 import { createConfiguredResolver } from './lib/analysis-resolver.js';
 import { createRequestStore } from './lib/analysis-requests.js';
+import { createRequestApiStore, createResilientRequestStore } from './lib/analysis-request-api.js';
 import { sourceNotice } from './lib/source-policy.js';
 import { createMetricsStore } from './lib/local-metrics.js';
 import { createOriginOptInStore } from './lib/origin-opt-in.js';
@@ -26,7 +27,8 @@ let currentTab;
 let currentIdentity;
 let currentResolvedState;
 let currentAutoCheck = false;
-const requestStore = createRequestStore({ storageArea: chrome.storage.local });
+const localRequestStore = createRequestStore({ storageArea: chrome.storage.local });
+let requestStore = localRequestStore;
 const metricsStore = createMetricsStore({ storageArea: chrome.storage.local, extensionVersion: chrome.runtime.getManifest().version });
 const originOptIns = createOriginOptInStore({ storageArea: chrome.storage.local });
 const checkedThisSession = new Set();
@@ -45,11 +47,13 @@ function negotiationOutcome(state) {
   return 'not_advertised';
 }
 
-async function loadResolver() {
+async function loadServices() {
   const response = await fetch(chrome.runtime.getURL('data/resolver-config.json'));
   const config = await response.json();
   if (config.mode === 'local') config.registry_url = chrome.runtime.getURL(config.registry_url);
-  return createConfiguredResolver(config);
+  const resolver = createConfiguredResolver(config);
+  const requests = config.mode === 'api' ? createResilientRequestStore({ remoteStore: createRequestApiStore({ endpoint: config.endpoint }), localStore: localRequestStore }) : localRequestStore;
+  return { resolver, requests };
 }
 
 function renderResult(state, identity, requestRecord = null) {
@@ -108,8 +112,9 @@ async function refresh() {
   }
   let score;
   try {
-    const resolver = await loadResolver();
-    score = await resolver.resolve(identity.entityKey);
+    const services = await loadServices();
+    requestStore = services.requests;
+    score = await services.resolver.resolve(identity.entityKey);
   } catch {
     score = { state: 'pending', reason: 'The shared analysis service is temporarily unavailable.' };
   }
