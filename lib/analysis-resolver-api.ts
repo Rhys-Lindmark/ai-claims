@@ -1,6 +1,6 @@
 import registry from '@/extension/data/analyses.json';
 import deploymentAttestation from '@/extension/data/deployment-attestation.json';
-import extensionRelease from '@/releases/extension-v0.2.17.json';
+import extensionRelease from '@/releases/extension-v0.2.18.json';
 import releaseChannelPolicy from '@/releases/channel-policy.json';
 import { releaseDownloadUrls } from '@/extension/lib/extension-release-api.js';
 import { CORRECTION_EVENT_URL_TEMPLATE, CORRECTION_FEED_DEFAULT_PAGE_SIZE, CORRECTION_FEED_MAX_PAGE_SIZE, CORRECTION_FEED_SUPPORTED_CONTRACTS, latestCorrectionForEntity, negotiateCorrectionFeedContract } from '@/lib/correction-feed-api';

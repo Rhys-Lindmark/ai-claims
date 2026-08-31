@@ -31,7 +31,7 @@ import { validateDeploymentAttestation } from '../lib/deployment-attestation.js'
 import { currentDeploymentAttestationEnvelope, deploymentAttestationEtag, immutableDeploymentAttestationEnvelope } from '../lib/deployment-attestation-api.js';
 import { deploymentProofForState } from '../lib/deployment-proof.js';
 import { currentExtensionReleaseEnvelope, extensionReleaseEtag, immutableExtensionReleaseEnvelope, releaseDownloadUrls } from '../lib/extension-release-api.js';
-import release from '../../releases/extension-v0.2.17.json' with { type: 'json' };
+import release from '../../releases/extension-v0.2.18.json' with { type: 'json' };
 import { extensionReleaseStatusForState } from '../lib/extension-release-status.js';
 import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 
@@ -98,7 +98,7 @@ test('extension release API exposes a revalidating pointer and immutable version
   assert.equal(extensionReleaseEtag(release), `"sha256-${release.package.integrity.digest_hex}"`);
   assert.equal(current.current_version, release.extension_version);
   assert.equal(current.immutable_url, immutableUrl);
-  assert.match(current.package_url, /ai-claims-extension-v0\.2\.17\.zip$/);
+  assert.match(current.package_url, /ai-claims-extension-v0\.2\.18\.zip$/);
   assert.equal(current.release.privacy.installation_telemetry_collected, false);
   assert.deepEqual(releaseDownloadUrls(release.extension_version), { package_url: `https://github.com/Rhys-Lindmark/ai-claims/releases/download/v${release.extension_version}/ai-claims-extension-v${release.extension_version}.zip`, manifest_url: `https://github.com/Rhys-Lindmark/ai-claims/releases/download/v${release.extension_version}/extension-v${release.extension_version}.json` });
   assert.equal(immutableExtensionReleaseEnvelope(release, release.extension_version).release.extension_version, release.extension_version);
@@ -340,7 +340,7 @@ test('resolver advertises a supported telemetry-free extension release', async (
   assert.equal(state.extensionReleaseChannel, 'prototype');
   assert.equal(state.extensionReleaseMinimumSupportedVersion, '0.2.16');
   assert.equal(extensionReleaseStatusForState(state, release.extension_version).state, 'current');
-  assert.equal(extensionReleaseStatusForState({ ...state, extensionReleaseVersion: '0.2.18' }, release.extension_version).state, 'update_available');
+  assert.equal(extensionReleaseStatusForState({ ...state, extensionReleaseVersion: '0.2.19' }, release.extension_version).state, 'update_available');
   assert.equal(extensionReleaseStatusForState({ ...state, extensionReleaseInstallationTelemetryCollected: true }, release.extension_version), null);
   assert.equal(extensionReleaseStatusForState({ ...state, extensionReleaseAutomaticInstallOrUpdate: true }, release.extension_version), null);
   assert.deepEqual(extensionReleaseCompatibility({ contract_version: '9.0.0' }), { state: 'unsupported', contractVersion: '9.0.0' });

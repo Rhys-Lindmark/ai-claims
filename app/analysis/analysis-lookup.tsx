@@ -3,7 +3,7 @@
 import { ArrowLeft, ExternalLink, ShieldCheck } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import registry from '@/extension/data/analyses.json';
-import release from '@/releases/extension-v0.2.17.json';
+import release from '@/releases/extension-v0.2.18.json';
 
 type Analysis = (typeof registry.analyses)[number];
 const releaseUrl = `https://github.com/Rhys-Lindmark/ai-claims/releases/tag/v${release.extension_version}`;

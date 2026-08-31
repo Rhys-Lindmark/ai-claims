@@ -1,5 +1,5 @@
 import { ExternalLink, FlaskConical, PanelRightOpen, ShieldCheck } from 'lucide-react';
-import release from '@/releases/extension-v0.2.17.json';
+import release from '@/releases/extension-v0.2.18.json';
 import { releaseDownloadUrls } from '@/extension/lib/extension-release-api.js';
 
 export function ExtensionNorthStarDemo() {

@@ -1,5 +1,6 @@
-import currentRelease from '@/releases/extension-v0.2.17.json';
-import previousRelease from '@/releases/extension-v0.2.16.json';
+import currentRelease from '@/releases/extension-v0.2.18.json';
+import previousRelease from '@/releases/extension-v0.2.17.json';
+import oldestRelease from '@/releases/extension-v0.2.16.json';
 import { extensionReleaseEtag, immutableExtensionReleaseEnvelope } from '@/extension/lib/extension-release-api.js';
 
 const baseHeaders = { 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=31536000, immutable', 'content-type': 'application/json; charset=utf-8' };
@@ -7,7 +8,7 @@ const baseHeaders = { 'access-control-allow-origin': '*', 'cache-control': 'publ
 export async function GET(request: Request, context: { params: Promise<{ version: string }> }) {
   const version = (await context.params).version?.trim() ?? '';
   if (!/^\d+\.\d+\.\d+$/.test(version)) return Response.json({ contract_version: '1.0.0', error: 'A semantic extension version is required.' }, { status: 400, headers: baseHeaders });
-  const release = [currentRelease, previousRelease].find((entry) => entry.extension_version === version) ?? currentRelease;
+  const release = [currentRelease, previousRelease, oldestRelease].find((entry) => entry.extension_version === version) ?? currentRelease;
   const envelope = immutableExtensionReleaseEnvelope(release, version);
   const etag = extensionReleaseEtag(release);
   const headers = { ...baseHeaders, etag };
