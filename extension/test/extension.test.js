@@ -18,7 +18,7 @@ import { canonicalPrivacyReceipt, privacyReceiptArtifact, SUPPORTED_PRIVACY_RECE
 import syntheticEpisode from '../data/synthetic-youtube-fixture.json' with { type: 'json' };
 import { syntheticEpisodeScore, validateSyntheticEpisodeFixture } from '../lib/episode-fixture.js';
 import { probeResolverUrl } from '../lib/resolver-probe.js';
-import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
+import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -102,6 +102,18 @@ test('resolver probe history receipt discloses its narrow local schema', () => {
   assert.deepEqual(receipt.retained_fields, ['kind', 'state']);
   assert.deepEqual(receipt.entries, [{ state: 'reviewed', kind: 'goodreads' }]);
   assert.doesNotMatch(JSON.stringify(receipt), /secret|score|url/i);
+});
+
+test('resolver history receipt verifier rejects altered and overbroad documents locally', async () => {
+  const artifact = await probeHistoryReceiptArtifact([{ state: 'reviewed', kind: 'youtube' }]);
+  assert.equal((await verifyProbeHistoryReceiptDocument(artifact.content)).state, 'valid');
+  const altered = JSON.parse(artifact.content);
+  altered.entries[0].state = 'pending';
+  assert.equal((await verifyProbeHistoryReceiptDocument(JSON.stringify(altered))).state, 'altered');
+  const overbroad = JSON.parse(artifact.content);
+  overbroad.entries[0].url = 'https://example.com/private';
+  assert.equal((await verifyProbeHistoryReceiptDocument(JSON.stringify(overbroad))).state, 'overbroad');
+  assert.equal((await verifyProbeHistoryReceiptDocument('{bad')).state, 'invalid');
 });
 
 test('recognizes Goodreads books without edition-slug noise', () => {

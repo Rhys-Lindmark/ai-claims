@@ -3,7 +3,7 @@
 import { ArrowRight, ExternalLink, SearchCheck } from 'lucide-react';
 import { FormEvent, useEffect, useState } from 'react';
 import { probeResolverUrl, type ResolverProbeResult } from '@/extension/lib/resolver-probe.js';
-import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, type ProbeHistoryEntry } from '@/extension/lib/probe-history.js';
+import { addProbeHistory, parseProbeHistory, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, type ProbeHistoryEntry } from '@/extension/lib/probe-history.js';
 
 const fixtureUrl = 'https://www.youtube.com/watch?v=ai-claims-synthetic-001';
 const historyKey = 'ai-claims:resolver-probe-history:v1';
@@ -13,6 +13,7 @@ export function ResolverProbe() {
   const [result, setResult] = useState<ResolverProbeResult | null>(null);
   const [loading, setLoading] = useState(false);
   const [history, setHistory] = useState<ProbeHistoryEntry[]>([]);
+  const [verification, setVerification] = useState<{ state: string; reason: string } | null>(null);
 
   useEffect(() => {
     try { setHistory(parseProbeHistory(window.localStorage.getItem(historyKey))); } catch { setHistory([]); }
@@ -36,14 +37,20 @@ export function ResolverProbe() {
     setHistory([]);
   }
 
-  function exportHistory() {
-    const blob = new Blob([`${JSON.stringify(probeHistoryReceipt(history), null, 2)}\n`], { type: 'application/json' });
+  async function exportHistory() {
+    const artifact = await probeHistoryReceiptArtifact(history);
+    const blob = new Blob([artifact.content], { type: artifact.mimeType });
     const downloadUrl = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = downloadUrl;
-    anchor.download = 'ai-claims-probe-history-receipt.json';
+    anchor.download = artifact.filename;
     anchor.click();
     URL.revokeObjectURL(downloadUrl);
+  }
+
+  async function verifyHistoryReceipt(file: File | undefined) {
+    if (!file) return;
+    setVerification(await verifyProbeHistoryReceiptDocument(await file.text()));
   }
 
   return <section className="border-b-2 border-ink bg-[#ffd76a]">
@@ -67,6 +74,8 @@ export function ResolverProbe() {
           <div className="flex items-center justify-between gap-3 font-mono text-[8px] font-bold uppercase"><span>Last five checks · this browser only</span><span>No page identity stored</span></div>
           {history.length ? <ol className="mt-3 flex flex-wrap gap-2">{history.map((entry, index) => <li className="border border-ink bg-white px-2 py-1 font-mono text-[8px] font-bold uppercase" key={`${entry.kind}-${entry.state}-${index}`}>{entry.kind} · {entry.state.replaceAll('_', ' ')}</li>)}</ol> : <p className="mt-3 text-xs text-ink/50">No checks saved on this device.</p>}
           <div className="mt-3 flex gap-3 font-mono text-[8px] font-bold uppercase"><button className="underline disabled:opacity-40" disabled={!history.length} onClick={clearHistory} type="button">Clear local history</button><button className="underline" onClick={exportHistory} type="button">Export privacy receipt</button></div>
+          <label className="mt-3 block cursor-pointer font-mono text-[8px] font-bold uppercase underline">Verify a receipt locally<input accept="application/json,.json" className="sr-only" onChange={(event) => verifyHistoryReceipt(event.target.files?.[0])} type="file" /></label>
+          {verification ? <p className="mt-2 text-xs"><strong className="uppercase">{verification.state}.</strong> {verification.reason}</p> : null}
         </div>
       </article>
     </div>

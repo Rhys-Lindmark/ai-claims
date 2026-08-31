@@ -12,7 +12,7 @@ Analysis requests and their lifecycle state are stored in `chrome.storage.local`
 
 The prototype also stores up to 500 coarse product events for 30 days in `chrome.storage.local`: page checked, score published/pending, and analysis requested, plus page kind (`youtube`, `goodreads`, or `web`). These events contain no URL, title, page/entity ID, transcript, ISBN, claim, or user identifier and are never transmitted. The panel shows the user's own seven-day check count.
 
-The public site's resolver probe stores its last five result categories in that browser's `localStorage`. Each entry contains only page kind and outcome. It does not store the submitted URL, title, canonical entity key, page text, score, or user identifier, and it does not transmit this history. The probe can clear this history or export a schema-versioned privacy receipt containing only those same categories.
+The public site's resolver probe stores its last five result categories in that browser's `localStorage`. Each entry contains only page kind and outcome. It does not store the submitted URL, title, canonical entity key, page text, score, or user identifier, and it does not transmit this history. The probe can clear this history or export a schema-versioned, SHA-256-protected privacy receipt containing only those same categories. Its local verifier detects altered, unsupported, invalid, and overbroad receipts without uploading the file.
 
 ## Before analysis requests synchronize
 
