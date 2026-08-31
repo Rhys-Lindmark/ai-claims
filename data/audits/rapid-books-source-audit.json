@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-08-31",
-  "checked_at": "2026-08-31T23:40:23.301Z",
+  "checked_at": "2026-08-31T23:54:02.223Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,37 +10,46 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 170,
-    "claims": 510,
-    "citations": 1020,
-    "unique_urls": 714,
-    "repeated_citations": 306,
+    "books": 180,
+    "claims": 540,
+    "citations": 1080,
+    "unique_urls": 749,
+    "repeated_citations": 331,
     "redirected_urls": 105,
     "states": {
-      "access_blocked": 160,
+      "access_blocked": 163,
       "network_error": 4,
-      "other_http": 1,
-      "reachable": 545,
+      "other_http": 3,
+      "reachable": 575,
       "transient": 4
     },
     "score_distribution": {
       "42": 1,
-      "50": 4,
-      "58": 9,
-      "67": 30,
-      "75": 38,
+      "50": 7,
+      "58": 12,
+      "67": 31,
+      "75": 41,
       "83": 37,
       "92": 41,
       "100": 10
     },
     "confidence_distribution": {
       "high": 62,
-      "medium": 46,
+      "low": 1,
+      "medium": 51,
       "medium-high": 52,
-      "medium-low": 10
+      "medium-low": 14
     }
   },
   "domain_summary": [
+    {
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "unique_urls": 50,
+      "citations": 79,
+      "states": {
+        "reachable": 50
+      }
+    },
     {
       "host": "doi.org",
       "unique_urls": 57,
@@ -51,20 +60,20 @@
       }
     },
     {
-      "host": "pmc.ncbi.nlm.nih.gov",
-      "unique_urls": 49,
-      "citations": 76,
-      "states": {
-        "reachable": 49
-      }
-    },
-    {
       "host": "cambridge.org",
       "unique_urls": 22,
       "citations": 35,
       "states": {
         "transient": 1,
         "reachable": 21
+      }
+    },
+    {
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "unique_urls": 26,
+      "citations": 35,
+      "states": {
+        "reachable": 26
       }
     },
     {
@@ -100,19 +109,19 @@
       }
     },
     {
+      "host": "who.int",
+      "unique_urls": 7,
+      "citations": 16,
+      "states": {
+        "reachable": 7
+      }
+    },
+    {
       "host": "justice.gov",
       "unique_urls": 11,
       "citations": 14,
       "states": {
         "reachable": 11
-      }
-    },
-    {
-      "host": "pubmed.ncbi.nlm.nih.gov",
-      "unique_urls": 8,
-      "citations": 14,
-      "states": {
-        "reachable": 8
       }
     },
     {
@@ -164,19 +173,19 @@
       }
     },
     {
+      "host": "cdc.gov",
+      "unique_urls": 8,
+      "citations": 11,
+      "states": {
+        "reachable": 8
+      }
+    },
+    {
       "host": "wwwnc.cdc.gov",
       "unique_urls": 6,
       "citations": 11,
       "states": {
         "reachable": 6
-      }
-    },
-    {
-      "host": "cdc.gov",
-      "unique_urls": 7,
-      "citations": 10,
-      "states": {
-        "reachable": 7
       }
     },
     {
@@ -216,8 +225,7 @@
       "unique_urls": 8,
       "citations": 9,
       "states": {
-        "reachable": 3,
-        "access_blocked": 5
+        "access_blocked": 8
       }
     },
     {
@@ -301,6 +309,14 @@
       }
     },
     {
+      "host": "cancer.gov",
+      "unique_urls": 5,
+      "citations": 6,
+      "states": {
+        "reachable": 5
+      }
+    },
+    {
       "host": "genome.gov",
       "unique_urls": 5,
       "citations": 6,
@@ -341,11 +357,11 @@
       }
     },
     {
-      "host": "who.int",
-      "unique_urls": 5,
-      "citations": 6,
+      "host": "aasm.org",
+      "unique_urls": 3,
+      "citations": 5,
       "states": {
-        "reachable": 5
+        "reachable": 3
       }
     },
     {
@@ -404,6 +420,14 @@
       "citations": 5,
       "states": {
         "reachable": 3
+      }
+    },
+    {
+      "host": "iarc.who.int",
+      "unique_urls": 1,
+      "citations": 5,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -468,14 +492,6 @@
       "citations": 4,
       "states": {
         "reachable": 3
-      }
-    },
-    {
-      "host": "cancer.gov",
-      "unique_urls": 4,
-      "citations": 4,
-      "states": {
-        "reachable": 4
       }
     },
     {
@@ -640,6 +656,14 @@
       }
     },
     {
+      "host": "ftc.gov",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "gao.gov",
       "unique_urls": 2,
       "citations": 3,
@@ -661,6 +685,14 @@
       "citations": 3,
       "states": {
         "reachable": 3
+      }
+    },
+    {
+      "host": "nia.nih.gov",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "other_http": 1
       }
     },
     {
@@ -898,6 +930,14 @@
     },
     {
       "host": "europarl.europa.eu",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "fda.gov",
       "unique_urls": 1,
       "citations": 2,
       "states": {
@@ -1243,6 +1283,14 @@
       }
     },
     {
+      "host": "uspreventiveservicestaskforce.org",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "wto.org",
       "unique_urls": 1,
       "citations": 2,
@@ -1323,6 +1371,14 @@
       }
     },
     {
+      "host": "bls.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "bmcr.brynmawr.edu",
       "unique_urls": 1,
       "citations": 1,
@@ -1356,6 +1412,14 @@
     },
     {
       "host": "cdn.penguin.co.uk",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "census.gov",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1424,6 +1488,14 @@
       "citations": 1,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "cochranelibrary.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "other_http": 1
       }
     },
     {
@@ -2371,6 +2443,19 @@
       ]
     },
     {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "host": "who.int",
+      "citation_count": 9,
+      "state": "reachable",
+      "books": [
+        "good-calories-bad-calories",
+        "in-defense-of-food",
+        "fast-food-nation",
+        "the-china-study",
+        "how-not-to-die"
+      ]
+    },
+    {
       "url": "https://www.computerhistory.org/timeline/computers/",
       "host": "computerhistory.org",
       "citation_count": 7,
@@ -2414,6 +2499,17 @@
         "hackers-heroes-of-the-computer-revolution",
         "where-wizards-stay-up-late",
         "the-dream-machine"
+      ]
+    },
+    {
+      "url": "https://www.iarc.who.int/reference/european-code-against-cancer-4th-edition-diet-and-cancer/",
+      "host": "iarc.who.int",
+      "citation_count": 5,
+      "state": "reachable",
+      "books": [
+        "in-defense-of-food",
+        "the-china-study",
+        "how-not-to-die"
       ]
     },
     {
@@ -2645,6 +2741,17 @@
       ]
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7946062/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "in-defense-of-food",
+        "fast-food-nation",
+        "salt-sugar-fat"
+      ]
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8488640/",
       "host": "pmc.ncbi.nlm.nih.gov",
       "citation_count": 3,
@@ -2835,6 +2942,16 @@
       ]
     },
     {
+      "url": "https://www.nia.nih.gov/health/exercise-and-physical-activity/health-benefits-exercise-and-physical-activity",
+      "host": "nia.nih.gov",
+      "citation_count": 3,
+      "state": "other_http",
+      "books": [
+        "how-not-to-die",
+        "outlive"
+      ]
+    },
+    {
       "url": "https://www.nps.gov/cali/learn/historyculture/donner-reed-party.htm",
       "host": "nps.gov",
       "citation_count": 3,
@@ -2908,6 +3025,24 @@
       "state": "reachable",
       "books": [
         "the-american-plague"
+      ]
+    },
+    {
+      "url": "https://aasm.org/resources/pdf/adultsleepdurationmethods.pdf",
+      "host": "aasm.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "why-we-sleep"
+      ]
+    },
+    {
+      "url": "https://aasm.org/resources/pdf/pressroom/adult-sleep-duration-consensus.pdf",
+      "host": "aasm.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "why-we-sleep"
       ]
     },
     {
@@ -3537,6 +3672,33 @@
       ]
     },
     {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25618769/",
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "breath"
+      ]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31331557/",
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "breath"
+      ]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "lifespan"
+      ]
+    },
+    {
       "url": "https://pubs.aeaweb.org/doi/10.1257/jep.22.2.29",
       "host": "pubs.aeaweb.org",
       "citation_count": 2,
@@ -3739,6 +3901,16 @@
       ]
     },
     {
+      "url": "https://www.cancer.gov/about-cancer/screening/hp-screening-overview-pdq",
+      "host": "cancer.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "how-not-to-die",
+        "outlive"
+      ]
+    },
+    {
       "url": "https://www.cdc.gov/mmwr/volumes/69/wr/mm6905e1.htm",
       "host": "cdc.gov",
       "citation_count": 2,
@@ -3868,6 +4040,16 @@
       ]
     },
     {
+      "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label",
+      "host": "fda.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "in-defense-of-food",
+        "salt-sugar-fat"
+      ]
+    },
+    {
       "url": "https://www.federalreserve.gov/newsevents/speech/yellen20170825a.htm",
       "host": "federalreserve.gov",
       "citation_count": 2,
@@ -3903,6 +4085,16 @@
       "state": "reachable",
       "books": [
         "the-big-burn"
+      ]
+    },
+    {
+      "url": "https://www.ftc.gov/reports/marketing-food-children-adolescents-review-industry-expenditures-activities-self-regulation-federal",
+      "host": "ftc.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "fast-food-nation",
+        "salt-sugar-fat"
       ]
     },
     {
@@ -4350,6 +4542,15 @@
       ]
     },
     {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/cardiovascular-disease-risk-screening-with-electrocardiography",
+      "host": "uspreventiveservicestaskforce.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "outlive"
+      ]
+    },
+    {
       "url": "https://www.v-dem.net/data/the-v-dem-dataset/",
       "host": "v-dem.net",
       "citation_count": 2,
@@ -4416,6 +4617,67 @@
     }
   ],
   "results": [
+    {
+      "url": "https://aasm.org/advocacy/position-statements/adult-sleep-duration-health-advisory/",
+      "citations": [
+        {
+          "slug": "why-we-sleep",
+          "claim_index": 2,
+          "source_title": "AASM adult sleep duration health advisory"
+        }
+      ],
+      "host": "aasm.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://aasm.org/advocacy/position-statements/adult-sleep-duration-health-advisory/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://aasm.org/resources/pdf/adultsleepdurationmethods.pdf",
+      "citations": [
+        {
+          "slug": "why-we-sleep",
+          "claim_index": 1,
+          "source_title": "AASM consensus methodology and discussion"
+        },
+        {
+          "slug": "why-we-sleep",
+          "claim_index": 3,
+          "source_title": "AASM consensus methodology and limitations"
+        }
+      ],
+      "host": "aasm.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://aasm.org/resources/pdf/adultsleepdurationmethods.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://aasm.org/resources/pdf/pressroom/adult-sleep-duration-consensus.pdf",
+      "citations": [
+        {
+          "slug": "why-we-sleep",
+          "claim_index": 1,
+          "source_title": "AASM and SRS adult sleep duration consensus"
+        },
+        {
+          "slug": "why-we-sleep",
+          "claim_index": 2,
+          "source_title": "AASM and SRS adult sleep duration consensus"
+        }
+      ],
+      "host": "aasm.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://aasm.org/resources/pdf/pressroom/adult-sleep-duration-consensus.pdf",
+      "redirected": false,
+      "error": null
+    },
     {
       "url": "https://academic.oup.com/ahr/article-abstract/123/5/1627/5221071",
       "citations": [
@@ -5843,7 +6105,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=f50a800a-0c18-417e-b003-abe09e01311c",
+      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=203af5da-9ce9-41fc-a896-29853861b0f6",
       "redirected": true,
       "error": null
     },
@@ -5875,7 +6137,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=a1409740-aae9-41bb-a552-82c52f8ac2bf",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=3ea52ed1-8375-4387-942b-5492ba257e3f",
       "redirected": true,
       "error": null
     },
@@ -5892,7 +6154,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature10574",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=d200fe70-3fc0-4f05-a1d0-454b04baa70a",
       "redirected": true,
       "error": null
     },
@@ -5936,7 +6198,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7",
       "redirected": true,
       "error": null
     },
@@ -5953,7 +6215,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-023-43426-5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=e60b2528-c6ea-4ebd-9ad9-e96eaf7f1b9d",
       "redirected": true,
       "error": null
     },
@@ -5970,7 +6232,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=9395a8bb-fd86-4d59-8e33-51e2518d7ba6",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=009baf19-7369-4765-8377-2575b4c6daf5",
       "redirected": true,
       "error": null
     },
@@ -5987,7 +6249,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0",
+      "final_url": "https://www.nature.com/articles/s41576-020-0225-0",
       "redirected": true,
       "error": null
     },
@@ -6004,7 +6266,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=002d4236-d125-4dae-aa5a-6f5e3ce0c2c1",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2",
       "redirected": true,
       "error": null
     },
@@ -6021,7 +6283,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=5c2d722d-ec1f-46be-8756-f53fe5396120",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=cc4d83b4-1d7f-4722-9a82-ac486d7195a7",
       "redirected": true,
       "error": null
     },
@@ -7629,7 +7891,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=866750a2-a49a-4020-8164-90bc199a8707",
+      "final_url": "https://link.springer.com/article/10.1007/s10602-026-09503-9?error=cookies_not_supported&code=792afb4d-a60c-4f82-a29f-64a583cb8058",
       "redirected": true,
       "error": null
     },
@@ -7680,7 +7942,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=f3c140d4-7684-49c1-908f-6e6e07478c7a",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=32163914-fa43-4360-8e9d-a15d19f74d2c",
       "redirected": true,
       "error": null
     },
@@ -7697,7 +7959,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=751e4676-c911-46b2-9d9e-95feacb18a7c",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=bb9e328c-ef72-40e5-a2fb-dfbe9a80020b",
       "redirected": true,
       "error": null
     },
@@ -9735,6 +9997,33 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7946062/",
+      "citations": [
+        {
+          "slug": "in-defense-of-food",
+          "claim_index": 2,
+          "source_title": "NIH randomized ultra-processed diet trial"
+        },
+        {
+          "slug": "fast-food-nation",
+          "claim_index": 3,
+          "source_title": "NIH randomized ultra-processed diet trial"
+        },
+        {
+          "slug": "salt-sugar-fat",
+          "claim_index": 2,
+          "source_title": "NIH randomized ultra-processed diet trial"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7946062/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7969392/",
       "citations": [
         {
@@ -9996,6 +10285,45 @@
       "error": null
     },
     {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25618769/",
+      "citations": [
+        {
+          "slug": "breath",
+          "claim_index": 2,
+          "source_title": "Systematic review of diagnosing mouth breathing"
+        },
+        {
+          "slug": "breath",
+          "claim_index": 3,
+          "source_title": "Systematic review of mouth-breathing diagnosis"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/25618769/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26832637/",
+      "citations": [
+        {
+          "slug": "breath",
+          "claim_index": 2,
+          "source_title": "Systematic review of breathing pattern and learning"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/26832637/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pubmed.ncbi.nlm.nih.gov/27845531/",
       "citations": [
         {
@@ -10023,6 +10351,23 @@
       "error": null
     },
     {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28074888/",
+      "citations": [
+        {
+          "slug": "good-calories-bad-calories",
+          "claim_index": 3,
+          "source_title": "Review of the carbohydrate-insulin model"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/28074888/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pubmed.ncbi.nlm.nih.gov/28288281/",
       "citations": [
         {
@@ -10036,6 +10381,79 @@
       "method": "HEAD",
       "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/28288281/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29466592/",
+      "citations": [
+        {
+          "slug": "good-calories-bad-calories",
+          "claim_index": 2,
+          "source_title": "DIETFITS randomized clinical trial"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/29466592/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29649120/",
+      "citations": [
+        {
+          "slug": "salt-sugar-fat",
+          "claim_index": 3,
+          "source_title": "Systematic review of evidence for food addiction"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/29649120/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30058510/",
+      "citations": [
+        {
+          "slug": "why-we-sleep",
+          "claim_index": 3,
+          "source_title": "Systematic review of sleep duration and mortality"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/30058510/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31331557/",
+      "citations": [
+        {
+          "slug": "breath",
+          "claim_index": 1,
+          "source_title": "Meta-analysis of slow breathing and blood pressure"
+        },
+        {
+          "slug": "breath",
+          "claim_index": 3,
+          "source_title": "Systematic review of slow breathing trials"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/31331557/",
       "redirected": false,
       "error": null
     },
@@ -10067,6 +10485,181 @@
       "error": null
     },
     {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33317019/",
+      "citations": [
+        {
+          "slug": "good-calories-bad-calories",
+          "claim_index": 2,
+          "source_title": "Meta-analysis of low-carbohydrate versus low-fat diets"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/33317019/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34152831/",
+      "citations": [
+        {
+          "slug": "salt-sugar-fat",
+          "claim_index": 3,
+          "source_title": "Annual Review: Is Food Addictive?"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/34152831/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34225102/",
+      "citations": [
+        {
+          "slug": "outlive",
+          "claim_index": 1,
+          "source_title": "Meta-analysis of cardiorespiratory fitness and mortality"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/34225102/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35134825/",
+      "citations": [
+        {
+          "slug": "good-calories-bad-calories",
+          "claim_index": 3,
+          "source_title": "Energy balance model of obesity review"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/35134825/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35840801/",
+      "citations": [
+        {
+          "slug": "lifespan",
+          "claim_index": 2,
+          "source_title": "Critical review of targeting hallmarks of aging"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/35840801/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
+      "citations": [
+        {
+          "slug": "lifespan",
+          "claim_index": 1,
+          "source_title": "Hallmarks of aging: an expanding universe"
+        },
+        {
+          "slug": "lifespan",
+          "claim_index": 2,
+          "source_title": "Hallmarks of aging: an expanding universe"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37068054/",
+      "citations": [
+        {
+          "slug": "lifespan",
+          "claim_index": 3,
+          "source_title": "Review of NAD-boosting compounds in humans"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/37068054/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38013368/",
+      "citations": [
+        {
+          "slug": "breath",
+          "claim_index": 1,
+          "source_title": "Randomized trial of slow breathing and relaxation"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/38013368/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38255828/",
+      "citations": [
+        {
+          "slug": "lifespan",
+          "claim_index": 3,
+          "source_title": "Systematic review of resveratrol clinical trials"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/38255828/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38292053/",
+      "citations": [
+        {
+          "slug": "lifespan",
+          "claim_index": 1,
+          "source_title": "Review of the hallmarks framework"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/38292053/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pubmed.ncbi.nlm.nih.gov/42611354/",
       "citations": [
         {
@@ -10080,6 +10673,23 @@
       "method": "HEAD",
       "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/42611354/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8172116/",
+      "citations": [
+        {
+          "slug": "the-china-study",
+          "claim_index": 2,
+          "source_title": "Original review of diet and chronic disease in rural China"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/8172116/",
       "redirected": false,
       "error": null
     },
@@ -10370,7 +10980,7 @@
       ],
       "host": "revistas.unal.edu.co",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://revistas.unal.edu.co/index.php/achsc/article/view/71038",
       "redirected": false,
@@ -11369,9 +11979,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-genet-021920-011805",
       "redirected": false,
       "error": null
@@ -11403,9 +12013,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-psych-122216-011836",
       "redirected": false,
       "error": null
@@ -11437,9 +12047,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev.psych.59.103006.093629",
       "redirected": false,
       "error": null
@@ -11462,8 +12072,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-ecolsys-110218-024717",
-      "redirected": false,
+      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-110218-024717?crawler=true&mimetype=application/pdf",
+      "redirected": true,
       "error": null
     },
     {
@@ -11624,6 +12234,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.biointeractive.org/sites/default/files/TeacherGuide_YourInnerFish.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.bls.gov/ooh/food-preparation-and-serving/home.htm",
+      "citations": [
+        {
+          "slug": "fast-food-nation",
+          "claim_index": 1,
+          "source_title": "BLS food preparation and serving occupations"
+        }
+      ],
+      "host": "bls.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.bls.gov/ooh/food-preparation-and-serving/home.htm",
       "redirected": false,
       "error": null
     },
@@ -12123,6 +12750,28 @@
       "error": null
     },
     {
+      "url": "https://www.cancer.gov/about-cancer/screening/hp-screening-overview-pdq",
+      "citations": [
+        {
+          "slug": "how-not-to-die",
+          "claim_index": 3,
+          "source_title": "NCI cancer screening overview"
+        },
+        {
+          "slug": "outlive",
+          "claim_index": 3,
+          "source_title": "NCI cancer screening evidence overview"
+        }
+      ],
+      "host": "cancer.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cancer.gov/about-cancer/screening/hp-screening-overview-pdq",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.cancer.gov/about-cancer/understanding",
       "citations": [
         {
@@ -12291,6 +12940,23 @@
       "error": null
     },
     {
+      "url": "https://www.cdc.gov/nchs/products/databriefs/db533.htm",
+      "citations": [
+        {
+          "slug": "fast-food-nation",
+          "claim_index": 2,
+          "source_title": "CDC fast-food intake among U.S. adults"
+        }
+      ],
+      "host": "cdc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cdc.gov/nchs/products/databriefs/db533.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.cdc.gov/surv-manual/php/table-of-contents/chapter-15-congenital-rubella-syndrome.html",
       "citations": [
         {
@@ -12321,6 +12987,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.cdc.gov/yrbs/dstr/index.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html",
+      "citations": [
+        {
+          "slug": "fast-food-nation",
+          "claim_index": 1,
+          "source_title": "U.S. Census accommodation and food services data"
+        }
+      ],
+      "host": "census.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.census.gov/programs-surveys/economic-census/year/2022/guidance/understanding-naics.html",
       "redirected": false,
       "error": null
     },
@@ -12524,6 +13207,23 @@
       "status": 200,
       "final_url": "https://www.cjr.org/fiftieth_anniversary/caros_way.php",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011737.pub3/full",
+      "citations": [
+        {
+          "slug": "good-calories-bad-calories",
+          "claim_index": 1,
+          "source_title": "Cochrane review of reducing saturated fat for cardiovascular disease"
+        }
+      ],
+      "host": "cochranelibrary.com",
+      "state": "other_http",
+      "method": "GET",
+      "status": 412,
+      "final_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011737.pub3/full?cookiesEnabled",
+      "redirected": true,
       "error": null
     },
     {
@@ -13197,6 +13897,28 @@
       "error": null
     },
     {
+      "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label",
+      "citations": [
+        {
+          "slug": "in-defense-of-food",
+          "claim_index": 3,
+          "source_title": "FDA added sugars on the Nutrition Facts label"
+        },
+        {
+          "slug": "salt-sugar-fat",
+          "claim_index": 2,
+          "source_title": "FDA added sugars labeling guidance"
+        }
+      ],
+      "host": "fda.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.federalreserve.gov/econres/feds/files/2018055pap.pdf",
       "citations": [
         {
@@ -13417,6 +14139,45 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.fs.usda.gov/sites/default/files/fire-management-today/FS-Pubs-FMT-79-4.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2012/12/ftc-releases-follow-study-detailing-promotional-activities-expenditures-nutritional-profiles-food",
+      "citations": [
+        {
+          "slug": "salt-sugar-fat",
+          "claim_index": 1,
+          "source_title": "FTC follow-up youth food marketing study"
+        }
+      ],
+      "host": "ftc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ftc.gov/news-events/news/press-releases/2012/12/ftc-releases-follow-study-detailing-promotional-activities-expenditures-nutritional-profiles-food",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ftc.gov/reports/marketing-food-children-adolescents-review-industry-expenditures-activities-self-regulation-federal",
+      "citations": [
+        {
+          "slug": "fast-food-nation",
+          "claim_index": 3,
+          "source_title": "FTC food marketing to children report"
+        },
+        {
+          "slug": "salt-sugar-fat",
+          "claim_index": 1,
+          "source_title": "FTC food marketing to children report"
+        }
+      ],
+      "host": "ftc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ftc.gov/reports/marketing-food-children-adolescents-review-industry-expenditures-activities-self-regulation-federal",
       "redirected": false,
       "error": null
     },
@@ -14045,6 +14806,43 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.iaea.org/sites/default/files/vol381.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.iarc.who.int/reference/european-code-against-cancer-4th-edition-diet-and-cancer/",
+      "citations": [
+        {
+          "slug": "in-defense-of-food",
+          "claim_index": 1,
+          "source_title": "IARC European Code against Cancer diet evidence"
+        },
+        {
+          "slug": "the-china-study",
+          "claim_index": 1,
+          "source_title": "IARC European Code against Cancer diet evidence"
+        },
+        {
+          "slug": "the-china-study",
+          "claim_index": 2,
+          "source_title": "IARC European Code against Cancer diet evidence"
+        },
+        {
+          "slug": "the-china-study",
+          "claim_index": 3,
+          "source_title": "IARC European Code against Cancer diet evidence"
+        },
+        {
+          "slug": "how-not-to-die",
+          "claim_index": 1,
+          "source_title": "IARC European Code against Cancer diet evidence"
+        }
+      ],
+      "host": "iarc.who.int",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.iarc.who.int/reference/european-code-against-cancer-4th-edition-diet-and-cancer/",
       "redirected": false,
       "error": null
     },
@@ -15277,8 +16075,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=141487e2-7d2c-4f3a-a604-06781eab58c9",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/d41586-024-00544-4",
+      "redirected": false,
       "error": null
     },
     {
@@ -15299,7 +16097,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=41080db7-98a0-4ad2-9504-1ec0cdf2e0db",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=bc50ab8b-e57d-4564-af88-d92563bcc20f",
       "redirected": true,
       "error": null
     },
@@ -15326,7 +16124,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=f4b0eedb-74d3-4aa1-badb-2c9787eb2e2c",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=fe8ec011-8534-401a-8493-0fad32e7e5d1",
       "redirected": true,
       "error": null
     },
@@ -15353,7 +16151,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=070d1cbf-6bbd-4c12-a283-5dbc730117dc",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=3f9f236b-5197-4c28-b215-3cc13f8dbcba",
       "redirected": true,
       "error": null
     },
@@ -15375,7 +16173,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=e2c703a1-c3a8-44f7-b992-e768d1d1a3e2",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=51fa2a38-f028-4fe1-bfab-87079efd67ec",
       "redirected": true,
       "error": null
     },
@@ -15392,7 +16190,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=754d612a-569d-4977-9869-df7f92794881",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=25f8ad86-852c-4163-b64a-02c43a684b62",
       "redirected": true,
       "error": null
     },
@@ -15426,7 +16224,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=54444419-7729-4fba-af33-6faf1b7230a9",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=5bcf8163-0a18-491b-b595-05983278858a",
       "redirected": true,
       "error": null
     },
@@ -15460,7 +16258,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=86805da3-c730-4292-99cc-3a59ea6d79c4",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=90181786-06c0-4fca-b719-324afb0f8007",
       "redirected": true,
       "error": null
     },
@@ -15482,7 +16280,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=1186dd9b-0579-4763-9e13-9d6e5aae7318",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=fce3c7c0-a044-44ba-b2a3-f3f0659be183",
       "redirected": true,
       "error": null
     },
@@ -15658,6 +16456,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nhm.ac.uk/discover/first-geological-map-of-britain.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nia.nih.gov/health/exercise-and-physical-activity/health-benefits-exercise-and-physical-activity",
+      "citations": [
+        {
+          "slug": "how-not-to-die",
+          "claim_index": 2,
+          "source_title": "National Institute on Aging exercise health benefits"
+        },
+        {
+          "slug": "outlive",
+          "claim_index": 1,
+          "source_title": "National Institute on Aging exercise health benefits"
+        },
+        {
+          "slug": "outlive",
+          "claim_index": 2,
+          "source_title": "National Institute on Aging exercise health benefits"
+        }
+      ],
+      "host": "nia.nih.gov",
+      "state": "other_http",
+      "method": "GET",
+      "status": 405,
+      "final_url": "https://www.nia.nih.gov/health/exercise-and-physical-activity/health-benefits-exercise-and-physical-activity",
       "redirected": false,
       "error": null
     },
@@ -17595,6 +18420,28 @@
       "error": null
     },
     {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/cardiovascular-disease-risk-screening-with-electrocardiography",
+      "citations": [
+        {
+          "slug": "outlive",
+          "claim_index": 2,
+          "source_title": "USPSTF cardiovascular screening with ECG recommendation"
+        },
+        {
+          "slug": "outlive",
+          "claim_index": 3,
+          "source_title": "USPSTF cardiovascular screening with ECG recommendation"
+        }
+      ],
+      "host": "uspreventiveservicestaskforce.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/cardiovascular-disease-risk-screening-with-electrocardiography",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.v-dem.net/data/the-v-dem-dataset/",
       "citations": [
         {
@@ -17734,6 +18581,63 @@
       "error": null
     },
     {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "citations": [
+        {
+          "slug": "good-calories-bad-calories",
+          "claim_index": 1,
+          "source_title": "WHO healthy diet fact sheet"
+        },
+        {
+          "slug": "in-defense-of-food",
+          "claim_index": 1,
+          "source_title": "WHO healthy diet fact sheet"
+        },
+        {
+          "slug": "in-defense-of-food",
+          "claim_index": 2,
+          "source_title": "WHO healthy diet fact sheet"
+        },
+        {
+          "slug": "in-defense-of-food",
+          "claim_index": 3,
+          "source_title": "WHO healthy diet fact sheet"
+        },
+        {
+          "slug": "fast-food-nation",
+          "claim_index": 2,
+          "source_title": "WHO healthy diet fact sheet"
+        },
+        {
+          "slug": "the-china-study",
+          "claim_index": 1,
+          "source_title": "WHO healthy diet fact sheet"
+        },
+        {
+          "slug": "how-not-to-die",
+          "claim_index": 1,
+          "source_title": "WHO healthy diet fact sheet"
+        },
+        {
+          "slug": "how-not-to-die",
+          "claim_index": 2,
+          "source_title": "WHO healthy diet fact sheet"
+        },
+        {
+          "slug": "how-not-to-die",
+          "claim_index": 3,
+          "source_title": "WHO healthy diet fact sheet"
+        }
+      ],
+      "host": "who.int",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.who.int/news-room/fact-sheets/detail/rabies",
       "citations": [
         {
@@ -17752,6 +18656,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.who.int/news-room/fact-sheets/detail/rabies",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+      "citations": [
+        {
+          "slug": "the-china-study",
+          "claim_index": 3,
+          "source_title": "WHO Q&A on red and processed meat carcinogenicity"
+        }
+      ],
+      "host": "who.int",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
       "redirected": false,
       "error": null
     },
@@ -17992,8 +18913,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/1/05-0979_article",
-      "redirected": true,
+      "final_url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article",
+      "redirected": false,
       "error": null
     },
     {

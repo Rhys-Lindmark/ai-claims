@@ -1791,6 +1791,107 @@
         "Greg Lukianoff",
         "Jonathan Haidt"
       ]
+    },
+    {
+      "slug": "good-calories-bad-calories",
+      "match_state": "exact_title_author",
+      "cover_id": 8027557,
+      "cover_url": "https://covers.openlibrary.org/b/id/8027557-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL4127118W",
+      "source_title": "Good  calories, bad calories",
+      "source_authors": [
+        "Gary Taubes"
+      ]
+    },
+    {
+      "slug": "in-defense-of-food",
+      "match_state": "exact_title_author",
+      "cover_id": 2960867,
+      "cover_url": "https://covers.openlibrary.org/b/id/2960867-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3296482W",
+      "source_title": "In Defense of Food",
+      "source_authors": [
+        "Michael Pollan"
+      ]
+    },
+    {
+      "slug": "fast-food-nation",
+      "match_state": "exact_title_author",
+      "cover_id": 8392930,
+      "cover_url": "https://covers.openlibrary.org/b/id/8392930-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL5801795W",
+      "source_title": "Fast Food Nation",
+      "source_authors": [
+        "Eric Schlosser",
+        "Eric Schlosser"
+      ]
+    },
+    {
+      "slug": "salt-sugar-fat",
+      "match_state": "exact_title_author",
+      "cover_id": 7268208,
+      "cover_url": "https://covers.openlibrary.org/b/id/7268208-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16810383W",
+      "source_title": "Salt Sugar Fat",
+      "source_authors": [
+        "Michael Moss"
+      ]
+    },
+    {
+      "slug": "the-china-study",
+      "match_state": "exact_title_author",
+      "cover_id": 7254516,
+      "cover_url": "https://covers.openlibrary.org/b/id/7254516-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15176142W",
+      "source_title": "The China Study",
+      "source_authors": [
+        "T. Colin Campbell, PhD",
+        "T. Colin Campbell",
+        "Thomas M. Campbell"
+      ]
+    },
+    {
+      "slug": "how-not-to-die",
+      "match_state": "exact_title_author",
+      "cover_id": 7398330,
+      "cover_url": "https://covers.openlibrary.org/b/id/7398330-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17319629W",
+      "source_title": "How Not to Die",
+      "source_authors": [
+        "Michael Greger",
+        "Gene Stone"
+      ]
+    },
+    {
+      "slug": "why-we-sleep",
+      "match_state": "exact_title_author",
+      "cover_id": 8814155,
+      "cover_url": "https://covers.openlibrary.org/b/id/8814155-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20168133W",
+      "source_title": "Why We Sleep",
+      "source_authors": [
+        "Matthew P. Walker",
+        "Matthew Walker"
+      ]
+    },
+    {
+      "slug": "breath",
+      "match_state": "exact_title_author",
+      "cover_id": 10096454,
+      "cover_url": "https://covers.openlibrary.org/b/id/10096454-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20799952W",
+      "source_title": "Breath",
+      "source_authors": [
+        "James Nestor"
+      ]
+    },
+    {
+      "slug": "outlive",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "lifespan",
+      "match_state": "unresolved"
     }
   ]
 }
