@@ -32,6 +32,7 @@ import { currentDeploymentAttestationEnvelope, deploymentAttestationEtag, immuta
 import { deploymentProofForState } from '../lib/deployment-proof.js';
 import { currentExtensionReleaseEnvelope, extensionReleaseEtag, immutableExtensionReleaseEnvelope } from '../lib/extension-release-api.js';
 import release from '../../releases/extension-v0.2.16.json' with { type: 'json' };
+import { extensionReleaseStatusForState } from '../lib/extension-release-status.js';
 import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -335,6 +336,9 @@ test('resolver advertises a supported telemetry-free extension release', async (
   assert.equal(state.extensionReleasePackageUrl, discovery.package_url);
   assert.equal(state.extensionReleasePackageDigest, release.package.integrity.digest_hex);
   assert.equal(state.extensionReleaseInstallationTelemetryCollected, false);
+  assert.equal(extensionReleaseStatusForState(state, release.extension_version).state, 'current');
+  assert.equal(extensionReleaseStatusForState({ ...state, extensionReleaseVersion: '0.2.17' }, release.extension_version).state, 'update_available');
+  assert.equal(extensionReleaseStatusForState({ ...state, extensionReleaseInstallationTelemetryCollected: true }, release.extension_version), null);
   assert.deepEqual(extensionReleaseCompatibility({ contract_version: '9.0.0' }), { state: 'unsupported', contractVersion: '9.0.0' });
 });
 
