@@ -14,7 +14,7 @@ import { identifyPage } from '../lib/page-identity.js';
 import { actionBadgeForState } from '../lib/action-badge.js';
 import { createOriginOptInStore } from '../lib/origin-opt-in.js';
 import { correctionLinkForState, correctionPreviewForState, escapeHtml } from '../lib/correction-links.js';
-import { downloadablePrivacyReceipt } from '../lib/privacy-receipt.js';
+import { canonicalPrivacyReceipt, privacyReceiptArtifact } from '../lib/privacy-receipt.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -361,7 +361,7 @@ test('privacy receipt is machine-readable and negotiation reset preserves unrela
   assert.equal((await store.privacyReceipt()).transmitted, false);
 });
 
-test('privacy receipt export is deterministic and needs no download permission', () => {
+test('privacy receipt export is deterministic and needs no download permission', async () => {
   const receipt = {
     schema_version: '1.0.0',
     storage_scope: 'chrome.storage.local',
@@ -371,10 +371,15 @@ test('privacy receipt export is deterministic and needs no download permission',
     prohibited_fields: ['url'],
     last_reset_at: '2026-08-30T12:34:56.000Z',
   };
-  const download = downloadablePrivacyReceipt(receipt);
+  const download = await privacyReceiptArtifact(receipt);
   assert.equal(download.filename, 'ai-claims-privacy-receipt-2026-08-30.json');
   assert.equal(download.mimeType, 'application/json');
-  assert.deepEqual(JSON.parse(download.content), receipt);
+  const document = JSON.parse(download.content);
+  assert.equal(document.integrity.digest_hex, download.digestHex);
+  assert.equal(document.integrity.algorithm, 'SHA-256');
+  assert.equal(document.integrity.canonicalization, 'recursive-key-sort-json-utf8');
+  assert.equal(download.digestHex.length, 64);
+  assert.equal(canonicalPrivacyReceipt({ b: 2, a: 1 }), '{"a":1,"b":2}');
   assert.equal(manifest.permissions.includes('downloads'), false);
   assert.equal(manifest.host_permissions.length, 1);
 });

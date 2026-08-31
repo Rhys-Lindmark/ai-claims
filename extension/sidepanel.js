@@ -5,7 +5,7 @@ import { sourceNotice } from './lib/source-policy.js';
 import { createMetricsStore } from './lib/local-metrics.js';
 import { createOriginOptInStore } from './lib/origin-opt-in.js';
 import { correctionLinkForState, correctionPreviewForState, escapeHtml } from './lib/correction-links.js';
-import { downloadablePrivacyReceipt } from './lib/privacy-receipt.js';
+import { privacyReceiptArtifact } from './lib/privacy-receipt.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
@@ -26,8 +26,9 @@ const checkedThisSession = new Set();
 
 async function refreshMetrics() {
   const [summary, negotiation, receipt] = await Promise.all([metricsStore.summary(7), metricsStore.negotiationSummary(7), metricsStore.privacyReceipt()]);
+  const artifact = await privacyReceiptArtifact(receipt);
   localMetrics.textContent = `7D CHECKS: ${summary.counts.page_checked} · FEED 1.1: ${negotiation.counts.supported_1_1} · LEGACY: ${negotiation.counts.legacy_1_0} · UNSUPPORTED: ${negotiation.counts.unsupported}`;
-  privacyReceipt.textContent = `LOCAL ONLY · ${receipt.retention_days}-DAY RETENTION · NEVER TRANSMITTED · LAST RESET ${receipt.last_reset_at ?? 'NEVER'}`;
+  privacyReceipt.textContent = `LOCAL ONLY · ${receipt.retention_days}-DAY RETENTION · NEVER TRANSMITTED · LAST RESET ${receipt.last_reset_at ?? 'NEVER'} · SHA-256 ${artifact.digestHex}`;
 }
 
 function negotiationOutcome(state) {
@@ -147,13 +148,13 @@ resetMetricsButton.addEventListener('click', async () => {
 });
 
 downloadReceiptButton.addEventListener('click', async () => {
-  const download = downloadablePrivacyReceipt(await metricsStore.privacyReceipt());
+  const download = await privacyReceiptArtifact(await metricsStore.privacyReceipt());
   const objectUrl = URL.createObjectURL(new Blob([download.content], { type: download.mimeType }));
   const anchor = document.createElement('a');
   anchor.href = objectUrl;
   anchor.download = download.filename;
   anchor.click();
-  URL.revokeObjectURL(objectUrl);
+  setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
 });
 
 chrome.tabs.onActivated.addListener(refresh);
