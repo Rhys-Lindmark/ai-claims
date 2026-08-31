@@ -4,6 +4,7 @@ import { readFile } from 'node:fs/promises';
 const packet = JSON.parse(await readFile(new URL('../data/books/sapiens.json', import.meta.url), 'utf8'));
 
 assert.equal(packet.schema_version, 'ai-claims.book-review/0.2.0');
+assert.equal(packet.evidence_method_version, 'source-note/0.1.0');
 assert.equal(packet.entity_key, 'goodreads:23692271');
 assert.equal(packet.review_state, 'claim_inventory');
 assert.equal(packet.score_0_100, null);

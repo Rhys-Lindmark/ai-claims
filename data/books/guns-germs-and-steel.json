@@ -1,5 +1,6 @@
 {
   "schema_version": "ai-claims.book-review/0.2.0",
+  "evidence_method_version": "source-note/0.1.0",
   "entity_key": "goodreads:1842",
   "goodreads_page_id": "1842",
   "canonical_url": "https://www.goodreads.com/book/show/1842",

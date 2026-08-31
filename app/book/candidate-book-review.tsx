@@ -11,6 +11,7 @@ type EvidenceRecord = {
   scope_and_limits: string;
 };
 type CandidateBookPacket = {
+  evidence_method_version: string;
   author: string;
   title: string;
   subtitle: string;
@@ -49,7 +50,7 @@ export function CandidateBookReview({ packet }: { packet: CandidateBookPacket })
         </div>
       </section>
       <section className="mt-14 border-t border-[#20211f]/10 pt-8"><h2 className="text-xl font-black">Method</h2><ol className="mt-5 grid gap-4 text-sm leading-relaxed text-[#20211f]/60 sm:grid-cols-3"><li><strong className="block text-[#20211f]">1. Find the claims</strong>Confirm the book&apos;s passages and define the eligible denominator.</li><li><strong className="block text-[#20211f]">2. Check the evidence</strong>Log independent support, counterevidence, alternatives, and scope.</li><li><strong className="block text-[#20211f]">3. Publish carefully</strong>Show a score only after every eligible claim passes review gates.</li></ol></section>
-      <footer className="mt-14 border-t border-[#20211f]/10 pt-6 text-xs leading-relaxed text-[#20211f]/40">This is a public research receipt, not a verdict. Author-aligned sources establish what the book argues; they do not independently prove it.</footer>
+      <footer className="mt-14 border-t border-[#20211f]/10 pt-6 text-xs leading-relaxed text-[#20211f]/40">This is a public research receipt, not a verdict. Author-aligned sources establish what the book argues; they do not independently prove it. Evidence-note method: {packet.evidence_method_version}.</footer>
     </div>
   </main>;
 }
