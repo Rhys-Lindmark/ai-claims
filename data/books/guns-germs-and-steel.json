@@ -55,8 +55,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": ["ggs-evidence-03a", "ggs-evidence-03b", "ggs-evidence-03c", "ggs-evidence-03d"],
-      "source_ids": ["ggs-source-02", "ggs-source-13", "ggs-source-14", "ggs-source-15", "ggs-source-16"]
+      "evidence_record_ids": ["ggs-evidence-03a", "ggs-evidence-03b", "ggs-evidence-03c", "ggs-evidence-03d", "ggs-evidence-03e", "ggs-evidence-03f", "ggs-evidence-03g"],
+      "source_ids": ["ggs-source-02", "ggs-source-13", "ggs-source-14", "ggs-source-15", "ggs-source-16", "ggs-source-17", "ggs-source-18", "ggs-source-19"]
     },
     {
       "claim_id": "ggs-claim-07",
@@ -226,6 +226,42 @@
       "last_verified_at": "2026-08-31",
       "finding": "Bayesian modeling of directly dated millet grains places initial cultivation around 5800 BCE and finds a discontinuous westward spread across eastern Asia, including average gaps of about 1,200 years between neighboring regions.",
       "scope_and_limits": "This is strong crop-specific chronology within eastern Asia, not a direct intercontinental axis comparison. The discontinuities show that orientation did not remove cultural, demographic, or regional barriers to adoption."
+    },
+    {
+      "evidence_id": "ggs-evidence-03e",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-17",
+      "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Directly dated remains and ancient DNA identify domestic sheep at Obishir V in southern Kyrgyzstan by about 6000 BCE, roughly 3,000 years earlier than prior evidence for livestock in the mountains of interior Central Asia.",
+      "scope_and_limits": "This establishes early long-distance dispersal into a high-mountain corridor, but it does not compare east-west and north-south rates or show that similar latitude made transfer easy. The mountain setting also demonstrates that mobility and husbandry practices could cross strong terrain barriers."
+    },
+    {
+      "evidence_id": "ggs-evidence-03f",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-18",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Genomic data from 83 ancient goats indicate a dispersed domestication process involving divergent wild sources and geographically distinct Neolithic populations that contributed differently to later goats in Asia, Africa, and Europe.",
+      "scope_and_limits": "The study concerns origins and ancestry more than measured diffusion speed. It weakens a single-package model because local wild inputs, selection, and multiple regional populations shaped the livestock that later moved between regions."
+    },
+    {
+      "evidence_id": "ggs-evidence-03g",
+      "claim_id": "ggs-claim-03",
+      "source_id": "ggs-source-19",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Ancient genomes show that Anatolian domestic pigs were transported into Europe about 8,500 years ago, but their Near Eastern genomic ancestry then fell below 50 percent by the late Neolithic and to 0–4 percent in modern European domestic pigs.",
+      "scope_and_limits": "The initial westward transfer supports livestock dispersal, while three millennia of hybridization with local wild boar show that a domestic animal can spread without its original genome remaining intact. This is a Europe-specific history, not a global axis comparison."
     },
     {
       "evidence_id": "ggs-evidence-08a",
@@ -434,6 +470,36 @@
       "year": 2019,
       "url": "https://doi.org/10.1126/sciadv.aax6225",
       "source_class": "primary_archaeobotanical_chronology",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-17",
+      "title": "Evidence for early dispersal of domestic sheep into Central Asia",
+      "publisher": "Nature Human Behaviour",
+      "year": 2021,
+      "url": "https://doi.org/10.1038/s41562-021-01083-y",
+      "source_class": "primary_zooarchaeology_biomolecular_and_ancient_dna",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-18",
+      "title": "Ancient goat genomes reveal mosaic domestication in the Fertile Crescent",
+      "publisher": "Science",
+      "year": 2018,
+      "url": "https://doi.org/10.1126/science.aas9411",
+      "source_class": "primary_ancient_livestock_genomics",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-19",
+      "title": "Ancient pigs reveal a near-complete genomic turnover following their introduction to Europe",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2019,
+      "url": "https://doi.org/10.1073/pnas.1901169116",
+      "source_class": "primary_ancient_livestock_genomics",
       "independence": "independent",
       "assessment_state": "assessed"
     }
