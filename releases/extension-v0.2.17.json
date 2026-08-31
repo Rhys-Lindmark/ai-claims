@@ -1,0 +1,24 @@
+{
+  "schema_version": "ai-claims.extension-release/1.0.0",
+  "generated_at": "2026-08-31T03:45:08Z",
+  "extension_version": "0.2.17",
+  "manifest_version": 3,
+  "source_commit_sha": "2b15398f9f75bafd3167353250c1763183af4e8a",
+  "package": {
+    "filename": "ai-claims-extension-v0.2.17.zip",
+    "bytes": 45492,
+    "integrity": {
+      "algorithm": "SHA-256",
+      "digest_hex": "0682f0bf66d8abe960ee98552c951bc20cdaeda3fb9d381a9410ba0ffe629349"
+    }
+  },
+  "contracts": {
+    "resolver": "1.0.0",
+    "deployment_attestation": "1.0.0",
+    "deployment_attestation_digest": "cbeca0990cee4c2255a1374c5ac2e4c59503b81aa8290c4610478635ddec1b18"
+  },
+  "privacy": {
+    "installation_telemetry_collected": false,
+    "retained_installation_fields": []
+  }
+}

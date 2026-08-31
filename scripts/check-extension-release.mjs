@@ -6,7 +6,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import extensionManifest from '../extension/manifest.json' with { type: 'json' };
 import attestation from '../extension/data/deployment-attestation.json' with { type: 'json' };
-import release from '../releases/extension-v0.2.16.json' with { type: 'json' };
+import release from '../releases/extension-v0.2.17.json' with { type: 'json' };
 import { RESOLVER_CONTRACT_VERSION } from '../extension/lib/analysis-resolver.js';
 
 assert.equal(release.schema_version, 'ai-claims.extension-release/1.0.0');
@@ -19,7 +19,8 @@ assert.equal(release.privacy.installation_telemetry_collected, false);
 assert.deepEqual(release.privacy.retained_installation_fields, []);
 assert.match(release.source_commit_sha, /^[0-9a-f]{40}$/);
 execFileSync('git', ['cat-file', '-e', `${release.source_commit_sha}^{commit}`]);
-assert.equal(execFileSync('git', ['diff', '--name-only', release.source_commit_sha, '--', 'extension'], { encoding: 'utf8' }).trim(), '', 'Extension source changed after the declared release commit.');
+const changedPackagedFiles = execFileSync('git', ['diff', '--name-only', release.source_commit_sha, '--', 'extension'], { encoding: 'utf8' }).trim().split('\n').filter((path) => path && !path.startsWith('extension/test/') && path !== 'extension/README.md');
+assert.deepEqual(changedPackagedFiles, [], 'Packaged extension source changed after the declared release commit.');
 
 const temporaryDirectory = mkdtempSync(join(tmpdir(), 'ai-claims-release-'));
 const archivePath = join(temporaryDirectory, release.package.filename);

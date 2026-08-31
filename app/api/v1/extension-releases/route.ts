@@ -1,4 +1,4 @@
-import release from '@/releases/extension-v0.2.16.json';
+import release from '@/releases/extension-v0.2.17.json';
 import { currentExtensionReleaseEnvelope, extensionReleaseEtag } from '@/extension/lib/extension-release-api.js';
 
 const baseHeaders = { 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=60, stale-while-revalidate=300', 'content-type': 'application/json; charset=utf-8' };
