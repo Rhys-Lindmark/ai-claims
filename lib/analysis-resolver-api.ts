@@ -1,6 +1,7 @@
 import registry from '@/extension/data/analyses.json';
 import deploymentAttestation from '@/extension/data/deployment-attestation.json';
 import extensionRelease from '@/releases/extension-v0.2.17.json';
+import releaseChannelPolicy from '@/releases/channel-policy.json';
 import { releaseDownloadUrls } from '@/extension/lib/extension-release-api.js';
 import { CORRECTION_EVENT_URL_TEMPLATE, CORRECTION_FEED_DEFAULT_PAGE_SIZE, CORRECTION_FEED_MAX_PAGE_SIZE, CORRECTION_FEED_SUPPORTED_CONTRACTS, latestCorrectionForEntity, negotiateCorrectionFeedContract } from '@/lib/correction-feed-api';
 
@@ -76,6 +77,12 @@ export function resolveAnalysisEnvelope(entityKey: string, versionId?: string | 
       package_digest: extensionRelease.package.integrity.digest_hex,
       ...releaseDownloadUrls(extensionRelease.extension_version),
       installation_telemetry_collected: false,
+      channel: releaseChannelPolicy.channel,
+      channel_policy_revision: releaseChannelPolicy.policy_revision,
+      minimum_supported_version: releaseChannelPolicy.minimum_supported_version,
+      publisher_signed: releaseChannelPolicy.signing.publisher_signed,
+      automatic_install_or_update: releaseChannelPolicy.distribution.automatic_install_or_update,
+      update_check_identity_collected: releaseChannelPolicy.privacy.update_check_identity_collected,
     },
     entity_key: entityKey,
     requested_version_id: requestedVersion,
@@ -86,5 +93,5 @@ export function resolveAnalysisEnvelope(entityKey: string, versionId?: string | 
 
 export function analysisEtag(envelope: ReturnType<typeof resolveAnalysisEnvelope>) {
   const revision = envelope.requested_version_id ?? envelope.analysis?.analysis_version_id ?? 'missing';
-  return `\"claims-${stableHash(`${envelope.analysis_schema_version}:${envelope.correction_feed_discovery.contract_version ?? 'none'}:${envelope.deployment_attestation_discovery.current_digest}:${envelope.extension_release_discovery.package_digest}:${envelope.entity_key}:${revision}`)}\"`;
+  return `\"claims-${stableHash(`${envelope.analysis_schema_version}:${envelope.correction_feed_discovery.contract_version ?? 'none'}:${envelope.deployment_attestation_discovery.current_digest}:${envelope.extension_release_discovery.package_digest}:${envelope.extension_release_discovery.channel_policy_revision}:${envelope.entity_key}:${revision}`)}\"`;
 }

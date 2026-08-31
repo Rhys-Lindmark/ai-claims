@@ -41,7 +41,12 @@ for (const surface of compatibility.surfaces.filter((entry) => entry.proof_level
   const revision = envelope.requested_version_id ?? envelope.analysis?.analysis_version_id ?? 'missing';
   assert.equal(envelope.extension_release_discovery.contract_version, '1.0.0');
   assert.equal(envelope.extension_release_discovery.installation_telemetry_collected, false);
-  const expectedEtag = `"claims-${stableHash(`${envelope.analysis_schema_version}:${envelope.correction_feed_discovery.contract_version ?? 'none'}:${discovery.current_digest}:${envelope.extension_release_discovery.package_digest}:${envelope.entity_key}:${revision}`)}"`;
+  assert.equal(envelope.extension_release_discovery.channel, 'prototype');
+  assert.equal(envelope.extension_release_discovery.minimum_supported_version, '0.2.16');
+  assert.equal(envelope.extension_release_discovery.publisher_signed, false);
+  assert.equal(envelope.extension_release_discovery.automatic_install_or_update, false);
+  assert.equal(envelope.extension_release_discovery.update_check_identity_collected, false);
+  const expectedEtag = `"claims-${stableHash(`${envelope.analysis_schema_version}:${envelope.correction_feed_discovery.contract_version ?? 'none'}:${discovery.current_digest}:${envelope.extension_release_discovery.package_digest}:${envelope.extension_release_discovery.channel_policy_revision}:${envelope.entity_key}:${revision}`)}"`;
   assert.equal(strongEtag(response.headers.get('etag')), expectedEtag, `${surface.kind} ETag must include the attestation digest.`);
   observedEtags.add(expectedEtag);
   const cached = await fetch(resolverUrl, { headers: { 'if-none-match': expectedEtag, 'x-ai-claims-correction-feed-accept': '1.0.0, 1.1.0' } });
