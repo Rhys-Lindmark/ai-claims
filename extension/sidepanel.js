@@ -12,6 +12,8 @@ const pageUrl = document.querySelector('#page-url');
 const result = document.querySelector('#result');
 const permissionButton = document.querySelector('#permission');
 const localMetrics = document.querySelector('#local-metrics');
+const privacyReceipt = document.querySelector('#privacy-receipt');
+const resetMetricsButton = document.querySelector('#reset-metrics');
 let currentTab;
 let currentIdentity;
 let currentAutoCheck = false;
@@ -21,8 +23,9 @@ const originOptIns = createOriginOptInStore({ storageArea: chrome.storage.local 
 const checkedThisSession = new Set();
 
 async function refreshMetrics() {
-  const [summary, negotiation] = await Promise.all([metricsStore.summary(7), metricsStore.negotiationSummary(7)]);
+  const [summary, negotiation, receipt] = await Promise.all([metricsStore.summary(7), metricsStore.negotiationSummary(7), metricsStore.privacyReceipt()]);
   localMetrics.textContent = `7D CHECKS: ${summary.counts.page_checked} · FEED 1.1: ${negotiation.counts.supported_1_1} · LEGACY: ${negotiation.counts.legacy_1_0} · UNSUPPORTED: ${negotiation.counts.unsupported}`;
+  privacyReceipt.textContent = `LOCAL ONLY · ${receipt.retention_days}-DAY RETENTION · NEVER TRANSMITTED · LAST RESET ${receipt.last_reset_at ?? 'NEVER'}`;
 }
 
 function negotiationOutcome(state) {
@@ -131,6 +134,14 @@ result.addEventListener('click', async (event) => {
   await metricsStore.record('analysis_requested', { kind: currentIdentity.kind });
   await refreshMetrics();
   renderResult({ state: 'not_analyzed', reason: 'No shared analysis exists for this page yet.' }, currentIdentity, record);
+});
+
+resetMetricsButton.addEventListener('click', async () => {
+  resetMetricsButton.disabled = true;
+  await metricsStore.resetNegotiations();
+  await refreshMetrics();
+  resetMetricsButton.textContent = 'Compatibility metrics reset';
+  resetMetricsButton.disabled = false;
 });
 
 chrome.tabs.onActivated.addListener(refresh);

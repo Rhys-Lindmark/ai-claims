@@ -80,7 +80,7 @@ export function AnalysisLookup() {
             <p className="font-mono text-[9px] font-bold uppercase text-coral">Registry state</p>
             <h2 className="mt-4 text-4xl font-black leading-none">{versionMissing ? 'VERSION NOT FOUND' : paused ? 'SCORE PAUSED' : entityKey ? 'NOT ANALYZED YET' : 'OPENED WITHOUT A PAGE'}</h2>
             <p className="mt-4 text-sm leading-relaxed text-ink/60">{versionMissing ? 'This entity exists, but that version identifier is not in its preserved history.' : paused ? `Version ${analysis.analysis_version_id} is preserved, but its score is suppressed while ${analysis.paused_reason?.replaceAll('_', ' ')} is resolved.` : 'No reviewed public score is available for this entity. AI Claims will not substitute a guess or partial percentage.'}</p>
-            <a className="mt-6 inline-flex border-2 border-ink bg-acid px-4 py-3 font-mono text-[9px] font-bold uppercase shadow-[3px_3px_0_#1c1c1a]" href="https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.9">Get the extension</a>
+            <a className="mt-6 inline-flex border-2 border-ink bg-acid px-4 py-3 font-mono text-[9px] font-bold uppercase shadow-[3px_3px_0_#1c1c1a]" href="https://github.com/Rhys-Lindmark/ai-claims/releases/tag/extension-v0.2.10">Get the extension</a>
           </article>
         )}
       </section>

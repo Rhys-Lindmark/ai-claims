@@ -175,6 +175,7 @@ function memoryStorage() {
   return {
     get: async (key) => ({ [key]: values[key] }),
     set: async (updates) => Object.assign(values, updates),
+    remove: async (key) => { delete values[key]; },
   };
 }
 
@@ -332,4 +333,29 @@ test('negotiation telemetry stores daily outcome aggregates without page identit
   assert.equal(serialized.includes('12:34:56'), false);
   assert.deepEqual((await store.negotiationSummary(7)).counts, { supported_1_1: 2, legacy_1_0: 1, unsupported: 0, not_advertised: 0 });
   await assert.rejects(store.recordNegotiation('page-specific'), /Unknown negotiation outcome/);
+});
+
+test('privacy receipt is machine-readable and negotiation reset preserves unrelated metrics', async () => {
+  const storage = memoryStorage();
+  const store = createMetricsStore({ storageArea: storage, now: () => '2026-08-30T12:34:56.000Z' });
+  await store.record('page_checked', { kind: 'web' });
+  await store.recordNegotiation('supported_1_1');
+  const initialReceipt = await store.privacyReceipt();
+  assert.deepEqual(initialReceipt, {
+    schema_version: '1.0.0',
+    storage_scope: 'chrome.storage.local',
+    transmitted: false,
+    retention_days: 30,
+    retained_fields: ['date', 'outcome_count'],
+    prohibited_fields: ['url', 'entity_key', 'title', 'page_kind', 'per_check_timestamp'],
+    last_reset_at: null,
+  });
+  const resetReceipt = await store.resetNegotiations();
+  assert.equal(resetReceipt.last_reset_at, '2026-08-30T12:34:56.000Z');
+  assert.deepEqual((await store.negotiationSummary(7)).counts, { supported_1_1: 0, legacy_1_0: 0, unsupported: 0, not_advertised: 0 });
+  assert.equal((await store.summary(7)).counts.page_checked, 1);
+  const serialized = JSON.stringify(await store.privacyReceipt());
+  assert.equal(serialized.includes('https://'), false);
+  assert.equal(serialized.includes('entity_key'), true);
+  assert.equal((await store.privacyReceipt()).transmitted, false);
 });

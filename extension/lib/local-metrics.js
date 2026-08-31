@@ -1,9 +1,18 @@
 export const METRIC_EVENT_TYPES = ['page_checked', 'score_published', 'score_pending', 'analysis_requested'];
 const STORAGE_KEY = 'privacy-metrics:v1';
 const NEGOTIATION_STORAGE_KEY = 'privacy-negotiation-metrics:v1';
+const PRIVACY_RECEIPT_STORAGE_KEY = 'privacy-negotiation-receipt:v1';
 export const NEGOTIATION_OUTCOMES = ['supported_1_1', 'legacy_1_0', 'unsupported', 'not_advertised'];
 const MAX_EVENTS = 500;
 const RETENTION_MS = 30 * 24 * 60 * 60 * 1000;
+const PRIVACY_RECEIPT = Object.freeze({
+  schema_version: '1.0.0',
+  storage_scope: 'chrome.storage.local',
+  transmitted: false,
+  retention_days: 30,
+  retained_fields: ['date', 'outcome_count'],
+  prohibited_fields: ['url', 'entity_key', 'title', 'page_kind', 'per_check_timestamp'],
+});
 
 export function createMetricsStore({ storageArea, now = () => new Date().toISOString() }) {
   return {
@@ -52,6 +61,19 @@ export function createMetricsStore({ storageArea, now = () => new Date().toISOSt
       const recent = buckets.filter((bucket) => Date.parse(`${bucket.date}T00:00:00.000Z`) >= cutoff);
       const counts = Object.fromEntries(NEGOTIATION_OUTCOMES.map((outcome) => [outcome, recent.reduce((sum, bucket) => sum + (bucket.counts[outcome] ?? 0), 0)]));
       return { days, counts };
+    },
+
+    async privacyReceipt() {
+      const stored = await storageArea.get(PRIVACY_RECEIPT_STORAGE_KEY);
+      const state = stored[PRIVACY_RECEIPT_STORAGE_KEY];
+      return { ...PRIVACY_RECEIPT, last_reset_at: typeof state?.last_reset_at === 'string' ? state.last_reset_at : null };
+    },
+
+    async resetNegotiations() {
+      const lastResetAt = now();
+      await storageArea.remove(NEGOTIATION_STORAGE_KEY);
+      await storageArea.set({ [PRIVACY_RECEIPT_STORAGE_KEY]: { last_reset_at: lastResetAt } });
+      return { ...PRIVACY_RECEIPT, last_reset_at: lastResetAt };
     },
   };
 }
