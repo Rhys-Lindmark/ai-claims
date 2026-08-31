@@ -60,11 +60,21 @@ test('resolver probe publishes only complete reviewed YouTube analyses', async (
   assert.equal(Object.hasOwn(pending, 'score'), false);
 });
 
-test('resolver probe distinguishes unknown videos and invalid inputs', async () => {
+test('resolver probe gives source-specific next actions for missing entities', async () => {
   const missing = await probeResolverUrl('https://youtu.be/unreviewed-demo-001', { fetchImpl: async () => ({ ok: false, status: 404 }) });
   assert.equal(missing.state, 'not_analyzed');
+  assert.match(missing.nextAction.url, /\/claims\/intake\?url=/);
+  const book = await probeResolverUrl('https://www.goodreads.com/book/show/12345.Some_Book', { fetchImpl: async () => ({ ok: false, status: 404 }) });
+  assert.equal(book.identity.entityKey, 'goodreads:12345');
+  assert.match(book.nextAction.url, /\/claims\/book-intake\?url=/);
+  const page = await probeResolverUrl('https://example.com/article?utm_source=test', { fetchImpl: async () => ({ ok: false, status: 404 }) });
+  assert.equal(page.identity.entityKey, 'web:example.com/article');
+  assert.match(page.nextAction.url, /\/claims\/analysis\?entity_key=/);
+});
+
+test('resolver probe rejects unsupported page protocols without a request', async () => {
   let called = false;
-  const invalid = await probeResolverUrl('https://example.com/not-youtube', { fetchImpl: async () => { called = true; } });
+  const invalid = await probeResolverUrl('chrome://extensions', { fetchImpl: async () => { called = true; } });
   assert.equal(invalid.state, 'invalid');
   assert.equal(called, false);
 });
