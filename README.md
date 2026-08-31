@@ -29,6 +29,7 @@ Open the [synthetic generic-web pipeline](https://ai.rhyslindmark.com/claims/web
 ```bash
 npm run test:extension
 npm run package:extension -- ai-claims-extension.zip
+npm run test:deployed-analysis-requests
 npm run build
 ```
 

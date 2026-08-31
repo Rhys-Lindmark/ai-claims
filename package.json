@@ -20,6 +20,7 @@
     "test:deployed-attestation": "node scripts/check-deployed-attestation-api.mjs",
     "test:deployed-resolver-discovery": "node scripts/check-deployed-resolver-discovery.mjs",
     "test:deployed-extension-release": "node scripts/check-deployed-extension-release.mjs",
+    "test:deployed-analysis-requests": "node scripts/check-deployed-analysis-requests.mjs",
     "package:extension": "sh scripts/package-extension.sh .",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
