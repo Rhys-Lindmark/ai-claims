@@ -30,6 +30,8 @@ import attestation from '../data/deployment-attestation.json' with { type: 'json
 import { validateDeploymentAttestation } from '../lib/deployment-attestation.js';
 import { currentDeploymentAttestationEnvelope, deploymentAttestationEtag, immutableDeploymentAttestationEnvelope } from '../lib/deployment-attestation-api.js';
 import { deploymentProofForState } from '../lib/deployment-proof.js';
+import { currentExtensionReleaseEnvelope, extensionReleaseEtag, immutableExtensionReleaseEnvelope } from '../lib/extension-release-api.js';
+import release from '../../releases/extension-v0.2.16.json' with { type: 'json' };
 import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -87,6 +89,18 @@ test('deployment attestation API exposes a revalidating pointer and immutable di
   assert.equal(deploymentAttestationEtag(attestation), `"sha256-${digest}"`);
   assert.equal(immutableDeploymentAttestationEnvelope(attestation, digest).attestation.integrity.digest_hex, digest);
   assert.equal(immutableDeploymentAttestationEnvelope(attestation, '0'.repeat(64)).attestation, null);
+});
+
+test('extension release API exposes a revalidating pointer and immutable version record', () => {
+  const immutableUrl = `https://ai.rhyslindmark.com/claims/api/v1/extension-releases/${release.extension_version}`;
+  const current = currentExtensionReleaseEnvelope(release, immutableUrl);
+  assert.equal(extensionReleaseEtag(release), `"sha256-${release.package.integrity.digest_hex}"`);
+  assert.equal(current.current_version, release.extension_version);
+  assert.equal(current.immutable_url, immutableUrl);
+  assert.match(current.package_url, /ai-claims-extension-v0\.2\.16\.zip$/);
+  assert.equal(current.release.privacy.installation_telemetry_collected, false);
+  assert.equal(immutableExtensionReleaseEnvelope(release, release.extension_version).release.extension_version, release.extension_version);
+  assert.equal(immutableExtensionReleaseEnvelope(release, '9.9.9').release, null);
 });
 
 test('synthetic YouTube page resolves through the reviewed gate to its episode route', () => {
