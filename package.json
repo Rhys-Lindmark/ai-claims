@@ -9,6 +9,7 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "test:extension": "node --test extension/test/*.test.js",
+    "test:extension-release": "node scripts/check-extension-release.mjs",
     "test:methods": "node --experimental-strip-types scripts/check-claim-selection-audit.mjs",
     "test:deployed-youtube": "node scripts/check-deployed-youtube-fixture.mjs",
     "test:deployed-goodreads": "node scripts/check-deployed-goodreads-fixture.mjs",
