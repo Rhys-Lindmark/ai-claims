@@ -12,7 +12,7 @@
   "publication_gates_passed": false,
   "last_reviewed_at": null,
   "coverage": {
-    "candidate_claims": 6,
+    "candidate_claims": 8,
     "eligible_claims": 0,
     "reviewed_claims": 0
   },
@@ -47,16 +47,42 @@
     },
     {
       "claim_id": "ggs-claim-03",
-      "text": "Eurasia's east–west extent made diffusion easier than movement across strong north–south climate gradients.",
+      "text": "Similar latitude and ecology made crops and livestock more transferable east–west than across strong north–south gradients.",
       "claim_type": "causal",
       "importance": "central",
       "attribution_confidence": "high",
-      "canonical_group_id": "ggs-group-continental-axis",
+      "canonical_group_id": "ggs-group-axis-biological-diffusion",
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": ["ggs-evidence-03a", "ggs-evidence-03b", "ggs-evidence-03c"],
-      "source_ids": ["ggs-source-02", "ggs-source-11", "ggs-source-12", "ggs-source-13"]
+      "evidence_record_ids": ["ggs-evidence-03a"],
+      "source_ids": ["ggs-source-02", "ggs-source-13"]
+    },
+    {
+      "claim_id": "ggs-claim-07",
+      "text": "Eurasia's east–west extent reduced environmental barriers to large-scale human migration relative to north–south movement.",
+      "claim_type": "causal",
+      "importance": "supporting",
+      "attribution_confidence": "medium",
+      "canonical_group_id": "ggs-group-axis-migration",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
+      "review_state": "unreviewed",
+      "evidence_record_ids": ["ggs-evidence-07a"],
+      "source_ids": ["ggs-source-02", "ggs-source-12"]
+    },
+    {
+      "claim_id": "ggs-claim-08",
+      "text": "Non-biological technologies transferred more rapidly east–west than north–south across historical societies.",
+      "claim_type": "causal",
+      "importance": "supporting",
+      "attribution_confidence": "high",
+      "canonical_group_id": "ggs-group-axis-technology",
+      "eligibility_state": "needs_passage_confirmation",
+      "passage_locator": null,
+      "review_state": "unreviewed",
+      "evidence_record_ids": ["ggs-evidence-08a"],
+      "source_ids": ["ggs-source-02", "ggs-source-11"]
     },
     {
       "claim_id": "ggs-claim-04",
@@ -105,9 +131,19 @@
       "relation": "supports"
     },
     {
-      "from_group_id": "ggs-group-continental-axis",
+      "from_group_id": "ggs-group-axis-biological-diffusion",
       "to_group_id": "ggs-group-food-production",
       "relation": "supports_diffusion"
+    },
+    {
+      "from_group_id": "ggs-group-axis-migration",
+      "to_group_id": "ggs-group-food-production",
+      "relation": "proposed_demic_diffusion_path"
+    },
+    {
+      "from_group_id": "ggs-group-axis-technology",
+      "to_group_id": "ggs-group-proximate-conquest",
+      "relation": "proposed_technology_path"
     },
     {
       "from_group_id": "ggs-group-food-production",
@@ -134,18 +170,18 @@
     {
       "evidence_id": "ggs-evidence-03a",
       "claim_id": "ggs-claim-03",
-      "source_id": "ggs-source-11",
-      "direction": "supports",
+      "source_id": "ggs-source-13",
+      "direction": "complicates",
       "review_state": "machine_draft_unreviewed",
       "evidence_basis": "sourced",
       "confidence": "medium",
       "last_verified_at": "2026-08-31",
-      "finding": "A spatial-econometric analysis of technology adoption around 1000 BCE, 1 CE, and 1500 CE found east-west correlations were generally larger, more often positive, and more often statistically significant than north-south correlations.",
-      "scope_and_limits": "The unit is the modern country and the outcomes combine several technology sectors. East-west and north-south differences were not significant in every model, so this is patterned support rather than a universal diffusion law."
+      "finding": "A global test found ecological similarity is associated with cultural similarity, but Eurasian corridors from agricultural origin areas were not significantly more environmentally homogeneous than comparable corridors on other continents.",
+      "scope_and_limits": "The study tests key ecological and geographic premises rather than direct crop or livestock transfer rates. It supports environmental barriers in general while rejecting a simple claim that Eurasia was uniquely favored by orientation alone."
     },
     {
-      "evidence_id": "ggs-evidence-03b",
-      "claim_id": "ggs-claim-03",
+      "evidence_id": "ggs-evidence-07a",
+      "claim_id": "ggs-claim-07",
       "source_id": "ggs-source-12",
       "direction": "supports",
       "review_state": "machine_draft_unreviewed",
@@ -156,16 +192,16 @@
       "scope_and_limits": "This is a migration proxy, not direct evidence of crop or technology transmission. Its relevance depends on technology having moved with people, present populations retaining older spatial signals, and the sampled continental comparison being adequate."
     },
     {
-      "evidence_id": "ggs-evidence-03c",
-      "claim_id": "ggs-claim-03",
-      "source_id": "ggs-source-13",
-      "direction": "complicates",
+      "evidence_id": "ggs-evidence-08a",
+      "claim_id": "ggs-claim-08",
+      "source_id": "ggs-source-11",
+      "direction": "supports",
       "review_state": "machine_draft_unreviewed",
       "evidence_basis": "sourced",
       "confidence": "medium",
       "last_verified_at": "2026-08-31",
-      "finding": "A global test found ecological similarity is associated with cultural similarity, but Eurasian corridors from agricultural origin areas were not significantly more environmentally homogeneous than comparable corridors on other continents.",
-      "scope_and_limits": "The study tests key ecological and geographic premises rather than every historical diffusion event. It supports environmental barriers in general while rejecting a simple claim that Eurasia was uniquely favored by orientation alone."
+      "finding": "A spatial-econometric analysis of technology adoption around 1000 BCE, 1 CE, and 1500 CE found east-west correlations were generally larger, more often positive, and more often statistically significant than north-south correlations.",
+      "scope_and_limits": "The unit is the modern country and the outcomes combine several technology sectors. East-west and north-south differences were not significant in every model, so this is patterned support rather than a universal diffusion law."
     },
     {
       "evidence_id": "ggs-evidence-05a",
