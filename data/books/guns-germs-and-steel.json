@@ -28,6 +28,7 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
+      "evidence_record_ids": [],
       "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05"]
     },
     {
@@ -40,6 +41,7 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
+      "evidence_record_ids": [],
       "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05"]
     },
     {
@@ -52,6 +54,7 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
+      "evidence_record_ids": [],
       "source_ids": ["ggs-source-02"]
     },
     {
@@ -64,6 +67,7 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
+      "evidence_record_ids": [],
       "source_ids": ["ggs-source-01", "ggs-source-03"]
     },
     {
@@ -76,7 +80,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "source_ids": ["ggs-source-01", "ggs-source-04"]
+      "evidence_record_ids": ["ggs-evidence-05a", "ggs-evidence-05b", "ggs-evidence-05c"],
+      "source_ids": ["ggs-source-01", "ggs-source-04", "ggs-source-08", "ggs-source-09", "ggs-source-10"]
     },
     {
       "claim_id": "ggs-claim-06",
@@ -88,6 +93,7 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
+      "evidence_record_ids": [],
       "source_ids": ["ggs-source-01", "ggs-source-06", "ggs-source-07"]
     }
   ],
@@ -121,6 +127,32 @@
       "from_group_id": "ggs-group-infectious-disease",
       "to_group_id": "ggs-group-proximate-conquest",
       "relation": "proposed_causal_path"
+    }
+  ],
+  "evidence_records": [
+    {
+      "evidence_id": "ggs-evidence-05a",
+      "claim_id": "ggs-claim-05",
+      "source_id": "ggs-source-08",
+      "direction": "supports",
+      "finding": "A screen of 1,313 ancient Eurasian humans detected zoonotic pathogens only from about 6,500 years ago, with a peak around 5,000 years ago that coincided with widespread livestock domestication.",
+      "scope_and_limits": "Direct ancient-DNA evidence for Eurasia, but preservation, tissue choice, bloodstream abundance, and taxonomic classification affect what the screen can detect. Temporal coincidence alone does not identify one universal causal pathway."
+    },
+    {
+      "evidence_id": "ggs-evidence-05b",
+      "claim_id": "ggs-claim-05",
+      "source_id": "ggs-source-09",
+      "direction": "supports",
+      "finding": "Eight ancient Salmonella genomes from people spanning transitional foraging, pastoralist, and agropastoralist contexts trace a branch containing human-adapted Paratyphi C and show host adaptation over roughly 5,000 years.",
+      "scope_and_limits": "One bacterial lineage supports a Neolithization-linked pathway; it cannot establish the origin story of all major infectious diseases."
+    },
+    {
+      "evidence_id": "ggs-evidence-05c",
+      "claim_id": "ggs-claim-05",
+      "source_id": "ggs-source-10",
+      "direction": "complicates",
+      "finding": "Late Neolithic plague genomes from two humans represented distinct infection events, and the study found no evidence that these cases produced a major outbreak; a contemporaneous dog offers a possible animal-contact bridge.",
+      "scope_and_limits": "The result supports zoonotic exposure while cautioning against treating animal contact as sufficient for epidemic persistence or later pandemic-scale disease."
     }
   ],
   "sources": [
@@ -193,6 +225,36 @@
       "source_class": "scholarly_review_and_response",
       "independence": "mixed",
       "assessment_state": "candidate_unread"
+    },
+    {
+      "source_id": "ggs-source-08",
+      "title": "The spatiotemporal distribution of human pathogens in ancient Eurasia",
+      "publisher": "Nature",
+      "year": 2025,
+      "url": "https://doi.org/10.1038/s41586-025-09192-8",
+      "source_class": "primary_archaeogenomics",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-09",
+      "title": "Emergence of human-adapted Salmonella enterica is linked to the Neolithization process",
+      "publisher": "Nature Ecology & Evolution",
+      "year": 2020,
+      "url": "https://doi.org/10.1038/s41559-020-1106-9",
+      "source_class": "primary_archaeogenomics",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-10",
+      "title": "Neolithic Yersinia pestis infections in humans and a dog",
+      "publisher": "Communications Biology",
+      "year": 2024,
+      "url": "https://doi.org/10.1038/s42003-024-06676-7",
+      "source_class": "primary_archaeogenomics",
+      "independence": "independent",
+      "assessment_state": "assessed"
     }
   ]
 }

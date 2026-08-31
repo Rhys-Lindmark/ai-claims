@@ -18,6 +18,7 @@ assert.ok(packet.claims.every((claim) => claim.eligibility_state === 'needs_pass
 assert.ok(packet.claims.every((claim) => claim.passage_locator === null));
 assert.ok(packet.claims.every((claim) => typeof claim.canonical_group_id === 'string' && claim.canonical_group_id.length > 10));
 assert.equal(new Set(packet.claims.map((claim) => claim.canonical_group_id)).size, packet.claims.length);
+assert.ok(packet.claims.every((claim) => Array.isArray(claim.evidence_record_ids)));
 assert.ok(packet.claims.every((claim) => !('verdict' in claim) && !('truth_credit' in claim)));
 
 const eligibleClaims = packet.claims.filter((claim) => claim.eligibility_state === 'eligible');
@@ -30,13 +31,22 @@ assert.ok(packet.dependencies.length > 0);
 assert.ok(packet.dependencies.every((edge) => groupIds.has(edge.from_group_id) && groupIds.has(edge.to_group_id)));
 assert.ok(packet.dependencies.every((edge) => edge.from_group_id !== edge.to_group_id));
 
+const evidenceIds = new Set(packet.evidence_records.map((record) => record.evidence_id));
+assert.equal(evidenceIds.size, packet.evidence_records.length);
+assert.equal(packet.evidence_records.length, 3);
+assert.ok(packet.claims.every((claim) => claim.evidence_record_ids.every((evidenceId) => evidenceIds.has(evidenceId))));
+assert.ok(packet.evidence_records.every((record) => ['supports', 'complicates', 'contradicts'].includes(record.direction)));
+assert.ok(packet.evidence_records.every((record) => record.finding.length > 50 && record.scope_and_limits.length > 50));
+
 const sourceIds = new Set(packet.sources.map((source) => source.source_id));
 assert.equal(sourceIds.size, packet.sources.length);
 assert.ok(packet.sources.every((source) => source.url.startsWith('https://')));
 assert.ok(packet.claims.every((claim) => claim.source_ids.length > 0 && claim.source_ids.every((sourceId) => sourceIds.has(sourceId))));
+assert.ok(packet.evidence_records.every((record) => sourceIds.has(record.source_id)));
+assert.ok(packet.evidence_records.every((record) => packet.claims.some((claim) => claim.claim_id === record.claim_id)));
 assert.ok(packet.sources.some((source) => source.independence === 'independent'));
 assert.ok(packet.sources.filter((source) => source.independence === 'independent').every((source) => source.assessment_state !== 'attribution_only'));
 
 const serialized = JSON.stringify(packet);
 assert.ok(!serialized.match(/"score_0_100":\s*\d/));
-console.log('real book packet: 6 passage-unconfirmed candidates, 0 eligible claims, aggregate score locked');
+console.log('real book packet: 6 passage-unconfirmed candidates, 3 scoped evidence records, aggregate score locked');

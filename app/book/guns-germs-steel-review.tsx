@@ -46,6 +46,15 @@ export function GunsGermsSteelReview() {
                 })}
               </ul>
             </details>
+            {claim.evidence_record_ids.length > 0 ? <details className="mt-3 text-sm">
+              <summary className="cursor-pointer font-semibold text-[#20211f]/55">Evidence notes</summary>
+              <div className="mt-3 space-y-4">
+                {claim.evidence_record_ids.map((evidenceId) => {
+                  const evidence = packet.evidence_records.find((item) => item.evidence_id === evidenceId)!;
+                  return <div className="border-l border-[#20211f]/20 pl-4" key={evidenceId}><p className="text-xs font-semibold capitalize text-[#20211f]/40">{evidence.direction}</p><p className="mt-1 leading-relaxed text-[#20211f]/70">{evidence.finding}</p><p className="mt-2 text-xs leading-relaxed text-[#20211f]/45">{evidence.scope_and_limits}</p></div>;
+                })}
+              </div>
+            </details> : null}
           </article>)}
         </div>
       </section>
