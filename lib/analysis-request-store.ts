@@ -80,3 +80,34 @@ export async function submitAnalysisRequest(db: D1Database, input: AnalysisReque
   await db.prepare('INSERT OR IGNORE INTO analysis_request_events (event_id, contract_version, request_id, sequence, from_state, to_state, attempt, public_summary, occurred_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)').bind(`${record.request_id}_1`, ANALYSIS_REQUEST_CONTRACT_VERSION, record.request_id, 1, null, 'queued', record.attempt, 'Canonical page added to the public analysis queue.', record.created_at).run();
   return { created: Number(result.meta.changes ?? 0) === 1, record, lifecycle_events: await getAnalysisRequestLifecycle(db, record.request_id) };
 }
+
+const allowedTransitions: Record<AnalysisRequestState, AnalysisRequestState[]> = {
+  queued: ['in_review', 'failed'],
+  in_review: ['published', 'failed'],
+  published: [],
+  failed: ['queued'],
+};
+
+const transitionSummaries: Record<AnalysisRequestState, string> = {
+  queued: 'A failed attempt was explicitly retried and returned to the queue.',
+  in_review: 'Evidence review started; no score will publish until review and provenance gates pass.',
+  published: 'A reviewed analysis passed publication gates and is now available.',
+  failed: 'This attempt stopped without publishing a score.',
+};
+
+export async function transitionAnalysisRequest(db: D1Database, requestId: string, nextState: AnalysisRequestState, now = () => new Date().toISOString()) {
+  const current = await getAnalysisRequestById(db, requestId);
+  if (!current) return { ok: false as const, error: 'not_found' as const };
+  if (!allowedTransitions[current.state].includes(nextState)) return { ok: false as const, error: 'invalid_transition' as const, record: current };
+  const lifecycle = await getAnalysisRequestLifecycle(db, requestId);
+  const sequence = (lifecycle.at(-1)?.sequence ?? 0) + 1;
+  const attempt = current.state === 'failed' && nextState === 'queued' ? current.attempt + 1 : current.attempt;
+  const timestamp = now();
+  const update = db.prepare('UPDATE analysis_requests SET state = ?, attempt = ?, updated_at = ? WHERE request_id = ? AND state = ? AND attempt = ?').bind(nextState, attempt, timestamp, requestId, current.state, current.attempt);
+  const event = db.prepare('INSERT INTO analysis_request_events (event_id, contract_version, request_id, sequence, from_state, to_state, attempt, public_summary, occurred_at) SELECT ?, ?, ?, ?, ?, ?, ?, ?, ? WHERE EXISTS (SELECT 1 FROM analysis_requests WHERE request_id = ? AND state = ? AND attempt = ? AND updated_at = ?)').bind(`${requestId}_${sequence}`, ANALYSIS_REQUEST_CONTRACT_VERSION, requestId, sequence, current.state, nextState, attempt, transitionSummaries[nextState], timestamp, requestId, nextState, attempt, timestamp);
+  const [updated, inserted] = await db.batch([update, event]);
+  if (Number(updated.meta.changes ?? 0) !== 1 || Number(inserted.meta.changes ?? 0) !== 1) return { ok: false as const, error: 'transition_conflict' as const };
+  const status = await getAnalysisRequestStatus(db, requestId);
+  if (!status) throw new Error('The analysis request disappeared after transition.');
+  return { ok: true as const, record: status.record, lifecycle_events: status.lifecycle_events };
+}

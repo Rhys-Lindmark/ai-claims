@@ -10,3 +10,5 @@ The persisted record contains only canonical identity, coarse page kind, lifecyc
 
 Lifecycle states remain `queued`, `in_review`, `published`, and `failed`. Publishing an analysis still requires the separate review and provenance gates; request creation cannot produce or reveal a score.
 Every accepted canonical page gets one reusable request record plus an append-only, versioned `lifecycle_events` array. The public status receipt is available at `/claims/request?request_id=req_…`; it exposes workflow state and canonical page identity, but no visitor identity, account data, page text, or reviewer controls.
+
+The server transition primitive is deliberately not exposed as a public mutation endpoint. Its guarded graph is `queued → in_review | failed`, `in_review → published | failed`, and `failed → queued` for an explicit retry. A retry increments `attempt`; every accepted edge appends the next sequence-numbered event with server-owned public copy. `published` is terminal here because corrections belong to the separately versioned analysis/correction contracts.
