@@ -6,6 +6,7 @@ import { createMetricsStore } from './lib/local-metrics.js';
 import { createOriginOptInStore } from './lib/origin-opt-in.js';
 import { correctionLinkForState, correctionPreviewForState, escapeHtml } from './lib/correction-links.js';
 import { privacyReceiptArtifact, verifyPrivacyReceiptDocument } from './lib/privacy-receipt.js';
+import { deploymentProofForState } from './lib/deployment-proof.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
@@ -51,6 +52,8 @@ async function loadResolver() {
 function renderResult(state, identity, requestRecord = null) {
   const correctionLink = correctionLinkForState(state);
   const correctionPreview = correctionPreviewForState(state);
+  const deploymentProof = deploymentProofForState(state);
+  const deploymentProofMarkup = deploymentProof ? `<p class="meta proof"><strong>Production fixture check</strong><br>Verified ${escapeHtml(deploymentProof.verifiedAt)}<br>${escapeHtml(deploymentProof.digestLabel)} · ${escapeHtml(deploymentProof.privacyLabel)}</p><a class="request proof-link" href="${escapeHtml(deploymentProof.url)}" target="_blank" rel="noreferrer">Open immutable deployment proof ↗</a>` : '';
   const compatibilityNotice = state.correctionFeedCompatibility === 'unsupported' ? `Correction details use unsupported feed contract ${escapeHtml(state.correctionFeedContractVersion ?? 'unknown')}; update the extension to restore those links.` : '';
   if (state.state === 'published') {
     result.className = 'result';
@@ -61,7 +64,8 @@ function renderResult(state, identity, requestRecord = null) {
       ${correctionPreview ? `<p class="meta"><strong>${escapeHtml(correctionPreview.lineage)}</strong><br>${escapeHtml(correctionPreview.summary)}</p>` : ''}
       ${compatibilityNotice ? `<p class="meta">${compatibilityNotice}</p>` : ''}
       <a class="request" href="${state.analysisUrl}" target="_blank" rel="noreferrer">Open evidence trail ↗</a>
-      ${correctionLink ? `<a class="request" href="${escapeHtml(correctionLink.url)}" target="_blank" rel="noreferrer">${escapeHtml(correctionLink.label)} ↗</a>` : ''}`;
+      ${correctionLink ? `<a class="request" href="${escapeHtml(correctionLink.url)}" target="_blank" rel="noreferrer">${escapeHtml(correctionLink.label)} ↗</a>` : ''}
+      ${deploymentProofMarkup}`;
     return;
   }
 
@@ -73,7 +77,8 @@ function renderResult(state, identity, requestRecord = null) {
     <p>${explanation}</p>
     ${correctionPreview ? `<p class="meta"><strong>${escapeHtml(correctionPreview.lineage)}</strong><br>${escapeHtml(correctionPreview.summary)}</p>` : ''}
     ${compatibilityNotice ? `<p class="meta">${compatibilityNotice}</p>` : ''}
-    ${state.state === 'paused' && state.analysisUrl ? `<a class="request" href="${state.analysisUrl}" target="_blank" rel="noreferrer">Open pause context ↗</a>${correctionLink ? `<a class="request" href="${escapeHtml(correctionLink.url)}" target="_blank" rel="noreferrer">${escapeHtml(correctionLink.label)} ↗</a>` : ''}` : requestRecord ? identity.kind === 'youtube' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Supply permitted transcript ↗</a>` : identity.kind === 'goodreads' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/book-intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Confirm book edition ↗</a>` : '' : '<button class="request" id="request-analysis">Request analysis</button>'}`;
+    ${state.state === 'paused' && state.analysisUrl ? `<a class="request" href="${state.analysisUrl}" target="_blank" rel="noreferrer">Open pause context ↗</a>${correctionLink ? `<a class="request" href="${escapeHtml(correctionLink.url)}" target="_blank" rel="noreferrer">${escapeHtml(correctionLink.label)} ↗</a>` : ''}` : requestRecord ? identity.kind === 'youtube' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Supply permitted transcript ↗</a>` : identity.kind === 'goodreads' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/book-intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Confirm book edition ↗</a>` : '' : '<button class="request" id="request-analysis">Request analysis</button>'}
+    ${deploymentProofMarkup}`;
 }
 
 async function refresh() {

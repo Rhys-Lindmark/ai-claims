@@ -1,6 +1,6 @@
 # AI Claims Chrome extension prototype
 
-This Manifest V3 prototype opens AI Claims beside the current page. It recognizes YouTube videos, Goodreads books, and canonical web URLs, checks that canonical identity against the public read-only analysis resolver, and links published entries to their full evidence trail.
+This Manifest V3 prototype opens AI Claims beside the current page. It recognizes YouTube videos, Goodreads books, and canonical web URLs, checks that canonical identity against the public read-only analysis resolver, and links published entries to their full evidence trail. When the resolver advertises a supported privacy-safe deployment attestation, the panel also links the exact immutable production proof and shows when it was verified.
 
 Resolver records carry an immutable current version, superseded-version lineage, and `active`, `paused`, or `draft` publication state. A paused version may retain its prior numeric result in the audit record, but the extension suppresses that number until a new active version is published.
 

@@ -29,6 +29,7 @@ import compatibility from '../data/compatibility.json' with { type: 'json' };
 import attestation from '../data/deployment-attestation.json' with { type: 'json' };
 import { validateDeploymentAttestation } from '../lib/deployment-attestation.js';
 import { currentDeploymentAttestationEnvelope, deploymentAttestationEtag, immutableDeploymentAttestationEnvelope } from '../lib/deployment-attestation-api.js';
+import { deploymentProofForState } from '../lib/deployment-proof.js';
 import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
@@ -300,7 +301,13 @@ test('resolver advertises a supported privacy-safe deployment attestation', asyn
   assert.equal(state.deploymentAttestationCompatibility, 'supported');
   assert.equal(state.deploymentAttestationContractVersion, '1.0.0');
   assert.equal(state.deploymentAttestationUrl, discovery.current_url);
+  assert.equal(state.deploymentAttestationImmutableUrl, discovery.immutable_url);
   assert.equal(state.deploymentAttestationDigest, discovery.current_digest);
+  assert.equal(state.deploymentAttestationVerifiedAt, discovery.verified_at);
+  assert.equal(state.deploymentAttestationVisitorDataCollected, false);
+  assert.deepEqual(deploymentProofForState(state), { url: discovery.immutable_url, verifiedAt: discovery.verified_at, digestLabel: `SHA-256 ${discovery.current_digest.slice(0, 12)}…`, privacyLabel: 'No visitor data collected' });
+  assert.equal(deploymentProofForState({ ...state, deploymentAttestationCompatibility: 'unsupported' }), null);
+  assert.equal(deploymentProofForState({ ...state, deploymentAttestationVisitorDataCollected: true }), null);
   assert.deepEqual(deploymentAttestationCompatibility({ contract_version: '9.0.0' }), { state: 'unsupported', contractVersion: '9.0.0' });
 });
 
