@@ -1367,6 +1367,270 @@
         }
       ],
       "other_claims": ["Carbon monoxide, radium, lead, and thallium cases exposed gaps between industrial innovation and public health.", "Forensic evidence gained authority through institutions and courtroom practice, not laboratory technique alone."]
+    },
+    {
+      "slug": "the-making-of-the-atomic-bomb",
+      "entity_key": "web:richardrhodes.com/the-making-of-the-atomic-bomb",
+      "title": "The Making of the Atomic Bomb",
+      "subtitle": "The definitive history of nuclear fission and the Manhattan Project",
+      "author": "Richard Rhodes",
+      "year": 1986,
+      "score": 92,
+      "confidence": "high",
+      "summary": "Rhodes's scientific and institutional history closely matches the official record. Its sweeping narrative necessarily compresses a huge multinational research and industrial system, but the central account is unusually strong.",
+      "claims": [
+        {
+          "claim": "The discovery of nuclear fission and the possibility of a self-sustaining chain reaction made an atomic bomb physically plausible.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Fission releases energy and additional neutrons, creating the possibility that one event triggers more. Wartime research first had to establish material properties, neutron behavior, and whether a controllable or explosive chain reaction could be sustained.",
+          "sources": [
+            { "title": "The Smyth Report: Atomic Energy for Military Purposes", "url": "https://www.osti.gov/opennet/manhattan-project-history/publications/smyth_report.pdf" },
+            { "title": "DOE: Metallurgical Laboratory at the University of Chicago", "url": "https://www.energy.gov/lm/metallurgical-laboratory-university-chicago" }
+          ]
+        },
+        {
+          "claim": "Chicago Pile-1 achieved the first controlled self-sustaining nuclear chain reaction on December 2, 1942.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The Met Lab record identifies Fermi's graphite-and-uranium pile under Stagg Field as the first reactor to reach a self-sustaining chain reaction. The demonstration supplied essential proof for scaled plutonium production at Hanford.",
+          "sources": [
+            { "title": "DOE: Metallurgical Laboratory at the University of Chicago", "url": "https://www.energy.gov/lm/metallurgical-laboratory-university-chicago" },
+            { "title": "DOE: The First Reactor", "url": "https://www.energy.gov/ne/articles/first-reactor" }
+          ]
+        },
+        {
+          "claim": "The bomb was produced by an unprecedented integration of basic science, military administration, engineering, and industrial production.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The Manhattan Project coordinated laboratories, uranium enrichment, plutonium production, weapon design, and vast construction under wartime secrecy. Calling it unprecedented is interpretive, but its speed, scale, and parallel technical pathways are firmly documented.",
+          "sources": [
+            { "title": "DOE: The Manhattan Project", "url": "https://www.energy.gov/management/downloads/manhattan-project" },
+            { "title": "DOE: Manhattan Project—Making the Atomic Bomb", "url": "https://www.energy.gov/management/articles/manhattan-project-making-atomic-bomb" }
+          ]
+        }
+      ],
+      "other_claims": ["Refugee scientists and international scientific networks were central to the project's origins.", "The decision to use the bombs involved military, diplomatic, ethical, and bureaucratic judgments that remain disputed."]
+    },
+    {
+      "slug": "command-and-control",
+      "entity_key": "web:penguinrandomhouse.com/books/303337/command-and-control-by-eric-schlosser",
+      "title": "Command and Control",
+      "subtitle": "Nuclear Weapons, the Damascus Accident, and the Illusion of Safety",
+      "author": "Eric Schlosser",
+      "year": 2013,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The Damascus accident and the broader record of nuclear mishaps support Schlosser's argument about fallible systems. Safety features repeatedly worked, so the evidence supports persistent risk rather than inevitable catastrophe.",
+      "claims": [
+        {
+          "claim": "A dropped socket punctured a Titan II missile near Damascus, Arkansas, in 1980, leading to an explosion that killed one airman and injured others.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The Air Force's own history records the socket fall, fuel leak, evacuation, later silo explosion, one death, and twenty-one injuries. The warhead was thrown from the silo, but its safety features prevented nuclear yield or radioactive release.",
+          "sources": [
+            { "title": "Little Rock Air Force Base: Damascus accident history", "url": "https://www.littlerock.af.mil/Portals/25/documents/AFD-150918-038.pdf" },
+            { "title": "Physics Today review: Command and Control", "url": "https://physicstoday.aip.org/reviews/command-and-control-nuclear-weapons-the-damascus-accident-and-the-illusion-of-safety" }
+          ]
+        },
+        {
+          "claim": "United States nuclear forces experienced repeated serious accidents and incidents during the Cold War without an accidental nuclear detonation.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Declassified and congressional records describe weapons damaged in crashes, fires, explosions, losses, and handling failures. High explosives sometimes detonated and radioactive material dispersed, but safeguards prevented an unintended U.S. nuclear yield.",
+          "sources": [
+            { "title": "GAO: Observations on Navy Nuclear Weapon Safeguards", "url": "https://www.gao.gov/assets/nsiad-85-123.pdf" },
+            { "title": "GAO: Emergency Preparedness for Nuclear Weapon Accidents", "url": "https://www.gao.gov/products/nsiad-87-15" }
+          ]
+        },
+        {
+          "claim": "Complex organizations cannot make nuclear weapons perfectly safe because readiness, human error, component failure, and command control create competing risks.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The historical record supports recurring technical and organizational failure modes, while later safeguards, oversight, and weapon designs materially reduced some risks. 'Perfectly safe' is untestable, but the tension between rapid readiness and accident prevention is real.",
+          "sources": [
+            { "title": "Physics Today review: Command and Control", "url": "https://physicstoday.aip.org/reviews/command-and-control-nuclear-weapons-the-damascus-accident-and-the-illusion-of-safety" },
+            { "title": "GAO: Emergency Preparedness for Nuclear Weapon Accidents", "url": "https://www.gao.gov/products/nsiad-87-15" }
+          ]
+        }
+      ],
+      "other_claims": ["Weapon designers and military operators often prioritized different dimensions of safety and reliability.", "Secrecy delayed public and institutional learning from some accidents."]
+    },
+    {
+      "slug": "salt",
+      "entity_key": "web:markkurlansky.com/salt",
+      "title": "Salt",
+      "subtitle": "A World History",
+      "author": "Mark Kurlansky",
+      "year": 2002,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "Salt genuinely mattered to preservation, trade, public finance, and protest. The book's examples are broadly grounded, but a single-commodity lens can make salt appear more causally decisive than the wider evidence warrants.",
+      "claims": [
+        {
+          "claim": "Before refrigeration, salt was a crucial preservative that enabled food storage and long-distance trade.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Salting reduces available water and inhibits many spoilage organisms, making meat and fish more durable. Archaeological and historical work documents widespread salting industries and their connection to trade, provisioning, and seasonal food security.",
+          "sources": [
+            { "title": "Oxford: Salt in the Roman Mediterranean", "url": "https://academic.oup.com/book/11580/chapter-abstract/160421377" },
+            { "title": "The History and Politics of Salt", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8099335/" }
+          ]
+        },
+        {
+          "claim": "States repeatedly taxed or monopolized salt because it was essential, widely consumed, and comparatively controllable.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Evidence from France, China, India, and other states shows durable salt taxes, controlled distribution, and monopoly systems. Their designs and fiscal importance varied greatly, but salt's broad demand made it an attractive revenue base.",
+          "sources": [
+            { "title": "Wiley: Salt tax", "url": "https://doi.org/10.1002/9781444338386.wbeah06285.pub2" },
+            { "title": "The State Salt Monopoly in China", "url": "https://doi.org/10.5040/9781509908400.ch-018" }
+          ]
+        },
+        {
+          "claim": "Control of salt was a recurring primary driver of wars, revolutions, imperial power, and the rise or fall of states.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Salt taxes and access clearly mattered in events such as the French gabelle and Gandhi's Salt March, and shortages affected armies and trade. Those episodes were multicausal, however, so salt is often a revealing lever or symbol rather than the primary historical driver.",
+          "sources": [
+            { "title": "The History and Politics of Salt", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8099335/" },
+            { "title": "Economic History: Mapping the Grandes Gabelles", "url": "https://doi.org/10.1016/j.eeh.2026.101785" }
+          ]
+        }
+      ],
+      "other_claims": ["Industrial chemistry and refrigeration sharply reduced salt's strategic scarcity.", "Salt production generated distinctive merchant, smuggling, and labor institutions in different regions."]
+    },
+    {
+      "slug": "cod",
+      "entity_key": "web:markkurlansky.com/cod",
+      "title": "Cod",
+      "subtitle": "A Biography of the Fish That Changed the World",
+      "author": "Mark Kurlansky",
+      "year": 1997,
+      "score": 92,
+      "confidence": "high",
+      "summary": "Cod's economic importance and the modern collapse are exceptionally well documented. The book is right about industrial overexploitation, while later work gives climate, food-web change, and management failure more explicit roles.",
+      "claims": [
+        {
+          "claim": "North Atlantic cod supported major transoceanic fisheries and shaped Newfoundland's economy for centuries.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Historical reconstructions show sustained European exploitation from the sixteenth century and extraordinary cumulative catches. Salt cod exports anchored settlement, labor, credit, and international trade in Newfoundland and Labrador.",
+          "sources": [
+            { "title": "Five hundred years of the Newfoundland cod fishery", "url": "https://doi.org/10.1016/j.fishres.2025.107325" },
+            { "title": "Newfoundland and Labrador Heritage: Fisheries", "url": "https://www.heritage.nf.ca/articles/economy/fishery.php" }
+          ]
+        },
+        {
+          "claim": "Industrial-scale harvesting and management failures were central causes of the northern cod collapse and 1992 moratorium.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Catch reconstructions, fishery histories, and post-collapse analyses document enormous removals, technological intensification, optimistic assessments, and delayed restraint. Environmental change contributed, but it does not erase the central role of fishing pressure.",
+          "sources": [
+            { "title": "Five hundred years of the Newfoundland cod fishery", "url": "https://doi.org/10.1016/j.fishres.2025.107325" },
+            { "title": "FAO: Social and ecological roles in the cod collapse", "url": "https://www.fao.org/4/al232e/al232e.pdf" }
+          ]
+        },
+        {
+          "claim": "The collapse was not a simple morality tale of one fleet or technology; ecological change and multiple fishing sectors affected both decline and recovery.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Evidence implicates foreign and domestic fleets, offshore and inshore effort, recruitment, prey, temperature, and post-collapse ecosystem shifts. Their relative weights differ by period and stock, so one culprit cannot explain the full trajectory.",
+          "sources": [
+            { "title": "FAO: Social and ecological roles in the cod collapse", "url": "https://www.fao.org/4/al232e/al232e.pdf" },
+            { "title": "The Newfoundland fishery ten years after the moratorium", "url": "https://www.sciencedirect.com/science/article/pii/S0308597X04000600" }
+          ]
+        }
+      ],
+      "other_claims": ["Preservation made cod unusually suitable for supplying distant markets.", "The moratorium produced one of Canada's largest mass layoffs and transformed outport life."]
+    },
+    {
+      "slug": "the-butchering-art",
+      "entity_key": "web:lindseyfitzharris.com/the-butchering-art",
+      "title": "The Butchering Art",
+      "subtitle": "Joseph Lister's Quest to Transform the Grisly World of Victorian Medicine",
+      "author": "Lindsey Fitzharris",
+      "year": 2017,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "Lister's application of germ theory and antisepsis was transformative, but the heroic-breakthrough frame compresses earlier contributors, contested outcome statistics, and the later shift from chemical antisepsis to asepsis.",
+      "claims": [
+        {
+          "claim": "Joseph Lister applied Pasteur's germ theory to surgical wounds and developed an antiseptic system using carbolic acid.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Lister explicitly connected wound putrefaction to living organisms and used phenol on wounds, dressings, instruments, and hands. His 1867 publications made the germ-based rationale and practical system available to other surgeons.",
+          "sources": [
+            { "title": "Lister: On the Antiseptic Principle in Surgery", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2895849/" },
+            { "title": "Royal College of Surgeons: Joseph Lister", "url": "https://www.rcseng.ac.uk/library-and-publications/library/blog/lord-lister-of-lyme-regis/" }
+          ]
+        },
+        {
+          "claim": "Lister's antiseptic practices substantially reduced surgical infection and helped make more invasive operations survivable.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Contemporary series and later institutional adoption show large reductions in sepsis and hospital gangrene when the system was applied well. Historical comparisons were not randomized, definitions shifted, and mortality statistics became part of professional controversy.",
+          "sources": [
+            { "title": "Statistics and the British controversy about Lister's antisepsis", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4530413/" },
+            { "title": "Joseph Lister and the performance of antiseptic surgery", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3744349/" }
+          ]
+        },
+        {
+          "claim": "Lister was the singular founder of modern surgery, overcoming an otherwise uniformly ignorant profession.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Lister's synthesis, evidence, teaching, and institutional influence were pivotal. Yet Semmelweis, Pasteur, Lemaire, nurses, instrument makers, and adopting surgeons mattered, resistance varied, and modern asepsis later discarded parts of Lister's original spray-heavy practice.",
+          "sources": [
+            { "title": "Royal College of Surgeons: Lister in the Archives", "url": "https://www.rcseng.ac.uk/library-and-publications/library/blog/lister-in-the-archives-the-father-of-antiseptic-surgery/" },
+            { "title": "Farmer to industrialist: Lister's antisepsis in Germany", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3744353/" }
+          ]
+        }
+      ],
+      "other_claims": ["Anesthesia made longer operations possible before infection control made them safer.", "Victorian hospitals were sites of both medical innovation and lethal institutional infection."]
+    },
+    {
+      "slug": "the-warmth-of-other-suns",
+      "entity_key": "web:isabelwilkerson.com/the-warmth-of-other-suns",
+      "title": "The Warmth of Other Suns",
+      "subtitle": "The Epic Story of America's Great Migration",
+      "author": "Isabel Wilkerson",
+      "year": 2010,
+      "score": 100,
+      "confidence": "high",
+      "summary": "Its demographic scale, push-and-pull explanation, and account of far-reaching urban change align closely with archival and scholarly evidence. The three lives are narrative cases, not a statistical sample, but they illuminate a well-established history.",
+      "claims": [
+        {
+          "claim": "Roughly six million Black Americans left the South for Northern, Midwestern, and Western destinations during the Great Migration.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "National Archives and census-based scholarship place the migration from roughly the 1910s through 1970 and estimate about six million movers. Exact period boundaries vary, but the scale and directional redistribution are firmly established.",
+          "sources": [
+            { "title": "National Archives: The Great Migration", "url": "https://www.archives.gov/research/african-americans/migrations/great-migration" },
+            { "title": "The Great Migration from the US South: a guide and interpretation", "url": "https://doi.org/10.1016/j.eeh.2020.101382" }
+          ]
+        },
+        {
+          "claim": "Migrants were pushed by Jim Crow violence and restricted opportunity and pulled by industrial jobs, networks, and greater freedom outside the South.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Archival records and migration research document racial terror, disenfranchisement, agricultural change, labor recruitment, wartime industrial demand, and family networks. Motives differed by person and wave, but the combined push-pull account is robust.",
+          "sources": [
+            { "title": "National Archives: The Great Migration", "url": "https://www.archives.gov/research/african-americans/migrations/great-migration" },
+            { "title": "The African American Great Migration and Beyond", "url": "https://doi.org/10.1146/annurev.soc.29.010202.100009" }
+          ]
+        },
+        {
+          "claim": "The Great Migration profoundly changed receiving cities and Black economic, political, cultural, and residential life across the United States.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Research finds major demographic and institutional change in destination cities, including new labor markets, cultural communities, political constituencies, and patterns of segregation. Outcomes included real gains alongside discrimination and durable spatial inequality.",
+          "sources": [
+            { "title": "The African American Great Migration and Beyond", "url": "https://doi.org/10.1146/annurev.soc.29.010202.100009" },
+            { "title": "The Great Migration and Residential Segregation", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7297198/" }
+          ]
+        }
+      ],
+      "other_claims": ["Migrants exercised agency rather than merely responding passively to economic forces.", "Northern and Western destinations offered opportunity without eliminating racial exclusion."]
     }
   ]
 }
