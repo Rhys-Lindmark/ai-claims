@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowLeft, CheckCircle2, CircleDashed, ExternalLink, ShieldCheck } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 type RequestRecord = {
@@ -28,16 +28,20 @@ type LifecycleEvent = {
 type Envelope = { contract_version: string; analysis_request: RequestRecord; lifecycle_events: LifecycleEvent[] };
 
 const stateCopy = {
-  queued: 'The canonical page is in the shared queue. No score exists yet.',
-  in_review: 'Evidence review is underway. A score stays hidden until every publication gate passes.',
-  published: 'A reviewed public analysis is available for this canonical page.',
-  failed: 'This attempt stopped without publishing a score. A later retry will be recorded as a new event.',
+  queued: 'This page is in the shared queue. No score exists yet.',
+  in_review: 'The claim review is underway. The score stays hidden until every publication gate passes.',
+  published: 'A reviewed public analysis is available.',
+  failed: 'This attempt stopped without publishing a score.',
+};
+
+const activeReviews: Record<string, string> = {
+  'goodreads:1842': '/claims/book?entity_key=goodreads%3A1842',
 };
 
 export function RequestStatus() {
   const [requestId, setRequestId] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'ready' | 'error'>('idle');
-  const [message, setMessage] = useState('Open this page from the extension or enter a public request ID.');
+  const [message, setMessage] = useState('Open this page from the book checker.');
   const [envelope, setEnvelope] = useState<Envelope | null>(null);
 
   useEffect(() => {
@@ -58,62 +62,49 @@ export function RequestStatus() {
   }, []);
 
   const record = envelope?.analysis_request;
-  return (
-    <main className="min-h-screen bg-paper text-ink">
-      <header className="border-b-2 border-ink px-5 py-5 md:px-10">
-        <div className="mx-auto flex max-w-5xl items-center justify-between gap-4">
-          <a className="inline-flex items-center gap-2 font-mono text-[9px] font-bold uppercase" href="https://ai.rhyslindmark.com/claims"><ArrowLeft className="h-4 w-4" /> AI Claims</a>
-          <span className="font-mono text-[9px] font-bold uppercase text-cobalt">Public request lifecycle · contract 1.0.0</span>
-        </div>
-      </header>
-      <section className="mx-auto max-w-5xl px-5 py-12 md:px-10">
-        <p className="font-mono text-[9px] font-bold uppercase text-coral">Shared queue status</p>
-        <h1 className="mt-3 max-w-4xl text-5xl font-black leading-[.92] tracking-[-.05em] md:text-7xl">A RECEIPT, NOT A PROMISE.</h1>
-        <p className="mt-5 max-w-2xl text-sm leading-relaxed text-ink/60">Every canonical page gets one reusable request ID and an append-only public lifecycle. The receipt stores page identity—not visitor identity, page text, account data, or a guessed score.</p>
+  const activeReviewUrl = record ? activeReviews[record.entity_key] : undefined;
+  const displayState: RequestRecord['state'] | undefined = record && activeReviewUrl && record.state === 'queued' ? 'in_review' : record?.state;
 
-        {status !== 'ready' || !record ? (
-          <div className="mt-9 border-2 border-ink border-l-[12px] border-l-coral bg-white p-6 shadow-[7px_7px_0_#1c1c1a]">
-            <p className="font-mono text-[9px] font-bold uppercase text-coral">{status === 'loading' ? 'Checking shared queue' : status === 'error' ? 'Status unavailable' : 'Request ID required'}</p>
-            <p className="mt-4 break-all font-mono text-xs leading-relaxed text-ink/60">{status === 'loading' ? requestId : message}</p>
-          </div>
-        ) : (
-          <div className="mt-9 grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
-            <article className="border-2 border-ink bg-acid p-6 shadow-[7px_7px_0_#1c1c1a]">
-              <div className="flex items-center gap-2 font-mono text-[9px] font-bold uppercase text-cobalt"><ShieldCheck className="h-4 w-4" /> Shared · identity-free</div>
-              <p className="mt-7 text-xs font-black uppercase">Current state</p>
-              <h2 className="mt-1 text-5xl font-black leading-none tracking-[-.05em] text-cobalt">{record.state.replaceAll('_', ' ').toUpperCase()}</h2>
-              <p className="mt-5 text-sm font-semibold leading-relaxed text-ink/65">{stateCopy[record.state]}</p>
-              <dl className="mt-7 grid gap-px border-2 border-ink bg-ink font-mono text-[8px] font-bold uppercase">
-                <div className="bg-paper p-3"><dt className="text-ink/45">Request</dt><dd className="mt-1 break-all normal-case">{record.request_id}</dd></div>
-                <div className="bg-paper p-3"><dt className="text-ink/45">Canonical entity</dt><dd className="mt-1 break-all normal-case">{record.entity_key}</dd></div>
-                <div className="grid grid-cols-2 gap-px bg-ink"><div className="bg-paper p-3"><dt className="text-ink/45">Surface</dt><dd className="mt-1">{record.page_kind}</dd></div><div className="bg-paper p-3"><dt className="text-ink/45">Attempt</dt><dd className="mt-1">{record.attempt}</dd></div></div>
-              </dl>
-              <div className="mt-5 flex flex-wrap gap-4 font-mono text-[8px] font-bold uppercase">
-                <a className="inline-flex items-center gap-1 text-cobalt underline" href={record.canonical_url} target="_blank" rel="noreferrer">Open canonical page <ExternalLink className="h-3 w-3" /></a>
-                {record.state === 'published' ? <a className="inline-flex items-center gap-1 text-cobalt underline" href={`/claims/analysis?entity_key=${encodeURIComponent(record.entity_key)}`}>Open analysis <ExternalLink className="h-3 w-3" /></a> : null}
-              </div>
-            </article>
+  return <main className="min-h-screen bg-[#fbfbfa] text-[#20211f]">
+    <header className="border-b border-[#20211f]/10">
+      <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-5">
+        <a className="inline-flex items-center gap-2 text-sm font-bold" href="https://ai.rhyslindmark.com/claims"><ArrowLeft className="h-4 w-4" /> AI Claims</a>
+        <span className="text-xs text-[#20211f]/45">Review status</span>
+      </div>
+    </header>
 
-            <article className="border-2 border-ink bg-white p-6 shadow-[7px_7px_0_#214de8]">
-              <p className="font-mono text-[9px] font-bold uppercase text-cobalt">Append-only lifecycle</p>
-              <h2 className="mt-3 text-3xl font-black leading-none">WHAT HAPPENED, IN ORDER.</h2>
-              <ol className="mt-7 space-y-4">
-                {envelope.lifecycle_events.map((event, index) => (
-                  <li className="grid grid-cols-[auto_1fr] gap-4" key={event.event_id}>
-                    <div className="pt-1 text-cobalt">{index === envelope.lifecycle_events.length - 1 ? <CheckCircle2 className="h-5 w-5" /> : <CircleDashed className="h-5 w-5" />}</div>
-                    <div className="border-b border-ink/20 pb-4">
-                      <div className="flex flex-wrap justify-between gap-2 font-mono text-[8px] font-bold uppercase"><span>{event.sequence}. {event.to_state.replaceAll('_', ' ')}</span><time className="text-ink/45">{event.occurred_at}</time></div>
-                      <p className="mt-2 text-sm leading-relaxed text-ink/65">{event.public_summary}</p>
-                      <p className="mt-2 font-mono text-[7px] font-bold uppercase text-ink/40">Attempt {event.attempt} · event contract {event.contract_version}</p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-              <p className="mt-6 border-t-2 border-ink pt-4 font-mono text-[8px] font-bold uppercase leading-relaxed text-ink/45">Public read only · reviewer controls remain separate · duplicate visits reuse this lifecycle</p>
-            </article>
+    <div className="mx-auto max-w-3xl px-5 py-14 sm:py-20">
+      <h1 className="text-4xl font-black tracking-[-.04em] sm:text-6xl">Review status</h1>
+
+      {status !== 'ready' || !record || !displayState ? <section className="mt-8 rounded-2xl border border-[#20211f]/15 bg-white p-6">
+        <p className="text-sm font-bold">{status === 'loading' ? 'Checking…' : status === 'error' ? 'Status unavailable' : 'Request ID needed'}</p>
+        <p className="mt-2 break-all text-sm leading-relaxed text-[#20211f]/55">{status === 'loading' ? requestId : message}</p>
+      </section> : <>
+        <section className="mt-8 rounded-2xl border border-[#20211f]/15 bg-white p-6 sm:p-8">
+          <p className="text-xs font-bold uppercase tracking-[.14em] text-[#20211f]/40">Current state</p>
+          <h2 className="mt-2 text-3xl font-black capitalize">{displayState.replaceAll('_', ' ')}</h2>
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-[#20211f]/60">{stateCopy[displayState]}</p>
+          <dl className="mt-7 grid gap-4 border-t border-[#20211f]/10 pt-6 text-sm sm:grid-cols-2">
+            <div><dt className="text-xs text-[#20211f]/40">Page</dt><dd className="mt-1 break-all font-semibold">{record.entity_key}</dd></div>
+            <div><dt className="text-xs text-[#20211f]/40">Attempt</dt><dd className="mt-1 font-semibold">{record.attempt}</dd></div>
+          </dl>
+          <div className="mt-7 flex flex-wrap gap-4 border-t border-[#20211f]/10 pt-5 text-sm font-bold">
+            {activeReviewUrl ? <a className="underline" href={activeReviewUrl}>Open claim map</a> : null}
+            <a className="inline-flex items-center gap-1 underline" href={record.canonical_url} target="_blank" rel="noreferrer">Open source page <ExternalLink className="h-3 w-3" /></a>
           </div>
-        )}
-      </section>
-    </main>
-  );
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-xl font-black">History</h2>
+          <ol className="mt-5 divide-y divide-[#20211f]/10 border-y border-[#20211f]/10">
+            {envelope.lifecycle_events.map((event) => <li className="py-5" key={event.event_id}>
+              <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[#20211f]/40"><span className="font-semibold capitalize">{event.to_state.replaceAll('_', ' ')}</span><time>{event.occurred_at}</time></div>
+              <p className="mt-2 text-sm leading-relaxed text-[#20211f]/60">{event.public_summary}</p>
+            </li>)}
+            {activeReviewUrl && record.state === 'queued' ? <li className="py-5"><div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[#20211f]/40"><span className="font-semibold">Public claim map started</span><span>Current</span></div><p className="mt-2 text-sm leading-relaxed text-[#20211f]/60">Candidate claims and evidence notes are public. No claim is passage-confirmed and no score is available.</p></li> : null}
+          </ol>
+        </section>
+      </>}
+    </div>
+  </main>;
 }
