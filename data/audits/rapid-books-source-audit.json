@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-08-31",
-  "checked_at": "2026-08-31T21:04:00.336Z",
+  "checked_at": "2026-08-31T21:20:44.108Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,31 +10,32 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 110,
-    "claims": 330,
-    "citations": 660,
-    "unique_urls": 492,
-    "repeated_citations": 168,
-    "redirected_urls": 81,
+    "books": 120,
+    "claims": 360,
+    "citations": 720,
+    "unique_urls": 533,
+    "repeated_citations": 187,
+    "redirected_urls": 84,
     "states": {
-      "access_blocked": 91,
-      "network_error": 6,
-      "reachable": 390,
-      "transient": 5
+      "access_blocked": 101,
+      "network_error": 5,
+      "other_http": 1,
+      "reachable": 422,
+      "transient": 4
     },
     "score_distribution": {
       "50": 1,
-      "58": 2,
-      "67": 15,
-      "75": 22,
-      "83": 23,
-      "92": 37,
+      "58": 4,
+      "67": 16,
+      "75": 27,
+      "83": 24,
+      "92": 38,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 45,
-      "medium": 16,
-      "medium-high": 41,
+      "high": 46,
+      "medium": 19,
+      "medium-high": 47,
       "medium-low": 8
     }
   },
@@ -50,19 +51,27 @@
     },
     {
       "host": "pmc.ncbi.nlm.nih.gov",
-      "unique_urls": 37,
-      "citations": 49,
+      "unique_urls": 38,
+      "citations": 50,
       "states": {
-        "reachable": 37
+        "reachable": 38
       }
     },
     {
       "host": "cambridge.org",
-      "unique_urls": 18,
-      "citations": 27,
+      "unique_urls": 20,
+      "citations": 32,
       "states": {
         "transient": 1,
-        "reachable": 17
+        "reachable": 19
+      }
+    },
+    {
+      "host": "en.wikipedia.org",
+      "unique_urls": 9,
+      "citations": 20,
+      "states": {
+        "reachable": 9
       }
     },
     {
@@ -83,10 +92,10 @@
     },
     {
       "host": "time.com",
-      "unique_urls": 11,
-      "citations": 12,
+      "unique_urls": 12,
+      "citations": 13,
       "states": {
-        "reachable": 11
+        "reachable": 12
       }
     },
     {
@@ -106,6 +115,14 @@
       }
     },
     {
+      "host": "sciencedirect.com",
+      "unique_urls": 8,
+      "citations": 10,
+      "states": {
+        "access_blocked": 8
+      }
+    },
+    {
       "host": "cdc.gov",
       "unique_urls": 6,
       "citations": 9,
@@ -119,22 +136,6 @@
       "citations": 9,
       "states": {
         "reachable": 7
-      }
-    },
-    {
-      "host": "sciencedirect.com",
-      "unique_urls": 7,
-      "citations": 9,
-      "states": {
-        "access_blocked": 7
-      }
-    },
-    {
-      "host": "en.wikipedia.org",
-      "unique_urls": 3,
-      "citations": 8,
-      "states": {
-        "reachable": 3
       }
     },
     {
@@ -154,11 +155,35 @@
       }
     },
     {
+      "host": "academic.oup.com",
+      "unique_urls": 7,
+      "citations": 7,
+      "states": {
+        "access_blocked": 7
+      }
+    },
+    {
+      "host": "escholarship.org",
+      "unique_urls": 3,
+      "citations": 7,
+      "states": {
+        "access_blocked": 3
+      }
+    },
+    {
       "host": "govinfo.gov",
       "unique_urls": 4,
       "citations": 7,
       "states": {
         "reachable": 4
+      }
+    },
+    {
+      "host": "jstor.org",
+      "unique_urls": 5,
+      "citations": 7,
+      "states": {
+        "reachable": 5
       }
     },
     {
@@ -194,14 +219,6 @@
       }
     },
     {
-      "host": "academic.oup.com",
-      "unique_urls": 6,
-      "citations": 6,
-      "states": {
-        "access_blocked": 6
-      }
-    },
-    {
       "host": "genome.gov",
       "unique_urls": 5,
       "citations": 6,
@@ -218,19 +235,19 @@
       }
     },
     {
+      "host": "journals.sagepub.com",
+      "unique_urls": 5,
+      "citations": 6,
+      "states": {
+        "access_blocked": 5
+      }
+    },
+    {
       "host": "journals.uchicago.edu",
       "unique_urls": 3,
       "citations": 6,
       "states": {
         "access_blocked": 3
-      }
-    },
-    {
-      "host": "jstor.org",
-      "unique_urls": 4,
-      "citations": 6,
-      "states": {
-        "reachable": 4
       }
     },
     {
@@ -323,27 +340,11 @@
       }
     },
     {
-      "host": "escholarship.org",
-      "unique_urls": 2,
-      "citations": 4,
-      "states": {
-        "access_blocked": 2
-      }
-    },
-    {
       "host": "fao.org",
       "unique_urls": 2,
       "citations": 4,
       "states": {
         "reachable": 2
-      }
-    },
-    {
-      "host": "journals.sagepub.com",
-      "unique_urls": 3,
-      "citations": 4,
-      "states": {
-        "access_blocked": 3
       }
     },
     {
@@ -384,15 +385,6 @@
       "citations": 3,
       "states": {
         "reachable": 2
-      }
-    },
-    {
-      "host": "britannica.com",
-      "unique_urls": 3,
-      "citations": 3,
-      "states": {
-        "reachable": 2,
-        "access_blocked": 1
       }
     },
     {
@@ -460,6 +452,14 @@
       }
     },
     {
+      "host": "nybooks.com",
+      "unique_urls": 3,
+      "citations": 3,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
       "host": "openurl.ebsco.com",
       "unique_urls": 2,
       "citations": 3,
@@ -472,7 +472,7 @@
       "unique_urls": 1,
       "citations": 3,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -536,7 +536,8 @@
       "unique_urls": 2,
       "citations": 3,
       "states": {
-        "access_blocked": 2
+        "reachable": 1,
+        "access_blocked": 1
       }
     },
     {
@@ -561,6 +562,14 @@
       "citations": 3,
       "states": {
         "access_blocked": 1
+      }
+    },
+    {
+      "host": "timeshighereducation.com",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -613,6 +622,31 @@
       }
     },
     {
+      "host": "britannica.com",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "reachable": 1,
+        "access_blocked": 1
+      }
+    },
+    {
+      "host": "ccnmtl.columbia.edu",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "cjr.org",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "dialnet.unirioja.es",
       "unique_urls": 1,
       "citations": 2,
@@ -642,6 +676,14 @@
       "citations": 2,
       "states": {
         "access_blocked": 1,
+        "reachable": 1
+      }
+    },
+    {
+      "host": "files.eric.ed.gov",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
         "reachable": 1
       }
     },
@@ -707,8 +749,23 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "reachable": 1,
-        "access_blocked": 1
+        "access_blocked": 2
+      }
+    },
+    {
+      "host": "historynewsnetwork.org",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
+      "host": "housedivided.dickinson.edu",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -733,6 +790,22 @@
       "citations": 2,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "marcuse.faculty.history.ucsb.edu",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "mdpi.com",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "access_blocked": 1
       }
     },
     {
@@ -872,6 +945,14 @@
       }
     },
     {
+      "host": "tandfonline.com",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "access_blocked": 2
+      }
+    },
+    {
       "host": "thesling.org",
       "unique_urls": 1,
       "citations": 2,
@@ -912,11 +993,19 @@
       }
     },
     {
+      "host": "aeon.co",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "annualreviews.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -929,6 +1018,22 @@
     },
     {
       "host": "api.pageplace.de",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "apnews.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "artefacts-discovery.researcher.life",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -972,7 +1077,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "transient": 1
+        "reachable": 1
       }
     },
     {
@@ -1000,7 +1105,23 @@
       }
     },
     {
+      "host": "christiancentury.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "cipotato.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "civilwarmonitor.com",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1040,6 +1161,14 @@
       }
     },
     {
+      "host": "d-scholarship.pitt.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "dgrahamburnett.net",
       "unique_urls": 1,
       "citations": 1,
@@ -1057,6 +1186,14 @@
     },
     {
       "host": "drought.unl.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "dspace.sunyconnect.suny.edu",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1092,7 +1229,15 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "network_error": 1
+        "reachable": 1
+      }
+    },
+    {
+      "host": "eprints.nottingham.ac.uk",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "other_http": 1
       }
     },
     {
@@ -1268,7 +1413,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -1360,6 +1505,14 @@
       }
     },
     {
+      "host": "mural.maynoothuniversity.ie",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "mycg.uscg.mil",
       "unique_urls": 1,
       "citations": 1,
@@ -1441,14 +1594,6 @@
     },
     {
       "host": "ntrs.nasa.gov",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "transient": 1
-      }
-    },
-    {
-      "host": "nybooks.com",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1616,6 +1761,22 @@
       }
     },
     {
+      "host": "robertcaro.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "royal.uk",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "royalobservatorygreenwich.org",
       "unique_urls": 1,
       "citations": 1,
@@ -1656,7 +1817,7 @@
       }
     },
     {
-      "host": "shackletonfoundation.org",
+      "host": "search.worldcat.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1664,11 +1825,11 @@
       }
     },
     {
-      "host": "tandfonline.com",
+      "host": "shackletonfoundation.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -1748,7 +1909,23 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
+        "access_blocked": 1
+      }
+    },
+    {
+      "host": "warroom.armywarcollege.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "washingtonpost.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "transient": 1
       }
     },
     {
@@ -1800,6 +1977,24 @@
       ]
     },
     {
+      "url": "https://en.wikipedia.org/wiki/Atrocities_in_the_Congo_Free_State",
+      "host": "en.wikipedia.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "king-leopolds-ghost"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/King_Leopold%27s_Ghost",
+      "host": "en.wikipedia.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "king-leopolds-ghost"
+      ]
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/The_Making_of_the_English_Working_Class",
       "host": "en.wikipedia.org",
       "citation_count": 3,
@@ -1815,6 +2010,15 @@
       "state": "reachable",
       "books": [
         "the-black-jacobins"
+      ]
+    },
+    {
+      "url": "https://escholarship.org/uc/item/37k4c16h",
+      "host": "escholarship.org",
+      "citation_count": 3,
+      "state": "access_blocked",
+      "books": [
+        "bury-my-heart-at-wounded-knee"
       ]
     },
     {
@@ -1839,7 +2043,7 @@
       "url": "https://oro.open.ac.uk/7761/",
       "host": "oro.open.ac.uk",
       "citation_count": 3,
-      "state": "reachable",
+      "state": "access_blocked",
       "books": [
         "the-guns-of-august"
       ]
@@ -1905,6 +2109,15 @@
       "state": "reachable",
       "books": [
         "the-age-of-revolution"
+      ]
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/review-of-politics/article/abs/shirers-history-of-nazi-germany/467931E65689A07D52BAB9A2FC86912C",
+      "host": "cambridge.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-rise-and-fall-of-the-third-reich"
       ]
     },
     {
@@ -1999,6 +2212,15 @@
       ]
     },
     {
+      "url": "https://www.timeshighereducation.com/books/the-canon-the-origins-of-the-second-world-war-by-ajp-taylor/406820.article",
+      "host": "timeshighereducation.com",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-origins-of-the-second-world-war"
+      ]
+    },
+    {
       "url": "https://wwwnc.cdc.gov/eid/article/24/5/17-1609_article",
       "host": "wwwnc.cdc.gov",
       "citation_count": 3,
@@ -2061,6 +2283,15 @@
       "state": "reachable",
       "books": [
         "the-silk-roads"
+      ]
+    },
+    {
+      "url": "https://ccnmtl.columbia.edu/projects/mxpneh_old/htmldocs/MXNEH_narrative_final.htm",
+      "host": "ccnmtl.columbia.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-autobiography-of-malcolm-x"
       ]
     },
     {
@@ -2191,6 +2422,33 @@
       ]
     },
     {
+      "url": "https://en.wikipedia.org/wiki/The_Gulag_Archipelago",
+      "host": "en.wikipedia.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-gulag-archipelago"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Origins_of_the_Second_World_War",
+      "host": "en.wikipedia.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-origins-of-the-second-world-war"
+      ]
+    },
+    {
+      "url": "https://files.eric.ed.gov/fulltext/ED069010.pdf",
+      "host": "files.eric.ed.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "bury-my-heart-at-wounded-knee"
+      ]
+    },
+    {
       "url": "https://guides.loc.gov/chronicling-america-h-h-holmes",
       "host": "guides.loc.gov",
       "citation_count": 2,
@@ -2209,12 +2467,30 @@
       ]
     },
     {
+      "url": "https://housedivided.dickinson.edu/essay/print/Essay_Rivals_Print.pdf",
+      "host": "housedivided.dickinson.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "team-of-rivals"
+      ]
+    },
+    {
       "url": "https://journals.sagepub.com/doi/10.1177/00471178221098913",
       "host": "journals.sagepub.com",
       "citation_count": 2,
       "state": "access_blocked",
       "books": [
         "imagined-communities"
+      ]
+    },
+    {
+      "url": "https://marcuse.faculty.history.ucsb.edu/classes/201/articles/94RosenfeldShirerJCH.pdf",
+      "host": "marcuse.faculty.history.ucsb.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-rise-and-fall-of-the-third-reich"
       ]
     },
     {
@@ -2535,6 +2811,15 @@
       ]
     },
     {
+      "url": "https://www.cambridge.org/core/journals/slavic-review/article/abs/first-great-leap-forward-reconsidered-lessons-of-solzhenitsyns-gulag-archipelago/7FA67039210D3500F02B506693BEE30A",
+      "host": "cambridge.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-gulag-archipelago"
+      ]
+    },
+    {
       "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B60A986B656E8C0A6A45A97CBCD3FD30/9781108838313AR.pdf",
       "host": "cambridge.org",
       "citation_count": 2,
@@ -2550,6 +2835,15 @@
       "state": "reachable",
       "books": [
         "the-premonition"
+      ]
+    },
+    {
+      "url": "https://www.cjr.org/fiftieth_anniversary/caros_way.php",
+      "host": "cjr.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-power-broker"
       ]
     },
     {
@@ -2781,6 +3075,15 @@
       ]
     },
     {
+      "url": "https://www.mdpi.com/2076-0787/6/4/94",
+      "host": "mdpi.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "night-elie-wiesel"
+      ]
+    },
+    {
       "url": "https://www.nasa.gov/history/langleys-computers-1935-1970/",
       "host": "nasa.gov",
       "citation_count": 2,
@@ -2946,7 +3249,7 @@
       "url": "https://www.si.edu/object/five-days-memorial-life-and-death-storm-ravaged-hospital-sheri-fink%3Asiris_sil_1056647",
       "host": "si.edu",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "five-days-at-memorial"
       ]
@@ -3129,6 +3432,23 @@
       "error": null
     },
     {
+      "url": "https://academic.oup.com/jah/article-abstract/99/2/415/860501",
+      "citations": [
+        {
+          "slug": "battle-cry-of-freedom",
+          "claim_index": 1,
+          "source_title": "Causes of Disunion: literature review"
+        }
+      ],
+      "host": "academic.oup.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://academic.oup.com/jah/article-abstract/99/2/415/860501",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://acd.od.nih.gov/documents/charges/HeLaWGcharge.pdf",
       "citations": [
         {
@@ -3142,6 +3462,23 @@
       "method": "GET",
       "status": 200,
       "final_url": "https://acd.od.nih.gov/documents/charges/HeLaWGcharge.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://aeon.co/essays/how-alex-haley-wrote-and-reframed-the-life-of-malcolm-x",
+      "citations": [
+        {
+          "slug": "the-autobiography-of-malcolm-x",
+          "claim_index": 2,
+          "source_title": "How Alex Haley reframed Malcolm X"
+        }
+      ],
+      "host": "aeon.co",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://aeon.co/essays/how-alex-haley-wrote-and-reframed-the-life-of-malcolm-x",
       "redirected": false,
       "error": null
     },
@@ -3263,6 +3600,23 @@
       "error": null
     },
     {
+      "url": "https://apnews.com/article/684b96ffb147edb8c1a1935687d2f7c0",
+      "citations": [
+        {
+          "slug": "the-power-broker",
+          "claim_index": 2,
+          "source_title": "The Power Broker at 50"
+        }
+      ],
+      "host": "apnews.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://apnews.com/article/robert-caro-power-broker-50-years-684b96ffb147edb8c1a1935687d2f7c0",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section2.html",
       "citations": [
         {
@@ -3332,6 +3686,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://archive.cdc.gov/www_cdc_gov/healthyschools/bam/teachers/documents/epi_4_johnsnow.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://artefacts-discovery.researcher.life/full_text/DA-2/a2/a2750c7af1e83d94b8f4bf5b7643762d/full_text/5052d761f5a53095b8f3e077377807e7.pdf",
+      "citations": [
+        {
+          "slug": "the-autobiography-of-malcolm-x",
+          "claim_index": 3,
+          "source_title": "The Posthumous Autobiography and Civil Rights Memory"
+        }
+      ],
+      "host": "artefacts-discovery.researcher.life",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://artefacts-discovery.researcher.life/full_text/DA-2/a2/a2750c7af1e83d94b8f4bf5b7643762d/full_text/5052d761f5a53095b8f3e077377807e7.pdf",
       "redirected": false,
       "error": null
     },
@@ -3457,10 +3828,32 @@
         }
       ],
       "host": "catalogues.royalsociety.org",
-      "state": "transient",
-      "method": "GET",
-      "status": 502,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://catalogues.royalsociety.org/CalmView/Record.aspx?id=EC%2F1918%2F18&src=CalmView.Catalog",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://ccnmtl.columbia.edu/projects/mxpneh_old/htmldocs/MXNEH_narrative_final.htm",
+      "citations": [
+        {
+          "slug": "the-autobiography-of-malcolm-x",
+          "claim_index": 1,
+          "source_title": "Columbia critical reading of the Autobiography"
+        },
+        {
+          "slug": "the-autobiography-of-malcolm-x",
+          "claim_index": 2,
+          "source_title": "Columbia critical reading of the Autobiography"
+        }
+      ],
+      "host": "ccnmtl.columbia.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ccnmtl.columbia.edu/projects/mxpneh_old/htmldocs/MXNEH_narrative_final.htm",
       "redirected": false,
       "error": null
     },
@@ -3663,6 +4056,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://csrc.nist.gov/nist-cyber-history/cryptography/chapter",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://d-scholarship.pitt.edu/21641/1/Wilson_Diss_%28final_final%29.pdf",
+      "citations": [
+        {
+          "slug": "night-elie-wiesel",
+          "claim_index": 3,
+          "source_title": "Historical accuracy and testimony in Night"
+        }
+      ],
+      "host": "d-scholarship.pitt.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://d-scholarship.pitt.edu/21641/1/Wilson_Diss_%28final_final%29.pdf",
       "redirected": false,
       "error": null
     },
@@ -4020,7 +4430,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=0755bc50-677b-4f5f-af07-0fe1f399f7d8",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=7dd35ff2-d8be-4572-a192-cef8b221844b",
       "redirected": true,
       "error": null
     },
@@ -4037,7 +4447,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=b8a92f83-8646-4ba6-bc44-acf0b1ebe4b8",
       "redirected": true,
       "error": null
     },
@@ -4081,7 +4491,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=abceb3f6-bc6d-4ac0-b0ef-8d714c53e15c",
+      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
       "redirected": true,
       "error": null
     },
@@ -4098,7 +4508,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=322a86d2-bdfb-4a03-8bc8-15dbafb0f8d7",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=2d65f8a3-5f22-405c-bc83-3e3559368208",
       "redirected": true,
       "error": null
     },
@@ -4115,7 +4525,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=01a3237b-d2dd-403a-a7a5-344f9cb010e7",
+      "final_url": "https://www.nature.com/articles/s41559-019-0907-1",
       "redirected": true,
       "error": null
     },
@@ -4132,7 +4542,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=890c85af-7d81-4beb-a7c3-7dc709c982a3",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=b27057e9-03e3-4119-991b-c9a56a18fc98",
       "redirected": true,
       "error": null
     },
@@ -4149,7 +4559,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=9c785911-0f81-4ac9-a9d3-eb17a57899f3",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2",
       "redirected": true,
       "error": null
     },
@@ -4166,7 +4576,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41893-019-0293-3",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3",
       "redirected": true,
       "error": null
     },
@@ -4660,6 +5070,23 @@
       "error": null
     },
     {
+      "url": "https://dspace.sunyconnect.suny.edu/bitstreams/031e3dec-1288-4e29-bae1-7f990f7901c8/download",
+      "citations": [
+        {
+          "slug": "the-power-broker",
+          "claim_index": 3,
+          "source_title": "Robert Caro's Moses: historians' critiques"
+        }
+      ],
+      "host": "dspace.sunyconnect.suny.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://dspace.sunyconnect.suny.edu/server/api/core/bitstreams/031e3dec-1288-4e29-bae1-7f990f7901c8/content",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://edu.rsc.org/feature/ida-noddack-and-the-missing-elements/2020167.article",
       "citations": [
         {
@@ -4704,6 +5131,77 @@
       "error": null
     },
     {
+      "url": "https://en.wikipedia.org/wiki/Atrocities_in_the_Congo_Free_State",
+      "citations": [
+        {
+          "slug": "king-leopolds-ghost",
+          "claim_index": 1,
+          "source_title": "Atrocities in the Congo Free State"
+        },
+        {
+          "slug": "king-leopolds-ghost",
+          "claim_index": 2,
+          "source_title": "Atrocities in the Congo Free State"
+        },
+        {
+          "slug": "king-leopolds-ghost",
+          "claim_index": 3,
+          "source_title": "Atrocities in the Congo Free State: demographic estimates"
+        }
+      ],
+      "host": "en.wikipedia.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Atrocities_in_the_Congo_Free_State",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/King_Leopold%27s_Ghost",
+      "citations": [
+        {
+          "slug": "king-leopolds-ghost",
+          "claim_index": 1,
+          "source_title": "King Leopold's Ghost: reception and sources"
+        },
+        {
+          "slug": "king-leopolds-ghost",
+          "claim_index": 2,
+          "source_title": "King Leopold's Ghost: reception and sources"
+        },
+        {
+          "slug": "king-leopolds-ghost",
+          "claim_index": 3,
+          "source_title": "King Leopold's Ghost: death-toll debate"
+        }
+      ],
+      "host": "en.wikipedia.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/King_Leopold%27s_Ghost",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Team_of_Rivals",
+      "citations": [
+        {
+          "slug": "team-of-rivals",
+          "claim_index": 1,
+          "source_title": "Team of Rivals: reception overview"
+        }
+      ],
+      "host": "en.wikipedia.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Team_of_Rivals",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/The_Great_Transformation_(book)",
       "citations": [
         {
@@ -4722,6 +5220,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://en.wikipedia.org/wiki/The_Great_Transformation_(book)",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Gulag_Archipelago",
+      "citations": [
+        {
+          "slug": "the-gulag-archipelago",
+          "claim_index": 1,
+          "source_title": "The Gulag Archipelago: historical reception"
+        },
+        {
+          "slug": "the-gulag-archipelago",
+          "claim_index": 3,
+          "source_title": "The Gulag Archipelago: quantitative debate"
+        }
+      ],
+      "host": "en.wikipedia.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/The_Gulag_Archipelago",
       "redirected": false,
       "error": null
     },
@@ -4753,6 +5273,45 @@
       "error": null
     },
     {
+      "url": "https://en.wikipedia.org/wiki/The_Origins_of_the_Second_World_War",
+      "citations": [
+        {
+          "slug": "the-origins-of-the-second-world-war",
+          "claim_index": 1,
+          "source_title": "The Origins of the Second World War: reception"
+        },
+        {
+          "slug": "the-origins-of-the-second-world-war",
+          "claim_index": 3,
+          "source_title": "The Origins of the Second World War: controversy"
+        }
+      ],
+      "host": "en.wikipedia.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/The_Origins_of_the_Second_World_War",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Rise_and_Fall_of_the_Third_Reich",
+      "citations": [
+        {
+          "slug": "the-rise-and-fall-of-the-third-reich",
+          "claim_index": 2,
+          "source_title": "The Rise and Fall of the Third Reich: reception"
+        }
+      ],
+      "host": "en.wikipedia.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/The_Rise_and_Fall_of_the_Third_Reich",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://eprints.gla.ac.uk/224159/",
       "citations": [
         {
@@ -4777,6 +5336,23 @@
       "status": 200,
       "final_url": "https://eprints.gla.ac.uk/224159/",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://eprints.nottingham.ac.uk/74139/1/Poetics%20of%20Authenticity%20with%20corrections.pdf",
+      "citations": [
+        {
+          "slug": "the-gulag-archipelago",
+          "claim_index": 2,
+          "source_title": "Poetics of authenticity in Gulag"
+        }
+      ],
+      "host": "eprints.nottingham.ac.uk",
+      "state": "other_http",
+      "method": "GET",
+      "status": 405,
+      "final_url": "https://repository.nottingham.ac.uk/74139/1/Poetics%20of%20Authenticity%20with%20corrections.pdf",
+      "redirected": true,
       "error": null
     },
     {
@@ -4848,6 +5424,33 @@
       "error": null
     },
     {
+      "url": "https://escholarship.org/uc/item/37k4c16h",
+      "citations": [
+        {
+          "slug": "bury-my-heart-at-wounded-knee",
+          "claim_index": 1,
+          "source_title": "Cultured Memories: Wounded Knee and finalism"
+        },
+        {
+          "slug": "bury-my-heart-at-wounded-knee",
+          "claim_index": 2,
+          "source_title": "Cultured Memories: Wounded Knee and finalism"
+        },
+        {
+          "slug": "bury-my-heart-at-wounded-knee",
+          "claim_index": 3,
+          "source_title": "Cultured Memories: power, memory, and finalism"
+        }
+      ],
+      "host": "escholarship.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://escholarship.org/uc/item/37k4c16h",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://escholarship.org/uc/item/5qp086z8",
       "citations": [
         {
@@ -4871,6 +5474,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://escholarship.org/uc/item/5qp086z8",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://files.eric.ed.gov/fulltext/ED069010.pdf",
+      "citations": [
+        {
+          "slug": "bury-my-heart-at-wounded-knee",
+          "claim_index": 1,
+          "source_title": "Bury My Heart at Wounded Knee: review dossier"
+        },
+        {
+          "slug": "bury-my-heart-at-wounded-knee",
+          "claim_index": 2,
+          "source_title": "Bury My Heart at Wounded Knee: review dossier"
+        }
+      ],
+      "host": "files.eric.ed.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://files.eric.ed.gov/fulltext/ED069010.pdf",
       "redirected": false,
       "error": null
     },
@@ -4966,6 +5591,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://historicalpsychology.fas.harvard.edu/assets/files/schulz-et-al.-2019-the-church-intensive-kinship-and-global-psychological-variation.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://housedivided.dickinson.edu/essay/print/Essay_Rivals_Print.pdf",
+      "citations": [
+        {
+          "slug": "team-of-rivals",
+          "claim_index": 1,
+          "source_title": "The myth of Team of Rivals"
+        },
+        {
+          "slug": "team-of-rivals",
+          "claim_index": 3,
+          "source_title": "The myth of Team of Rivals"
+        }
+      ],
+      "host": "housedivided.dickinson.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://housedivided.dickinson.edu/essay/print/Essay_Rivals_Print.pdf",
       "redirected": false,
       "error": null
     },
@@ -5081,9 +5728,9 @@
         }
       ],
       "host": "journals.aps.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.28.2960",
       "redirected": false,
       "error": null
@@ -5145,6 +5792,23 @@
       "error": null
     },
     {
+      "url": "https://journals.sagepub.com/doi/10.1177/0092055X261422477",
+      "citations": [
+        {
+          "slug": "the-autobiography-of-malcolm-x",
+          "claim_index": 1,
+          "source_title": "Teaching Sociology with The Autobiography of Malcolm X"
+        }
+      ],
+      "host": "journals.sagepub.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/10.1177/0092055X261422477",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://journals.sagepub.com/doi/10.1177/0306312720927781",
       "citations": [
         {
@@ -5162,6 +5826,23 @@
       "error": null
     },
     {
+      "url": "https://journals.sagepub.com/doi/pdf/10.1080/03064227408532329",
+      "citations": [
+        {
+          "slug": "the-gulag-archipelago",
+          "claim_index": 2,
+          "source_title": "On Solzhenitsyn's Gulag Archipelago"
+        }
+      ],
+      "host": "journals.sagepub.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/pdf/10.1080/03064227408532329",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://link.springer.com/article/10.1007/s10602-026-09503-9",
       "citations": [
         {
@@ -5174,7 +5855,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s10602-026-09503-9?error=cookies_not_supported&code=db01b946-9a27-44d6-8d9e-f94717048ef6",
+      "final_url": "https://link.springer.com/article/10.1007/s10602-026-09503-9?error=cookies_not_supported&code=f6ce3a2e-0714-4631-9ab9-a100e7395e64",
       "redirected": true,
       "error": null
     },
@@ -5225,7 +5906,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=6164373d-11c1-4b4b-8b1b-c271c53ce4f4",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=9bdbcc43-9d77-4be7-aca4-eb5f43e65f7d",
       "redirected": true,
       "error": null
     },
@@ -5242,7 +5923,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=33319ac5-6c79-46e7-b0e7-86c15ca1183b",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=ceb95f01-2714-413f-806f-61fa6a5bea54",
       "redirected": true,
       "error": null
     },
@@ -5278,6 +5959,28 @@
       "status": 200,
       "final_url": "https://science.nasa.gov/mission/wmap/wmap-overview/",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://marcuse.faculty.history.ucsb.edu/classes/201/articles/94RosenfeldShirerJCH.pdf",
+      "citations": [
+        {
+          "slug": "the-rise-and-fall-of-the-third-reich",
+          "claim_index": 1,
+          "source_title": "Reception of William Shirer's history"
+        },
+        {
+          "slug": "the-rise-and-fall-of-the-third-reich",
+          "claim_index": 3,
+          "source_title": "Reception of William Shirer's history"
+        }
+      ],
+      "host": "marcuse.faculty.history.ucsb.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://marcuse.faculty.history.ucsb.edu/classes/201/articles/94RosenfeldShirerJCH.pdf",
+      "redirected": false,
       "error": null
     },
     {
@@ -5328,6 +6031,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://michaelpollan.com/books/the-botany-of-desire/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://mural.maynoothuniversity.ie/id/eprint/19014/1/Claire%20Doran%20Thesis%20Final%20Edit%20pdf.pdf",
+      "citations": [
+        {
+          "slug": "night-elie-wiesel",
+          "claim_index": 1,
+          "source_title": "The history and genre of Night"
+        }
+      ],
+      "host": "mural.maynoothuniversity.ie",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://mural.maynoothuniversity.ie/id/eprint/19014/1/Claire%20Doran%20Thesis%20Final%20Edit%20pdf.pdf",
       "redirected": false,
       "error": null
     },
@@ -5536,12 +6256,12 @@
         }
       ],
       "host": "ntrs.nasa.gov",
-      "state": "transient",
-      "method": "GET",
-      "status": null,
-      "final_url": null,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20040006526.pdf",
       "redirected": false,
-      "error": "AbortError: This operation was aborted"
+      "error": null
     },
     {
       "url": "https://online.ucpress.edu/SLA/article-abstract/1/2/100/83319/Review-The-Silk-Roads-A-New-History-of-the-World",
@@ -5753,9 +6473,9 @@
         }
       ],
       "host": "oro.open.ac.uk",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://oro.open.ac.uk/7761/",
       "redirected": false,
       "error": null
@@ -6020,6 +6740,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1112606/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11780604/",
+      "citations": [
+        {
+          "slug": "the-power-broker",
+          "claim_index": 3,
+          "source_title": "The Power Broker Conveys the Risks of Rejecting Reality"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11780604/",
       "redirected": false,
       "error": null
     },
@@ -6453,7 +7190,7 @@
       ],
       "host": "pmc.ncbi.nlm.nih.gov",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5938790/",
       "redirected": false,
@@ -7232,6 +7969,23 @@
       "error": null
     },
     {
+      "url": "https://search.worldcat.org/title/1028660910",
+      "citations": [
+        {
+          "slug": "battle-cry-of-freedom",
+          "claim_index": 2,
+          "source_title": "Battle Cry of Freedom: WorldCat summary"
+        }
+      ],
+      "host": "search.worldcat.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://search.worldcat.org/title/1028660910",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://shc.stanford.edu/stanford-humanities-center/news/why-west-rules-now-0",
       "citations": [
         {
@@ -7473,6 +8227,23 @@
       "error": null
     },
     {
+      "url": "https://time.com/5511505/david-treuer-interview/",
+      "citations": [
+        {
+          "slug": "bury-my-heart-at-wounded-knee",
+          "claim_index": 3,
+          "source_title": "The Heartbeat of Wounded Knee interview"
+        }
+      ],
+      "host": "time.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://time.com/5511505/david-treuer-interview/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://time.com/5850622/rome-immigrants/",
       "citations": [
         {
@@ -7674,10 +8445,27 @@
         }
       ],
       "host": "volcano.si.edu",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://volcano.si.edu/volcano.cfm?vn=262000",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://warroom.armywarcollege.edu/special-series/dusty-shelves/battle-cry/",
+      "citations": [
+        {
+          "slug": "battle-cry-of-freedom",
+          "claim_index": 1,
+          "source_title": "Battle Cry: U.S. Army War College review"
+        }
+      ],
+      "host": "warroom.armywarcollege.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://warroom.armywarcollege.edu/special-series/dusty-shelves/battle-cry/",
       "redirected": false,
       "error": null
     },
@@ -7725,9 +8513,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-genet-021920-011805",
       "redirected": false,
       "error": null
@@ -7893,27 +8681,10 @@
         }
       ],
       "host": "britannica.com",
-      "state": "reachable",
-      "method": "GET",
-      "status": 200,
-      "final_url": "https://www.britannica.com/biography/Henry-II-king-of-England",
-      "redirected": false,
-      "error": null
-    },
-    {
-      "url": "https://www.britannica.com/topic/Plantagenet-house",
-      "citations": [
-        {
-          "slug": "the-plantagenets",
-          "claim_index": 1,
-          "source_title": "Encyclopaedia Britannica: Plantagenet house"
-        }
-      ],
-      "host": "britannica.com",
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.britannica.com/topic/Plantagenet-house",
+      "final_url": "https://www.britannica.com/biography/Henry-II-king-of-England",
       "redirected": false,
       "error": null
     },
@@ -8213,6 +8984,55 @@
       "error": null
     },
     {
+      "url": "https://www.cambridge.org/core/journals/review-of-politics/article/abs/shirers-history-of-nazi-germany/467931E65689A07D52BAB9A2FC86912C",
+      "citations": [
+        {
+          "slug": "the-rise-and-fall-of-the-third-reich",
+          "claim_index": 1,
+          "source_title": "Shirer's History of Nazi Germany"
+        },
+        {
+          "slug": "the-rise-and-fall-of-the-third-reich",
+          "claim_index": 2,
+          "source_title": "Shirer's History of Nazi Germany"
+        },
+        {
+          "slug": "the-rise-and-fall-of-the-third-reich",
+          "claim_index": 3,
+          "source_title": "Shirer's History of Nazi Germany"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/review-of-politics/article/abs/shirers-history-of-nazi-germany/467931E65689A07D52BAB9A2FC86912C",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/slavic-review/article/abs/first-great-leap-forward-reconsidered-lessons-of-solzhenitsyns-gulag-archipelago/7FA67039210D3500F02B506693BEE30A",
+      "citations": [
+        {
+          "slug": "the-gulag-archipelago",
+          "claim_index": 1,
+          "source_title": "The First Great Leap Forward Reconsidered"
+        },
+        {
+          "slug": "the-gulag-archipelago",
+          "claim_index": 3,
+          "source_title": "The First Great Leap Forward Reconsidered"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/slavic-review/article/abs/first-great-leap-forward-reconsidered-lessons-of-solzhenitsyns-gulag-archipelago/7FA67039210D3500F02B506693BEE30A",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.cambridge.org/core/journals/world-politics/article/braudels-mediterranean-un-defi-latin/D8981CD076B725DA461D4AD6895B2C00",
       "citations": [
         {
@@ -8481,6 +9301,23 @@
       "error": null
     },
     {
+      "url": "https://www.christiancentury.org/reviews/2005-11/team-rivals-political-genius-abraham-lincoln",
+      "citations": [
+        {
+          "slug": "team-of-rivals",
+          "claim_index": 2,
+          "source_title": "Team of Rivals review"
+        }
+      ],
+      "host": "christiancentury.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.christiancentury.org/reviews/2005-11/team-rivals-political-genius-abraham-lincoln",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.cia.gov/legacy/headquarters/a-12-oxcart/",
       "citations": [
         {
@@ -8562,6 +9399,45 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.cia.gov/resources/csi/studies-in-intelligence/archives/vol-42-no-5/the-u-2-program-the-dcis-perspective/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.civilwarmonitor.com/article/battle-cry-of-freedom-reflections/",
+      "citations": [
+        {
+          "slug": "battle-cry-of-freedom",
+          "claim_index": 3,
+          "source_title": "Reflections on Battle Cry of Freedom"
+        }
+      ],
+      "host": "civilwarmonitor.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.civilwarmonitor.com/article/battle-cry-of-freedom-reflections/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cjr.org/fiftieth_anniversary/caros_way.php",
+      "citations": [
+        {
+          "slug": "the-power-broker",
+          "claim_index": 1,
+          "source_title": "Caro's Way"
+        },
+        {
+          "slug": "the-power-broker",
+          "claim_index": 2,
+          "source_title": "Caro's Way"
+        }
+      ],
+      "host": "cjr.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cjr.org/fiftieth_anniversary/caros_way.php",
       "redirected": false,
       "error": null
     },
@@ -8721,12 +9597,12 @@
         }
       ],
       "host": "english.cam.ac.uk",
-      "state": "network_error",
-      "method": "GET",
-      "status": null,
-      "final_url": null,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.english.cam.ac.uk/spenseronline/review/volume-42/issue-422-3/reviews/stephen-greenblatt-the-swerve-and-gerard-passanante-the-lucretian-renaissance/index.html",
       "redirected": false,
-      "error": "TypeError: fetch failed"
+      "error": null
     },
     {
       "url": "https://www.epa.gov/archive/epa/sites/production/files/documents/DDT.pdf",
@@ -9554,9 +10430,9 @@
         }
       ],
       "host": "historians.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.historians.org/perspectives-article/weird-science-incest-and-history-may-2020/",
       "redirected": false,
       "error": null
@@ -9641,6 +10517,40 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.history.uscg.mil/Research/THE-LONG-BLUE-LINE/Article/2925266/the-long-blue-line-mrs-friedmanthe-coast-guards-cryptologist-in-charge-and-nsc/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.historynewsnetwork.org/article/matthew-pinsker-lincoln-and-the-myth-of-team-of-ri",
+      "citations": [
+        {
+          "slug": "team-of-rivals",
+          "claim_index": 3,
+          "source_title": "Matthew Pinsker on the myth of Team of Rivals"
+        }
+      ],
+      "host": "historynewsnetwork.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.historynewsnetwork.org/article/matthew-pinsker-lincoln-and-the-myth-of-team-of-ri",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.historynewsnetwork.org/article/the-civil-war-and-its-persistent-resonance-an-inte",
+      "citations": [
+        {
+          "slug": "battle-cry-of-freedom",
+          "claim_index": 2,
+          "source_title": "Civil War and its Persistent Resonance"
+        }
+      ],
+      "host": "historynewsnetwork.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.historynewsnetwork.org/article/the-civil-war-and-its-persistent-resonance-an-inte",
       "redirected": false,
       "error": null
     },
@@ -9880,6 +10790,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.jstor.org/stable/j.ctv15r58dw",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.jstor.org/stable/j.ctv47w3fn",
+      "citations": [
+        {
+          "slug": "night-elie-wiesel",
+          "claim_index": 1,
+          "source_title": "Lessons and Legacies: reexamining Night"
+        }
+      ],
+      "host": "jstor.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/j.ctv47w3fn",
       "redirected": false,
       "error": null
     },
@@ -10172,6 +11099,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics/skunkworks/skunk-works-origin-story.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.mdpi.com/2076-0787/6/4/94",
+      "citations": [
+        {
+          "slug": "night-elie-wiesel",
+          "claim_index": 2,
+          "source_title": "Triangulating Trauma and Night"
+        },
+        {
+          "slug": "night-elie-wiesel",
+          "claim_index": 3,
+          "source_title": "Triangulating Trauma and Night"
+        }
+      ],
+      "host": "mdpi.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.mdpi.com/2076-0787/6/4/94",
       "redirected": false,
       "error": null
     },
@@ -10509,7 +11458,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature09678?error=cookies_not_supported&code=c39cd678-ce8f-4944-b4a0-0bb750fd545f",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=d9b90b8e-bb9b-45fd-ac84-88d064ac17ab",
       "redirected": true,
       "error": null
     },
@@ -10531,7 +11480,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=fb18e73f-859e-47de-a96f-2350c91db65c",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=95101381-c5ac-4c09-975f-9f0270325df6",
       "redirected": true,
       "error": null
     },
@@ -10548,7 +11497,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=e757e0de-0961-446b-8dbd-faa6b4683b0e",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=f0ad93cc-9279-414e-b92d-9f743ceaf7b8",
       "redirected": true,
       "error": null
     },
@@ -10582,7 +11531,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=0ecf1264-d79c-4084-b7d8-6700496d9c45",
+      "final_url": "https://www.nature.com/articles/s41576-020-00305-9?error=cookies_not_supported&code=dbf32231-79da-4a57-8f42-15fead2f83a5",
       "redirected": true,
       "error": null
     },
@@ -10599,8 +11548,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-022-00537-x",
-      "redirected": false,
+      "final_url": "https://www.nature.com/articles/s41576-022-00537-x?error=cookies_not_supported&code=f34ac364-6ff9-4014-a040-a0ef69ec7d91",
+      "redirected": true,
       "error": null
     },
     {
@@ -10616,7 +11565,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=51fc6f43-59db-4bbe-bae2-f7df38b34ca8",
+      "final_url": "https://www.nature.com/articles/s41579-018-0116-y?error=cookies_not_supported&code=68d6c1e7-f00b-485e-a9ee-3a35d0c2e689",
       "redirected": true,
       "error": null
     },
@@ -10638,7 +11587,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=7f7558e2-cbdb-4f38-8bce-8d28b8185d10",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=cbd9fa1a-b681-4576-b2b3-9b16f87933c4",
       "redirected": true,
       "error": null
     },
@@ -11171,6 +12120,23 @@
       "error": null
     },
     {
+      "url": "https://www.nybooks.com/articles/1969/01/16/that-war-again/",
+      "citations": [
+        {
+          "slug": "the-origins-of-the-second-world-war",
+          "claim_index": 2,
+          "source_title": "That War Again"
+        }
+      ],
+      "host": "nybooks.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nybooks.com/articles/1969/01/16/that-war-again/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.nybooks.com/articles/1979/03/08/the-road-to-morocco/",
       "citations": [
         {
@@ -11184,6 +12150,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nybooks.com/articles/1979/03/08/the-road-to-morocco/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nybooks.com/articles/1988/06/02/america-against-itself/",
+      "citations": [
+        {
+          "slug": "battle-cry-of-freedom",
+          "claim_index": 3,
+          "source_title": "America Against Itself"
+        }
+      ],
+      "host": "nybooks.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nybooks.com/articles/1988/06/02/america-against-itself/",
       "redirected": false,
       "error": null
     },
@@ -11461,6 +12444,40 @@
       "error": null
     },
     {
+      "url": "https://www.robertcaro.org/the-power-broker",
+      "citations": [
+        {
+          "slug": "the-power-broker",
+          "claim_index": 1,
+          "source_title": "The Power Broker: Robert Caro"
+        }
+      ],
+      "host": "robertcaro.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.robertcaro.org/the-power-broker",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.royal.uk/angevins?page=1",
+      "citations": [
+        {
+          "slug": "the-plantagenets",
+          "claim_index": 1,
+          "source_title": "The Royal Family: The Angevins"
+        }
+      ],
+      "host": "royal.uk",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.royal.uk/angevins?page=1",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.royalobservatorygreenwich.org/articles.php?article=1290",
       "citations": [
         {
@@ -11539,6 +12556,23 @@
       "error": null
     },
     {
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S2365314022000225",
+      "citations": [
+        {
+          "slug": "night-elie-wiesel",
+          "claim_index": 2,
+          "source_title": "The tension between fact and fiction in Holocaust literature"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/org/science/article/pii/S2365314022000225",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0048721X04000156",
       "citations": [
         {
@@ -11590,8 +12624,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.sciencedirect.com/science/article/pii/S0167814098001431",
-      "redirected": false,
+      "final_url": "https://www.sciencedirect.com/user/identity/landing?code=1AVTsyLKRIKtY_Nq2iC6svFIBkAjJwKeHgpOZPNh&state=retryCounter%3D0%26csrfToken%3D5ba56510-19e2-4786-bd55-ed169aff53b2%26idpPolicy%3Durn%253Acom%253Aelsevier%253Aidp%253Apolicy%253Aproduct%253Ainst_assoc%26returnUrl%3D%252Fscience%252Farticle%252Fpii%252FS0167814098001431%26migrated%3DMIGRATED%26prompt%3Dnone%26cid%3Darp-de96d498-7ccb-49e3-8fba-d73747064c9b",
+      "redirected": true,
       "error": null
     },
     {
@@ -11799,9 +12833,9 @@
         }
       ],
       "host": "si.edu",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.si.edu/object/five-days-memorial-life-and-death-storm-ravaged-hospital-sheri-fink%3Asiris_sil_1056647",
       "redirected": false,
       "error": null
@@ -11825,6 +12859,23 @@
       "method": "GET",
       "status": 200,
       "final_url": "https://www.smithsonianmag.com/history/the-real-history-behind-killers-of-the-flower-moon-180983086/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/10999940903571304",
+      "citations": [
+        {
+          "slug": "the-autobiography-of-malcolm-x",
+          "claim_index": 3,
+          "source_title": "Alex Haley and Malcolm X: struggle for authorship"
+        }
+      ],
+      "host": "tandfonline.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/10999940903571304",
       "redirected": false,
       "error": null
     },
@@ -11936,6 +12987,33 @@
       "error": null
     },
     {
+      "url": "https://www.timeshighereducation.com/books/the-canon-the-origins-of-the-second-world-war-by-ajp-taylor/406820.article",
+      "citations": [
+        {
+          "slug": "the-origins-of-the-second-world-war",
+          "claim_index": 1,
+          "source_title": "The Canon: The Origins of the Second World War"
+        },
+        {
+          "slug": "the-origins-of-the-second-world-war",
+          "claim_index": 2,
+          "source_title": "The Canon: A. J. P. Taylor"
+        },
+        {
+          "slug": "the-origins-of-the-second-world-war",
+          "claim_index": 3,
+          "source_title": "The Canon: A. J. P. Taylor"
+        }
+      ],
+      "host": "timeshighereducation.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.timeshighereducation.com/books/the-canon-the-origins-of-the-second-world-war-by-ajp-taylor/406820.article",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.uscg.mil/Units/Coast-Guard-Investigative-Service/History/",
       "citations": [
         {
@@ -11990,6 +13068,23 @@
       "final_url": "https://www.usni.org/magazines/naval-history-magazine/2015/june/looking-back-fatal-chain",
       "redirected": false,
       "error": null
+    },
+    {
+      "url": "https://www.washingtonpost.com/archive/entertainment/books/2005/11/06/whos-the-boss/42385e4b-42bb-4487-803c-2b5cd060e9f9/",
+      "citations": [
+        {
+          "slug": "team-of-rivals",
+          "claim_index": 2,
+          "source_title": "Who's the Boss?"
+        }
+      ],
+      "host": "washingtonpost.com",
+      "state": "transient",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "AbortError: This operation was aborted"
     },
     {
       "url": "https://www.who.int/initiatives/glass",
@@ -12121,8 +13216,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/1/3/95-0307_article",
-      "redirected": true,
+      "final_url": "https://wwwnc.cdc.gov/eid/article/1/3/95-0307_article",
+      "redirected": false,
       "error": null
     },
     {
@@ -12138,8 +13233,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/1/05-0979_article",
-      "redirected": true,
+      "final_url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article",
+      "redirected": false,
       "error": null
     },
     {

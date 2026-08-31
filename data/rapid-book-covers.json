@@ -1151,6 +1151,83 @@
       "source_authors": [
         "Eric Hobsbawm"
       ]
+    },
+    {
+      "slug": "king-leopolds-ghost",
+      "match_state": "exact_title_author",
+      "cover_id": 392738,
+      "cover_url": "https://covers.openlibrary.org/b/id/392738-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1869541W",
+      "source_title": "King Leopold's ghost",
+      "source_authors": [
+        "Adam Hochschild"
+      ]
+    },
+    {
+      "slug": "bury-my-heart-at-wounded-knee",
+      "match_state": "exact_title_author",
+      "cover_id": 15189938,
+      "cover_url": "https://covers.openlibrary.org/b/id/15189938-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL44094023W",
+      "source_title": "Bury My Heart at Wounded Knee",
+      "source_authors": [
+        "Dee Brown"
+      ]
+    },
+    {
+      "slug": "battle-cry-of-freedom",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "team-of-rivals",
+      "match_state": "exact_title_author",
+      "cover_id": 9286949,
+      "cover_url": "https://covers.openlibrary.org/b/id/9286949-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1856010W",
+      "source_title": "Team of Rivals",
+      "source_authors": [
+        "Doris Kearns Goodwin"
+      ]
+    },
+    {
+      "slug": "the-power-broker",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-rise-and-fall-of-the-third-reich",
+      "match_state": "exact_title_author",
+      "cover_id": 6558536,
+      "cover_url": "https://covers.openlibrary.org/b/id/6558536-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL47181W",
+      "source_title": "The Rise and Fall of the Third Reich",
+      "source_authors": [
+        "William L. Shirer"
+      ]
+    },
+    {
+      "slug": "the-gulag-archipelago",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-origins-of-the-second-world-war",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-autobiography-of-malcolm-x",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "night-elie-wiesel",
+      "match_state": "exact_title_author",
+      "cover_id": 7732035,
+      "cover_url": "https://covers.openlibrary.org/b/id/7732035-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL13341644W",
+      "source_title": "Night",
+      "source_authors": [
+        "Elie Wiesel",
+        "Marion Wiesel",
+        "Wiesel,Elie"
+      ]
     }
   ]
 }
