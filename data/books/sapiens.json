@@ -41,8 +41,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": [],
-      "source_ids": ["sapiens-source-01", "sapiens-source-04", "sapiens-source-06"]
+      "evidence_record_ids": ["sapiens-evidence-02a", "sapiens-evidence-02b", "sapiens-evidence-02c", "sapiens-evidence-02d"],
+      "source_ids": ["sapiens-source-01", "sapiens-source-04", "sapiens-source-06", "sapiens-source-10", "sapiens-source-11", "sapiens-source-12"]
     },
     {
       "claim_id": "sapiens-claim-03",
@@ -102,16 +102,52 @@
     { "from_group_id": "sapiens-group-agricultural-tradeoff", "to_group_id": "sapiens-group-unifying-orders", "relation": "proposed_demographic_path" },
     { "from_group_id": "sapiens-group-unifying-orders", "to_group_id": "sapiens-group-science-empire-capital", "relation": "proposed_institutional_path" }
   ],
-  "evidence_records": [],
+  "evidence_records": [
+    {
+      "evidence_id": "sapiens-evidence-02a",
+      "claim_id": "sapiens-claim-02",
+      "source_id": "sapiens-source-06",
+      "direction": "supports",
+      "finding": "A global country-level comparison found extinction severity was strongly associated with hominin paleobiogeography and only weakly associated with glacial-interglacial climate change, with stronger human-linked patterns outside sub-Saharan Africa.",
+      "scope_and_limits": "The macroecological association supports a major human role, but country-level data, body-size thresholds, chronology, and spatial aggregation cannot prove one mechanism or verify the book's exact species fraction."
+    },
+    {
+      "evidence_id": "sapiens-evidence-02b",
+      "claim_id": "sapiens-claim-02",
+      "source_id": "sapiens-source-10",
+      "direction": "supports",
+      "finding": "Genomic reconstructions for 139 surviving terrestrial megafauna species found declines in 91% of species, with global breakpoints 32,000–76,000 years ago and models keyed to Homo sapiens arrival outperforming climate-only models.",
+      "scope_and_limits": "The study examines effective population histories of surviving species rather than an extinction denominator; its human-arrival predictors are indirect and its climate models use broad temperature and precipitation summaries."
+    },
+    {
+      "evidence_id": "sapiens-evidence-02c",
+      "claim_id": "sapiens-claim-02",
+      "source_id": "sapiens-source-11",
+      "direction": "complicates",
+      "finding": "Ancient DNA, range models, and human fossil records for six northern megafauna showed species-specific histories: climate alone could explain some losses, while combined climatic and anthropogenic effects best fit others.",
+      "scope_and_limits": "Six cold-adapted Eurasian and North American taxa cannot settle the global pattern, but they directly caution against treating every extinction as a uniform human-driven event."
+    },
+    {
+      "evidence_id": "sapiens-evidence-02d",
+      "claim_id": "sapiens-claim-02",
+      "source_id": "sapiens-source-12",
+      "direction": "complicates",
+      "finding": "A North American radiocarbon event-count analysis found megafauna declines correlated with temperature decreases and found no persistent relationship with its proxy for human population levels from 15,000 to 11,700 years ago.",
+      "scope_and_limits": "This regional result does not exclude hunting, habitat disruption, or a final human contribution, and radiocarbon-based population proxies have preservation and sampling limits."
+    }
+  ],
   "sources": [
     { "source_id": "sapiens-source-01", "title": "Sapiens: A Brief History of Humankind", "publisher": "Yuval Noah Harari", "year": null, "url": "https://www.ynharari.com/book/sapiens/", "source_class": "official_book_overview", "independence": "author_aligned", "assessment_state": "attribution_only" },
     { "source_id": "sapiens-source-02", "title": "Power and Imagination", "publisher": "Yuval Noah Harari", "year": null, "url": "https://www.ynharari.com/topic/power-and-imagination/", "source_class": "authorized_excerpt", "independence": "author_authored", "assessment_state": "attribution_only" },
     { "source_id": "sapiens-source-03", "title": "Money and Politics", "publisher": "Yuval Noah Harari", "year": null, "url": "https://www.ynharari.com/topic/money-and-politics/", "source_class": "authorized_excerpt", "independence": "author_authored", "assessment_state": "attribution_only" },
     { "source_id": "sapiens-source-04", "title": "Survival Contingencies: A Review of Sapiens", "publisher": "Journal of the Experimental Analysis of Behavior", "year": 2019, "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7198686/", "source_class": "scholarly_review", "independence": "independent", "assessment_state": "assessed_for_attribution" },
     { "source_id": "sapiens-source-05", "title": "The revolution that wasn't: A new interpretation of the origin of modern human behavior", "publisher": "Journal of Human Evolution", "year": 2000, "url": "https://doi.org/10.1006/jhev.2000.0435", "source_class": "peer_reviewed_synthesis", "independence": "independent", "assessment_state": "candidate" },
-    { "source_id": "sapiens-source-06", "title": "Global late Quaternary megafauna extinctions linked to humans, not climate change", "publisher": "Proceedings of the Royal Society B", "year": 2014, "url": "https://doi.org/10.1098/rspb.2013.3254", "source_class": "peer_reviewed_comparative_study", "independence": "independent", "assessment_state": "candidate" },
+    { "source_id": "sapiens-source-06", "title": "Global late Quaternary megafauna extinctions linked to humans, not climate change", "publisher": "Proceedings of the Royal Society B", "year": 2014, "url": "https://doi.org/10.1098/rspb.2013.3254", "source_class": "peer_reviewed_comparative_study", "independence": "independent", "assessment_state": "assessed" },
     { "source_id": "sapiens-source-07", "title": "Stature and robusticity during the agricultural transition", "publisher": "Economics & Human Biology", "year": 2011, "url": "https://doi.org/10.1016/j.ehb.2011.03.004", "source_class": "peer_reviewed_synthesis", "independence": "independent", "assessment_state": "candidate" },
     { "source_id": "sapiens-source-08", "title": "Markets, Religion, Community Size, and the Evolution of Fairness and Punishment", "publisher": "Science", "year": 2010, "url": "https://doi.org/10.1126/science.1182238", "source_class": "cross_cultural_behavioral_study", "independence": "independent", "assessment_state": "candidate" },
-    { "source_id": "sapiens-source-09", "title": "Experienced well-being rises with income, even above $75,000 per year", "publisher": "Proceedings of the National Academy of Sciences", "year": 2021, "url": "https://doi.org/10.1073/pnas.2016976118", "source_class": "experience_sampling_study", "independence": "independent", "assessment_state": "candidate" }
+    { "source_id": "sapiens-source-09", "title": "Experienced well-being rises with income, even above $75,000 per year", "publisher": "Proceedings of the National Academy of Sciences", "year": 2021, "url": "https://doi.org/10.1073/pnas.2016976118", "source_class": "experience_sampling_study", "independence": "independent", "assessment_state": "candidate" },
+    { "source_id": "sapiens-source-10", "title": "Worldwide Late Pleistocene and Early Holocene population declines in extant megafauna are associated with Homo sapiens expansion rather than climate change", "publisher": "Nature Communications", "year": 2023, "url": "https://doi.org/10.1038/s41467-023-43426-5", "source_class": "primary_comparative_genomics", "independence": "independent", "assessment_state": "assessed" },
+    { "source_id": "sapiens-source-11", "title": "Species-specific responses of Late Quaternary megafauna to climate and humans", "publisher": "Nature", "year": 2011, "url": "https://doi.org/10.1038/nature10574", "source_class": "primary_ancient_dna_and_range_modeling", "independence": "independent", "assessment_state": "assessed" },
+    { "source_id": "sapiens-source-12", "title": "Climate change, not human population growth, correlates with Late Quaternary megafauna declines in North America", "publisher": "Nature Communications", "year": 2021, "url": "https://doi.org/10.1038/s41467-021-21201-8", "source_class": "primary_chronological_modeling", "independence": "independent", "assessment_state": "assessed" }
   ]
 }
