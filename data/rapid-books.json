@@ -2951,6 +2951,270 @@
         }
       ],
       "other_claims": ["Sarah Graves's perspective makes family obligation as important as famous male leadership.", "Survivor memory and later journalism repeatedly reshaped the party's public image."]
+    },
+    {
+      "slug": "isaacs-storm",
+      "entity_key": "web:eriklarsonbooks.com/isaacs-storm",
+      "title": "Isaac's Storm",
+      "subtitle": "A Man, a Time, and the Deadliest Hurricane in History",
+      "author": "Erik Larson",
+      "year": 1999,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The storm's scale and Galveston's vulnerability are secure. Larson fairly indicts forecasting culture and overconfidence, although surviving warning records complicate a story of simple bureaucratic blindness.",
+      "claims": [
+        {
+          "claim": "The September 1900 Galveston hurricane produced a catastrophic storm surge and killed at least six thousand people, the deadliest U.S. natural disaster.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Contemporary records and later reconstructions describe a major hurricane, a surge around fifteen feet, destruction of thousands of buildings, and an uncertain death toll commonly estimated between six and eight thousand.",
+          "sources": [
+            { "title": "National Weather Service: Galveston Storm of 1900", "url": "https://vlab.noaa.gov/web/nws-heritage/-/galveston-storm-of-1900" },
+            { "title": "Galveston History Center: 1900 Storm FAQs", "url": "https://www.galvestonhistorycenter.org/research/storm-faqs" }
+          ]
+        },
+        {
+          "claim": "Weather Bureau hierarchy, rivalry with Cuban forecasters, and Isaac Cline's confidence left Galveston dangerously unprepared.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Officials underestimated the storm's path and surge risk, communications were limited, and Cline had publicly discounted the need for a seawall. Yet Washington sent repeated storm messages and Cline raised warning flags, so the failure was not total silence.",
+          "sources": [
+            { "title": "Galveston History Center: Storm warning records", "url": "https://www.galvestonhistorycenter.org/research/storm-faqs" },
+            { "title": "National Weather Service: Isaac Monroe Cline", "url": "https://vlab.noaa.gov/web/nws-heritage/-/isaac-monroe-cline-the-cyclone-pioneer" }
+          ]
+        },
+        {
+          "claim": "The disaster drove Galveston to build a seawall and raise the city, sharply reducing vulnerability to later Gulf storms.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Engineers constructed a seawall and elevated large parts of the inhabited city with pumped fill. Later hurricanes still caused damage, but the projects substantially reduced storm-surge exposure and became landmark urban-protection works.",
+          "sources": [
+            { "title": "National Weather Service: Galveston Storm of 1900", "url": "https://vlab.noaa.gov/web/nws-heritage/-/galveston-storm-of-1900" },
+            { "title": "TIME: How Galveston rebuilt after the 1900 hurricane", "url": "https://time.com/4918607/texas-hurricane-harvey-galveston/" }
+          ]
+        }
+      ],
+      "other_claims": ["Galveston's commercial dominance faded as Houston's protected ship channel expanded.", "Cline's later self-account emphasized warnings in ways that other records complicate."]
+    },
+    {
+      "slug": "dead-wake",
+      "entity_key": "web:eriklarsonbooks.com/dead-wake",
+      "title": "Dead Wake",
+      "subtitle": "The Last Crossing of the Lusitania",
+      "author": "Erik Larson",
+      "year": 2015,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The torpedoing and human toll are firm. British intelligence knew U-20 was active but evidence does not establish sacrifice, and the sinking influenced U.S. opinion without directly causing entry two years later.",
+      "claims": [
+        {
+          "claim": "German submarine U-20 torpedoed Lusitania off Ireland on 7 May 1915, sinking the liner rapidly and killing nearly 1,200 people.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "German logs, British inquiries, survivor testimony, and the wreck establish the attack and rapid sinking. The dead included 128 U.S. citizens, making the event a major diplomatic and propaganda crisis during American neutrality.",
+          "sources": [
+            { "title": "Council on Foreign Relations: The sinking of Lusitania", "url": "https://www.cfr.org/articles/the-sinking-of-the-lusitania" },
+            { "title": "U.S. Naval Institute: The fatal chain", "url": "https://www.usni.org/magazines/naval-history-magazine/2015/june/looking-back-fatal-chain" }
+          ]
+        },
+        {
+          "claim": "British Room 40 knew U-20 was operating near Lusitania's route yet failed to give Captain Turner a specific warning or escort.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Intercepts gave the Admiralty unusually good knowledge of submarine activity, while warnings reaching the ship were general and escort arrangements absent. Records do not prove officials knew the exact encounter would occur or deliberately withheld rescue.",
+          "sources": [
+            { "title": "U.S. Naval Institute: The fatal chain", "url": "https://www.usni.org/magazines/naval-history-magazine/2015/june/looking-back-fatal-chain" },
+            { "title": "Council on Foreign Relations: The sinking of Lusitania", "url": "https://www.cfr.org/articles/the-sinking-of-the-lusitania" }
+          ]
+        },
+        {
+          "claim": "The sinking of Lusitania caused the United States to enter the First World War.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "The attack shifted opinion, hardened Wilson's diplomacy, and remained potent propaganda. The United States did not declare war for almost two years; Germany's resumed unrestricted submarine campaign and the Zimmermann Telegram were more immediate triggers.",
+          "sources": [
+            { "title": "Council on Foreign Relations: The sinking of Lusitania", "url": "https://www.cfr.org/articles/the-sinking-of-the-lusitania" },
+            { "title": "TIME archive: Death by Drowning", "url": "https://time.com/3759641/death-by-drowning/" }
+          ]
+        }
+      ],
+      "other_claims": ["Lusitania carried rifle ammunition but was primarily a passenger liner, not a disguised troopship.", "Wartime inquiries and secrecy distorted later debates about the second explosion."]
+    },
+    {
+      "slug": "the-johnstown-flood",
+      "entity_key": "web:simonandschuster.com/the-johnstown-flood",
+      "title": "The Johnstown Flood",
+      "subtitle": "The Incredible Story Behind One of the Most Devastating Disasters America Has Ever Known",
+      "author": "David McCullough",
+      "year": 1968,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The dam breach, avoidable vulnerabilities, and legal impunity are strongly supported. Modern hydrology adds an important qualification: extreme rainfall may have overwhelmed even an unmodified dam.",
+      "claims": [
+        {
+          "claim": "Failure of the South Fork Dam on 31 May 1889 sent a destructive flood into Johnstown and killed more than 2,200 people.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Contemporary engineering reports, survivor records, and modern hydraulic reconstruction fix the breach in mid-afternoon after extreme rainfall. The released reservoir devastated downstream communities and produced one of the deadliest U.S. floods.",
+          "sources": [
+            { "title": "Pennsylvania Historical and Museum Commission: Johnstown Flood", "url": "https://www.phmc.state.pa.us/portal/communities/documents/1865-1945/johnstown-flood.html" },
+            { "title": "Dam-breach hydrology of the Johnstown flood", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4946313/" }
+          ]
+        },
+        {
+          "claim": "Alterations and poor maintenance by the South Fork Fishing and Hunting Club materially increased the dam's risk of failure.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The rebuilt dam had a lowered crest, impaired outlet, and spillway screens that trapped debris, and warnings went unaddressed. Modern modeling suggests the extraordinary inflow may also have overtopped the original design, so club negligence was not the sole cause.",
+          "sources": [
+            { "title": "Engineering and Building Record: Johnstown Flood report", "url": "https://www.heritagejohnstown.org/education-materials/flood-museum-materials/engineering-and-building-record-special-report-on-the-johnstown-flood-june-1889/" },
+            { "title": "Dam-breach hydrology of the Johnstown flood", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4946313/" }
+          ]
+        },
+        {
+          "claim": "The wealthy club members escaped legal liability despite widespread contemporary judgment that their stewardship was culpable.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Civil claims failed under the era's negligence standards, no member was criminally convicted, and the club's resources contrasted sharply with downstream losses. The outcome later became an example in arguments for stricter liability.",
+          "sources": [
+            { "title": "Pennsylvania Historical and Museum Commission: Johnstown Flood", "url": "https://www.phmc.state.pa.us/portal/communities/documents/1865-1945/johnstown-flood.html" },
+            { "title": "Johnstown Flood Museum: Dam safety testimony", "url": "https://www.heritagejohnstown.org/edusecret/flood/why/prr_reports.html" }
+          ]
+        }
+      ],
+      "other_claims": ["Clara Barton's relief work made the American Red Cross nationally visible.", "Sensational press coverage mixed real class conflict with invented details."]
+    },
+    {
+      "slug": "midnight-in-chernobyl",
+      "entity_key": "web:adam-higginbotham.com/midnight-in-chernobyl",
+      "title": "Midnight in Chernobyl",
+      "subtitle": "The Untold Story of the World's Greatest Nuclear Disaster",
+      "author": "Adam Higginbotham",
+      "year": 2019,
+      "score": 100,
+      "confidence": "high",
+      "summary": "Its central account matches the post-Soviet technical record: an unsafe test met unstable reactor design, operators lacked crucial information, and institutional secrecy deepened both the accident and its aftermath.",
+      "claims": [
+        {
+          "claim": "Chernobyl Unit 4 exploded during a turbine rundown test conducted in an unstable low-power configuration with safety rules and systems compromised.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "INSAG's revised account documents the test, low operating reactivity margin, control actions, and disabled or ineffective protections. Operator decisions mattered, but they occurred within procedures and information that failed to disclose the full hazard.",
+          "sources": [
+            { "title": "IAEA INSAG-7: The Chernobyl Accident, updating INSAG-1", "url": "https://pub.iaea.org/MTCD/publications/PDF/Pub913e_web.pdf" },
+            { "title": "IAEA Nuclear Energy Series: RBMK operating experience", "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB2022_web.pdf" }
+          ]
+        },
+        {
+          "claim": "RBMK design defects—especially a positive void coefficient and control-rod effects—made the reactor capable of a catastrophic power surge.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The reactor became more reactive as coolant boiled under key conditions, and initial insertion of graphite-displacer control rods could add reactivity locally. These defects were central to the surge and were modified across the remaining fleet.",
+          "sources": [
+            { "title": "IAEA INSAG-7: The Chernobyl Accident, updating INSAG-1", "url": "https://pub.iaea.org/MTCD/publications/PDF/Pub913e_web.pdf" },
+            { "title": "IAEA Bulletin: Chernobyl safety reviews", "url": "https://www.iaea.org/sites/default/files/vol381.pdf" }
+          ]
+        },
+        {
+          "claim": "Soviet secrecy concealed known reactor hazards, delayed public warning, and initially shifted excessive blame onto plant operators.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Design organizations withheld safety-relevant characteristics from operators and international reporting, while officials delayed evacuation and public disclosure. INSAG-7 explicitly revised the earlier operator-centered explanation toward design and safety-culture failures.",
+          "sources": [
+            { "title": "IAEA INSAG-7: The Chernobyl Accident, updating INSAG-1", "url": "https://pub.iaea.org/MTCD/publications/PDF/Pub913e_web.pdf" },
+            { "title": "CIA Reading Room: Soviet account of the Chernobyl accident", "url": "https://www.cia.gov/readingroom/docs/THE%20CHERNOBYL%20ACCIDENT%20%20S%5B16474286%5D.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["The improvised liquidator response contained the accident at enormous and unevenly measured human cost.", "Precise long-term excess-cancer totals remain model-dependent and politically contested."]
+    },
+    {
+      "slug": "five-days-at-memorial",
+      "entity_key": "web:sherifink.net/five-days-at-memorial",
+      "title": "Five Days at Memorial",
+      "subtitle": "Life and Death in a Storm-Ravaged Hospital",
+      "author": "Sheri Fink",
+      "year": 2013,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The hospital's infrastructure collapse and unequal evacuation are strongly documented. Drug administration is established, but intent, medical causation, and the label euthanasia remain disputed and were never resolved by a trial.",
+      "claims": [
+        {
+          "claim": "Flooding and prolonged utility failure left Memorial Medical Center dangerously hot, dark, undersupplied, and dependent on a slow improvised evacuation.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Katrina's aftermath disabled normal power, water, communications, elevators, and climate control while hundreds of patients, staff, and family members remained. Evacuation by boat and helicopter proceeded under extreme heat and uncertainty.",
+          "sources": [
+            { "title": "Pulitzer Prize: Sheri Fink's Memorial investigation", "url": "https://www.pulitzer.org/winners/sheri-fink-propublica-collaboration-new-york-times-magazine" },
+            { "title": "Smithsonian catalog: Five Days at Memorial", "url": "https://www.si.edu/object/five-days-memorial-life-and-death-storm-ravaged-hospital-sheri-fink%3Asiris_sil_1056647" }
+          ]
+        },
+        {
+          "claim": "Clinicians intentionally hastened the deaths of multiple patients with morphine and midazolam during the final evacuation.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Witnesses, medication records, and toxicology support that several patients received the drugs shortly before death. Prosecutors alleged homicide and staff described comfort care; causation and intent were contested, and a grand jury brought no indictment.",
+          "sources": [
+            { "title": "Pulitzer Prize: The Deadly Choices at Memorial", "url": "https://www.pulitzer.org/winners/sheri-fink-propublica-collaboration-new-york-times-magazine" },
+            { "title": "ProPublica: Katrina hospital investigation", "url": "https://www.propublica.org/article/major-investigation-our-katrina-hospital-story-in-the-new-york-times-magazi" }
+          ]
+        },
+        {
+          "claim": "Improvised triage categories and divided hospital ownership placed some very ill and long-term-care patients at the back of the evacuation line.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Staff created evacuation priorities under pressure, often deprioritizing people with do-not-resuscitate orders or difficult transport needs. LifeCare patients occupied the same building but belonged to a separate company, compounding unclear authority and responsibility.",
+          "sources": [
+            { "title": "Pulitzer Prize: Sheri Fink's Memorial investigation", "url": "https://www.pulitzer.org/winners/sheri-fink-propublica-collaboration-new-york-times-magazine" },
+            { "title": "Smithsonian catalog: Five Days at Memorial", "url": "https://www.si.edu/object/five-days-memorial-life-and-death-storm-ravaged-hospital-sheri-fink%3Asiris_sil_1056647" }
+          ]
+        }
+      ],
+      "other_claims": ["Disaster plans focused on short outages rather than prolonged infrastructure and governance failure.", "Later Louisiana law expanded legal protections for clinicians during declared emergencies."]
+    },
+    {
+      "slug": "fire-weather",
+      "entity_key": "web:johnvaillant.com/fire-weather",
+      "title": "Fire Weather",
+      "subtitle": "A True Story from a Hotter World",
+      "author": "John Vaillant",
+      "year": 2023,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The Fort McMurray disaster and worsening fire-weather background are well supported. Its petrocene feedback is illuminating, but attributing one ignition and urban loss chain directly to climate remains more complex.",
+      "claims": [
+        {
+          "claim": "The 2016 Horse River wildfire forced roughly 88,000 people from Fort McMurray and destroyed thousands of structures in Canada's costliest disaster.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Official and insurance reviews document the rapid urban evacuation, widespread structure loss, and unprecedented insured cost. Wind, dry fuels, ember transport, and vulnerable building edges helped the forest fire become an urban conflagration.",
+          "sources": [
+            { "title": "Institute for Catastrophic Loss Reduction: Fort McMurray report", "url": "https://www.iclr.org/wp-content/uploads/PDFS/Westhaver_Fort_McMurray_Preliminary_Aug_2016.pdf" },
+            { "title": "BioScience: Fires in the Petrocene", "url": "https://academic.oup.com/bioscience/article/75/8/682/8234455" }
+          ]
+        },
+        {
+          "claim": "Human-caused warming is increasing the hot, dry fire-weather conditions that make extreme boreal fires more likely and difficult to control.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Canadian assessments find strong warming and increasing fire-weather risk, consistent with longer seasons and drier fuels. Event-attribution studies for the exact 2016 conditions vary substantially by model, so climate raised background risk without uniquely causing the fire.",
+          "sources": [
+            { "title": "Canada's Changing Climate Report", "url": "https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/energy/Climate-change/pdf/CCCR_FULLREPORT-EN-FINAL.pdf" },
+            { "title": "Agricultural and Forest Meteorology: Fort McMurray event attribution", "url": "https://www.sciencedirect.com/science/article/pii/S0168192318302016" }
+          ]
+        },
+        {
+          "claim": "Fort McMurray's destruction is a direct feedback of the oil-sands economy: fossil-fuel extraction warmed the climate that burned its own city.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "The city exists at large scale because of bitumen production, and fossil emissions drive global warming that worsens fire risk. The specific disaster also depended on ignition, weather, boreal ecology, land use, building materials, preparedness, and chance.",
+          "sources": [
+            { "title": "Canada's Changing Climate Report", "url": "https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/energy/Climate-change/pdf/CCCR_FULLREPORT-EN-FINAL.pdf" },
+            { "title": "Institute for Catastrophic Loss Reduction: Fort McMurray report", "url": "https://www.iclr.org/wp-content/uploads/PDFS/Westhaver_Fort_McMurray_Preliminary_Aug_2016.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["Modern petrochemical-filled homes can release extraordinary heat once ignited.", "Fire suppression and settlement expansion have increased exposure at many wildland–urban edges."]
     }
   ]
 }
