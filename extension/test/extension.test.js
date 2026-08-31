@@ -13,6 +13,7 @@ import { createMetricsStore } from '../lib/local-metrics.js';
 import { identifyPage } from '../lib/page-identity.js';
 import { actionBadgeForState } from '../lib/action-badge.js';
 import { createOriginOptInStore } from '../lib/origin-opt-in.js';
+import { correctionLinkForState } from '../lib/correction-links.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -52,6 +53,22 @@ test('paused analysis versions suppress otherwise complete scores', () => {
   assert.equal(state.analysisVersionId, 'analysis-paused-v2');
   assert.equal(Object.hasOwn(state, 'score'), false);
   assert.match(state.reason, /calibration drift/);
+});
+
+test('correction links distinguish paused, resumed, and superseded transitions', () => {
+  const url = 'https://ai.rhyslindmark.com/claims#correction-event-fixture';
+  assert.deepEqual(correctionLinkForState({ state: 'paused', latestCorrectionUrl: url }), { url, label: 'Open latest pause transition' });
+  assert.deepEqual(correctionLinkForState({ state: 'published', resumedFromVersionId: 'analysis-v3', latestCorrectionUrl: url }), { url, label: 'Open latest resumption transition' });
+  assert.deepEqual(correctionLinkForState({ state: 'published', supersededVersionIds: ['analysis-v1'], latestCorrectionUrl: url }), { url, label: 'Open latest correction transition' });
+  assert.equal(correctionLinkForState({ state: 'pending' }), null);
+});
+
+test('score state propagates correction pointers without adding a paused score', () => {
+  const latestCorrectionUrl = 'https://ai.rhyslindmark.com/claims#correction-event-paused-001';
+  const state = scoreState({ ...registry.analyses[2], latest_correction_event_id: 'correction-event-paused-001', latest_correction_url: latestCorrectionUrl, correction_feed_api_url: 'https://ai.rhyslindmark.com/claims/api/v1/analyses/corrections' });
+  assert.equal(state.latestCorrectionEventId, 'correction-event-paused-001');
+  assert.equal(state.latestCorrectionUrl, latestCorrectionUrl);
+  assert.equal(Object.hasOwn(state, 'score'), false);
 });
 
 test('suppresses partial or malformed scores', () => {

@@ -1,7 +1,7 @@
 export function scoreState(analysis) {
   if (!analysis) return { state: 'not_analyzed', reason: 'No shared analysis exists for this page yet.' };
   if (analysis.status !== 'published') return { state: 'pending', reason: `Analysis is ${analysis.status.replaceAll('_', ' ')}.` };
-  if (analysis.publication_state === 'paused') return { state: 'paused', reason: `Score publication is paused: ${(analysis.paused_reason ?? 'editorial review').replaceAll('_', ' ')}.`, analysisVersionId: analysis.analysis_version_id, supersededVersionIds: analysis.superseded_version_ids ?? [], analysisUrl: analysis.analysis_url };
+  if (analysis.publication_state === 'paused') return { state: 'paused', reason: `Score publication is paused: ${(analysis.paused_reason ?? 'editorial review').replaceAll('_', ' ')}.`, analysisVersionId: analysis.analysis_version_id, supersededVersionIds: analysis.superseded_version_ids ?? [], analysisUrl: analysis.analysis_url, latestCorrectionEventId: analysis.latest_correction_event_id ?? null, latestCorrectionUrl: analysis.latest_correction_url ?? null, correctionFeedApiUrl: analysis.correction_feed_api_url ?? null };
   if (analysis.publication_state !== 'active') return { state: 'pending', reason: 'The current analysis version is not active.' };
 
   const checks = [
@@ -27,6 +27,9 @@ export function scoreState(analysis) {
     analysisVersionId: analysis.analysis_version_id,
     supersededVersionIds: analysis.superseded_version_ids ?? [],
     resumedFromVersionId: analysis.resumed_from_version_id ?? null,
+    latestCorrectionEventId: analysis.latest_correction_event_id ?? null,
+    latestCorrectionUrl: analysis.latest_correction_url ?? null,
+    correctionFeedApiUrl: analysis.correction_feed_api_url ?? null,
   };
 }
 

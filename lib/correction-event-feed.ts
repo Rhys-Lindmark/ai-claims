@@ -11,6 +11,11 @@ export interface CorrectionEvent {
   public_score_state: 'active' | 'paused' | 'superseded';
 }
 
+export interface EntityCorrectionFeed {
+  entity_key: string;
+  events: CorrectionEvent[];
+}
+
 export function validateCorrectionEventFeed(events: CorrectionEvent[]) {
   const errors: string[] = [];
   const forbiddenScoreKeys = /^(score|score_0_100|truth_score|truth_score_0_100|percentage)$/i;
@@ -22,6 +27,16 @@ export function validateCorrectionEventFeed(events: CorrectionEvent[]) {
     if (index > 0 && events[index - 1].to_version_id !== event.from_version_id) errors.push(`${event.event_id} must continue the prior version chain.`);
     const serializedKeys = Object.keys(event).concat(event.changed_records.flatMap((record) => Object.keys(record)));
     if (serializedKeys.some((key) => forbiddenScoreKeys.test(key))) errors.push(`${event.event_id} must not carry score fields.`);
+  }
+  return errors;
+}
+
+export function validateEntityCorrectionFeeds(feeds: EntityCorrectionFeed[]) {
+  const errors: string[] = [];
+  if (new Set(feeds.map((feed) => feed.entity_key)).size !== feeds.length) errors.push('Correction feed entity keys must be unique.');
+  for (const feed of feeds) {
+    if (!feed.entity_key.trim()) errors.push('Correction feeds need an entity key.');
+    errors.push(...validateCorrectionEventFeed(feed.events).map((error) => `${feed.entity_key}: ${error}`));
   }
   return errors;
 }

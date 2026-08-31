@@ -1,6 +1,9 @@
 {
   "fixture_notice": "Synthetic correction events; no real claim, evidence, or score is represented.",
-  "events": [
+  "feeds": [
+    {
+      "entity_key": "web:example.invalid/reviewed-fixture",
+      "events": [
     {
       "event_id": "correction-event-001",
       "sequence": 1,
@@ -39,6 +42,26 @@
         { "kind": "publication_gate", "record_id": "publication-resumption-001", "change": "resumed" }
       ],
       "public_score_state": "active"
+    }
+      ]
+    },
+    {
+      "entity_key": "web:example.invalid/paused-fixture",
+      "events": [
+        {
+          "event_id": "correction-event-paused-001",
+          "sequence": 1,
+          "occurred_at": "2026-08-30T18:00:00Z",
+          "from_version_id": "analysis-paused-v1",
+          "to_version_id": "analysis-paused-v2",
+          "summary": "Recorded claim-selection calibration drift and paused public score display in a new version.",
+          "changed_records": [
+            { "kind": "method", "record_id": "claim-selection-calibration-drift", "change": "warning_opened" },
+            { "kind": "publication_gate", "record_id": "publication-score-gate", "change": "paused" }
+          ],
+          "public_score_state": "paused"
+        }
+      ]
     }
   ]
 }
