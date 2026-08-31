@@ -18,6 +18,7 @@ import { canonicalPrivacyReceipt, privacyReceiptArtifact, SUPPORTED_PRIVACY_RECE
 import syntheticEpisode from '../data/synthetic-youtube-fixture.json' with { type: 'json' };
 import { syntheticEpisodeScore, validateSyntheticEpisodeFixture } from '../lib/episode-fixture.js';
 import { probeResolverUrl } from '../lib/resolver-probe.js';
+import { addProbeHistory, parseProbeHistory, PROBE_HISTORY_LIMIT } from '../lib/probe-history.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -77,6 +78,20 @@ test('resolver probe rejects unsupported page protocols without a request', asyn
   const invalid = await probeResolverUrl('chrome://extensions', { fetchImpl: async () => { called = true; } });
   assert.equal(invalid.state, 'invalid');
   assert.equal(called, false);
+});
+
+test('resolver probe history keeps five identity-free local outcomes', () => {
+  const secret = { entityKey: 'youtube:private-video', canonicalUrl: 'https://youtube.com/watch?v=private-video', title: 'Private title' };
+  let history = [];
+  for (const state of ['reviewed', 'pending', 'not_analyzed', 'error', 'reviewed', 'pending']) {
+    history = addProbeHistory(history, { state, identity: { ...secret, kind: state === 'error' ? 'web' : 'youtube' } });
+  }
+  assert.equal(history.length, PROBE_HISTORY_LIMIT);
+  assert.deepEqual(history[0], { state: 'pending', kind: 'youtube' });
+  const serialized = JSON.stringify(history);
+  assert.doesNotMatch(serialized, /private-video|Private title|canonicalUrl|entityKey|score/i);
+  assert.deepEqual(parseProbeHistory('{bad json'), []);
+  assert.deepEqual(parseProbeHistory('[{"state":"reviewed","kind":"youtube","url":"secret"}]'), [{ state: 'reviewed', kind: 'youtube' }]);
 });
 
 test('recognizes Goodreads books without edition-slug noise', () => {

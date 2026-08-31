@@ -1,20 +1,33 @@
 'use client';
 
 import { ArrowRight, ExternalLink, SearchCheck } from 'lucide-react';
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { probeResolverUrl, type ResolverProbeResult } from '@/extension/lib/resolver-probe.js';
+import { addProbeHistory, parseProbeHistory, type ProbeHistoryEntry } from '@/extension/lib/probe-history.js';
 
 const fixtureUrl = 'https://www.youtube.com/watch?v=ai-claims-synthetic-001';
+const historyKey = 'ai-claims:resolver-probe-history:v1';
 
 export function ResolverProbe() {
   const [url, setUrl] = useState(fixtureUrl);
   const [result, setResult] = useState<ResolverProbeResult | null>(null);
   const [loading, setLoading] = useState(false);
+  const [history, setHistory] = useState<ProbeHistoryEntry[]>([]);
+
+  useEffect(() => {
+    try { setHistory(parseProbeHistory(window.localStorage.getItem(historyKey))); } catch { setHistory([]); }
+  }, []);
 
   async function submit(event: FormEvent) {
     event.preventDefault();
     setLoading(true);
-    setResult(await probeResolverUrl(url));
+    const nextResult = await probeResolverUrl(url);
+    setResult(nextResult);
+    setHistory((current) => {
+      const next = addProbeHistory(current, nextResult);
+      try { window.localStorage.setItem(historyKey, JSON.stringify(next)); } catch { /* History is optional. */ }
+      return next;
+    });
     setLoading(false);
   }
 
@@ -35,6 +48,10 @@ export function ResolverProbe() {
           <p className="mt-5 break-all font-mono text-[9px] font-bold uppercase text-ink/45">{result.identity.entityKey ?? 'No canonical entity'}</p>
           {result.state === 'reviewed' ? <><p className="mt-4 text-xs font-black uppercase">Reviewed fixture score</p><p className="text-7xl font-black leading-none tracking-[-.08em] text-cobalt">{result.score}<span className="text-xl tracking-normal">/100</span></p><p className="mt-4 font-mono text-[8px] font-bold uppercase">{result.reviewedClaims}/{result.eligibleClaims} reviewed · {result.methodologyVersion}</p><a className="mt-5 inline-flex items-center gap-2 font-mono text-[9px] font-bold uppercase text-cobalt underline" href={result.analysisUrl}>Open evidence trail <ExternalLink className="h-3 w-3" /></a></> : <><h3 className="mt-5 text-3xl font-black uppercase">{result.state.replaceAll('_', ' ')}</h3><p className="mt-3 text-sm leading-relaxed text-ink/60">{result.reason}</p>{result.state === 'not_analyzed' ? <a className="mt-5 inline-flex items-center gap-2 font-mono text-[9px] font-bold uppercase text-cobalt underline" href={result.nextAction.url}>{result.nextAction.label} <ExternalLink className="h-3 w-3" /></a> : null}</>}
         </>}
+        <div className="mt-6 border-t-2 border-ink pt-3">
+          <div className="flex items-center justify-between gap-3 font-mono text-[8px] font-bold uppercase"><span>Last five checks · this browser only</span><span>No page identity stored</span></div>
+          {history.length ? <ol className="mt-3 flex flex-wrap gap-2">{history.map((entry, index) => <li className="border border-ink bg-white px-2 py-1 font-mono text-[8px] font-bold uppercase" key={`${entry.kind}-${entry.state}-${index}`}>{entry.kind} · {entry.state.replaceAll('_', ' ')}</li>)}</ol> : <p className="mt-3 text-xs text-ink/50">No checks saved on this device.</p>}
+        </div>
       </article>
     </div>
   </section>;
