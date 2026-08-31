@@ -28,6 +28,13 @@ h2 { margin: 12px 0 5px; font-size: 20px; line-height: 1.1; }
 .pending { border-left: 12px solid var(--coral); }
 .pending h3 { margin: 0 0 8px; font-size: 28px; line-height: .95; }
 .pending p { margin: 0; color: #1c1c1aaa; font-size: 13px; line-height: 1.45; }
+.analysis-flow { margin-top: 14px; border-top: 2px solid var(--ink); }
+.analysis-step { display: grid; grid-template-columns: 24px 1fr; gap: 8px; align-items: start; padding: 9px 0; border-bottom: 1px solid #1c1c1a33; }
+.analysis-step > span { display: grid; width: 20px; height: 20px; place-items: center; background: #1c1c1a22; font: 800 8px ui-monospace, SFMono-Regular, Menlo, monospace; }
+.analysis-step.complete > span { background: var(--cobalt); color: white; }
+.analysis-step.ready > span { background: var(--acid); }
+.analysis-step.locked { opacity: .62; }
+.pending .analysis-step p { font: 8px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; overflow-wrap: anywhere; }
 .request, .permission { display: block; width: 100%; margin-top: 16px; border: 2px solid var(--ink); padding: 12px; background: var(--acid); color: var(--ink); font: 800 11px ui-monospace, SFMono-Regular, Menlo, monospace; text-align: center; text-decoration: none; text-transform: uppercase; box-shadow: 3px 3px 0 var(--ink); cursor: pointer; }
 .permission { background: white; }
 .privacy { color: #1c1c1a88; font-size: 8px; line-height: 1.5; }

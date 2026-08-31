@@ -8,6 +8,7 @@ import { correctionLinkForState, correctionPreviewForState, escapeHtml } from '.
 import { privacyReceiptArtifact, verifyPrivacyReceiptDocument } from './lib/privacy-receipt.js';
 import { deploymentProofForState } from './lib/deployment-proof.js';
 import { extensionReleaseStatusForState } from './lib/extension-release-status.js';
+import { unknownPageFlow } from './lib/unknown-page-flow.js';
 
 const kind = document.querySelector('#page-kind');
 const title = document.querySelector('#page-title');
@@ -74,12 +75,15 @@ function renderResult(state, identity, requestRecord = null) {
     return;
   }
 
+  const unknownFlow = state.state === 'not_analyzed' ? unknownPageFlow(identity, requestRecord) : null;
+  const unknownFlowMarkup = unknownFlow ? `<div class="analysis-flow" aria-label="Path to a reviewed score">${unknownFlow.steps.map((step, index) => `<div class="analysis-step ${escapeHtml(step.state)}"><span>${index + 1}</span><p><strong>${escapeHtml(step.label)}</strong><br>${escapeHtml(step.detail)}</p></div>`).join('')}</div>` : '';
   const heading = requestRecord ? `ANALYSIS ${requestRecord.state.replaceAll('_', ' ').toUpperCase()}` : state.state === 'not_analyzed' ? 'NOT ANALYZED YET' : state.state === 'paused' ? 'SCORE PAUSED' : 'SCORE PENDING';
   const explanation = requestRecord ? `Request ${requestRecord.request_id} is stored for this canonical page. Duplicate visits reuse it. ${sourceNotice(identity.kind)}` : `${state.reason} AI Claims never invents a score from partial review. ${sourceNotice(identity.kind)}`;
   result.className = 'result pending';
   result.innerHTML = `
     <h3>${heading}</h3>
     <p>${explanation}</p>
+    ${unknownFlowMarkup}
     ${correctionPreview ? `<p class="meta"><strong>${escapeHtml(correctionPreview.lineage)}</strong><br>${escapeHtml(correctionPreview.summary)}</p>` : ''}
     ${compatibilityNotice ? `<p class="meta">${compatibilityNotice}</p>` : ''}
     ${state.state === 'paused' && state.analysisUrl ? `<a class="request" href="${state.analysisUrl}" target="_blank" rel="noreferrer">Open pause context ↗</a>${correctionLink ? `<a class="request" href="${escapeHtml(correctionLink.url)}" target="_blank" rel="noreferrer">${escapeHtml(correctionLink.label)} ↗</a>` : ''}` : requestRecord ? identity.kind === 'youtube' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Supply permitted transcript ↗</a>` : identity.kind === 'goodreads' ? `<a class="request" href="https://ai.rhyslindmark.com/claims/book-intake?url=${encodeURIComponent(identity.canonicalUrl)}" target="_blank" rel="noreferrer">Confirm book edition ↗</a>` : '' : '<button class="request" id="request-analysis">Request analysis</button>'}

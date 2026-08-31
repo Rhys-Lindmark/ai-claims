@@ -34,6 +34,7 @@ import { currentExtensionReleaseEnvelope, extensionReleaseEtag, immutableExtensi
 import release from '../../releases/extension-v0.2.18.json' with { type: 'json' };
 import { extensionReleaseStatusForState } from '../lib/extension-release-status.js';
 import { addProbeHistory, parseProbeHistory, probeHistoryReceipt, probeHistoryReceiptArtifact, verifyProbeHistoryReceiptDocument, PROBE_HISTORY_LIMIT, PROBE_HISTORY_RECEIPT_SCHEMA } from '../lib/probe-history.js';
+import { unknownPageFlow } from '../lib/unknown-page-flow.js';
 
 test('canonicalizes common YouTube URL forms to one entity', () => {
   const urls = [
@@ -384,6 +385,20 @@ test('toolbar badge exposes numbers only for published scores', () => {
   assert.equal(actionBadgeForState({ state: 'published', score: 84 }).text, '84');
   assert.equal(actionBadgeForState({ state: 'not_analyzed' }).text, '?');
   assert.equal(actionBadgeForState({ state: 'pending', score: 91 }).text, '');
+});
+
+test('unknown pages show the canonical shared-registry path before any score', () => {
+  const identity = identifyPage('https://example.com/article?utm_source=test');
+  const unrequested = unknownPageFlow(identity);
+  assert.equal(unrequested.entityKey, 'web:example.com/article');
+  assert.deepEqual(unrequested.steps.map((step) => step.state), ['complete', 'ready', 'locked', 'locked']);
+  assert.match(unrequested.steps[3].detail, /Hidden until every publication and provenance gate passes/);
+
+  const requested = unknownPageFlow(identity, { request_id: 'req-fixture', state: 'queued' });
+  assert.equal(requested.requestState, 'queued');
+  assert.equal(requested.steps[1].state, 'complete');
+  assert.match(requested.steps[1].detail, /duplicate visits reuse this record/);
+  assert.equal(unknownPageFlow({}), null);
 });
 
 test('API resolver maps 404 to not analyzed and rejects incompatible contracts', async () => {
