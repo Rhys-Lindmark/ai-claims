@@ -3215,6 +3215,270 @@
         }
       ],
       "other_claims": ["Modern petrochemical-filled homes can release extraordinary heat once ignited.", "Fire suppression and settlement expansion have increased exposure at many wildland–urban edges."]
+    },
+    {
+      "slug": "the-innovators",
+      "entity_key": "web:simonandschuster.com/books/the-innovators/walter-isaacson",
+      "title": "The Innovators",
+      "subtitle": "How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution",
+      "author": "Walter Isaacson",
+      "year": 2014,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "Its collaborative account of the digital revolution is broadly reliable. The strongest caveat is that a clean lineage from Lovelace to the web necessarily simplifies disputed priority and many parallel technical paths.",
+      "claims": [
+        {
+          "claim": "The digital revolution was built mainly by collaborating teams and institutions rather than by isolated lone geniuses.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The transistor, ARPANET, and modern computing each emerged from multi-person programs joining theory, engineering, funding, and implementation. Individual insight mattered, but the institutional record strongly supports the book's collaborative emphasis.",
+          "sources": [
+            { "title": "Computer History Museum: Insight into The Innovators", "url": "https://computerhistory.org/blog/insight-into-the-innovators/" },
+            { "title": "DARPA: ARPANET", "url": "https://www.darpa.mil/news/features/arpanet" }
+          ]
+        },
+        {
+          "claim": "Ada Lovelace anticipated general-purpose computer programming in her notes on Babbage's Analytical Engine.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Her Bernoulli-number procedure is an extraordinary early published algorithm and her notes recognized uses beyond arithmetic. Calling her unambiguously the first programmer remains contested because Babbage drafted related procedures earlier.",
+          "sources": [
+            { "title": "Computer History Museum: Insight into The Innovators", "url": "https://computerhistory.org/blog/insight-into-the-innovators/" },
+            { "title": "Computer History Museum: Walter Isaacson conversation", "url": "https://computerhistory.org/events/innovators-author-walter-isaacson-conversation/" }
+          ]
+        },
+        {
+          "claim": "Government and university networks, especially ARPANET, supplied the central technical path to today's internet.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "DARPA documents ARPANET's four-node start, later growth, and 1983 TCP/IP transition. The internet also depended on independent packet-switching research, international networks, standards communities, and commercial adoption, so no single program owns the whole origin story.",
+          "sources": [
+            { "title": "DARPA: Evolution of ARPANET", "url": "https://www.darpa.mil/news/features/arpanet" },
+            { "title": "DARPA innovation timeline: ARPANET", "url": "https://www.darpa.mil/about/innovation-timeline/arpanet" }
+          ]
+        }
+      ],
+      "other_claims": ["The personal computer joined counterculture ideals to engineering advances.", "Open standards were decisive to the web's rapid spread."]
+    },
+    {
+      "slug": "the-idea-factory",
+      "entity_key": "web:penguinrandomhouse.com/books/the-idea-factory/jon-gertner",
+      "title": "The Idea Factory",
+      "subtitle": "Bell Labs and the Great Age of American Innovation",
+      "author": "Jon Gertner",
+      "year": 2012,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The major Bell Labs breakthroughs and its unusually integrated research culture are well documented. The claim that its model can explain or solve innovation generally needs more caution because monopoly finance and regulation were essential conditions.",
+      "claims": [
+        {
+          "claim": "Bell Labs researchers invented the transistor through a sustained team program in semiconductor physics.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The Nobel record and Bardeen's lecture document the 1947 transistor effect and the team led by Shockley with Bardeen and Brattain, embedded in a broader materials and solid-state research program at Bell Laboratories.",
+          "sources": [
+            { "title": "Nobel Prize: 1956 Physics summary", "url": "https://www.nobelprize.org/prizes/physics/1956/summary/" },
+            { "title": "John Bardeen Nobel lecture", "url": "https://www.nobelprize.org/uploads/2018/06/bardeen-lecture.pdf" }
+          ]
+        },
+        {
+          "claim": "Bell Labs produced foundational advances spanning information theory, communications, electronics, and computing.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The laboratory's own history and independent award records substantiate breakthroughs including Shannon's information theory and the transistor, alongside lasers, digital communications, and other systems that shaped modern networks.",
+          "sources": [
+            { "title": "Nokia Bell Labs history", "url": "https://www.nokia.com/bell-labs/about/history/" },
+            { "title": "Nobel Prize: transistor effect", "url": "https://www.nobelprize.org/prizes/physics/1956/summary/" }
+          ]
+        },
+        {
+          "claim": "Bell Labs' mixture of basic science, engineering, and manufacturing contact offers a generally reproducible model for innovation.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Physical proximity, long horizons, and feedback between theorists and engineers plainly aided invention. Yet stable telephone-monopoly revenue, regulated obligations, and a unique industrial scale financed the model, limiting simple replication in competitive firms.",
+          "sources": [
+            { "title": "Nokia Bell Labs history", "url": "https://www.nokia.com/bell-labs/about/history/" },
+            { "title": "William Shockley Nobel lecture", "url": "https://www.nobelprize.org/uploads/2018/06/shockley-lecture.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["Mervin Kelly's management choices were central to the laboratory's culture.", "The breakup of the Bell System weakened the institution's research model."]
+    },
+    {
+      "slug": "skunk-works",
+      "entity_key": "web:lockheedmartin.com/skunk-works",
+      "title": "Skunk Works",
+      "subtitle": "A Personal Memoir of My Years at Lockheed",
+      "author": "Ben R. Rich and Leo Janos",
+      "year": 1994,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The memoir's central aircraft-development record is strongly corroborated by CIA and Air Force histories. Its managerial lessons are persuasive but partly survivor-selected and hard to separate from exceptional secrecy, budgets, and mission urgency.",
+      "claims": [
+        {
+          "claim": "Kelly Johnson's small Skunk Works team delivered the U-2 rapidly, on time and under budget, for covert reconnaissance over the Soviet bloc.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Declassified CIA histories confirm the program's purpose, Lockheed's compact development team, rapid prototype schedule, and budget performance. The U-2 then became a major strategic intelligence source despite grave operational risks.",
+          "sources": [
+            { "title": "CIA: The U-2 Program", "url": "https://www.cia.gov/resources/csi/books-monographs/the-cia-and-the-u-2-program-1954-1974/" },
+            { "title": "CIA: The DCI's Perspective on the U-2", "url": "https://www.cia.gov/resources/csi/studies-in-intelligence/archives/vol-42-no-5/the-u-2-program-the-dcis-perspective/" }
+          ]
+        },
+        {
+          "claim": "Skunk Works solved unprecedented materials and systems problems to produce Mach-3 reconnaissance aircraft and the first operational stealth aircraft.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "CIA records detail the A-12's titanium, propulsion, fuel, navigation, and life-support challenges; the Air Force museum identifies the F-117 as the world's first operational stealth aircraft and documents its service record.",
+          "sources": [
+            { "title": "CIA: A-12 Oxcart", "url": "https://www.cia.gov/legacy/headquarters/a-12-oxcart/" },
+            { "title": "National Museum of the U.S. Air Force: F-117A", "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/198056/lockheed-f-117a-nighthawk/" }
+          ]
+        },
+        {
+          "claim": "A small empowered team, minimal paperwork, and a demanding technical leader were the decisive causes of Skunk Works' repeated success.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Contemporary program histories corroborate Johnson's informal, tightly coupled engineering practice. The causal lesson is less certain because classified priority, flexible procurement, elite recruitment, and tolerance for high cost and risk also shaped outcomes.",
+          "sources": [
+            { "title": "CIA: Archangel and Kelly Johnson", "url": "https://www.cia.gov/resources/csi/static/b45f5f8f5e4937963d9e9931313d84a4/Archangel-CIAs-Supersonic-A-12-Reconnaissance-Aircraft.pdf" },
+            { "title": "Lockheed Martin: Skunk Works origin story", "url": "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics/skunkworks/skunk-works-origin-story.html" }
+          ]
+        }
+      ],
+      "other_claims": ["Ben Rich had to overcome internal skepticism to win support for stealth.", "Secrecy both protected the programs and distorted public recognition."]
+    },
+    {
+      "slug": "the-box",
+      "entity_key": "web:press.princeton.edu/books/the-box",
+      "title": "The Box",
+      "subtitle": "How the Shipping Container Made the World Smaller and the World Economy Bigger",
+      "author": "Marc Levinson",
+      "year": 2006,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The container's operational history and its role in lowering transport costs are strongly supported. Containerization transformed trade, but the book's largest globalization claims must share causality with policy liberalization, communications, and industrial change.",
+      "claims": [
+        {
+          "claim": "Malcom McLean's integrated truck-to-ship system and the 1956 Ideal-X voyage launched modern container shipping in the United States.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The Smithsonian documents McLean's acquisition of a steamship company, the Ideal-X voyage with 58 containers, and the integrated transfer system. Earlier containers existed, but his system was a decisive commercial turning point.",
+          "sources": [
+            { "title": "Smithsonian: Transforming the Waterfront", "url": "https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/transforming-waterfront" },
+            { "title": "Smithsonian Libraries: The Box catalog record", "url": "https://www.si.edu/object/box-how-shipping-container-made-world-smaller-and-world-economy-bigger-marc-levinson%3Asiris_sil_799285" }
+          ]
+        },
+        {
+          "claim": "Standard containers sharply reduced cargo-handling time, damage, theft, and the cost of moving goods across transport modes.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Museum and trade histories describe the expensive waterfront bottleneck and the gains from mechanized, sealed intermodal movement. Standardization allowed ships, cranes, railcars, trucks, and ports to operate as one logistics system.",
+          "sources": [
+            { "title": "Smithsonian: Linking Sea and Land", "url": "https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/transforming-waterfront" },
+            { "title": "WTO: Trade opening and transport technology", "url": "https://www.wto.org/english/tratop_e/envir_e/climate_impact_e.htm" }
+          ]
+        },
+        {
+          "claim": "Containerization was a principal cause of the late-twentieth-century expansion of global trade and fragmented supply chains.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The WTO identifies containerization as a major transport-cost innovation that expanded traded volume and enabled production unbundling. Tariff cuts, investment policy, communications, exchange rates, and manufacturing strategy were also indispensable causes.",
+          "sources": [
+            { "title": "WTO: Trade opening and climate change", "url": "https://www.wto.org/english/tratop_e/envir_e/climate_impact_e.htm" },
+            { "title": "WTO Trade Cost Index", "url": "https://tradecosts.wto.org/" }
+          ]
+        }
+      ],
+      "other_claims": ["Containerization shifted economic power among ports and unions.", "The Vietnam War accelerated adoption of container logistics."]
+    },
+    {
+      "slug": "code-girls",
+      "entity_key": "web:hachettebookgroup.com/titles/liza-mundy/code-girls",
+      "title": "Code Girls",
+      "subtitle": "The Untold Story of the American Women Code Breakers of World War II",
+      "author": "Liza Mundy",
+      "year": 2017,
+      "score": 92,
+      "confidence": "high",
+      "summary": "Archival and NSA records strongly corroborate the scale, substance, and secrecy of American women's wartime cryptologic work. Claims about exactly how much it shortened the war or how many lives it saved remain inherently counterfactual.",
+      "claims": [
+        {
+          "claim": "More than 10,000 American women were recruited into secret Army and Navy codebreaking work during World War II.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "The National Archives documents a coordinated recruitment of more than 10,000 women and the surviving personnel, training, and work records. NSA histories independently confirm that thousands served as analysts, intercept operators, and technicians.",
+          "sources": [
+            { "title": "National Archives: Records help tell Code Girls' story", "url": "https://www.archives.gov/news/articles/code-girls-instramental-in-wwii-victory" },
+            { "title": "NSA: Women in American Cryptology", "url": "https://www.nsa.gov/History/National-Cryptologic-Museum/Exhibits-Artifacts/Exhibit-View/Article/2719140/women-in-american-cryptology-creating-a-legacy/" }
+          ]
+        },
+        {
+          "claim": "Women cryptanalysts performed technically consequential work against Japanese and German military communications.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Declassified histories describe women removing additive ciphers, recovering codebook groups, operating cryptanalytic machinery, and contributing to solutions of Japanese and German systems. Their work was analytical rather than merely clerical.",
+          "sources": [
+            { "title": "NSA: WWII cryptologist in the Women's Army Corps", "url": "https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/2027118/history-highlight-world-war-ii-cryptologist-serving-in-the-womens-army-corps/" },
+            { "title": "National Archives: World War II Code Girls records", "url": "https://www.archives.gov/news/articles/code-girls-records" }
+          ]
+        },
+        {
+          "claim": "Their codebreaking shortened the war and saved countless lives, while secrecy largely erased their contribution for decades.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Signals intelligence clearly improved Allied operations, and strict secrecy kept many families unaware of the women's work. The magnitude of lives saved or time shortened cannot be directly observed and varies by theater and cryptologic target.",
+          "sources": [
+            { "title": "National Archives: Code Girls", "url": "https://www.archives.gov/news/articles/code-girls-instramental-in-wwii-victory" },
+            { "title": "NSA: Sharing the Burden", "url": "https://www.nsa.gov/portals/75/documents/about/cryptologic-heritage/historical-figures-publications/publications/wwii/sharing_the_burden.pdf" }
+          ]
+        }
+      ],
+      "other_claims": ["Female cryptanalysts were paid less and denied recognition available to men.", "Wartime cryptology opened durable technical careers for some women."]
+    },
+    {
+      "slug": "the-woman-who-smashed-codes",
+      "entity_key": "web:harpercollins.com/products/the-woman-who-smashed-codes-jason-fagone",
+      "title": "The Woman Who Smashed Codes",
+      "subtitle": "A True Story of Love, Spies, and the Unlikely Heroine Who Outwitted America's Enemies",
+      "author": "Jason Fagone",
+      "year": 2017,
+      "score": 92,
+      "confidence": "high",
+      "summary": "Government histories substantiate Elizebeth Smith Friedman's extraordinary cryptanalytic career and long under-recognition. The broadest language about single-handedly defeating criminal or spy networks compresses work by investigators, intercept teams, and prosecutors.",
+      "claims": [
+        {
+          "claim": "Elizebeth Smith Friedman pioneered U.S. cryptanalysis and solved thousands of encoded rum-running messages during Prohibition.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "NSA and Coast Guard histories identify Friedman as a pioneering female cryptanalyst and credit her unit with deciphering about 12,000 messages using pencil-and-paper methods, supporting major smuggling investigations.",
+          "sources": [
+            { "title": "NSA: Elizebeth S. Friedman", "url": "https://www.nsa.gov/History/Cryptologic-History/Historical-Figures/Historical-Figures-View/Article/1623028/elizebeth-s-friedman/" },
+            { "title": "Coast Guard: Mrs. Friedman, Cryptologist-in-Charge", "url": "https://www.history.uscg.mil/Research/THE-LONG-BLUE-LINE/Article/2925266/the-long-blue-line-mrs-friedmanthe-coast-guards-cryptologist-in-charge-and-nsc/" }
+          ]
+        },
+        {
+          "claim": "Her cryptanalytic work materially aided prosecutions of smugglers and the exposure of wartime espionage networks.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Official accounts connect her solutions to narcotics and liquor convictions, document her courtroom testimony, and describe her work on encoded communications tied to Japanese and German espionage cases.",
+          "sources": [
+            { "title": "U.S. Coast Guard Investigative Service history", "url": "https://www.uscg.mil/Units/Coast-Guard-Investigative-Service/History/" },
+            { "title": "NSA Cryptologic Hall of Honor: Friedman", "url": "https://www.nsa.gov/History/Cryptologic-History/Historical-Figures/Historical-Figures-View/Article/1623028/elizebeth-s-friedman/" }
+          ]
+        },
+        {
+          "claim": "Friedman's role was systematically obscured while male officials and institutions received disproportionate credit.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Classification, gendered employment rules, lower pay, and institutional publicity plainly delayed recognition of her record. Some credit disputes depend on incomplete or retrospective evidence, so a single deliberate-erasure explanation is too neat.",
+          "sources": [
+            { "title": "Coast Guard: The Codebreaker and Friedman's legacy", "url": "https://www.mycg.uscg.mil/News/Article/2466899/watch-pbss-the-codebreaker-premiers-monday-jan-11/" },
+            { "title": "NSA: Elizebeth Friedman biography", "url": "https://www.nsa.gov/Press-Room/Digital-Media-Center/Biographies/Biography-View-Page/Article/1623028/elizebeth-s-friedman/" }
+          ]
+        }
+      ],
+      "other_claims": ["Riverbank Laboratories gave Elizebeth and William Friedman their entry into cryptology.", "Her archive changed the modern assessment of her contribution."]
     }
   ]
 }
