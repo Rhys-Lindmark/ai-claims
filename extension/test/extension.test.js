@@ -329,7 +329,7 @@ test('resolver advertises a supported privacy-safe deployment attestation', asyn
 
 test('resolver advertises a supported telemetry-free extension release', async () => {
   const analysis = registry.analyses.find((entry) => entry.entity_key === syntheticWeb.entity_key);
-  const discovery = { contract_version: '1.0.0', current_version: release.extension_version, current_url: 'https://ai.rhyslindmark.com/claims/api/v1/extension-releases', immutable_url: `https://ai.rhyslindmark.com/claims/api/v1/extension-releases/${release.extension_version}`, package_digest: release.package.integrity.digest_hex, package_url: `https://github.com/Rhys-Lindmark/ai-claims/releases/download/v${release.extension_version}/${release.package.filename}`, manifest_url: `https://github.com/Rhys-Lindmark/ai-claims/releases/download/v${release.extension_version}/extension-v${release.extension_version}.json`, installation_telemetry_collected: false };
+  const discovery = { contract_version: '1.0.0', current_version: release.extension_version, current_url: 'https://ai.rhyslindmark.com/claims/api/v1/extension-releases', immutable_url: `https://ai.rhyslindmark.com/claims/api/v1/extension-releases/${release.extension_version}`, package_digest: release.package.integrity.digest_hex, package_url: `https://github.com/Rhys-Lindmark/ai-claims/releases/download/v${release.extension_version}/${release.package.filename}`, manifest_url: `https://github.com/Rhys-Lindmark/ai-claims/releases/download/v${release.extension_version}/extension-v${release.extension_version}.json`, installation_telemetry_collected: false, channel: 'prototype', channel_policy_revision: '1', minimum_supported_version: '0.2.16', publisher_signed: false, automatic_install_or_update: false, update_check_identity_collected: false };
   const resolver = createApiResolver({ endpoint: 'https://api.example.invalid', fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ contract_version: '1.0.0', entity_key: analysis.entity_key, extension_release_discovery: discovery, analysis }) }) });
   const state = await resolver.resolve(analysis.entity_key);
   assert.equal(state.extensionReleaseCompatibility, 'supported');
@@ -337,9 +337,12 @@ test('resolver advertises a supported telemetry-free extension release', async (
   assert.equal(state.extensionReleasePackageUrl, discovery.package_url);
   assert.equal(state.extensionReleasePackageDigest, release.package.integrity.digest_hex);
   assert.equal(state.extensionReleaseInstallationTelemetryCollected, false);
+  assert.equal(state.extensionReleaseChannel, 'prototype');
+  assert.equal(state.extensionReleaseMinimumSupportedVersion, '0.2.16');
   assert.equal(extensionReleaseStatusForState(state, release.extension_version).state, 'current');
   assert.equal(extensionReleaseStatusForState({ ...state, extensionReleaseVersion: '0.2.18' }, release.extension_version).state, 'update_available');
   assert.equal(extensionReleaseStatusForState({ ...state, extensionReleaseInstallationTelemetryCollected: true }, release.extension_version), null);
+  assert.equal(extensionReleaseStatusForState({ ...state, extensionReleaseAutomaticInstallOrUpdate: true }, release.extension_version), null);
   assert.deepEqual(extensionReleaseCompatibility({ contract_version: '9.0.0' }), { state: 'unsupported', contractVersion: '9.0.0' });
 });
 
