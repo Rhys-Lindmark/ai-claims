@@ -94,8 +94,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": ["ggs-evidence-04a", "ggs-evidence-04b", "ggs-evidence-04c", "ggs-evidence-04d", "ggs-evidence-04e"],
-      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-28", "ggs-source-29", "ggs-source-30", "ggs-source-31", "ggs-source-32"]
+      "evidence_record_ids": ["ggs-evidence-04a", "ggs-evidence-04b", "ggs-evidence-04c", "ggs-evidence-04d", "ggs-evidence-04e", "ggs-evidence-04f", "ggs-evidence-04g"],
+      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-28", "ggs-source-29", "ggs-source-30", "ggs-source-31", "ggs-source-32", "ggs-source-33", "ggs-source-34"]
     },
     {
       "claim_id": "ggs-claim-05",
@@ -430,6 +430,30 @@
       "last_verified_at": "2026-08-31",
       "finding": "Archaeometallurgical analyses from 42 sites in Arctic Norway, Sweden, and Finland identified advanced iron and steel production in hunter-gatherer contexts about 2,000 years ago, including smelting and smithing practices comparable to contemporary agricultural regions.",
       "scope_and_limits": "The study shows that agriculture was not a necessary precondition for intricate technical production and knowledge networks. It does not establish full-time occupational specialists, population density, or political centralization at these sites."
+    },
+    {
+      "evidence_id": "ggs-evidence-04f",
+      "claim_id": "ggs-claim-04",
+      "source_id": "ggs-source-33",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "At Shubayqa 6 in northeast Jordan, thousands of greenstone bead-production remains show standardized production probably intended for exchange in an autonomous, non-hierarchical community without clear plant cultivation or storage facilities.",
+      "scope_and_limits": "The authors interpret this as nascent, likely part-time and seasonal craft specialization—not full-time occupational specialization. The single-site case shows that food surplus and hierarchy were not necessary for specialization to begin, but it does not test whether farming enabled greater specialist scale."
+    },
+    {
+      "evidence_id": "ggs-evidence-04g",
+      "claim_id": "ggs-claim-04",
+      "source_id": "ggs-source-34",
+      "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "low",
+      "last_verified_at": "2026-08-31",
+      "finding": "At the Harappan site 4MSR in northwest India, an early agricultural phase was followed by a mature phase with crop diversification and intensification alongside increased craft specialization.",
+      "scope_and_limits": "This is a chronological co-occurrence at one site, not causal identification. Climate change, trade, accumulated knowledge, urban development, and other institutions could explain both trends, and the study does not quantify whether specialists were full-time."
     },
     {
       "evidence_id": "ggs-evidence-05a",
@@ -786,6 +810,26 @@
       "year": 2024,
       "url": "https://doi.org/10.1515/opar-2024-0017",
       "source_class": "primary_archaeometallurgical_multi_site_analysis",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-33",
+      "title": "Nascent craft specialization in the Pre-Pottery Neolithic A? Bead making at Shubayqa 6 (northeast Jordan)",
+      "publisher": "PLOS ONE",
+      "year": 2023,
+      "url": "https://doi.org/10.1371/journal.pone.0292954",
+      "source_class": "primary_archaeological_craft_production_analysis",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-34",
+      "title": "Dating adoption and intensification of food-crops: Insights from 4MSR (Binjor), an Indus (Harappan) site in northwestern India",
+      "publisher": "Radiocarbon",
+      "year": 2020,
+      "url": "https://doi.org/10.1017/RDC.2020.37",
+      "source_class": "primary_archaeobotany_and_site_chronology",
       "independence": "independent",
       "assessment_state": "assessed"
     }
