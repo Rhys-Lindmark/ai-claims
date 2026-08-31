@@ -11,7 +11,7 @@ assert.match(currentResponse.headers.get('cache-control') ?? '', /stale-while-re
 const current = await currentResponse.json();
 assert.equal(current.contract_version, '1.0.0');
 assert.equal(current.current_version, current.release.extension_version);
-assert.deepEqual(current.available_versions.map((entry) => entry.version), ['0.2.19', '0.2.18', '0.2.17', '0.2.16']);
+assert.deepEqual(current.available_versions.map((entry) => entry.version), ['0.2.20', '0.2.19', '0.2.18', '0.2.17', '0.2.16']);
 for (const entry of current.available_versions) {
   assert.equal(entry.immutable_url, `${currentUrl}/${entry.version}`);
   assert.match(entry.package_digest, /^[0-9a-f]{64}$/);
@@ -48,7 +48,7 @@ const publicManifest = await manifestResponse.json();
 assert.equal(publicManifest.package.integrity.digest_hex, current.release.package.integrity.digest_hex);
 assert.equal(publicManifest.source_commit_sha, current.release.source_commit_sha);
 
-const previousVersion = process.argv[3] ?? '0.2.18';
+const previousVersion = process.argv[3] ?? '0.2.19';
 const previousResponse = await fetch(`${currentUrl}/${previousVersion}`);
 assert.equal(previousResponse.status, 200);
 assert.match(previousResponse.headers.get('cache-control') ?? '', /immutable/);

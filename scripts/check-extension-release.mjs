@@ -6,13 +6,14 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import extensionManifest from '../extension/manifest.json' with { type: 'json' };
 import attestation from '../extension/data/deployment-attestation.json' with { type: 'json' };
-import release from '../releases/extension-v0.2.19.json' with { type: 'json' };
+import release from '../releases/extension-v0.2.20.json' with { type: 'json' };
 import { RESOLVER_CONTRACT_VERSION } from '../extension/lib/analysis-resolver.js';
 
 assert.equal(release.schema_version, 'ai-claims.extension-release/1.0.0');
 assert.equal(release.extension_version, extensionManifest.version);
 assert.equal(release.manifest_version, extensionManifest.manifest_version);
 assert.equal(release.contracts.resolver, RESOLVER_CONTRACT_VERSION);
+assert.equal(release.contracts.analysis_request, '1.0.0');
 assert.equal(release.contracts.deployment_attestation, '1.0.0');
 assert.equal(release.contracts.deployment_attestation_digest, attestation.integrity.digest_hex);
 assert.equal(release.privacy.installation_telemetry_collected, false);

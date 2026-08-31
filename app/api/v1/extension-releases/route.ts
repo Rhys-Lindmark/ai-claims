@@ -1,4 +1,5 @@
-import release from '@/releases/extension-v0.2.19.json';
+import release from '@/releases/extension-v0.2.20.json';
+import release019 from '@/releases/extension-v0.2.19.json';
 import release018 from '@/releases/extension-v0.2.18.json';
 import release017 from '@/releases/extension-v0.2.17.json';
 import release016 from '@/releases/extension-v0.2.16.json';
@@ -15,7 +16,7 @@ export async function GET(request: Request) {
   if (request.headers.get('if-none-match') === etag) return new Response(null, { status: 304, headers });
   const envelope = currentExtensionReleaseEnvelope(release, immutableUrl);
   const versionBaseUrl = immutableUrl.slice(0, immutableUrl.lastIndexOf('/'));
-  const availableVersions = [release, release018, release017, release016].map((entry) => ({ version: entry.extension_version, immutable_url: `${versionBaseUrl}/${entry.extension_version}`, package_digest: entry.package.integrity.digest_hex }));
+  const availableVersions = [release, release019, release018, release017, release016].map((entry) => ({ version: entry.extension_version, immutable_url: `${versionBaseUrl}/${entry.extension_version}`, package_digest: entry.package.integrity.digest_hex }));
   return Response.json({ ...envelope, available_versions: availableVersions, channel_policy: channelPolicy }, { status: 200, headers });
 }
 

@@ -3,10 +3,11 @@ import channelPolicy from '@/releases/channel-policy.json';
 import release016 from '@/releases/extension-v0.2.16.json';
 import release017 from '@/releases/extension-v0.2.17.json';
 import release018 from '@/releases/extension-v0.2.18.json';
-import release from '@/releases/extension-v0.2.19.json';
+import release019 from '@/releases/extension-v0.2.19.json';
+import release from '@/releases/extension-v0.2.20.json';
 import { releaseDownloadUrls } from '@/extension/lib/extension-release-api.js';
 
-const retainedReleases = [release, release018, release017, release016].filter((item) =>
+const retainedReleases = [release, release019, release018, release017, release016].filter((item) =>
   channelPolicy.retained_versions.includes(item.extension_version),
 );
 
