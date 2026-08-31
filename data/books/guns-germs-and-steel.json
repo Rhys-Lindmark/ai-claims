@@ -29,8 +29,8 @@
       "eligibility_state": "needs_passage_confirmation",
       "passage_locator": null,
       "review_state": "unreviewed",
-      "evidence_record_ids": [],
-      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05"]
+      "evidence_record_ids": ["ggs-evidence-02a", "ggs-evidence-02b"],
+      "source_ids": ["ggs-source-01", "ggs-source-03", "ggs-source-05", "ggs-source-35", "ggs-source-36"]
     },
     {
       "claim_id": "ggs-claim-02",
@@ -167,6 +167,30 @@
     }
   ],
   "evidence_records": [
+    {
+      "evidence_id": "ggs-evidence-02a",
+      "claim_id": "ggs-claim-02",
+      "source_id": "ggs-source-35",
+      "direction": "supports",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "low",
+      "last_verified_at": "2026-08-31",
+      "finding": "A multidisciplinary review places the domestication of several large, high-impact livestock species—including sheep, goats, cattle, pigs, horses, asses, camels, and water buffalo—within western, central, or southern Eurasia across the Holocene.",
+      "scope_and_limits": "This establishes a geographically concentrated realized package, not the stronger counterfactual that Eurasia had more biologically domesticable candidates. Species definitions, timing, independent origins, later dispersal, and what counts as an 'advantage' all require separate decisions."
+    },
+    {
+      "evidence_id": "ggs-evidence-02b",
+      "claim_id": "ggs-claim-02",
+      "source_id": "ggs-source-36",
+      "direction": "complicates",
+      "review_state": "machine_draft_unreviewed",
+      "evidence_basis": "sourced",
+      "confidence": "medium",
+      "last_verified_at": "2026-08-31",
+      "finding": "Ancient-genomic synthesis shows that domestication histories are reticulate rather than clean continental events: livestock repeatedly mixed with local wild populations, African cattle preserve multiple ancestries, and American dogs trace to animals that dispersed from Siberia.",
+      "scope_and_limits": "These histories complicate continent-level origin counts and simple ownership of a domestic package, but they do not overturn the concentration of several major livestock origins in Eurasia. The review does not compare every extinct and extant candidate species across continents."
+    },
     {
       "evidence_id": "ggs-evidence-03a",
       "claim_id": "ggs-claim-03",
@@ -830,6 +854,26 @@
       "year": 2020,
       "url": "https://doi.org/10.1017/RDC.2020.37",
       "source_class": "primary_archaeobotany_and_site_chronology",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-35",
+      "title": "The origins of animal domestication and husbandry: A major change in the history of humanity and the biosphere",
+      "publisher": "Comptes Rendus Biologies",
+      "year": 2011,
+      "url": "https://doi.org/10.1016/j.crvi.2010.12.009",
+      "source_class": "multidisciplinary_animal_domestication_synthesis",
+      "independence": "independent",
+      "assessment_state": "assessed"
+    },
+    {
+      "source_id": "ggs-source-36",
+      "title": "Animal domestication in the era of ancient genomics",
+      "publisher": "Nature Reviews Genetics",
+      "year": 2020,
+      "url": "https://doi.org/10.1038/s41576-020-0225-0",
+      "source_class": "ancient_genomics_review",
       "independence": "independent",
       "assessment_state": "assessed"
     }
