@@ -1,6 +1,6 @@
 # Rapid book batch 30 — education and learning
 
-Review state: selection and source map in progress; no scores yet.
+Review state: publication candidate complete; all ten books have exactly three scored claims, six citations, an exact-matched cover, and a reproducible aggregate score.
 
 ## Selected books
 
@@ -34,3 +34,11 @@ All ten passed normalized-title uniqueness against the 220-book catalog on 2026-
 - Treat international test comparisons as observational and institutionally confounded.
 - Preserve outcome, age, subject, duration, implementation, and equity differences hidden by aggregate effect sizes.
 - Score only three central claims per book and keep broader political or moral aims outside the factual denominator unless they make testable predictions.
+
+## Publication evidence
+
+- Catalog after this batch: 230 books, 690 scored claims, and 1,380 citations.
+- Source audit: 952 unique URLs, zero confirmed broken; access-blocked and transient responses remain labeled separately from broken evidence.
+- Covers: all ten new titles matched Open Library by normalized title and author, raising catalog coverage to 199 of 230.
+- Score range in this set: 58–92. Every score is `round(mean(claim credits) × 100)` using the published four-state credit map.
+- Main caution: educational philosophy, classroom observation, international comparison, and meta-meta-analysis answer different questions. The reviews do not treat them as interchangeable evidence.

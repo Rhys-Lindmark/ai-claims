@@ -2285,6 +2285,119 @@
       "source_authors": [
         "Alain De Botton"
       ]
+    },
+    {
+      "slug": "democracy-and-education",
+      "match_state": "exact_title_author",
+      "cover_id": 6738842,
+      "cover_url": "https://covers.openlibrary.org/b/id/6738842-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL111359W",
+      "source_title": "Democracy and Education",
+      "source_authors": [
+        "John Dewey"
+      ]
+    },
+    {
+      "slug": "pedagogy-of-the-oppressed",
+      "match_state": "exact_title_author",
+      "cover_id": 99306,
+      "cover_url": "https://covers.openlibrary.org/b/id/99306-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1870518W",
+      "source_title": "Pedagogy of the Oppressed",
+      "source_authors": [
+        "Paulo Freire"
+      ]
+    },
+    {
+      "slug": "the-process-of-education",
+      "match_state": "exact_title_author",
+      "cover_id": 6751517,
+      "cover_url": "https://covers.openlibrary.org/b/id/6751517-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2976744W",
+      "source_title": "The process of education",
+      "source_authors": [
+        "Jerome S. Bruner"
+      ]
+    },
+    {
+      "slug": "mindstorms",
+      "match_state": "exact_title_author",
+      "cover_id": 298881,
+      "cover_url": "https://covers.openlibrary.org/b/id/298881-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3368926W",
+      "source_title": "Mindstorms",
+      "source_authors": [
+        "Seymour Papert"
+      ]
+    },
+    {
+      "slug": "how-children-fail",
+      "match_state": "exact_title_author",
+      "cover_id": 134942,
+      "cover_url": "https://covers.openlibrary.org/b/id/134942-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2945072W",
+      "source_title": "How children fail",
+      "source_authors": [
+        "John Caldwell Holt",
+        "JOHN HOLT"
+      ]
+    },
+    {
+      "slug": "why-dont-students-like-school",
+      "match_state": "exact_title_author",
+      "cover_id": 9292970,
+      "cover_url": "https://covers.openlibrary.org/b/id/9292970-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15055229W",
+      "source_title": "Why don't students like school?",
+      "source_authors": [
+        "Daniel T. Willingham"
+      ]
+    },
+    {
+      "slug": "the-knowledge-gap",
+      "match_state": "exact_title_author",
+      "cover_id": 8771746,
+      "cover_url": "https://covers.openlibrary.org/b/id/8771746-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20112560W",
+      "source_title": "The Knowledge GAP",
+      "source_authors": [
+        "Natalie Wexler"
+      ]
+    },
+    {
+      "slug": "the-smartest-kids-in-the-world",
+      "match_state": "exact_title_author",
+      "cover_id": 8765149,
+      "cover_url": "https://covers.openlibrary.org/b/id/8765149-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20104399W",
+      "source_title": "The Smartest Kids in the World: And How They Got That Way",
+      "source_authors": [
+        "Amanda Ripley"
+      ]
+    },
+    {
+      "slug": "visible-learning",
+      "match_state": "exact_title_author",
+      "cover_id": 7358602,
+      "cover_url": "https://covers.openlibrary.org/b/id/7358602-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL4100637W",
+      "source_title": "Visible learning",
+      "source_authors": [
+        "John Hattie"
+      ]
+    },
+    {
+      "slug": "make-it-stick",
+      "match_state": "exact_title_author",
+      "cover_id": 8188891,
+      "cover_url": "https://covers.openlibrary.org/b/id/8188891-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17879515W",
+      "source_title": "Make It Stick",
+      "source_authors": [
+        "Peter C. Brown",
+        "Henry L. Roediger",
+        "Mark A. McDaniel"
+      ]
     }
   ]
 }
