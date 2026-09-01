@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-09-01",
-  "checked_at": "2026-09-01T01:49:46.016Z",
+  "checked_at": "2026-09-01T02:06:02.794Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,53 +10,53 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 210,
-    "claims": 630,
-    "citations": 1260,
-    "unique_urls": 877,
-    "repeated_citations": 383,
-    "redirected_urls": 118,
+    "books": 220,
+    "claims": 660,
+    "citations": 1320,
+    "unique_urls": 913,
+    "repeated_citations": 407,
+    "redirected_urls": 121,
     "states": {
-      "access_blocked": 176,
-      "network_error": 13,
+      "access_blocked": 184,
+      "network_error": 15,
       "other_http": 3,
-      "reachable": 680,
+      "reachable": 706,
       "transient": 5
     },
     "score_distribution": {
       "42": 1,
       "50": 7,
       "58": 12,
-      "67": 37,
-      "75": 54,
-      "83": 48,
-      "92": 41,
+      "67": 43,
+      "75": 56,
+      "83": 49,
+      "92": 42,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 72,
+      "high": 73,
       "low": 1,
-      "medium": 60,
-      "medium-high": 61,
-      "medium-low": 16
+      "medium": 62,
+      "medium-high": 63,
+      "medium-low": 21
     }
   },
   "domain_summary": [
     {
       "host": "pmc.ncbi.nlm.nih.gov",
-      "unique_urls": 61,
-      "citations": 93,
+      "unique_urls": 63,
+      "citations": 96,
       "states": {
-        "reachable": 61
+        "reachable": 63
       }
     },
     {
       "host": "doi.org",
-      "unique_urls": 58,
-      "citations": 79,
+      "unique_urls": 60,
+      "citations": 81,
       "states": {
-        "reachable": 27,
-        "access_blocked": 31
+        "reachable": 28,
+        "access_blocked": 32
       }
     },
     {
@@ -133,19 +133,19 @@
       }
     },
     {
+      "host": "onlinelibrary.wiley.com",
+      "unique_urls": 10,
+      "citations": 15,
+      "states": {
+        "access_blocked": 10
+      }
+    },
+    {
       "host": "justice.gov",
       "unique_urls": 11,
       "citations": 14,
       "states": {
         "reachable": 11
-      }
-    },
-    {
-      "host": "onlinelibrary.wiley.com",
-      "unique_urls": 9,
-      "citations": 14,
-      "states": {
-        "access_blocked": 9
       }
     },
     {
@@ -170,6 +170,14 @@
       "citations": 13,
       "states": {
         "reachable": 9
+      }
+    },
+    {
+      "host": "link.springer.com",
+      "unique_urls": 8,
+      "citations": 13,
+      "states": {
+        "reachable": 8
       }
     },
     {
@@ -209,8 +217,7 @@
       "unique_urls": 10,
       "citations": 11,
       "states": {
-        "access_blocked": 9,
-        "reachable": 1
+        "access_blocked": 10
       }
     },
     {
@@ -238,6 +245,14 @@
       }
     },
     {
+      "host": "epa.gov",
+      "unique_urls": 5,
+      "citations": 10,
+      "states": {
+        "reachable": 5
+      }
+    },
+    {
       "host": "federalreserve.gov",
       "unique_urls": 8,
       "citations": 10,
@@ -246,27 +261,11 @@
       }
     },
     {
-      "host": "link.springer.com",
-      "unique_urls": 7,
-      "citations": 10,
-      "states": {
-        "reachable": 7
-      }
-    },
-    {
       "host": "nap.nationalacademies.org",
       "unique_urls": 7,
       "citations": 10,
       "states": {
         "reachable": 7
-      }
-    },
-    {
-      "host": "epa.gov",
-      "unique_urls": 5,
-      "citations": 9,
-      "states": {
-        "reachable": 5
       }
     },
     {
@@ -347,6 +346,14 @@
       "citations": 8,
       "states": {
         "reachable": 4
+      }
+    },
+    {
+      "host": "tandfonline.com",
+      "unique_urls": 7,
+      "citations": 8,
+      "states": {
+        "access_blocked": 7
       }
     },
     {
@@ -520,6 +527,14 @@
       }
     },
     {
+      "host": "frontiersin.org",
+      "unique_urls": 2,
+      "citations": 5,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "iarc.who.int",
       "unique_urls": 1,
       "citations": 5,
@@ -533,14 +548,6 @@
       "citations": 5,
       "states": {
         "reachable": 3
-      }
-    },
-    {
-      "host": "tandfonline.com",
-      "unique_urls": 5,
-      "citations": 5,
-      "states": {
-        "access_blocked": 5
       }
     },
     {
@@ -576,11 +583,27 @@
       }
     },
     {
+      "host": "fda.gov",
+      "unique_urls": 2,
+      "citations": 4,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "ipcc.ch",
       "unique_urls": 2,
       "citations": 4,
       "states": {
         "reachable": 2
+      }
+    },
+    {
+      "host": "mdpi.com",
+      "unique_urls": 2,
+      "citations": 4,
+      "states": {
+        "access_blocked": 2
       }
     },
     {
@@ -633,6 +656,14 @@
       }
     },
     {
+      "host": "si.edu",
+      "unique_urls": 3,
+      "citations": 4,
+      "states": {
+        "access_blocked": 3
+      }
+    },
+    {
       "host": "smithsonianmag.com",
       "unique_urls": 2,
       "citations": 4,
@@ -665,6 +696,14 @@
       }
     },
     {
+      "host": "whc.unesco.org",
+      "unique_urls": 2,
+      "citations": 4,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "wid.world",
       "unique_urls": 3,
       "citations": 4,
@@ -678,6 +717,14 @@
       "citations": 3,
       "states": {
         "reachable": 2
+      }
+    },
+    {
+      "host": "architecturalrecord.com",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -702,6 +749,14 @@
       "citations": 3,
       "states": {
         "reachable": 2
+      }
+    },
+    {
+      "host": "cca.qc.ca",
+      "unique_urls": 3,
+      "citations": 3,
+      "states": {
+        "reachable": 3
       }
     },
     {
@@ -765,7 +820,7 @@
       "unique_urls": 1,
       "citations": 3,
       "states": {
-        "transient": 1
+        "reachable": 1
       }
     },
     {
@@ -773,8 +828,7 @@
       "unique_urls": 3,
       "citations": 3,
       "states": {
-        "access_blocked": 2,
-        "reachable": 1
+        "reachable": 3
       }
     },
     {
@@ -802,6 +856,14 @@
       }
     },
     {
+      "host": "media.aanda.psu.edu",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "nationalarchives.gov.uk",
       "unique_urls": 3,
       "citations": 3,
@@ -811,6 +873,14 @@
     },
     {
       "host": "nepis.epa.gov",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
+      "host": "newyorker.com",
       "unique_urls": 2,
       "citations": 3,
       "states": {
@@ -834,6 +904,14 @@
       }
     },
     {
+      "host": "online.ucpress.edu",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "access_blocked": 2
+      }
+    },
+    {
       "host": "openurl.ebsco.com",
       "unique_urls": 2,
       "citations": 3,
@@ -846,7 +924,7 @@
       "unique_urls": 1,
       "citations": 3,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -914,11 +992,11 @@
       }
     },
     {
-      "host": "si.edu",
+      "host": "thamesandhudson.com",
       "unique_urls": 2,
       "citations": 3,
       "states": {
-        "access_blocked": 2
+        "reachable": 2
       }
     },
     {
@@ -1059,23 +1137,7 @@
       }
     },
     {
-      "host": "fda.gov",
-      "unique_urls": 1,
-      "citations": 2,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
       "host": "files.eric.ed.gov",
-      "unique_urls": 1,
-      "citations": 2,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
-      "host": "frontiersin.org",
       "unique_urls": 1,
       "citations": 2,
       "states": {
@@ -1196,7 +1258,23 @@
       }
     },
     {
+      "host": "journals.uc.edu",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "kansashistory.gov",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "kirkusreviews.com",
       "unique_urls": 1,
       "citations": 2,
       "states": {
@@ -1217,14 +1295,6 @@
       "citations": 2,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "mdpi.com",
-      "unique_urls": 1,
-      "citations": 2,
-      "states": {
-        "access_blocked": 1
       }
     },
     {
@@ -1308,6 +1378,14 @@
       }
     },
     {
+      "host": "penguinrandomhouse.com",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "people.math.harvard.edu",
       "unique_urls": 1,
       "citations": 2,
@@ -1384,7 +1462,8 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "reachable": 2
+        "reachable": 1,
+        "access_blocked": 1
       }
     },
     {
@@ -1393,6 +1472,14 @@
       "citations": 2,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "sigarra.up.pt",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "access_blocked": 1
       }
     },
     {
@@ -1428,6 +1515,14 @@
       }
     },
     {
+      "host": "toc.library.ethz.ch",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "usgs.gov",
       "unique_urls": 2,
       "citations": 2,
@@ -1452,11 +1547,27 @@
       }
     },
     {
+      "host": "washingtonpost.com",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "transient": 2
+      }
+    },
+    {
       "host": "wto.org",
       "unique_urls": 1,
       "citations": 2,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "yalebooks.co.uk",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "access_blocked": 1
       }
     },
     {
@@ -1533,6 +1644,14 @@
     },
     {
       "host": "artefacts-discovery.researcher.life",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "assets.moma.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2204,6 +2323,14 @@
       }
     },
     {
+      "host": "moma.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "mural.maynoothuniversity.ie",
       "unique_urls": 1,
       "citations": 1,
@@ -2260,14 +2387,6 @@
       }
     },
     {
-      "host": "newyorker.com",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
       "host": "nhm.ac.uk",
       "unique_urls": 1,
       "citations": 1,
@@ -2305,14 +2424,6 @@
       "citations": 1,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "online.ucpress.edu",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "access_blocked": 1
       }
     },
     {
@@ -2396,6 +2507,14 @@
       }
     },
     {
+      "host": "periodicos.unb.br",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "network_error": 1
+      }
+    },
+    {
       "host": "planning.org",
       "unique_urls": 1,
       "citations": 1,
@@ -2465,6 +2584,14 @@
       "citations": 1,
       "states": {
         "access_blocked": 1
+      }
+    },
+    {
+      "host": "randazzo.net",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "network_error": 1
       }
     },
     {
@@ -2549,6 +2676,14 @@
     },
     {
       "host": "rusi.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "sah.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2732,11 +2867,11 @@
       }
     },
     {
-      "host": "washingtonpost.com",
+      "host": "worldofinteriors.com",
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "transient": 1
+        "reachable": 1
       }
     },
     {
@@ -2888,6 +3023,18 @@
       ]
     },
     {
+      "url": "https://www.epa.gov/smartgrowth/smart-growth-and-transportation",
+      "host": "epa.gov",
+      "citation_count": 4,
+      "state": "reachable",
+      "books": [
+        "the-death-and-life-of-great-american-cities",
+        "triumph-of-the-city",
+        "walkable-city",
+        "toward-an-architecture"
+      ]
+    },
+    {
       "url": "https://academic.oup.com/wber/article/30/3/446/2449739",
       "host": "academic.oup.com",
       "citation_count": 3,
@@ -3028,6 +3175,24 @@
       ]
     },
     {
+      "url": "https://link.springer.com/article/10.1186/s40410-017-0073-1",
+      "host": "link.springer.com",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "a-pattern-language"
+      ]
+    },
+    {
+      "url": "https://media.aanda.psu.edu/sites/media/aa/files/documents/norman_design-of-everyday-things.pdf",
+      "host": "media.aanda.psu.edu",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-design-of-everyday-things"
+      ]
+    },
+    {
       "url": "https://nsarchive.gwu.edu/document/17601-clifford-stoll-communications-acm",
       "host": "nsarchive.gwu.edu",
       "citation_count": 3,
@@ -3077,7 +3242,7 @@
       "url": "https://oro.open.ac.uk/7761/",
       "host": "oro.open.ac.uk",
       "citation_count": 3,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-guns-of-august"
       ]
@@ -3214,6 +3379,27 @@
       ]
     },
     {
+      "url": "https://whc.unesco.org/en/culturallandscape/",
+      "host": "whc.unesco.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-landscape-of-man",
+        "the-architecture-of-happiness"
+      ]
+    },
+    {
+      "url": "https://www.architecturalrecord.com/articles/15311-review-of-modern-architecture-a-critical-history-fifth-edition",
+      "host": "architecturalrecord.com",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "toward-an-architecture",
+        "home-a-short-history-of-an-idea",
+        "modern-architecture-a-critical-history"
+      ]
+    },
+    {
       "url": "https://www.biointeractive.org/sites/default/files/TeacherGuide_YourInnerFish.pdf",
       "host": "biointeractive.org",
       "citation_count": 3,
@@ -3277,23 +3463,21 @@
       ]
     },
     {
-      "url": "https://www.epa.gov/smartgrowth/smart-growth-and-transportation",
-      "host": "epa.gov",
-      "citation_count": 3,
-      "state": "reachable",
-      "books": [
-        "the-death-and-life-of-great-american-cities",
-        "triumph-of-the-city",
-        "walkable-city"
-      ]
-    },
-    {
       "url": "https://www.fbi.gov/history/cases-and-criminals/osage-murders-case",
       "host": "fbi.gov",
       "citation_count": 3,
-      "state": "transient",
+      "state": "reachable",
       "books": [
         "killers-of-the-flower-moon"
+      ]
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/built-environment/articles/10.3389/fbuil.2024.1376759/full",
+      "host": "frontiersin.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "how-buildings-learn"
       ]
     },
     {
@@ -3921,6 +4105,15 @@
       ]
     },
     {
+      "url": "https://online.ucpress.edu/jsah/article-abstract/75/4/492/60352/Review-Complexity-and-Contradiction-in",
+      "host": "online.ucpress.edu",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "complexity-and-contradiction-in-architecture"
+      ]
+    },
+    {
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/ehr.13341",
       "host": "onlinelibrary.wiley.com",
       "citation_count": 2,
@@ -4140,6 +4333,15 @@
       ]
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7106933/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-architecture-of-happiness"
+      ]
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7969392/",
       "host": "pmc.ncbi.nlm.nih.gov",
       "citation_count": 2,
@@ -4305,6 +4507,15 @@
       ]
     },
     {
+      "url": "https://sigarra.up.pt/faup/en/pub_geral.pub_view?pi_pub_base_id=715250",
+      "host": "sigarra.up.pt",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "a-pattern-language"
+      ]
+    },
+    {
       "url": "https://tedconover.com/book/the-routes-of-man/",
       "host": "tedconover.com",
       "citation_count": 2,
@@ -4320,6 +4531,15 @@
       "state": "reachable",
       "books": [
         "the-lost-city-of-z"
+      ]
+    },
+    {
+      "url": "https://toc.library.ethz.ch/objects/pdf03/z01_0-262-22020-2_01.pdf",
+      "host": "toc.library.ethz.ch",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "learning-from-las-vegas"
       ]
     },
     {
@@ -4645,6 +4865,15 @@
       ]
     },
     {
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices",
+      "host": "fda.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-design-of-everyday-things"
+      ]
+    },
+    {
       "url": "https://www.federalreserve.gov/newsevents/speech/yellen20170825a.htm",
       "host": "federalreserve.gov",
       "citation_count": 2,
@@ -4804,6 +5033,15 @@
       ]
     },
     {
+      "url": "https://www.journals.uc.edu/index.php/vl/article/download/5150/4014/6827",
+      "host": "journals.uc.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "learning-from-las-vegas"
+      ]
+    },
+    {
       "url": "https://www.journals.uchicago.edu/doi/full/10.1086/673347",
       "host": "journals.uchicago.edu",
       "citation_count": 2,
@@ -4895,6 +5133,15 @@
       ]
     },
     {
+      "url": "https://www.kirkusreviews.com/book-reviews/a/witold-rybczynski-6/home-a-short-history-of-an-idea/",
+      "host": "kirkusreviews.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "home-a-short-history-of-an-idea"
+      ]
+    },
+    {
       "url": "https://www.marxists.org/archive/marx/works/1867-c1/index.htm",
       "host": "marxists.org",
       "citation_count": 2,
@@ -4910,6 +5157,15 @@
       "state": "access_blocked",
       "books": [
         "night-elie-wiesel"
+      ]
+    },
+    {
+      "url": "https://www.mdpi.com/2076-3417/11/10/4483",
+      "host": "mdpi.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "how-buildings-learn"
       ]
     },
     {
@@ -4965,6 +5221,15 @@
       "state": "reachable",
       "books": [
         "the-sea-around-us"
+      ]
+    },
+    {
+      "url": "https://www.newyorker.com/magazine/1986/09/01/1986-09-01-096-tny-cards-000135420",
+      "host": "newyorker.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "home-a-short-history-of-an-idea"
       ]
     },
     {
@@ -5046,6 +5311,15 @@
       "state": "reachable",
       "books": [
         "the-works-anatomy-of-a-city"
+      ]
+    },
+    {
+      "url": "https://www.penguinrandomhouse.com/books/38359/the-architecture-of-happiness-by-alain-de-botton/",
+      "host": "penguinrandomhouse.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-architecture-of-happiness"
       ]
     },
     {
@@ -5193,12 +5467,30 @@
       ]
     },
     {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/10464883.2012.714912",
+      "host": "tandfonline.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "complexity-and-contradiction-in-architecture"
+      ]
+    },
+    {
       "url": "https://www.tara.tcd.ie/items/1d88e61c-4bb2-46a7-902d-f162cf8a4727",
       "host": "tara.tcd.ie",
       "citation_count": 2,
       "state": "access_blocked",
       "books": [
         "cities-in-civilization"
+      ]
+    },
+    {
+      "url": "https://www.thamesandhudson.com/products/modern-architecture-world-of-art",
+      "host": "thamesandhudson.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "modern-architecture-a-critical-history"
       ]
     },
     {
@@ -5291,6 +5583,15 @@
       "books": [
         "the-great-influenza",
         "pale-rider"
+      ]
+    },
+    {
+      "url": "https://yalebooks.co.uk/book/9780892368228/toward-an-architecture/",
+      "host": "yalebooks.co.uk",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "toward-an-architecture"
       ]
     }
   ],
@@ -5737,7 +6038,7 @@
       ],
       "host": "apnews.com",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://apnews.com/article/robert-caro-power-broker-50-years-684b96ffb147edb8c1a1935687d2f7c0",
       "redirected": true,
@@ -5927,6 +6228,23 @@
       "final_url": null,
       "redirected": false,
       "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://assets.moma.org/documents/moma_catalogue_263_300063175.pdf",
+      "citations": [
+        {
+          "slug": "learning-from-las-vegas",
+          "claim_index": 2,
+          "source_title": "MoMA context for Learning from Las Vegas"
+        }
+      ],
+      "host": "assets.moma.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://assets.moma.org/documents/moma_catalogue_263_300063175.pdf",
+      "redirected": false,
+      "error": null
     },
     {
       "url": "https://backoffice.biblio.ugent.be/download/7065689/7082391",
@@ -6370,7 +6688,7 @@
       ],
       "host": "csrc.nist.gov",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://csrc.nist.gov/nist-cyber-history/cryptography/chapter",
       "redirected": false,
@@ -6856,6 +7174,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1017/S1359135500002591",
+      "citations": [
+        {
+          "slug": "a-pattern-language",
+          "claim_index": 1,
+          "source_title": "The structure of pattern languages"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.liverpooluniversitypress.co.uk/doi/10.1017/s1359135500002591",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1029/95JD03237",
       "citations": [
         {
@@ -6907,7 +7242,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-023-01313-5",
+      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=5c17634d-2217-4f1f-9305-be27df9ee42f",
       "redirected": true,
       "error": null
     },
@@ -6939,7 +7274,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=02e3e375-1d20-4402-9e39-c352ed8190d5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=bfc86c57-88aa-4336-a58e-31be51717ea7",
       "redirected": true,
       "error": null
     },
@@ -6956,7 +7291,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=2295eb23-557d-41f7-a6c3-3573b6fdc4d4",
+      "final_url": "https://www.nature.com/articles/nature10574",
       "redirected": true,
       "error": null
     },
@@ -6978,7 +7313,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnplants201793&code=6100a458-8fc8-4fd0-a8a5-68e7a7fe3c26",
+      "final_url": "https://www.nature.com/articles/nplants201793",
       "redirected": true,
       "error": null
     },
@@ -7000,7 +7335,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=5841b702-fbc2-4d78-a6d6-9e8206771533",
+      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
       "redirected": true,
       "error": null
     },
@@ -7017,7 +7352,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-023-43426-5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=bb35672b-50a4-45f7-bcc1-d9995891965d",
       "redirected": true,
       "error": null
     },
@@ -7034,7 +7369,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=2dc651e3-7a92-483a-9963-f9d1ee847c7d",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=76d9dcc8-dbb4-474c-a17f-41ba8cb16460",
       "redirected": true,
       "error": null
     },
@@ -7051,7 +7386,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=c12bf726-f3fe-492a-bb6a-ab150778930e",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0",
       "redirected": true,
       "error": null
     },
@@ -7068,7 +7403,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=345b6e3d-0ca6-4380-9c2c-1db16b991982",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=8e1ca396-bf7f-42df-a6c2-e82dd5b705b2",
       "redirected": true,
       "error": null
     },
@@ -7085,7 +7420,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=2a1dee32-a698-4956-b36a-c8464ca74d98",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=c2ab686d-cd46-4dc8-a30e-de739e666b04",
       "redirected": true,
       "error": null
     },
@@ -7600,6 +7935,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://academic.oup.com/california-scholarship-online/book/14977/chapter/169333663",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.18502/jchr.v14i24.19606",
+      "citations": [
+        {
+          "slug": "the-architecture-of-happiness",
+          "claim_index": 1,
+          "source_title": "Architecture and urban design for social health review"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://publish.kne-publishing.com/index.php/JCHR/article/view/19606",
       "redirected": true,
       "error": null
     },
@@ -8905,7 +9257,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s10602-026-09503-9?error=cookies_not_supported&code=4f648662-447d-4906-bd17-9d1756a07470",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=70927beb-5e65-410e-b058-f6a64fe120c6",
       "redirected": true,
       "error": null
     },
@@ -8932,7 +9284,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=37aeec03-2615-4df0-96da-2b0798fc1093",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=f84d4c52-399e-4966-89a6-730f66c797ad",
       "redirected": true,
       "error": null
     },
@@ -8966,8 +9318,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s11229-024-04527-w",
-      "redirected": false,
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11229-024-04527-w&code=9ce40a8e-dfe2-46f1-98bc-98eccea8b890",
+      "redirected": true,
       "error": null
     },
     {
@@ -8988,7 +9340,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=828a85e4-b373-44b6-b952-97021234c3c1",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=a0fac410-b05c-4417-88bf-98ca7083778a",
       "redirected": true,
       "error": null
     },
@@ -9005,7 +9357,34 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=1a2b6144-c675-4d7d-93b6-293124803ce9",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=aa65f640-6fda-4cff-bc1c-39e2467cf8e0",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s40410-017-0073-1",
+      "citations": [
+        {
+          "slug": "a-pattern-language",
+          "claim_index": 1,
+          "source_title": "Critical response to A Pattern Language"
+        },
+        {
+          "slug": "a-pattern-language",
+          "claim_index": 2,
+          "source_title": "Critical response to A Pattern Language"
+        },
+        {
+          "slug": "a-pattern-language",
+          "claim_index": 3,
+          "source_title": "Critical response to A Pattern Language"
+        }
+      ],
+      "host": "link.springer.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=1c6ca9c2-3113-4f37-900e-9f0633f6e35a",
       "redirected": true,
       "error": null
     },
@@ -9022,7 +9401,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=c60f5518-33f2-420e-8eca-7bcd2c19ff68",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=4f1d5aeb-53f8-4383-b5d6-daa156d15270",
       "redirected": true,
       "error": null
     },
@@ -9118,6 +9497,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://media-1.carnegiecouncil.org/import/studio/Why_the_West_Rules_For_Now.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://media.aanda.psu.edu/sites/media/aa/files/documents/norman_design-of-everyday-things.pdf",
+      "citations": [
+        {
+          "slug": "the-design-of-everyday-things",
+          "claim_index": 1,
+          "source_title": "The Design of Everyday Things revised text"
+        },
+        {
+          "slug": "the-design-of-everyday-things",
+          "claim_index": 2,
+          "source_title": "The Design of Everyday Things revised text"
+        },
+        {
+          "slug": "the-design-of-everyday-things",
+          "claim_index": 3,
+          "source_title": "The Design of Everyday Things revised text"
+        }
+      ],
+      "host": "media.aanda.psu.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://media.aanda.psu.edu/sites/media/aa/files/documents/norman_design-of-everyday-things.pdf",
       "redirected": false,
       "error": null
     },
@@ -9668,6 +10074,28 @@
       "error": null
     },
     {
+      "url": "https://online.ucpress.edu/jsah/article-abstract/75/4/492/60352/Review-Complexity-and-Contradiction-in",
+      "citations": [
+        {
+          "slug": "complexity-and-contradiction-in-architecture",
+          "claim_index": 1,
+          "source_title": "JSAH review of Complexity and Contradiction"
+        },
+        {
+          "slug": "complexity-and-contradiction-in-architecture",
+          "claim_index": 2,
+          "source_title": "JSAH review of Complexity and Contradiction"
+        }
+      ],
+      "host": "online.ucpress.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://online.ucpress.edu/jsah/article-abstract/75/4/492/60352/Review-Complexity-and-Contradiction-in",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://online.ucpress.edu/SLA/article-abstract/1/2/100/83319/Review-The-Silk-Roads-A-New-History-of-the-World",
       "citations": [
         {
@@ -9859,6 +10287,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1467-8497.2012.01627.x",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1531-314X.2006.00033.x",
+      "citations": [
+        {
+          "slug": "complexity-and-contradiction-in-architecture",
+          "claim_index": 2,
+          "source_title": "Contradictions and Complexities"
+        }
+      ],
+      "host": "onlinelibrary.wiley.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1531-314X.2006.00033.x",
       "redirected": false,
       "error": null
     },
@@ -10082,9 +10527,9 @@
         }
       ],
       "host": "oro.open.ac.uk",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://oro.open.ac.uk/7761/",
       "redirected": false,
       "error": null
@@ -10392,6 +10837,23 @@
       "final_url": "https://periodicos.ufsc.br/index.php/principia/article/view/1808-1711.2013v17n1p183",
       "redirected": false,
       "error": null
+    },
+    {
+      "url": "https://periodicos.unb.br/index.php/paranoa/article/view/58355",
+      "citations": [
+        {
+          "slug": "toward-an-architecture",
+          "claim_index": 2,
+          "source_title": "Project and abstraction in Toward an Architecture"
+        }
+      ],
+      "host": "periodicos.unb.br",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://physicstoday.aip.org/reviews/command-and-control-nuclear-weapons-the-damascus-accident-and-the-illusion-of-safety",
@@ -11265,6 +11727,23 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5857560/",
+      "citations": [
+        {
+          "slug": "the-design-of-everyday-things",
+          "claim_index": 1,
+          "source_title": "Affordance and forms of engagement"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5857560/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5878058/",
       "citations": [
         {
@@ -11402,6 +11881,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6748862/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7106933/",
+      "citations": [
+        {
+          "slug": "the-architecture-of-happiness",
+          "claim_index": 1,
+          "source_title": "Overview of built environment mental-health reviews"
+        },
+        {
+          "slug": "the-architecture-of-happiness",
+          "claim_index": 3,
+          "source_title": "Overview of built environment mental-health reviews"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7106933/",
       "redirected": false,
       "error": null
     },
@@ -11773,7 +12274,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
       "redirected": false,
       "error": null
@@ -12080,7 +12581,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34225102/",
       "redirected": false,
       "error": null
@@ -12114,7 +12615,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 203,
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/35840801/",
       "redirected": false,
       "error": null
@@ -12136,7 +12637,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
       "redirected": false,
       "error": null
@@ -12386,6 +12887,23 @@
       "final_url": "https://pure.mpg.de/rest/items/item_3347983/component/file_3369468/content",
       "redirected": false,
       "error": null
+    },
+    {
+      "url": "https://randazzo.net/agathon/article/view/437",
+      "citations": [
+        {
+          "slug": "complexity-and-contradiction-in-architecture",
+          "claim_index": 3,
+          "source_title": "Critiquing complexity and contradiction"
+        }
+      ],
+      "host": "randazzo.net",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://reach.ieee.org/primary-sources/a-mathematical-theory-of-communication/",
@@ -12693,6 +13211,23 @@
       "error": null
     },
     {
+      "url": "https://sah.org/2014/07/31/nothing-is-transmissible-but-thought-le-corbusier-s-radiant-farm-made-real/",
+      "citations": [
+        {
+          "slug": "toward-an-architecture",
+          "claim_index": 3,
+          "source_title": "Society of Architectural Historians on the Radiant City legacy"
+        }
+      ],
+      "host": "sah.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://sah.org/2014/07/31/nothing-is-transmissible-but-thought-le-corbusier-s-radiant-farm-made-real/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://scholar.harvard.edu/files/mankiw/files/yes_r_g_so_what.pdf",
       "citations": [
         {
@@ -12925,6 +13460,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://shc.stanford.edu/stanford-humanities-center/news/why-west-rules-now-0",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://sigarra.up.pt/faup/en/pub_geral.pub_view?pi_pub_base_id=715250",
+      "citations": [
+        {
+          "slug": "a-pattern-language",
+          "claim_index": 2,
+          "source_title": "Validating Pattern Languages systematic review"
+        },
+        {
+          "slug": "a-pattern-language",
+          "claim_index": 3,
+          "source_title": "Validating Pattern Languages systematic review"
+        }
+      ],
+      "host": "sigarra.up.pt",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://sigarra.up.pt/faup/en/pub_geral.pub_view?pi_pub_base_id=715250",
       "redirected": false,
       "error": null
     },
@@ -13323,6 +13880,28 @@
       "error": null
     },
     {
+      "url": "https://toc.library.ethz.ch/objects/pdf03/z01_0-262-22020-2_01.pdf",
+      "citations": [
+        {
+          "slug": "learning-from-las-vegas",
+          "claim_index": 1,
+          "source_title": "ETH library contents and sample"
+        },
+        {
+          "slug": "learning-from-las-vegas",
+          "claim_index": 3,
+          "source_title": "ETH library contents and sample"
+        }
+      ],
+      "host": "toc.library.ethz.ch",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://toc.library.ethz.ch/objects/pdf03/z01_0-262-22020-2_01.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://tradecosts.wto.org/",
       "citations": [
         {
@@ -13511,6 +14090,50 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://warroom.armywarcollege.edu/special-series/dusty-shelves/battle-cry/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://whc.unesco.org/documents/publi_wh_papers_07_en.pdf",
+      "citations": [
+        {
+          "slug": "the-landscape-of-man",
+          "claim_index": 3,
+          "source_title": "UNESCO cultural-landscape conservation papers"
+        }
+      ],
+      "host": "whc.unesco.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://whc.unesco.org/documents/publi_wh_papers_07_en.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://whc.unesco.org/en/culturallandscape/",
+      "citations": [
+        {
+          "slug": "the-landscape-of-man",
+          "claim_index": 1,
+          "source_title": "UNESCO cultural landscapes"
+        },
+        {
+          "slug": "the-landscape-of-man",
+          "claim_index": 2,
+          "source_title": "UNESCO cultural landscapes"
+        },
+        {
+          "slug": "the-architecture-of-happiness",
+          "claim_index": 2,
+          "source_title": "UNESCO cultural landscapes"
+        }
+      ],
+      "host": "whc.unesco.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://whc.unesco.org/en/culturallandscape/",
       "redirected": false,
       "error": null
     },
@@ -13843,9 +14466,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev.psych.59.103006.093629",
       "redirected": false,
       "error": null
@@ -13922,6 +14545,33 @@
       "final_url": null,
       "redirected": false,
       "error": "AbortError: This operation was aborted"
+    },
+    {
+      "url": "https://www.architecturalrecord.com/articles/15311-review-of-modern-architecture-a-critical-history-fifth-edition",
+      "citations": [
+        {
+          "slug": "toward-an-architecture",
+          "claim_index": 1,
+          "source_title": "Modern Architecture critical-history review"
+        },
+        {
+          "slug": "home-a-short-history-of-an-idea",
+          "claim_index": 3,
+          "source_title": "Architectural Record review of modern architecture history"
+        },
+        {
+          "slug": "modern-architecture-a-critical-history",
+          "claim_index": 2,
+          "source_title": "Architectural Record fifth-edition review"
+        }
+      ],
+      "host": "architecturalrecord.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.architecturalrecord.com/articles/15311-review-of-modern-architecture-a-critical-history-fifth-edition",
+      "redirected": false,
+      "error": null
     },
     {
       "url": "https://www.archives.gov/milestone-documents/pacific-railway-act",
@@ -14710,6 +15360,57 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.cancer.gov/research/progress/250-years-milestones",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cca.qc.ca/en/archives/470921/kenneth-frampton-fonds",
+      "citations": [
+        {
+          "slug": "modern-architecture-a-critical-history",
+          "claim_index": 3,
+          "source_title": "CCA Kenneth Frampton fonds"
+        }
+      ],
+      "host": "cca.qc.ca",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cca.qc.ca/en/archives/470921/kenneth-frampton-fonds",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cca.qc.ca/en/events/42299/a-conversation-with-kenneth-frampton-where-is-the-critical-voice-in-architecture-today",
+      "citations": [
+        {
+          "slug": "modern-architecture-a-critical-history",
+          "claim_index": 3,
+          "source_title": "CCA conversation on the critical voice"
+        }
+      ],
+      "host": "cca.qc.ca",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cca.qc.ca/en/events/42299/a-conversation-with-kenneth-frampton-where-is-the-critical-voice-in-architecture-today",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cca.qc.ca/en/search/details/library/publication/05497803",
+      "citations": [
+        {
+          "slug": "modern-architecture-a-critical-history",
+          "claim_index": 1,
+          "source_title": "CCA catalog record and contents"
+        }
+      ],
+      "host": "cca.qc.ca",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cca.qc.ca/en/search/details/library/publication/05497803",
       "redirected": false,
       "error": null
     },
@@ -15840,6 +16541,11 @@
           "slug": "walkable-city",
           "claim_index": 3,
           "source_title": "EPA smart growth and transportation"
+        },
+        {
+          "slug": "toward-an-architecture",
+          "claim_index": 3,
+          "source_title": "EPA smart growth and transportation"
         }
       ],
       "host": "epa.gov",
@@ -16014,12 +16720,12 @@
         }
       ],
       "host": "fbi.gov",
-      "state": "transient",
+      "state": "reachable",
       "method": "GET",
-      "status": null,
-      "final_url": null,
+      "status": 200,
+      "final_url": "https://www.fbi.gov/history/cases-and-criminals/osage-murders-case",
       "redirected": false,
-      "error": "AbortError: This operation was aborted"
+      "error": null
     },
     {
       "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label",
@@ -16040,6 +16746,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices",
+      "citations": [
+        {
+          "slug": "the-design-of-everyday-things",
+          "claim_index": 2,
+          "source_title": "FDA applying human factors and usability engineering"
+        },
+        {
+          "slug": "the-design-of-everyday-things",
+          "claim_index": 3,
+          "source_title": "FDA applying human factors and usability engineering"
+        }
+      ],
+      "host": "fda.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices",
       "redirected": false,
       "error": null
     },
@@ -16199,9 +16927,9 @@
         }
       ],
       "host": "ferc.gov",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy",
       "redirected": false,
       "error": null
@@ -16216,9 +16944,9 @@
         }
       ],
       "host": "ferc.gov",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.ferc.gov/industries-data/electric/general-information/addressing-2000-2001-western-energy-crisis",
       "redirected": false,
       "error": null
@@ -16361,6 +17089,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.fhwa.dot.gov/wit/bridgec.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/built-environment/articles/10.3389/fbuil.2024.1376759/full",
+      "citations": [
+        {
+          "slug": "how-buildings-learn",
+          "claim_index": 1,
+          "source_title": "Adaptability of buildings systematic review"
+        },
+        {
+          "slug": "how-buildings-learn",
+          "claim_index": 2,
+          "source_title": "Adaptability of buildings systematic review"
+        },
+        {
+          "slug": "how-buildings-learn",
+          "claim_index": 3,
+          "source_title": "Adaptability of buildings systematic review"
+        }
+      ],
+      "host": "frontiersin.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/built-environment/articles/10.3389/fbuil.2024.1376759/full",
       "redirected": false,
       "error": null
     },
@@ -17567,6 +18322,28 @@
       "error": null
     },
     {
+      "url": "https://www.journals.uc.edu/index.php/vl/article/download/5150/4014/6827",
+      "citations": [
+        {
+          "slug": "learning-from-las-vegas",
+          "claim_index": 1,
+          "source_title": "Learning from Las Vegas excerpt"
+        },
+        {
+          "slug": "learning-from-las-vegas",
+          "claim_index": 2,
+          "source_title": "Learning from Las Vegas excerpt"
+        }
+      ],
+      "host": "journals.uc.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.journals.uc.edu/index.php/vl/article/download/5150/4014/6827",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.journals.uchicago.edu/doi/full/10.1086/673347",
       "citations": [
         {
@@ -18069,6 +18846,28 @@
       "error": null
     },
     {
+      "url": "https://www.kirkusreviews.com/book-reviews/a/witold-rybczynski-6/home-a-short-history-of-an-idea/",
+      "citations": [
+        {
+          "slug": "home-a-short-history-of-an-idea",
+          "claim_index": 1,
+          "source_title": "Kirkus review of Home"
+        },
+        {
+          "slug": "home-a-short-history-of-an-idea",
+          "claim_index": 3,
+          "source_title": "Kirkus review of Home"
+        }
+      ],
+      "host": "kirkusreviews.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.kirkusreviews.com/book-reviews/a/witold-rybczynski-6/home-a-short-history-of-an-idea/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.lib.uchicago.edu/e/scrc/findingaids/view.php?eadid=ICU.SPCL.EXPO1893&lang=en",
       "citations": [
         {
@@ -18252,6 +19051,28 @@
       "error": null
     },
     {
+      "url": "https://www.mdpi.com/2076-3417/11/10/4483",
+      "citations": [
+        {
+          "slug": "how-buildings-learn",
+          "claim_index": 1,
+          "source_title": "Adaptability of Buildings critical review"
+        },
+        {
+          "slug": "how-buildings-learn",
+          "claim_index": 2,
+          "source_title": "Adaptability of Buildings critical review"
+        }
+      ],
+      "host": "mdpi.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.mdpi.com/2076-3417/11/10/4483",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.mei.edu/index.php/publications/edward-said-and-two-critiques-orientalism",
       "citations": [
         {
@@ -18299,6 +19120,23 @@
       "method": "GET",
       "status": 429,
       "final_url": "https://www.metmuseum.org/toah/hd/khan1/hd_khan1.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.moma.org/d/pdfs/W1siZiIsIjIwMTkvMDcvMDEvOHI4MnI1aW1qcV9XZWJTYW1wbGVfQ29tcGxleGl0eV9Wb2xfMWFuZDIucGRmIl1d/WebSample_Complexity_Vol_1and2.pdf?sha=de7bd6b30f97ab4e",
+      "citations": [
+        {
+          "slug": "learning-from-las-vegas",
+          "claim_index": 3,
+          "source_title": "MoMA papers on Venturi and Scott Brown"
+        }
+      ],
+      "host": "moma.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.moma.org/d/pdfs/W1siZiIsIjIwMTkvMDcvMDEvOHI4MnI1aW1qcV9XZWJTYW1wbGVfQ29tcGxleGl0eV9Wb2xfMWFuZDIucGRmIl1d/WebSample_Complexity_Vol_1and2.pdf?sha=de7bd6b30f97ab4e",
       "redirected": false,
       "error": null
     },
@@ -18575,7 +19413,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=da2c40c7-cdee-4b06-86a3-45ac2c7c10da",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-024-00544-4&code=5b02a1be-8d8b-43b8-a714-871ef8f895d4",
       "redirected": true,
       "error": null
     },
@@ -18597,7 +19435,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=b127dcf5-a01a-47de-b464-8cd20da913bc",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=e9a8a744-8376-4e56-ae9c-0fc9bea050f3",
       "redirected": true,
       "error": null
     },
@@ -18624,7 +19462,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=4ebaab8e-5e20-47fd-a22d-4e9e5adb1d57",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=e755f9f0-cd06-4aa2-81b6-4f0cae503b23",
       "redirected": true,
       "error": null
     },
@@ -18651,7 +19489,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=14072cf0-e4d2-408e-94c0-1c51360b2991",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=c23cce7f-97c4-4ec8-acd3-891de15899d9",
       "redirected": true,
       "error": null
     },
@@ -18673,7 +19511,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=c7a6fdea-c9fe-45f3-ae44-7ce72915929b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=60d0c624-bd28-4eb7-af92-5f021949f99e",
       "redirected": true,
       "error": null
     },
@@ -18690,7 +19528,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=f147c8aa-a06f-46ab-9ef7-9eb36e6d5355",
       "redirected": true,
       "error": null
     },
@@ -18724,7 +19562,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=e56c1e97-bbd8-4866-a1ed-41b3cef72ae1",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=7da86334-b08f-48e9-a2b6-a94d312a6f47",
       "redirected": true,
       "error": null
     },
@@ -18741,8 +19579,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-022-00537-x?error=cookies_not_supported&code=ba7cf6c9-dc70-489b-b0bc-549426854f00",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41576-022-00537-x",
+      "redirected": false,
       "error": null
     },
     {
@@ -18758,7 +19596,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=43689235-3bcc-4070-a053-bf47403e1780",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=d2bcd42f-48d8-4a7d-8a4e-9dbc0b67de32",
       "redirected": true,
       "error": null
     },
@@ -18780,7 +19618,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=dc630536-9409-4473-bd9b-c3f09073334a",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=3784a0ac-36f3-4d6f-a139-a4f2e68965b3",
       "redirected": true,
       "error": null
     },
@@ -18988,6 +19826,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.nejm.org/doi/full/10.1056/NEJMx210001",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.newyorker.com/magazine/1986/09/01/1986-09-01-096-tny-cards-000135420",
+      "citations": [
+        {
+          "slug": "home-a-short-history-of-an-idea",
+          "claim_index": 1,
+          "source_title": "New Yorker review of Home"
+        },
+        {
+          "slug": "home-a-short-history-of-an-idea",
+          "claim_index": 2,
+          "source_title": "New Yorker review of Home"
+        }
+      ],
+      "host": "newyorker.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.newyorker.com/magazine/1986/09/01/1986-09-01-096-tny-cards-000135420",
       "redirected": false,
       "error": null
     },
@@ -20019,6 +20879,28 @@
       "error": null
     },
     {
+      "url": "https://www.penguinrandomhouse.com/books/38359/the-architecture-of-happiness-by-alain-de-botton/",
+      "citations": [
+        {
+          "slug": "the-architecture-of-happiness",
+          "claim_index": 2,
+          "source_title": "Penguin Random House book description"
+        },
+        {
+          "slug": "the-architecture-of-happiness",
+          "claim_index": 3,
+          "source_title": "Penguin Random House book description"
+        }
+      ],
+      "host": "penguinrandomhouse.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.penguinrandomhouse.com/books/38359/the-architecture-of-happiness-by-alain-de-botton/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.phmc.state.pa.us/portal/communities/documents/1865-1945/johnstown-flood.html",
       "citations": [
         {
@@ -20883,9 +21765,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.semi.org/en/about-semi-membership/about-semi",
       "redirected": false,
       "error": null
@@ -20960,6 +21842,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.si.edu/object/five-days-memorial-life-and-death-storm-ravaged-hospital-sheri-fink%3Asiris_sil_1056647",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.si.edu/object/how-buildings-learn-what-happens-after-theyre-built-stewart-brand%3Asiris_sil_468917",
+      "citations": [
+        {
+          "slug": "how-buildings-learn",
+          "claim_index": 3,
+          "source_title": "Smithsonian record for How Buildings Learn"
+        }
+      ],
+      "host": "si.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.si.edu/object/how-buildings-learn-what-happens-after-theyre-built-stewart-brand%3Asiris_sil_468917",
       "redirected": false,
       "error": null
     },
@@ -21081,6 +21980,28 @@
       "error": null
     },
     {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/10464883.2012.714912",
+      "citations": [
+        {
+          "slug": "complexity-and-contradiction-in-architecture",
+          "claim_index": 1,
+          "source_title": "Complexity and Contradiction retrospective"
+        },
+        {
+          "slug": "complexity-and-contradiction-in-architecture",
+          "claim_index": 3,
+          "source_title": "Complexity and Contradiction retrospective"
+        }
+      ],
+      "host": "tandfonline.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/10464883.2012.714912",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.tandfonline.com/doi/full/10.1080/10999940903571304",
       "citations": [
         {
@@ -21111,6 +22032,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.tandfonline.com/doi/full/10.1080/13668250500488819",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/14601176.2014.893140",
+      "citations": [
+        {
+          "slug": "the-landscape-of-man",
+          "claim_index": 2,
+          "source_title": "Introduction: landscape as architecture"
+        }
+      ],
+      "host": "tandfonline.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/14601176.2014.893140",
       "redirected": false,
       "error": null
     },
@@ -21150,6 +22088,45 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.tara.tcd.ie/items/1d88e61c-4bb2-46a7-902d-f162cf8a4727",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.thamesandhudson.com/products/modern-architecture-world-of-art",
+      "citations": [
+        {
+          "slug": "modern-architecture-a-critical-history",
+          "claim_index": 1,
+          "source_title": "Thames & Hudson fifth edition description"
+        },
+        {
+          "slug": "modern-architecture-a-critical-history",
+          "claim_index": 2,
+          "source_title": "Thames & Hudson fifth edition description"
+        }
+      ],
+      "host": "thamesandhudson.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.thamesandhudson.com/products/modern-architecture-world-of-art",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.thamesandhudson.com/products/the-landscape-of-man-2",
+      "citations": [
+        {
+          "slug": "the-landscape-of-man",
+          "claim_index": 1,
+          "source_title": "Thames & Hudson: The Landscape of Man"
+        }
+      ],
+      "host": "thamesandhudson.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.thamesandhudson.com/products/the-landscape-of-man-2",
       "redirected": false,
       "error": null
     },
@@ -21557,6 +22534,23 @@
       "final_url": "https://www.victorianweb.org/technology/letters/networks.html",
       "redirected": false,
       "error": null
+    },
+    {
+      "url": "https://www.washingtonpost.com/archive/entertainment/books/1986/07/06/the-meaning-of-comfort/3956621c-ecdc-4e74-a749-bddc6fdea647/",
+      "citations": [
+        {
+          "slug": "home-a-short-history-of-an-idea",
+          "claim_index": 2,
+          "source_title": "Meaning of Comfort review"
+        }
+      ],
+      "host": "washingtonpost.com",
+      "state": "transient",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "AbortError: This operation was aborted"
     },
     {
       "url": "https://www.washingtonpost.com/archive/entertainment/books/2005/11/06/whos-the-boss/42385e4b-42bb-4487-803c-2b5cd060e9f9/",
@@ -21971,6 +22965,23 @@
       "error": null
     },
     {
+      "url": "https://www.worldofinteriors.com/story/the-landscape-of-man-geoffrey-susan-jellicoe",
+      "citations": [
+        {
+          "slug": "the-landscape-of-man",
+          "claim_index": 3,
+          "source_title": "World of Interiors on The Landscape of Man"
+        }
+      ],
+      "host": "worldofinteriors.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.worldofinteriors.com/story/the-landscape-of-man-geoffrey-susan-jellicoe",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.wto.org/english/tratop_e/envir_e/climate_impact_e.htm",
       "citations": [
         {
@@ -22117,6 +23128,28 @@
       "status": 200,
       "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/24/5/17-1609_article",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://yalebooks.co.uk/book/9780892368228/toward-an-architecture/",
+      "citations": [
+        {
+          "slug": "toward-an-architecture",
+          "claim_index": 1,
+          "source_title": "Yale University Press: Toward an Architecture"
+        },
+        {
+          "slug": "toward-an-architecture",
+          "claim_index": 2,
+          "source_title": "Yale University Press: Toward an Architecture"
+        }
+      ],
+      "host": "yalebooks.co.uk",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://yalebooks.co.uk/book/9780892368228/toward-an-architecture/",
+      "redirected": false,
       "error": null
     }
   ]

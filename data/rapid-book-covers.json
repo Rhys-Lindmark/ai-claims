@@ -2195,6 +2195,96 @@
       "source_authors": [
         "Richard Rothstein"
       ]
+    },
+    {
+      "slug": "a-pattern-language",
+      "match_state": "exact_title_author",
+      "cover_id": 120825,
+      "cover_url": "https://covers.openlibrary.org/b/id/120825-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3923600W",
+      "source_title": "A pattern language",
+      "source_authors": [
+        "Christopher Alexander",
+        "Sara Ishikawa",
+        "Murray Silverstein",
+        "Max Jacobson",
+        "Ingrid Fiksdahl-King",
+        "Shlomo Angel",
+        "Nax Jacobsohn"
+      ]
+    },
+    {
+      "slug": "how-buildings-learn",
+      "match_state": "exact_title_author",
+      "cover_id": 401280,
+      "cover_url": "https://covers.openlibrary.org/b/id/401280-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL823146W",
+      "source_title": "How Buildings Learn",
+      "source_authors": [
+        "Stewart Brand"
+      ]
+    },
+    {
+      "slug": "the-design-of-everyday-things",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "toward-an-architecture",
+      "match_state": "exact_title_author",
+      "cover_id": 8492385,
+      "cover_url": "https://covers.openlibrary.org/b/id/8492385-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19368421W",
+      "source_title": "Toward an Architecture",
+      "source_authors": [
+        "Le Corbusier"
+      ]
+    },
+    {
+      "slug": "complexity-and-contradiction-in-architecture",
+      "match_state": "exact_title_author",
+      "cover_id": 4420348,
+      "cover_url": "https://covers.openlibrary.org/b/id/4420348-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2940044W",
+      "source_title": "Complexity and contradiction in architecture",
+      "source_authors": [
+        "Robert Venturi"
+      ]
+    },
+    {
+      "slug": "learning-from-las-vegas",
+      "match_state": "exact_title_author",
+      "cover_id": 13586383,
+      "cover_url": "https://covers.openlibrary.org/b/id/13586383-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2940031W",
+      "source_title": "Learning from Las Vegas",
+      "source_authors": [
+        "Robert Venturi",
+        "Denise Scott Brown",
+        "Steven Izenour"
+      ]
+    },
+    {
+      "slug": "home-a-short-history-of-an-idea",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "modern-architecture-a-critical-history",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-landscape-of-man",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-architecture-of-happiness",
+      "match_state": "exact_title_author",
+      "cover_id": 5314605,
+      "cover_url": "https://covers.openlibrary.org/b/id/5314605-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL107927W",
+      "source_title": "The Architecture of Happiness",
+      "source_authors": [
+        "Alain De Botton"
+      ]
     }
   ]
 }
