@@ -3584,6 +3584,95 @@
       "source_authors": [
         "Kenneth Lacovara"
       ]
+    },
+    {
+      "slug": "the-ocean-of-life",
+      "match_state": "exact_title_author",
+      "cover_id": 7280995,
+      "cover_url": "https://covers.openlibrary.org/b/id/7280995-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16464936W",
+      "source_title": "The Ocean of Life",
+      "source_authors": [
+        "Callum Roberts"
+      ]
+    },
+    {
+      "slug": "the-unnatural-history-of-the-sea",
+      "match_state": "exact_title_author",
+      "cover_id": 1999248,
+      "cover_url": "https://covers.openlibrary.org/b/id/1999248-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL7941510W",
+      "source_title": "The Unnatural History of the Sea",
+      "source_authors": [
+        "Callum Roberts"
+      ]
+    },
+    {
+      "slug": "other-minds",
+      "match_state": "exact_title_author",
+      "cover_id": 9244367,
+      "cover_url": "https://covers.openlibrary.org/b/id/9244367-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17894924W",
+      "source_title": "Other Minds",
+      "source_authors": [
+        "Peter Godfrey-Smith"
+      ]
+    },
+    {
+      "slug": "the-soul-of-an-octopus",
+      "match_state": "exact_title_author",
+      "cover_id": 10665428,
+      "cover_url": "https://covers.openlibrary.org/b/id/10665428-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17316715W",
+      "source_title": "The Soul of an Octopus",
+      "source_authors": [
+        "Sy Montgomery"
+      ]
+    },
+    {
+      "slug": "the-brilliant-abyss",
+      "match_state": "exact_title_author",
+      "cover_id": 11663926,
+      "cover_url": "https://covers.openlibrary.org/b/id/11663926-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL24837383W",
+      "source_title": "The Brilliant Abyss",
+      "source_authors": [
+        "Helen Scales"
+      ]
+    },
+    {
+      "slug": "the-deep-alex-rogers",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "four-fish",
+      "match_state": "exact_title_author",
+      "cover_id": 6680497,
+      "cover_url": "https://covers.openlibrary.org/b/id/6680497-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15317365W",
+      "source_title": "Four fish",
+      "source_authors": [
+        "Paul Greenberg"
+      ]
+    },
+    {
+      "slug": "the-world-is-blue",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-high-seas",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-outlaw-ocean",
+      "match_state": "exact_title_author",
+      "cover_id": 8757551,
+      "cover_url": "https://covers.openlibrary.org/b/id/8757551-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20092310W",
+      "source_title": "The Outlaw Ocean",
+      "source_authors": [
+        "Ian Urbina"
+      ]
     }
   ]
 }

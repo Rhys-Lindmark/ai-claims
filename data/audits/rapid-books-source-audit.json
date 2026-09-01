@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-09-01",
-  "checked_at": "2026-09-01T14:23:00.536Z",
+  "checked_at": "2026-09-01T14:49:18.727Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,46 +10,45 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 340,
-    "claims": 1020,
-    "citations": 2040,
-    "unique_urls": 1377,
-    "repeated_citations": 663,
-    "redirected_urls": 204,
+    "books": 350,
+    "claims": 1050,
+    "citations": 2100,
+    "unique_urls": 1431,
+    "repeated_citations": 669,
+    "redirected_urls": 235,
     "states": {
-      "access_blocked": 340,
-      "network_error": 29,
+      "access_blocked": 323,
+      "network_error": 31,
       "other_http": 4,
-      "reachable": 996,
-      "transient": 8
+      "reachable": 1066,
+      "transient": 7
     },
     "score_distribution": {
       "42": 3,
       "50": 14,
       "58": 22,
-      "67": 82,
-      "75": 92,
-      "83": 67,
+      "67": 83,
+      "75": 99,
+      "83": 69,
       "92": 50,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 114,
+      "high": 116,
       "low": 1,
-      "medium": 84,
-      "medium-high": 119,
+      "medium": 85,
+      "medium-high": 126,
       "medium-low": 22
     }
   },
   "domain_summary": [
     {
       "host": "doi.org",
-      "unique_urls": 119,
-      "citations": 165,
+      "unique_urls": 144,
+      "citations": 191,
       "states": {
-        "reachable": 60,
-        "access_blocked": 58,
-        "transient": 1
+        "reachable": 78,
+        "access_blocked": 66
       }
     },
     {
@@ -62,19 +61,18 @@
     },
     {
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "unique_urls": 63,
-      "citations": 104,
+      "unique_urls": 64,
+      "citations": 105,
       "states": {
-        "access_blocked": 26,
-        "reachable": 37
+        "reachable": 64
       }
     },
     {
       "host": "sciencedirect.com",
-      "unique_urls": 44,
-      "citations": 59,
+      "unique_urls": 45,
+      "citations": 60,
       "states": {
-        "access_blocked": 44
+        "access_blocked": 45
       }
     },
     {
@@ -95,19 +93,19 @@
       }
     },
     {
-      "host": "nap.nationalacademies.org",
+      "host": "ipcc.ch",
       "unique_urls": 20,
-      "citations": 36,
+      "citations": 41,
       "states": {
         "reachable": 20
       }
     },
     {
-      "host": "ipcc.ch",
-      "unique_urls": 18,
-      "citations": 35,
+      "host": "nap.nationalacademies.org",
+      "unique_urls": 20,
+      "citations": 36,
       "states": {
-        "reachable": 18
+        "reachable": 20
       }
     },
     {
@@ -151,19 +149,19 @@
       }
     },
     {
-      "host": "academic.oup.com",
+      "host": "onlinelibrary.wiley.com",
       "unique_urls": 18,
-      "citations": 22,
+      "citations": 23,
       "states": {
         "access_blocked": 18
       }
     },
     {
-      "host": "onlinelibrary.wiley.com",
-      "unique_urls": 17,
+      "host": "academic.oup.com",
+      "unique_urls": 18,
       "citations": 22,
       "states": {
-        "access_blocked": 17
+        "access_blocked": 18
       }
     },
     {
@@ -243,8 +241,8 @@
       "unique_urls": 13,
       "citations": 15,
       "states": {
-        "access_blocked": 11,
-        "reachable": 2
+        "access_blocked": 10,
+        "reachable": 3
       }
     },
     {
@@ -253,6 +251,14 @@
       "citations": 15,
       "states": {
         "access_blocked": 14
+      }
+    },
+    {
+      "host": "fao.org",
+      "unique_urls": 12,
+      "citations": 14,
+      "states": {
+        "reachable": 12
       }
     },
     {
@@ -428,16 +434,8 @@
       "unique_urls": 6,
       "citations": 7,
       "states": {
-        "reachable": 3,
-        "access_blocked": 3
-      }
-    },
-    {
-      "host": "fao.org",
-      "unique_urls": 5,
-      "citations": 7,
-      "states": {
-        "reachable": 5
+        "reachable": 4,
+        "access_blocked": 2
       }
     },
     {
@@ -595,6 +593,14 @@
       }
     },
     {
+      "host": "un.org",
+      "unique_urls": 5,
+      "citations": 6,
+      "states": {
+        "reachable": 5
+      }
+    },
+    {
       "host": "unesco.org",
       "unique_urls": 2,
       "citations": 6,
@@ -681,7 +687,8 @@
       "unique_urls": 4,
       "citations": 5,
       "states": {
-        "reachable": 4
+        "reachable": 2,
+        "access_blocked": 2
       }
     },
     {
@@ -713,7 +720,8 @@
       "unique_urls": 5,
       "citations": 5,
       "states": {
-        "access_blocked": 5
+        "reachable": 1,
+        "access_blocked": 4
       }
     },
     {
@@ -1089,8 +1097,16 @@
       "unique_urls": 3,
       "citations": 3,
       "states": {
-        "reachable": 2,
-        "access_blocked": 1
+        "access_blocked": 2,
+        "reachable": 1
+      }
+    },
+    {
+      "host": "fisheries.noaa.gov",
+      "unique_urls": 3,
+      "citations": 3,
+      "states": {
+        "reachable": 3
       }
     },
     {
@@ -1122,7 +1138,7 @@
       "unique_urls": 2,
       "citations": 3,
       "states": {
-        "reachable": 2
+        "network_error": 2
       }
     },
     {
@@ -1282,7 +1298,8 @@
       "unique_urls": 2,
       "citations": 3,
       "states": {
-        "reachable": 2
+        "reachable": 1,
+        "access_blocked": 1
       }
     },
     {
@@ -1553,6 +1570,14 @@
       }
     },
     {
+      "host": "ilo.org",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "jamanetwork.com",
       "unique_urls": 2,
       "citations": 2,
@@ -1761,6 +1786,14 @@
       }
     },
     {
+      "host": "repository.library.noaa.gov",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "researchgate.net",
       "unique_urls": 1,
       "citations": 2,
@@ -1813,7 +1846,8 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "access_blocked": 2
+        "reachable": 1,
+        "access_blocked": 1
       }
     },
     {
@@ -2433,6 +2467,14 @@
       }
     },
     {
+      "host": "fishwatch.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "foreignpolicy.com",
       "unique_urls": 1,
       "citations": 1,
@@ -2466,6 +2508,14 @@
     },
     {
       "host": "go.gale.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "gov.uk",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2645,7 +2695,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -2658,6 +2708,14 @@
     },
     {
       "host": "ippr.in",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "isa.org.jm",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2762,6 +2820,14 @@
     },
     {
       "host": "lockheedmartin.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "lse.ac.uk",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2958,6 +3024,14 @@
       "citations": 1,
       "states": {
         "access_blocked": 1
+      }
+    },
+    {
+      "host": "oceanservice.noaa.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -3185,14 +3259,6 @@
       }
     },
     {
-      "host": "repository.library.noaa.gov",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
       "host": "repozytorium.amu.edu.pl",
       "unique_urls": 1,
       "citations": 1,
@@ -3369,6 +3435,14 @@
       }
     },
     {
+      "host": "treaties.un.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "uat.oceanservice.noaa.gov",
       "unique_urls": 1,
       "citations": 1,
@@ -3385,7 +3459,7 @@
       }
     },
     {
-      "host": "un.org",
+      "host": "unctad.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -3945,6 +4019,18 @@
       ]
     },
     {
+      "url": "https://www.ipcc.ch/srocc/chapter/chapter-5/",
+      "host": "ipcc.ch",
+      "citation_count": 4,
+      "state": "reachable",
+      "books": [
+        "the-ocean-of-life",
+        "the-brilliant-abyss",
+        "the-world-is-blue",
+        "the-high-seas"
+      ]
+    },
+    {
       "url": "https://www.ncbi.nlm.nih.gov/books/NBK338596/",
       "host": "ncbi.nlm.nih.gov",
       "citation_count": 4,
@@ -4425,7 +4511,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/27845531/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 3,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "grit"
       ]
@@ -4434,7 +4520,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/3321721/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 3,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-radium-girls"
       ]
@@ -4653,6 +4739,17 @@
       "books": [
         "energy-and-civilization",
         "drawdown"
+      ]
+    },
+    {
+      "url": "https://www.ipcc.ch/srocc/",
+      "host": "ipcc.ch",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "six-degrees",
+        "the-weather-makers",
+        "the-world-is-blue"
       ]
     },
     {
@@ -5110,6 +5207,16 @@
       ]
     },
     {
+      "url": "https://doi.org/10.1038/s41598-019-44492-w",
+      "host": "doi.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-brilliant-abyss",
+        "the-deep-alex-rogers"
+      ]
+    },
+    {
       "url": "https://doi.org/10.1073/pnas.2303077120",
       "host": "doi.org",
       "citation_count": 2,
@@ -5206,7 +5313,7 @@
       "url": "https://doi.org/10.5281/zenodo.4147317",
       "host": "doi.org",
       "citation_count": 2,
-      "state": "transient",
+      "state": "reachable",
       "books": [
         "spillover",
         "the-coming-plague"
@@ -5941,7 +6048,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-beak-of-the-finch"
       ]
@@ -5960,7 +6067,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/24572480/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-tangled-tree"
       ]
@@ -5969,7 +6076,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/25618769/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "breath"
       ]
@@ -5997,7 +6104,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/31331557/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "breath"
       ]
@@ -6025,7 +6132,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "lifespan"
       ]
@@ -6774,7 +6881,7 @@
       "url": "https://www.healthquality.va.gov/guidelines/mh/ptsd/index.asp",
       "host": "healthquality.va.gov",
       "citation_count": 2,
-      "state": "reachable",
+      "state": "network_error",
       "books": [
         "the-body-keeps-the-score"
       ]
@@ -6853,16 +6960,6 @@
       "books": [
         "the-city-in-history",
         "triumph-of-the-city"
-      ]
-    },
-    {
-      "url": "https://www.ipcc.ch/srocc/",
-      "host": "ipcc.ch",
-      "citation_count": 2,
-      "state": "reachable",
-      "books": [
-        "six-degrees",
-        "the-weather-makers"
       ]
     },
     {
@@ -7512,6 +7609,16 @@
       ]
     },
     {
+      "url": "https://www.un.org/bbnjagreement/en/bbnj-agreement/text-bbnj-agreement",
+      "host": "un.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-deep-alex-rogers",
+        "the-high-seas"
+      ]
+    },
+    {
       "url": "https://www.undp.org/publications/human-development-report-2010",
       "host": "undp.org",
       "citation_count": 2,
@@ -7525,7 +7632,7 @@
       "url": "https://www.unep.org/resources/production-gap-report-2023",
       "host": "unep.org",
       "citation_count": 2,
-      "state": "reachable",
+      "state": "access_blocked",
       "books": [
         "losing-earth",
         "this-changes-everything"
@@ -8219,7 +8326,7 @@
       ],
       "host": "apnews.com",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://apnews.com/article/robert-caro-power-broker-50-years-684b96ffb147edb8c1a1935687d2f7c0",
       "redirected": true,
@@ -9472,6 +9579,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1002/brv.70125",
+      "citations": [
+        {
+          "slug": "other-minds",
+          "claim_index": 3,
+          "source_title": "Updated cephalopod sentience assessment"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1002/brv.70125",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1007/s11127-015-0252-0",
       "citations": [
         {
@@ -9499,7 +9623,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s11127-015-0252-0",
+      "final_url": "https://link.springer.com/article/10.1007/s11127-015-0252-0?error=cookies_not_supported&code=4453f5f0-3d3f-4c39-81c3-69034265edc2",
       "redirected": true,
       "error": null
     },
@@ -9538,6 +9662,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1016/j.bbrc.2020.12.062",
+      "citations": [
+        {
+          "slug": "other-minds",
+          "claim_index": 2,
+          "source_title": "Cephalopods as ambassadors for rethinking cognition"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0006291X20322397",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1016/j.cities.2019.01.006",
       "citations": [
         {
@@ -9556,6 +9697,74 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0264275118309776",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.cobeha.2017.06.008",
+      "citations": [
+        {
+          "slug": "other-minds",
+          "claim_index": 1,
+          "source_title": "Cephalopod complex cognition"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S2352154617300189",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.cub.2014.01.006",
+      "citations": [
+        {
+          "slug": "the-brilliant-abyss",
+          "claim_index": 1,
+          "source_title": "Deep-sea biodiversity and ecosystem functioning"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0960982214000074",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.cub.2019.06.049",
+      "citations": [
+        {
+          "slug": "other-minds",
+          "claim_index": 2,
+          "source_title": "Cephalopod cognition"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0960982219307766",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.cub.2026.03.014",
+      "citations": [
+        {
+          "slug": "the-deep-alex-rogers",
+          "claim_index": 2,
+          "source_title": "Environmental impacts of deep-sea mining"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0960982226003039",
       "redirected": true,
       "error": null
     },
@@ -9711,6 +9920,40 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1016/j.isci.2021.102229",
+      "citations": [
+        {
+          "slug": "the-soul-of-an-octopus",
+          "claim_index": 3,
+          "source_title": "Behavioral evidence of pain in octopus"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S2589004221001978",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jcp.2008.04.004",
+      "citations": [
+        {
+          "slug": "the-soul-of-an-octopus",
+          "claim_index": 2,
+          "source_title": "Temperament in cephalopods"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0021999108002052",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1016/j.jebo.2018.01.020",
       "citations": [
         {
@@ -9741,6 +9984,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0022435922000434",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.marpol.2014.07.016",
+      "citations": [
+        {
+          "slug": "the-brilliant-abyss",
+          "claim_index": 3,
+          "source_title": "Deep-ocean ecosystem services"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0308597X14001900",
       "redirected": true,
       "error": null
     },
@@ -9836,6 +10096,40 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0951832017302090",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.tree.2011.07.008",
+      "citations": [
+        {
+          "slug": "the-ocean-of-life",
+          "claim_index": 3,
+          "source_title": "Recovery of marine animal populations and ecosystems"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0169534711002060",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/S0169-5347(00)89171-5",
+      "citations": [
+        {
+          "slug": "the-unnatural-history-of-the-sea",
+          "claim_index": 2,
+          "source_title": "Anecdotes and the shifting baseline syndrome"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0169534700891715",
       "redirected": true,
       "error": null
     },
@@ -10125,6 +10419,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1037/0735-7036.107.3.336",
+      "citations": [
+        {
+          "slug": "the-soul-of-an-octopus",
+          "claim_index": 2,
+          "source_title": "Personality in the octopus"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://psycnet.apa.org/doiLanding?doi=10.1037/0735-7036.107.3.336",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1037/a0014461",
       "citations": [
         {
@@ -10215,7 +10526,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=63b64269-989e-4705-8093-cbd169cba6c8",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=3933d7bf-fc78-4f6a-9934-472a7bb91e0e",
       "redirected": true,
       "error": null
     },
@@ -10247,7 +10558,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=a764cae6-1550-42cc-b7bc-a26b7fadd47f",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=079c67b0-5061-466b-aa12-e4c6c6c03492",
       "redirected": true,
       "error": null
     },
@@ -10264,7 +10575,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature08740&code=99b5eafa-4231-4600-8924-61a51cf548eb",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature08740&code=efe46096-21a2-47fd-85f6-50d35f773bc6",
       "redirected": true,
       "error": null
     },
@@ -10281,7 +10592,24 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=02c989d9-9c3a-4ae7-bcb3-badb6a7de9e2",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=65d64748-2e24-4520-a134-072b844075d9",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1038/nature13022",
+      "citations": [
+        {
+          "slug": "the-world-is-blue",
+          "claim_index": 3,
+          "source_title": "Global conservation outcomes from marine reserves"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature13022&code=6befb682-dfbf-40af-9980-3e7f6e2ddf02",
       "redirected": true,
       "error": null
     },
@@ -10298,7 +10626,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature13068&code=b771cbf4-e7f0-4e86-ad30-f58f8431deec",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature13068&code=448cbccd-b956-4b20-9a31-1c98f2c868d6",
       "redirected": true,
       "error": null
     },
@@ -10315,7 +10643,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature15759&code=119374a9-ece9-44b3-b683-bd24833241a0",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature15759&code=f34b85d9-16bc-4e3e-8bd1-8f7e9cc29386",
       "redirected": true,
       "error": null
     },
@@ -10359,7 +10687,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=57217db6-4ff7-42fc-847d-ecfbd66cb67a",
       "redirected": true,
       "error": null
     },
@@ -10376,7 +10704,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=bc6a5842-034f-42c2-9488-62f58e0e6365",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=50aa03da-ebbe-4be7-ab48-ebedfe129372",
       "redirected": true,
       "error": null
     },
@@ -10393,7 +10721,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=2662d88d-41b3-4f7c-a214-323f4dd8b46c",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=05284dcb-538e-4faf-aaed-c4c02a44c832",
       "redirected": true,
       "error": null
     },
@@ -10410,7 +10738,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=4acd4c61-e531-46c6-aeb6-62a347a174b2",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=dca34a12-2559-4198-ba80-f7da7c087e78",
       "redirected": true,
       "error": null
     },
@@ -10427,7 +10755,80 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=a159f851-e10b-4a32-872a-630e14350915",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=216edcdd-178f-4447-914c-40a8b3bb6fcc",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1038/s41586-020-2146-7",
+      "citations": [
+        {
+          "slug": "the-ocean-of-life",
+          "claim_index": 3,
+          "source_title": "Rebuilding marine life"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-2146-7&code=622a8902-5a94-4f2d-8739-25a33a03cda5",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1038/s41586-020-2616-y",
+      "citations": [
+        {
+          "slug": "four-fish",
+          "claim_index": 3,
+          "source_title": "The future of food from the sea"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/s41586-020-2616-y",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1038/s41586-021-03308-6",
+      "citations": [
+        {
+          "slug": "four-fish",
+          "claim_index": 2,
+          "source_title": "Environmental performance of fed aquaculture"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-021-03308-6&code=6ec0b5e6-d80c-4c5a-a9ae-d3a20dce32a0",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1038/s41598-019-44492-w",
+      "citations": [
+        {
+          "slug": "the-brilliant-abyss",
+          "claim_index": 2,
+          "source_title": "Impacts of deep-sea mining disturbance"
+        },
+        {
+          "slug": "the-deep-alex-rogers",
+          "claim_index": 2,
+          "source_title": "Long-term impact and recovery in a deep-sea mining track"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41598-019-44492-w&code=74846056-23bc-4251-a6f4-971002b07243",
       "redirected": true,
       "error": null
     },
@@ -10444,7 +10845,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=9dd873e0-2587-47cb-9636-894d27cc5e5f",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3",
       "redirected": true,
       "error": null
     },
@@ -10729,7 +11130,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://validate.perfdrive.com/fb803c746e9148689b3984a31fccd902/?ssa=8240dada-85c6-4176-8d41-b0eed0c55d9c&ssb=08520219546&ssc=https%3A%2F%2Fiopscience.iop.org%2Farticle%2F10.1088%2F1748-9326%2Faa815f&ssi=a701c8b3-cnvj-43fd-8016-8a46971844f4&ssk=botmanager_support@radware.com&ssm=91192559201630667106519406456198&ssn=506c73d720334aedf54e50aef2d20b96463b32c720d9-0147-4b88-8c2291&sso=2174d882-d77f4edbd1e34434647c8bfffb04684c5af1b4e05d805e20&ssp=86022182391788200707178828549631250&ssq=96430607263467559120772634339000069388578&ssr=NzMuMTcwLjI0LjEy&sst=AI-Claims-Source-Audit/0.1%20(+https://ai.rhyslindmark.com/claims)&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImlvcC5vcmciLCJfX3V6bWYiOiI3ZjkwMDAzMmM3MjBkOS0wMTQ3LTRiODgtODg4Mi1kNzdmNGVkYmQxZTMxLTE3ODgyNzI2MzUwMDUwLTAwNDZlMzA4ZmExOTZiMjM4MGUxMCIsInV6bXgiOiI3ZmMwMDAxOTJjMGEyMy1jMTM2LTQ3MjUtYTQ5NC05NDkyYWY3YzhhMzIxLTE3ODgyNzI2MzUwMDUwLTAwMzU1YjJlZDEyYTQyMDY5YTExMCJ9",
+      "final_url": "https://validate.perfdrive.com/fb803c746e9148689b3984a31fccd902/?ssa=b551e3e9-7935-427c-9dca-d3c2a0b99975&ssb=01857289683&ssc=https%3A%2F%2Fiopscience.iop.org%2Farticle%2F10.1088%2F1748-9326%2Faa815f&ssi=43712930-cnvj-4731-b09f-8e00b1daacde&ssk=botmanager_support@radware.com&ssm=03083277824769760109962359137978&ssn=9a1282d46a345eb2aaf67b9e1282927fea22fddb246f-b576-473e-bd7189&sso=14aa6d2e-739fdca3562624eb8a33a0042f6361866a4febf7f041220e&ssp=90008020601788208289178824554158636&ssq=03026247420758410642374207131317763989674&ssr=NzMuMTcwLjI0LjEy&sst=AI-Claims-Source-Audit/0.1%20(+https://ai.rhyslindmark.com/claims)&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImlvcC5vcmciLCJfX3V6bWYiOiI3ZjkwMDBmZGRiMjQ2Zi1iNTc2LTQ3M2UtYmQyZS03MzlmZGNhMzU2MjYxLTE3ODgyNzQyMDczNjUwLTAwNDdmYWIzYTJjOTdjNTI4OTkxMCIsInV6bXgiOiI3ZmMwMDA5YjMzMzk4ZC1jNmQwLTQ1MjgtYjI1Ni05OGNiMTQwNGRiOTMxLTE3ODgyNzQyMDczNjUwLTAwMzAyMGEzMjVhOGI4YTA2YjcxMCJ9",
       "redirected": true,
       "error": null
     },
@@ -10803,6 +11204,74 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://royalsocietypublishing.org/rsta/article/111559",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1098/rstb.2019.0243",
+      "citations": [
+        {
+          "slug": "the-unnatural-history-of-the-sea",
+          "claim_index": 2,
+          "source_title": "Using historical ecology to understand patterns of biodiversity loss"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://royalsocietypublishing.org/rstb/article/42540",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1111/brv.12053",
+      "citations": [
+        {
+          "slug": "the-unnatural-history-of-the-sea",
+          "claim_index": 3,
+          "source_title": "Marine historical ecology in conservation"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/brv.12053",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1111/brv.12651",
+      "citations": [
+        {
+          "slug": "other-minds",
+          "claim_index": 1,
+          "source_title": "How intelligent is a cephalopod?"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/brv.12651",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1111/conl.13020",
+      "citations": [
+        {
+          "slug": "the-world-is-blue",
+          "claim_index": 3,
+          "source_title": "Global conservation outcomes depend on marine protected-area quality"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://conbio.onlinelibrary.wiley.com/doi/10.1111/conl.13020",
       "redirected": true,
       "error": null
     },
@@ -10886,6 +11355,40 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.science.org/doi/10.1126/sciadv.aao3580",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1126/science.1059199",
+      "citations": [
+        {
+          "slug": "the-ocean-of-life",
+          "claim_index": 1,
+          "source_title": "Historical overfishing and coastal ecosystem collapse"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.science.org/doi/10.1126/science.1059199",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1126/science.1128035",
+      "citations": [
+        {
+          "slug": "the-unnatural-history-of-the-sea",
+          "claim_index": 1,
+          "source_title": "Human transformations of marine ecosystems"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.science.org/doi/10.1126/science.1128035",
       "redirected": true,
       "error": null
     },
@@ -11015,6 +11518,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.science.org/doi/10.1126/science.aam5979",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1126/science.aao5646",
+      "citations": [
+        {
+          "slug": "the-outlaw-ocean",
+          "claim_index": 3,
+          "source_title": "Global Fishing Watch industrial fishing footprint"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.science.org/doi/10.1126/science.aao5646",
       "redirected": true,
       "error": null
     },
@@ -11618,6 +12138,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.3389/fmars.2017.00133",
+      "citations": [
+        {
+          "slug": "the-unnatural-history-of-the-sea",
+          "claim_index": 3,
+          "source_title": "Historical ecology and marine restoration"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2017.00133/full",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.3389/fpsyg.2019.03087",
       "citations": [
         {
@@ -11683,12 +12220,12 @@
         }
       ],
       "host": "doi.org",
-      "state": "transient",
-      "method": "GET",
-      "status": null,
-      "final_url": null,
-      "redirected": false,
-      "error": "AbortError: This operation was aborted"
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://zenodo.org/records/7432079",
+      "redirected": true,
+      "error": null
     },
     {
       "url": "https://drought.unl.edu/DustBowl/Home.aspx",
@@ -11873,9 +12410,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/project-based-learning",
       "redirected": false,
       "error": null
@@ -12856,9 +13393,9 @@
         }
       ],
       "host": "ifs.org.uk",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://ifs.org.uk/inequality",
       "redirected": false,
       "error": null
@@ -13540,7 +14077,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=dd2d6809-730d-4ce2-89f8-a46beaf3dadc",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=61a11b71-22d4-41bb-8582-79f071de2877",
       "redirected": true,
       "error": null
     },
@@ -13567,7 +14104,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=7330ec8a-daee-4a76-af47-647514d83455",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=49b26dbd-a026-4c45-8e30-f0897552cbb8",
       "redirected": true,
       "error": null
     },
@@ -13584,8 +14121,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10902-007-9049-2&code=17eb1357-1b81-4d6e-a802-beff69ef2172",
-      "redirected": true,
+      "final_url": "https://link.springer.com/article/10.1007/s10902-007-9049-2",
+      "redirected": false,
       "error": null
     },
     {
@@ -13601,7 +14138,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10902-024-00747-6&code=ca98bc8c-5d1b-4e64-8fef-7aac09219301",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10902-024-00747-6&code=fa21d3ee-13b6-41cb-a13e-cce34316fc25",
       "redirected": true,
       "error": null
     },
@@ -13618,7 +14155,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11138-020-00508-7&code=81e3418f-eff0-4415-ac2f-33dd60482eca",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11138-020-00508-7&code=bfb52963-60a7-4e6e-8cd5-e6e12df3683e",
       "redirected": true,
       "error": null
     },
@@ -13669,7 +14206,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=1a568ba7-1fa0-41f0-8aa4-71047030fb15",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=334824f4-93c3-4cda-a37e-3f0be0c8b074",
       "redirected": true,
       "error": null
     },
@@ -13691,7 +14228,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=c03b9a9e-359a-44a7-b502-f9ba0b0dcf2b",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=56fffaa6-1530-419e-8f8f-45fe3198dc52",
       "redirected": true,
       "error": null
     },
@@ -13708,7 +14245,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=7d81e965-cafe-4c00-8a4b-168688f51a26",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=54f18ae4-2260-48ea-b208-916c6cf26f1c",
       "redirected": true,
       "error": null
     },
@@ -13735,7 +14272,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=e4bba8f7-ab42-457e-9476-54b0071422df",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=fb34e8f1-67f2-46ea-8707-f91ae6b87a41",
       "redirected": true,
       "error": null
     },
@@ -13752,7 +14289,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=c4fc910a-7273-41ef-9c29-00f76e4c0b12",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=3b673afb-1f50-4138-a0bc-a5533554da11",
       "redirected": true,
       "error": null
     },
@@ -14539,9 +15076,9 @@
         }
       ],
       "host": "naturalhistory.si.edu",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://naturalhistory.si.edu/visit/virtual-tour/current-exhibits/deep-time-virtual-tour-fossil-list",
       "redirected": false,
       "error": null
@@ -14986,6 +15523,23 @@
       "error": null
     },
     {
+      "url": "https://oceanservice.noaa.gov/facts/why-care-about-ocean.html",
+      "citations": [
+        {
+          "slug": "the-world-is-blue",
+          "claim_index": 1,
+          "source_title": "NOAA why should we care about the ocean"
+        }
+      ],
+      "host": "oceanservice.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://oceanservice.noaa.gov/facts/why-care-about-ocean.html",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://ojs.victoria.ac.nz/jnzs/article/download/5418/4794/",
       "citations": [
         {
@@ -15106,6 +15660,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://onlinelibrary.wiley.com/doi/10.1002/bdm.2035",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/brv.12651",
+      "citations": [
+        {
+          "slug": "the-soul-of-an-octopus",
+          "claim_index": 1,
+          "source_title": "How intelligent is a cephalopod?"
+        }
+      ],
+      "host": "onlinelibrary.wiley.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/brv.12651",
       "redirected": false,
       "error": null
     },
@@ -18642,8 +19213,25 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/11138768/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11474098/",
+      "citations": [
+        {
+          "slug": "the-unnatural-history-of-the-sea",
+          "claim_index": 1,
+          "source_title": "Historical overfishing and coastal ecosystem collapse"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/11474098/",
       "redirected": false,
       "error": null
     },
@@ -18659,7 +19247,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/11557895/",
       "redirected": false,
       "error": null
@@ -18681,7 +19269,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/12146734/",
       "redirected": false,
       "error": null
@@ -18762,7 +19350,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/15808493/",
       "redirected": false,
       "error": null
@@ -18784,7 +19372,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/16226363/",
       "redirected": false,
       "error": null
@@ -18804,9 +19392,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
       "redirected": false,
       "error": null
@@ -18840,7 +19428,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/16602058/",
       "redirected": false,
       "error": null
@@ -18857,7 +19445,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/19223222/",
       "redirected": false,
       "error": null
@@ -18879,7 +19467,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/19657605/",
       "redirected": false,
       "error": null
@@ -18894,9 +19482,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/20481116/",
       "redirected": false,
       "error": null
@@ -18928,7 +19516,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/20920513/",
       "redirected": false,
       "error": null
@@ -18945,7 +19533,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/21923787/",
       "redirected": false,
       "error": null
@@ -18960,9 +19548,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/22044230/",
       "redirected": false,
       "error": null
@@ -18989,7 +19577,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/22365542/",
       "redirected": false,
       "error": null
@@ -19006,7 +19594,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/24137138/",
       "redirected": false,
       "error": null
@@ -19026,9 +19614,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/24572480/",
       "redirected": false,
       "error": null
@@ -19048,9 +19636,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/25618769/",
       "redirected": false,
       "error": null
@@ -19099,7 +19687,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/26472647/",
       "redirected": false,
       "error": null
@@ -19114,9 +19702,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/26832637/",
       "redirected": false,
       "error": null
@@ -19141,9 +19729,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/27845531/",
       "redirected": false,
       "error": null
@@ -19175,7 +19763,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/27993606/",
       "redirected": false,
       "error": null
@@ -19190,9 +19778,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/28074888/",
       "redirected": false,
       "error": null
@@ -19207,9 +19795,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/28288281/",
       "redirected": false,
       "error": null
@@ -19231,7 +19819,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/28705870/",
       "redirected": false,
       "error": null
@@ -19253,7 +19841,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/29085748/",
       "redirected": false,
       "error": null
@@ -19285,9 +19873,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/29466592/",
       "redirected": false,
       "error": null
@@ -19302,9 +19890,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/29649120/",
       "redirected": false,
       "error": null
@@ -19319,9 +19907,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/30058510/",
       "redirected": false,
       "error": null
@@ -19341,9 +19929,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/31331557/",
       "redirected": false,
       "error": null
@@ -19360,7 +19948,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/31749520/",
       "redirected": false,
       "error": null
@@ -19377,7 +19965,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/32428706/",
       "redirected": false,
       "error": null
@@ -19394,7 +19982,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/32602396/",
       "redirected": false,
       "error": null
@@ -19451,9 +20039,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/3321721/",
       "redirected": false,
       "error": null
@@ -19468,9 +20056,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/33317019/",
       "redirected": false,
       "error": null
@@ -19487,7 +20075,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/33411557/",
       "redirected": false,
       "error": null
@@ -19521,7 +20109,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34119525/",
       "redirected": false,
       "error": null
@@ -19536,9 +20124,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34152831/",
       "redirected": false,
       "error": null
@@ -19553,9 +20141,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34225102/",
       "redirected": false,
       "error": null
@@ -19572,7 +20160,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34325185/",
       "redirected": false,
       "error": null
@@ -19609,7 +20197,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34604558/",
       "redirected": false,
       "error": null
@@ -19646,9 +20234,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/35134825/",
       "redirected": false,
       "error": null
@@ -19670,7 +20258,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/35432041/",
       "redirected": false,
       "error": null
@@ -19685,9 +20273,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/35840801/",
       "redirected": false,
       "error": null
@@ -19707,9 +20295,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
       "redirected": false,
       "error": null
@@ -19724,9 +20312,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/37068054/",
       "redirected": false,
       "error": null
@@ -19741,9 +20329,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/38013368/",
       "redirected": false,
       "error": null
@@ -19760,7 +20348,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/38104789/",
       "redirected": false,
       "error": null
@@ -19782,7 +20370,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/38171645/",
       "redirected": false,
       "error": null
@@ -19797,9 +20385,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/38255828/",
       "redirected": false,
       "error": null
@@ -19814,9 +20402,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/38292053/",
       "redirected": false,
       "error": null
@@ -19848,9 +20436,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/42611354/",
       "redirected": false,
       "error": null
@@ -19865,9 +20453,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/8172116/",
       "redirected": false,
       "error": null
@@ -19884,7 +20472,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/8941953/",
       "redirected": false,
       "error": null
@@ -20366,6 +20954,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://repository.library.noaa.gov/view/noaa/39851/noaa_39851_DS1.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://repository.library.noaa.gov/view/noaa/72496/noaa_72496_DS1.pdf",
+      "citations": [
+        {
+          "slug": "the-deep-alex-rogers",
+          "claim_index": 1,
+          "source_title": "Deep-sea ecosystems of the North Atlantic"
+        }
+      ],
+      "host": "repository.library.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://repository.library.noaa.gov/view/noaa/72496/noaa_72496_DS1.pdf",
       "redirected": false,
       "error": null
     },
@@ -21803,6 +22408,23 @@
       "error": null
     },
     {
+      "url": "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=21&clang=_en&mtdsg_no=XXI-10&src=TREATY",
+      "citations": [
+        {
+          "slug": "the-high-seas",
+          "claim_index": 3,
+          "source_title": "UN Treaty Collection BBNJ status"
+        }
+      ],
+      "host": "treaties.un.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=21&clang=_en&mtdsg_no=XXI-10&src=TREATY",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://uat.oceanservice.noaa.gov/education/planet-stewards/bookclub.html",
       "citations": [
         {
@@ -21833,6 +22455,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://ucdp.uu.se/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://unctad.org/topic/transport-and-trade-logistics/review-of-maritime-transport",
+      "citations": [
+        {
+          "slug": "the-outlaw-ocean",
+          "claim_index": 1,
+          "source_title": "UNCTAD Review of Maritime Transport"
+        }
+      ],
+      "host": "unctad.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://unctad.org/topic/transport-and-trade-logistics/review-of-maritime-transport",
       "redirected": false,
       "error": null
     },
@@ -22458,9 +23097,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-devpsych-121318-084815",
       "redirected": false,
       "error": null
@@ -22509,9 +23148,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-lawsocsci-110316-113710",
       "redirected": false,
       "error": null
@@ -22611,9 +23250,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev.psych.55.042902.130709",
       "redirected": false,
       "error": null
@@ -22653,8 +23292,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-110218-024717?crawler=true&mimetype=application/pdf",
-      "redirected": true,
+      "final_url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-ecolsys-110218-024717",
+      "redirected": false,
       "error": null
     },
     {
@@ -22675,8 +23314,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.annualreviews.org/eprint/5N4i9qp8RfQTmPzxZtke/full/10.1146/annurev-polisci-071213-041224",
-      "redirected": false,
+      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-071213-041224?originator=useradmin&identity=5131&timestamp=20991231000000&signature=d9e00f1aeef59cd68a4f319a0cce4432",
+      "redirected": true,
       "error": null
     },
     {
@@ -24023,7 +24662,7 @@
       ],
       "host": "cdc.gov",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://www.cdc.gov/mmwr/volumes/69/wr/mm6905e1.htm",
       "redirected": false,
@@ -24392,9 +25031,9 @@
         }
       ],
       "host": "commonwealthfund.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.commonwealthfund.org/publications/fund-reports/2024/sep/mirror-mirror-2024",
       "redirected": false,
       "error": null
@@ -24431,9 +25070,9 @@
         }
       ],
       "host": "commonwealthfund.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.commonwealthfund.org/publications/journal-article/2014/sep/comparison-hospital-administrative-costs-eight-nations-us",
       "redirected": false,
       "error": null
@@ -25340,6 +25979,40 @@
       "error": null
     },
     {
+      "url": "https://www.fao.org/3/cc0458en/cc0458en.pdf",
+      "citations": [
+        {
+          "slug": "four-fish",
+          "claim_index": 3,
+          "source_title": "FAO Blue Transformation roadmap"
+        }
+      ],
+      "host": "fao.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://openknowledge.fao.org/server/api/core/bitstreams/39ef1d5b-0bee-4c31-9883-1325a44c48a8/content",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.fao.org/3/cc0461en/online/sofia/2024/aquaculture-production.html",
+      "citations": [
+        {
+          "slug": "four-fish",
+          "claim_index": 2,
+          "source_title": "FAO SOFIA 2024"
+        }
+      ],
+      "host": "fao.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://openknowledge.fao.org/",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://www.fao.org/4/al232e/al232e.pdf",
       "citations": [
         {
@@ -25358,6 +26031,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.fao.org/4/al232e/al232e.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fao.org/4/y1224e/y1224e.pdf",
+      "citations": [
+        {
+          "slug": "the-high-seas",
+          "claim_index": 2,
+          "source_title": "FAO international plan of action on IUU fishing"
+        }
+      ],
+      "host": "fao.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fao.org/4/y1224e/y1224e.pdf",
       "redirected": false,
       "error": null
     },
@@ -25401,6 +26091,57 @@
       "error": null
     },
     {
+      "url": "https://www.fao.org/iuu-fishing/international-framework/voluntary-guidelines-for-flag-state-performance/en/",
+      "citations": [
+        {
+          "slug": "the-outlaw-ocean",
+          "claim_index": 1,
+          "source_title": "FAO Voluntary Guidelines for Flag State Performance"
+        }
+      ],
+      "host": "fao.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fao.org/iuu-fishing/international-framework/voluntary-guidelines-for-flag-state-performance/en/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fao.org/newsroom/detail/fao-report-global-fisheries-and-aquaculture-production-reaches-a-new-record-high",
+      "citations": [
+        {
+          "slug": "four-fish",
+          "claim_index": 1,
+          "source_title": "FAO State of World Fisheries and Aquaculture"
+        }
+      ],
+      "host": "fao.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fao.org/newsroom/detail/fao-report-global-fisheries-and-aquaculture-production-reaches-a-new-record-high",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fao.org/port-state-measures/en/",
+      "citations": [
+        {
+          "slug": "the-outlaw-ocean",
+          "claim_index": 3,
+          "source_title": "FAO Agreement on Port State Measures"
+        }
+      ],
+      "host": "fao.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fao.org/port-state-measures/en/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.fao.org/publications/fao-flagship-publications/the-state-of-food-and-agriculture/en",
       "citations": [
         {
@@ -25414,6 +26155,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.fao.org/publications/fao-flagship-publications/the-state-of-food-and-agriculture/en",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fao.org/publications/fao-flagship-publications/the-state-of-world-fisheries-and-aquaculture",
+      "citations": [
+        {
+          "slug": "the-ocean-of-life",
+          "claim_index": 1,
+          "source_title": "FAO State of World Fisheries and Aquaculture"
+        }
+      ],
+      "host": "fao.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fao.org/publications/fao-flagship-publications/the-state-of-world-fisheries-and-aquaculture",
       "redirected": false,
       "error": null
     },
@@ -25695,9 +26453,9 @@
         }
       ],
       "host": "ferc.gov",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.ferc.gov/industries-data/electric/general-information/addressing-2000-2001-western-energy-crisis",
       "redirected": false,
       "error": null
@@ -25841,6 +26599,74 @@
       "status": 200,
       "final_url": "https://www.fhwa.dot.gov/wit/bridgec.htm",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fisheries.noaa.gov/insight/understanding-ocean-acidification",
+      "citations": [
+        {
+          "slug": "the-ocean-of-life",
+          "claim_index": 2,
+          "source_title": "NOAA understanding ocean acidification"
+        }
+      ],
+      "host": "fisheries.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fisheries.noaa.gov/insight/understanding-ocean-acidification",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fisheries.noaa.gov/national/habitat-conservation/deep-sea-coral-habitat",
+      "citations": [
+        {
+          "slug": "the-brilliant-abyss",
+          "claim_index": 1,
+          "source_title": "NOAA deep-sea coral habitat"
+        }
+      ],
+      "host": "fisheries.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fisheries.noaa.gov/national/habitat-conservation/deep-sea-coral-habitat",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fisheries.noaa.gov/national/habitat-conservation/deep-sea-coral-habitat#challenges",
+      "citations": [
+        {
+          "slug": "the-brilliant-abyss",
+          "claim_index": 2,
+          "source_title": "NOAA deep-sea coral threats"
+        }
+      ],
+      "host": "fisheries.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fisheries.noaa.gov/national/habitat-conservation/deep-sea-coral-habitat",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.fishwatch.gov/sustainable-seafood/the-global-picture",
+      "citations": [
+        {
+          "slug": "four-fish",
+          "claim_index": 1,
+          "source_title": "NOAA FishWatch stock status"
+        }
+      ],
+      "host": "fishwatch.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fisheries.noaa.gov/topic/sustainable-seafood/seafood-communities",
+      "redirected": true,
       "error": null
     },
     {
@@ -26161,6 +26987,23 @@
       "error": null
     },
     {
+      "url": "https://www.gov.uk/government/news/lobsters-octopus-and-crabs-recognised-as-sentient-beings",
+      "citations": [
+        {
+          "slug": "the-soul-of-an-octopus",
+          "claim_index": 3,
+          "source_title": "LSE cephalopod sentience review"
+        }
+      ],
+      "host": "gov.uk",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.gov.uk/government/news/lobsters-octopus-and-crabs-recognised-as-sentient-beings",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.govinfo.gov/content/pkg/CHRG-108shrg89038/pdf/CHRG-108shrg89038.pdf",
       "citations": [
         {
@@ -26358,12 +27201,12 @@
         }
       ],
       "host": "healthquality.va.gov",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
-      "final_url": "https://www.healthquality.va.gov/guidelines/mh/ptsd/index.asp",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
       "redirected": false,
-      "error": null
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/MH/ptsd/VA-DoD-CPG-PTSD-Full-CPG-Edited-111624-V5-81825.pdf",
@@ -26375,12 +27218,12 @@
         }
       ],
       "host": "healthquality.va.gov",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
-      "final_url": "https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/MH/ptsd/VA-DoD-CPG-PTSD-Full-CPG-Edited-111624-V5-81825.pdf",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
       "redirected": false,
-      "error": null
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://www.heritage.nf.ca/articles/economy/fishery.php",
@@ -26932,6 +27775,40 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.iea.org/world/coal",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ilo.org/publications/caught-sea-forced-labour-and-trafficking-fisheries",
+      "citations": [
+        {
+          "slug": "the-outlaw-ocean",
+          "claim_index": 2,
+          "source_title": "ILO Caught at Sea"
+        }
+      ],
+      "host": "ilo.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ilo.org/publications/caught-sea-forced-labour-and-trafficking-fisheries",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ilo.org/publications/forced-labour-commercial-fishing",
+      "citations": [
+        {
+          "slug": "the-outlaw-ocean",
+          "claim_index": 2,
+          "source_title": "ILO forced labour in commercial fishing"
+        }
+      ],
+      "host": "ilo.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ilo.org/publications/forced-labour-commercial-fishing",
       "redirected": false,
       "error": null
     },
@@ -27596,6 +28473,23 @@
       "error": null
     },
     {
+      "url": "https://www.ipcc.ch/site/assets/uploads/sites/3/2022/03/07_SROCC_Ch05_FINAL.pdf",
+      "citations": [
+        {
+          "slug": "the-deep-alex-rogers",
+          "claim_index": 1,
+          "source_title": "IPCC changing ocean chapter"
+        }
+      ],
+      "host": "ipcc.ch",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ipcc.ch/site/assets/uploads/sites/3/2022/03/07_SROCC_Ch05_FINAL.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.ipcc.ch/srocc/",
       "citations": [
         {
@@ -27607,6 +28501,11 @@
           "slug": "the-weather-makers",
           "claim_index": 3,
           "source_title": "IPCC ocean and cryosphere special report"
+        },
+        {
+          "slug": "the-world-is-blue",
+          "claim_index": 1,
+          "source_title": "IPCC ocean and cryosphere report"
         }
       ],
       "host": "ipcc.ch",
@@ -27615,6 +28514,55 @@
       "status": 200,
       "final_url": "https://www.ipcc.ch/srocc/",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ipcc.ch/srocc/chapter/chapter-5/",
+      "citations": [
+        {
+          "slug": "the-ocean-of-life",
+          "claim_index": 2,
+          "source_title": "IPCC SROCC ocean chapter"
+        },
+        {
+          "slug": "the-brilliant-abyss",
+          "claim_index": 3,
+          "source_title": "IPCC changing open ocean and deep seafloor"
+        },
+        {
+          "slug": "the-world-is-blue",
+          "claim_index": 2,
+          "source_title": "IPCC SROCC chapter 5"
+        },
+        {
+          "slug": "the-high-seas",
+          "claim_index": 1,
+          "source_title": "IPCC changing open ocean"
+        }
+      ],
+      "host": "ipcc.ch",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ipcc.ch/srocc/chapter/chapter-5/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.isa.org.jm/protection-of-the-marine-environment/",
+      "citations": [
+        {
+          "slug": "the-deep-alex-rogers",
+          "claim_index": 3,
+          "source_title": "International Seabed Authority environmental management"
+        }
+      ],
+      "host": "isa.org.jm",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://isa.org.jm/protection-of-the-marine-environment/",
+      "redirected": true,
       "error": null
     },
     {
@@ -28393,6 +29341,23 @@
       "error": null
     },
     {
+      "url": "https://www.lse.ac.uk/business/consulting/assets/documents/Sentience-in-Cephalopod-Molluscs-and-Decapod-Crustaceans-Final-Report-November-2021.pdf",
+      "citations": [
+        {
+          "slug": "other-minds",
+          "claim_index": 3,
+          "source_title": "LSE cephalopod sentience review"
+        }
+      ],
+      "host": "lse.ac.uk",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.lse.ac.uk/business/consulting/assets/documents/Sentience-in-Cephalopod-Molluscs-and-Decapod-Crustaceans-Final-Report-November-2021.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.marxists.org/archive/marx/works/1867-c1/index.htm",
       "citations": [
         {
@@ -28945,7 +29910,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=4b3b7170-b0f0-467c-9df2-e1e9e20fb9c1",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=e1816af3-0525-4e01-a9fa-e644b5e01f97",
       "redirected": true,
       "error": null
     },
@@ -28972,7 +29937,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=891b9b45-9610-4ea6-afc9-c8dad6a3d9f9",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=c121ca31-5a1c-44af-b4d1-010167545a3f",
       "redirected": true,
       "error": null
     },
@@ -28999,7 +29964,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=b876ffb3-c74c-4f81-9ad1-81f79ac0668e",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=02790dbb-b9d9-4cf7-8663-d58b9a9eb626",
       "redirected": true,
       "error": null
     },
@@ -29021,7 +29986,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=b89cf1cd-f52d-47fd-b7dd-a6e6ae400478",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=82bd695c-acaa-4b06-bae4-806f0646e34a",
       "redirected": true,
       "error": null
     },
@@ -29038,8 +30003,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=66324f8c-0786-4709-b0aa-8126e8397c25",
+      "redirected": true,
       "error": null
     },
     {
@@ -29072,7 +30037,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-018-0405-5&code=ffd3766d-cc30-4aa6-9abf-81f005e69f31",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-018-0405-5&code=f8b6ef16-51ac-4bfc-a7e0-f793be44793e",
       "redirected": true,
       "error": null
     },
@@ -29094,7 +30059,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=07dde69e-a175-4a4a-9a90-bf9bfba0edee",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=41533813-b31e-4bd5-8b4b-52e1499c7b44",
       "redirected": true,
       "error": null
     },
@@ -29111,7 +30076,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=024e2521-af18-4958-ac53-9dbd76bc79d3",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=78734e46-e106-4a0c-a43c-63128d0a168f",
       "redirected": true,
       "error": null
     },
@@ -29145,7 +30110,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=b0d31d7d-69cb-4da6-b681-21cabf0e2301",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=099ce7f1-38ec-423a-897b-824b3fd28c0d",
       "redirected": true,
       "error": null
     },
@@ -29167,7 +30132,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=5f7679f1-d0be-415f-b148-697a04637286",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=5d1774ab-f6e7-4855-81f3-485e246a776d",
       "redirected": true,
       "error": null
     },
@@ -29189,7 +30154,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41599-021-00763-4&code=96d3ed36-bd71-43e7-9e96-694e838e6d3d",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41599-021-00763-4&code=d6cf8b78-b705-485f-9354-f5be07c52a79",
       "redirected": true,
       "error": null
     },
@@ -32185,6 +33150,23 @@
       "error": null
     },
     {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0960982219307766",
+      "citations": [
+        {
+          "slug": "the-soul-of-an-octopus",
+          "claim_index": 1,
+          "source_title": "Cephalopod cognition review"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0960982219307766",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.sciencedirect.com/science/article/pii/S135917890000032X",
       "citations": [
         {
@@ -32418,9 +33400,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.semi.org/en/industry-groups/supply-chain-management",
       "redirected": false,
       "error": null
@@ -33142,6 +34124,79 @@
       "error": null
     },
     {
+      "url": "https://www.un.org/bbnjagreement/en/bbnj-agreement/text-bbnj-agreement",
+      "citations": [
+        {
+          "slug": "the-deep-alex-rogers",
+          "claim_index": 3,
+          "source_title": "UN BBNJ Agreement text"
+        },
+        {
+          "slug": "the-high-seas",
+          "claim_index": 3,
+          "source_title": "UN BBNJ Agreement text"
+        }
+      ],
+      "host": "un.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.un.org/bbnjagreement/en/bbnj-agreement/text-bbnj-agreement",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.un.org/depts/los/doalos_publications/publicationstexts/UnclosCompendiumEngWeb.pdf",
+      "citations": [
+        {
+          "slug": "the-high-seas",
+          "claim_index": 2,
+          "source_title": "United Nations Convention on the Law of the Sea compendium"
+        }
+      ],
+      "host": "un.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.un.org/depts/los/doalos_publications/publicationstexts/UnclosCompendiumEngWeb.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.un.org/regularprocess/content/first-world-ocean-assessment",
+      "citations": [
+        {
+          "slug": "the-high-seas",
+          "claim_index": 1,
+          "source_title": "UN World Ocean Assessment"
+        }
+      ],
+      "host": "un.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.un.org/regularprocess/content/first-world-ocean-assessment",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.un.org/regularprocess/woa2launch",
+      "citations": [
+        {
+          "slug": "the-world-is-blue",
+          "claim_index": 2,
+          "source_title": "UN World Ocean Assessment II"
+        }
+      ],
+      "host": "un.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.un.org/regularprocess/woa2launch",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.un.org/ruleoflaw/what-is-the-rule-of-law/",
       "citations": [
         {
@@ -33212,9 +34267,9 @@
         }
       ],
       "host": "unep.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.unep.org/resources/production-gap-report-2023",
       "redirected": false,
       "error": null
@@ -34263,8 +35318,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article",
-      "redirected": false,
+      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/1/05-0979_article",
+      "redirected": true,
       "error": null
     },
     {
@@ -34302,8 +35357,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/12/06-0506_article",
-      "redirected": true,
+      "final_url": "https://wwwnc.cdc.gov/eid/article/12/12/06-0506_article",
+      "redirected": false,
       "error": null
     },
     {

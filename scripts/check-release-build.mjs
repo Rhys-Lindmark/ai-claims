@@ -25,7 +25,7 @@ try {
 }
 
 assert.ok(javascriptFiles.length > 0, 'Release build must contain server JavaScript');
-assert.equal(catalog.books.length, 340, 'Update the release gate count when the reviewed catalog changes');
+assert.equal(catalog.books.length, 350, 'Update the release gate count when the reviewed catalog changes');
 
 const bundle = javascriptFiles.map((path) => readFileSync(path, 'utf8')).join('\n');
 const missingSlugs = catalog.books.map((book) => book.slug).filter((slug) => !bundle.includes(slug));
