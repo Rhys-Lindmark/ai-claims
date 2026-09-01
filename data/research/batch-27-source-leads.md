@@ -2,6 +2,8 @@
 
 Working source map captured 2026-08-31. These are leads, not yet accepted claim evidence; each URL still needs reachability, relevance, and claim-level review.
 
+Reachability pass: 12 URLs returned readable HTTP 200 responses, eight scholarly or agency routes returned access-blocked HTTP 403 responses, and the 23 MB *Architect's Newspaper* PDF began returning HTTP 200 but exceeded the 12-second transfer cap. Access blocks are not classified as broken links; use browser or alternate canonical routes during claim review.
+
 ## Railroads and roads
 
 - *The Great Railway Revolution*: author overview — https://www.christianwolmar.co.uk/book/great-railway-revolution/ ; contemporary review — https://www.theguardian.com/books/2012/may/27/great-railway-revolution-wolmar-review
