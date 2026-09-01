@@ -38,7 +38,7 @@ All ten titles were checked against the 260-book catalog before branch creation 
 ### Open society and historical prediction
 
 - Stanford Encyclopedia of Philosophy: Karl Popper — https://plato.stanford.edu/entries/popper/
-- Stanford Encyclopedia of Philosophy: historicism — https://plato.stanford.edu/entries/historicism/
+- Critical intellectual-history review of Popper's political argument — https://ojs.victoria.ac.nz/jnzs/article/download/5418/4794/
 - V-Dem datasets and documentation for institutional change — https://www.v-dem.net/data/
 
 ### Civilizations and conflict
