@@ -19,11 +19,15 @@ Status: initial research map, not public evidence approval.
 
 ## Required next evidence clusters
 
-- Contact-hypothesis meta-analyses and field experiments for *The Nature of Prejudice*.
-- Comparative animal and human aggression reviews for *On Aggression*.
+- Contact meta-analysis: https://pubmed.ncbi.nlm.nih.gov/16737372/
+- Contact mediators meta-analysis: https://onlinelibrary.wiley.com/doi/abs/10.1002/ejsp.504
+- Minority/majority contact asymmetry: https://pubmed.ncbi.nlm.nih.gov/16313659/
+- Two types of aggression in human evolution: https://pmc.ncbi.nlm.nih.gov/articles/PMC5777045/
+- Evolutionary and neuroendocrine foundations of aggression: https://doi.org/10.1016/j.tics.2023.02.003
+- Contemporary impression-management review: https://www.sciencedirect.com/science/article/pii/S2352250X21001585
+- Impression management on enterprise platforms: https://www.sciencedirect.com/science/article/pii/S0268401221000529
 - Media framing, persuasion, political knowledge, and deliberative-democracy evidence for Bernays and Lippmann.
 - Mobilization, grievance, identity fusion, and social-movement research for Hoffer.
-- Impression-management and role-performance studies for Goffman.
 - Institutionalization, classification, socialization, and realism critiques for Berger and Luckmann.
 
 Before publication, require at least four distinct evidence routes per book, retain explicit counterevidence, and keep philosophical or interpretive claims outside empirical score arithmetic unless they yield a testable factual or causal claim.
