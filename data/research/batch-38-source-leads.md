@@ -25,10 +25,15 @@ Status: initial research map, not public evidence approval.
 - Contact meta-analysis: https://pubmed.ncbi.nlm.nih.gov/16737372/
 - Contact mediators meta-analysis: https://onlinelibrary.wiley.com/doi/abs/10.1002/ejsp.504
 - Minority/majority contact asymmetry: https://pubmed.ncbi.nlm.nih.gov/16313659/
+- Minimal-group social categorization experiments: https://doi.org/10.1002/ejsp.2420010202
+- Categorization/prejudice critical review: https://doi.org/10.1207/s15327957pspr0902_2
 - Two types of aggression in human evolution: https://pmc.ncbi.nlm.nih.gov/articles/PMC5777045/
 - Evolutionary and neuroendocrine foundations of aggression: https://doi.org/10.1016/j.tics.2023.02.003
+- Lorenzian aggression theory critique: https://doi.org/10.1177/002234337601300401
+- Critique of Lorenz's instinct theory: https://doi.org/10.1086/399858
 - Contemporary impression-management review: https://www.sciencedirect.com/science/article/pii/S2352250X21001585
 - Impression management on enterprise platforms: https://www.sciencedirect.com/science/article/pii/S0268401221000529
+- Online performances and exhibitions after Goffman: https://doi.org/10.1177/0270467610385893
 - Political framing meta-analysis: https://www.cambridge.org/core/journals/british-journal-of-political-science/article/real-but-limited-a-metaanalytic-assessment-of-framing-effects-in-the-political-domain/4ABFC422A268C55254A03BDE871CF4BB
 - Strategic news coverage meta-analysis: https://doi.org/10.1177/0093650218808691
 - Framing theory review: https://www.annualreviews.org/doi/10.1146/annurev.polisci.10.072805.103054
@@ -38,5 +43,7 @@ Status: initial research map, not public evidence approval.
 - Relative-deprivation meta-analysis: https://doi.org/10.1177/1088868311430825
 - Reconstructing social construction: https://pmc.ncbi.nlm.nih.gov/articles/PMC12163552/
 - Cross-level construction of institutions: https://journals.sagepub.com/doi/pdf/10.1177/26317877231194368
+- Language-socialization review: https://doi.org/10.1146/annurev.anthro.31.040402.085352
+- Biology/culture constraint debate: https://doi.org/10.1525/aa.1988.90.4.02a00030
 
 Before publication, require at least four distinct evidence routes per book, retain explicit counterevidence, and keep philosophical or interpretive claims outside empirical score arithmetic unless they yield a testable factual or causal claim.

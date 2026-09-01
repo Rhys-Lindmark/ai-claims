@@ -23,18 +23,18 @@ Status: research draft. `Ready` means two relevant evidence routes are already i
 | *Obedience to Authority* | Milgram variations reveal resistance | Meta-Milgram + systematic-disobedience meta-analysis | Ready |
 | *Obedience to Authority* | Agentic state explains loss of agency | Meta-Milgram + engaged-followership review | Ready; competing identification account |
 | *On Aggression* | Aggression has evolutionary and biological components | PNAS two-types review + neuroendocrine review | Ready |
-| *On Aggression* | Aggression is a hydraulic instinct | Modern aggression reviews | Needs Lorenz-specific critique |
+| *On Aggression* | Aggression is a hydraulic instinct | Lorenzian-theory critique + critique of instinct theory | Ready; historical critiques directly challenge the model's generality |
 | *On Aggression* | War follows directly from animal territoriality | PNAS two-types review + neuroendocrine review | Ready; likely weak |
-| *The Nature of Prejudice* | Categorization and learning contribute to prejudice | Personality/prejudice + contact research | Needs categorization-specific source |
+| *The Nature of Prejudice* | Categorization and learning contribute to prejudice | Minimal-group experiments + categorization/prejudice critical review | Ready; categorization enables bias but does not mechanically determine it |
 | *The Nature of Prejudice* | Supported cooperative contact reduces prejudice | Contact and mediator meta-analyses | Ready |
 | *The Nature of Prejudice* | Contact works regardless of conditions | Contact meta-analysis + minority/majority asymmetry | Ready; universal version likely mixed |
 | *The Presentation of Self* | People manage impressions | Contemporary review + platform review | Ready |
-| *The Presentation of Self* | Roles and audiences structure presented selves | Contemporary review | Needs second role-performance source |
+| *The Presentation of Self* | Roles and audiences structure presented selves | Contemporary review + online performance/exhibition study | Ready; digital contexts require a performance/exhibition distinction |
 | *The Presentation of Self* | Interaction is conscious theatrical deception | Contemporary review + platform review | Ready; likely mixed/weak |
 | *The Social Construction of Reality* | Practice and legitimation sustain institutions | Reconstruction + cross-level institution review | Ready |
-| *The Social Construction of Reality* | Language and socialization shape taken-for-granted reality | Reconstruction source | Needs language/socialization evidence |
-| *The Social Construction of Reality* | Physical and biological constraints matter little | Cross-level institution review | Needs realism/material-constraint critique |
+| *The Social Construction of Reality* | Language and socialization shape taken-for-granted reality | Reconstruction source + language-socialization review | Ready; evidence supports transmission and transformation, not total determination |
+| *The Social Construction of Reality* | Physical and biological constraints matter little | Cross-level institution review + biology/culture constraint debate | Ready; treat this as a possible overextension, not necessarily the book's own wording |
 
 ## Next source pass
 
-Prioritize the remaining gaps: Lorenz's hydraulic model, Goffman's role-performance claim, Berger/Luckmann on language and socialization, the material-constraint critique, and Allport's categorization claim. Do not draft those claims into public records until each has evidence for and against.
+All 30 candidate claims now have at least two named evidence routes. Next, preflight every newly added URL, then draft the records one book at a time while preserving counterevidence and checking that each candidate is a fair representation of the book.
