@@ -10,6 +10,7 @@
     "dev": "vinext dev",
     "db:generate": "drizzle-kit generate",
     "build": "vinext build",
+    "test:release-build": "node scripts/check-release-build.mjs",
     "test:extension": "node --test extension/test/*.test.js",
     "test:extension-release": "node scripts/check-extension-release.mjs",
     "test:analysis-requests": "node --experimental-strip-types --test lib/analysis-request-store.test.ts",
