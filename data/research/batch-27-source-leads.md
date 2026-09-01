@@ -4,6 +4,8 @@ Working source map captured 2026-08-31. These are leads, not yet accepted claim 
 
 Reachability pass: 12 URLs returned readable HTTP 200 responses, eight scholarly or agency routes returned access-blocked HTTP 403 responses, and the 23 MB *Architect's Newspaper* PDF began returning HTTP 200 but exceeded the 12-second transfer cap. Access blocks are not classified as broken links; use browser or alternate canonical routes during claim review.
 
+Open Library discovery pass: exact first-result title matches were found for *The Great Bridge* (`OL7951381W`), *Nothing Like It in the World* (`OL478570W`), *Railways and the Raj* (`OL20563064W`), *The Routes of Man* (`OL19945078W`), and *Energy and Civilization* (`OL20186754W`). The other five queries were missing or ambiguous, so do not accept their first search result as cover provenance; use title-plus-author matching in the enrichment gate.
+
 ## Railroads and roads
 
 - *The Great Railway Revolution*: author overview — https://www.christianwolmar.co.uk/book/great-railway-revolution/ ; contemporary review — https://www.theguardian.com/books/2012/may/27/great-railway-revolution-wolmar-review
