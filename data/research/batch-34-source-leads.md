@@ -74,3 +74,67 @@ All ten titles were checked against the 260-book catalog before branch creation 
 - Treat civilizational categories as hypotheses whose coding and geographic overlap can drive results.
 - Keep electoral democracy, liberal rights, state capacity, rule of law, accountability, and public-goods provision as distinct outcomes.
 - For broad comparative books, use exactly three claims and make the selected denominator visible rather than converting an entire worldview into false precision.
+
+## Provisional three-claim denominator
+
+These are research prompts, not reviewed claims or scores. Wording and assessment may change after evidence is attached.
+
+### The Federalist Papers
+
+1. A large republic can make it harder for one faction to dominate than a small polity with fewer competing interests.
+2. Separated institutions with overlapping checks can constrain the concentration of public power.
+3. The Constitution's original design reliably reconciled effective national government with democratic accountability and minority protection.
+
+### Democracy in America
+
+1. Equality of social conditions powerfully shaped early American institutions, habits, and political expectations.
+2. Local government and voluntary associations can teach cooperation and counter political isolation.
+3. Majority opinion creates a distinctive risk of intellectual conformity and political domination in democracies.
+
+### The Road to Serfdom
+
+1. Comprehensive central economic planning requires concentrated discretionary authority because no democratic assembly can continuously agree on every allocation.
+2. Replacing general rules with plan-specific commands threatens equality before law and individual choice.
+3. Expanding welfare-state intervention or partial economic planning generally places democracies on a path toward totalitarianism.
+
+### Capitalism and Freedom
+
+1. Decentralized markets can disperse decision-making power and give dissenters economic alternatives.
+2. Economic freedom and political freedom are historically and causally connected.
+3. Friedman's preferred policies—school vouchers, negative income tax, floating exchange rates, occupational-license reform, and monetary rules—generally outperform their alternatives.
+
+### The Open Society and Its Enemies
+
+1. Historical development cannot be scientifically predicted from universal laws in the manner claimed by strong historicist systems.
+2. Liberal institutions that permit criticism and peaceful reform are safer than utopian programs requiring concentrated coercion.
+3. Plato, Hegel, and Marx form a coherent intellectual lineage that substantially caused modern totalitarian politics.
+
+### The Clash of Civilizations and the Remaking of World Order
+
+1. Cultural and religious identities became more politically salient after the Cold War.
+2. Conflicts across Huntington's civilizational boundaries became more likely than comparable conflicts within those boundaries.
+3. A small number of coherent civilization-level blocs and core states provide the best organizing map of post-Cold War world politics.
+
+### How Democracies Die
+
+1. Contemporary democracies often erode through elected leaders' incremental attacks rather than sudden military coups.
+2. Party gatekeeping and informal norms of mutual toleration and institutional forbearance help contain authoritarian politicians.
+3. Polarization and the abandonment of democratic norms are sufficient general explanations for most recent democratic breakdowns.
+
+### Political Order and Political Decay
+
+1. Stable liberal political order requires capable state administration, rule of law, and democratic accountability in balance.
+2. Institutions decay when organized insiders capture rules and block adaptation to changed conditions.
+3. The sequence in which state capacity, law, and accountability developed explains persistent cross-national differences in political performance.
+
+### The Dictator's Handbook
+
+1. Leaders in every regime prioritize political survival and therefore direct resources toward the coalition capable of keeping them in office.
+2. Small winning coalitions encourage private rewards, corruption, and weak public-goods provision, while large coalitions encourage broader benefits.
+3. Selectorate and winning-coalition size provide a generally sufficient explanation of aid, war, taxation, development, and leader survival across regimes.
+
+### The Narrow Corridor
+
+1. Liberty depends on both a capable state and a society powerful enough to monitor and contest it.
+2. State and social capacity can co-evolve through repeated mobilization and institutional response rather than remaining fixed opposites.
+3. A narrow balance between state and society explains the major historical distribution of liberty better than alternative institutional, economic, and geopolitical accounts.
