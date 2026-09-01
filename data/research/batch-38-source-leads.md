@@ -26,8 +26,13 @@ Status: initial research map, not public evidence approval.
 - Evolutionary and neuroendocrine foundations of aggression: https://doi.org/10.1016/j.tics.2023.02.003
 - Contemporary impression-management review: https://www.sciencedirect.com/science/article/pii/S2352250X21001585
 - Impression management on enterprise platforms: https://www.sciencedirect.com/science/article/pii/S0268401221000529
-- Media framing, persuasion, political knowledge, and deliberative-democracy evidence for Bernays and Lippmann.
-- Mobilization, grievance, identity fusion, and social-movement research for Hoffer.
-- Institutionalization, classification, socialization, and realism critiques for Berger and Luckmann.
+- Political framing meta-analysis: https://www.cambridge.org/core/journals/british-journal-of-political-science/article/real-but-limited-a-metaanalytic-assessment-of-framing-effects-in-the-political-domain/4ABFC422A268C55254A03BDE871CF4BB
+- Strategic news coverage meta-analysis: https://doi.org/10.1177/0093650218808691
+- Framing theory review: https://www.annualreviews.org/doi/10.1146/annurev.polisci.10.072805.103054
+- Citizen competence in direct democracy: https://doi.org/10.1017/S0007123416000090
+- Social identification and collective action meta-analysis: https://cyberpsychology.eu/article/view/14266
+- Collective behavior and social movements synthesis: https://pmc.ncbi.nlm.nih.gov/articles/PMC10162496/
+- Reconstructing social construction: https://pmc.ncbi.nlm.nih.gov/articles/PMC12163552/
+- Cross-level construction of institutions: https://journals.sagepub.com/doi/pdf/10.1177/26317877231194368
 
 Before publication, require at least four distinct evidence routes per book, retain explicit counterevidence, and keep philosophical or interpretive claims outside empirical score arithmetic unless they yield a testable factual or causal claim.
