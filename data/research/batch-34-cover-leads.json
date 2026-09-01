@@ -5,8 +5,8 @@
   "match_policy": "Exact normalized title and at least one compatible expected author; rerun the production enrichment gate after public records are generated.",
   "summary": {
     "books": 10,
-    "exact_title_author_leads": 9,
-    "unresolved": 1
+    "exact_title_author_leads": 10,
+    "unresolved": 0
   },
   "covers": [
     {
@@ -27,7 +27,11 @@
     },
     {
       "slug": "the-road-to-serfdom",
-      "match_state": "unresolved"
+      "match_state": "exact_title_author_lead",
+      "cover_id": 6991871,
+      "source_url": "https://openlibrary.org/works/OL1165001W",
+      "source_title": "The Road to Serfdom",
+      "source_authors": ["Friedrich A. von Hayek"]
     },
     {
       "slug": "capitalism-and-freedom",
