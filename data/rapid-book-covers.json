@@ -2856,6 +2856,15 @@
     },
     {
       "slug":"the-price-of-inequality","match_state":"exact_title_author","cover_id":9658674,"cover_url":"https://covers.openlibrary.org/b/id/9658674-M.jpg","source_url":"https://openlibrary.org/works/OL16618086W","source_title":"The price of inequality","source_authors":["Joseph E. Stiglitz"]
-    }
+    },
+    {"slug":"thinking-in-bets","match_state":"exact_title_author","cover_id":8792782,"cover_url":"https://covers.openlibrary.org/b/id/8792782-M.jpg","source_url":"https://openlibrary.org/works/OL19736287W","source_title":"Thinking in Bets","source_authors":["Annie Duke"]},
+    {"slug":"superforecasting","match_state":"exact_title_author","cover_id":9142114,"cover_url":"https://covers.openlibrary.org/b/id/9142114-M.jpg","source_url":"https://openlibrary.org/works/OL18233878W","source_title":"Superforecasting","source_authors":["Philip E. Tetlock","Dan Gardner"]},
+    {"slug":"noise","match_state":"exact_title_author","cover_id":10981966,"cover_url":"https://covers.openlibrary.org/b/id/10981966-M.jpg","source_url":"https://openlibrary.org/works/OL17962180W","source_title":"Noise","source_authors":["Daniel Kahneman","Olivier Sibony","Cass R. Sunstein"]},
+    {"slug":"the-signal-and-the-noise","match_state":"exact_title_author","cover_id":7256893,"cover_url":"https://covers.openlibrary.org/b/id/7256893-M.jpg","source_url":"https://openlibrary.org/works/OL16700318W","source_title":"The Signal and the Noise","source_authors":["Nate Silver"]},
+    {"slug":"the-black-swan","match_state":"exact_title_author","cover_id":5721840,"cover_url":"https://covers.openlibrary.org/b/id/5721840-M.jpg","source_url":"https://openlibrary.org/works/OL3295030W","source_title":"The Black Swan","source_authors":["Nassim Nicholas Taleb"]},
+    {"slug":"fooled-by-randomness","match_state":"exact_title_author","cover_id":855791,"cover_url":"https://covers.openlibrary.org/b/id/855791-M.jpg","source_url":"https://openlibrary.org/works/OL3295029W","source_title":"Fooled by randomness","source_authors":["Nassim Nicholas Taleb"]},
+    {"slug":"the-paradox-of-choice","match_state":"exact_title_author","cover_id":20382,"cover_url":"https://covers.openlibrary.org/b/id/20382-M.jpg","source_url":"https://openlibrary.org/works/OL272375W","source_title":"The Paradox of Choice","source_authors":["Barry Schwartz"]},
+    {"slug":"scarcity","match_state":"exact_title_author","cover_id":9896983,"cover_url":"https://covers.openlibrary.org/b/id/9896983-M.jpg","source_url":"https://openlibrary.org/works/OL19969724W","source_title":"Scarcity","source_authors":["Sendhil Mullainathan"]},
+    {"slug":"behave","match_state":"exact_title_author","cover_id":8814831,"cover_url":"https://covers.openlibrary.org/b/id/8814831-M.jpg","source_url":"https://openlibrary.org/works/OL17835813W","source_title":"Behave","source_authors":["Robert M. Sapolsky"]}
   ]
 }
