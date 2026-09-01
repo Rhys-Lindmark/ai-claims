@@ -155,3 +155,40 @@ This triage identifies what must be resolved before credits are assigned. It del
 | *Political Order and Political Decay* | State capacity, legality, and accountability are measurably distinct and jointly relevant to governance and public-goods provision. | Broad historical sequence claims involve selected cases, difficult counterfactuals, endogenous institutions, and multiple plausible codings of capacity and legal constraint. |
 | *The Dictator's Handbook* | Coalition incentives offer clear, testable mechanisms for private versus public benefits and leader survival. | Winning-coalition measures are contested, often track democracy, and perform unevenly for autocracies; competence, ideology, organizations, coercion, and institutions add explanatory power. |
 | *The Narrow Corridor* | Historical and contemporary cases support the idea that a capable state without accountability can oppress while a weak state cannot secure rights. | A direct historical-data test reports little support for the book's corridor hypothesis, and the framework risks redescribing outcomes while underweighting wealth, war, law, technology, and international influence. |
+
+## Claim-to-source binding plan
+
+The first source should establish the best available case for the claim; the second should add a constraint, countertest, or independent measure. Repeated sources are acceptable only when they bear directly on distinct claims.
+
+| Claim | Evidence for / framing | Constraint / independent check |
+|---|---|---|
+| Federalist 1 — large republic and faction | Congress.gov Federalist Nos. 10 and 51 | V-Dem party, participation, and minority-rights measures |
+| Federalist 2 — checks and balances | Congress.gov Constitution Annotated | National Archives constitutional text |
+| Federalist 3 — effective and accountable original design | Constitution Annotated institutional history | V-Dem long-run democracy measures and documented exclusions |
+| Tocqueville 1 — equality of conditions | *Studies in American Political Development* historical reassessment | Census and constitutional history cited by that study |
+| Tocqueville 2 — associations and local government | *Review of Politics* work on associational liberty | Quality of Government participation and institutional measures |
+| Tocqueville 3 — tyranny of the majority | *Journal of Politics* reconsideration | Constitutional minority-rights and free-expression measures in V-Dem |
+| Hayek 1 — comprehensive planning and discretion | *History of Political Economy* definition-sensitive reassessment | Comparative history in the 60-year review |
+| Hayek 2 — planning and general law | Hayek historical reassessment | World Bank rule-of-law and government-effectiveness measures |
+| Hayek 3 — welfare intervention and totalitarian slope | 60-year *Road to Serfdom* review | Mixed-economy counterevidence and definition study |
+| Friedman 1 — decentralized markets and exit | Friedman's published argument | Research separating capitalism, competition, and political freedom |
+| Friedman 2 — economic and political freedom | Hayek–Friedman empirical test | Reverse-direction and stable-democracy results in the same study |
+| Friedman 3 — preferred policy bundle | Program-specific evaluations rather than one omnibus citation | Distributional, implementation, and external-validity evidence per policy |
+| Popper 1 — limits of historical prediction | Stanford Encyclopedia of Philosophy: Popper | V-Dem's probabilistic, multidimensional regime evidence |
+| Popper 2 — criticism and peaceful reform | Stanford Encyclopedia of Philosophy: Popper | V-Dem and IDEA measures of accountability, rights, and alternation |
+| Popper 3 — intellectual lineage to totalitarianism | Specialist history of Popper's political thought | Critical intellectual-history review of *Open Society* |
+| Huntington 1 — cultural salience | UCDP conflict and identity-linked case evidence | Micro-level and cross-national tests of civilization coding |
+| Huntington 2 — civilization boundaries and conflict | De Gruyter post-Cold War positive test | Chiozza and ISQ null or conditional tests |
+| Huntington 3 — coherent blocs and core states | Huntington core-state test | Japanese Journal of Political Science critique and within-bloc diversity |
+| Levitsky–Ziblatt 1 — elected-led erosion | V-Dem democracy reports | International IDEA comparative reports |
+| Levitsky–Ziblatt 2 — gatekeeping and norms | Comparative cases in democracy scholarship | Formal institution, party-system, and enforcement measures |
+| Levitsky–Ziblatt 3 — sufficiency of norms and polarization | V-Dem backsliding cases | IDEA plus state-capacity, inequality, media, and conflict alternatives |
+| Fukuyama 1 — state, law, accountability balance | World Bank Governance Indicators | V-Dem and Quality of Government measures |
+| Fukuyama 2 — insider capture and institutional decay | Quality of Government corruption and impartiality measures | Case-specific institutional histories and reform outcomes |
+| Fukuyama 3 — developmental sequence | Long-run comparative historical cases | NBER state-capacity research and alternative sequence codings |
+| Dictator's Handbook 1 — political survival priority | Original 2,700-leader institutional test | ISQ survival and accountability reassessment |
+| Dictator's Handbook 2 — coalition size and goods | APSR selectorate retest | Annual Review measurement critique for autocracies |
+| Dictator's Handbook 3 — general explanatory sufficiency | Original selectorate applications | Annual Review critique plus regime, competence, ideology, and coercion alternatives |
+| Narrow Corridor 1 — capable constrained state | NBER state-capacity research | World Bank and V-Dem capacity/accountability distinctions |
+| Narrow Corridor 2 — co-evolution of state and society | AEA review of the mechanism and cases | Historical-data corridor test |
+| Narrow Corridor 3 — superior historical explanation | AEA review | *Journal of Development Studies* test reporting little supporting evidence |
