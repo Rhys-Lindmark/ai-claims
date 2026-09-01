@@ -54,7 +54,9 @@ function requestJsonOnce(url) {
     const request = https.get(url, { headers: { 'User-Agent': 'AIClaims/0.1 (https://ai.rhyslindmark.com/claims)' } }, (response) => {
       if (response.statusCode < 200 || response.statusCode >= 300) {
         response.resume();
-        reject(new Error(`Open Library returned ${response.statusCode}`));
+        const error = new Error(`Open Library returned ${response.statusCode}`);
+        error.statusCode = response.statusCode;
+        reject(error);
         return;
       }
       let body = '';
@@ -77,7 +79,8 @@ async function requestJson(url) {
       return await requestJsonOnce(url);
     } catch (error) {
       lastError = error;
-      if (!['ECONNRESET', 'ETIMEDOUT', 'EAI_AGAIN'].includes(error.code)) throw error;
+      const retryableHttp = error.statusCode === 429 || error.statusCode >= 500;
+      if (!retryableHttp && !['ECONNRESET', 'ETIMEDOUT', 'EAI_AGAIN'].includes(error.code)) throw error;
     }
   }
   throw lastError;
@@ -85,11 +88,14 @@ async function requestJson(url) {
 
 async function main() {
   const catalog = JSON.parse(await readFile(catalogPath, 'utf8'));
+  const existing = JSON.parse(await readFile(outputPath, 'utf8'));
+  const existingBySlug = new Map(existing.covers.map((cover) => [cover.slug, cover]));
   const covers = [];
   for (const [index, book] of catalog.books.entries()) {
-    covers.push(await lookup(book));
+    const cached = existingBySlug.get(book.slug);
+    covers.push(cached ?? await lookup(book));
     process.stdout.write(`\r${index + 1}/${catalog.books.length}`);
-    await new Promise((resolve) => setTimeout(resolve, 200));
+    if (!cached) await new Promise((resolve) => setTimeout(resolve, 200));
   }
   process.stdout.write('\n');
 

@@ -6,6 +6,7 @@
     "node": ">=22.13.0"
   },
   "scripts": {
+    "books:import": "node scripts/import-rapid-book-batch.mjs",
     "dev": "vinext dev",
     "db:generate": "drizzle-kit generate",
     "build": "vinext build",

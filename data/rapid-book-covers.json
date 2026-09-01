@@ -2828,53 +2828,447 @@
       ]
     },
     {
-      "slug":"free-to-choose","match_state":"exact_title_author","cover_id":4393564,"cover_url":"https://covers.openlibrary.org/b/id/4393564-M.jpg","source_url":"https://openlibrary.org/works/OL2747779W","source_title":"Free to choose","source_authors":["Milton Friedman","Rose D. Friedman"]
+      "slug": "free-to-choose",
+      "match_state": "exact_title_author",
+      "cover_id": 4393564,
+      "cover_url": "https://covers.openlibrary.org/b/id/4393564-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2747779W",
+      "source_title": "Free to choose",
+      "source_authors": [
+        "Milton Friedman",
+        "Rose D. Friedman"
+      ]
     },
     {
-      "slug":"why-liberalism-failed","match_state":"exact_title_author","cover_id":8128243,"cover_url":"https://covers.openlibrary.org/b/id/8128243-M.jpg","source_url":"https://openlibrary.org/works/OL17834451W","source_title":"Why Liberalism Failed","source_authors":["Patrick J. Deneen"]
+      "slug": "why-liberalism-failed",
+      "match_state": "exact_title_author",
+      "cover_id": 8128243,
+      "cover_url": "https://covers.openlibrary.org/b/id/8128243-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17834451W",
+      "source_title": "Why Liberalism Failed",
+      "source_authors": [
+        "Patrick J. Deneen"
+      ]
     },
     {
-      "slug":"the-spirit-level","match_state":"exact_title_author","cover_id":10070253,"cover_url":"https://covers.openlibrary.org/b/id/10070253-M.jpg","source_url":"https://openlibrary.org/works/OL18810403W","source_title":"The spirit level","source_authors":["Richard G. Wilkinson","Kate Pickett"]
+      "slug": "the-spirit-level",
+      "match_state": "exact_title_author",
+      "cover_id": 10070253,
+      "cover_url": "https://covers.openlibrary.org/b/id/10070253-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL18810403W",
+      "source_title": "The spirit level",
+      "source_authors": [
+        "Richard G. Wilkinson",
+        "Kate Pickett"
+      ]
     },
     {
-      "slug":"the-entrepreneurial-state","match_state":"exact_title_author","cover_id":7265270,"cover_url":"https://covers.openlibrary.org/b/id/7265270-M.jpg","source_url":"https://openlibrary.org/works/OL16808725W","source_title":"THE ENTREPRENEURIAL STATE","source_authors":["Mariana Mazzucato"]
+      "slug": "the-entrepreneurial-state",
+      "match_state": "exact_title_author",
+      "cover_id": 7265270,
+      "cover_url": "https://covers.openlibrary.org/b/id/7265270-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16808725W",
+      "source_title": "THE ENTREPRENEURIAL STATE",
+      "source_authors": [
+        "Mariana Mazzucato"
+      ]
     },
     {
-      "slug":"the-great-leveler","match_state":"exact_title_author","cover_id":8835555,"cover_url":"https://covers.openlibrary.org/b/id/8835555-M.jpg","source_url":"https://openlibrary.org/works/OL20186862W","source_title":"The Great Leveler","source_authors":["Walter Scheidel"]
+      "slug": "the-great-leveler",
+      "match_state": "exact_title_author",
+      "cover_id": 8835555,
+      "cover_url": "https://covers.openlibrary.org/b/id/8835555-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20186862W",
+      "source_title": "The Great Leveler",
+      "source_authors": [
+        "Walter Scheidel"
+      ]
     },
     {
-      "slug":"the-rise-and-decline-of-nations","match_state":"exact_title_author","cover_id":159427,"cover_url":"https://covers.openlibrary.org/b/id/159427-M.jpg","source_url":"https://openlibrary.org/works/OL108559W","source_title":"The Rise and Decline of Nations","source_authors":["Mancur Olson"]
+      "slug": "the-rise-and-decline-of-nations",
+      "match_state": "exact_title_author",
+      "cover_id": 159427,
+      "cover_url": "https://covers.openlibrary.org/b/id/159427-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL108559W",
+      "source_title": "The Rise and Decline of Nations",
+      "source_authors": [
+        "Mancur Olson"
+      ]
     },
     {
-      "slug":"the-logic-of-collective-action","match_state":"exact_title_author","cover_id":4453802,"cover_url":"https://covers.openlibrary.org/b/id/4453802-M.jpg","source_url":"https://openlibrary.org/works/OL108561W","source_title":"The logic of collective action","source_authors":["Mancur Olson"]
+      "slug": "the-logic-of-collective-action",
+      "match_state": "exact_title_author",
+      "cover_id": 4453802,
+      "cover_url": "https://covers.openlibrary.org/b/id/4453802-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL108561W",
+      "source_title": "The logic of collective action",
+      "source_authors": [
+        "Mancur Olson"
+      ]
     },
     {
-      "slug":"capitalism-socialism-and-democracy","match_state":"exact_title_author","cover_id":7148115,"cover_url":"https://covers.openlibrary.org/b/id/7148115-M.jpg","source_url":"https://openlibrary.org/works/OL1295326W","source_title":"Capitalism, Socialism and Democracy","source_authors":["Joseph Alois Schumpeter"]
+      "slug": "capitalism-socialism-and-democracy",
+      "match_state": "exact_title_author",
+      "cover_id": 7148115,
+      "cover_url": "https://covers.openlibrary.org/b/id/7148115-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1295326W",
+      "source_title": "Capitalism, Socialism and Democracy",
+      "source_authors": [
+        "Joseph Alois Schumpeter"
+      ]
     },
     {
-      "slug":"development-as-freedom","match_state":"exact_title_author","cover_id":120233,"cover_url":"https://covers.openlibrary.org/b/id/120233-M.jpg","source_url":"https://openlibrary.org/works/OL116534W","source_title":"Development as Freedom","source_authors":["Amartya Sen"]
+      "slug": "development-as-freedom",
+      "match_state": "exact_title_author",
+      "cover_id": 120233,
+      "cover_url": "https://covers.openlibrary.org/b/id/120233-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL116534W",
+      "source_title": "Development as Freedom",
+      "source_authors": [
+        "Amartya Sen"
+      ]
     },
     {
-      "slug":"the-price-of-inequality","match_state":"exact_title_author","cover_id":9658674,"cover_url":"https://covers.openlibrary.org/b/id/9658674-M.jpg","source_url":"https://openlibrary.org/works/OL16618086W","source_title":"The price of inequality","source_authors":["Joseph E. Stiglitz"]
+      "slug": "the-price-of-inequality",
+      "match_state": "exact_title_author",
+      "cover_id": 9658674,
+      "cover_url": "https://covers.openlibrary.org/b/id/9658674-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16618086W",
+      "source_title": "The price of inequality",
+      "source_authors": [
+        "Joseph E. Stiglitz"
+      ]
     },
-    {"slug":"thinking-in-bets","match_state":"exact_title_author","cover_id":8792782,"cover_url":"https://covers.openlibrary.org/b/id/8792782-M.jpg","source_url":"https://openlibrary.org/works/OL19736287W","source_title":"Thinking in Bets","source_authors":["Annie Duke"]},
-    {"slug":"superforecasting","match_state":"exact_title_author","cover_id":9142114,"cover_url":"https://covers.openlibrary.org/b/id/9142114-M.jpg","source_url":"https://openlibrary.org/works/OL18233878W","source_title":"Superforecasting","source_authors":["Philip E. Tetlock","Dan Gardner"]},
-    {"slug":"noise","match_state":"exact_title_author","cover_id":10981966,"cover_url":"https://covers.openlibrary.org/b/id/10981966-M.jpg","source_url":"https://openlibrary.org/works/OL17962180W","source_title":"Noise","source_authors":["Daniel Kahneman","Olivier Sibony","Cass R. Sunstein"]},
-    {"slug":"the-signal-and-the-noise","match_state":"exact_title_author","cover_id":7256893,"cover_url":"https://covers.openlibrary.org/b/id/7256893-M.jpg","source_url":"https://openlibrary.org/works/OL16700318W","source_title":"The Signal and the Noise","source_authors":["Nate Silver"]},
-    {"slug":"the-black-swan","match_state":"exact_title_author","cover_id":5721840,"cover_url":"https://covers.openlibrary.org/b/id/5721840-M.jpg","source_url":"https://openlibrary.org/works/OL3295030W","source_title":"The Black Swan","source_authors":["Nassim Nicholas Taleb"]},
-    {"slug":"fooled-by-randomness","match_state":"exact_title_author","cover_id":855791,"cover_url":"https://covers.openlibrary.org/b/id/855791-M.jpg","source_url":"https://openlibrary.org/works/OL3295029W","source_title":"Fooled by randomness","source_authors":["Nassim Nicholas Taleb"]},
-    {"slug":"the-paradox-of-choice","match_state":"exact_title_author","cover_id":20382,"cover_url":"https://covers.openlibrary.org/b/id/20382-M.jpg","source_url":"https://openlibrary.org/works/OL272375W","source_title":"The Paradox of Choice","source_authors":["Barry Schwartz"]},
-    {"slug":"scarcity","match_state":"exact_title_author","cover_id":9896983,"cover_url":"https://covers.openlibrary.org/b/id/9896983-M.jpg","source_url":"https://openlibrary.org/works/OL19969724W","source_title":"Scarcity","source_authors":["Sendhil Mullainathan"]},
-    {"slug":"behave","match_state":"exact_title_author","cover_id":8814831,"cover_url":"https://covers.openlibrary.org/b/id/8814831-M.jpg","source_url":"https://openlibrary.org/works/OL17835813W","source_title":"Behave","source_authors":["Robert M. Sapolsky"]},
-    {"slug":"influence","match_state":"exact_title_author","cover_id":431011,"cover_url":"https://covers.openlibrary.org/b/id/431011-M.jpg","source_url":"https://openlibrary.org/works/OL3902892W","source_title":"Influence","source_authors":["Robert B. Cialdini"]},
-    {"slug":"mistakes-were-made-but-not-by-me","match_state":"exact_title_author","cover_id":1119860,"cover_url":"https://covers.openlibrary.org/b/id/1119860-M.jpg","source_url":"https://openlibrary.org/works/OL15014628W","source_title":"Mistakes Were Made (But Not by Me)","source_authors":["Carol Tavris","Elliot Aronson"]},
-    {"slug":"moral-tribes","match_state":"exact_title_author","cover_id":13050431,"cover_url":"https://covers.openlibrary.org/b/id/13050431-M.jpg","source_url":"https://openlibrary.org/works/OL21519988W","source_title":"Moral Tribes","source_authors":["Joshua Greene"]},
-    {"slug":"the-undoing-project","match_state":"exact_title_author","cover_id":9595637,"cover_url":"https://covers.openlibrary.org/b/id/9595637-M.jpg","source_url":"https://openlibrary.org/works/OL19669285W","source_title":"The Undoing Project","source_authors":["Michael Lewis"]},
-    {"slug":"the-lucifer-effect","match_state":"exact_title_author","cover_id":1538373,"cover_url":"https://covers.openlibrary.org/b/id/1538373-M.jpg","source_url":"https://openlibrary.org/works/OL8024260W","source_title":"The Lucifer Effect","source_authors":["Philip G. Zimbardo"]},
-    {"slug":"the-person-and-the-situation","match_state":"exact_title_author","cover_id":4026054,"cover_url":"https://covers.openlibrary.org/b/id/4026054-M.jpg","source_url":"https://openlibrary.org/works/OL4450683W","source_title":"The Person and the Situation","source_authors":["Lee Ross","Richard E. Nisbett"]},
-    {"slug":"stumbling-on-happiness","match_state":"exact_title_author","cover_id":6803663,"cover_url":"https://covers.openlibrary.org/b/id/6803663-M.jpg","source_url":"https://openlibrary.org/works/OL15840192W","source_title":"Stumbling on Happiness","source_authors":["Daniel Gilbert"]},
-    {"slug":"the-happiness-hypothesis","match_state":"exact_title_author","cover_id":298622,"cover_url":"https://covers.openlibrary.org/b/id/298622-M.jpg","source_url":"https://openlibrary.org/works/OL5829273W","source_title":"The Happiness Hypothesis","source_authors":["Jonathan Haidt"]},
-    {"slug":"the-enigma-of-reason","match_state":"exact_title_author","cover_id":8802420,"cover_url":"https://covers.openlibrary.org/b/id/8802420-M.jpg","source_url":"https://openlibrary.org/works/OL20056917W","source_title":"The Enigma of Reason","source_authors":["Hugo Mercier","Dan Sperber"]},
-    {"slug":"the-knowledge-illusion","match_state":"exact_title_author","cover_id":8826867,"cover_url":"https://covers.openlibrary.org/b/id/8826867-M.jpg","source_url":"https://openlibrary.org/works/OL20179405W","source_title":"The Knowledge Illusion","source_authors":["Steven Sloman","Philip Fernbach"]}
+    {
+      "slug": "thinking-in-bets",
+      "match_state": "exact_title_author",
+      "cover_id": 8792782,
+      "cover_url": "https://covers.openlibrary.org/b/id/8792782-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19736287W",
+      "source_title": "Thinking in Bets",
+      "source_authors": [
+        "Annie Duke"
+      ]
+    },
+    {
+      "slug": "superforecasting",
+      "match_state": "exact_title_author",
+      "cover_id": 9142114,
+      "cover_url": "https://covers.openlibrary.org/b/id/9142114-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL18233878W",
+      "source_title": "Superforecasting",
+      "source_authors": [
+        "Philip E. Tetlock",
+        "Dan Gardner"
+      ]
+    },
+    {
+      "slug": "noise",
+      "match_state": "exact_title_author",
+      "cover_id": 10981966,
+      "cover_url": "https://covers.openlibrary.org/b/id/10981966-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17962180W",
+      "source_title": "Noise",
+      "source_authors": [
+        "Daniel Kahneman",
+        "Olivier Sibony",
+        "Cass R. Sunstein"
+      ]
+    },
+    {
+      "slug": "the-signal-and-the-noise",
+      "match_state": "exact_title_author",
+      "cover_id": 7256893,
+      "cover_url": "https://covers.openlibrary.org/b/id/7256893-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16700318W",
+      "source_title": "The Signal and the Noise",
+      "source_authors": [
+        "Nate Silver"
+      ]
+    },
+    {
+      "slug": "the-black-swan",
+      "match_state": "exact_title_author",
+      "cover_id": 5721840,
+      "cover_url": "https://covers.openlibrary.org/b/id/5721840-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3295030W",
+      "source_title": "The Black Swan",
+      "source_authors": [
+        "Nassim Nicholas Taleb"
+      ]
+    },
+    {
+      "slug": "fooled-by-randomness",
+      "match_state": "exact_title_author",
+      "cover_id": 855791,
+      "cover_url": "https://covers.openlibrary.org/b/id/855791-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3295029W",
+      "source_title": "Fooled by randomness",
+      "source_authors": [
+        "Nassim Nicholas Taleb"
+      ]
+    },
+    {
+      "slug": "the-paradox-of-choice",
+      "match_state": "exact_title_author",
+      "cover_id": 20382,
+      "cover_url": "https://covers.openlibrary.org/b/id/20382-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL272375W",
+      "source_title": "The Paradox of Choice",
+      "source_authors": [
+        "Barry Schwartz"
+      ]
+    },
+    {
+      "slug": "scarcity",
+      "match_state": "exact_title_author",
+      "cover_id": 9896983,
+      "cover_url": "https://covers.openlibrary.org/b/id/9896983-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19969724W",
+      "source_title": "Scarcity",
+      "source_authors": [
+        "Sendhil Mullainathan"
+      ]
+    },
+    {
+      "slug": "behave",
+      "match_state": "exact_title_author",
+      "cover_id": 8814831,
+      "cover_url": "https://covers.openlibrary.org/b/id/8814831-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17835813W",
+      "source_title": "Behave",
+      "source_authors": [
+        "Robert M. Sapolsky"
+      ]
+    },
+    {
+      "slug": "the-scout-mindset",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "influence",
+      "match_state": "exact_title_author",
+      "cover_id": 431011,
+      "cover_url": "https://covers.openlibrary.org/b/id/431011-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3902892W",
+      "source_title": "Influence",
+      "source_authors": [
+        "Robert B. Cialdini"
+      ]
+    },
+    {
+      "slug": "mistakes-were-made-but-not-by-me",
+      "match_state": "exact_title_author",
+      "cover_id": 1119860,
+      "cover_url": "https://covers.openlibrary.org/b/id/1119860-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15014628W",
+      "source_title": "Mistakes Were Made (But Not by Me)",
+      "source_authors": [
+        "Carol Tavris",
+        "Elliot Aronson"
+      ]
+    },
+    {
+      "slug": "moral-tribes",
+      "match_state": "exact_title_author",
+      "cover_id": 13050431,
+      "cover_url": "https://covers.openlibrary.org/b/id/13050431-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL21519988W",
+      "source_title": "Moral Tribes",
+      "source_authors": [
+        "Joshua Greene"
+      ]
+    },
+    {
+      "slug": "the-undoing-project",
+      "match_state": "exact_title_author",
+      "cover_id": 9595637,
+      "cover_url": "https://covers.openlibrary.org/b/id/9595637-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19669285W",
+      "source_title": "The Undoing Project",
+      "source_authors": [
+        "Michael Lewis"
+      ]
+    },
+    {
+      "slug": "the-lucifer-effect",
+      "match_state": "exact_title_author",
+      "cover_id": 1538373,
+      "cover_url": "https://covers.openlibrary.org/b/id/1538373-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL8024260W",
+      "source_title": "The Lucifer Effect",
+      "source_authors": [
+        "Philip G. Zimbardo"
+      ]
+    },
+    {
+      "slug": "the-person-and-the-situation",
+      "match_state": "exact_title_author",
+      "cover_id": 4026054,
+      "cover_url": "https://covers.openlibrary.org/b/id/4026054-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL4450683W",
+      "source_title": "The Person and the Situation",
+      "source_authors": [
+        "Lee Ross",
+        "Richard E. Nisbett"
+      ]
+    },
+    {
+      "slug": "stumbling-on-happiness",
+      "match_state": "exact_title_author",
+      "cover_id": 6803663,
+      "cover_url": "https://covers.openlibrary.org/b/id/6803663-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15840192W",
+      "source_title": "Stumbling on Happiness",
+      "source_authors": [
+        "Daniel Gilbert"
+      ]
+    },
+    {
+      "slug": "the-happiness-hypothesis",
+      "match_state": "exact_title_author",
+      "cover_id": 298622,
+      "cover_url": "https://covers.openlibrary.org/b/id/298622-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL5829273W",
+      "source_title": "The Happiness Hypothesis",
+      "source_authors": [
+        "Jonathan Haidt"
+      ]
+    },
+    {
+      "slug": "the-enigma-of-reason",
+      "match_state": "exact_title_author",
+      "cover_id": 8802420,
+      "cover_url": "https://covers.openlibrary.org/b/id/8802420-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20056917W",
+      "source_title": "The Enigma of Reason",
+      "source_authors": [
+        "Hugo Mercier",
+        "Dan Sperber"
+      ]
+    },
+    {
+      "slug": "the-knowledge-illusion",
+      "match_state": "exact_title_author",
+      "cover_id": 8826867,
+      "cover_url": "https://covers.openlibrary.org/b/id/8826867-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20179405W",
+      "source_title": "The Knowledge Illusion",
+      "source_authors": [
+        "Steven Sloman",
+        "Philip Fernbach"
+      ]
+    },
+    {
+      "slug": "phantoms-in-the-brain",
+      "match_state": "exact_title_author",
+      "cover_id": 432813,
+      "cover_url": "https://covers.openlibrary.org/b/id/432813-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL18175573W",
+      "source_title": "Phantoms in the brain : probing the mysteries of the human mind",
+      "source_authors": [
+        "V. S. Ramachandran (neurology)",
+        "Sandra Blakeslee"
+      ]
+    },
+    {
+      "slug": "the-tell-tale-brain",
+      "match_state": "exact_title_author",
+      "cover_id": 6681442,
+      "cover_url": "https://covers.openlibrary.org/b/id/6681442-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15665906W",
+      "source_title": "The Tell-Tale Brain",
+      "source_authors": [
+        "V. S. Ramachandran (neurology)"
+      ]
+    },
+    {
+      "slug": "the-man-who-mistook-his-wife-for-a-hat",
+      "match_state": "exact_title_author",
+      "cover_id": 6986188,
+      "cover_url": "https://covers.openlibrary.org/b/id/6986188-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1811898W",
+      "source_title": "The Man Who Mistook His Wife for a Hat",
+      "source_authors": [
+        "Oliver Sacks"
+      ]
+    },
+    {
+      "slug": "an-anthropologist-on-mars",
+      "match_state": "exact_title_author",
+      "cover_id": 10104507,
+      "cover_url": "https://covers.openlibrary.org/b/id/10104507-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1811905W",
+      "source_title": "An Anthropologist on Mars",
+      "source_authors": [
+        "Oliver Sacks"
+      ]
+    },
+    {
+      "slug": "incognito",
+      "match_state": "exact_title_author",
+      "cover_id": 7891426,
+      "cover_url": "https://covers.openlibrary.org/b/id/7891426-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15999455W",
+      "source_title": "Incognito",
+      "source_authors": [
+        "David Eagleman"
+      ]
+    },
+    {
+      "slug": "the-brain-that-changes-itself",
+      "match_state": "exact_title_author",
+      "cover_id": 1333251,
+      "cover_url": "https://covers.openlibrary.org/b/id/1333251-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL8254843W",
+      "source_title": "The Brain That Changes Itself",
+      "source_authors": [
+        "Norman Doidge"
+      ]
+    },
+    {
+      "slug": "livewired",
+      "match_state": "exact_title_author",
+      "cover_id": 10201407,
+      "cover_url": "https://covers.openlibrary.org/b/id/10201407-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20878294W",
+      "source_title": "Livewired",
+      "source_authors": [
+        "David Eagleman"
+      ]
+    },
+    {
+      "slug": "seven-and-a-half-lessons-about-the-brain",
+      "match_state": "exact_title_author",
+      "cover_id": 10543903,
+      "cover_url": "https://covers.openlibrary.org/b/id/10543903-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL21887176W",
+      "source_title": "Seven and a Half Lessons about the Brain",
+      "source_authors": [
+        "Lisa Feldman Barrett"
+      ]
+    },
+    {
+      "slug": "the-emotional-brain",
+      "match_state": "exact_title_author",
+      "cover_id": 425055,
+      "cover_url": "https://covers.openlibrary.org/b/id/425055-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3278267W",
+      "source_title": "The emotional brain",
+      "source_authors": [
+        "Joseph E. LeDoux"
+      ]
+    },
+    {
+      "slug": "descartes-error",
+      "match_state": "exact_title_author",
+      "cover_id": 111239,
+      "cover_url": "https://covers.openlibrary.org/b/id/111239-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL7989278W",
+      "source_title": "Descartes' Error",
+      "source_authors": [
+        "Antonio Damasio"
+      ]
+    }
   ]
 }

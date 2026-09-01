@@ -1,0 +1,177 @@
+{
+  "schema_version": "ai-claims.rapid-book-batch/0.1.0",
+  "batch_id": "38",
+  "checked_date": "2026-09-01",
+  "books": [
+    {
+      "slug": "phantoms-in-the-brain",
+      "entity_key": "web:book/phantoms-in-the-brain",
+      "title": "Phantoms in the Brain",
+      "subtitle": "Probing the Mysteries of the Human Mind",
+      "author": "V. S. Ramachandran and Sandra Blakeslee",
+      "year": 1998,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The neurological phenomena are real and the book's ingenious bedside experiments remain scientifically valuable. Its strongest single-mechanism stories have aged less well: phantom pain reflects interacting peripheral, cortical, motor, and contextual processes, and mirror therapy has heterogeneous clinical evidence.",
+      "claims": [
+        {"claim":"Phantom limbs reveal that body representation is actively maintained and can reorganize after amputation.","assessment":"mostly supported","credit":0.75,"rationale":"Phantom sensations and post-amputation cortical change are well documented, including preserved and remapped representations. Current reviews reject a one-way remapping story: peripheral input, motor representations, prosthesis use, pain processing, ownership, and context all interact.","sources":[{"title":"Brain (re)organisation following amputation","url":"https://pubmed.ncbi.nlm.nih.gov/32428706/"},{"title":"Cortical reorganization after limb loss","url":"https://pubmed.ncbi.nlm.nih.gov/38171645/"}]},
+        {"claim":"Simple perceptual manipulations can change a person's experience of an absent or impaired body part.","assessment":"supported","credit":1,"rationale":"Case observations and controlled rehabilitation studies support the broader principle that visual and multisensory feedback can alter body perception and motor control. That result is narrower than claiming a universal cure for phantom pain, but it validates the book's central experimental insight.","sources":[{"title":"Progressive trigger zones for phantom-hand sensation","url":"https://pubmed.ncbi.nlm.nih.gov/9241724/"},{"title":"Sensory-substitution training meta-analysis","url":"https://pubmed.ncbi.nlm.nih.gov/34604558/"}]},
+        {"claim":"Mirror therapy is a generally reliable treatment for phantom-limb pain because it reverses maladaptive cortical remapping.","assessment":"mixed","credit":0.5,"rationale":"Some trials report benefit, but systematic review evidence is small, methodologically uneven, and inconsistent. Modern models also dispute the implied single causal chain from remapping to pain, so the treatment may help selected patients without confirming the book's strongest mechanism.","sources":[{"title":"Mirror therapy for phantom limb pain: systematic review","url":"https://pubmed.ncbi.nlm.nih.gov/19657605/"},{"title":"Cortical plasticity as a basis of phantom limb pain","url":"https://pubmed.ncbi.nlm.nih.gov/29155276/"}]}
+      ],
+      "other_claims": ["Neurological syndromes can expose hidden assumptions in ordinary perception.","Synaesthesia is a stable perceptual phenomenon rather than merely metaphorical association."]
+    },
+    {
+      "slug": "the-tell-tale-brain",
+      "entity_key": "web:book/the-tell-tale-brain",
+      "title": "The Tell-Tale Brain",
+      "subtitle": "A Neuroscientist's Quest for What Makes Us Human",
+      "author": "V. S. Ramachandran",
+      "year": 2011,
+      "score": 67,
+      "confidence": "medium",
+      "summary": "The book is strongest when it treats unusual perception as a window into distributed brain organization. It becomes much less secure when suggestive findings about mirror systems, art, language, and human uniqueness are promoted into a unified evolutionary explanation.",
+      "claims": [
+        {"claim":"Synaesthesia is a genuine, network-level perceptual phenomenon with identifiable neural correlates.","assessment":"supported","credit":1,"rationale":"Behavioral consistency and neuroimaging support synaesthesia as a real perceptual phenotype. Reviews find involvement across sensory, parietal, frontal, attentional, and control networks, while cautioning that no single area or wiring account explains every form.","sources":[{"title":"Brain areas involved in synaesthesia: a review","url":"https://pubmed.ncbi.nlm.nih.gov/21923787/"},{"title":"Cross-modal synaptic plasticity in adult sensory cortex","url":"https://pubmed.ncbi.nlm.nih.gov/26310109/"}]},
+        {"claim":"Specialized deficits show that perception, body ownership, language, and selfhood depend on partly separable neural systems.","assessment":"mostly supported","credit":0.75,"rationale":"Lesion and case-study evidence supports dissociable components of recognition, navigation, language, attention, and body representation. The inference should remain network-based and probabilistic because lesions disrupt connected systems and singular cases cannot establish a complete architecture.","sources":[{"title":"Classification of navigation impairment from case studies","url":"https://pubmed.ncbi.nlm.nih.gov/27993606/"},{"title":"Ecological validity of neuropsychological tests","url":"https://pubmed.ncbi.nlm.nih.gov/15000225/"}]},
+        {"claim":"Mirror neurons supplied the decisive evolutionary bridge to human language, culture, and self-awareness.","assessment":"weak","credit":0.25,"rationale":"Action-observation networks exist, but their human lateralization, necessity, and role in language remain contested. Reviews specifically find that mirror-neuron evidence does not establish the motor theory of speech and cannot bear the book's broad causal load for culture or selfhood.","sources":[{"title":"Reflections on mirror neurons and speech perception","url":"https://pubmed.ncbi.nlm.nih.gov/19223222/"},{"title":"Lateralization of the human mirror-neuron system","url":"https://pubmed.ncbi.nlm.nih.gov/16540574/"}]}
+      ],
+      "other_claims": ["Aesthetic preferences recruit evolved perceptual regularities.","Neurological anomalies can illuminate ordinary consciousness."]
+    },
+    {
+      "slug": "the-man-who-mistook-his-wife-for-a-hat",
+      "entity_key": "web:book/the-man-who-mistook-his-wife-for-a-hat",
+      "title": "The Man Who Mistook His Wife for a Hat",
+      "subtitle": "And Other Clinical Tales",
+      "author": "Oliver Sacks",
+      "year": 1985,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "Sacks accurately conveys that selective neurological damage can fracture abilities that feel unitary and that clinical lives cannot be reduced to test scores. The cases are interpretive narratives, however, not controlled demonstrations of a universal map from lesion to personhood.",
+      "claims": [
+        {"claim":"Focal neurological damage can selectively disrupt recognition, memory, language, or body awareness while sparing other abilities.","assessment":"supported","credit":1,"rationale":"A large neuropsychological literature documents dissociations among recognition, navigation, language, memory, and body representation. Modern work refines the anatomical stories into distributed networks but strongly supports the book's foundational claim of selective impairment.","sources":[{"title":"Classification of navigation impairment from case studies","url":"https://pubmed.ncbi.nlm.nih.gov/27993606/"},{"title":"Measuring language lateralisation: systematic review","url":"https://pubmed.ncbi.nlm.nih.gov/29085748/"}]},
+        {"claim":"A person's everyday adaptation can differ substantially from what a decontextualized neurological test suggests.","assessment":"supported","credit":1,"rationale":"Research on ecological validity finds that many neuropsychological tests predict daily function only moderately and work best when tasks match the real-world domain. Sacks's attention to routines, relationships, art, and compensation is therefore a substantive clinical strength.","sources":[{"title":"Ecological validity of neuropsychological tests","url":"https://pubmed.ncbi.nlm.nih.gov/15000225/"},{"title":"Sensory-substitution training meta-analysis","url":"https://pubmed.ncbi.nlm.nih.gov/34604558/"}]},
+        {"claim":"Individual case narratives can by themselves reveal the general neural organization of identity and consciousness.","assessment":"weak","credit":0.25,"rationale":"Single cases can generate and sometimes sharply constrain hypotheses, but lesion extent, premorbid differences, compensation, medication, and narrative selection limit generalization. Systematic classifications require many cases and standardized measures beyond a compelling clinical portrait.","sources":[{"title":"Classification of navigation impairment from case studies","url":"https://pubmed.ncbi.nlm.nih.gov/27993606/"},{"title":"Ecological validity of neuropsychological tests","url":"https://pubmed.ncbi.nlm.nih.gov/15000225/"}]}
+      ],
+      "other_claims": ["Music can remain meaningful despite profound cognitive impairment.","Clinical care should preserve the patient's lived identity, not only classify deficits."]
+    },
+    {
+      "slug": "an-anthropologist-on-mars",
+      "entity_key": "web:book/an-anthropologist-on-mars",
+      "title": "An Anthropologist on Mars",
+      "subtitle": "Seven Paradoxical Tales",
+      "author": "Oliver Sacks",
+      "year": 1995,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The cases persuasively show neural diversity, compensation, and the importance of environment. They support possibility claims better than frequency or mechanism claims: seven extraordinary lives cannot establish how typical a trajectory is or isolate one causal explanation.",
+      "claims": [
+        {"claim":"People with neurological differences can develop powerful compensatory strategies rather than merely lose function.","assessment":"supported","credit":1,"rationale":"Adult learning, cross-modal recruitment, and sensory substitution demonstrate genuine compensatory plasticity. Outcomes depend on timing, residual function, training, social support, and task design, but the possibility and clinical importance of compensation are well established.","sources":[{"title":"Critical periods and adult cortical specialization","url":"https://pubmed.ncbi.nlm.nih.gov/32652097/"},{"title":"Cross-modal synaptic plasticity in adult sensory cortex","url":"https://pubmed.ncbi.nlm.nih.gov/26310109/"}]},
+        {"claim":"Neurological ability and disability are partly shaped by the person's environment, tools, work, and relationships.","assessment":"mostly supported","credit":0.75,"rationale":"Functional outcomes vary with environmental fit, rehabilitation, assistive tools, and social context; laboratory deficits do not translate mechanically into everyday incapacity. This supports Sacks's ecological view without implying that context removes underlying impairment.","sources":[{"title":"Ecological validity of neuropsychological tests","url":"https://pubmed.ncbi.nlm.nih.gov/15000225/"},{"title":"Sensory-substitution training meta-analysis","url":"https://pubmed.ncbi.nlm.nih.gov/34604558/"}]},
+        {"claim":"Seven unusual cases establish general mechanisms for autism, memory, vision, creativity, and identity.","assessment":"mixed","credit":0.5,"rationale":"The cases are genuine evidence and can reveal phenomena hidden by group averages, but they are selected, heterogeneous, and interpreted through narrative. General mechanisms require converging cohorts, experiments, longitudinal work, and replication beyond the people profiled.","sources":[{"title":"Classification of navigation impairment from case studies","url":"https://pubmed.ncbi.nlm.nih.gov/27993606/"},{"title":"Ecological validity of neuropsychological tests","url":"https://pubmed.ncbi.nlm.nih.gov/15000225/"}]}
+      ],
+      "other_claims": ["Restored vision does not instantly produce normal visual understanding.","Creative practice can organize life around both impairment and strength."]
+    },
+    {
+      "slug": "incognito",
+      "entity_key": "web:book/incognito",
+      "title": "Incognito",
+      "subtitle": "The Secret Lives of the Brain",
+      "author": "David Eagleman",
+      "year": 2011,
+      "score": 67,
+      "confidence": "medium",
+      "summary": "The book correctly emphasizes that much perception and action occurs without introspective access. Its strongest claims about conscious control, free will, and legal responsibility run beyond what readiness-potential experiments or demonstrations of unconscious processing can establish.",
+      "claims": [
+        {"claim":"A large share of perception, valuation, and action preparation occurs without conscious access.","assessment":"supported","credit":1,"rationale":"Implicit perception, autonomic valuation, motor preparation, and learned biases all have substantial empirical support. Conscious report is neither a complete inventory of processing nor a reliable readout of every causal contribution to behavior.","sources":[{"title":"The amygdala and decision-making","url":"https://pubmed.ncbi.nlm.nih.gov/20920513/"},{"title":"What is the readiness potential?","url":"https://pubmed.ncbi.nlm.nih.gov/33931306/"}]},
+        {"claim":"Conscious experience is a constructed summary rather than direct access to the brain's full operations.","assessment":"mostly supported","credit":0.75,"rationale":"Work on predictive processing, interoception, perception, and metacognitive limits supports an active, selective construction of experience. Competing theories remain unresolved, so this framework is productive evidence-backed science rather than a completed explanation of consciousness.","sources":[{"title":"The power of predictions","url":"https://pubmed.ncbi.nlm.nih.gov/31749520/"},{"title":"Interoception as modeling, allostasis as control","url":"https://pubmed.ncbi.nlm.nih.gov/34942287/"}]},
+        {"claim":"Readiness-potential findings show that free will is illusory and straightforwardly justify a biologically calibrated justice system.","assessment":"weak","credit":0.25,"rationale":"Libet-style timing effects are heterogeneous and their key free-will measure rests on few studies with substantial uncertainty. Contemporary accounts treat the readiness potential as compatible with stochastic accumulation or later commitment, and neuroscience alone cannot determine legal norms.","sources":[{"title":"Meta-analysis of Libet-style experiments","url":"https://pubmed.ncbi.nlm.nih.gov/34119525/"},{"title":"Conscious intention and human action","url":"https://pubmed.ncbi.nlm.nih.gov/34325185/"}]}
+      ],
+      "other_claims": ["The brain contains competing systems rather than a single executive.","Legal responsibility should respond to biological differences without abandoning accountability."]
+    },
+    {
+      "slug": "the-brain-that-changes-itself",
+      "entity_key": "web:book/the-brain-that-changes-itself",
+      "title": "The Brain That Changes Itself",
+      "subtitle": "Stories of Personal Triumph from the Frontiers of Brain Science",
+      "author": "Norman Doidge",
+      "year": 2007,
+      "score": 67,
+      "confidence": "medium",
+      "summary": "Lifelong neuroplasticity and meaningful rehabilitation are real. The book's case-driven presentation often makes feasibility look like general efficacy and does not consistently distinguish mechanistic plausibility from evidence that a named treatment works reliably.",
+      "claims": [
+        {"claim":"Adult brains retain meaningful capacity for structural and functional change.","assessment":"supported","credit":1,"rationale":"Adult sensory, learning, and deprivation studies show synaptic, network, and cross-modal changes well beyond childhood. Plasticity declines and is constrained by critical periods, injury, residual function, and training, but it does not simply stop after development.","sources":[{"title":"Cross-modal synaptic plasticity in adult sensory cortex","url":"https://pubmed.ncbi.nlm.nih.gov/26310109/"},{"title":"Critical periods and adult cortical specialization","url":"https://pubmed.ncbi.nlm.nih.gov/32652097/"}]},
+        {"claim":"Targeted rehabilitation can recruit plasticity to improve selected sensory and motor functions.","assessment":"mostly supported","credit":0.75,"rationale":"Controlled studies support benefits for some structured rehabilitation and sensory-substitution programs, but effect size, retention, dosage, and patient selection vary. Improvement in a trained function should not be generalized into unrestricted recovery.","sources":[{"title":"Sensory-substitution training meta-analysis","url":"https://pubmed.ncbi.nlm.nih.gov/34604558/"},{"title":"Cortical reorganization after limb loss","url":"https://pubmed.ncbi.nlm.nih.gov/38171645/"}]},
+        {"claim":"The featured neuroplasticity therapies are broadly established by dramatic case histories.","assessment":"weak","credit":0.25,"rationale":"Case histories can demonstrate possibility and motivate trials, but they do not control spontaneous recovery, expectancy, co-interventions, selection, or publication bias. Even mirror therapy, one of the better-known examples, has shown inconsistent evidence in small trials.","sources":[{"title":"Mirror therapy for phantom limb pain: systematic review","url":"https://pubmed.ncbi.nlm.nih.gov/19657605/"},{"title":"Ecological validity of neuropsychological tests","url":"https://pubmed.ncbi.nlm.nih.gov/15000225/"}]}
+      ],
+      "other_claims": ["Cultural practices can alter trained neural systems.","Maladaptive plasticity can help sustain pain, craving, or compulsive behavior."]
+    },
+    {
+      "slug": "livewired",
+      "entity_key": "web:book/livewired",
+      "title": "Livewired",
+      "subtitle": "The Inside Story of the Ever-Changing Brain",
+      "author": "David Eagleman",
+      "year": 2020,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The brain is dynamically shaped by use, loss, and incoming information, and adult cross-modal plasticity is well supported. The book's broader engineering metaphor is useful but can flatten strong developmental constraints and differences between neural reweighting, compensation, and new capability.",
+      "claims": [
+        {"claim":"Neural organization is continuously adjusted by use, learning, and altered sensory input.","assessment":"supported","credit":1,"rationale":"Learning-induced and deprivation-induced changes occur from peripheral sensory structures through primary cortex and large-scale networks. The timescale and mechanism vary, but continuous experience-dependent adjustment is a well-supported organizing principle.","sources":[{"title":"Associative learning and sensory neuroplasticity","url":"https://pubmed.ncbi.nlm.nih.gov/26472647/"},{"title":"Cross-modal synaptic plasticity in adult sensory cortex","url":"https://pubmed.ncbi.nlm.nih.gov/26310109/"}]},
+        {"claim":"The brain can learn to use information delivered through an unfamiliar sensory channel.","assessment":"supported","credit":1,"rationale":"Sensory-substitution studies show that trained users can extract spatial or functional information through alternative channels, with measurable behavioral and cortical changes. Performance remains task- and device-specific, but the core capacity is real.","sources":[{"title":"Critical periods and adult cortical specialization","url":"https://pubmed.ncbi.nlm.nih.gov/32652097/"},{"title":"Sensory-substitution training meta-analysis","url":"https://pubmed.ncbi.nlm.nih.gov/34604558/"}]},
+        {"claim":"A general livewiring principle largely overrides fixed specialization and developmental constraints.","assessment":"weak","credit":0.25,"rationale":"Plasticity operates within anatomical, molecular, energetic, and developmental constraints. Residual input can limit cross-modal recruitment, sensitive periods matter, and improved trained performance does not imply that any region can acquire any function at any age.","sources":[{"title":"Critical periods and adult cortical specialization","url":"https://pubmed.ncbi.nlm.nih.gov/32652097/"},{"title":"Measuring language lateralisation: systematic review","url":"https://pubmed.ncbi.nlm.nih.gov/29085748/"}]}
+      ],
+      "other_claims": ["Dreaming may help rebalance visual cortex during darkness.","Future interfaces may add novel streams of environmental information."]
+    },
+    {
+      "slug": "seven-and-a-half-lessons-about-the-brain",
+      "entity_key": "web:book/seven-and-a-half-lessons-about-the-brain",
+      "title": "Seven and a Half Lessons About the Brain",
+      "subtitle": "",
+      "author": "Lisa Feldman Barrett",
+      "year": 2020,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "Its rejection of the triune-brain story and emphasis on regulation, prediction, development, and social dependence fit modern network neuroscience. The predictive-allostatic account is an active research framework, not yet a uniquely established master theory of brain function.",
+      "claims": [
+        {"claim":"The popular triune-brain story of a reptilian core, emotional limbic layer, and rational cortex is biologically misleading.","assessment":"supported","credit":1,"rationale":"Comparative and network neuroscience do not support three independently operating evolutionary layers mapped onto instinct, emotion, and reason. Emotion and cognition are interdependent, and older vertebrate structures continued evolving rather than remaining a reptilian brain inside us.","sources":[{"title":"The brain is adaptive, not triune","url":"https://pubmed.ncbi.nlm.nih.gov/35432041/"},{"title":"Humanity and the left hemisphere","url":"https://pubmed.ncbi.nlm.nih.gov/32602396/"}]},
+        {"claim":"Brains use prediction and allostatic regulation to guide perception, action, and bodily control.","assessment":"mostly supported","credit":0.75,"rationale":"Predictive-processing and allostatic models unify substantial evidence about interoception, hierarchical signaling, perception, and energy regulation. They remain a family of testable frameworks with unresolved alternatives, not a conclusively unique description of every brain process.","sources":[{"title":"Interoception as modeling, allostasis as control","url":"https://pubmed.ncbi.nlm.nih.gov/34942287/"},{"title":"Allostasis and hierarchical gradients","url":"https://pubmed.ncbi.nlm.nih.gov/38800458/"}]},
+        {"claim":"Other people materially help regulate an individual's brain, body, learning, and development.","assessment":"mostly supported","credit":0.75,"rationale":"Social support, caregiving, learning, and shared environments influence stress physiology, development, and cognition. The phrase is a broad synthesis rather than one mechanism, and effects vary by relationship and context, but individual regulation is not biologically isolated.","sources":[{"title":"The brain is adaptive, not triune","url":"https://pubmed.ncbi.nlm.nih.gov/35432041/"},{"title":"Intrinsic timescales and predictive allostatic interoception","url":"https://pubmed.ncbi.nlm.nih.gov/38104789/"}]}
+      ],
+      "other_claims": ["Human brains develop through experience-dependent wiring.","Words and social environments can affect bodily regulation without being magical causes."]
+    },
+    {
+      "slug": "the-emotional-brain",
+      "entity_key": "web:book/the-emotional-brain",
+      "title": "The Emotional Brain",
+      "subtitle": "The Mysterious Underpinnings of Emotional Life",
+      "author": "Joseph E. LeDoux",
+      "year": 1996,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The book correctly centered learned threat circuits and processing outside awareness. Later work—including LeDoux's own—draws a sharper line between defensive survival circuits and the conscious feeling of fear, limiting the older language of one emotional brain system.",
+      "claims": [
+        {"claim":"The amygdala is important for learning and expressing associations between cues and biologically significant threats.","assessment":"supported","credit":1,"rationale":"Lesion, conditioning, and systems-neuroscience evidence strongly supports amygdala involvement in assigning and using learned threat value. The amygdala is part of interacting circuits rather than a standalone fear center, but its causal role is substantial.","sources":[{"title":"Rethinking the emotional brain","url":"https://pubmed.ncbi.nlm.nih.gov/22365542/"},{"title":"The amygdala and decision-making","url":"https://pubmed.ncbi.nlm.nih.gov/20920513/"}]},
+        {"claim":"Threat-related processing and bodily responses can begin without conscious recognition of the triggering cue.","assessment":"mostly supported","credit":0.75,"rationale":"Conditioning, autonomic responses, and rapid valuation can occur without full conscious report. The evidence does not imply a single hardwired low road for every stimulus, and measurement of awareness and temporal pathway claims requires care.","sources":[{"title":"Role of the amygdala in decision-making","url":"https://pubmed.ncbi.nlm.nih.gov/12724171/"},{"title":"Rethinking the emotional brain","url":"https://pubmed.ncbi.nlm.nih.gov/22365542/"}]},
+        {"claim":"Defensive circuits in the amygdala directly generate the conscious feeling of fear.","assessment":"mixed","credit":0.5,"rationale":"Amygdala-centered survival circuits detect and respond to threats, but defensive behavior, physiological arousal, and subjective fear are not interchangeable. Later theory separates survival functions from conscious feeling while retaining indirect causal contributions.","sources":[{"title":"Rethinking the emotional brain","url":"https://pubmed.ncbi.nlm.nih.gov/22365542/"},{"title":"The amygdala and decision-making","url":"https://pubmed.ncbi.nlm.nih.gov/20920513/"}]}
+      ],
+      "other_claims": ["Emotional learning can persist outside explicit memory.","Different emotion-related functions recruit overlapping rather than unitary circuits."]
+    },
+    {
+      "slug": "descartes-error",
+      "entity_key": "web:book/descartes-error",
+      "title": "Descartes' Error",
+      "subtitle": "Emotion, Reason, and the Human Brain",
+      "author": "Antonio Damasio",
+      "year": 1994,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "Neurological and experimental evidence strongly supports integration of emotion, bodily state, memory, and reasoning. The somatic-marker hypothesis remains influential but is one mechanistic account among several, and the Iowa Gambling Task does not uniquely prove unconscious bodily signals drive advantageous choice.",
+      "claims": [
+        {"claim":"Effective real-world reasoning depends on interaction between emotion, memory, bodily regulation, and cognition.","assessment":"supported","credit":1,"rationale":"Patients with ventromedial prefrontal or amygdala damage can retain many formal abilities while showing impaired valuation and choice. Contemporary decision neuroscience broadly rejects a clean opposition between rational cognition and emotion.","sources":[{"title":"The amygdala and decision-making","url":"https://pubmed.ncbi.nlm.nih.gov/20920513/"},{"title":"Brain mechanisms involved in decision-making","url":"https://pubmed.ncbi.nlm.nih.gov/16602058/"}]},
+        {"claim":"Ventromedial prefrontal and amygdala systems help attach bodily and emotional value to possible outcomes.","assessment":"mostly supported","credit":0.75,"rationale":"Lesion, autonomic, and task evidence supports these regions in valuation and outcome learning. Their functions sit within distributed networks, and bodily responses are neither necessary nor sufficient in the same way for every decision.","sources":[{"title":"Somatic marker hypothesis and prefrontal cortex","url":"https://pubmed.ncbi.nlm.nih.gov/8941953/"},{"title":"Role of the amygdala in decision-making","url":"https://pubmed.ncbi.nlm.nih.gov/12724171/"}]},
+        {"claim":"Anticipatory bodily signals in the Iowa Gambling Task uniquely establish the somatic-marker mechanism before conscious knowledge.","assessment":"mixed","credit":0.5,"rationale":"The task supports interaction among affect, learning, working memory, and valuation, but participants may acquire usable knowledge earlier than initial reports suggested. Competing accounts and task heterogeneity prevent the classic result from uniquely proving one preconscious somatic mechanism.","sources":[{"title":"Iowa Gambling Task and somatic markers: questions and answers","url":"https://pubmed.ncbi.nlm.nih.gov/15808493/"},{"title":"Iowa Gambling Task twenty years after","url":"https://pubmed.ncbi.nlm.nih.gov/24137138/"}]}
+      ],
+      "other_claims": ["The mind-body split is a poor model of biological decision-making.","Feelings arise from representations of changing body states."]
+    }
+  ]
+}
