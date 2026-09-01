@@ -38,3 +38,9 @@ Status: pre-draft editorial gate. This review checks whether the candidate claim
 ## Gate result
 
 Twenty-two candidates can proceed after passage confirmation, four need narrower wording, and four should be replaced because they currently test a later theory or a strawman rather than a central claim of the book. No public record or score should be generated from this hypothesis file until those replacements are made.
+
+## Resolution
+
+Resolved 2026-08-31 in `batch-38-assessment-hypotheses.json` and `batch-38-claim-source-bindings.md`. The four overbroad formulations were narrowed to the books' actual arguments about public-relations influence, mediated democratic judgment, self-renouncing frustration, and animal-to-human analogy. The four unfair candidates were replaced with central claims about the original authoritarian syndrome, prejudice's cognitive/affective/behavioral components, performance teams and backstage information, and externalization/objectivation/internalization.
+
+Publication remains on hold. These books combine descriptive evidence, causal hypotheses, interpretation, and normative arguments about democracy, authority, and social order. The source map is useful, but one derived “truth score” would blur those categories and imply a political assessment the method is not designed to provide. Preserve Batch 38 as an unscored research packet unless a future method can separate those dimensions without ranking political positions.
