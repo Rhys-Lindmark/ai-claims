@@ -3,7 +3,7 @@
   "provider": "Open Library",
   "provider_url": "https://openlibrary.org/dev/docs/api/covers",
   "match_policy": "Exact normalized title and compatible normalized author; unmatched records render a local placeholder.",
-  "last_verified": "2026-08-31",
+  "last_verified": "2026-09-01",
   "covers": [
     {
       "slug": "guns-germs-and-steel",
@@ -1892,6 +1892,109 @@
     {
       "slug": "lifespan",
       "match_state": "unresolved"
+    },
+    {
+      "slug": "the-great-sea",
+      "match_state": "exact_title_author",
+      "cover_id": 12862065,
+      "cover_url": "https://covers.openlibrary.org/b/id/12862065-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16562338W",
+      "source_title": "The great sea",
+      "source_authors": [
+        "David Abulafia"
+      ]
+    },
+    {
+      "slug": "sea-and-civilization",
+      "match_state": "exact_title_author",
+      "cover_id": 10873627,
+      "cover_url": "https://covers.openlibrary.org/b/id/10873627-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL21522173W",
+      "source_title": "Sea and Civilization",
+      "source_authors": [
+        "Lincoln Paine"
+      ]
+    },
+    {
+      "slug": "empires-of-the-sea",
+      "match_state": "exact_title_author",
+      "cover_id": 2733835,
+      "cover_url": "https://covers.openlibrary.org/b/id/2733835-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL8387089W",
+      "source_title": "Empires of the Sea",
+      "source_authors": [
+        "Roger Crowley"
+      ]
+    },
+    {
+      "slug": "the-path-between-the-seas",
+      "match_state": "exact_title_author",
+      "cover_id": 4648472,
+      "cover_url": "https://covers.openlibrary.org/b/id/4648472-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2820738W",
+      "source_title": "The Path Between the Seas",
+      "source_authors": [
+        "David McCullough"
+      ]
+    },
+    {
+      "slug": "the-prize",
+      "match_state": "exact_title_author",
+      "cover_id": 409010,
+      "cover_url": "https://covers.openlibrary.org/b/id/409010-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2748135W",
+      "source_title": "The Prize",
+      "source_authors": [
+        "Daniel Yergin"
+      ]
+    },
+    {
+      "slug": "pacific-crucible",
+      "match_state": "exact_title_author",
+      "cover_id": 6958527,
+      "cover_url": "https://covers.openlibrary.org/b/id/6958527-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16229569W",
+      "source_title": "Pacific Crucible",
+      "source_authors": [
+        "Ian W. Toll"
+      ]
+    },
+    {
+      "slug": "atlantic",
+      "match_state": "exact_title_author",
+      "cover_id": 6665945,
+      "cover_url": "https://covers.openlibrary.org/b/id/6665945-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15437293W",
+      "source_title": "Atlantic",
+      "source_authors": [
+        "Simon Winchester"
+      ]
+    },
+    {
+      "slug": "the-sea-around-us",
+      "match_state": "exact_title_author",
+      "cover_id": 125545,
+      "cover_url": "https://covers.openlibrary.org/b/id/125545-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1884867W",
+      "source_title": "The Sea Around Us",
+      "source_authors": [
+        "Rachel Carson"
+      ]
+    },
+    {
+      "slug": "the-big-oyster",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "salt-a-world-history",
+      "match_state": "exact_title_author",
+      "cover_id": 6873606,
+      "cover_url": "https://covers.openlibrary.org/b/id/6873606-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16026786W",
+      "source_title": "Salt",
+      "source_authors": [
+        "Mark Kurlansky"
+      ]
     }
   ]
 }

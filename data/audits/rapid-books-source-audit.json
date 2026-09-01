@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-08-31",
-  "checked_at": "2026-08-31T23:54:02.223Z",
+  "checked_at": "2026-09-01T00:36:50.975Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,34 +10,34 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 180,
-    "claims": 540,
-    "citations": 1080,
-    "unique_urls": 749,
-    "repeated_citations": 331,
-    "redirected_urls": 105,
+    "books": 190,
+    "claims": 570,
+    "citations": 1140,
+    "unique_urls": 790,
+    "repeated_citations": 350,
+    "redirected_urls": 110,
     "states": {
       "access_blocked": 163,
-      "network_error": 4,
+      "network_error": 13,
       "other_http": 3,
-      "reachable": 575,
-      "transient": 4
+      "reachable": 606,
+      "transient": 5
     },
     "score_distribution": {
       "42": 1,
       "50": 7,
       "58": 12,
       "67": 31,
-      "75": 41,
-      "83": 37,
+      "75": 48,
+      "83": 40,
       "92": 41,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 62,
+      "high": 64,
       "low": 1,
-      "medium": 51,
-      "medium-high": 52,
+      "medium": 57,
+      "medium-high": 54,
       "medium-low": 14
     }
   },
@@ -61,11 +61,11 @@
     },
     {
       "host": "cambridge.org",
-      "unique_urls": 22,
-      "citations": 35,
+      "unique_urls": 23,
+      "citations": 36,
       "states": {
         "transient": 1,
-        "reachable": 21
+        "reachable": 22
       }
     },
     {
@@ -110,10 +110,10 @@
     },
     {
       "host": "who.int",
-      "unique_urls": 7,
-      "citations": 16,
+      "unique_urls": 8,
+      "citations": 17,
       "states": {
-        "reachable": 7
+        "reachable": 8
       }
     },
     {
@@ -181,11 +181,27 @@
       }
     },
     {
+      "host": "nps.gov",
+      "unique_urls": 9,
+      "citations": 11,
+      "states": {
+        "reachable": 9
+      }
+    },
+    {
       "host": "wwwnc.cdc.gov",
       "unique_urls": 6,
       "citations": 11,
       "states": {
         "reachable": 6
+      }
+    },
+    {
+      "host": "annualreviews.org",
+      "unique_urls": 9,
+      "citations": 10,
+      "states": {
+        "access_blocked": 9
       }
     },
     {
@@ -218,14 +234,6 @@
       "citations": 10,
       "states": {
         "reachable": 8
-      }
-    },
-    {
-      "host": "annualreviews.org",
-      "unique_urls": 8,
-      "citations": 9,
-      "states": {
-        "access_blocked": 8
       }
     },
     {
@@ -269,11 +277,35 @@
       }
     },
     {
+      "host": "link.springer.com",
+      "unique_urls": 6,
+      "citations": 8,
+      "states": {
+        "reachable": 6
+      }
+    },
+    {
       "host": "nsa.gov",
       "unique_urls": 7,
       "citations": 8,
       "states": {
         "access_blocked": 7
+      }
+    },
+    {
+      "host": "pubs.usgs.gov",
+      "unique_urls": 4,
+      "citations": 8,
+      "states": {
+        "reachable": 4
+      }
+    },
+    {
+      "host": "rmg.co.uk",
+      "unique_urls": 4,
+      "citations": 8,
+      "states": {
+        "reachable": 4
       }
     },
     {
@@ -293,14 +325,6 @@
       }
     },
     {
-      "host": "nps.gov",
-      "unique_urls": 5,
-      "citations": 7,
-      "states": {
-        "reachable": 5
-      }
-    },
-    {
       "host": "sec.gov",
       "unique_urls": 4,
       "citations": 7,
@@ -314,6 +338,14 @@
       "citations": 6,
       "states": {
         "reachable": 5
+      }
+    },
+    {
+      "host": "eia.gov",
+      "unique_urls": 4,
+      "citations": 6,
+      "states": {
+        "reachable": 4
       }
     },
     {
@@ -333,6 +365,14 @@
       }
     },
     {
+      "host": "history.navy.mil",
+      "unique_urls": 6,
+      "citations": 6,
+      "states": {
+        "network_error": 6
+      }
+    },
+    {
       "host": "opensource.org",
       "unique_urls": 2,
       "citations": 6,
@@ -349,11 +389,11 @@
       }
     },
     {
-      "host": "rmg.co.uk",
-      "unique_urls": 3,
+      "host": "pancanal.com",
+      "unique_urls": 5,
       "citations": 6,
       "states": {
-        "reachable": 3
+        "reachable": 5
       }
     },
     {
@@ -361,7 +401,8 @@
       "unique_urls": 3,
       "citations": 5,
       "states": {
-        "reachable": 3
+        "reachable": 2,
+        "transient": 1
       }
     },
     {
@@ -431,14 +472,6 @@
       }
     },
     {
-      "host": "link.springer.com",
-      "unique_urls": 5,
-      "citations": 5,
-      "states": {
-        "reachable": 5
-      }
-    },
-    {
       "host": "nber.org",
       "unique_urls": 4,
       "citations": 5,
@@ -468,6 +501,14 @@
       "citations": 5,
       "states": {
         "access_blocked": 5
+      }
+    },
+    {
+      "host": "unesco.org",
+      "unique_urls": 1,
+      "citations": 5,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -527,20 +568,20 @@
       }
     },
     {
+      "host": "oceanexplorer.noaa.gov",
+      "unique_urls": 2,
+      "citations": 4,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "oecd.org",
       "unique_urls": 4,
       "citations": 4,
       "states": {
         "reachable": 1,
         "access_blocked": 3
-      }
-    },
-    {
-      "host": "pubs.usgs.gov",
-      "unique_urls": 2,
-      "citations": 4,
-      "states": {
-        "reachable": 2
       }
     },
     {
@@ -629,6 +670,14 @@
       "citations": 3,
       "states": {
         "reachable": 3
+      }
+    },
+    {
+      "host": "en.unesco.org",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -905,6 +954,14 @@
       }
     },
     {
+      "host": "cultura.gob.es",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "network_error": 1
+      }
+    },
+    {
       "host": "dialnet.unirioja.es",
       "unique_urls": 1,
       "citations": 2,
@@ -1155,6 +1212,14 @@
       }
     },
     {
+      "host": "ncei.noaa.gov",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "nejm.org",
       "unique_urls": 2,
       "citations": 2,
@@ -1255,11 +1320,20 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "access_blocked": 2
+        "reachable": 1,
+        "access_blocked": 1
       }
     },
     {
       "host": "shc.stanford.edu",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "slavevoyages.org",
       "unique_urls": 1,
       "citations": 2,
       "states": {
@@ -1272,6 +1346,14 @@
       "citations": 2,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "usgs.gov",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "network_error": 2
       }
     },
     {
@@ -1316,6 +1398,14 @@
     },
     {
       "host": "anthropologyreview.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "aoml.noaa.gov",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1603,6 +1693,14 @@
       }
     },
     {
+      "host": "ejercito.defensa.gob.es",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "english.cam.ac.uk",
       "unique_urls": 1,
       "citations": 1,
@@ -1636,6 +1734,14 @@
     },
     {
       "host": "erenow.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "extapps.dec.ny.gov",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1715,11 +1821,27 @@
       }
     },
     {
+      "host": "hcr.ny.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "heritage.nf.ca",
       "unique_urls": 1,
       "citations": 1,
       "states": {
         "network_error": 1
+      }
+    },
+    {
+      "host": "heritagemalta.mt",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -2195,6 +2317,14 @@
       }
     },
     {
+      "host": "repository.library.noaa.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "repozytorium.amu.edu.pl",
       "unique_urls": 1,
       "citations": 1,
@@ -2247,7 +2377,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "network_error": 1
       }
     },
     {
@@ -2339,6 +2469,14 @@
       }
     },
     {
+      "host": "uat.oceanservice.noaa.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "unstats.un.org",
       "unique_urls": 1,
       "citations": 1,
@@ -2376,14 +2514,6 @@
       "citations": 1,
       "states": {
         "access_blocked": 1
-      }
-    },
-    {
-      "host": "usgs.gov",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "network_error": 1
       }
     },
     {
@@ -2513,6 +2643,17 @@
       ]
     },
     {
+      "url": "https://www.unesco.org/en/silk-roads/about-silk-roads",
+      "host": "unesco.org",
+      "citation_count": 5,
+      "state": "reachable",
+      "books": [
+        "the-great-sea",
+        "sea-and-civilization",
+        "atlantic"
+      ]
+    },
+    {
       "url": "https://doi.org/10.1038/nature06536",
       "host": "doi.org",
       "citation_count": 4,
@@ -2594,6 +2735,15 @@
       ]
     },
     {
+      "url": "https://en.unesco.org/silkroad/silk-road-themes/cities-silk-roads",
+      "host": "en.unesco.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-great-sea"
+      ]
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/A_People%27s_History_of_the_United_States",
       "host": "en.wikipedia.org",
       "citation_count": 3,
@@ -2657,12 +2807,32 @@
       ]
     },
     {
+      "url": "https://link.springer.com/article/10.1007/s10814-014-9075-7",
+      "host": "link.springer.com",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-great-sea",
+        "sea-and-civilization"
+      ]
+    },
+    {
       "url": "https://nsarchive.gwu.edu/document/17601-clifford-stoll-communications-acm",
       "host": "nsarchive.gwu.edu",
       "citation_count": 3,
       "state": "reachable",
       "books": [
         "the-cuckoos-egg"
+      ]
+    },
+    {
+      "url": "https://oceanexplorer.noaa.gov/ocean-fact/mid-ocean-ridge/",
+      "host": "oceanexplorer.noaa.gov",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "atlantic",
+        "the-sea-around-us"
       ]
     },
     {
@@ -2785,6 +2955,15 @@
       "state": "reachable",
       "books": [
         "the-radium-girls"
+      ]
+    },
+    {
+      "url": "https://pubs.usgs.gov/usbmic/ic-9343/ic9343.pdf",
+      "host": "pubs.usgs.gov",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "salt-a-world-history"
       ]
     },
     {
@@ -3491,6 +3670,15 @@
       ]
     },
     {
+      "url": "https://pancanal.com/en/american-canal-construction/",
+      "host": "pancanal.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-path-between-the-seas"
+      ]
+    },
+    {
       "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf",
       "host": "people.math.harvard.edu",
       "citation_count": 2,
@@ -3939,6 +4127,15 @@
       ]
     },
     {
+      "url": "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/nhn/destacados/documentos-destacados/lepanto.html",
+      "host": "cultura.gob.es",
+      "citation_count": 2,
+      "state": "network_error",
+      "books": [
+        "empires-of-the-sea"
+      ]
+    },
+    {
       "url": "https://www.darpa.mil/about/innovation-timeline/arpanet",
       "host": "darpa.mil",
       "citation_count": 2,
@@ -3955,6 +4152,24 @@
       "state": "reachable",
       "books": [
         "the-wealth-of-nations"
+      ]
+    },
+    {
+      "url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/",
+      "host": "eia.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-prize"
+      ]
+    },
+    {
+      "url": "https://www.eia.gov/kids/history-of-energy/timelines/oil-petroleum.php",
+      "host": "eia.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-prize"
       ]
     },
     {
@@ -4335,6 +4550,15 @@
       ]
     },
     {
+      "url": "https://www.ncei.noaa.gov/news/rachel-carson",
+      "host": "ncei.noaa.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-sea-around-us"
+      ]
+    },
+    {
       "url": "https://www.nobelprize.org/prizes/economic-sciences/2017/advanced-information/",
       "host": "nobelprize.org",
       "citation_count": 2,
@@ -4413,6 +4637,15 @@
       "state": "reachable",
       "books": [
         "a-peoples-history-of-the-united-states"
+      ]
+    },
+    {
+      "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-11753",
+      "host": "rmg.co.uk",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "empires-of-the-sea"
       ]
     },
     {
@@ -4503,6 +4736,15 @@
       "state": "access_blocked",
       "books": [
         "five-days-at-memorial"
+      ]
+    },
+    {
+      "url": "https://www.slavevoyages.org/assessment/estimates",
+      "host": "slavevoyages.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "atlantic"
       ]
     },
     {
@@ -4627,12 +4869,12 @@
         }
       ],
       "host": "aasm.org",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
-      "final_url": "https://aasm.org/advocacy/position-statements/adult-sleep-duration-health-advisory/",
+      "state": "transient",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
       "redirected": false,
-      "error": null
+      "error": "AbortError: This operation was aborted"
     },
     {
       "url": "https://aasm.org/resources/pdf/adultsleepdurationmethods.pdf",
@@ -6105,7 +6347,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=203af5da-9ce9-41fc-a896-29853861b0f6",
+      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=a6b20dd3-aabc-4999-bf72-f9bb9c22cddf",
       "redirected": true,
       "error": null
     },
@@ -6137,7 +6379,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=3ea52ed1-8375-4387-942b-5492ba257e3f",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=3567f80d-ff2b-4c3d-b431-874478b04414",
       "redirected": true,
       "error": null
     },
@@ -6154,7 +6396,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=d200fe70-3fc0-4f05-a1d0-454b04baa70a",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=deb59041-02ef-49fb-bffe-18055f7584d5",
       "redirected": true,
       "error": null
     },
@@ -6198,7 +6440,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=7fd57e85-6c90-4503-aced-f7dc0381437c",
       "redirected": true,
       "error": null
     },
@@ -6215,7 +6457,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=e60b2528-c6ea-4ebd-9ad9-e96eaf7f1b9d",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=bb19499d-9de4-4882-bb23-fa16ce12c13f",
       "redirected": true,
       "error": null
     },
@@ -6232,7 +6474,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=009baf19-7369-4765-8377-2575b4c6daf5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=078110eb-3380-4458-8cdc-c8a3e9492aec",
       "redirected": true,
       "error": null
     },
@@ -6249,7 +6491,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-020-0225-0",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=8b0d283d-661f-4794-a31c-dd6a04d1fdfa",
       "redirected": true,
       "error": null
     },
@@ -6266,7 +6508,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=fc7d67ab-113e-44f9-8c62-2d1865e90a6e",
       "redirected": true,
       "error": null
     },
@@ -6283,7 +6525,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=cc4d83b4-1d7f-4722-9a82-ac486d7195a7",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=9d9534a3-2f38-4a2f-8f69-85e38f98e164",
       "redirected": true,
       "error": null
     },
@@ -6943,6 +7185,50 @@
       "error": null
     },
     {
+      "url": "https://ejercito.defensa.gob.es/museo/en/HECHOS_HISTORICOS/HECHOS_HISTORICOS/10.07_octubre._LA_BATALLA_DE_LEPANTO.html",
+      "citations": [
+        {
+          "slug": "empires-of-the-sea",
+          "claim_index": 3,
+          "source_title": "Spanish Army Museum: Battle of Lepanto"
+        }
+      ],
+      "host": "ejercito.defensa.gob.es",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ejercito.defensa.gob.es/museo/en/HECHOS_HISTORICOS/HECHOS_HISTORICOS/10.07_octubre._LA_BATALLA_DE_LEPANTO.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://en.unesco.org/silkroad/silk-road-themes/cities-silk-roads",
+      "citations": [
+        {
+          "slug": "the-great-sea",
+          "claim_index": 1,
+          "source_title": "UNESCO cities along the Silk Roads"
+        },
+        {
+          "slug": "the-great-sea",
+          "claim_index": 2,
+          "source_title": "UNESCO cities along the Silk Roads"
+        },
+        {
+          "slug": "the-great-sea",
+          "claim_index": 3,
+          "source_title": "UNESCO cities along the Silk Roads"
+        }
+      ],
+      "host": "en.unesco.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.unesco.org/en/silkroads",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/A_People%27s_History_of_the_United_States",
       "citations": [
         {
@@ -7339,6 +7625,23 @@
       "error": null
     },
     {
+      "url": "https://extapps.dec.ny.gov/fs/programs/dfw/SWAP2025/Marine%20Invertebrates/Eastern%20oyster.pdf",
+      "citations": [
+        {
+          "slug": "the-big-oyster",
+          "claim_index": 2,
+          "source_title": "New York eastern oyster species assessment"
+        }
+      ],
+      "host": "extapps.dec.ny.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://extapps.dec.ny.gov/fs/programs/dfw/SWAP2025/Marine%20Invertebrates/Eastern%20oyster.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://faculty.uca.edu/benw/biol4415/papers/GrantGrant2002b.pdf",
       "citations": [
         {
@@ -7498,6 +7801,40 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://gwern.net/doc/psychology/personality/conscientiousness/2007-duckworth.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://hcr.ny.gov/living-breakwaters-project-background-and-design",
+      "citations": [
+        {
+          "slug": "the-big-oyster",
+          "claim_index": 3,
+          "source_title": "New York Living Breakwaters design"
+        }
+      ],
+      "host": "hcr.ny.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://hcr.ny.gov/living-breakwaters-project-background-and-design",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://heritagemalta.mt/explore/fort-st-elmo-national-war-museum/",
+      "citations": [
+        {
+          "slug": "empires-of-the-sea",
+          "claim_index": 1,
+          "source_title": "Heritage Malta: Fort St Elmo and the Great Siege"
+        }
+      ],
+      "host": "heritagemalta.mt",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://heritagemalta.mt/explore/fort-st-elmo-national-war-museum/",
       "redirected": false,
       "error": null
     },
@@ -7891,7 +8228,34 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s10602-026-09503-9?error=cookies_not_supported&code=792afb4d-a60c-4f82-a29f-64a583cb8058",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=1153ba00-fb1a-43a7-837d-37b246eae4d8",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10814-014-9075-7",
+      "citations": [
+        {
+          "slug": "the-great-sea",
+          "claim_index": 2,
+          "source_title": "Archaeology of western Indian Ocean trade"
+        },
+        {
+          "slug": "sea-and-civilization",
+          "claim_index": 1,
+          "source_title": "Archaeology of western Indian Ocean trade"
+        },
+        {
+          "slug": "sea-and-civilization",
+          "claim_index": 3,
+          "source_title": "Archaeology of western Indian Ocean trade"
+        }
+      ],
+      "host": "link.springer.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=7593e4cc-8624-442b-8bae-29b7d77d7aff",
       "redirected": true,
       "error": null
     },
@@ -7925,8 +8289,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s11229-024-04527-w",
-      "redirected": false,
+      "final_url": "https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11229-024-04527-w",
+      "redirected": true,
       "error": null
     },
     {
@@ -7942,7 +8306,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=32163914-fa43-4360-8e9d-a15d19f74d2c",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=299dfa65-6267-4ac8-89ae-ab3dd13f6896",
       "redirected": true,
       "error": null
     },
@@ -7959,7 +8323,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=bb9e328c-ef72-40e5-a2fb-dfbe9a80020b",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=c2ba7a71-e13b-4b13-a674-067c3c36644e",
       "redirected": true,
       "error": null
     },
@@ -8488,6 +8852,50 @@
       "error": null
     },
     {
+      "url": "https://oceanexplorer.noaa.gov/history/quotes-explore/",
+      "citations": [
+        {
+          "slug": "the-sea-around-us",
+          "claim_index": 1,
+          "source_title": "NOAA Ocean Exploration: The Sea Around Us"
+        }
+      ],
+      "host": "oceanexplorer.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://oceanexplorer.noaa.gov/history/quotes-explore/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://oceanexplorer.noaa.gov/ocean-fact/mid-ocean-ridge/",
+      "citations": [
+        {
+          "slug": "atlantic",
+          "claim_index": 1,
+          "source_title": "NOAA: What is a mid-ocean ridge?"
+        },
+        {
+          "slug": "atlantic",
+          "claim_index": 3,
+          "source_title": "NOAA mid-ocean ridge overview"
+        },
+        {
+          "slug": "the-sea-around-us",
+          "claim_index": 2,
+          "source_title": "NOAA: What is a mid-ocean ridge?"
+        }
+      ],
+      "host": "oceanexplorer.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://oceanexplorer.noaa.gov/ocean-fact/mid-ocean-ridge/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://ojs.victoria.ac.nz/nzsr/article/download/9414/8324/14577",
       "citations": [
         {
@@ -8964,6 +9372,96 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://ourworldindata.org/war-and-peace",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pancanal.com/en/american-canal-construction/",
+      "citations": [
+        {
+          "slug": "the-path-between-the-seas",
+          "claim_index": 2,
+          "source_title": "Panama Canal Authority: American construction"
+        },
+        {
+          "slug": "the-path-between-the-seas",
+          "claim_index": 3,
+          "source_title": "Panama Canal Authority: American construction"
+        }
+      ],
+      "host": "pancanal.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pancanal.com/en/american-canal-construction/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pancanal.com/en/design-of-the-locks/",
+      "citations": [
+        {
+          "slug": "the-path-between-the-seas",
+          "claim_index": 2,
+          "source_title": "Panama Canal Authority: design of the locks"
+        }
+      ],
+      "host": "pancanal.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pancanal.com/en/design-of-the-locks/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pancanal.com/en/history-of-the-panama-canal/",
+      "citations": [
+        {
+          "slug": "the-path-between-the-seas",
+          "claim_index": 1,
+          "source_title": "Panama Canal Authority history"
+        }
+      ],
+      "host": "pancanal.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pancanal.com/en/history-of-the-panama-canal/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pancanal.com/en/the-french-canal-construction/",
+      "citations": [
+        {
+          "slug": "the-path-between-the-seas",
+          "claim_index": 1,
+          "source_title": "Panama Canal Authority: French construction"
+        }
+      ],
+      "host": "pancanal.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pancanal.com/en/the-french-canal-construction/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pancanal.com/wp-content/uploads/2021/08/annual-report-2014.pdf",
+      "citations": [
+        {
+          "slug": "the-path-between-the-seas",
+          "claim_index": 3,
+          "source_title": "Panama Canal workforce history"
+        }
+      ],
+      "host": "pancanal.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pancanal.com/wp-content/uploads/2021/08/annual-report-2014.pdf",
       "redirected": false,
       "error": null
     },
@@ -10496,7 +10994,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/33317019/",
       "redirected": false,
       "error": null
@@ -10777,6 +11275,50 @@
       "error": null
     },
     {
+      "url": "https://pubs.usgs.gov/myb/vol1/2018/myb1-2018-salt.pdf",
+      "citations": [
+        {
+          "slug": "salt-a-world-history",
+          "claim_index": 1,
+          "source_title": "USGS salt mineral yearbook"
+        }
+      ],
+      "host": "pubs.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/myb/vol1/2018/myb1-2018-salt.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubs.usgs.gov/usbmic/ic-9343/ic9343.pdf",
+      "citations": [
+        {
+          "slug": "salt-a-world-history",
+          "claim_index": 1,
+          "source_title": "USGS global balance of salt"
+        },
+        {
+          "slug": "salt-a-world-history",
+          "claim_index": 2,
+          "source_title": "USGS global balance of salt"
+        },
+        {
+          "slug": "salt-a-world-history",
+          "claim_index": 3,
+          "source_title": "USGS global balance of salt"
+        }
+      ],
+      "host": "pubs.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/usbmic/ic-9343/ic9343.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pure.mpg.de/rest/items/item_3347983/component/file_3369468/content",
       "citations": [
         {
@@ -10834,6 +11376,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://repository.essex.ac.uk/10513/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://repository.library.noaa.gov/view/noaa/39851/noaa_39851_DS1.pdf",
+      "citations": [
+        {
+          "slug": "the-sea-around-us",
+          "claim_index": 3,
+          "source_title": "NOAA historical appraisal of The Sea Around Us"
+        }
+      ],
+      "host": "repository.library.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://repository.library.noaa.gov/view/noaa/39851/noaa_39851_DS1.pdf",
       "redirected": false,
       "error": null
     },
@@ -10980,7 +11539,7 @@
       ],
       "host": "revistas.unal.edu.co",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://revistas.unal.edu.co/index.php/achsc/article/view/71038",
       "redirected": false,
@@ -11035,12 +11594,12 @@
         }
       ],
       "host": "ruj.uj.edu.pl",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
-      "final_url": "https://ruj.uj.edu.pl//handle/item/68230",
-      "redirected": true,
-      "error": null
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://scholar.harvard.edu/files/mankiw/files/yes_r_g_so_what.pdf",
@@ -11617,6 +12176,23 @@
       "error": null
     },
     {
+      "url": "https://uat.oceanservice.noaa.gov/education/planet-stewards/bookclub.html",
+      "citations": [
+        {
+          "slug": "the-sea-around-us",
+          "claim_index": 2,
+          "source_title": "NOAA Planet Stewards guide to The Sea Around Us"
+        }
+      ],
+      "host": "uat.oceanservice.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://uat.oceanservice.noaa.gov/education/planet-stewards/bookclub.html",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://unstats.un.org/sdgs/report/2025/",
       "citations": [
         {
@@ -11987,6 +12563,23 @@
       "error": null
     },
     {
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011718-012440",
+      "citations": [
+        {
+          "slug": "sea-and-civilization",
+          "claim_index": 2,
+          "source_title": "Annual Review of the Austronesian homeland and dispersal"
+        }
+      ],
+      "host": "annualreviews.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011718-012440",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-psych-010814-015001",
       "citations": [
         {
@@ -12072,8 +12665,25 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-110218-024717?crawler=true&mimetype=application/pdf",
-      "redirected": true,
+      "final_url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-ecolsys-110218-024717",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.aoml.noaa.gov/ftp/od/library/mid%20atlantic-perez.pdf",
+      "citations": [
+        {
+          "slug": "atlantic",
+          "claim_index": 1,
+          "source_title": "NOAA Atlantic oceanography overview"
+        }
+      ],
+      "host": "aoml.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.aoml.noaa.gov/ftp/od/library/mid%20atlantic-perez.pdf",
+      "redirected": false,
       "error": null
     },
     {
@@ -12425,6 +13035,23 @@
       "status": 200,
       "final_url": "https://www.cambridge.org/core/journals/annales-histoire-sciences-sociales-english-edition/article/abs/global-histories-of-modern-europe/84A5E6756DF4850DAD89911037C228D3",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/antiquity/article/abs/archaeology-and-the-austronesian-expansion-where-are-we-now/952E579C735CF92A49B70FF4D0388338",
+      "citations": [
+        {
+          "slug": "sea-and-civilization",
+          "claim_index": 2,
+          "source_title": "Archaeology and the Austronesian expansion"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/antiquity/article/abs/archaeology-and-the-austronesian-expansion-where-are-we-now/952E579C735CF92A49B70FF4D0388338",
+      "redirected": false,
       "error": null
     },
     {
@@ -13355,6 +13982,28 @@
       "error": null
     },
     {
+      "url": "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/nhn/destacados/documentos-destacados/lepanto.html",
+      "citations": [
+        {
+          "slug": "empires-of-the-sea",
+          "claim_index": 2,
+          "source_title": "Spanish Historical Archive: Lepanto and its antecedents"
+        },
+        {
+          "slug": "empires-of-the-sea",
+          "claim_index": 3,
+          "source_title": "Spanish Historical Archive: Lepanto and the Holy League"
+        }
+      ],
+      "host": "cultura.gob.es",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
       "url": "https://www.darpa.mil/about/innovation-timeline/arpanet",
       "citations": [
         {
@@ -13471,6 +14120,84 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.economics.ox.ac.uk/publication/1161191/ora-hyrax",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/",
+      "citations": [
+        {
+          "slug": "the-prize",
+          "claim_index": 1,
+          "source_title": "U.S. EIA petroleum explained"
+        },
+        {
+          "slug": "the-prize",
+          "claim_index": 3,
+          "source_title": "EIA petroleum explained"
+        }
+      ],
+      "host": "eia.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.eia.gov/kids/history-of-energy/timelines/oil-petroleum.php",
+      "citations": [
+        {
+          "slug": "the-prize",
+          "claim_index": 1,
+          "source_title": "U.S. EIA petroleum timeline"
+        },
+        {
+          "slug": "the-prize",
+          "claim_index": 3,
+          "source_title": "U.S. EIA petroleum timeline"
+        }
+      ],
+      "host": "eia.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.eia.gov/kids/history-of-energy/timelines/oil-petroleum.php",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.eia.gov/outlooks/steo/archives/4Q83.pdf",
+      "citations": [
+        {
+          "slug": "the-prize",
+          "claim_index": 2,
+          "source_title": "EIA history of the 1973 oil embargo"
+        }
+      ],
+      "host": "eia.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.eia.gov/outlooks/steo/archives/4Q83.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.eia.gov/pressroom/testimonies/sieminski_12112014.pdf",
+      "citations": [
+        {
+          "slug": "the-prize",
+          "claim_index": 2,
+          "source_title": "EIA testimony on U.S. oil imports and embargo"
+        }
+      ],
+      "host": "eia.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.eia.gov/pressroom/testimonies/sieminski_12112014.pdf",
       "redirected": false,
       "error": null
     },
@@ -14706,6 +15433,108 @@
       "final_url": "https://www.history.com/articles/radium-girls-workplace-safety",
       "redirected": false,
       "error": null
+    },
+    {
+      "url": "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-006/h-006-1.html",
+      "citations": [
+        {
+          "slug": "pacific-crucible",
+          "claim_index": 1,
+          "source_title": "NHHC Midway overview"
+        }
+      ],
+      "host": "history.navy.mil",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-015.html",
+      "citations": [
+        {
+          "slug": "pacific-crucible",
+          "claim_index": 3,
+          "source_title": "NHHC Guadalcanal analysis"
+        }
+      ],
+      "host": "history.navy.mil",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.history.navy.mil/browse-by-topic/wars-conflicts-and-operations/world-war-ii/1942/guadalcanal/naval-battle-of-guadalcanal/guadalcanal-historical-summary.html",
+      "citations": [
+        {
+          "slug": "pacific-crucible",
+          "claim_index": 2,
+          "source_title": "NHHC Guadalcanal historical summary"
+        }
+      ],
+      "host": "history.navy.mil",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.history.navy.mil/browse-by-topic/wars-conflicts-and-operations/world-war-ii/1942/midway.html",
+      "citations": [
+        {
+          "slug": "pacific-crucible",
+          "claim_index": 3,
+          "source_title": "NHHC Battle of Midway"
+        }
+      ],
+      "host": "history.navy.mil",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.history.navy.mil/our-collections/photography/wars-and-events/world-war-ii/midway.html",
+      "citations": [
+        {
+          "slug": "pacific-crucible",
+          "claim_index": 1,
+          "source_title": "Naval History and Heritage Command: Battle of Midway"
+        }
+      ],
+      "host": "history.navy.mil",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/g/guadalcanal-campaign.html",
+      "citations": [
+        {
+          "slug": "pacific-crucible",
+          "claim_index": 2,
+          "source_title": "NHHC Guadalcanal campaign history"
+        }
+      ],
+      "host": "history.navy.mil",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://www.history.uscg.mil/Research/THE-LONG-BLUE-LINE/Article/2925266/the-long-blue-line-mrs-friedmanthe-coast-guards-cryptologist-in-charge-and-nsc/",
@@ -16058,8 +16887,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/28764",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2F28764&code=a7ca7516-c1bf-4ad5-8b23-c83a3f50550c",
+      "redirected": true,
       "error": null
     },
     {
@@ -16075,8 +16904,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-024-00544-4",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-024-00544-4",
+      "redirected": true,
       "error": null
     },
     {
@@ -16097,7 +16926,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=bc50ab8b-e57d-4564-af88-d92563bcc20f",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=b35b3ea3-b5d5-417e-9af8-af43d327a6b5",
       "redirected": true,
       "error": null
     },
@@ -16124,7 +16953,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=fe8ec011-8534-401a-8493-0fad32e7e5d1",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=492e359d-d01b-4461-b766-11f2fb58a036",
       "redirected": true,
       "error": null
     },
@@ -16151,7 +16980,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=3f9f236b-5197-4c28-b215-3cc13f8dbcba",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=dda6d4ef-12ed-4429-89cc-b8f1ef5254d0",
       "redirected": true,
       "error": null
     },
@@ -16173,7 +17002,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=51fa2a38-f028-4fe1-bfab-87079efd67ec",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=83c494ee-b38e-4296-a2ff-66e14e566361",
       "redirected": true,
       "error": null
     },
@@ -16190,7 +17019,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=25f8ad86-852c-4163-b64a-02c43a684b62",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=47b978a5-311f-4041-a362-9ca85b23b7da",
       "redirected": true,
       "error": null
     },
@@ -16224,7 +17053,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=5bcf8163-0a18-491b-b595-05983278858a",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=d1d8808e-efa0-4561-956c-633b5c79897a",
       "redirected": true,
       "error": null
     },
@@ -16258,7 +17087,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=90181786-06c0-4fca-b719-324afb0f8007",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=da728eba-63aa-4da8-b385-5ce0757daad2",
       "redirected": true,
       "error": null
     },
@@ -16280,7 +17109,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=fce3c7c0-a044-44ba-b2a3-f3f0659be183",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=56a9ffbb-b09c-4682-b47e-3a795dbdb4bc",
       "redirected": true,
       "error": null
     },
@@ -16388,6 +17217,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.ncbi.nlm.nih.gov/books/NBK585505/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/news/rachel-carson",
+      "citations": [
+        {
+          "slug": "the-sea-around-us",
+          "claim_index": 1,
+          "source_title": "NOAA history of Rachel Carson"
+        },
+        {
+          "slug": "the-sea-around-us",
+          "claim_index": 3,
+          "source_title": "NOAA history of Rachel Carson"
+        }
+      ],
+      "host": "ncei.noaa.gov",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.ncei.noaa.gov/news/rachel-carson",
       "redirected": false,
       "error": null
     },
@@ -16777,6 +17628,23 @@
       "error": null
     },
     {
+      "url": "https://www.nps.gov/elis/learn/historyculture/places_oyster_island.htm",
+      "citations": [
+        {
+          "slug": "the-big-oyster",
+          "claim_index": 1,
+          "source_title": "National Park Service: Oyster Island"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/elis/learn/historyculture/places_oyster_island.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.nps.gov/grte/learn/nature/firehistory.htm",
       "citations": [
         {
@@ -16794,6 +17662,40 @@
       "error": null
     },
     {
+      "url": "https://www.nps.gov/im/ncbn/jamaica-bay.htm",
+      "citations": [
+        {
+          "slug": "the-big-oyster",
+          "claim_index": 2,
+          "source_title": "National Park Service introduction to Jamaica Bay"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/im/ncbn/jamaica-bay.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/parkhistory/online_books/gate/jamaica_bay_hrs.pdf",
+      "citations": [
+        {
+          "slug": "the-big-oyster",
+          "claim_index": 1,
+          "source_title": "NPS Jamaica Bay historic resource study"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/orgs/1220/index.htm",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://www.nps.gov/people/rachel-carson.htm",
       "citations": [
         {
@@ -16807,6 +17709,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nps.gov/people/rachel-carson.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/subjects/oceans/oyster-reefs.htm",
+      "citations": [
+        {
+          "slug": "the-big-oyster",
+          "claim_index": 3,
+          "source_title": "National Park Service: oyster reefs"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/subjects/oceans/oyster-reefs.htm",
       "redirected": false,
       "error": null
     },
@@ -17139,8 +18058,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/England-and-Europe-in-1420/",
-      "redirected": false,
+      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/england-and-europe-in-1420/",
+      "redirected": true,
       "error": null
     },
     {
@@ -17357,6 +18276,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.rmg.co.uk/collections/library/rmgl-153039",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-11753",
+      "citations": [
+        {
+          "slug": "empires-of-the-sea",
+          "claim_index": 1,
+          "source_title": "Royal Museums Greenwich: Battle of Lepanto"
+        },
+        {
+          "slug": "empires-of-the-sea",
+          "claim_index": 2,
+          "source_title": "Royal Museums Greenwich: Battle of Lepanto"
+        }
+      ],
+      "host": "rmg.co.uk",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-11753",
       "redirected": false,
       "error": null
     },
@@ -18003,9 +18944,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.semi.org/en/industry-groups/supply-chain-management",
       "redirected": false,
       "error": null
@@ -18063,6 +19004,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.si.edu/object/five-days-memorial-life-and-death-storm-ravaged-hospital-sheri-fink%3Asiris_sil_1056647",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.slavevoyages.org/assessment/estimates",
+      "citations": [
+        {
+          "slug": "atlantic",
+          "claim_index": 2,
+          "source_title": "Slave Voyages trans-Atlantic estimates"
+        },
+        {
+          "slug": "atlantic",
+          "claim_index": 3,
+          "source_title": "Slave Voyages trans-Atlantic estimates"
+        }
+      ],
+      "host": "slavevoyages.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.slavevoyages.org/assessment/estimates",
       "redirected": false,
       "error": null
     },
@@ -18364,6 +19327,43 @@
       "error": null
     },
     {
+      "url": "https://www.unesco.org/en/silk-roads/about-silk-roads",
+      "citations": [
+        {
+          "slug": "the-great-sea",
+          "claim_index": 1,
+          "source_title": "UNESCO Silk Roads land and maritime networks"
+        },
+        {
+          "slug": "the-great-sea",
+          "claim_index": 3,
+          "source_title": "UNESCO: About the Silk Roads"
+        },
+        {
+          "slug": "sea-and-civilization",
+          "claim_index": 1,
+          "source_title": "UNESCO: About the Silk Roads"
+        },
+        {
+          "slug": "sea-and-civilization",
+          "claim_index": 3,
+          "source_title": "UNESCO Silk Roads land and sea networks"
+        },
+        {
+          "slug": "atlantic",
+          "claim_index": 2,
+          "source_title": "UNESCO maritime Silk Roads overview"
+        }
+      ],
+      "host": "unesco.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.unesco.org/en/silk-roads/about-silk-roads",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.uscg.mil/Units/Coast-Guard-Investigative-Service/History/",
       "citations": [
         {
@@ -18379,6 +19379,23 @@
       "final_url": "https://www.uscg.mil/Units/Coast-Guard-Investigative-Service/History/",
       "redirected": false,
       "error": null
+    },
+    {
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/salt-statistics-and-information",
+      "citations": [
+        {
+          "slug": "salt-a-world-history",
+          "claim_index": 2,
+          "source_title": "USGS salt statistics and information"
+        }
+      ],
+      "host": "usgs.gov",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://www.usgs.gov/news/volcano-watch-mixing-magmas-krakatau",
@@ -18677,6 +19694,23 @@
       "error": null
     },
     {
+      "url": "https://www.who.int/publications/i/item/WHO-NUT-94.4",
+      "citations": [
+        {
+          "slug": "salt-a-world-history",
+          "claim_index": 3,
+          "source_title": "WHO statement on salt iodization"
+        }
+      ],
+      "host": "who.int",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.who.int/publications/i/item/WHO-NUT-94.4",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.who.int/publications/i/item/who-wer9316",
       "citations": [
         {
@@ -18913,8 +19947,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article",
-      "redirected": false,
+      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/1/05-0979_article",
+      "redirected": true,
       "error": null
     },
     {
@@ -18974,8 +20008,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/24/10/ac-2410_article",
-      "redirected": true,
+      "final_url": "https://wwwnc.cdc.gov/eid/article/24/10/ac-2410_article",
+      "redirected": false,
       "error": null
     },
     {
