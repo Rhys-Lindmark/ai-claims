@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-09-01",
-  "checked_at": "2026-09-01T04:37:29.429Z",
+  "checked_at": "2026-09-01T04:41:26.830Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,71 +10,71 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 293,
-    "claims": 879,
-    "citations": 1758,
-    "unique_urls": 1181,
-    "repeated_citations": 577,
-    "redirected_urls": 208,
+    "books": 300,
+    "claims": 900,
+    "citations": 1800,
+    "unique_urls": 1219,
+    "repeated_citations": 581,
+    "redirected_urls": 223,
     "states": {
-      "access_blocked": 214,
-      "network_error": 23,
-      "other_http": 27,
-      "reachable": 908,
+      "access_blocked": 224,
+      "network_error": 24,
+      "other_http": 34,
+      "reachable": 928,
       "transient": 9
     },
     "score_distribution": {
-      "42": 2,
+      "42": 3,
       "50": 14,
       "58": 21,
-      "67": 70,
-      "75": 72,
+      "67": 75,
+      "75": 73,
       "83": 58,
       "92": 46,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 102,
+      "high": 103,
       "low": 1,
-      "medium": 77,
-      "medium-high": 91,
+      "medium": 79,
+      "medium-high": 95,
       "medium-low": 22
     }
   },
   "domain_summary": [
     {
       "host": "doi.org",
-      "unique_urls": 97,
-      "citations": 142,
+      "unique_urls": 103,
+      "citations": 148,
       "states": {
-        "reachable": 52,
-        "access_blocked": 45
+        "reachable": 56,
+        "access_blocked": 47
       }
     },
     {
       "host": "pmc.ncbi.nlm.nih.gov",
-      "unique_urls": 87,
-      "citations": 128,
+      "unique_urls": 91,
+      "citations": 132,
       "states": {
-        "reachable": 87
+        "reachable": 91
       }
     },
     {
       "host": "sciencedirect.com",
-      "unique_urls": 36,
-      "citations": 51,
+      "unique_urls": 43,
+      "citations": 58,
       "states": {
-        "other_http": 23,
-        "access_blocked": 13
+        "other_http": 31,
+        "access_blocked": 12
       }
     },
     {
       "host": "cambridge.org",
-      "unique_urls": 32,
-      "citations": 49,
+      "unique_urls": 33,
+      "citations": 50,
       "states": {
         "transient": 2,
-        "reachable": 30
+        "reachable": 31
       }
     },
     {
@@ -87,10 +87,10 @@
     },
     {
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "unique_urls": 30,
-      "citations": 40,
+      "unique_urls": 32,
+      "citations": 44,
       "states": {
-        "reachable": 30
+        "reachable": 32
       }
     },
     {
@@ -103,10 +103,10 @@
     },
     {
       "host": "journals.sagepub.com",
-      "unique_urls": 20,
-      "citations": 25,
+      "unique_urls": 22,
+      "citations": 27,
       "states": {
-        "access_blocked": 20
+        "access_blocked": 22
       }
     },
     {
@@ -126,17 +126,17 @@
       }
     },
     {
-      "host": "onlinelibrary.wiley.com",
-      "unique_urls": 17,
+      "host": "academic.oup.com",
+      "unique_urls": 18,
       "citations": 22,
       "states": {
-        "access_blocked": 17
+        "access_blocked": 18
       }
     },
     {
-      "host": "academic.oup.com",
+      "host": "onlinelibrary.wiley.com",
       "unique_urls": 17,
-      "citations": 21,
+      "citations": 22,
       "states": {
         "access_blocked": 17
       }
@@ -166,6 +166,22 @@
       }
     },
     {
+      "host": "link.springer.com",
+      "unique_urls": 13,
+      "citations": 18,
+      "states": {
+        "reachable": 13
+      }
+    },
+    {
+      "host": "jstor.org",
+      "unique_urls": 12,
+      "citations": 17,
+      "states": {
+        "reachable": 12
+      }
+    },
+    {
       "host": "nber.org",
       "unique_urls": 12,
       "citations": 17,
@@ -182,14 +198,6 @@
       }
     },
     {
-      "host": "jstor.org",
-      "unique_urls": 11,
-      "citations": 16,
-      "states": {
-        "reachable": 11
-      }
-    },
-    {
       "host": "nps.gov",
       "unique_urls": 13,
       "citations": 16,
@@ -198,11 +206,27 @@
       }
     },
     {
-      "host": "link.springer.com",
+      "host": "annualreviews.org",
+      "unique_urls": 13,
+      "citations": 15,
+      "states": {
+        "reachable": 13
+      }
+    },
+    {
+      "host": "nobelprize.org",
       "unique_urls": 10,
       "citations": 15,
       "states": {
         "reachable": 10
+      }
+    },
+    {
+      "host": "tandfonline.com",
+      "unique_urls": 14,
+      "citations": 15,
+      "states": {
+        "access_blocked": 14
       }
     },
     {
@@ -214,35 +238,11 @@
       }
     },
     {
-      "host": "annualreviews.org",
-      "unique_urls": 11,
-      "citations": 13,
-      "states": {
-        "reachable": 11
-      }
-    },
-    {
       "host": "cdc.gov",
       "unique_urls": 9,
       "citations": 13,
       "states": {
         "reachable": 9
-      }
-    },
-    {
-      "host": "nobelprize.org",
-      "unique_urls": 9,
-      "citations": 13,
-      "states": {
-        "reachable": 9
-      }
-    },
-    {
-      "host": "tandfonline.com",
-      "unique_urls": 12,
-      "citations": 13,
-      "states": {
-        "access_blocked": 12
       }
     },
     {
@@ -434,8 +434,8 @@
       "unique_urls": 6,
       "citations": 7,
       "states": {
-        "reachable": 2,
-        "access_blocked": 4
+        "reachable": 1,
+        "access_blocked": 5
       }
     },
     {
@@ -589,7 +589,8 @@
       "unique_urls": 4,
       "citations": 5,
       "states": {
-        "access_blocked": 4
+        "reachable": 1,
+        "access_blocked": 3
       }
     },
     {
@@ -686,8 +687,7 @@
       "unique_urls": 3,
       "citations": 5,
       "states": {
-        "reachable": 2,
-        "access_blocked": 1
+        "reachable": 3
       }
     },
     {
@@ -703,7 +703,7 @@
       "unique_urls": 1,
       "citations": 4,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -1215,7 +1215,7 @@
       "unique_urls": 1,
       "citations": 2,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -1248,8 +1248,7 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "access_blocked": 1,
-        "reachable": 1
+        "reachable": 2
       }
     },
     {
@@ -1302,6 +1301,14 @@
     },
     {
       "host": "dialnet.unirioja.es",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "dtg.sites.fas.harvard.edu",
       "unique_urls": 1,
       "citations": 2,
       "states": {
@@ -1738,7 +1745,7 @@
       "unique_urls": 1,
       "citations": 2,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -1786,7 +1793,7 @@
       "unique_urls": 1,
       "citations": 2,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -1874,7 +1881,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -1926,6 +1933,14 @@
       }
     },
     {
+      "host": "bbcprisonstudy.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "network_error": 1
+      }
+    },
+    {
       "host": "bioanth.org",
       "unique_urls": 1,
       "citations": 1,
@@ -1959,6 +1974,14 @@
     },
     {
       "host": "bmcr.brynmawr.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "bps.stanford.edu",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2082,7 +2105,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "other_http": 1
+        "access_blocked": 1
       }
     },
     {
@@ -2159,6 +2182,14 @@
     },
     {
       "host": "digital.sciencehistory.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "digitalcommons.unl.edu",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2334,6 +2365,14 @@
       }
     },
     {
+      "host": "guilfordjournals.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "gwern.net",
       "unique_urls": 1,
       "citations": 1,
@@ -2402,7 +2441,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -2482,7 +2521,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -2511,6 +2550,14 @@
     },
     {
       "host": "journals.ametsoc.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
+      "host": "journals.aom.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -3512,7 +3559,7 @@
       "url": "https://www.adb.org/publications/determinants-structural-transformation-asia",
       "host": "adb.org",
       "citation_count": 4,
-      "state": "reachable",
+      "state": "access_blocked",
       "books": [
         "why-growth-matters",
         "the-tyranny-of-experts",
@@ -4344,7 +4391,7 @@
       "url": "https://www.sciencedirect.com/science/article/pii/S0169207022000371",
       "host": "sciencedirect.com",
       "citation_count": 3,
-      "state": "other_http",
+      "state": "access_blocked",
       "books": [
         "superforecasting",
         "the-signal-and-the-noise",
@@ -4468,7 +4515,7 @@
       "url": "https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/transforming-waterfront",
       "host": "americanhistory.si.edu",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-box"
       ]
@@ -4759,6 +4806,16 @@
       "books": [
         "spillover",
         "the-coming-plague"
+      ]
+    },
+    {
+      "url": "https://dtg.sites.fas.harvard.edu/Wilson%20%26%20Gilbert%20%28Advances%29.pdf",
+      "host": "dtg.sites.fas.harvard.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "stumbling-on-happiness",
+        "the-happiness-hypothesis"
       ]
     },
     {
@@ -5429,6 +5486,15 @@
       ]
     },
     {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12146734/",
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-knowledge-illusion"
+      ]
+    },
+    {
       "url": "https://pubmed.ncbi.nlm.nih.gov/16226363/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
@@ -5462,6 +5528,15 @@
       "state": "reachable",
       "books": [
         "breath"
+      ]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28705870/",
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-happiness-hypothesis"
       ]
     },
     {
@@ -6486,6 +6561,16 @@
       ]
     },
     {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/advanced-information/",
+      "host": "nobelprize.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "predictably-irrational",
+        "the-undoing-project"
+      ]
+    },
+    {
       "url": "https://www.nobelprize.org/prizes/economic-sciences/2017/advanced-information/",
       "host": "nobelprize.org",
       "citation_count": 2,
@@ -6679,7 +6764,7 @@
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165188912000784",
       "host": "sciencedirect.com",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "other_http",
       "books": [
         "fooled-by-randomness"
       ]
@@ -6697,7 +6782,7 @@
       "url": "https://www.sciencedirect.com/science/article/pii/S0014292119301126",
       "host": "sciencedirect.com",
       "citation_count": 2,
-      "state": "other_http",
+      "state": "access_blocked",
       "books": [
         "the-logic-of-collective-action"
       ]
@@ -6706,7 +6791,7 @@
       "url": "https://www.sciencedirect.com/science/article/pii/S0167814098001431",
       "host": "sciencedirect.com",
       "citation_count": 2,
-      "state": "other_http",
+      "state": "access_blocked",
       "books": [
         "the-radium-century"
       ]
@@ -6733,7 +6818,7 @@
       "url": "https://www.sciencedirect.com/science/article/pii/S0278416521000118",
       "host": "sciencedirect.com",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "other_http",
       "books": [
         "debt-the-first-5000-years"
       ]
@@ -6751,7 +6836,7 @@
       "url": "https://www.sciencedirect.com/science/article/pii/S1749461312000048",
       "host": "sciencedirect.com",
       "citation_count": 2,
-      "state": "other_http",
+      "state": "access_blocked",
       "books": [
         "entangled-life"
       ]
@@ -6832,7 +6917,7 @@
       "url": "https://www.tara.tcd.ie/items/1d88e61c-4bb2-46a7-902d-f162cf8a4727",
       "host": "tara.tcd.ie",
       "citation_count": 2,
-      "state": "reachable",
+      "state": "access_blocked",
       "books": [
         "cities-in-civilization"
       ]
@@ -6869,7 +6954,7 @@
       "url": "https://www.usni.org/magazines/naval-history-magazine/2015/june/looking-back-fatal-chain",
       "host": "usni.org",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "dead-wake"
       ]
@@ -7103,6 +7188,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://academic.oup.com/book/11580/chapter-abstract/160421377",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://academic.oup.com/book/12089/chapter-abstract/161456214",
+      "citations": [
+        {
+          "slug": "the-enigma-of-reason",
+          "claim_index": 2,
+          "source_title": "Argumentation and Evolution of Reasoning"
+        }
+      ],
+      "host": "academic.oup.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://academic.oup.com/book/12089/chapter-abstract/161456214",
       "redirected": false,
       "error": null
     },
@@ -7457,9 +7559,9 @@
         }
       ],
       "host": "americanhistory.si.edu",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/transforming-waterfront",
       "redirected": false,
       "error": null
@@ -7525,11 +7627,11 @@
         }
       ],
       "host": "apnews.com",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
-      "final_url": "https://apnews.com/article/robert-caro-power-broker-50-years-684b96ffb147edb8c1a1935687d2f7c0",
-      "redirected": true,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://apnews.com/article/684b96ffb147edb8c1a1935687d2f7c0",
+      "redirected": false,
       "error": null
     },
     {
@@ -7943,6 +8045,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://bmcr.brynmawr.edu/2019/2019.10.21/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://bps.stanford.edu/home/science-correcting-itself/science-correcting-itself-replication-failures",
+      "citations": [
+        {
+          "slug": "the-lucifer-effect",
+          "claim_index": 2,
+          "source_title": "Stanford Science-Correction Record"
+        }
+      ],
+      "host": "bps.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://bps.stanford.edu/home/science-correcting-itself/science-correcting-itself-replication-failures",
       "redirected": false,
       "error": null
     },
@@ -8497,6 +8616,23 @@
       "error": null
     },
     {
+      "url": "https://digitalcommons.unl.edu/edpsychpapers/302/",
+      "citations": [
+        {
+          "slug": "the-enigma-of-reason",
+          "claim_index": 3,
+          "source_title": "Reasoning, Logic, and Development Review"
+        }
+      ],
+      "host": "digitalcommons.unl.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://digitalcommons.unl.edu/edpsychpapers/302/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://direct.mit.edu/daed/article/152/1/225/115009/The-Moral-Economy-of-High-Tech-Modernism",
       "citations": [
         {
@@ -8716,7 +8852,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s11127-015-0252-0?error=cookies_not_supported&code=6107d22a-57c2-48bb-8031-f23983ef19a1",
+      "final_url": "https://link.springer.com/article/10.1007/s11127-015-0252-0?error=cookies_not_supported&code=add106a5-e5d8-4805-b82a-8745e6945fa9",
       "redirected": true,
       "error": null
     },
@@ -8733,7 +8869,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s11238-021-09802-7?error=cookies_not_supported&code=d251ee89-7169-4b04-a206-48c45147ff9f",
+      "final_url": "https://link.springer.com/article/10.1007/s11238-021-09802-7?error=cookies_not_supported&code=2952327c-5b37-42d4-b650-6a0ae2c316f2",
       "redirected": true,
       "error": null
     },
@@ -8941,6 +9077,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0896627313006077",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.paid.2015.12.046",
+      "citations": [
+        {
+          "slug": "stumbling-on-happiness",
+          "claim_index": 3,
+          "source_title": "Predictions and Emotions Meta-Analyses"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0191886915301276",
       "redirected": true,
       "error": null
     },
@@ -9174,6 +9327,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1037/0022-3514.40.2.346",
+      "citations": [
+        {
+          "slug": "the-person-and-the-situation",
+          "claim_index": 1,
+          "source_title": "How Fundamental Is the Fundamental Attribution Error?"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://psycnet.apa.org/doiLanding?doi=10.1037/0022-3514.40.2.346",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1037/0022-3514.54.4.569",
       "citations": [
         {
@@ -9296,6 +9466,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1037/xge0000070",
+      "citations": [
+        {
+          "slug": "the-knowledge-illusion",
+          "claim_index": 2,
+          "source_title": "Searching for Explanations and Knowledge Access"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://psycnet.apa.org/doiLanding?doi=10.1037/xge0000070",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1038/d41586-023-01313-5",
       "citations": [
         {
@@ -9313,7 +9500,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=3204f2ba-462f-4fac-b89f-b93a4b8d6596",
+      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=8a168765-467e-4fef-9321-0e1c9079018d",
       "redirected": true,
       "error": null
     },
@@ -9345,7 +9532,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature06536?error=cookies_not_supported&code=5be8bca2-75b9-4831-9131-753a37e4afbe",
+      "final_url": "https://www.nature.com/articles/nature06536?error=cookies_not_supported&code=e9934afd-8bc5-41f9-a8d5-092a2e202620",
       "redirected": true,
       "error": null
     },
@@ -9362,7 +9549,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature10574?error=cookies_not_supported&code=464c2278-71b8-4b71-b26d-a0b4f9278999",
+      "final_url": "https://www.nature.com/articles/nature10574?error=cookies_not_supported&code=854a24f5-d6e9-4a05-acd9-88da512cbf49",
       "redirected": true,
       "error": null
     },
@@ -9384,7 +9571,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nplants201793?error=cookies_not_supported&code=08ce4d50-8013-4bd5-8e1e-945b87be7cf0",
+      "final_url": "https://www.nature.com/articles/nplants201793?error=cookies_not_supported&code=241212bd-9526-420f-9695-eb987bc0dfbd",
       "redirected": true,
       "error": null
     },
@@ -9406,7 +9593,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-018-03510-7?error=cookies_not_supported&code=457b2285-e61d-4308-914d-859af5b9f461",
+      "final_url": "https://www.nature.com/articles/s41467-018-03510-7?error=cookies_not_supported&code=7b5a7c27-5b81-4ce9-b81f-30c5945a13a9",
       "redirected": true,
       "error": null
     },
@@ -9423,7 +9610,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-023-43426-5?error=cookies_not_supported&code=6b93d772-cde3-40e2-b396-4c0f5d6152ab",
+      "final_url": "https://www.nature.com/articles/s41467-023-43426-5?error=cookies_not_supported&code=9303ff3a-22f8-4dcc-bafe-ea652de5a530",
       "redirected": true,
       "error": null
     },
@@ -9440,7 +9627,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-019-0907-1?error=cookies_not_supported&code=05ec3ded-2d1d-4631-b4b4-fd26c1be56a2",
+      "final_url": "https://www.nature.com/articles/s41559-019-0907-1?error=cookies_not_supported&code=c66ebd29-7588-4b85-8580-12fbb77b9116",
       "redirected": true,
       "error": null
     },
@@ -9457,7 +9644,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-020-0225-0?error=cookies_not_supported&code=56e85bd5-841a-4b45-a8b3-436782e63666",
+      "final_url": "https://www.nature.com/articles/s41576-020-0225-0?error=cookies_not_supported&code=2c59b6c0-e512-4d05-93f3-9b298a5f30fc",
       "redirected": true,
       "error": null
     },
@@ -9474,7 +9661,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41586-020-03053-2?error=cookies_not_supported&code=01906c52-3088-49d2-8bc6-5d29e1e2114d",
+      "final_url": "https://www.nature.com/articles/s41586-020-03053-2?error=cookies_not_supported&code=4106339f-34d4-4eb6-b156-58d95acfe6b5",
       "redirected": true,
       "error": null
     },
@@ -9491,7 +9678,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41893-019-0293-3?error=cookies_not_supported&code=a9fda636-efff-4eb4-82c4-50f055d83403",
+      "final_url": "https://www.nature.com/articles/s41893-019-0293-3?error=cookies_not_supported&code=b893857a-c032-4e4f-bd17-4e5ae82342b9",
       "redirected": true,
       "error": null
     },
@@ -9508,7 +9695,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41599-019-0279-9?error=cookies_not_supported&code=2aebe9ca-15da-42e1-969d-b55e419b6fb0",
+      "final_url": "https://www.nature.com/articles/s41599-019-0279-9?error=cookies_not_supported&code=ba6de3c5-f316-4232-9d0c-e9c321642178",
       "redirected": true,
       "error": null
     },
@@ -9898,6 +10085,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1126/science.185.4157.1124",
+      "citations": [
+        {
+          "slug": "the-undoing-project",
+          "claim_index": 1,
+          "source_title": "Judgment Under Uncertainty"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.science.org/doi/10.1126/science.185.4157.1124",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1126/science.208.4448.1095",
       "citations": [
         {
@@ -9991,7 +10195,7 @@
       ],
       "host": "doi.org",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-052213-040359",
       "redirected": true,
@@ -10018,7 +10222,7 @@
       ],
       "host": "doi.org",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-psych-020924-124236",
       "redirected": true,
@@ -10221,6 +10425,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://journals.sagepub.com/doi/10.1207/S15327957PSPR0402_04",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1207/s15516709cog2605_1",
+      "citations": [
+        {
+          "slug": "the-knowledge-illusion",
+          "claim_index": 1,
+          "source_title": "Illusion of Explanatory Depth"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1207/s15516709cog2605_1",
       "redirected": true,
       "error": null
     },
@@ -10439,6 +10660,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.2307/1914185",
+      "citations": [
+        {
+          "slug": "the-undoing-project",
+          "claim_index": 1,
+          "source_title": "Prospect Theory"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/1914185?origin=crossref",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.3109/03014460.2013.807878",
       "citations": [
         {
@@ -10587,6 +10825,28 @@
       "status": 200,
       "final_url": "https://dspace.sunyconnect.suny.edu/server/api/core/bitstreams/031e3dec-1288-4e29-bae1-7f990f7901c8/content",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://dtg.sites.fas.harvard.edu/Wilson%20%26%20Gilbert%20%28Advances%29.pdf",
+      "citations": [
+        {
+          "slug": "stumbling-on-happiness",
+          "claim_index": 1,
+          "source_title": "Affective Forecasting Review"
+        },
+        {
+          "slug": "the-happiness-hypothesis",
+          "claim_index": 2,
+          "source_title": "Affective Forecasting Review"
+        }
+      ],
+      "host": "dtg.sites.fas.harvard.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://dtg.sites.fas.harvard.edu/Wilson%20%26%20Gilbert%20%28Advances%29.pdf",
+      "redirected": false,
       "error": null
     },
     {
@@ -11344,6 +11604,23 @@
       "error": null
     },
     {
+      "url": "https://guilfordjournals.com/doi/10.1521/soco.21.6.421.28688",
+      "citations": [
+        {
+          "slug": "stumbling-on-happiness",
+          "claim_index": 2,
+          "source_title": "Retrospective Impact Bias"
+        }
+      ],
+      "host": "guilfordjournals.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://guilfordjournals.com/doi/10.1521/soco.21.6.421.28688",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://gutenberg.net.au/ebooks03/0300071h/0-index.html",
       "citations": [
         {
@@ -11589,9 +11866,9 @@
         }
       ],
       "host": "ifs.org.uk",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://ifs.org.uk/inequality",
       "redirected": false,
       "error": null
@@ -11695,6 +11972,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://journals.ametsoc.org/view/journals/atsc/20/2/1520-0469_1963_020_0130_dnf_2_0_co_2.xml",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://journals.aom.org/doi/10.5465/amr.1989.4279066",
+      "citations": [
+        {
+          "slug": "the-person-and-the-situation",
+          "claim_index": 1,
+          "source_title": "Person-Situation Interaction Review"
+        }
+      ],
+      "host": "journals.aom.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.aom.org/doi/10.5465/amr.1989.4279066",
       "redirected": false,
       "error": null
     },
@@ -11969,6 +12263,23 @@
       "error": null
     },
     {
+      "url": "https://journals.sagepub.com/doi/10.1177/1475725714568007",
+      "citations": [
+        {
+          "slug": "the-lucifer-effect",
+          "claim_index": 3,
+          "source_title": "Stanford Prison Experiment Textbook Audit"
+        }
+      ],
+      "host": "journals.sagepub.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/10.1177/1475725714568007",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://journals.sagepub.com/doi/10.1177/1745691614563928",
       "citations": [
         {
@@ -12021,6 +12332,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://journals.sagepub.com/doi/10.1177/26339137221078593",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/0956797611427044",
+      "citations": [
+        {
+          "slug": "stumbling-on-happiness",
+          "claim_index": 1,
+          "source_title": "Affective Forecast Accuracy Meta-Analysis"
+        }
+      ],
+      "host": "journals.sagepub.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/abs/10.1177/0956797611427044",
       "redirected": false,
       "error": null
     },
@@ -12115,6 +12443,23 @@
       "error": null
     },
     {
+      "url": "https://link.springer.com/article/10.1007/s10503-020-09510-6",
+      "citations": [
+        {
+          "slug": "the-enigma-of-reason",
+          "claim_index": 2,
+          "source_title": "Argumentation Evolved: But How?"
+        }
+      ],
+      "host": "link.springer.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1007/s10503-020-09510-6?error=cookies_not_supported&code=8aea59a0-30c6-49fc-b327-a179a37d3bb6",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://link.springer.com/article/10.1007/s10602-026-09503-9",
       "citations": [
         {
@@ -12127,7 +12472,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s10602-026-09503-9?error=cookies_not_supported&code=764091f8-0d8c-4868-94b8-1a3effa3a46d",
+      "final_url": "https://link.springer.com/article/10.1007/s10602-026-09503-9?error=cookies_not_supported&code=2e70ba71-2389-41d1-901b-160dc35e6065",
       "redirected": true,
       "error": null
     },
@@ -12154,7 +12499,41 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s10814-014-9075-7?error=cookies_not_supported&code=c3b8c3b4-c4f0-47cc-86fd-b49d1ae0d1f1",
+      "final_url": "https://link.springer.com/article/10.1007/s10814-014-9075-7?error=cookies_not_supported&code=16e00701-e568-4380-8a6c-240d23344fe1",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10902-007-9049-2",
+      "citations": [
+        {
+          "slug": "the-happiness-hypothesis",
+          "claim_index": 3,
+          "source_title": "Happiness Hypothesis Scholarly Review"
+        }
+      ],
+      "host": "link.springer.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1007/s10902-007-9049-2?error=cookies_not_supported&code=6ab8df57-ba98-4616-97d6-e86190aa3937",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10902-024-00747-6",
+      "citations": [
+        {
+          "slug": "the-happiness-hypothesis",
+          "claim_index": 1,
+          "source_title": "Happiness and Social Bonds Synthesis"
+        }
+      ],
+      "host": "link.springer.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1007/s10902-024-00747-6?error=cookies_not_supported&code=721ea973-f7bb-4f3d-8529-3ce4c5157e8a",
       "redirected": true,
       "error": null
     },
@@ -12171,7 +12550,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s11138-020-00508-7?error=cookies_not_supported&code=b791fe86-e22b-405c-bf37-696ac4f280ea",
+      "final_url": "https://link.springer.com/article/10.1007/s11138-020-00508-7?error=cookies_not_supported&code=3609864b-73e1-4d1f-bc09-f8ed11e9deb4",
       "redirected": true,
       "error": null
     },
@@ -12188,7 +12567,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s11229-017-1339-6?error=cookies_not_supported&code=5a6812b8-e060-4182-9be9-ac131885ba25",
+      "final_url": "https://link.springer.com/article/10.1007/s11229-017-1339-6?error=cookies_not_supported&code=997fa99d-196d-4906-830b-1a7d8568c718",
       "redirected": true,
       "error": null
     },
@@ -12205,7 +12584,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s11229-024-04527-w?error=cookies_not_supported&code=83a8e7f1-a684-4e0a-954c-032118740caa",
+      "final_url": "https://link.springer.com/article/10.1007/s11229-024-04527-w?error=cookies_not_supported&code=ddc53aa3-6954-4e36-9eb7-42b042fb8543",
       "redirected": true,
       "error": null
     },
@@ -12222,7 +12601,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s13158-026-00502-3?error=cookies_not_supported&code=a0689c9f-df2a-46e8-9f72-a33172471ebb",
+      "final_url": "https://link.springer.com/article/10.1007/s13158-026-00502-3?error=cookies_not_supported&code=e3bb8e67-a5fe-43ac-b0ef-ee0727850064",
       "redirected": true,
       "error": null
     },
@@ -12244,7 +12623,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1140/epjds/s13688-021-00313-7?error=cookies_not_supported&code=ddb59c8e-4656-4d46-827a-0ef2e5e6782a",
+      "final_url": "https://link.springer.com/article/10.1140/epjds/s13688-021-00313-7?error=cookies_not_supported&code=7f0e2e62-22fb-40c2-aead-fb6072bf8fe1",
       "redirected": true,
       "error": null
     },
@@ -12261,7 +12640,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1186/s12052-018-0079-5?error=cookies_not_supported&code=61c13992-4b58-47b3-ade7-7657cb354755",
+      "final_url": "https://link.springer.com/article/10.1186/s12052-018-0079-5?error=cookies_not_supported&code=b409e965-3c28-4655-b113-7c4d95818f94",
       "redirected": true,
       "error": null
     },
@@ -12288,7 +12667,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1186/s40410-017-0073-1?error=cookies_not_supported&code=66995407-b098-438b-afc8-ab92fdabe8f1",
+      "final_url": "https://link.springer.com/article/10.1186/s40410-017-0073-1?error=cookies_not_supported&code=06a581a4-f9d4-404b-84de-cb910ad58a49",
       "redirected": true,
       "error": null
     },
@@ -12305,7 +12684,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/book/10.1007/978-1-4612-3034-2?error=cookies_not_supported&code=4b03fe30-9396-4ce9-ae88-a7ce268a6a2a",
+      "final_url": "https://link.springer.com/book/10.1007/978-1-4612-3034-2?error=cookies_not_supported&code=4b4f57b2-f37e-455f-9e56-a0d2f14d3c17",
       "redirected": true,
       "error": null
     },
@@ -13413,7 +13792,7 @@
       ],
       "host": "one.oecd.org",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://one.oecd.org/document/EDU/PISA/GB%282024%299/en/pdf",
       "redirected": false,
@@ -14010,7 +14389,7 @@
       ],
       "host": "oro.open.ac.uk",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://oro.open.ac.uk/7761/",
       "redirected": false,
@@ -15079,6 +15458,23 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10827997/",
+      "citations": [
+        {
+          "slug": "stumbling-on-happiness",
+          "claim_index": 2,
+          "source_title": "Transformative Experience and Affective Forecasting"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10827997/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10913374/",
       "citations": [
         {
@@ -15435,6 +15831,23 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3034737/",
+      "citations": [
+        {
+          "slug": "the-knowledge-illusion",
+          "claim_index": 3,
+          "source_title": "Explanation and Understanding Review"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3034737/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3116962/",
       "citations": [
         {
@@ -15611,6 +16024,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3963558/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3976349/",
+      "citations": [
+        {
+          "slug": "the-lucifer-effect",
+          "claim_index": 1,
+          "source_title": "Meta-Milgram"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3976349/",
       "redirected": false,
       "error": null
     },
@@ -16322,6 +16752,23 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7189982/",
+      "citations": [
+        {
+          "slug": "stumbling-on-happiness",
+          "claim_index": 3,
+          "source_title": "Affective Forecasting Interventions Meta-Analysis"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7189982/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7297198/",
       "citations": [
         {
@@ -16785,6 +17232,28 @@
       "error": null
     },
     {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12146734/",
+      "citations": [
+        {
+          "slug": "the-knowledge-illusion",
+          "claim_index": 2,
+          "source_title": "Early Division of Cognitive Labor"
+        },
+        {
+          "slug": "the-knowledge-illusion",
+          "claim_index": 3,
+          "source_title": "Early Division of Cognitive Labor"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/12146734/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pubmed.ncbi.nlm.nih.gov/16226363/",
       "citations": [
         {
@@ -16981,6 +17450,28 @@
       "method": "HEAD",
       "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/28288281/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28705870/",
+      "citations": [
+        {
+          "slug": "the-happiness-hypothesis",
+          "claim_index": 1,
+          "source_title": "Promotion of Human Flourishing"
+        },
+        {
+          "slug": "the-happiness-hypothesis",
+          "claim_index": 3,
+          "source_title": "Promotion of Human Flourishing"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/28705870/",
       "redirected": false,
       "error": null
     },
@@ -18397,9 +18888,9 @@
         }
       ],
       "host": "supreme.justia.com",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 403,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://supreme.justia.com/cases/federal/us/347/483/",
       "redirected": false,
       "error": null
@@ -18425,7 +18916,7 @@
       ],
       "host": "supreme.justia.com",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://supreme.justia.com/cases/federal/us/372/335/",
       "redirected": false,
@@ -19152,9 +19643,9 @@
         }
       ],
       "host": "adb.org",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
       "final_url": "https://www.adb.org/publications/determinants-structural-transformation-asia",
       "redirected": false,
       "error": null
@@ -19377,6 +19868,23 @@
       "error": null
     },
     {
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-lawsocsci-110316-113710",
+      "citations": [
+        {
+          "slug": "the-lucifer-effect",
+          "claim_index": 1,
+          "source_title": "Obedience as Engaged Followership"
+        }
+      ],
+      "host": "annualreviews.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-lawsocsci-110316-113710",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011718-012440",
       "citations": [
         {
@@ -19462,6 +19970,23 @@
       "error": null
     },
     {
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev.psych.55.042902.130709",
+      "citations": [
+        {
+          "slug": "the-person-and-the-situation",
+          "claim_index": 2,
+          "source_title": "Toward an Integrative Science of the Person"
+        }
+      ],
+      "host": "annualreviews.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev.psych.55.042902.130709",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.annualreviews.org/content/journals/10.1146/annurev.psych.59.103006.093629",
       "citations": [
         {
@@ -19496,7 +20021,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.annualreviews.org/docserver/fulltext/ecolsys/50/1/annurev-ecolsys-110218-024717.pdf?expires=1788238374&id=id&accname=guest&checksum=058D507559EB3D307EECAE1922E4BDA3",
+      "final_url": "https://www.annualreviews.org/docserver/fulltext/ecolsys/50/1/annurev-ecolsys-110218-024717.pdf?expires=1788238613&id=id&accname=guest&checksum=C35323F41C38BB5F72E54B4A5E96D384",
       "redirected": true,
       "error": null
     },
@@ -19806,6 +20331,23 @@
       "error": null
     },
     {
+      "url": "https://www.bbcprisonstudy.org/",
+      "citations": [
+        {
+          "slug": "the-lucifer-effect",
+          "claim_index": 2,
+          "source_title": "BBC Prison Study"
+        }
+      ],
+      "host": "bbcprisonstudy.org",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "Error: Unable to connect. Is the computer able to access the url?"
+    },
+    {
       "url": "https://www.biointeractive.org/sites/default/files/TeacherGuide_YourInnerFish.pdf",
       "citations": [
         {
@@ -19859,9 +20401,9 @@
         }
       ],
       "host": "bmj.com",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 403,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://www.bmj.com/content/339/bmj.b2587",
       "redirected": false,
       "error": null
@@ -19932,9 +20474,9 @@
         }
       ],
       "host": "britannica.com",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.britannica.com/biography/Genghis-Khan",
       "redirected": false,
       "error": null
@@ -20153,6 +20695,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.cambridge.org/core/journals/antiquity/article/abs/archaeology-and-the-austronesian-expansion-where-are-we-now/952E579C735CF92A49B70FF4D0388338",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/why-do-humans-reason-arguments-for-an-argumentative-theory/53E3F3180014E80E8BE9FB7A2DD44049",
+      "citations": [
+        {
+          "slug": "the-enigma-of-reason",
+          "claim_index": 1,
+          "source_title": "Why Do Humans Reason?"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/why-do-humans-reason-arguments-for-an-argumentative-theory/53E3F3180014E80E8BE9FB7A2DD44049",
       "redirected": false,
       "error": null
     },
@@ -21184,11 +21743,11 @@
         }
       ],
       "host": "cochranelibrary.com",
-      "state": "other_http",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 412,
-      "final_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011737.pub3/full?cookiesEnabled",
-      "redirected": true,
+      "status": 429,
+      "final_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011737.pub3/full",
+      "redirected": false,
       "error": null
     },
     {
@@ -23202,7 +23761,7 @@
       ],
       "host": "historians.org",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://www.historians.org/person/kenneth-pomeranz/",
       "redirected": false,
@@ -23454,9 +24013,9 @@
         }
       ],
       "host": "hopkinsmedicine.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.hopkinsmedicine.org/henrietta-lacks/upholding-the-highest-bioethical-standards",
       "redirected": false,
       "error": null
@@ -24235,6 +24794,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.jstor.org/stable/j.ctv15r58dw",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.jstor.org/stable/j.ctv2sp3dd8",
+      "citations": [
+        {
+          "slug": "the-enigma-of-reason",
+          "claim_index": 3,
+          "source_title": "The Enigma of Reason"
+        }
+      ],
+      "host": "jstor.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/j.ctv2sp3dd8",
       "redirected": false,
       "error": null
     },
@@ -25086,7 +25662,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/171737a0?error=cookies_not_supported&code=f3516459-3b6c-49f6-9e48-969fa319a5fc",
+      "final_url": "https://www.nature.com/articles/171737a0?error=cookies_not_supported&code=1721a71f-dd7f-4f25-b193-27af9daaea39",
       "redirected": true,
       "error": null
     },
@@ -25103,7 +25679,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/28764?error=cookies_not_supported&code=d816ac01-7c35-4601-90d6-234b237cee17",
+      "final_url": "https://www.nature.com/articles/28764?error=cookies_not_supported&code=b07b96a6-00ca-4a74-8fc3-97374686b578",
       "redirected": true,
       "error": null
     },
@@ -25120,7 +25696,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=c35002bd-d538-4868-82e5-74e3b2cdba09",
+      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=a2afd00e-1100-4499-b69a-97bb96052381",
       "redirected": true,
       "error": null
     },
@@ -25142,7 +25718,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature.2015.18248?error=cookies_not_supported&code=1b305770-ac45-4934-a3c2-36a7229785ca",
+      "final_url": "https://www.nature.com/articles/nature.2015.18248?error=cookies_not_supported&code=b501634f-976d-438a-964c-be6f43e8081f",
       "redirected": true,
       "error": null
     },
@@ -25169,7 +25745,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature09678?error=cookies_not_supported&code=adb4a0d5-e330-4476-8e5e-89e3001e62f1",
+      "final_url": "https://www.nature.com/articles/nature09678?error=cookies_not_supported&code=973414b8-98e0-4115-bc47-e2bbefebadda",
       "redirected": true,
       "error": null
     },
@@ -25196,7 +25772,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature09985?error=cookies_not_supported&code=f521e551-88df-4cf8-9c88-994f7f84c91b",
+      "final_url": "https://www.nature.com/articles/nature09985?error=cookies_not_supported&code=d7be03a8-d8df-4202-a055-e54c0d148d1b",
       "redirected": true,
       "error": null
     },
@@ -25218,7 +25794,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-019-0980-5?error=cookies_not_supported&code=788f6d2a-fc2c-40c6-a1ad-66d9e1f429b8",
+      "final_url": "https://www.nature.com/articles/s41559-019-0980-5?error=cookies_not_supported&code=35fe9efe-a6b7-47a4-b96e-86316cd66064",
       "redirected": true,
       "error": null
     },
@@ -25235,7 +25811,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-021-01652-4?error=cookies_not_supported&code=eea5152e-f271-4ade-a37f-892ffe8e299f",
+      "final_url": "https://www.nature.com/articles/s41559-021-01652-4?error=cookies_not_supported&code=2d0ba5a7-0807-4f8d-a7cb-f2a8eeef855b",
       "redirected": true,
       "error": null
     },
@@ -25252,7 +25828,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-023-01986-1?error=cookies_not_supported&code=764b7f83-b532-43c0-a616-644ca641c0e7",
+      "final_url": "https://www.nature.com/articles/s41559-023-01986-1?error=cookies_not_supported&code=be735f2d-3ca6-4dc3-bc11-bb5b0cf3c861",
       "redirected": true,
       "error": null
     },
@@ -25269,7 +25845,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41562-018-0405-5?error=cookies_not_supported&code=9b1b5871-323d-4ca0-adf8-26a87255818f",
+      "final_url": "https://www.nature.com/articles/s41562-018-0405-5?error=cookies_not_supported&code=b3f37ec5-a82e-4b8a-84a2-14b451acb49c",
       "redirected": true,
       "error": null
     },
@@ -25291,7 +25867,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41562-023-01641-6?error=cookies_not_supported&code=fe87d013-b6b1-4d69-9c61-aaffb1e893b7",
+      "final_url": "https://www.nature.com/articles/s41562-023-01641-6?error=cookies_not_supported&code=267175a4-f98a-493f-86a3-2cbe9d601b4f",
       "redirected": true,
       "error": null
     },
@@ -25308,7 +25884,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-020-00305-9?error=cookies_not_supported&code=2184ce73-c314-4840-b4fd-eabd5fb14fd7",
+      "final_url": "https://www.nature.com/articles/s41576-020-00305-9?error=cookies_not_supported&code=1ea0e29a-bdf9-4b34-8612-7d6afa3a1791",
       "redirected": true,
       "error": null
     },
@@ -25325,7 +25901,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-022-00537-x?error=cookies_not_supported&code=c6140f9b-f57d-4fa6-b767-978c40f9b7dd",
+      "final_url": "https://www.nature.com/articles/s41576-022-00537-x?error=cookies_not_supported&code=0353f142-72c0-4b67-ab3e-fb6967914420",
       "redirected": true,
       "error": null
     },
@@ -25342,7 +25918,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41579-018-0116-y?error=cookies_not_supported&code=a5235fe6-2e93-4c75-b773-a1ac05d87ed2",
+      "final_url": "https://www.nature.com/articles/s41579-018-0116-y?error=cookies_not_supported&code=6d93416d-f6cb-45b0-bfea-3ec6a9aa09d8",
       "redirected": true,
       "error": null
     },
@@ -25364,7 +25940,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41586-022-04800-3?error=cookies_not_supported&code=e7c33253-be7b-423a-9948-8d2ece025e5a",
+      "final_url": "https://www.nature.com/articles/s41586-022-04800-3?error=cookies_not_supported&code=6b28d4a4-5b6f-4e6c-8451-146eec594b2b",
       "redirected": true,
       "error": null
     },
@@ -25386,7 +25962,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41599-021-00763-4?error=cookies_not_supported&code=05ef1eab-a8e9-4b59-8a11-814f050bcbf8",
+      "final_url": "https://www.nature.com/articles/s41599-021-00763-4?error=cookies_not_supported&code=27f80a0f-9daa-407a-8fd8-dbae0b285b35",
       "redirected": true,
       "error": null
     },
@@ -25950,6 +26526,11 @@
           "slug": "predictably-irrational",
           "claim_index": 1,
           "source_title": "Nobel scientific background on decision under uncertainty"
+        },
+        {
+          "slug": "the-undoing-project",
+          "claim_index": 2,
+          "source_title": "Nobel Prize Scientific Background"
         }
       ],
       "host": "nobelprize.org",
@@ -25957,6 +26538,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nobelprize.org/prizes/economic-sciences/2002/advanced-information/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/biographical/",
+      "citations": [
+        {
+          "slug": "the-undoing-project",
+          "claim_index": 3,
+          "source_title": "Daniel Kahneman Nobel Biographical Account"
+        }
+      ],
+      "host": "nobelprize.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/biographical/",
       "redirected": false,
       "error": null
     },
@@ -26776,9 +27374,9 @@
         }
       ],
       "host": "oecd.org",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
       "final_url": "https://www.oecd.org/en/publications/pisa-2022-results-volume-ii_a97db61c-en/full-report/component-17.html",
       "redirected": false,
       "error": null
@@ -26796,8 +27394,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.oecd.org/social/broken-elevator-how-to-promote-social-mobility-9789264301085-en.htm",
-      "redirected": false,
+      "final_url": "https://www.oecd.org/en/publications/broken-elevator-how-to-promote-social-mobility_9789264301085-en.html",
+      "redirected": true,
       "error": null
     },
     {
@@ -27427,7 +28025,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-8041e42a-a835-403e-b574-e361dba546c9",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-eac9d9ba-8cf7-4593-8d27-2e6c0176ded1",
       "redirected": true,
       "error": null
     },
@@ -27444,7 +28042,24 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-076481af-36c4-4115-a5ee-0436a72783d3",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-eaddaa2e-1829-4eff-9c18-69428483ffc6",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0092656609000233",
+      "citations": [
+        {
+          "slug": "the-person-and-the-situation",
+          "claim_index": 3,
+          "source_title": "Componential Model of Person and Situation Effects"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "other_http",
+      "method": "GET",
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-b2a60b85-d1c2-404d-9fa3-2095bb95dd79",
       "redirected": true,
       "error": null
     },
@@ -27463,11 +28078,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "access_blocked",
+      "state": "other_http",
       "method": "GET",
-      "status": 403,
-      "final_url": "https://www.sciencedirect.com/science/article/abs/pii/S0165188912000784",
-      "redirected": false,
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-572e9028-eb64-474b-8cfd-64a3f0a17b0d",
+      "redirected": true,
       "error": null
     },
     {
@@ -27493,7 +28108,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-71d6d2e1-db02-44a6-b016-398382d0e47e",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-3d5a402a-f38b-4074-b358-658a8b46d5cf",
       "redirected": true,
       "error": null
     },
@@ -27507,10 +28122,27 @@
         }
       ],
       "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/abs/pii/S2352250X17300787",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/0010028572900163",
+      "citations": [
+        {
+          "slug": "the-undoing-project",
+          "claim_index": 2,
+          "source_title": "Representativeness in Probability Judgment"
+        }
+      ],
+      "host": "sciencedirect.com",
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-a9f38dea-fe30-4542-95b0-99be26358605",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-443c8bf8-d38b-4342-93ec-269390389f91",
       "redirected": true,
       "error": null
     },
@@ -27532,7 +28164,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-acbf0793-d889-4470-94dd-ce0fd9cd7f23",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-1a8fbd90-0725-432f-a3fe-a718075ed067",
       "redirected": true,
       "error": null
     },
@@ -27549,7 +28181,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-206c7f06-d438-4ae1-8656-4616c0d80be5",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-5f53fb73-7d5a-47c7-ab6e-30de1b2c4421",
       "redirected": true,
       "error": null
     },
@@ -27566,7 +28198,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-778c9995-4c07-49cf-85a4-aa5ede6a3d1d",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-e51d7a68-7928-45ce-9a16-1c2c7537d4e5",
       "redirected": true,
       "error": null
     },
@@ -27585,11 +28217,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "other_http",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-ae4369f7-c120-422a-a568-d8c78d6d6f07",
-      "redirected": true,
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0014292119301126",
+      "redirected": false,
       "error": null
     },
     {
@@ -27622,7 +28254,75 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-f11b0bc3-66f4-4822-acf5-94f26081ad9d",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-e6791571-6bb5-4aa6-af13-3bc40a531f8b",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0022096503001590",
+      "citations": [
+        {
+          "slug": "the-knowledge-illusion",
+          "claim_index": 1,
+          "source_title": "Knowing the Limits of Understanding"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0022096503001590",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0047272713001333",
+      "citations": [
+        {
+          "slug": "the-happiness-hypothesis",
+          "claim_index": 2,
+          "source_title": "Adaptation, Anticipation and Social Interaction"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "other_http",
+      "method": "GET",
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-57641c97-679d-4939-9c90-5f0d8d465abd",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S009265660900021X",
+      "citations": [
+        {
+          "slug": "the-person-and-the-situation",
+          "claim_index": 3,
+          "source_title": "Persons, Behaviors and Situations"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "other_http",
+      "method": "GET",
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-1855d5fc-56ee-4bec-adf7-d154950ee7b2",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0092656609000683",
+      "citations": [
+        {
+          "slug": "the-person-and-the-situation",
+          "claim_index": 2,
+          "source_title": "Synthetic Resolution of the Person-Situation Debate"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "other_http",
+      "method": "GET",
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-7d9cf1df-0012-42e3-b1dd-6d1d056d68b3",
       "redirected": true,
       "error": null
     },
@@ -27636,11 +28336,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "access_blocked",
+      "state": "other_http",
       "method": "GET",
-      "status": 403,
-      "final_url": "https://www.sciencedirect.com/science/article/pii/S0149763419300739",
-      "redirected": false,
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-0e29b02d-e480-4866-a899-dac14343a2f2",
+      "redirected": true,
       "error": null
     },
     {
@@ -27653,11 +28353,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "access_blocked",
+      "state": "other_http",
       "method": "GET",
-      "status": 403,
-      "final_url": "https://www.sciencedirect.com/science/article/pii/S0167268110000430",
-      "redirected": false,
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-ecfcf0fb-53a6-4486-9d92-9eff5cad98f8",
+      "redirected": true,
       "error": null
     },
     {
@@ -27670,11 +28370,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "access_blocked",
+      "state": "other_http",
       "method": "GET",
-      "status": 403,
-      "final_url": "https://www.sciencedirect.com/science/article/pii/S0167487018300552",
-      "redirected": false,
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-a9bc6a09-3df9-40c6-9a50-e440761442f2",
+      "redirected": true,
       "error": null
     },
     {
@@ -27690,7 +28390,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-445c7e50-1c8a-465f-8824-ce0537023ace",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-ce404968-919a-4aed-a4ac-bbdab597d411",
       "redirected": true,
       "error": null
     },
@@ -27709,11 +28409,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "other_http",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-2c9fdc62-b229-4554-a8f5-cb005dda4d63",
-      "redirected": true,
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0167814098001431",
+      "redirected": false,
       "error": null
     },
     {
@@ -27729,7 +28429,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-e559f2b4-82dc-4773-9ef8-02752933f776",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-a985ded5-440a-4bdd-90ad-2a8fb9794d83",
       "redirected": true,
       "error": null
     },
@@ -27753,11 +28453,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "other_http",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-6f0b62f9-bda5-4a4e-a101-26396525fb46",
-      "redirected": true,
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0169207022000371",
+      "redirected": false,
       "error": null
     },
     {
@@ -27805,7 +28505,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-a30d2c7a-30ca-420e-ae6f-8c209268c751",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-7747f28e-d075-460b-8d73-8528153d1b69",
       "redirected": true,
       "error": null
     },
@@ -27839,7 +28539,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-973e21e4-003f-4963-a702-9b5200f5102d",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-2c385471-b22b-4d72-a5ae-885ab4c6f393",
       "redirected": true,
       "error": null
     },
@@ -27861,7 +28561,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-baf0cc09-b6e0-4501-a300-880d1a860d53",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-d3e19da5-3fc8-455a-b592-8393e9296cb6",
       "redirected": true,
       "error": null
     },
@@ -27880,11 +28580,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "access_blocked",
+      "state": "other_http",
       "method": "GET",
-      "status": 403,
-      "final_url": "https://www.sciencedirect.com/science/article/pii/S0278416521000118",
-      "redirected": false,
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-1ee855e5-1783-4add-b1b9-89107bd2a5d7",
+      "redirected": true,
       "error": null
     },
     {
@@ -27900,7 +28600,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-a1baf876-2cc5-4d3e-bd08-8b0f218815a2",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-072757b0-0ca5-481f-9977-c35c7d5c7912",
       "redirected": true,
       "error": null
     },
@@ -27914,11 +28614,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "other_http",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-65899c8a-f7f5-4bbb-ad87-de80e7d91322",
-      "redirected": true,
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0304387806000393",
+      "redirected": false,
       "error": null
     },
     {
@@ -27934,7 +28634,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-b6822829-6a83-4419-a65a-79f5aefec5ea",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-5d47a732-2542-459e-bcca-6c9a037959dd",
       "redirected": true,
       "error": null
     },
@@ -27951,7 +28651,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-30f30d33-cd5f-4cf9-9939-1282a9d91f83",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-1a07daea-36e3-451a-9807-44c534556d95",
       "redirected": true,
       "error": null
     },
@@ -27965,11 +28665,28 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "access_blocked",
+      "state": "other_http",
       "method": "GET",
-      "status": 403,
-      "final_url": "https://www.sciencedirect.com/science/article/pii/S0486613400887598",
-      "redirected": false,
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-d959a30d-912a-4202-888a-79a5812dce13",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0885201410000663",
+      "citations": [
+        {
+          "slug": "the-enigma-of-reason",
+          "claim_index": 1,
+          "source_title": "Reasoning Serves Argumentation in Children"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "other_http",
+      "method": "GET",
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-b15007d5-e987-4b1d-a04b-a6bd08989522",
+      "redirected": true,
       "error": null
     },
     {
@@ -27985,7 +28702,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-d4829107-3dfb-4295-923f-e88b7549fcde",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-f5f81024-1478-40f7-bedb-26d972a41dcb",
       "redirected": true,
       "error": null
     },
@@ -28021,11 +28738,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "access_blocked",
+      "state": "other_http",
       "method": "GET",
-      "status": 403,
-      "final_url": "https://www.sciencedirect.com/science/article/pii/S135917890000032X",
-      "redirected": false,
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-41b1ace5-29c8-44d1-9fa0-1cf2ea78668a",
+      "redirected": true,
       "error": null
     },
     {
@@ -28058,7 +28775,7 @@
       "state": "other_http",
       "method": "GET",
       "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-7bd90799-ee8f-409f-837a-c60a85754611",
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-7bf5c00c-aaef-4733-b70d-f683e6a5f4a5",
       "redirected": true,
       "error": null
     },
@@ -28072,11 +28789,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "access_blocked",
+      "state": "other_http",
       "method": "GET",
-      "status": 403,
-      "final_url": "https://www.sciencedirect.com/science/article/pii/S1631069109003060",
-      "redirected": false,
+      "status": 400,
+      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-372b722c-8b51-429e-b0e6-c65202275362",
+      "redirected": true,
       "error": null
     },
     {
@@ -28094,11 +28811,11 @@
         }
       ],
       "host": "sciencedirect.com",
-      "state": "other_http",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 400,
-      "final_url": "https://www.sciencedirect.com/user/error/ATN-20?errorContext=arp-4bf73fc9-7f9f-48cb-b77d-3ea9d5d7084a",
-      "redirected": true,
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S1749461312000048",
+      "redirected": false,
       "error": null
     },
     {
@@ -28263,7 +28980,7 @@
       ],
       "host": "si.edu",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://www.si.edu/object/box-how-shipping-container-made-world-smaller-and-world-economy-bigger-marc-levinson%3Asiris_sil_799285",
       "redirected": false,
@@ -28302,7 +29019,7 @@
       ],
       "host": "si.edu",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://www.si.edu/object/how-buildings-learn-what-happens-after-theyre-built-stewart-brand%3Asiris_sil_468917",
       "redirected": false,
@@ -28519,6 +29236,23 @@
       "error": null
     },
     {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/10511253.2016.1165855",
+      "citations": [
+        {
+          "slug": "the-lucifer-effect",
+          "claim_index": 3,
+          "source_title": "Revisiting the Stanford Prison Experiment"
+        }
+      ],
+      "host": "tandfonline.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/10511253.2016.1165855",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.tandfonline.com/doi/full/10.1080/10999940903571304",
       "citations": [
         {
@@ -28548,8 +29282,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.tandfonline.com/doi/full/10.1080/13668250500488819?cookieSet=1",
-      "redirected": true,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/13668250500488819",
+      "redirected": false,
       "error": null
     },
     {
@@ -28583,6 +29317,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.tandfonline.com/doi/full/10.1080/14697688.2013.854925",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/14697688.2017.1358003",
+      "citations": [
+        {
+          "slug": "the-undoing-project",
+          "claim_index": 3,
+          "source_title": "The Undoing Project Review"
+        }
+      ],
+      "host": "tandfonline.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/14697688.2017.1358003",
       "redirected": false,
       "error": null
     },
@@ -28652,9 +29403,9 @@
         }
       ],
       "host": "tara.tcd.ie",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.tara.tcd.ie/items/1d88e61c-4bb2-46a7-902d-f162cf8a4727",
       "redirected": false,
       "error": null
@@ -29025,9 +29776,9 @@
         }
       ],
       "host": "usni.org",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 403,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://www.usni.org/magazines/naval-history-magazine/2015/june/looking-back-fatal-chain",
       "redirected": false,
       "error": null
@@ -29933,7 +30684,7 @@
       ],
       "host": "yalebooks.co.uk",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://yalebooks.co.uk/book/9780892368228/toward-an-architecture/",
       "redirected": false,
