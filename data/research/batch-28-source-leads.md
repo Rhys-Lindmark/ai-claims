@@ -28,3 +28,5 @@ Ten influential books on cities, urban form, infrastructure, housing, public spa
 - Ratings are deliberately coarse: supported, mostly supported, mixed, or weak.
 - A high score does not mean every detail is correct or every policy prescription transfers.
 - Cover enrichment must exact-match title and author; unresolved books retain the neutral placeholder.
+
+The deploy archive is rebuilt only after the completed batch has reached the configured source branch, preventing an older worktree build from being packaged for the new commit.
