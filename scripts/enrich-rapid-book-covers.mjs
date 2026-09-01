@@ -49,7 +49,7 @@ async function lookup(book) {
   };
 }
 
-function requestJson(url) {
+function requestJsonOnce(url) {
   return new Promise((resolve, reject) => {
     const request = https.get(url, { headers: { 'User-Agent': 'AIClaims/0.1 (https://ai.rhyslindmark.com/claims)' } }, (response) => {
       if (response.statusCode < 200 || response.statusCode >= 300) {
@@ -66,6 +66,21 @@ function requestJson(url) {
     });
     request.on('error', reject);
   });
+}
+
+async function requestJson(url) {
+  const delays = [0, 500, 1500];
+  let lastError;
+  for (const delay of delays) {
+    if (delay) await new Promise((resolve) => setTimeout(resolve, delay));
+    try {
+      return await requestJsonOnce(url);
+    } catch (error) {
+      lastError = error;
+      if (!['ECONNRESET', 'ETIMEDOUT', 'EAI_AGAIN'].includes(error.code)) throw error;
+    }
+  }
+  throw lastError;
 }
 
 async function main() {

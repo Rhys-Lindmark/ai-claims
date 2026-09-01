@@ -1995,6 +1995,109 @@
       "source_authors": [
         "Mark Kurlansky"
       ]
+    },
+    {
+      "slug": "the-great-bridge",
+      "match_state": "exact_title_author",
+      "cover_id": 471940,
+      "cover_url": "https://covers.openlibrary.org/b/id/471940-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL7951381W",
+      "source_title": "The Great Bridge",
+      "source_authors": [
+        "David McCullough"
+      ]
+    },
+    {
+      "slug": "the-great-railroad-revolution",
+      "match_state": "exact_title_author",
+      "cover_id": 7255886,
+      "cover_url": "https://covers.openlibrary.org/b/id/7255886-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16681578W",
+      "source_title": "The great railroad revolution",
+      "source_authors": [
+        "Christian Wolmar"
+      ]
+    },
+    {
+      "slug": "nothing-like-it-in-the-world",
+      "match_state": "exact_title_author",
+      "cover_id": 471391,
+      "cover_url": "https://covers.openlibrary.org/b/id/471391-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL478570W",
+      "source_title": "Nothing Like It In The World",
+      "source_authors": [
+        "Stephen E. Ambrose"
+      ]
+    },
+    {
+      "slug": "the-big-roads",
+      "match_state": "exact_title_author",
+      "cover_id": 13059814,
+      "cover_url": "https://covers.openlibrary.org/b/id/13059814-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16011042W",
+      "source_title": "The big roads",
+      "source_authors": [
+        "Earl Swift"
+      ]
+    },
+    {
+      "slug": "railways-and-the-raj",
+      "match_state": "exact_title_author",
+      "cover_id": 9204566,
+      "cover_url": "https://covers.openlibrary.org/b/id/9204566-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20563064W",
+      "source_title": "Railways and the Raj",
+      "source_authors": [
+        "Christian Wolmar"
+      ]
+    },
+    {
+      "slug": "the-works-anatomy-of-a-city",
+      "match_state": "exact_title_author",
+      "cover_id": 872293,
+      "cover_url": "https://covers.openlibrary.org/b/id/872293-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL5267897W",
+      "source_title": "The Works",
+      "source_authors": [
+        "Kate Ascher"
+      ]
+    },
+    {
+      "slug": "railroaded",
+      "match_state": "exact_title_author",
+      "cover_id": 9067527,
+      "cover_url": "https://covers.openlibrary.org/b/id/9067527-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20400147W",
+      "source_title": "Railroaded",
+      "source_authors": [
+        "Richard White"
+      ]
+    },
+    {
+      "slug": "the-routes-of-man",
+      "match_state": "exact_title_author",
+      "cover_id": 9123169,
+      "cover_url": "https://covers.openlibrary.org/b/id/9123169-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19945078W",
+      "source_title": "The routes of man",
+      "source_authors": [
+        "Ted Conover"
+      ]
+    },
+    {
+      "slug": "the-grid",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "energy-and-civilization",
+      "match_state": "exact_title_author",
+      "cover_id": 8835426,
+      "cover_url": "https://covers.openlibrary.org/b/id/8835426-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20186754W",
+      "source_title": "Energy and Civilization",
+      "source_authors": [
+        "Vaclav Smil"
+      ]
     }
   ]
 }

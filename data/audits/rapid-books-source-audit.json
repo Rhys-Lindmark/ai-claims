@@ -1,8 +1,8 @@
 {
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
-  "catalog_last_updated": "2026-08-31",
-  "checked_at": "2026-09-01T00:36:50.975Z",
+  "catalog_last_updated": "2026-09-01",
+  "checked_at": "2026-09-01T01:34:50.006Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,35 +10,35 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 190,
-    "claims": 570,
-    "citations": 1140,
-    "unique_urls": 790,
-    "repeated_citations": 350,
-    "redirected_urls": 110,
+    "books": 200,
+    "claims": 600,
+    "citations": 1200,
+    "unique_urls": 836,
+    "repeated_citations": 364,
+    "redirected_urls": 112,
     "states": {
-      "access_blocked": 163,
+      "access_blocked": 171,
       "network_error": 13,
       "other_http": 3,
-      "reachable": 606,
-      "transient": 5
+      "reachable": 645,
+      "transient": 4
     },
     "score_distribution": {
       "42": 1,
       "50": 7,
       "58": 12,
-      "67": 31,
-      "75": 48,
-      "83": 40,
+      "67": 34,
+      "75": 51,
+      "83": 44,
       "92": 41,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 64,
+      "high": 67,
       "low": 1,
-      "medium": 57,
-      "medium-high": 54,
-      "medium-low": 14
+      "medium": 58,
+      "medium-high": 59,
+      "medium-low": 15
     }
   },
   "domain_summary": [
@@ -117,6 +117,22 @@
       }
     },
     {
+      "host": "nps.gov",
+      "unique_urls": 13,
+      "citations": 16,
+      "states": {
+        "reachable": 13
+      }
+    },
+    {
+      "host": "academic.oup.com",
+      "unique_urls": 12,
+      "citations": 15,
+      "states": {
+        "access_blocked": 12
+      }
+    },
+    {
       "host": "justice.gov",
       "unique_urls": 11,
       "citations": 14,
@@ -125,11 +141,11 @@
       }
     },
     {
-      "host": "academic.oup.com",
-      "unique_urls": 10,
-      "citations": 13,
+      "host": "onlinelibrary.wiley.com",
+      "unique_urls": 9,
+      "citations": 14,
       "states": {
-        "access_blocked": 10
+        "access_blocked": 9
       }
     },
     {
@@ -149,11 +165,19 @@
       }
     },
     {
+      "host": "worldbank.org",
+      "unique_urls": 11,
+      "citations": 13,
+      "states": {
+        "reachable": 11
+      }
+    },
+    {
       "host": "internetsociety.org",
       "unique_urls": 1,
       "citations": 12,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -165,11 +189,12 @@
       }
     },
     {
-      "host": "onlinelibrary.wiley.com",
-      "unique_urls": 8,
-      "citations": 12,
+      "host": "annualreviews.org",
+      "unique_urls": 10,
+      "citations": 11,
       "states": {
-        "access_blocked": 8
+        "reachable": 4,
+        "access_blocked": 6
       }
     },
     {
@@ -181,11 +206,11 @@
       }
     },
     {
-      "host": "nps.gov",
+      "host": "journals.sagepub.com",
       "unique_urls": 9,
       "citations": 11,
       "states": {
-        "reachable": 9
+        "access_blocked": 9
       }
     },
     {
@@ -197,11 +222,11 @@
       }
     },
     {
-      "host": "annualreviews.org",
+      "host": "energy.gov",
       "unique_urls": 9,
       "citations": 10,
       "states": {
-        "access_blocked": 9
+        "reachable": 9
       }
     },
     {
@@ -213,14 +238,6 @@
       }
     },
     {
-      "host": "journals.sagepub.com",
-      "unique_urls": 8,
-      "citations": 10,
-      "states": {
-        "access_blocked": 8
-      }
-    },
-    {
       "host": "nap.nationalacademies.org",
       "unique_urls": 7,
       "citations": 10,
@@ -229,19 +246,19 @@
       }
     },
     {
-      "host": "worldbank.org",
-      "unique_urls": 8,
-      "citations": 10,
-      "states": {
-        "reachable": 8
-      }
-    },
-    {
       "host": "escholarship.org",
       "unique_urls": 4,
       "citations": 9,
       "states": {
         "access_blocked": 4
+      }
+    },
+    {
+      "host": "nyc.gov",
+      "unique_urls": 6,
+      "citations": 9,
+      "states": {
+        "reachable": 6
       }
     },
     {
@@ -309,11 +326,35 @@
       }
     },
     {
+      "host": "archives.gov",
+      "unique_urls": 4,
+      "citations": 7,
+      "states": {
+        "reachable": 4
+      }
+    },
+    {
+      "host": "fhwa.dot.gov",
+      "unique_urls": 7,
+      "citations": 7,
+      "states": {
+        "reachable": 7
+      }
+    },
+    {
       "host": "govinfo.gov",
       "unique_urls": 4,
       "citations": 7,
       "states": {
         "reachable": 4
+      }
+    },
+    {
+      "host": "loc.gov",
+      "unique_urls": 3,
+      "citations": 7,
+      "states": {
+        "access_blocked": 3
       }
     },
     {
@@ -328,6 +369,14 @@
       "host": "sec.gov",
       "unique_urls": 4,
       "citations": 7,
+      "states": {
+        "reachable": 4
+      }
+    },
+    {
+      "host": "aeaweb.org",
+      "unique_urls": 4,
+      "citations": 6,
       "states": {
         "reachable": 4
       }
@@ -397,12 +446,19 @@
       }
     },
     {
+      "host": "reviews.history.ac.uk",
+      "unique_urls": 3,
+      "citations": 6,
+      "states": {
+        "access_blocked": 3
+      }
+    },
+    {
       "host": "aasm.org",
       "unique_urls": 3,
       "citations": 5,
       "states": {
-        "reachable": 2,
-        "transient": 1
+        "reachable": 3
       }
     },
     {
@@ -411,14 +467,6 @@
       "citations": 5,
       "states": {
         "reachable": 4
-      }
-    },
-    {
-      "host": "archives.gov",
-      "unique_urls": 3,
-      "citations": 5,
-      "states": {
-        "reachable": 3
       }
     },
     {
@@ -445,14 +493,6 @@
       "states": {
         "access_blocked": 2,
         "reachable": 2
-      }
-    },
-    {
-      "host": "energy.gov",
-      "unique_urls": 4,
-      "citations": 5,
-      "states": {
-        "reachable": 4
       }
     },
     {
@@ -488,14 +528,6 @@
       }
     },
     {
-      "host": "reviews.history.ac.uk",
-      "unique_urls": 2,
-      "citations": 5,
-      "states": {
-        "access_blocked": 2
-      }
-    },
-    {
       "host": "tandfonline.com",
       "unique_urls": 5,
       "citations": 5,
@@ -525,14 +557,6 @@
       "citations": 4,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "aeaweb.org",
-      "unique_urls": 3,
-      "citations": 4,
-      "states": {
-        "reachable": 3
       }
     },
     {
@@ -649,6 +673,14 @@
       }
     },
     {
+      "host": "blogs.lse.ac.uk",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "chpl.org",
       "unique_urls": 1,
       "citations": 3,
@@ -702,6 +734,15 @@
       "citations": 3,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "ferc.gov",
+      "unique_urls": 3,
+      "citations": 3,
+      "states": {
+        "access_blocked": 1,
+        "reachable": 2
       }
     },
     {
@@ -914,14 +955,6 @@
       }
     },
     {
-      "host": "blogs.lse.ac.uk",
-      "unique_urls": 1,
-      "citations": 2,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
       "host": "britannica.com",
       "unique_urls": 2,
       "citations": 2,
@@ -998,15 +1031,6 @@
       "unique_urls": 1,
       "citations": 2,
       "states": {
-        "reachable": 1
-      }
-    },
-    {
-      "host": "ferc.gov",
-      "unique_urls": 2,
-      "citations": 2,
-      "states": {
-        "access_blocked": 1,
         "reachable": 1
       }
     },
@@ -1132,6 +1156,14 @@
       }
     },
     {
+      "host": "ipcc.ch",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "jamanetwork.com",
       "unique_urls": 2,
       "citations": 2,
@@ -1145,14 +1177,6 @@
       "citations": 2,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "loc.gov",
-      "unique_urls": 2,
-      "citations": 2,
-      "states": {
-        "access_blocked": 2
       }
     },
     {
@@ -1225,6 +1249,14 @@
       "citations": 2,
       "states": {
         "access_blocked": 2
+      }
+    },
+    {
+      "host": "nist.gov",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "reachable": 2
       }
     },
     {
@@ -1308,6 +1340,14 @@
       }
     },
     {
+      "host": "s-media.nyc.gov",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "scholar.harvard.edu",
       "unique_urls": 2,
       "citations": 2,
@@ -1320,8 +1360,8 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "reachable": 1,
-        "access_blocked": 1
+        "access_blocked": 1,
+        "reachable": 1
       }
     },
     {
@@ -1334,6 +1374,14 @@
     },
     {
       "host": "slavevoyages.org",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "tedconover.com",
       "unique_urls": 1,
       "citations": 2,
       "states": {
@@ -1594,6 +1642,14 @@
       "citations": 1,
       "states": {
         "access_blocked": 1
+      }
+    },
+    {
+      "host": "cprr.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "network_error": 1
       }
     },
     {
@@ -1909,6 +1965,14 @@
       }
     },
     {
+      "host": "iea.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "ifs.org.uk",
       "unique_urls": 1,
       "citations": 1,
@@ -2053,6 +2117,14 @@
       }
     },
     {
+      "host": "mitpress.mit.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "mural.maynoothuniversity.ie",
       "unique_urls": 1,
       "citations": 1,
@@ -2126,14 +2198,6 @@
     },
     {
       "host": "nice.org.uk",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
-      "host": "nist.gov",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2277,6 +2341,14 @@
       }
     },
     {
+      "host": "publishersweekly.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "pubs.acs.org",
       "unique_urls": 1,
       "citations": 1,
@@ -2305,7 +2377,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -2377,7 +2449,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "network_error": 1
+        "reachable": 1
       }
     },
     {
@@ -2430,6 +2502,22 @@
     },
     {
       "host": "stevenpinker.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "stm.cairn.info",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
+      "host": "tf.nist.gov",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2562,7 +2650,7 @@
       "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
       "host": "internetsociety.org",
       "citation_count": 12,
-      "state": "reachable",
+      "state": "access_blocked",
       "books": [
         "hackers-heroes-of-the-computer-revolution",
         "the-cuckoos-egg",
@@ -2640,6 +2728,17 @@
         "in-defense-of-food",
         "the-china-study",
         "how-not-to-die"
+      ]
+    },
+    {
+      "url": "https://www.loc.gov/collections/railroad-maps-1828-to-1900/articles-and-essays/history-of-railroads-and-maps/the-transcontinental-railroad/",
+      "host": "loc.gov",
+      "citation_count": 5,
+      "state": "access_blocked",
+      "books": [
+        "the-great-railroad-revolution",
+        "nothing-like-it-in-the-world",
+        "railroaded"
       ]
     },
     {
@@ -3137,6 +3236,15 @@
       "state": "reachable",
       "books": [
         "the-indifferent-stars-above"
+      ]
+    },
+    {
+      "url": "https://www.nyc.gov/html/dot/html/bridges/brooklyn_bridge.shtml",
+      "host": "nyc.gov",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-great-bridge"
       ]
     },
     {
@@ -3643,6 +3751,15 @@
       ]
     },
     {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/ehr.13341",
+      "host": "onlinelibrary.wiley.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "railways-and-the-raj"
+      ]
+    },
+    {
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/taja.70012",
       "host": "onlinelibrary.wiley.com",
       "citation_count": 2,
@@ -3942,6 +4059,15 @@
       ]
     },
     {
+      "url": "https://s-media.nyc.gov/agencies/lpc/lp/0098.pdf",
+      "host": "s-media.nyc.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-great-bridge"
+      ]
+    },
+    {
       "url": "https://science.nasa.gov/exoplanets/what-is-the-universe/",
       "host": "science.nasa.gov",
       "citation_count": 2,
@@ -3968,6 +4094,15 @@
       "state": "reachable",
       "books": [
         "why-the-west-rules-for-now"
+      ]
+    },
+    {
+      "url": "https://tedconover.com/book/the-routes-of-man/",
+      "host": "tedconover.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-routes-of-man"
       ]
     },
     {
@@ -3999,6 +4134,15 @@
       ]
     },
     {
+      "url": "https://www.aeaweb.org/articles?id=10.1257%2Faer.20101199",
+      "host": "aeaweb.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "railways-and-the-raj"
+      ]
+    },
+    {
       "url": "https://www.aeaweb.org/articles?id=10.1257%2Fjel.50.4.1080",
       "host": "aeaweb.org",
       "citation_count": 2,
@@ -4014,6 +4158,16 @@
       "state": "access_blocked",
       "books": [
         "the-beak-of-the-finch"
+      ]
+    },
+    {
+      "url": "https://www.archives.gov/milestone-documents/pacific-railway-act",
+      "host": "archives.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "nothing-like-it-in-the-world",
+        "railroaded"
       ]
     },
     {
@@ -4395,6 +4549,15 @@
       ]
     },
     {
+      "url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-6/",
+      "host": "ipcc.ch",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "energy-and-civilization"
+      ]
+    },
+    {
       "url": "https://www.journals.uchicago.edu/doi/full/10.1086/673347",
       "host": "journals.uchicago.edu",
       "citation_count": 2,
@@ -4604,6 +4767,15 @@
       ]
     },
     {
+      "url": "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm",
+      "host": "nps.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "nothing-like-it-in-the-world"
+      ]
+    },
+    {
       "url": "https://www.nrcs.usda.gov/about/history/brief-history-nrcs",
       "host": "nrcs.usda.gov",
       "citation_count": 2,
@@ -4619,6 +4791,15 @@
       "state": "access_blocked",
       "books": [
         "the-woman-who-smashed-codes"
+      ]
+    },
+    {
+      "url": "https://www.nyc.gov/site/dep/water/sewer-system.page",
+      "host": "nyc.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-works-anatomy-of-a-city"
       ]
     },
     {
@@ -4869,12 +5050,12 @@
         }
       ],
       "host": "aasm.org",
-      "state": "transient",
-      "method": "GET",
-      "status": null,
-      "final_url": null,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://aasm.org/advocacy/position-statements/adult-sleep-duration-health-advisory/",
       "redirected": false,
-      "error": "AbortError: This operation was aborted"
+      "error": null
     },
     {
       "url": "https://aasm.org/resources/pdf/adultsleepdurationmethods.pdf",
@@ -4917,6 +5098,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://aasm.org/resources/pdf/pressroom/adult-sleep-duration-consensus.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://academic.oup.com/ahr/article-abstract/117/4/1178/29677",
+      "citations": [
+        {
+          "slug": "railroaded",
+          "claim_index": 2,
+          "source_title": "American Historical Review of Railroaded"
+        }
+      ],
+      "host": "academic.oup.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://academic.oup.com/ahr/article-abstract/117/4/1178/29677",
       "redirected": false,
       "error": null
     },
@@ -5058,6 +5256,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://academic.oup.com/evolut/article/75/10/2326/6728613",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://academic.oup.com/jah/article-abstract/98/4/1170/922357",
+      "citations": [
+        {
+          "slug": "railroaded",
+          "claim_index": 3,
+          "source_title": "Journal of American History review of Railroaded"
+        }
+      ],
+      "host": "academic.oup.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://academic.oup.com/jah/article-abstract/98/4/1170/922357",
       "redirected": false,
       "error": null
     },
@@ -5481,6 +5696,23 @@
       "error": null
     },
     {
+      "url": "https://blogs.lse.ac.uk/lsereviewofbooks/2023/01/06/book-review-railways-economic-impact-on-uttar-pradesh-and-colonial-north-india-1860-1914-the-iron-raj-by-ian-d-derbyshire/",
+      "citations": [
+        {
+          "slug": "railways-and-the-raj",
+          "claim_index": 2,
+          "source_title": "LSE Review of Books: The Iron Raj"
+        }
+      ],
+      "host": "blogs.lse.ac.uk",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://blogs.lse.ac.uk/lsereviewofbooks/2023/01/06/book-review-railways-economic-impact-on-uttar-pradesh-and-colonial-north-india-1860-1914-the-iron-raj-by-ian-d-derbyshire/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://bmcr.brynmawr.edu/2019/2019.10.21/",
       "citations": [
         {
@@ -5820,6 +6052,23 @@
       "final_url": "https://computerhistory.org/events/innovators-author-walter-isaacson-conversation/",
       "redirected": false,
       "error": null
+    },
+    {
+      "url": "https://cprr.org/Museum/Books/Comments-Ambrose.html",
+      "citations": [
+        {
+          "slug": "nothing-like-it-in-the-world",
+          "claim_index": 3,
+          "source_title": "Central Pacific Railroad Museum specialist critique"
+        }
+      ],
+      "host": "cprr.org",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://csrc.nist.gov/nist-cyber-history/cryptography/chapter",
@@ -6347,7 +6596,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=a6b20dd3-aabc-4999-bf72-f9bb9c22cddf",
+      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=0ee50853-7f67-4a02-8f49-b66e7b5bb73f",
       "redirected": true,
       "error": null
     },
@@ -6379,7 +6628,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=3567f80d-ff2b-4c3d-b431-874478b04414",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=d34a90b6-1bdc-4014-9d00-3bf25ca793e6",
       "redirected": true,
       "error": null
     },
@@ -6396,7 +6645,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=deb59041-02ef-49fb-bffe-18055f7584d5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=e706b34b-3eb3-43b8-bdc0-be0ddfe107f6",
       "redirected": true,
       "error": null
     },
@@ -6440,7 +6689,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=7fd57e85-6c90-4503-aced-f7dc0381437c",
+      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
       "redirected": true,
       "error": null
     },
@@ -6457,7 +6706,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=bb19499d-9de4-4882-bb23-fa16ce12c13f",
+      "final_url": "https://www.nature.com/articles/s41467-023-43426-5",
       "redirected": true,
       "error": null
     },
@@ -6474,7 +6723,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=078110eb-3380-4458-8cdc-c8a3e9492aec",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=de421404-b5d0-40d9-952a-9784aeef5bb8",
       "redirected": true,
       "error": null
     },
@@ -6491,7 +6740,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=8b0d283d-661f-4794-a31c-dd6a04d1fdfa",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0",
       "redirected": true,
       "error": null
     },
@@ -6508,7 +6757,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=fc7d67ab-113e-44f9-8c62-2d1865e90a6e",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2",
       "redirected": true,
       "error": null
     },
@@ -6525,7 +6774,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=9d9534a3-2f38-4a2f-8f69-85e38f98e164",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=58a61814-b0b9-460d-bbd0-4c7e0866bede",
       "redirected": true,
       "error": null
     },
@@ -8087,6 +8336,23 @@
       "error": null
     },
     {
+      "url": "https://journals.sagepub.com/doi/10.1177/001946469603300310",
+      "citations": [
+        {
+          "slug": "railways-and-the-raj",
+          "claim_index": 2,
+          "source_title": "Indian Economic and Social History Review of Kerr"
+        }
+      ],
+      "host": "journals.sagepub.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/10.1177/001946469603300310",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://journals.sagepub.com/doi/10.1177/00471178221098913",
       "citations": [
         {
@@ -8228,7 +8494,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=1153ba00-fb1a-43a7-837d-37b246eae4d8",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=ec210512-f630-4b09-a3a1-076b09604d1b",
       "redirected": true,
       "error": null
     },
@@ -8255,7 +8521,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=7593e4cc-8624-442b-8bae-29b7d77d7aff",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=50c9dd39-6da6-4c7d-bd50-89f82c83c5a8",
       "redirected": true,
       "error": null
     },
@@ -8306,7 +8572,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=299dfa65-6267-4ac8-89ae-ab3dd13f6896",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=a9af3e2a-48df-4ef9-bb6d-b9924260e08c",
       "redirected": true,
       "error": null
     },
@@ -8323,7 +8589,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=c2ba7a71-e13b-4b13-a674-067c3c36644e",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=a5453f12-bd23-49ac-a341-4b655dbfe9f9",
       "redirected": true,
       "error": null
     },
@@ -8470,6 +8736,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://michaelpollan.com/books/the-botany-of-desire/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://mitpress.mit.edu/9780262536165/energy-and-civilization/",
+      "citations": [
+        {
+          "slug": "energy-and-civilization",
+          "claim_index": 1,
+          "source_title": "MIT Press: Energy and Civilization"
+        }
+      ],
+      "host": "mitpress.mit.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://mitpress.mit.edu/9780262536165/energy-and-civilization/",
       "redirected": false,
       "error": null
     },
@@ -8960,6 +9243,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://onlinelibrary.wiley.com/doi/10.1002/bdm.2035",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/ehr.13341",
+      "citations": [
+        {
+          "slug": "railways-and-the-raj",
+          "claim_index": 1,
+          "source_title": "Economic History Review comparative railway estimate"
+        },
+        {
+          "slug": "railways-and-the-raj",
+          "claim_index": 3,
+          "source_title": "Economic History Review comparative railway estimate"
+        }
+      ],
+      "host": "onlinelibrary.wiley.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/ehr.13341",
       "redirected": false,
       "error": null
     },
@@ -11480,6 +11785,23 @@
       "error": null
     },
     {
+      "url": "https://reviews.history.ac.uk/review/1155/print/",
+      "citations": [
+        {
+          "slug": "railroaded",
+          "claim_index": 2,
+          "source_title": "Reviews in History: Railroaded"
+        }
+      ],
+      "host": "reviews.history.ac.uk",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://reviews.history.ac.uk/review/1155/print/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://reviews.history.ac.uk/review/1283/print/",
       "citations": [
         {
@@ -11594,12 +11916,34 @@
         }
       ],
       "host": "ruj.uj.edu.pl",
-      "state": "network_error",
-      "method": "GET",
-      "status": null,
-      "final_url": null,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ruj.uj.edu.pl//handle/item/68230",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://s-media.nyc.gov/agencies/lpc/lp/0098.pdf",
+      "citations": [
+        {
+          "slug": "the-great-bridge",
+          "claim_index": 1,
+          "source_title": "NYC Landmarks Brooklyn Bridge report"
+        },
+        {
+          "slug": "the-great-bridge",
+          "claim_index": 3,
+          "source_title": "NYC Landmarks Brooklyn Bridge report"
+        }
+      ],
+      "host": "s-media.nyc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://s-media.nyc.gov/agencies/lpc/lp/0098.pdf",
       "redirected": false,
-      "error": "TypeError: fetch failed"
+      "error": null
     },
     {
       "url": "https://scholar.harvard.edu/files/mankiw/files/yes_r_g_so_what.pdf",
@@ -11810,7 +12154,7 @@
       "host": "search.worldcat.org",
       "state": "access_blocked",
       "method": "GET",
-      "status": 429,
+      "status": 403,
       "final_url": "https://search.worldcat.org/title/1028660910",
       "redirected": false,
       "error": null
@@ -11902,6 +12246,62 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://stevenpinker.com/files/pinker/files/2002_humannaturereview.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://stm.cairn.info/journal-of-energy-history-2018-1-page-1i?lang=en",
+      "citations": [
+        {
+          "slug": "energy-and-civilization",
+          "claim_index": 3,
+          "source_title": "Journal of Energy History review of Energy and Civilization"
+        }
+      ],
+      "host": "stm.cairn.info",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://stm.cairn.info/journal-of-energy-history-2018-1-page-1i?lang=en",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://tedconover.com/book/the-routes-of-man/",
+      "citations": [
+        {
+          "slug": "the-routes-of-man",
+          "claim_index": 2,
+          "source_title": "Ted Conover: The Routes of Man source overview"
+        },
+        {
+          "slug": "the-routes-of-man",
+          "claim_index": 3,
+          "source_title": "Ted Conover: The Routes of Man source overview"
+        }
+      ],
+      "host": "tedconover.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://tedconover.com/book/the-routes-of-man/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://tf.nist.gov/general/pdf/1796.pdf",
+      "citations": [
+        {
+          "slug": "the-great-railroad-revolution",
+          "claim_index": 2,
+          "source_title": "NIST history of standard time"
+        }
+      ],
+      "host": "tf.nist.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://tf.nist.gov/general/pdf/1796.pdf",
       "redirected": false,
       "error": null
     },
@@ -12473,6 +12873,28 @@
       "error": null
     },
     {
+      "url": "https://www.aeaweb.org/articles?id=10.1257%2Faer.20101199",
+      "citations": [
+        {
+          "slug": "railways-and-the-raj",
+          "claim_index": 1,
+          "source_title": "American Economic Review: Railroads of the Raj"
+        },
+        {
+          "slug": "railways-and-the-raj",
+          "claim_index": 3,
+          "source_title": "American Economic Review: Railroads of the Raj"
+        }
+      ],
+      "host": "aeaweb.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.aeaweb.org/articles?id=10.1257%2Faer.20101199",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.aeaweb.org/articles?id=10.1257%2Fjel.50.4.1080",
       "citations": [
         {
@@ -12555,9 +12977,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-genet-021920-011805",
       "redirected": false,
       "error": null
@@ -12572,9 +12994,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011718-012440",
       "redirected": false,
       "error": null
@@ -12631,6 +13053,23 @@
       "error": null
     },
     {
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev.energy.25.1.21",
+      "citations": [
+        {
+          "slug": "energy-and-civilization",
+          "claim_index": 1,
+          "source_title": "Annual Review: Energy in the Twentieth Century"
+        }
+      ],
+      "host": "annualreviews.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev.energy.25.1.21",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.annualreviews.org/content/journals/10.1146/annurev.psych.59.103006.093629",
       "citations": [
         {
@@ -12640,9 +13079,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev.psych.59.103006.093629",
       "redirected": false,
       "error": null
@@ -12665,8 +13104,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-ecolsys-110218-024717",
-      "redirected": false,
+      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-110218-024717?crawler=true&mimetype=application/pdf",
+      "redirected": true,
       "error": null
     },
     {
@@ -12719,6 +13158,28 @@
       "final_url": null,
       "redirected": false,
       "error": "AbortError: This operation was aborted"
+    },
+    {
+      "url": "https://www.archives.gov/milestone-documents/pacific-railway-act",
+      "citations": [
+        {
+          "slug": "nothing-like-it-in-the-world",
+          "claim_index": 1,
+          "source_title": "National Archives: Pacific Railway Act"
+        },
+        {
+          "slug": "railroaded",
+          "claim_index": 1,
+          "source_title": "National Archives: Pacific Railway Act"
+        }
+      ],
+      "host": "archives.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.archives.gov/milestone-documents/pacific-railway-act",
+      "redirected": false,
+      "error": null
     },
     {
       "url": "https://www.archives.gov/news/articles/code-girls-instramental-in-wwii-victory",
@@ -14275,6 +14736,40 @@
       "error": null
     },
     {
+      "url": "https://www.energy.gov/cmei/systems/articles/how-wind-energy-became-integral-modern-grid",
+      "citations": [
+        {
+          "slug": "the-grid",
+          "claim_index": 3,
+          "source_title": "DOE history of wind integration studies"
+        }
+      ],
+      "host": "energy.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.energy.gov/cmei/systems/articles/how-wind-energy-became-integral-modern-grid",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.energy.gov/cmei/systems/renewable-systems-integration",
+      "citations": [
+        {
+          "slug": "the-grid",
+          "claim_index": 2,
+          "source_title": "DOE Renewable Systems Integration"
+        }
+      ],
+      "host": "energy.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.energy.gov/cmei/systems/renewable-systems-integration",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.energy.gov/lm/metallurgical-laboratory-university-chicago",
       "citations": [
         {
@@ -14344,6 +14839,57 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.energy.gov/ne/articles/first-reactor",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.energy.gov/oe/grid-modernization-and-smart-grid",
+      "citations": [
+        {
+          "slug": "the-grid",
+          "claim_index": 1,
+          "source_title": "DOE Grid Modernization and the Smart Grid"
+        }
+      ],
+      "host": "energy.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.energy.gov/oe/grid-modernization-and-smart-grid",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.energy.gov/oe/national-transmission-planning-study-0",
+      "citations": [
+        {
+          "slug": "the-grid",
+          "claim_index": 3,
+          "source_title": "DOE National Transmission Planning Study"
+        }
+      ],
+      "host": "energy.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.energy.gov/oe/national-transmission-planning-study-0",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.energy.gov/topics/electric-grids",
+      "citations": [
+        {
+          "slug": "the-grid",
+          "claim_index": 1,
+          "source_title": "U.S. Department of Energy: Electric Grids"
+        }
+      ],
+      "host": "energy.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.energy.gov/topics/electric-grids",
       "redirected": false,
       "error": null
     },
@@ -14792,6 +15338,23 @@
       "error": null
     },
     {
+      "url": "https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy",
+      "citations": [
+        {
+          "slug": "the-grid",
+          "claim_index": 2,
+          "source_title": "FERC Order No. 2222 explainer"
+        }
+      ],
+      "host": "ferc.gov",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.ferc.gov/industries-data/electric/general-information/addressing-2000-2001-western-energy-crisis",
       "citations": [
         {
@@ -14822,6 +15385,125 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.ferc.gov/sites/default/files/2020-04/summary-findings.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fhwa.dot.gov/highwayhistory/road/road.pdf",
+      "citations": [
+        {
+          "slug": "the-big-roads",
+          "claim_index": 3,
+          "source_title": "FHWA The Road to Civil Rights"
+        }
+      ],
+      "host": "fhwa.dot.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fhwa.dot.gov/highwayhistory/road/road.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fhwa.dot.gov/infrastructure/50interstate2.cfm",
+      "citations": [
+        {
+          "slug": "the-big-roads",
+          "claim_index": 3,
+          "source_title": "FHWA The Greatest Decade: urban consequences"
+        }
+      ],
+      "host": "fhwa.dot.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fhwa.dot.gov/infrastructure/50interstate2.cfm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fhwa.dot.gov/infrastructure/along.cfm",
+      "citations": [
+        {
+          "slug": "the-big-roads",
+          "claim_index": 1,
+          "source_title": "FHWA roadside history and the 1939 plan"
+        }
+      ],
+      "host": "fhwa.dot.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fhwa.dot.gov/infrastructure/along.cfm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fhwa.dot.gov/infrastructure/fairbank.cfm",
+      "citations": [
+        {
+          "slug": "the-big-roads",
+          "claim_index": 2,
+          "source_title": "FHWA history of urban Interstate designation"
+        }
+      ],
+      "host": "fhwa.dot.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fhwa.dot.gov/infrastructure/fairbank.cfm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fhwa.dot.gov/infrastructure/intrstat.cfm",
+      "citations": [
+        {
+          "slug": "the-big-roads",
+          "claim_index": 2,
+          "source_title": "FHWA Interstate conditions and scale"
+        }
+      ],
+      "host": "fhwa.dot.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fhwa.dot.gov/infrastructure/intrstat.cfm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fhwa.dot.gov/infrastructure/origin01.cfm",
+      "citations": [
+        {
+          "slug": "the-big-roads",
+          "claim_index": 1,
+          "source_title": "FHWA origins of the Interstate System"
+        }
+      ],
+      "host": "fhwa.dot.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fhwa.dot.gov/infrastructure/origin01.cfm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.fhwa.dot.gov/wit/bridgec.htm",
+      "citations": [
+        {
+          "slug": "the-great-bridge",
+          "claim_index": 2,
+          "source_title": "FHWA Women in Transportation: Bridge Construction"
+        }
+      ],
+      "host": "fhwa.dot.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.fhwa.dot.gov/wit/bridgec.htm",
       "redirected": false,
       "error": null
     },
@@ -15715,6 +16397,23 @@
       "error": null
     },
     {
+      "url": "https://www.iea.org/world/coal",
+      "citations": [
+        {
+          "slug": "energy-and-civilization",
+          "claim_index": 2,
+          "source_title": "IEA global coal and industrial history"
+        }
+      ],
+      "host": "iea.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.iea.org/world/coal",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.imf.org/-/media/files/publications/weo/2020/april/english/ch2.pdf",
       "citations": [
         {
@@ -15903,9 +16602,9 @@
         }
       ],
       "host": "internetsociety.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
       "redirected": false,
       "error": null
@@ -15929,6 +16628,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.ipbes.net/system/files/2021-06/2020%20IPBES%20GLOBAL%20REPORT%28FIRST%20PART%29_V3_SINGLE.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-6/",
+      "citations": [
+        {
+          "slug": "energy-and-civilization",
+          "claim_index": 2,
+          "source_title": "IPCC AR6 Chapter 6: Energy Systems"
+        },
+        {
+          "slug": "energy-and-civilization",
+          "claim_index": 3,
+          "source_title": "IPCC AR6 Chapter 6: Energy Systems"
+        }
+      ],
+      "host": "ipcc.ch",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-6/",
       "redirected": false,
       "error": null
     },
@@ -16486,6 +17207,43 @@
       "error": null
     },
     {
+      "url": "https://www.loc.gov/collections/railroad-maps-1828-to-1900/articles-and-essays/history-of-railroads-and-maps/the-transcontinental-railroad/",
+      "citations": [
+        {
+          "slug": "the-great-railroad-revolution",
+          "claim_index": 1,
+          "source_title": "Library of Congress railroad maps and history"
+        },
+        {
+          "slug": "the-great-railroad-revolution",
+          "claim_index": 3,
+          "source_title": "Library of Congress railroad maps and history"
+        },
+        {
+          "slug": "nothing-like-it-in-the-world",
+          "claim_index": 1,
+          "source_title": "Library of Congress transcontinental railroad history"
+        },
+        {
+          "slug": "railroaded",
+          "claim_index": 1,
+          "source_title": "Library of Congress transcontinental railroad history"
+        },
+        {
+          "slug": "railroaded",
+          "claim_index": 3,
+          "source_title": "Library of Congress transcontinental railroad history"
+        }
+      ],
+      "host": "loc.gov",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.loc.gov/collections/railroad-maps-1828-to-1900/articles-and-essays/history-of-railroads-and-maps/the-transcontinental-railroad/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.loc.gov/item/2002564559/",
       "citations": [
         {
@@ -16887,8 +17645,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2F28764&code=a7ca7516-c1bf-4ad5-8b23-c83a3f50550c",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/28764",
+      "redirected": false,
       "error": null
     },
     {
@@ -16904,7 +17662,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-024-00544-4",
+      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=b70b9822-c745-4230-9884-0765b462e12e",
       "redirected": true,
       "error": null
     },
@@ -16926,7 +17684,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=b35b3ea3-b5d5-417e-9af8-af43d327a6b5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=6da697cf-0672-437a-9a98-86b1f91661db",
       "redirected": true,
       "error": null
     },
@@ -16953,7 +17711,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=492e359d-d01b-4461-b766-11f2fb58a036",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=7c427adf-ef0c-49fe-99c8-b7ecbd35fa2b",
       "redirected": true,
       "error": null
     },
@@ -16980,7 +17738,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=dda6d4ef-12ed-4429-89cc-b8f1ef5254d0",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=39bbe4e3-a4aa-4b1e-8536-cfaeb794445e",
       "redirected": true,
       "error": null
     },
@@ -17002,7 +17760,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=83c494ee-b38e-4296-a2ff-66e14e566361",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=e16b3009-1d7f-4218-880f-1f95ea6e46ad",
       "redirected": true,
       "error": null
     },
@@ -17019,8 +17777,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=47b978a5-311f-4041-a362-9ca85b23b7da",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
+      "redirected": false,
       "error": null
     },
     {
@@ -17053,7 +17811,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=d1d8808e-efa0-4561-956c-633b5c79897a",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=947652a6-dc22-49ca-a30b-7f75f347810b",
       "redirected": true,
       "error": null
     },
@@ -17087,7 +17845,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=da728eba-63aa-4da8-b385-5ce0757daad2",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=ccb0a4dc-93dd-4523-abaf-f8c2137989df",
       "redirected": true,
       "error": null
     },
@@ -17109,7 +17867,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=56a9ffbb-b09c-4682-b47e-3a795dbdb4bc",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=22893dbb-2c7d-4e3d-8965-7f07294d84cf",
       "redirected": true,
       "error": null
     },
@@ -17355,6 +18113,23 @@
       "error": null
     },
     {
+      "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-world-time-scales",
+      "citations": [
+        {
+          "slug": "the-great-railroad-revolution",
+          "claim_index": 2,
+          "source_title": "NIST history of world time scales"
+        }
+      ],
+      "host": "nist.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-world-time-scales",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.nist.gov/publications/public-key-cryptography-0",
       "citations": [
         {
@@ -17584,6 +18359,40 @@
       "error": null
     },
     {
+      "url": "https://www.nps.gov/articles/000/upload/Labor_History_in_US-Theme_Study-Final-revised.pdf",
+      "citations": [
+        {
+          "slug": "the-great-railroad-revolution",
+          "claim_index": 3,
+          "source_title": "National Park Service labor history theme study"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/articles/000/upload/Labor_History_in_US-Theme_Study-Final-revised.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/articles/archeology-of-chinese-laborers-connected-country.htm",
+      "citations": [
+        {
+          "slug": "nothing-like-it-in-the-world",
+          "claim_index": 2,
+          "source_title": "NPS archaeology of Chinese railroad laborers"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/articles/archeology-of-chinese-laborers-connected-country.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.nps.gov/cali/learn/historyculture/donner-reed-party.htm",
       "citations": [
         {
@@ -17641,6 +18450,45 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nps.gov/elis/learn/historyculture/places_oyster_island.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm",
+      "citations": [
+        {
+          "slug": "nothing-like-it-in-the-world",
+          "claim_index": 2,
+          "source_title": "NPS Chinese Labor and the Iron Road"
+        },
+        {
+          "slug": "nothing-like-it-in-the-world",
+          "claim_index": 3,
+          "source_title": "NPS Chinese Labor and the Iron Road"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/gosp/learn/historyculture/index.htm",
+      "citations": [
+        {
+          "slug": "the-great-railroad-revolution",
+          "claim_index": 1,
+          "source_title": "National Park Service transcontinental railroad history"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/gosp/learn/historyculture/index.htm",
       "redirected": false,
       "error": null
     },
@@ -17944,6 +18792,123 @@
       "error": null
     },
     {
+      "url": "https://www.nyc.gov/assets/dsny/downloads/resources/reports/solid-waste-management/2026-swmp/draft-swmp-2026-revised.pdf",
+      "citations": [
+        {
+          "slug": "the-works-anatomy-of-a-city",
+          "claim_index": 2,
+          "source_title": "NYC solid waste management system"
+        }
+      ],
+      "host": "nyc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nyc.gov/assets/dsny/downloads/resources/reports/solid-waste-management/2026-swmp/draft-swmp-2026-revised.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nyc.gov/html/dot/html/bridges/brooklyn_bridge.shtml",
+      "citations": [
+        {
+          "slug": "the-great-bridge",
+          "claim_index": 1,
+          "source_title": "NYC DOT Brooklyn Bridge history"
+        },
+        {
+          "slug": "the-great-bridge",
+          "claim_index": 2,
+          "source_title": "NYC DOT Brooklyn Bridge history"
+        },
+        {
+          "slug": "the-great-bridge",
+          "claim_index": 3,
+          "source_title": "NYC DOT Brooklyn Bridge history"
+        }
+      ],
+      "host": "nyc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nyc.gov/html/dot/html/bridges/brooklyn_bridge.shtml",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nyc.gov/site/dep/water/sewer-system.page",
+      "citations": [
+        {
+          "slug": "the-works-anatomy-of-a-city",
+          "claim_index": 1,
+          "source_title": "NYC DEP sewer system"
+        },
+        {
+          "slug": "the-works-anatomy-of-a-city",
+          "claim_index": 2,
+          "source_title": "NYC DEP sewer system"
+        }
+      ],
+      "host": "nyc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nyc.gov/site/dep/water/sewer-system.page",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nyc.gov/site/dsny/about/about-dsny.page",
+      "citations": [
+        {
+          "slug": "the-works-anatomy-of-a-city",
+          "claim_index": 1,
+          "source_title": "NYC Department of Sanitation overview"
+        }
+      ],
+      "host": "nyc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nyc.gov/site/dsny/about/about-dsny.page",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nyc.gov/site/dsny/collection/residents.page",
+      "citations": [
+        {
+          "slug": "the-works-anatomy-of-a-city",
+          "claim_index": 3,
+          "source_title": "NYC DSNY current collection services"
+        }
+      ],
+      "host": "nyc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nyc.gov/site/dsny/collection/residents.page",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nyc.gov/site/dsny/resources/statistics.page",
+      "citations": [
+        {
+          "slug": "the-works-anatomy-of-a-city",
+          "claim_index": 3,
+          "source_title": "NYC DSNY current statistics"
+        }
+      ],
+      "host": "nyc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nyc.gov/site/dsny/resources/statistics.page",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.oecd.org/education/2030-project/teaching-and-learning/learning/",
       "citations": [
         {
@@ -18058,8 +19023,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/england-and-europe-in-1420/",
-      "redirected": true,
+      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/England-and-Europe-in-1420/",
+      "redirected": false,
       "error": null
     },
     {
@@ -18132,6 +19097,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.propublica.org/article/major-investigation-our-katrina-hospital-story-in-the-new-york-times-magazi",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.publishersweekly.com/9781400042449",
+      "citations": [
+        {
+          "slug": "the-routes-of-man",
+          "claim_index": 3,
+          "source_title": "Publishers Weekly review of The Routes of Man"
+        }
+      ],
+      "host": "publishersweekly.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.publishersweekly.com/9781400042449",
       "redirected": false,
       "error": null
     },
@@ -18223,9 +19205,9 @@
         }
       ],
       "host": "rct.uk",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
       "final_url": "https://www.rct.uk/collection",
       "redirected": true,
       "error": null
@@ -18927,9 +19909,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.semi.org/en/about-semi-membership/about-semi",
       "redirected": false,
       "error": null
@@ -18944,9 +19926,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.semi.org/en/industry-groups/supply-chain-management",
       "redirected": false,
       "error": null
@@ -19779,6 +20761,23 @@
       "error": null
     },
     {
+      "url": "https://www.worldbank.org/en/projects-operations/environmental-and-social-framework",
+      "citations": [
+        {
+          "slug": "the-routes-of-man",
+          "claim_index": 2,
+          "source_title": "World Bank Environmental and Social Framework"
+        }
+      ],
+      "host": "worldbank.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.worldbank.org/en/projects-operations/environmental-and-social-framework",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.worldbank.org/en/publication/gfdr/gfdr-2016",
       "citations": [
         {
@@ -19887,6 +20886,40 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.worldbank.org/ext/en/topic/fragility-conflict-and-violence",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.worldbank.org/en/topic/transport/brief/rural-transport",
+      "citations": [
+        {
+          "slug": "the-routes-of-man",
+          "claim_index": 1,
+          "source_title": "World Bank rural transport knowledge base"
+        }
+      ],
+      "host": "worldbank.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.worldbank.org/ext/en/development-topics",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.worldbank.org/en/topic/transport/overview",
+      "citations": [
+        {
+          "slug": "the-routes-of-man",
+          "claim_index": 1,
+          "source_title": "World Bank transport overview"
+        }
+      ],
+      "host": "worldbank.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.worldbank.org/ext/en/topic/transport",
       "redirected": true,
       "error": null
     },
@@ -20008,8 +21041,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/article/24/10/ac-2410_article",
-      "redirected": false,
+      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/24/10/ac-2410_article",
+      "redirected": true,
       "error": null
     },
     {
