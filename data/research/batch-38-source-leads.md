@@ -5,6 +5,7 @@ Status: initial research map, not public evidence approval.
 ## Crowd behavior and mass influence
 
 - Deindividuation and social-identity review: https://doi.org/10.1080/23311908.2017.1308104
+- Social-identity critique of mindless-crowd models: https://doi.org/10.1080/21582041.2011.619347
 - Collective-behavior systematic review: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1096877/full
 - Modern crowd psychology review: https://www.annualreviews.org/content/journals/10.1146/annurev-psych-012125-121447
 - News agenda-setting meta-analysis: https://journals.sagepub.com/doi/10.1177/1077699018804500
@@ -13,6 +14,8 @@ Status: initial research map, not public evidence approval.
 
 - Personality and prejudice meta-analysis: https://journals.sagepub.com/doi/10.1177/1088868308319226
 - Generalized authoritarianism and prejudice: https://doi.org/10.1016/j.paid.2016.08.018
+- Longitudinal developmental antecedents of political ideology: https://doi.org/10.1177/0956797612440102
+- Genetically informed parenting and authoritarianism study: https://doi.org/10.1002/per.2144
 - Meta-Milgram: https://pmc.ncbi.nlm.nih.gov/articles/PMC3976349/
 - Systematic disobedience meta-analysis: https://journals.sagepub.com/doi/abs/10.1111/j.1745-6924.2008.00080.x
 - Engaged-followership review: https://www.annualreviews.org/content/journals/10.1146/annurev-lawsocsci-110316-113710
@@ -32,6 +35,7 @@ Status: initial research map, not public evidence approval.
 - Citizen competence in direct democracy: https://doi.org/10.1017/S0007123416000090
 - Social identification and collective action meta-analysis: https://cyberpsychology.eu/article/view/14266
 - Collective behavior and social movements synthesis: https://pmc.ncbi.nlm.nih.gov/articles/PMC10162496/
+- Relative-deprivation meta-analysis: https://doi.org/10.1177/1088868311430825
 - Reconstructing social construction: https://pmc.ncbi.nlm.nih.gov/articles/PMC12163552/
 - Cross-level construction of institutions: https://journals.sagepub.com/doi/pdf/10.1177/26317877231194368
 

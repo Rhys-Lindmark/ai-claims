@@ -6,7 +6,7 @@ Status: research draft. `Ready` means two relevant evidence routes are already i
 |---|---|---|---|
 | *The Crowd* | Identity and shared norms shift crowd behavior | Crowd annual review + collective-behavior synthesis | Ready |
 | *The Crowd* | Anonymity dissolves control and causes violence | Deindividuation review + collective-behavior synthesis | Ready; strong counterevidence expected |
-| *The Crowd* | Crowds form one suggestible mind | Crowd annual review + Le Bon legacy review | Add direct historical source |
+| *The Crowd* | Crowds form one suggestible mind | Deindividuation review + social-identity critique | Ready; literal group-mind mechanism is strongly contested |
 | *Propaganda* | Organized communication shapes attention and interpretation | Agenda-setting + framing meta-analyses | Ready |
 | *Propaganda* | Democracy depends on elite opinion management | Framing + citizen-competence evidence | Ready; normative premise separate |
 | *Propaganda* | Experts can predictably engineer consent | Framing + strategic-news meta-analyses | Ready; likely weak/mixed |
@@ -15,10 +15,10 @@ Status: research draft. `Ready` means two relevant evidence routes are already i
 | *Public Opinion* | Citizens are generally incapable of competent judgment | Citizen-competence + framing meta-analysis | Ready; preserve deliberation evidence |
 | *The True Believer* | Threat and grievance increase movement attraction | Collective-behavior synthesis + identity meta-analysis | Ready |
 | *The True Believer* | Movements share recurring mechanisms | Collective-behavior synthesis + identity meta-analysis | Ready |
-| *The True Believer* | Frustrated individuals primarily cause mass mobilization | Collective-behavior synthesis | Needs second causal source |
+| *The True Believer* | Frustrated individuals primarily cause mass mobilization | Collective-behavior synthesis + relative-deprivation meta-analysis | Ready; grievance is neither necessary nor sufficient |
 | *The Authoritarian Personality* | Authoritarian dispositions predict prejudice | Personality/prejudice meta-analysis + generalized-authoritarianism study | Ready |
 | *The Authoritarian Personality* | Submission and dominance are distinct pathways | Personality/prejudice meta-analysis + generalized-authoritarianism study | Ready |
-| *The Authoritarian Personality* | Psychoanalytic family development explains fascistic potential | Modern authoritarianism evidence | Needs direct developmental test and critique |
+| *The Authoritarian Personality* | Psychoanalytic family development explains fascistic potential | Longitudinal ideology study + genetically informed parenting study | Ready; evidence addresses narrower developmental associations, not the original psychoanalytic mechanism |
 | *Obedience to Authority* | Situations change harmful compliance | Meta-Milgram + engaged-followership review | Ready |
 | *Obedience to Authority* | Milgram variations reveal resistance | Meta-Milgram + systematic-disobedience meta-analysis | Ready |
 | *Obedience to Authority* | Agentic state explains loss of agency | Meta-Milgram + engaged-followership review | Ready; competing identification account |
@@ -37,4 +37,4 @@ Status: research draft. `Ready` means two relevant evidence routes are already i
 
 ## Next source pass
 
-Prioritize the six rows that still lack a second independent route: Le Bon's single-mind claim, Hoffer's frustrated-individual thesis, authoritarian developmental causation, Lorenz's hydraulic model, Goffman's role-performance claim, and Berger/Luckmann on language, socialization, and material constraint. Do not draft those claims into public records until each has evidence for and against.
+Prioritize the remaining gaps: Lorenz's hydraulic model, Goffman's role-performance claim, Berger/Luckmann on language and socialization, the material-constraint critique, and Allport's categorization claim. Do not draft those claims into public records until each has evidence for and against.
