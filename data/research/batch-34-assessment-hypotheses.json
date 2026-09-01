@@ -1,0 +1,93 @@
+{
+  "schema_version": "ai-claims.research-assessment-hypotheses/0.1.0",
+  "batch": 34,
+  "status": "research_draft_not_for_publication",
+  "credit_scale": {
+    "supported": 1,
+    "mostly supported": 0.75,
+    "mixed": 0.5,
+    "weak": 0.25
+  },
+  "books": [
+    {
+      "slug": "the-federalist-papers",
+      "claims": [
+        {"position": 1, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 2, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 3, "hypothesis": "mixed", "credit": 0.5}
+      ]
+    },
+    {
+      "slug": "democracy-in-america",
+      "claims": [
+        {"position": 1, "hypothesis": "mixed", "credit": 0.5},
+        {"position": 2, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 3, "hypothesis": "mixed", "credit": 0.5}
+      ]
+    },
+    {
+      "slug": "the-road-to-serfdom",
+      "claims": [
+        {"position": 1, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 2, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 3, "hypothesis": "weak", "credit": 0.25}
+      ]
+    },
+    {
+      "slug": "capitalism-and-freedom",
+      "claims": [
+        {"position": 1, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 2, "hypothesis": "mixed", "credit": 0.5},
+        {"position": 3, "hypothesis": "mixed", "credit": 0.5}
+      ]
+    },
+    {
+      "slug": "the-open-society-and-its-enemies",
+      "claims": [
+        {"position": 1, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 2, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 3, "hypothesis": "mixed", "credit": 0.5}
+      ]
+    },
+    {
+      "slug": "the-clash-of-civilizations-and-the-remaking-of-world-order",
+      "claims": [
+        {"position": 1, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 2, "hypothesis": "mixed", "credit": 0.5},
+        {"position": 3, "hypothesis": "weak", "credit": 0.25}
+      ]
+    },
+    {
+      "slug": "how-democracies-die",
+      "claims": [
+        {"position": 1, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 2, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 3, "hypothesis": "mixed", "credit": 0.5}
+      ]
+    },
+    {
+      "slug": "political-order-and-political-decay",
+      "claims": [
+        {"position": 1, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 2, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 3, "hypothesis": "mixed", "credit": 0.5}
+      ]
+    },
+    {
+      "slug": "the-dictators-handbook",
+      "claims": [
+        {"position": 1, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 2, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 3, "hypothesis": "weak", "credit": 0.25}
+      ]
+    },
+    {
+      "slug": "the-narrow-corridor",
+      "claims": [
+        {"position": 1, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 2, "hypothesis": "mostly supported", "credit": 0.75},
+        {"position": 3, "hypothesis": "weak", "credit": 0.25}
+      ]
+    }
+  ]
+}
