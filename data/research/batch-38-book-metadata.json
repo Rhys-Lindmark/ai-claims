@@ -1,0 +1,17 @@
+{
+  "schema_version":"ai-claims.research-book-metadata/0.1.0",
+  "status":"research_draft",
+  "theme":"Foundational mass society, social influence, prejudice, and social construction",
+  "books":[
+    {"slug":"the-crowd","title":"The Crowd","subtitle":"A Study of the Popular Mind","author":"Gustave Le Bon","year":1895},
+    {"slug":"propaganda","title":"Propaganda","subtitle":"","author":"Edward Bernays","year":1928},
+    {"slug":"public-opinion","title":"Public Opinion","subtitle":"","author":"Walter Lippmann","year":1922},
+    {"slug":"the-true-believer","title":"The True Believer","subtitle":"Thoughts on the Nature of Mass Movements","author":"Eric Hoffer","year":1951},
+    {"slug":"the-authoritarian-personality","title":"The Authoritarian Personality","subtitle":"","author":"Theodor W. Adorno, Else Frenkel-Brunswik, Daniel J. Levinson, and R. Nevitt Sanford","year":1950},
+    {"slug":"obedience-to-authority","title":"Obedience to Authority","subtitle":"An Experimental View","author":"Stanley Milgram","year":1974},
+    {"slug":"on-aggression","title":"On Aggression","subtitle":"","author":"Konrad Lorenz","year":1963},
+    {"slug":"the-nature-of-prejudice","title":"The Nature of Prejudice","subtitle":"","author":"Gordon W. Allport","year":1954},
+    {"slug":"the-presentation-of-self-in-everyday-life","title":"The Presentation of Self in Everyday Life","subtitle":"","author":"Erving Goffman","year":1956},
+    {"slug":"the-social-construction-of-reality","title":"The Social Construction of Reality","subtitle":"A Treatise in the Sociology of Knowledge","author":"Peter L. Berger and Thomas Luckmann","year":1966}
+  ]
+}
