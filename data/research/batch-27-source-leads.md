@@ -15,8 +15,14 @@ Working source map captured 2026-08-31. These are leads, not yet accepted claim 
 - *Energy and Civilization*: MIT Press/Oxford book record and chapter abstracts — https://academic.oup.com/mit-press-scholarship-online/book/13253 ; critical review on historical framing — https://stm.cairn.info/journal-of-energy-history-2018-1-page-1i?lang=en ; quantitative background by Smil — https://www.annualreviews.org/content/journals/10.1146/annurev.energy.25.1.21
 - *The Grid*: Kirkus review — https://www.kirkusreviews.com/book-reviews/gretchen-bakke/the-grid-fraying-wires/ ; Publishers Weekly review and counterweight — https://www.publishersweekly.com/9781608196104
 
+## Bridges, cities, and colonial rail
+
+- *The Great Bridge*: NYC DOT history and dimensions — https://www.nyc.gov/html/dot/html/bridges/brooklyn_bridge.shtml ; NYC Landmarks designation report — https://s-media.nyc.gov/agencies/lpc/lp/0098.pdf
+- *Railways and the Raj*: book review — https://www.indiatoday.in/magazine/society-and-the-arts/books/story/19950715-book-review-ian-j-kerrs-building-the-railways-of-the-raj-807530-1995-07-14 ; causal economic counterevidence and replication materials — https://www.aeaweb.org/articles?id=10.1257%2Faer.20101199 ; newer comparative estimate — https://onlinelibrary.wiley.com/doi/10.1111/ehr.13341
+- *The Works*: contemporary architecture review — https://www.usmodernist.org/AN/AN-2006-04.pdf ; use NYC agency documentation to verify individual system descriptions rather than treating illustrations as sufficient evidence.
+
 ## Next research gaps
 
-- Find primary institutional histories and specialist counterevidence for *The Great Bridge*, *Railways and the Raj*, and *The Works*.
+- Find primary institutional histories and specialist counterevidence for each remaining system described in *The Works*.
 - Prefer official transport, energy, and municipal datasets over review prose for quantitative claims.
 - Treat narrative reviews as claim-discovery and criticism sources, not as sole support for a factual score.
