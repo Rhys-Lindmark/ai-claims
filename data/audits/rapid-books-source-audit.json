@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-09-01",
-  "checked_at": "2026-09-01T02:36:09.317Z",
+  "checked_at": "2026-09-01T02:47:06.606Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 10000,
@@ -10,53 +10,53 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 240,
-    "claims": 720,
-    "citations": 1440,
-    "unique_urls": 987,
-    "repeated_citations": 453,
-    "redirected_urls": 145,
+    "books": 250,
+    "claims": 750,
+    "citations": 1500,
+    "unique_urls": 1025,
+    "repeated_citations": 475,
+    "redirected_urls": 151,
     "states": {
-      "access_blocked": 204,
-      "network_error": 14,
-      "other_http": 3,
-      "reachable": 758,
-      "transient": 8
+      "access_blocked": 206,
+      "network_error": 16,
+      "other_http": 4,
+      "reachable": 790,
+      "transient": 9
     },
     "score_distribution": {
       "42": 1,
       "50": 8,
       "58": 13,
-      "67": 54,
-      "75": 60,
-      "83": 50,
-      "92": 44,
+      "67": 57,
+      "75": 61,
+      "83": 55,
+      "92": 45,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 75,
+      "high": 82,
       "low": 1,
       "medium": 69,
-      "medium-high": 73,
+      "medium-high": 76,
       "medium-low": 22
     }
   },
   "domain_summary": [
     {
       "host": "doi.org",
-      "unique_urls": 81,
-      "citations": 115,
+      "unique_urls": 82,
+      "citations": 116,
       "states": {
         "reachable": 39,
-        "access_blocked": 42
+        "access_blocked": 43
       }
     },
     {
       "host": "pmc.ncbi.nlm.nih.gov",
-      "unique_urls": 65,
-      "citations": 99,
+      "unique_urls": 77,
+      "citations": 116,
       "states": {
-        "reachable": 65
+        "reachable": 77
       }
     },
     {
@@ -82,6 +82,14 @@
       "citations": 35,
       "states": {
         "reachable": 26
+      }
+    },
+    {
+      "host": "nap.nationalacademies.org",
+      "unique_urls": 17,
+      "citations": 30,
+      "states": {
+        "reachable": 17
       }
     },
     {
@@ -117,19 +125,11 @@
       }
     },
     {
-      "host": "nap.nationalacademies.org",
-      "unique_urls": 12,
+      "host": "who.int",
+      "unique_urls": 10,
       "citations": 20,
       "states": {
-        "reachable": 12
-      }
-    },
-    {
-      "host": "who.int",
-      "unique_urls": 8,
-      "citations": 17,
-      "states": {
-        "reachable": 8
+        "reachable": 10
       }
     },
     {
@@ -233,8 +233,8 @@
       "unique_urls": 10,
       "citations": 11,
       "states": {
-        "access_blocked": 9,
-        "reachable": 1
+        "access_blocked": 7,
+        "reachable": 3
       }
     },
     {
@@ -374,12 +374,20 @@
       }
     },
     {
+      "host": "cancer.gov",
+      "unique_urls": 6,
+      "citations": 7,
+      "states": {
+        "reachable": 6
+      }
+    },
+    {
       "host": "educationendowmentfoundation.org.uk",
       "unique_urls": 6,
       "citations": 7,
       "states": {
-        "reachable": 2,
-        "access_blocked": 4
+        "reachable": 3,
+        "access_blocked": 3
       }
     },
     {
@@ -416,6 +424,14 @@
       }
     },
     {
+      "host": "ourworldindata.org",
+      "unique_urls": 6,
+      "citations": 7,
+      "states": {
+        "reachable": 6
+      }
+    },
+    {
       "host": "sec.gov",
       "unique_urls": 4,
       "citations": 7,
@@ -429,14 +445,6 @@
       "citations": 6,
       "states": {
         "reachable": 4
-      }
-    },
-    {
-      "host": "cancer.gov",
-      "unique_urls": 5,
-      "citations": 6,
-      "states": {
-        "reachable": 5
       }
     },
     {
@@ -472,19 +480,19 @@
       }
     },
     {
+      "host": "ncbi.nlm.nih.gov",
+      "unique_urls": 3,
+      "citations": 6,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
       "host": "opensource.org",
       "unique_urls": 2,
       "citations": 6,
       "states": {
         "reachable": 2
-      }
-    },
-    {
-      "host": "ourworldindata.org",
-      "unique_urls": 6,
-      "citations": 6,
-      "states": {
-        "reachable": 6
       }
     },
     {
@@ -520,11 +528,28 @@
       }
     },
     {
+      "host": "ahrq.gov",
+      "unique_urls": 2,
+      "citations": 5,
+      "states": {
+        "other_http": 1,
+        "reachable": 1
+      }
+    },
+    {
       "host": "archive.cdc.gov",
       "unique_urls": 4,
       "citations": 5,
       "states": {
         "reachable": 4
+      }
+    },
+    {
+      "host": "bmj.com",
+      "unique_urls": 4,
+      "citations": 5,
+      "states": {
+        "access_blocked": 4
       }
     },
     {
@@ -540,7 +565,15 @@
       "unique_urls": 5,
       "citations": 5,
       "states": {
-        "network_error": 1,
+        "transient": 1,
+        "reachable": 4
+      }
+    },
+    {
+      "host": "commonwealthfund.org",
+      "unique_urls": 4,
+      "citations": 5,
+      "states": {
         "reachable": 4
       }
     },
@@ -762,6 +795,14 @@
       }
     },
     {
+      "host": "apa.org",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "architecturalrecord.com",
       "unique_urls": 1,
       "citations": 3,
@@ -888,6 +929,14 @@
       "citations": 3,
       "states": {
         "reachable": 2
+      }
+    },
+    {
+      "host": "healthquality.va.gov",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "network_error": 2
       }
     },
     {
@@ -1249,8 +1298,7 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "access_blocked": 1,
-        "reachable": 1
+        "access_blocked": 2
       }
     },
     {
@@ -1355,14 +1403,6 @@
       "citations": 2,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "ncbi.nlm.nih.gov",
-      "unique_urls": 2,
-      "citations": 2,
-      "states": {
-        "reachable": 2
       }
     },
     {
@@ -1498,8 +1538,7 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "reachable": 1,
-        "access_blocked": 1
+        "reachable": 2
       }
     },
     {
@@ -1711,6 +1750,14 @@
       }
     },
     {
+      "host": "bjssjournals.onlinelibrary.wiley.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "blog.geolsoc.org.uk",
       "unique_urls": 1,
       "citations": 1,
@@ -1832,6 +1879,14 @@
     },
     {
       "host": "cms.canterburymuseum.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "cochrane.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2763,7 +2818,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "network_error": 1
       }
     },
     {
@@ -2947,7 +3002,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -3155,6 +3210,18 @@
       ]
     },
     {
+      "url": "https://www.ahrq.gov/sites/default/files/wysiwyg/research/findings/evidence-based-reports/services/quality/patientsftyupdate/ptsafetyII-full.pdf",
+      "host": "ahrq.gov",
+      "citation_count": 4,
+      "state": "other_http",
+      "books": [
+        "complications",
+        "better-atul-gawande",
+        "the-checklist-manifesto",
+        "medical-nemesis"
+      ]
+    },
+    {
       "url": "https://www.cambridge.org/core/journals/central-european-history/article/guilt-or-responsibility-the-hundredyear-debate-on-the-origins-of-world-war-i/35B5E58FD27F872B9B2AF3D5DB552661",
       "host": "cambridge.org",
       "citation_count": 4,
@@ -3174,6 +3241,16 @@
         "triumph-of-the-city",
         "walkable-city",
         "toward-an-architecture"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK338596/",
+      "host": "ncbi.nlm.nih.gov",
+      "citation_count": 4,
+      "state": "reachable",
+      "books": [
+        "complications",
+        "how-doctors-think"
       ]
     },
     {
@@ -3365,6 +3442,26 @@
       ]
     },
     {
+      "url": "https://nap.nationalacademies.org/catalog/10027/crossing-the-quality-chasm-a-new-health-system-for-the",
+      "host": "nap.nationalacademies.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "complications",
+        "better-atul-gawande"
+      ]
+    },
+    {
+      "url": "https://nap.nationalacademies.org/catalog/18748/dying-in-america-improving-quality-and-honoring-individual-preferences-near",
+      "host": "nap.nationalacademies.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "being-mortal",
+        "medical-nemesis"
+      ]
+    },
+    {
       "url": "https://nsarchive.gwu.edu/document/17601-clifford-stoll-communications-acm",
       "host": "nsarchive.gwu.edu",
       "citation_count": 3,
@@ -3465,6 +3562,16 @@
       "books": [
         "the-blind-watchmaker",
         "the-tangled-tree"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5093937/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "complications",
+        "how-doctors-think"
       ]
     },
     {
@@ -4291,6 +4398,16 @@
       ]
     },
     {
+      "url": "https://nap.nationalacademies.org/catalog/9728/to-err-is-human-building-a-safer-health-system",
+      "host": "nap.nationalacademies.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "complications",
+        "medical-nemesis"
+      ]
+    },
+    {
       "url": "https://nationalhumanitiescenter.org/tserve/nattrans/ntecoindian/essays/columbian.htm",
       "host": "nationalhumanitiescenter.org",
       "citation_count": 2,
@@ -4408,6 +4525,16 @@
       ]
     },
     {
+      "url": "https://ourworldindata.org/life-expectancy",
+      "host": "ourworldindata.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-great-escape-deaton",
+        "medical-nemesis"
+      ]
+    },
+    {
       "url": "https://pancanal.com/en/american-canal-construction/",
       "host": "pancanal.com",
       "citation_count": 2,
@@ -4519,12 +4646,30 @@
       ]
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11684440/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "medical-nemesis"
+      ]
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC126857/",
       "host": "pmc.ncbi.nlm.nih.gov",
       "citation_count": 2,
       "state": "reachable",
       "books": [
         "the-mosquito"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1955368/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-spirit-catches-you-and-you-fall-down"
       ]
     },
     {
@@ -4571,6 +4716,15 @@
       "books": [
         "on-the-origin-of-species",
         "the-blind-watchmaker"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3963558/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-checklist-manifesto"
       ]
     },
     {
@@ -4904,6 +5058,15 @@
       ]
     },
     {
+      "url": "https://www.apa.org/ptsd-guideline/treatments",
+      "host": "apa.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-body-keeps-the-score"
+      ]
+    },
+    {
       "url": "https://www.archives.gov/milestone-documents/pacific-railway-act",
       "host": "archives.gov",
       "citation_count": 2,
@@ -4938,6 +5101,15 @@
       "state": "reachable",
       "books": [
         "in-the-heart-of-the-sea"
+      ]
+    },
+    {
+      "url": "https://www.bmj.com/content/347/bmj.f5334",
+      "host": "bmj.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "overdiagnosed"
       ]
     },
     {
@@ -5029,6 +5201,15 @@
       "state": "reachable",
       "books": [
         "the-power-broker"
+      ]
+    },
+    {
+      "url": "https://www.commonwealthfund.org/publications/issue-briefs/2023/oct/high-us-health-care-spending-where-is-it-all-going",
+      "host": "commonwealthfund.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "an-american-sickness"
       ]
     },
     {
@@ -5290,6 +5471,15 @@
       "state": "reachable",
       "books": [
         "the-coming-plague"
+      ]
+    },
+    {
+      "url": "https://www.healthquality.va.gov/guidelines/mh/ptsd/index.asp",
+      "host": "healthquality.va.gov",
+      "citation_count": 2,
+      "state": "network_error",
+      "books": [
+        "the-body-keeps-the-score"
       ]
     },
     {
@@ -5888,6 +6078,15 @@
       "state": "reachable",
       "books": [
         "rabid"
+      ]
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/WHO-HIS-SDS-2017.7",
+      "host": "who.int",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "better-atul-gawande"
       ]
     },
     {
@@ -6662,6 +6861,23 @@
       "error": null
     },
     {
+      "url": "https://bjssjournals.onlinelibrary.wiley.com/doi/full/10.1002/bjs.9381",
+      "citations": [
+        {
+          "slug": "the-checklist-manifesto",
+          "claim_index": 2,
+          "source_title": "BJS systematic review and meta-analysis"
+        }
+      ],
+      "host": "bjssjournals.onlinelibrary.wiley.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://bjssjournals.onlinelibrary.wiley.com/doi/full/10.1002/bjs.9381",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://blog.geolsoc.org.uk/2013/03/04/publishing-maps-a-cautionary-tale/",
       "citations": [
         {
@@ -7336,6 +7552,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1001/jama.2021.17318",
+      "citations": [
+        {
+          "slug": "an-american-sickness",
+          "claim_index": 2,
+          "source_title": "Administrative expenses in the U.S. health care system"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://jamanetwork.com/journals/jama/fullarticle/2785479",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1002/9781444338386.wbeah06285.pub2",
       "citations": [
         {
@@ -7801,7 +8034,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=0bdb85be-da05-4568-9870-6b94c6db7ee1",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=c28f7663-e3ef-4faf-a3ac-7889de0b1e74",
       "redirected": true,
       "error": null
     },
@@ -7833,7 +8066,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature06536?error=cookies_not_supported&code=aa399f6e-8935-4e0f-a328-93f7ca9638d6",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=c91f87a2-fcd8-4668-a636-dfe16b8f901b",
       "redirected": true,
       "error": null
     },
@@ -7850,7 +8083,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=4c488e1f-bf62-409c-ade2-9f728d0c582a",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=603e54f9-5af9-4e84-8c1c-b4fce3a6f606",
       "redirected": true,
       "error": null
     },
@@ -7911,7 +8144,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=5943e3d5-d3ea-455f-a148-4a294be2b79b",
+      "final_url": "https://www.nature.com/articles/s41467-023-43426-5",
       "redirected": true,
       "error": null
     },
@@ -7928,7 +8161,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=1b96854d-a7fb-4d7b-b084-37dc75314cce",
+      "final_url": "https://www.nature.com/articles/s41559-019-0907-1",
       "redirected": true,
       "error": null
     },
@@ -7945,7 +8178,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=9ff96bd2-f50e-4bc0-9ed3-ad259f2188d9",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0",
       "redirected": true,
       "error": null
     },
@@ -7979,7 +8212,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41893-019-0293-3",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=ddf0274a-0b21-4da7-812d-787da8749468",
       "redirected": true,
       "error": null
     },
@@ -9060,9 +9293,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/word-and-world-reading-programme",
       "redirected": false,
       "error": null
@@ -10228,7 +10461,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=7c98d024-08fe-43d4-b8bf-dd8f508f9aeb",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=2d7270ba-b83d-412c-8544-82cfddac3200",
       "redirected": true,
       "error": null
     },
@@ -10279,7 +10512,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=d0ba34b6-9933-46bd-a9c1-e57306854f8d",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=cdab18e6-3639-4e34-ba8e-dfeb4a5e658a",
       "redirected": true,
       "error": null
     },
@@ -10301,7 +10534,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=e6e7fd6a-8019-4447-aa3f-fa825390c6ec",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=0491998f-4522-4dad-8936-3c60a589a940",
       "redirected": true,
       "error": null
     },
@@ -10318,7 +10551,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=68628f43-06da-426b-8c1a-ae9b12368f77",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=c37d5fe7-16fb-4007-a9d5-82f1f8b6e44f",
       "redirected": true,
       "error": null
     },
@@ -10345,7 +10578,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=bccdda8e-4378-43a2-967e-9982ecaa9b25",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=5c42423f-b3e6-43a1-8b4f-798dbca1fefb",
       "redirected": true,
       "error": null
     },
@@ -10362,7 +10595,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=3a352a4e-6dac-49ef-a35f-8e873966aa46",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=2950d0b9-beb6-45de-a82a-e9dc80c62d93",
       "redirected": true,
       "error": null
     },
@@ -10591,6 +10824,33 @@
       "error": null
     },
     {
+      "url": "https://nap.nationalacademies.org/catalog/10027/crossing-the-quality-chasm-a-new-health-system-for-the",
+      "citations": [
+        {
+          "slug": "complications",
+          "claim_index": 2,
+          "source_title": "National Academies: Crossing the Quality Chasm"
+        },
+        {
+          "slug": "better-atul-gawande",
+          "claim_index": 2,
+          "source_title": "National Academies: Crossing the Quality Chasm"
+        },
+        {
+          "slug": "better-atul-gawande",
+          "claim_index": 3,
+          "source_title": "National Academies: Crossing the Quality Chasm"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/projects/HMD-HCS-18-P-114/publication/10027",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://nap.nationalacademies.org/catalog/10378/air-emissions-from-animal-feeding-operations-current-knowledge-future-needs",
       "citations": [
         {
@@ -10642,6 +10902,23 @@
       "error": null
     },
     {
+      "url": "https://nap.nationalacademies.org/catalog/12875/unequal-treatment-confronting-racial-and-ethnic-disparities-in-health-care",
+      "citations": [
+        {
+          "slug": "the-spirit-catches-you-and-you-fall-down",
+          "claim_index": 2,
+          "source_title": "National Academies: Unequal Treatment"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/publications/12875",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://nap.nationalacademies.org/catalog/12883/the-impact-of-genetically-engineered-crops-on-farm-sustainability-in-the",
       "citations": [
         {
@@ -10660,6 +10937,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nationalacademies.org/projects/BASC-U-08-02-B/publication/12883",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://nap.nationalacademies.org/catalog/18748/dying-in-america-improving-quality-and-honoring-individual-preferences-near",
+      "citations": [
+        {
+          "slug": "being-mortal",
+          "claim_index": 1,
+          "source_title": "National Academies: Dying in America"
+        },
+        {
+          "slug": "being-mortal",
+          "claim_index": 3,
+          "source_title": "National Academies: Dying in America"
+        },
+        {
+          "slug": "medical-nemesis",
+          "claim_index": 2,
+          "source_title": "National Academies: Dying in America"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/publications/18748",
       "redirected": true,
       "error": null
     },
@@ -10815,6 +11119,45 @@
       "status": 200,
       "final_url": "https://www.nationalacademies.org/publications/6023",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://nap.nationalacademies.org/catalog/9728/to-err-is-human-building-a-safer-health-system",
+      "citations": [
+        {
+          "slug": "complications",
+          "claim_index": 1,
+          "source_title": "National Academies: To Err Is Human"
+        },
+        {
+          "slug": "medical-nemesis",
+          "claim_index": 1,
+          "source_title": "National Academies: To Err Is Human"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/projects/HMD-HCS-18-P-114/publication/9728",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://nap.nationalacademies.org/resource/21794/DiagnosticError_ReportBrief.pdf",
+      "citations": [
+        {
+          "slug": "how-doctors-think",
+          "claim_index": 2,
+          "source_title": "Report brief: Improving Diagnosis in Health Care"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nap.nationalacademies.org/resource/21794/DiagnosticError_ReportBrief.pdf",
+      "redirected": false,
       "error": null
     },
     {
@@ -11748,6 +12091,11 @@
           "slug": "the-great-escape-deaton",
           "claim_index": 1,
           "source_title": "Our World in Data life expectancy history"
+        },
+        {
+          "slug": "medical-nemesis",
+          "claim_index": 3,
+          "source_title": "Our World in Data: life expectancy"
         }
       ],
       "host": "ourworldindata.org",
@@ -12484,6 +12832,40 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/12272290/",
+      "citations": [
+        {
+          "slug": "the-spirit-catches-you-and-you-fall-down",
+          "claim_index": 3,
+          "source_title": "Strategies to increase professional interpreting"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/12272290/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10048935/",
+      "citations": [
+        {
+          "slug": "the-spirit-catches-you-and-you-fall-down",
+          "claim_index": 2,
+          "source_title": "Professional interpreter services review"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10048935/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064553/",
       "citations": [
         {
@@ -12579,6 +12961,28 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11684440/",
+      "citations": [
+        {
+          "slug": "medical-nemesis",
+          "claim_index": 2,
+          "source_title": "Ivan Illich's Medical Nemesis at 50"
+        },
+        {
+          "slug": "medical-nemesis",
+          "claim_index": 3,
+          "source_title": "Ivan Illich's Medical Nemesis at 50"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11684440/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11780604/",
       "citations": [
         {
@@ -12648,6 +13052,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1820430/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1955368/",
+      "citations": [
+        {
+          "slug": "the-spirit-catches-you-and-you-fall-down",
+          "claim_index": 1,
+          "source_title": "Do professional interpreters improve clinical care?"
+        },
+        {
+          "slug": "the-spirit-catches-you-and-you-fall-down",
+          "claim_index": 3,
+          "source_title": "Do professional interpreters improve clinical care?"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1955368/",
       "redirected": false,
       "error": null
     },
@@ -12959,6 +13385,28 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3963558/",
+      "citations": [
+        {
+          "slug": "the-checklist-manifesto",
+          "claim_index": 1,
+          "source_title": "Systematic review of surgical checklist impacts and implementation"
+        },
+        {
+          "slug": "the-checklist-manifesto",
+          "claim_index": 3,
+          "source_title": "Systematic review of surgical checklist impacts and implementation"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3963558/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4165342/",
       "citations": [
         {
@@ -13115,6 +13563,23 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4943979/",
+      "citations": [
+        {
+          "slug": "the-checklist-manifesto",
+          "claim_index": 2,
+          "source_title": "WHO checklist outcomes systematic review"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4943979/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4946313/",
       "citations": [
         {
@@ -13137,6 +13602,23 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5011630/",
+      "citations": [
+        {
+          "slug": "being-mortal",
+          "claim_index": 1,
+          "source_title": "Populations and interventions for palliative and end-of-life care"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5011630/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5072843/",
       "citations": [
         {
@@ -13150,6 +13632,50 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5072843/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5093937/",
+      "citations": [
+        {
+          "slug": "complications",
+          "claim_index": 3,
+          "source_title": "Cognitive biases associated with medical decisions"
+        },
+        {
+          "slug": "how-doctors-think",
+          "claim_index": 1,
+          "source_title": "Cognitive biases associated with medical decisions"
+        },
+        {
+          "slug": "how-doctors-think",
+          "claim_index": 3,
+          "source_title": "Cognitive biases associated with medical decisions"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5093937/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5226373/",
+      "citations": [
+        {
+          "slug": "being-mortal",
+          "claim_index": 2,
+          "source_title": "Association between palliative care and patient and caregiver outcomes"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5226373/",
       "redirected": false,
       "error": null
     },
@@ -13192,6 +13718,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454256/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5496011/",
+      "citations": [
+        {
+          "slug": "being-mortal",
+          "claim_index": 3,
+          "source_title": "Specialist palliative care systematic review"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5496011/",
       "redirected": false,
       "error": null
     },
@@ -13391,6 +13934,23 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6667611/",
+      "citations": [
+        {
+          "slug": "the-spirit-catches-you-and-you-fall-down",
+          "claim_index": 1,
+          "source_title": "Systematic review of language-concordant care"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6667611/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6737987/",
       "citations": [
         {
@@ -13443,6 +14003,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6987456/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7069657/",
+      "citations": [
+        {
+          "slug": "being-mortal",
+          "claim_index": 2,
+          "source_title": "Integrated outpatient palliative care meta-analysis"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7069657/",
       "redirected": false,
       "error": null
     },
@@ -13853,7 +14430,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 203,
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
       "redirected": false,
       "error": null
@@ -14109,7 +14686,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 203,
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/3321721/",
       "redirected": false,
       "error": null
@@ -14799,12 +15376,12 @@
         }
       ],
       "host": "ruj.uj.edu.pl",
-      "state": "reachable",
+      "state": "network_error",
       "method": "GET",
-      "status": 200,
-      "final_url": "https://ruj.uj.edu.pl//handle/item/68230",
-      "redirected": true,
-      "error": null
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://s-media.nyc.gov/agencies/lpc/lp/0098.pdf",
@@ -15687,9 +16264,9 @@
         }
       ],
       "host": "volcano.si.edu",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://volcano.si.edu/volcano.cfm?vn=262000",
       "redirected": false,
       "error": null
@@ -15956,6 +16533,55 @@
       "error": null
     },
     {
+      "url": "https://www.ahrq.gov/patient-safety/reports/safer-care.html",
+      "citations": [
+        {
+          "slug": "complications",
+          "claim_index": 2,
+          "source_title": "AHRQ patient safety practices"
+        }
+      ],
+      "host": "ahrq.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 202,
+      "final_url": "https://www.ahrq.gov/patient-safety/reports/safer-care.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ahrq.gov/sites/default/files/wysiwyg/research/findings/evidence-based-reports/services/quality/patientsftyupdate/ptsafetyII-full.pdf",
+      "citations": [
+        {
+          "slug": "complications",
+          "claim_index": 1,
+          "source_title": "AHRQ Making Health Care Safer II"
+        },
+        {
+          "slug": "better-atul-gawande",
+          "claim_index": 2,
+          "source_title": "AHRQ Making Health Care Safer II"
+        },
+        {
+          "slug": "the-checklist-manifesto",
+          "claim_index": 3,
+          "source_title": "AHRQ Making Health Care Safer II"
+        },
+        {
+          "slug": "medical-nemesis",
+          "claim_index": 1,
+          "source_title": "AHRQ Making Health Care Safer II"
+        }
+      ],
+      "host": "ahrq.gov",
+      "state": "other_http",
+      "method": "GET",
+      "status": 405,
+      "final_url": "https://www.ahrq.gov/sites/default/files/wysiwyg/research/findings/evidence-based-reports/services/quality/patientsftyupdate/ptsafetyII-full.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-devpsych-121318-084815",
       "citations": [
         {
@@ -16016,9 +16642,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011718-012440",
       "redirected": false,
       "error": null
@@ -16050,9 +16676,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-psych-122216-011836",
       "redirected": false,
       "error": null
@@ -16144,6 +16770,45 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.aoml.noaa.gov/ftp/od/library/mid%20atlantic-perez.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.apa.org/ptsd-guideline",
+      "citations": [
+        {
+          "slug": "the-body-keeps-the-score",
+          "claim_index": 1,
+          "source_title": "APA clinical practice guideline for PTSD"
+        }
+      ],
+      "host": "apa.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.apa.org/ptsd-guideline",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.apa.org/ptsd-guideline/treatments",
+      "citations": [
+        {
+          "slug": "the-body-keeps-the-score",
+          "claim_index": 2,
+          "source_title": "APA treatments for PTSD"
+        },
+        {
+          "slug": "the-body-keeps-the-score",
+          "claim_index": 3,
+          "source_title": "APA treatments for PTSD"
+        }
+      ],
+      "host": "apa.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.apa.org/ptsd-guideline/treatments",
       "redirected": false,
       "error": null
     },
@@ -16371,6 +17036,79 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.bls.gov/ooh/food-preparation-and-serving/home.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.bmj.com/content/339/bmj.b2587",
+      "citations": [
+        {
+          "slug": "overdiagnosed",
+          "claim_index": 1,
+          "source_title": "BMJ review of overdiagnosis in mammography programs"
+        }
+      ],
+      "host": "bmj.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.bmj.com/content/339/bmj.b2587",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.bmj.com/content/347/bmj.f5334",
+      "citations": [
+        {
+          "slug": "overdiagnosed",
+          "claim_index": 2,
+          "source_title": "BMJ quantification of harms in cancer screening trials"
+        },
+        {
+          "slug": "overdiagnosed",
+          "claim_index": 3,
+          "source_title": "BMJ quantification of harms in cancer screening trials"
+        }
+      ],
+      "host": "bmj.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.bmj.com/content/347/bmj.f5334",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.bmj.com/content/350/bmj.g7773",
+      "citations": [
+        {
+          "slug": "overdiagnosed",
+          "claim_index": 1,
+          "source_title": "BMJ review of methods for quantifying overdiagnosis"
+        }
+      ],
+      "host": "bmj.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.bmj.com/content/350/bmj.g7773",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.bmj.com/content/393/bmj-2026-629407",
+      "citations": [
+        {
+          "slug": "overdiagnosed",
+          "claim_index": 3,
+          "source_title": "UK National Screening Committee on surrogate outcomes"
+        }
+      ],
+      "host": "bmj.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.bmj.com/content/393/bmj-2026-629407",
       "redirected": false,
       "error": null
     },
@@ -16712,7 +17450,7 @@
       ],
       "host": "cambridge.org",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/fates-of-romes/582207A45A234E88E0B7159CD94C27B6",
       "redirected": false,
@@ -16949,6 +17687,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C8EE2E46724CCBF510DF58788863215E/S006647741700003Xa.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cancer.gov/about-cancer/screening",
+      "citations": [
+        {
+          "slug": "overdiagnosed",
+          "claim_index": 2,
+          "source_title": "National Cancer Institute: cancer screening overview"
+        }
+      ],
+      "host": "cancer.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cancer.gov/about-cancer/screening",
       "redirected": false,
       "error": null
     },
@@ -17388,12 +18143,12 @@
         }
       ],
       "host": "cia.gov",
-      "state": "network_error",
+      "state": "transient",
       "method": "GET",
       "status": null,
       "final_url": null,
       "redirected": false,
-      "error": "TypeError: fetch failed"
+      "error": "AbortError: This operation was aborted"
     },
     {
       "url": "https://www.cia.gov/resources/csi/books-monographs/the-cia-and-the-u-2-program-1954-1974/",
@@ -17486,6 +18241,23 @@
       "error": null
     },
     {
+      "url": "https://www.cochrane.org/evidence/CD005186_methods-improve-healthcare-worker-hand-hygiene-decrease-infection-patient-care",
+      "citations": [
+        {
+          "slug": "better-atul-gawande",
+          "claim_index": 1,
+          "source_title": "Cochrane review of hand hygiene improvement methods"
+        }
+      ],
+      "host": "cochrane.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cochrane.org/evidence/CD005186_methods-improve-healthcare-worker-hand-hygiene-decrease-infection-patient-care",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011737.pub3/full",
       "citations": [
         {
@@ -17500,6 +18272,79 @@
       "status": 412,
       "final_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011737.pub3/full?cookiesEnabled",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.commonwealthfund.org/publications/fund-reports/2024/sep/mirror-mirror-2024",
+      "citations": [
+        {
+          "slug": "an-american-sickness",
+          "claim_index": 3,
+          "source_title": "Commonwealth Fund international health-system comparison"
+        }
+      ],
+      "host": "commonwealthfund.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.commonwealthfund.org/publications/fund-reports/2024/sep/mirror-mirror-2024",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.commonwealthfund.org/publications/issue-briefs/2023/oct/high-us-health-care-spending-where-is-it-all-going",
+      "citations": [
+        {
+          "slug": "an-american-sickness",
+          "claim_index": 1,
+          "source_title": "High U.S. health care spending: where is it going?"
+        },
+        {
+          "slug": "an-american-sickness",
+          "claim_index": 3,
+          "source_title": "High U.S. health care spending: where is it going?"
+        }
+      ],
+      "host": "commonwealthfund.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.commonwealthfund.org/publications/issue-briefs/2023/oct/high-us-health-care-spending-where-is-it-all-going",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.commonwealthfund.org/publications/journal-article/2014/sep/comparison-hospital-administrative-costs-eight-nations-us",
+      "citations": [
+        {
+          "slug": "an-american-sickness",
+          "claim_index": 2,
+          "source_title": "Comparison of hospital administrative costs in eight nations"
+        }
+      ],
+      "host": "commonwealthfund.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.commonwealthfund.org/publications/journal-article/2014/sep/comparison-hospital-administrative-costs-eight-nations-us",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.commonwealthfund.org/publications/journal-article/2018/mar/health-care-spending-united-states-and-other-high-income",
+      "citations": [
+        {
+          "slug": "an-american-sickness",
+          "claim_index": 1,
+          "source_title": "Health care spending in the U.S. and other high-income countries"
+        }
+      ],
+      "host": "commonwealthfund.org",
+      "state": "reachable",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.commonwealthfund.org/publications/journal-article/2018/mar/health-care-spending-united-states-and-other-high-income",
+      "redirected": false,
       "error": null
     },
     {
@@ -19240,6 +20085,45 @@
       "error": null
     },
     {
+      "url": "https://www.healthquality.va.gov/guidelines/mh/ptsd/index.asp",
+      "citations": [
+        {
+          "slug": "the-body-keeps-the-score",
+          "claim_index": 1,
+          "source_title": "VA/DoD PTSD clinical practice guideline"
+        },
+        {
+          "slug": "the-body-keeps-the-score",
+          "claim_index": 2,
+          "source_title": "VA/DoD PTSD clinical practice guideline"
+        }
+      ],
+      "host": "healthquality.va.gov",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/MH/ptsd/VA-DoD-CPG-PTSD-Full-CPG-Edited-111624-V5-81825.pdf",
+      "citations": [
+        {
+          "slug": "the-body-keeps-the-score",
+          "claim_index": 3,
+          "source_title": "VA/DoD full PTSD guideline"
+        }
+      ],
+      "host": "healthquality.va.gov",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
       "url": "https://www.heritage.nf.ca/articles/economy/fishery.php",
       "citations": [
         {
@@ -19317,9 +20201,9 @@
         }
       ],
       "host": "historians.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.historians.org/person/kenneth-pomeranz/",
       "redirected": false,
       "error": null
@@ -21109,8 +21993,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-024-00544-4",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-024-00544-4&code=559d71ec-9cac-4c43-a181-c292fb0549a4",
+      "redirected": true,
       "error": null
     },
     {
@@ -21131,7 +22015,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=3814d586-b684-4f60-baff-e666a6b7db77",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=9f8367c1-aba4-4956-a283-c4bda494f9bc",
       "redirected": true,
       "error": null
     },
@@ -21158,7 +22042,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=3d2b2349-c09d-4d8b-9773-0b11819c27db",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=21beaa19-eaf2-4827-a519-9f0d9bd34475",
       "redirected": true,
       "error": null
     },
@@ -21185,7 +22069,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=e6c877cd-a258-4fd5-beba-1320383f0d5b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=8b8cd089-1a1d-4408-b08a-5234acfdb224",
       "redirected": true,
       "error": null
     },
@@ -21207,7 +22091,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=c608375c-8e51-459e-b97c-5aeae6d2038b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=7182d13d-cef6-4b57-ad2f-457bcff9e5ef",
       "redirected": true,
       "error": null
     },
@@ -21224,8 +22108,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4",
+      "redirected": true,
       "error": null
     },
     {
@@ -21263,7 +22147,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=07055ed8-ddd7-45fd-9d16-ff358b38378b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=e58e08d7-3be6-4d56-823d-244cf1c81a47",
       "redirected": true,
       "error": null
     },
@@ -21280,7 +22164,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=a047b8bc-de10-4787-ab40-000875b0dab6",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=428cd5dd-5b22-4e5b-a681-80dd45f25e4d",
       "redirected": true,
       "error": null
     },
@@ -21314,7 +22198,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=39930ba5-4310-4585-831e-dc2267ee47e7",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=ec6984c4-26a6-4538-a7a2-8b22976fb08f",
       "redirected": true,
       "error": null
     },
@@ -21336,8 +22220,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41586-022-04800-3",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3",
+      "redirected": true,
       "error": null
     },
     {
@@ -21471,6 +22355,38 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.ncbi.nlm.nih.gov/books/NBK234373/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK338596/",
+      "citations": [
+        {
+          "slug": "complications",
+          "claim_index": 3,
+          "source_title": "National Academies: Improving Diagnosis in Health Care"
+        },
+        {
+          "slug": "how-doctors-think",
+          "claim_index": 1,
+          "source_title": "National Academies: Improving Diagnosis in Health Care"
+        },
+        {
+          "slug": "how-doctors-think",
+          "claim_index": 2,
+          "source_title": "National Academies: Improving Diagnosis in Health Care"
+        },
+        {
+          "slug": "how-doctors-think",
+          "claim_index": 3,
+          "source_title": "National Academies: Improving Diagnosis in Health Care"
+        }
+      ],
+      "host": "ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ncbi.nlm.nih.gov/books/NBK338596/",
       "redirected": false,
       "error": null
     },
@@ -22631,8 +23547,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/England-and-Europe-in-1420/",
-      "redirected": false,
+      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/england-and-europe-in-1420/",
+      "redirected": true,
       "error": null
     },
     {
@@ -23595,9 +24511,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.semi.org/en/about-semi-membership/about-semi",
       "redirected": false,
       "error": null
@@ -24530,6 +25446,28 @@
       "error": null
     },
     {
+      "url": "https://www.who.int/publications/i/item/WHO-HIS-SDS-2017.7",
+      "citations": [
+        {
+          "slug": "better-atul-gawande",
+          "claim_index": 1,
+          "source_title": "WHO evidence on hand hygiene"
+        },
+        {
+          "slug": "better-atul-gawande",
+          "claim_index": 3,
+          "source_title": "WHO evidence on hand hygiene"
+        }
+      ],
+      "host": "who.int",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.who.int/publications/i/item/WHO-HIS-SDS-2017.7",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.who.int/publications/i/item/WHO-NUT-94.4",
       "citations": [
         {
@@ -24577,6 +25515,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.who.int/teams/control-of-neglected-tropical-diseases/rabies/vaccinations-and-immunization",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery/tool-and-resources",
+      "citations": [
+        {
+          "slug": "the-checklist-manifesto",
+          "claim_index": 1,
+          "source_title": "WHO surgical safety checklist"
+        }
+      ],
+      "host": "who.int",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery/tool-and-resources",
       "redirected": false,
       "error": null
     },
@@ -24868,8 +25823,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/1/05-0979_article",
-      "redirected": true,
+      "final_url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article",
+      "redirected": false,
       "error": null
     },
     {
@@ -24956,8 +25911,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/24/5/17-1609_article",
-      "redirected": true,
+      "final_url": "https://wwwnc.cdc.gov/eid/article/24/5/17-1609_article",
+      "redirected": false,
       "error": null
     },
     {

@@ -2500,6 +2500,109 @@
       "source_authors": [
         "David Wootton"
       ]
+    },
+    {
+      "slug": "being-mortal",
+      "match_state": "exact_title_author",
+      "cover_id": 8477368,
+      "cover_url": "https://covers.openlibrary.org/b/id/8477368-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17079567W",
+      "source_title": "Being Mortal",
+      "source_authors": [
+        "Atul Gawande"
+      ]
+    },
+    {
+      "slug": "complications",
+      "match_state": "exact_title_author",
+      "cover_id": 5277801,
+      "cover_url": "https://covers.openlibrary.org/b/id/5277801-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL25651868W",
+      "source_title": "Complications",
+      "source_authors": [
+        "Atul Gawande"
+      ]
+    },
+    {
+      "slug": "better-atul-gawande",
+      "match_state": "exact_title_author",
+      "cover_id": 581578,
+      "cover_url": "https://covers.openlibrary.org/b/id/581578-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL5976341W",
+      "source_title": "Better",
+      "source_authors": [
+        "Atul Gawande"
+      ]
+    },
+    {
+      "slug": "how-doctors-think",
+      "match_state": "exact_title_author",
+      "cover_id": 395015,
+      "cover_url": "https://covers.openlibrary.org/b/id/395015-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL7976337W",
+      "source_title": "How Doctors Think",
+      "source_authors": [
+        "Jerome Groopman"
+      ]
+    },
+    {
+      "slug": "overdiagnosed",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-checklist-manifesto",
+      "match_state": "exact_title_author",
+      "cover_id": 8231866,
+      "cover_url": "https://covers.openlibrary.org/b/id/8231866-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15436462W",
+      "source_title": "The Checklist Manifesto",
+      "source_authors": [
+        "Atul Gawande"
+      ]
+    },
+    {
+      "slug": "an-american-sickness",
+      "match_state": "exact_title_author",
+      "cover_id": 8846266,
+      "cover_url": "https://covers.openlibrary.org/b/id/8846266-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20050977W",
+      "source_title": "An American sickness",
+      "source_authors": [
+        "Elisabeth Rosenthal"
+      ]
+    },
+    {
+      "slug": "medical-nemesis",
+      "match_state": "exact_title_author",
+      "cover_id": 3184176,
+      "cover_url": "https://covers.openlibrary.org/b/id/3184176-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2848845W",
+      "source_title": "Medical Nemesis",
+      "source_authors": [
+        "Ivan Illich"
+      ]
+    },
+    {
+      "slug": "the-spirit-catches-you-and-you-fall-down",
+      "match_state": "exact_title_author",
+      "cover_id": 10091198,
+      "cover_url": "https://covers.openlibrary.org/b/id/10091198-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1889678W",
+      "source_title": "The Spirit Catches You and You Fall Down",
+      "source_authors": [
+        "Anne Fadiman"
+      ]
+    },
+    {
+      "slug": "the-body-keeps-the-score",
+      "match_state": "exact_title_author",
+      "cover_id": 8315367,
+      "cover_url": "https://covers.openlibrary.org/b/id/8315367-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL18147687W",
+      "source_title": "The Body Keeps the Score",
+      "source_authors": [
+        "Bessel van der Kolk"
+      ]
     }
   ]
 }

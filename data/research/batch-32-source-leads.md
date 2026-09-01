@@ -1,6 +1,6 @@
 # Rapid book batch 32 — medicine, public health, and medical evidence
 
-Review state: selection and source map in progress; no scores yet.
+Review state: publication candidate complete; all ten books have exactly three scored claims, six citations, and a reproducible aggregate score.
 
 ## Selected books
 
@@ -38,3 +38,11 @@ All ten passed normalized-title uniqueness against the 240-book catalog on 2026-
 - Do not publish trauma mechanisms or treatments as established when major guidelines judge evidence insufficient or condition-specific.
 - Keep cultural humility distinct from stereotyping patients by group identity.
 - Score exactly three central claims per book using the public four-state credit map and at least two independently useful sources per claim.
+
+## Publication evidence
+
+- Catalog after this batch: 250 books, 750 scored claims, and 1,500 citations.
+- Source audit: 1,025 unique URLs and zero confirmed broken links.
+- Covers: nine of ten new titles matched Open Library by normalized title and author, raising catalog coverage to 216 of 250; one retains an explicit placeholder.
+- Score range in this set: 67–92. Every score is `round(mean(claim credits) × 100)` using the published four-state credit map.
+- Main caution: detection, surrogate change, clinical benefit, mortality, quality of life, and treatment harm remain separate outcomes throughout the reviews.
