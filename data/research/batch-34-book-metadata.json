@@ -1,0 +1,88 @@
+{
+  "schema_version": "ai-claims.research-batch-metadata/0.1.0",
+  "batch": 34,
+  "status": "research_draft",
+  "catalog_count_before_batch": 260,
+  "books": [
+    {
+      "slug": "the-federalist-papers",
+      "entity_key": "web:book/the-federalist-papers",
+      "title": "The Federalist Papers",
+      "subtitle": "",
+      "author": "Alexander Hamilton, James Madison, and John Jay",
+      "year": 1788
+    },
+    {
+      "slug": "democracy-in-america",
+      "entity_key": "web:book/democracy-in-america",
+      "title": "Democracy in America",
+      "subtitle": "",
+      "author": "Alexis de Tocqueville",
+      "year": 1835
+    },
+    {
+      "slug": "the-road-to-serfdom",
+      "entity_key": "web:book/the-road-to-serfdom",
+      "title": "The Road to Serfdom",
+      "subtitle": "",
+      "author": "F. A. Hayek",
+      "year": 1944
+    },
+    {
+      "slug": "capitalism-and-freedom",
+      "entity_key": "web:book/capitalism-and-freedom",
+      "title": "Capitalism and Freedom",
+      "subtitle": "",
+      "author": "Milton Friedman",
+      "year": 1962
+    },
+    {
+      "slug": "the-open-society-and-its-enemies",
+      "entity_key": "web:book/the-open-society-and-its-enemies",
+      "title": "The Open Society and Its Enemies",
+      "subtitle": "",
+      "author": "Karl Popper",
+      "year": 1945
+    },
+    {
+      "slug": "the-clash-of-civilizations-and-the-remaking-of-world-order",
+      "entity_key": "web:book/the-clash-of-civilizations-and-the-remaking-of-world-order",
+      "title": "The Clash of Civilizations and the Remaking of World Order",
+      "subtitle": "",
+      "author": "Samuel P. Huntington",
+      "year": 1996
+    },
+    {
+      "slug": "how-democracies-die",
+      "entity_key": "web:book/how-democracies-die",
+      "title": "How Democracies Die",
+      "subtitle": "",
+      "author": "Steven Levitsky and Daniel Ziblatt",
+      "year": 2018
+    },
+    {
+      "slug": "political-order-and-political-decay",
+      "entity_key": "web:book/political-order-and-political-decay",
+      "title": "Political Order and Political Decay",
+      "subtitle": "From the Industrial Revolution to the Globalization of Democracy",
+      "author": "Francis Fukuyama",
+      "year": 2014
+    },
+    {
+      "slug": "the-dictators-handbook",
+      "entity_key": "web:book/the-dictators-handbook",
+      "title": "The Dictator's Handbook",
+      "subtitle": "Why Bad Behavior Is Almost Always Good Politics",
+      "author": "Bruce Bueno de Mesquita and Alastair Smith",
+      "year": 2011
+    },
+    {
+      "slug": "the-narrow-corridor",
+      "entity_key": "web:book/the-narrow-corridor",
+      "title": "The Narrow Corridor",
+      "subtitle": "States, Societies, and the Fate of Liberty",
+      "author": "Daron Acemoglu and James A. Robinson",
+      "year": 2019
+    }
+  ]
+}
