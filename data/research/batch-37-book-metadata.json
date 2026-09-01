@@ -1,0 +1,16 @@
+{
+  "schema_version":"ai-claims.research-book-metadata/0.1.0",
+  "status":"research_draft",
+  "books":[
+    {"slug":"influence","title":"Influence","subtitle":"The Psychology of Persuasion","author":"Robert B. Cialdini","year":1983},
+    {"slug":"mistakes-were-made-but-not-by-me","title":"Mistakes Were Made (But Not by Me)","subtitle":"Why We Justify Foolish Beliefs, Bad Decisions, and Hurtful Acts","author":"Carol Tavris and Elliot Aronson","year":2007},
+    {"slug":"moral-tribes","title":"Moral Tribes","subtitle":"Emotion, Reason, and the Gap Between Us and Them","author":"Joshua Greene","year":2013},
+    {"slug":"the-undoing-project","title":"The Undoing Project","subtitle":"A Friendship That Changed Our Minds","author":"Michael Lewis","year":2016},
+    {"slug":"the-lucifer-effect","title":"The Lucifer Effect","subtitle":"Understanding How Good People Turn Evil","author":"Philip G. Zimbardo","year":2007},
+    {"slug":"the-person-and-the-situation","title":"The Person and the Situation","subtitle":"Perspectives of Social Psychology","author":"Lee Ross and Richard E. Nisbett","year":1991},
+    {"slug":"stumbling-on-happiness","title":"Stumbling on Happiness","subtitle":"","author":"Daniel Gilbert","year":2006},
+    {"slug":"the-happiness-hypothesis","title":"The Happiness Hypothesis","subtitle":"Finding Modern Truth in Ancient Wisdom","author":"Jonathan Haidt","year":2005},
+    {"slug":"the-enigma-of-reason","title":"The Enigma of Reason","subtitle":"A New Theory of Human Understanding","author":"Hugo Mercier and Dan Sperber","year":2017},
+    {"slug":"the-knowledge-illusion","title":"The Knowledge Illusion","subtitle":"Why We Never Think Alone","author":"Steven Sloman and Philip Fernbach","year":2017}
+  ]
+}

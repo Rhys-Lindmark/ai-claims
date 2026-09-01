@@ -1,0 +1,19 @@
+{
+  "schema_version":"ai-claims.research-cover-leads/0.1.0",
+  "provider":"Open Library",
+  "status":"research_draft",
+  "match_policy":"Exact normalized title and at least one compatible expected author; leads remain unpublished until rechecked against the public record.",
+  "summary":{"books":10,"exact_title_author_leads":10,"unresolved":0},
+  "covers":[
+    {"slug":"influence","match_state":"exact_title_author_lead","cover_id":431011,"source_url":"https://openlibrary.org/works/OL3902892W"},
+    {"slug":"mistakes-were-made-but-not-by-me","match_state":"exact_title_author_lead","cover_id":1119860,"source_url":"https://openlibrary.org/works/OL15014628W"},
+    {"slug":"moral-tribes","match_state":"exact_title_author_lead","cover_id":13050431,"source_url":"https://openlibrary.org/works/OL21519988W"},
+    {"slug":"the-undoing-project","match_state":"exact_title_author_lead","cover_id":9595637,"source_url":"https://openlibrary.org/works/OL19669285W"},
+    {"slug":"the-lucifer-effect","match_state":"exact_title_author_lead","cover_id":1538373,"source_url":"https://openlibrary.org/works/OL8024260W"},
+    {"slug":"the-person-and-the-situation","match_state":"exact_title_author_lead","cover_id":4026054,"source_url":"https://openlibrary.org/works/OL4450683W"},
+    {"slug":"stumbling-on-happiness","match_state":"exact_title_author_lead","cover_id":6803663,"source_url":"https://openlibrary.org/works/OL15840192W"},
+    {"slug":"the-happiness-hypothesis","match_state":"exact_title_author_lead","cover_id":298622,"source_url":"https://openlibrary.org/works/OL5829273W"},
+    {"slug":"the-enigma-of-reason","match_state":"exact_title_author_lead","cover_id":8802420,"source_url":"https://openlibrary.org/works/OL20056917W"},
+    {"slug":"the-knowledge-illusion","match_state":"exact_title_author_lead","cover_id":8826867,"source_url":"https://openlibrary.org/works/OL20179405W"}
+  ]
+}
