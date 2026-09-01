@@ -1,0 +1,12 @@
+{"schema_version":"ai-claims.research-cover-leads/0.1.0","provider":"Open Library","status":"research_draft","match_policy":"Exact normalized title and at least one compatible expected author; unresolved records keep the local placeholder.","summary":{"books":10,"exact_title_author_leads":9,"unresolved":1},"covers":[
+  {"slug":"thinking-in-bets","match_state":"exact_title_author_lead","cover_id":8792782,"source_url":"https://openlibrary.org/works/OL19736287W","source_title":"Thinking in Bets","source_authors":["Annie Duke"]},
+  {"slug":"superforecasting","match_state":"exact_title_author_lead","cover_id":9142114,"source_url":"https://openlibrary.org/works/OL18233878W","source_title":"Superforecasting","source_authors":["Philip E. Tetlock","Dan Gardner"]},
+  {"slug":"noise","match_state":"exact_title_author_lead","cover_id":10981966,"source_url":"https://openlibrary.org/works/OL17962180W","source_title":"Noise","source_authors":["Daniel Kahneman","Olivier Sibony","Cass R. Sunstein"]},
+  {"slug":"the-signal-and-the-noise","match_state":"exact_title_author_lead","cover_id":7256893,"source_url":"https://openlibrary.org/works/OL16700318W","source_title":"The Signal and the Noise","source_authors":["Nate Silver"]},
+  {"slug":"the-black-swan","match_state":"exact_title_author_lead","cover_id":5721840,"source_url":"https://openlibrary.org/works/OL3295030W","source_title":"The Black Swan","source_authors":["Nassim Nicholas Taleb"]},
+  {"slug":"fooled-by-randomness","match_state":"exact_title_author_lead","cover_id":855791,"source_url":"https://openlibrary.org/works/OL3295029W","source_title":"Fooled by randomness","source_authors":["Nassim Nicholas Taleb"]},
+  {"slug":"the-paradox-of-choice","match_state":"exact_title_author_lead","cover_id":20382,"source_url":"https://openlibrary.org/works/OL272375W","source_title":"The Paradox of Choice","source_authors":["Barry Schwartz"]},
+  {"slug":"scarcity","match_state":"exact_title_author_lead","cover_id":9896983,"source_url":"https://openlibrary.org/works/OL19969724W","source_title":"Scarcity","source_authors":["Sendhil Mullainathan"]},
+  {"slug":"behave","match_state":"exact_title_author_lead","cover_id":8814831,"source_url":"https://openlibrary.org/works/OL17835813W","source_title":"Behave","source_authors":["Robert M. Sapolsky"]},
+  {"slug":"the-scout-mindset","match_state":"unresolved"}
+]}

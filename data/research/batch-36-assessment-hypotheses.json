@@ -1,0 +1,12 @@
+{"schema_version":"ai-claims.research-assessment-hypotheses/0.1.0","batch":36,"status":"research_draft_not_for_publication","credit_scale":{"supported":1,"mostly supported":0.75,"mixed":0.5,"weak":0.25},"books":[
+  {"slug":"thinking-in-bets","claims":[{"position":1,"hypothesis":"supported","credit":1},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mixed","credit":0.5}]},
+  {"slug":"superforecasting","claims":[{"position":1,"hypothesis":"supported","credit":1},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mixed","credit":0.5}]},
+  {"slug":"noise","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mixed","credit":0.5}]},
+  {"slug":"the-signal-and-the-noise","claims":[{"position":1,"hypothesis":"supported","credit":1},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mixed","credit":0.5}]},
+  {"slug":"the-black-swan","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mixed","credit":0.5}]},
+  {"slug":"fooled-by-randomness","claims":[{"position":1,"hypothesis":"supported","credit":1},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mixed","credit":0.5}]},
+  {"slug":"the-paradox-of-choice","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mixed","credit":0.5},{"position":3,"hypothesis":"weak","credit":0.25}]},
+  {"slug":"scarcity","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mixed","credit":0.5},{"position":3,"hypothesis":"weak","credit":0.25}]},
+  {"slug":"behave","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"weak","credit":0.25}]},
+  {"slug":"the-scout-mindset","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mixed","credit":0.5}]}
+]}

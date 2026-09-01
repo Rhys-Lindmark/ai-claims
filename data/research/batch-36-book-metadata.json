@@ -1,0 +1,12 @@
+{"schema_version":"ai-claims.research-batch-metadata/0.1.0","batch":36,"status":"research_draft","catalog_count_before_batch":280,"books":[
+  {"slug":"thinking-in-bets","entity_key":"web:book/thinking-in-bets","title":"Thinking in Bets","subtitle":"Making Smarter Decisions When You Don't Have All the Facts","author":"Annie Duke","year":2018},
+  {"slug":"superforecasting","entity_key":"web:book/superforecasting","title":"Superforecasting","subtitle":"The Art and Science of Prediction","author":"Philip E. Tetlock and Dan Gardner","year":2015},
+  {"slug":"noise","entity_key":"web:book/noise","title":"Noise","subtitle":"A Flaw in Human Judgment","author":"Daniel Kahneman, Olivier Sibony, and Cass R. Sunstein","year":2021},
+  {"slug":"the-signal-and-the-noise","entity_key":"web:book/the-signal-and-the-noise","title":"The Signal and the Noise","subtitle":"Why So Many Predictions Fail—but Some Don't","author":"Nate Silver","year":2012},
+  {"slug":"the-black-swan","entity_key":"web:book/the-black-swan","title":"The Black Swan","subtitle":"The Impact of the Highly Improbable","author":"Nassim Nicholas Taleb","year":2007},
+  {"slug":"fooled-by-randomness","entity_key":"web:book/fooled-by-randomness","title":"Fooled by Randomness","subtitle":"The Hidden Role of Chance in Life and in the Markets","author":"Nassim Nicholas Taleb","year":2001},
+  {"slug":"the-paradox-of-choice","entity_key":"web:book/the-paradox-of-choice","title":"The Paradox of Choice","subtitle":"Why More Is Less","author":"Barry Schwartz","year":2004},
+  {"slug":"scarcity","entity_key":"web:book/scarcity","title":"Scarcity","subtitle":"Why Having Too Little Means So Much","author":"Sendhil Mullainathan and Eldar Shafir","year":2013},
+  {"slug":"behave","entity_key":"web:book/behave","title":"Behave","subtitle":"The Biology of Humans at Our Best and Worst","author":"Robert M. Sapolsky","year":2017},
+  {"slug":"the-scout-mindset","entity_key":"web:book/the-scout-mindset","title":"The Scout Mindset","subtitle":"Why Some People See Things Clearly and Others Don't","author":"Julia Galef","year":2021}
+]}
