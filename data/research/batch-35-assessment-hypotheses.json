@@ -1,0 +1,18 @@
+{
+  "schema_version": "ai-claims.research-assessment-hypotheses/0.1.0",
+  "batch": 35,
+  "status": "research_draft_not_for_publication",
+  "credit_scale": {"supported":1,"mostly supported":0.75,"mixed":0.5,"weak":0.25},
+  "books": [
+    {"slug":"free-to-choose","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mixed","credit":0.5},{"position":3,"hypothesis":"mixed","credit":0.5}]},
+    {"slug":"why-liberalism-failed","claims":[{"position":1,"hypothesis":"mixed","credit":0.5},{"position":2,"hypothesis":"mixed","credit":0.5},{"position":3,"hypothesis":"weak","credit":0.25}]},
+    {"slug":"the-spirit-level","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mixed","credit":0.5},{"position":3,"hypothesis":"weak","credit":0.25}]},
+    {"slug":"the-entrepreneurial-state","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mixed","credit":0.5}]},
+    {"slug":"the-great-leveler","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mixed","credit":0.5}]},
+    {"slug":"the-rise-and-decline-of-nations","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mixed","credit":0.5},{"position":3,"hypothesis":"weak","credit":0.25}]},
+    {"slug":"the-logic-of-collective-action","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mixed","credit":0.5},{"position":3,"hypothesis":"mostly supported","credit":0.75}]},
+    {"slug":"capitalism-socialism-and-democracy","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"weak","credit":0.25}]},
+    {"slug":"development-as-freedom","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mostly supported","credit":0.75}]},
+    {"slug":"the-price-of-inequality","claims":[{"position":1,"hypothesis":"mostly supported","credit":0.75},{"position":2,"hypothesis":"mostly supported","credit":0.75},{"position":3,"hypothesis":"mostly supported","credit":0.75}]}
+  ]
+}

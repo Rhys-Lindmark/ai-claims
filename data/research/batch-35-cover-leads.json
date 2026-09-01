@@ -1,0 +1,19 @@
+{
+  "schema_version": "ai-claims.research-cover-leads/0.1.0",
+  "provider": "Open Library",
+  "status": "research_draft",
+  "match_policy": "Exact normalized title and at least one compatible expected author; rerun the production enrichment gate after public records are generated.",
+  "summary": {"books":10,"exact_title_author_leads":10,"unresolved":0},
+  "covers": [
+    {"slug":"free-to-choose","match_state":"exact_title_author_lead","cover_id":4393564,"source_url":"https://openlibrary.org/works/OL2747779W","source_title":"Free to choose","source_authors":["Milton Friedman","Rose D. Friedman"]},
+    {"slug":"why-liberalism-failed","match_state":"exact_title_author_lead","cover_id":8128243,"source_url":"https://openlibrary.org/works/OL17834451W","source_title":"Why Liberalism Failed","source_authors":["Patrick J. Deneen"]},
+    {"slug":"the-spirit-level","match_state":"exact_title_author_lead","cover_id":10070253,"source_url":"https://openlibrary.org/works/OL18810403W","source_title":"The spirit level","source_authors":["Richard G. Wilkinson","Kate Pickett"]},
+    {"slug":"the-entrepreneurial-state","match_state":"exact_title_author_lead","cover_id":7265270,"source_url":"https://openlibrary.org/works/OL16808725W","source_title":"THE ENTREPRENEURIAL STATE","source_authors":["Mariana Mazzucato"]},
+    {"slug":"the-great-leveler","match_state":"exact_title_author_lead","cover_id":8835555,"source_url":"https://openlibrary.org/works/OL20186862W","source_title":"The Great Leveler","source_authors":["Walter Scheidel"]},
+    {"slug":"the-rise-and-decline-of-nations","match_state":"exact_title_author_lead","cover_id":159427,"source_url":"https://openlibrary.org/works/OL108559W","source_title":"The Rise and Decline of Nations","source_authors":["Mancur Olson"]},
+    {"slug":"the-logic-of-collective-action","match_state":"exact_title_author_lead","cover_id":4453802,"source_url":"https://openlibrary.org/works/OL108561W","source_title":"The logic of collective action","source_authors":["Mancur Olson"]},
+    {"slug":"capitalism-socialism-and-democracy","match_state":"exact_title_author_lead","cover_id":7148115,"source_url":"https://openlibrary.org/works/OL1295326W","source_title":"Capitalism, Socialism and Democracy","source_authors":["Joseph Alois Schumpeter"]},
+    {"slug":"development-as-freedom","match_state":"exact_title_author_lead","cover_id":120233,"source_url":"https://openlibrary.org/works/OL116534W","source_title":"Development as Freedom","source_authors":["Amartya Sen"]},
+    {"slug":"the-price-of-inequality","match_state":"exact_title_author_lead","cover_id":9658674,"source_url":"https://openlibrary.org/works/OL16618086W","source_title":"The price of inequality","source_authors":["Joseph E. Stiglitz"]}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "ai-claims.research-batch-metadata/0.1.0",
+  "batch": 35,
+  "status": "research_draft",
+  "catalog_count_before_batch": 270,
+  "books": [
+    {"slug":"free-to-choose","entity_key":"web:book/free-to-choose","title":"Free to Choose","subtitle":"A Personal Statement","author":"Milton Friedman and Rose D. Friedman","year":1980},
+    {"slug":"why-liberalism-failed","entity_key":"web:book/why-liberalism-failed","title":"Why Liberalism Failed","subtitle":"","author":"Patrick J. Deneen","year":2018},
+    {"slug":"the-spirit-level","entity_key":"web:book/the-spirit-level","title":"The Spirit Level","subtitle":"Why Greater Equality Makes Societies Stronger","author":"Richard Wilkinson and Kate Pickett","year":2009},
+    {"slug":"the-entrepreneurial-state","entity_key":"web:book/the-entrepreneurial-state","title":"The Entrepreneurial State","subtitle":"Debunking Public vs. Private Sector Myths","author":"Mariana Mazzucato","year":2013},
+    {"slug":"the-great-leveler","entity_key":"web:book/the-great-leveler","title":"The Great Leveler","subtitle":"Violence and the History of Inequality from the Stone Age to the Twenty-First Century","author":"Walter Scheidel","year":2017},
+    {"slug":"the-rise-and-decline-of-nations","entity_key":"web:book/the-rise-and-decline-of-nations","title":"The Rise and Decline of Nations","subtitle":"Economic Growth, Stagflation, and Social Rigidities","author":"Mancur Olson","year":1982},
+    {"slug":"the-logic-of-collective-action","entity_key":"web:book/the-logic-of-collective-action","title":"The Logic of Collective Action","subtitle":"Public Goods and the Theory of Groups","author":"Mancur Olson","year":1965},
+    {"slug":"capitalism-socialism-and-democracy","entity_key":"web:book/capitalism-socialism-and-democracy","title":"Capitalism, Socialism and Democracy","subtitle":"","author":"Joseph A. Schumpeter","year":1942},
+    {"slug":"development-as-freedom","entity_key":"web:book/development-as-freedom","title":"Development as Freedom","subtitle":"","author":"Amartya Sen","year":1999},
+    {"slug":"the-price-of-inequality","entity_key":"web:book/the-price-of-inequality","title":"The Price of Inequality","subtitle":"How Today's Divided Society Endangers Our Future","author":"Joseph E. Stiglitz","year":2012}
+  ]
+}
