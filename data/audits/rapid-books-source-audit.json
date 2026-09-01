@@ -2,42 +2,42 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-09-01",
-  "checked_at": "2026-09-01T02:47:06.606Z",
+  "checked_at": "2026-09-01T03:06:47.934Z",
   "checker": {
     "version": "http-head-get/0.1.0",
-    "timeout_ms": 10000,
-    "concurrency": 18,
+    "timeout_ms": 15000,
+    "concurrency": 12,
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 250,
-    "claims": 750,
-    "citations": 1500,
-    "unique_urls": 1025,
-    "repeated_citations": 475,
-    "redirected_urls": 151,
+    "books": 260,
+    "claims": 780,
+    "citations": 1560,
+    "unique_urls": 1060,
+    "repeated_citations": 500,
+    "redirected_urls": 153,
     "states": {
-      "access_blocked": 206,
-      "network_error": 16,
+      "access_blocked": 214,
+      "network_error": 24,
       "other_http": 4,
-      "reachable": 790,
-      "transient": 9
+      "reachable": 810,
+      "transient": 8
     },
     "score_distribution": {
       "42": 1,
       "50": 8,
       "58": 13,
-      "67": 57,
-      "75": 61,
-      "83": 55,
-      "92": 45,
+      "67": 59,
+      "75": 65,
+      "83": 58,
+      "92": 46,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 82,
+      "high": 88,
       "low": 1,
       "medium": 69,
-      "medium-high": 76,
+      "medium-high": 80,
       "medium-low": 22
     }
   },
@@ -60,20 +60,20 @@
       }
     },
     {
+      "host": "plato.stanford.edu",
+      "unique_urls": 22,
+      "citations": 45,
+      "states": {
+        "reachable": 22
+      }
+    },
+    {
       "host": "cambridge.org",
       "unique_urls": 26,
       "citations": 42,
       "states": {
         "transient": 2,
         "reachable": 24
-      }
-    },
-    {
-      "host": "plato.stanford.edu",
-      "unique_urls": 19,
-      "citations": 37,
-      "states": {
-        "reachable": 19
       }
     },
     {
@@ -86,10 +86,10 @@
     },
     {
       "host": "nap.nationalacademies.org",
-      "unique_urls": 17,
-      "citations": 30,
+      "unique_urls": 18,
+      "citations": 34,
       "states": {
-        "reachable": 17
+        "reachable": 18
       }
     },
     {
@@ -197,6 +197,14 @@
       }
     },
     {
+      "host": "nobelprize.org",
+      "unique_urls": 9,
+      "citations": 13,
+      "states": {
+        "reachable": 9
+      }
+    },
+    {
       "host": "time.com",
       "unique_urls": 12,
       "citations": 13,
@@ -221,20 +229,12 @@
       }
     },
     {
-      "host": "nobelprize.org",
-      "unique_urls": 8,
-      "citations": 12,
-      "states": {
-        "reachable": 8
-      }
-    },
-    {
       "host": "annualreviews.org",
       "unique_urls": 10,
       "citations": 11,
       "states": {
-        "access_blocked": 7,
-        "reachable": 3
+        "access_blocked": 8,
+        "reachable": 2
       }
     },
     {
@@ -275,6 +275,14 @@
       "citations": 10,
       "states": {
         "reachable": 8
+      }
+    },
+    {
+      "host": "archives.gov",
+      "unique_urls": 5,
+      "citations": 9,
+      "states": {
+        "reachable": 5
       }
     },
     {
@@ -366,14 +374,6 @@
       }
     },
     {
-      "host": "archives.gov",
-      "unique_urls": 4,
-      "citations": 7,
-      "states": {
-        "reachable": 4
-      }
-    },
-    {
       "host": "cancer.gov",
       "unique_urls": 6,
       "citations": 7,
@@ -386,8 +386,7 @@
       "unique_urls": 6,
       "citations": 7,
       "states": {
-        "reachable": 3,
-        "access_blocked": 3
+        "reachable": 6
       }
     },
     {
@@ -512,6 +511,14 @@
       }
     },
     {
+      "host": "scdb.wustl.edu",
+      "unique_urls": 5,
+      "citations": 6,
+      "states": {
+        "network_error": 5
+      }
+    },
+    {
       "host": "unesco.org",
       "unique_urls": 2,
       "citations": 6,
@@ -545,6 +552,22 @@
       }
     },
     {
+      "host": "arxiv.org",
+      "unique_urls": 3,
+      "citations": 5,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
+      "host": "bjs.ojp.gov",
+      "unique_urls": 2,
+      "citations": 5,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "bmj.com",
       "unique_urls": 4,
       "citations": 5,
@@ -565,7 +588,7 @@
       "unique_urls": 5,
       "citations": 5,
       "states": {
-        "transient": 1,
+        "network_error": 1,
         "reachable": 4
       }
     },
@@ -574,7 +597,8 @@
       "unique_urls": 4,
       "citations": 5,
       "states": {
-        "reachable": 4
+        "reachable": 2,
+        "access_blocked": 2
       }
     },
     {
@@ -611,11 +635,27 @@
       }
     },
     {
+      "host": "nij.ojp.gov",
+      "unique_urls": 3,
+      "citations": 5,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
       "host": "physicstoday.aip.org",
       "unique_urls": 2,
       "citations": 5,
       "states": {
         "reachable": 2
+      }
+    },
+    {
+      "host": "supreme.justia.com",
+      "unique_urls": 3,
+      "citations": 5,
+      "states": {
+        "access_blocked": 3
       }
     },
     {
@@ -632,14 +672,6 @@
       "citations": 4,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "arxiv.org",
-      "unique_urls": 2,
-      "citations": 4,
-      "states": {
-        "reachable": 2
       }
     },
     {
@@ -712,6 +744,14 @@
       "citations": 4,
       "states": {
         "reachable": 3
+      }
+    },
+    {
+      "host": "repository.law.umich.edu",
+      "unique_urls": 2,
+      "citations": 4,
+      "states": {
+        "reachable": 2
       }
     },
     {
@@ -911,8 +951,8 @@
       "unique_urls": 3,
       "citations": 3,
       "states": {
-        "access_blocked": 1,
-        "reachable": 2
+        "access_blocked": 2,
+        "reachable": 1
       }
     },
     {
@@ -925,6 +965,14 @@
     },
     {
       "host": "gao.gov",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
+      "host": "guides.loc.gov",
       "unique_urls": 2,
       "citations": 3,
       "states": {
@@ -1028,6 +1076,14 @@
       }
     },
     {
+      "host": "papers.ssrn.com",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "access_blocked": 1
+      }
+    },
+    {
       "host": "pip.worldbank.org",
       "unique_urls": 1,
       "citations": 3,
@@ -1056,7 +1112,7 @@
       "unique_urls": 1,
       "citations": 3,
       "states": {
-        "reachable": 1
+        "transient": 1
       }
     },
     {
@@ -1120,7 +1176,7 @@
       "unique_urls": 1,
       "citations": 2,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -1145,7 +1201,7 @@
       "unique_urls": 1,
       "citations": 2,
       "states": {
-        "transient": 1
+        "network_error": 1
       }
     },
     {
@@ -1170,6 +1226,14 @@
       "citations": 2,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "civilrightsproject.ucla.edu",
+      "unique_urls": 2,
+      "citations": 2,
+      "states": {
+        "reachable": 2
       }
     },
     {
@@ -1221,6 +1285,14 @@
       }
     },
     {
+      "host": "exonerationregistry.org",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "files.eric.ed.gov",
       "unique_urls": 1,
       "citations": 2,
@@ -1246,14 +1318,6 @@
     },
     {
       "host": "geolsoc.org.uk",
-      "unique_urls": 1,
-      "citations": 2,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
-      "host": "guides.loc.gov",
       "unique_urls": 1,
       "citations": 2,
       "states": {
@@ -1438,6 +1502,14 @@
       }
     },
     {
+      "host": "nyulawreview.org",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "parliament.uk",
       "unique_urls": 2,
       "citations": 2,
@@ -1506,7 +1578,7 @@
       "unique_urls": 1,
       "citations": 2,
       "states": {
-        "transient": 1
+        "network_error": 1
       }
     },
     {
@@ -1538,7 +1610,7 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "reachable": 2
+        "access_blocked": 2
       }
     },
     {
@@ -1559,6 +1631,14 @@
     },
     {
       "host": "slavevoyages.org",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "southerncalifornialawreview.com",
       "unique_urls": 1,
       "citations": 2,
       "states": {
@@ -1619,6 +1699,14 @@
       "citations": 2,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "venice.coe.int",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "transient": 1
       }
     },
     {
@@ -1950,6 +2038,14 @@
       }
     },
     {
+      "host": "deathpenaltyinfo.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "dgrahamburnett.net",
       "unique_urls": 1,
       "citations": 1,
@@ -2150,6 +2246,14 @@
       }
     },
     {
+      "host": "harvardlawreview.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "hcr.ny.gov",
       "unique_urls": 1,
       "citations": 1,
@@ -2267,6 +2371,14 @@
       "citations": 1,
       "states": {
         "access_blocked": 1
+      }
+    },
+    {
+      "host": "iep.utm.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -2415,6 +2527,14 @@
     },
     {
       "host": "michaelpollan.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "michiganlawreview.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2746,7 +2866,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -2950,6 +3070,14 @@
       }
     },
     {
+      "host": "un.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "unstats.un.org",
       "unique_urls": 1,
       "citations": 1,
@@ -3002,7 +3130,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "reachable": 1
+        "access_blocked": 1
       }
     },
     {
@@ -3198,6 +3326,17 @@
       ]
     },
     {
+      "url": "https://nap.nationalacademies.org/catalog/18613/the-growth-of-incarceration-in-the-united-states-exploring-causes",
+      "host": "nap.nationalacademies.org",
+      "citation_count": 4,
+      "state": "reachable",
+      "books": [
+        "just-mercy",
+        "the-collapse-of-american-criminal-justice",
+        "locked-in"
+      ]
+    },
+    {
       "url": "https://www.adb.org/publications/determinants-structural-transformation-asia",
       "host": "adb.org",
       "citation_count": 4,
@@ -3262,6 +3401,16 @@
         "the-bottom-billion",
         "the-great-escape-deaton",
         "dead-aid"
+      ]
+    },
+    {
+      "url": "https://bjs.ojp.gov/topics/corrections",
+      "host": "bjs.ojp.gov",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-new-jim-crow",
+        "locked-in"
       ]
     },
     {
@@ -3462,6 +3611,16 @@
       ]
     },
     {
+      "url": "https://nij.ojp.gov/topics/articles/overview-indigent-defense",
+      "host": "nij.ojp.gov",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "gideons-trumpet",
+        "punishment-without-crime"
+      ]
+    },
+    {
       "url": "https://nsarchive.gwu.edu/document/17601-clifford-stoll-communications-acm",
       "host": "nsarchive.gwu.edu",
       "citation_count": 3,
@@ -3517,6 +3676,15 @@
       ]
     },
     {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3587764",
+      "host": "papers.ssrn.com",
+      "citation_count": 3,
+      "state": "access_blocked",
+      "books": [
+        "punishment-without-crime"
+      ]
+    },
+    {
       "url": "https://physicstoday.aip.org/reviews/the-beginning-of-infinity-explanations-that-transform-the-world",
       "host": "physicstoday.aip.org",
       "citation_count": 3,
@@ -3543,6 +3711,24 @@
       "state": "reachable",
       "books": [
         "against-method"
+      ]
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/legal-positivism/",
+      "host": "plato.stanford.edu",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-concept-of-law"
+      ]
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/rule-of-law/",
+      "host": "plato.stanford.edu",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-rule-of-law"
       ]
     },
     {
@@ -3643,7 +3829,7 @@
       "url": "https://repository.essex.ac.uk/10513/",
       "host": "repository.essex.ac.uk",
       "citation_count": 3,
-      "state": "reachable",
+      "state": "transient",
       "books": [
         "the-making-of-the-english-working-class"
       ]
@@ -3664,6 +3850,16 @@
       "state": "access_blocked",
       "books": [
         "the-origins-of-political-order"
+      ]
+    },
+    {
+      "url": "https://supreme.justia.com/cases/federal/us/372/335/",
+      "host": "supreme.justia.com",
+      "citation_count": 3,
+      "state": "access_blocked",
+      "books": [
+        "just-mercy",
+        "gideons-trumpet"
       ]
     },
     {
@@ -3988,7 +4184,7 @@
       "url": "https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/transforming-waterfront",
       "host": "americanhistory.si.edu",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-box"
       ]
@@ -4025,10 +4221,19 @@
       "url": "https://assets.cambridge.org/97805215/15726/excerpt/9780521515726_excerpt.htm",
       "host": "assets.cambridge.org",
       "citation_count": 2,
-      "state": "transient",
+      "state": "network_error",
       "books": [
         "guns-germs-and-steel",
         "collapse"
+      ]
+    },
+    {
+      "url": "https://bjs.ojp.gov/topics/courts",
+      "host": "bjs.ojp.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "punishment-without-crime"
       ]
     },
     {
@@ -4247,7 +4452,7 @@
       "url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/reading-comprehension-strategies",
       "host": "educationendowmentfoundation.org.uk",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "why-dont-students-like-school",
         "the-knowledge-gap"
@@ -4296,6 +4501,15 @@
       "state": "access_blocked",
       "books": [
         "cities-in-civilization"
+      ]
+    },
+    {
+      "url": "https://exonerationregistry.org/publications",
+      "host": "exonerationregistry.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "just-mercy"
       ]
     },
     {
@@ -4471,6 +4685,15 @@
       ]
     },
     {
+      "url": "https://nyulawreview.org/issues/volume-87-number-1/racial-critiques-of-mass-incarceration-beyond-the-new-jim-crow/",
+      "host": "nyulawreview.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-new-jim-crow"
+      ]
+    },
+    {
       "url": "https://online.ucpress.edu/jsah/article-abstract/75/4/492/60352/Review-Complexity-and-Contradiction-in",
       "host": "online.ucpress.edu",
       "citation_count": 2,
@@ -4578,6 +4801,15 @@
       "books": [
         "the-logic-of-scientific-discovery",
         "conjectures-and-refutations"
+      ]
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/lawphil-nature/",
+      "host": "plato.stanford.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-concept-of-law"
       ]
     },
     {
@@ -4902,6 +5134,25 @@
       ]
     },
     {
+      "url": "https://repository.law.umich.edu/mlr_online/vol116/iss1/11/",
+      "host": "repository.law.umich.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-collapse-of-american-criminal-justice",
+        "locked-in"
+      ]
+    },
+    {
+      "url": "https://repository.law.umich.edu/mlr/vol111/iss6/11/",
+      "host": "repository.law.umich.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-collapse-of-american-criminal-justice"
+      ]
+    },
+    {
       "url": "https://research.fs.usda.gov/treesearch/46890",
       "host": "research.fs.usda.gov",
       "citation_count": 2,
@@ -4923,7 +5174,7 @@
       "url": "https://revistas.ucm.es/index.php/RESF/en/article/view/100581",
       "host": "revistas.ucm.es",
       "citation_count": 2,
-      "state": "transient",
+      "state": "network_error",
       "books": [
         "consilience"
       ]
@@ -4944,6 +5195,15 @@
       "state": "reachable",
       "books": [
         "the-great-bridge"
+      ]
+    },
+    {
+      "url": "https://scdb.wustl.edu/",
+      "host": "scdb.wustl.edu",
+      "citation_count": 2,
+      "state": "network_error",
+      "books": [
+        "the-nine"
       ]
     },
     {
@@ -4982,6 +5242,16 @@
       "state": "access_blocked",
       "books": [
         "a-pattern-language"
+      ]
+    },
+    {
+      "url": "https://southerncalifornialawreview.com/wp-content/uploads/2022/02/Baughman_Final.pdf",
+      "host": "southerncalifornialawreview.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-collapse-of-american-criminal-justice",
+        "locked-in"
       ]
     },
     {
@@ -5064,6 +5334,15 @@
       "state": "reachable",
       "books": [
         "the-body-keeps-the-score"
+      ]
+    },
+    {
+      "url": "https://www.archives.gov/milestone-documents/brown-v-board-of-education",
+      "host": "archives.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "simple-justice"
       ]
     },
     {
@@ -6072,6 +6351,15 @@
       ]
     },
     {
+      "url": "https://www.venice.coe.int/webforms/documents/?pdf=CDL-AD(2016)007-e",
+      "host": "venice.coe.int",
+      "citation_count": 2,
+      "state": "transient",
+      "books": [
+        "the-rule-of-law"
+      ]
+    },
+    {
       "url": "https://www.who.int/news-room/fact-sheets/detail/rabies",
       "host": "who.int",
       "citation_count": 2,
@@ -6527,9 +6815,9 @@
         }
       ],
       "host": "americanhistory.si.edu",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/transforming-waterfront",
       "redirected": false,
       "error": null
@@ -6766,6 +7054,23 @@
       "error": null
     },
     {
+      "url": "https://arxiv.org/abs/1706.05678",
+      "citations": [
+        {
+          "slug": "the-new-jim-crow",
+          "claim_index": 2,
+          "source_title": "Stanford Open Policing Project study"
+        }
+      ],
+      "host": "arxiv.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1706.05678",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://arxiv.org/abs/1907.02730",
       "citations": [
         {
@@ -6802,12 +7107,12 @@
         }
       ],
       "host": "assets.cambridge.org",
-      "state": "transient",
+      "state": "network_error",
       "method": "GET",
       "status": null,
       "final_url": null,
       "redirected": false,
-      "error": "AbortError: This operation was aborted"
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://assets.moma.org/documents/moma_catalogue_263_300063175.pdf",
@@ -6858,6 +7163,55 @@
       "status": 200,
       "final_url": "http://bioanth.org/about/aaba-statement-on-race-racism/",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://bjs.ojp.gov/topics/corrections",
+      "citations": [
+        {
+          "slug": "the-new-jim-crow",
+          "claim_index": 1,
+          "source_title": "Bureau of Justice Statistics: Corrections"
+        },
+        {
+          "slug": "the-new-jim-crow",
+          "claim_index": 3,
+          "source_title": "Bureau of Justice Statistics: Corrections"
+        },
+        {
+          "slug": "locked-in",
+          "claim_index": 1,
+          "source_title": "Bureau of Justice Statistics: Corrections"
+        }
+      ],
+      "host": "bjs.ojp.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://bjs.ojp.gov/topics/corrections",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://bjs.ojp.gov/topics/courts",
+      "citations": [
+        {
+          "slug": "punishment-without-crime",
+          "claim_index": 1,
+          "source_title": "Bureau of Justice Statistics: Courts"
+        },
+        {
+          "slug": "punishment-without-crime",
+          "claim_index": 2,
+          "source_title": "Bureau of Justice Statistics: Courts"
+        }
+      ],
+      "host": "bjs.ojp.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://bjs.ojp.gov/topics/courts",
+      "redirected": false,
       "error": null
     },
     {
@@ -7136,6 +7490,40 @@
       "error": null
     },
     {
+      "url": "https://civilrightsproject.ucla.edu/press-releases/ucla-civil-rights-project-assesses-school-segregation-70-years-after-brown/",
+      "citations": [
+        {
+          "slug": "simple-justice",
+          "claim_index": 3,
+          "source_title": "Civil Rights Project: 70 years after Brown"
+        }
+      ],
+      "host": "civilrightsproject.ucla.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://civilrightsproject.ucla.edu/press-releases/ucla-civil-rights-project-assesses-school-segregation-70-years-after-brown/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://civilrightsproject.ucla.edu/reports/harming-our-common-future-americas-segregated-schools-65-years-after-brown/",
+      "citations": [
+        {
+          "slug": "simple-justice",
+          "claim_index": 3,
+          "source_title": "Civil Rights Project: Segregated Schools 65 Years After Brown"
+        }
+      ],
+      "host": "civilrightsproject.ucla.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://civilrightsproject.ucla.edu/reports/harming-our-common-future-americas-segregated-schools-65-years-after-brown/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://classicsforall.org.uk/reading-room/book-reviews/1177-bc-year-civilisation-collapsed",
       "citations": [
         {
@@ -7357,6 +7745,23 @@
       "status": 200,
       "final_url": "https://davidgraeber.org/articles/debt-the-first-five-thousand-years/",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://deathpenaltyinfo.org/policy-issues/innocence",
+      "citations": [
+        {
+          "slug": "just-mercy",
+          "claim_index": 1,
+          "source_title": "Death Penalty Information Center: Innocence"
+        }
+      ],
+      "host": "deathpenaltyinfo.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://deathpenaltyinfo.org/policy-issues/policy/innocence",
+      "redirected": true,
       "error": null
     },
     {
@@ -8034,7 +8439,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=c28f7663-e3ef-4faf-a3ac-7889de0b1e74",
+      "final_url": "https://www.nature.com/articles/d41586-023-01313-5",
       "redirected": true,
       "error": null
     },
@@ -8066,7 +8471,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=c91f87a2-fcd8-4668-a636-dfe16b8f901b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=0dd83286-e06d-4314-9d46-0bcf056269e7",
       "redirected": true,
       "error": null
     },
@@ -8083,7 +8488,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=603e54f9-5af9-4e84-8c1c-b4fce3a6f606",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574",
       "redirected": true,
       "error": null
     },
@@ -8144,7 +8549,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-023-43426-5",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5",
       "redirected": true,
       "error": null
     },
@@ -8161,7 +8566,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-019-0907-1",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=52607148-2cfc-49a4-804a-7aacba5ad3df",
       "redirected": true,
       "error": null
     },
@@ -8195,7 +8600,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41586-020-03053-2",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=93da9987-5ee8-478e-b354-c65ccb2d045b",
       "redirected": true,
       "error": null
     },
@@ -8212,7 +8617,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=ddf0274a-0b21-4da7-812d-787da8749468",
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3",
       "redirected": true,
       "error": null
     },
@@ -9225,9 +9630,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/reading-comprehension-strategies",
       "redirected": false,
       "error": null
@@ -9242,9 +9647,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://educationendowmentfoundation.org.uk/news/eef-blog-reading-comprehension-strategies-for-building-background-knowledge",
       "redirected": false,
       "error": null
@@ -9276,9 +9681,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/project-based-learning",
       "redirected": false,
       "error": null
@@ -9763,6 +10168,28 @@
       "error": null
     },
     {
+      "url": "https://exonerationregistry.org/publications",
+      "citations": [
+        {
+          "slug": "just-mercy",
+          "claim_index": 1,
+          "source_title": "National Registry of Exonerations: Publications"
+        },
+        {
+          "slug": "just-mercy",
+          "claim_index": 2,
+          "source_title": "National Registry of Exonerations: Publications"
+        }
+      ],
+      "host": "exonerationregistry.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://exonerationregistry.org/publications",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://extapps.dec.ny.gov/fs/programs/dfw/SWAP2025/Marine%20Invertebrates/Eastern%20oyster.pdf",
       "citations": [
         {
@@ -9870,6 +10297,23 @@
       "error": null
     },
     {
+      "url": "https://guides.loc.gov/brown-v-board-of-education",
+      "citations": [
+        {
+          "slug": "simple-justice",
+          "claim_index": 2,
+          "source_title": "Library of Congress: Brown v. Board resources"
+        }
+      ],
+      "host": "guides.loc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://guides.loc.gov/brown-v-board-of-education",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://guides.loc.gov/chronicling-america-h-h-holmes",
       "citations": [
         {
@@ -9939,6 +10383,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://gwern.net/doc/psychology/personality/conscientiousness/2007-duckworth.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://harvardlawreview.org/print/vol-121/unequal-justice/",
+      "citations": [
+        {
+          "slug": "the-collapse-of-american-criminal-justice",
+          "claim_index": 3,
+          "source_title": "Harvard Law Review: Unequal Justice"
+        }
+      ],
+      "host": "harvardlawreview.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://harvardlawreview.org/print/vol-121/unequal-justice/",
       "redirected": false,
       "error": null
     },
@@ -10068,6 +10529,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://humanorigins.si.edu/education/introduction-human-evolution",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://iep.utm.edu/legalpos/",
+      "citations": [
+        {
+          "slug": "the-concept-of-law",
+          "claim_index": 1,
+          "source_title": "Internet Encyclopedia of Philosophy: Legal Positivism"
+        }
+      ],
+      "host": "iep.utm.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://iep.utm.edu/legalpos/",
       "redirected": false,
       "error": null
     },
@@ -10461,7 +10939,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=2d7270ba-b83d-412c-8544-82cfddac3200",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=6ecb8c58-adf0-4916-a09f-b1c795abe64a",
       "redirected": true,
       "error": null
     },
@@ -10512,7 +10990,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=cdab18e6-3639-4e34-ba8e-dfeb4a5e658a",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=e314f385-04b9-4e6a-9c9a-ca9f1a91fa89",
       "redirected": true,
       "error": null
     },
@@ -10534,7 +11012,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=0491998f-4522-4dad-8936-3c60a589a940",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=bc871cfc-7c54-4aab-ba6e-2b1adf426249",
       "redirected": true,
       "error": null
     },
@@ -10551,7 +11029,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=c37d5fe7-16fb-4007-a9d5-82f1f8b6e44f",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=03c09995-0ff0-48db-a999-743e469b895a",
       "redirected": true,
       "error": null
     },
@@ -10578,7 +11056,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=5c42423f-b3e6-43a1-8b4f-798dbca1fefb",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=9a3153f9-acc4-4772-8cd4-e3abf965cdd6",
       "redirected": true,
       "error": null
     },
@@ -10595,7 +11073,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=2950d0b9-beb6-45de-a82a-e9dc80c62d93",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=d2bbfcec-9536-4989-a7ef-162bbcea5e71",
       "redirected": true,
       "error": null
     },
@@ -10773,6 +11251,23 @@
       "error": null
     },
     {
+      "url": "https://michiganlawreview.org/wp-content/uploads/2018/04/116MichLRev835_Bellin.pdf",
+      "citations": [
+        {
+          "slug": "locked-in",
+          "claim_index": 3,
+          "source_title": "Michigan Law Review: A Reassessment of Locked In"
+        }
+      ],
+      "host": "michiganlawreview.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://michiganlawreview.org/wp-content/uploads/2018/04/116MichLRev835_Bellin.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://mitpress.mit.edu/9780262536165/energy-and-civilization/",
       "citations": [
         {
@@ -10937,6 +11432,38 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nationalacademies.org/projects/BASC-U-08-02-B/publication/12883",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://nap.nationalacademies.org/catalog/18613/the-growth-of-incarceration-in-the-united-states-exploring-causes",
+      "citations": [
+        {
+          "slug": "just-mercy",
+          "claim_index": 3,
+          "source_title": "National Academies: The Growth of Incarceration"
+        },
+        {
+          "slug": "the-collapse-of-american-criminal-justice",
+          "claim_index": 2,
+          "source_title": "National Academies: The Growth of Incarceration"
+        },
+        {
+          "slug": "locked-in",
+          "claim_index": 1,
+          "source_title": "National Academies: The Growth of Incarceration"
+        },
+        {
+          "slug": "locked-in",
+          "claim_index": 3,
+          "source_title": "National Academies: The Growth of Incarceration"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/projects/DBASSE-CLAJ-11-01/publication/18613",
       "redirected": true,
       "error": null
     },
@@ -11383,6 +11910,67 @@
       "error": null
     },
     {
+      "url": "https://nij.ojp.gov/library/publications/indigent-defense-environmental-scan",
+      "citations": [
+        {
+          "slug": "gideons-trumpet",
+          "claim_index": 3,
+          "source_title": "National Institute of Justice: Indigent Defense Environmental Scan"
+        }
+      ],
+      "host": "nij.ojp.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nij.ojp.gov/library/publications/indigent-defense-environmental-scan",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://nij.ojp.gov/library/publications/wrongful-convictions-literature-issues-and-unheard-voices",
+      "citations": [
+        {
+          "slug": "just-mercy",
+          "claim_index": 2,
+          "source_title": "National Institute of Justice: Wrongful Convictions"
+        }
+      ],
+      "host": "nij.ojp.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nij.ojp.gov/library/publications/wrongful-convictions-literature-issues-and-unheard-voices",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://nij.ojp.gov/topics/articles/overview-indigent-defense",
+      "citations": [
+        {
+          "slug": "gideons-trumpet",
+          "claim_index": 2,
+          "source_title": "National Institute of Justice: Overview of Indigent Defense"
+        },
+        {
+          "slug": "gideons-trumpet",
+          "claim_index": 3,
+          "source_title": "National Institute of Justice: Overview of Indigent Defense"
+        },
+        {
+          "slug": "punishment-without-crime",
+          "claim_index": 3,
+          "source_title": "National Institute of Justice: Overview of Indigent Defense"
+        }
+      ],
+      "host": "nij.ojp.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nij.ojp.gov/topics/articles/overview-indigent-defense",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://nsarchive.gwu.edu/document/17601-clifford-stoll-communications-acm",
       "citations": [
         {
@@ -11423,6 +12011,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20040006526.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://nyulawreview.org/issues/volume-87-number-1/racial-critiques-of-mass-incarceration-beyond-the-new-jim-crow/",
+      "citations": [
+        {
+          "slug": "the-new-jim-crow",
+          "claim_index": 2,
+          "source_title": "NYU Law Review: Racial Critiques of Mass Incarceration"
+        },
+        {
+          "slug": "the-new-jim-crow",
+          "claim_index": 3,
+          "source_title": "NYU Law Review: Racial Critiques of Mass Incarceration"
+        }
+      ],
+      "host": "nyulawreview.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nyulawreview.org/issues/volume-87-number-1/racial-critiques-of-mass-incarceration-beyond-the-new-jim-crow/",
       "redirected": false,
       "error": null
     },
@@ -12214,6 +12824,33 @@
       "error": null
     },
     {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3587764",
+      "citations": [
+        {
+          "slug": "punishment-without-crime",
+          "claim_index": 1,
+          "source_title": "Alexandra Natapoff: The Misdemeanor Carceral State"
+        },
+        {
+          "slug": "punishment-without-crime",
+          "claim_index": 2,
+          "source_title": "Alexandra Natapoff: The Misdemeanor Carceral State"
+        },
+        {
+          "slug": "punishment-without-crime",
+          "claim_index": 3,
+          "source_title": "Alexandra Natapoff: The Misdemeanor Carceral State"
+        }
+      ],
+      "host": "papers.ssrn.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3587764",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://peer.asee.org/the-double-bind-of-constructionism-a-case-study-on-the-barriers-for-constructionist-learning-in-pre-college-engineering-education.pdf",
       "citations": [
         {
@@ -12519,6 +13156,55 @@
       "error": null
     },
     {
+      "url": "https://plato.stanford.edu/entries/lawphil-nature/",
+      "citations": [
+        {
+          "slug": "the-concept-of-law",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia: Nature of Law"
+        },
+        {
+          "slug": "the-concept-of-law",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia: Nature of Law"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/lawphil-nature/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/legal-positivism/",
+      "citations": [
+        {
+          "slug": "the-concept-of-law",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Legal Positivism"
+        },
+        {
+          "slug": "the-concept-of-law",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Legal Positivism"
+        },
+        {
+          "slug": "the-concept-of-law",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Legal Positivism"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/legal-positivism/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://plato.stanford.edu/entries/physics-interrelate/",
       "citations": [
         {
@@ -12669,6 +13355,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://plato.stanford.edu/entries/rationality-historicist/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/rule-of-law/",
+      "citations": [
+        {
+          "slug": "the-rule-of-law",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: The Rule of Law"
+        },
+        {
+          "slug": "the-rule-of-law",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: The Rule of Law"
+        },
+        {
+          "slug": "the-rule-of-law",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: The Rule of Law"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/rule-of-law/",
       "redirected": false,
       "error": null
     },
@@ -14430,7 +15143,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
       "redirected": false,
       "error": null
@@ -14586,7 +15299,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 203,
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/28288281/",
       "redirected": false,
       "error": null
@@ -14686,7 +15399,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/3321721/",
       "redirected": false,
       "error": null
@@ -15098,10 +15811,54 @@
         }
       ],
       "host": "repository.essex.ac.uk",
+      "state": "transient",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "AbortError: This operation was aborted"
+    },
+    {
+      "url": "https://repository.law.umich.edu/mlr_online/vol116/iss1/11/",
+      "citations": [
+        {
+          "slug": "the-collapse-of-american-criminal-justice",
+          "claim_index": 1,
+          "source_title": "Michigan Law Review: Prosecutors Matter"
+        },
+        {
+          "slug": "locked-in",
+          "claim_index": 2,
+          "source_title": "Michigan Law Review: Prosecutors Matter"
+        }
+      ],
+      "host": "repository.law.umich.edu",
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://repository.essex.ac.uk/10513/",
+      "final_url": "https://repository.law.umich.edu/mlr_online/vol116/iss1/11/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://repository.law.umich.edu/mlr/vol111/iss6/11/",
+      "citations": [
+        {
+          "slug": "the-collapse-of-american-criminal-justice",
+          "claim_index": 2,
+          "source_title": "Michigan Law Review review of Stuntz"
+        },
+        {
+          "slug": "the-collapse-of-american-criminal-justice",
+          "claim_index": 3,
+          "source_title": "Michigan Law Review review of Stuntz"
+        }
+      ],
+      "host": "repository.law.umich.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://repository.law.umich.edu/mlr/vol111/iss6/11/",
       "redirected": false,
       "error": null
     },
@@ -15286,12 +16043,12 @@
         }
       ],
       "host": "revistas.ucm.es",
-      "state": "transient",
+      "state": "network_error",
       "method": "GET",
       "status": null,
       "final_url": null,
       "redirected": false,
-      "error": "AbortError: This operation was aborted"
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://revistas.unal.edu.co/index.php/achsc/article/view/71038",
@@ -15421,6 +16178,96 @@
       "final_url": "https://sah.org/2014/07/31/nothing-is-transmissible-but-thought-le-corbusier-s-radiant-farm-made-real/",
       "redirected": false,
       "error": null
+    },
+    {
+      "url": "https://scdb.wustl.edu/",
+      "citations": [
+        {
+          "slug": "the-nine",
+          "claim_index": 1,
+          "source_title": "Supreme Court Database"
+        },
+        {
+          "slug": "the-nine",
+          "claim_index": 3,
+          "source_title": "Supreme Court Database"
+        }
+      ],
+      "host": "scdb.wustl.edu",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://scdb.wustl.edu/_brickFiles/2022_01/SCDB_2022_01_codebook.pdf",
+      "citations": [
+        {
+          "slug": "the-nine",
+          "claim_index": 3,
+          "source_title": "Supreme Court Database codebook"
+        }
+      ],
+      "host": "scdb.wustl.edu",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://scdb.wustl.edu/analysis.php",
+      "citations": [
+        {
+          "slug": "the-nine",
+          "claim_index": 2,
+          "source_title": "Supreme Court Database analysis tools"
+        }
+      ],
+      "host": "scdb.wustl.edu",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://scdb.wustl.edu/data.php?s=2",
+      "citations": [
+        {
+          "slug": "the-nine",
+          "claim_index": 2,
+          "source_title": "Supreme Court Database justice-centered data"
+        }
+      ],
+      "host": "scdb.wustl.edu",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://scdb.wustl.edu/documentation.php",
+      "citations": [
+        {
+          "slug": "the-nine",
+          "claim_index": 1,
+          "source_title": "Supreme Court Database documentation"
+        }
+      ],
+      "host": "scdb.wustl.edu",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://scholar.harvard.edu/files/mankiw/files/yes_r_g_so_what.pdf",
@@ -15681,6 +16528,28 @@
       "error": null
     },
     {
+      "url": "https://southerncalifornialawreview.com/wp-content/uploads/2022/02/Baughman_Final.pdf",
+      "citations": [
+        {
+          "slug": "the-collapse-of-american-criminal-justice",
+          "claim_index": 1,
+          "source_title": "Southern California Law Review: Prosecutorial Power"
+        },
+        {
+          "slug": "locked-in",
+          "claim_index": 2,
+          "source_title": "Southern California Law Review: Prosecutorial Power"
+        }
+      ],
+      "host": "southerncalifornialawreview.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://southerncalifornialawreview.com/wp-content/uploads/2022/02/Baughman_Final.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://stacks.cdc.gov/view/cdc/150954/cdc_150954_DS1.pdf",
       "citations": [
         {
@@ -15779,6 +16648,67 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://stm.cairn.info/journal-of-energy-history-2018-1-page-1i?lang=en",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://supreme.justia.com/cases/federal/us/347/483/",
+      "citations": [
+        {
+          "slug": "simple-justice",
+          "claim_index": 1,
+          "source_title": "Brown v. Board of Education"
+        }
+      ],
+      "host": "supreme.justia.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://supreme.justia.com/cases/federal/us/347/483/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://supreme.justia.com/cases/federal/us/372/335/",
+      "citations": [
+        {
+          "slug": "just-mercy",
+          "claim_index": 3,
+          "source_title": "Gideon v. Wainwright"
+        },
+        {
+          "slug": "gideons-trumpet",
+          "claim_index": 1,
+          "source_title": "Gideon v. Wainwright"
+        },
+        {
+          "slug": "gideons-trumpet",
+          "claim_index": 2,
+          "source_title": "Gideon v. Wainwright"
+        }
+      ],
+      "host": "supreme.justia.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://supreme.justia.com/cases/federal/us/372/335/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://supreme.justia.com/cases/federal/us/407/25/",
+      "citations": [
+        {
+          "slug": "gideons-trumpet",
+          "claim_index": 1,
+          "source_title": "Argersinger v. Hamlin"
+        }
+      ],
+      "host": "supreme.justia.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://supreme.justia.com/cases/federal/us/407/25/",
       "redirected": false,
       "error": null
     },
@@ -16264,9 +17194,9 @@
         }
       ],
       "host": "volcano.si.edu",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://volcano.si.edu/volcano.cfm?vn=262000",
       "redirected": false,
       "error": null
@@ -16591,27 +17521,10 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-devpsych-121318-084815",
-      "redirected": false,
-      "error": null
-    },
-    {
-      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-economics-080218-030436",
-      "citations": [
-        {
-          "slug": "predictably-irrational",
-          "claim_index": 1,
-          "source_title": "Annual Review of behavioral decision research"
-        }
-      ],
-      "host": "annualreviews.org",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 403,
-      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-economics-080218-030436",
       "redirected": false,
       "error": null
     },
@@ -16633,6 +17546,23 @@
       "error": null
     },
     {
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-lawsocsci-102510-105445",
+      "citations": [
+        {
+          "slug": "the-new-jim-crow",
+          "claim_index": 1,
+          "source_title": "Annual Review: Race, drugs, and law enforcement"
+        }
+      ],
+      "host": "annualreviews.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-lawsocsci-102510-105445",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011718-012440",
       "citations": [
         {
@@ -16642,9 +17572,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011718-012440",
       "redirected": false,
       "error": null
@@ -16676,9 +17606,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-psych-122216-011836",
       "redirected": false,
       "error": null
@@ -16870,6 +17800,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.architecturalrecord.com/articles/15311-review-of-modern-architecture-a-critical-history-fifth-edition",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.archives.gov/milestone-documents/brown-v-board-of-education",
+      "citations": [
+        {
+          "slug": "simple-justice",
+          "claim_index": 1,
+          "source_title": "National Archives: Brown v. Board of Education"
+        },
+        {
+          "slug": "simple-justice",
+          "claim_index": 2,
+          "source_title": "National Archives: Brown v. Board of Education"
+        }
+      ],
+      "host": "archives.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.archives.gov/milestone-documents/brown-v-board-of-education",
       "redirected": false,
       "error": null
     },
@@ -17450,7 +18402,7 @@
       ],
       "host": "cambridge.org",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/fates-of-romes/582207A45A234E88E0B7159CD94C27B6",
       "redirected": false,
@@ -18143,12 +19095,12 @@
         }
       ],
       "host": "cia.gov",
-      "state": "transient",
+      "state": "network_error",
       "method": "GET",
       "status": null,
       "final_url": null,
       "redirected": false,
-      "error": "AbortError: This operation was aborted"
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://www.cia.gov/resources/csi/books-monographs/the-cia-and-the-u-2-program-1954-1974/",
@@ -18284,9 +19236,9 @@
         }
       ],
       "host": "commonwealthfund.org",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
       "final_url": "https://www.commonwealthfund.org/publications/fund-reports/2024/sep/mirror-mirror-2024",
       "redirected": false,
       "error": null
@@ -18323,9 +19275,9 @@
         }
       ],
       "host": "commonwealthfund.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.commonwealthfund.org/publications/journal-article/2014/sep/comparison-hospital-administrative-costs-eight-nations-us",
       "redirected": false,
       "error": null
@@ -19451,9 +20403,9 @@
         }
       ],
       "host": "ferc.gov",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy",
       "redirected": false,
       "error": null
@@ -21993,8 +22945,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-024-00544-4&code=559d71ec-9cac-4c43-a181-c292fb0549a4",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/d41586-024-00544-4",
+      "redirected": false,
       "error": null
     },
     {
@@ -22015,7 +22967,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=9f8367c1-aba4-4956-a283-c4bda494f9bc",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=5a8cc8ee-d8ef-4759-bf4f-a037305dcdd6",
       "redirected": true,
       "error": null
     },
@@ -22042,7 +22994,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=21beaa19-eaf2-4827-a519-9f0d9bd34475",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=4d6822ce-60ea-45f2-a915-b1b2fec6ee26",
       "redirected": true,
       "error": null
     },
@@ -22069,7 +23021,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=8b8cd089-1a1d-4408-b08a-5234acfdb224",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=c9eec363-466e-4cd3-940a-0f28c49531a9",
       "redirected": true,
       "error": null
     },
@@ -22091,7 +23043,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=7182d13d-cef6-4b57-ad2f-457bcff9e5ef",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=984d2571-7ff3-484f-8884-add5aa30426d",
       "redirected": true,
       "error": null
     },
@@ -22108,8 +23060,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
+      "redirected": false,
       "error": null
     },
     {
@@ -22147,7 +23099,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=e58e08d7-3be6-4d56-823d-244cf1c81a47",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=93fbe9fd-7197-4eec-be3f-1390377596bb",
       "redirected": true,
       "error": null
     },
@@ -22164,7 +23116,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=428cd5dd-5b22-4e5b-a681-80dd45f25e4d",
+      "final_url": "https://www.nature.com/articles/s41576-020-00305-9?error=cookies_not_supported&code=7940313c-0a0f-4791-bb1d-9216ac48ad72",
       "redirected": true,
       "error": null
     },
@@ -22181,8 +23133,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-022-00537-x",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-022-00537-x&code=46803072-2812-4b20-873a-6909eaf080b4",
+      "redirected": true,
       "error": null
     },
     {
@@ -22198,7 +23150,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=ec6984c4-26a6-4538-a7a2-8b22976fb08f",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=4cb94f3a-e64b-4f4b-a57f-bfe9acd9038b",
       "redirected": true,
       "error": null
     },
@@ -22220,7 +23172,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=1d4c1dec-bc1a-4048-87cf-20b01feeac8e",
       "redirected": true,
       "error": null
     },
@@ -22662,6 +23614,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nobelprize.org/prizes/chemistry/2020/press-release/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/advanced-information/",
+      "citations": [
+        {
+          "slug": "predictably-irrational",
+          "claim_index": 1,
+          "source_title": "Nobel scientific background on decision under uncertainty"
+        }
+      ],
+      "host": "nobelprize.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nobelprize.org/prizes/economic-sciences/2002/advanced-information/",
       "redirected": false,
       "error": null
     },
@@ -23547,8 +24516,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/england-and-europe-in-1420/",
-      "redirected": true,
+      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/England-and-Europe-in-1420/",
+      "redirected": false,
       "error": null
     },
     {
@@ -23785,9 +24754,9 @@
         }
       ],
       "host": "rct.uk",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
       "final_url": "https://www.rct.uk/collection",
       "redirected": true,
       "error": null
@@ -24511,9 +25480,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.semi.org/en/about-semi-membership/about-semi",
       "redirected": false,
       "error": null
@@ -24528,9 +25497,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.semi.org/en/industry-groups/supply-chain-management",
       "redirected": false,
       "error": null
@@ -25045,6 +26014,23 @@
       "error": null
     },
     {
+      "url": "https://www.un.org/ruleoflaw/what-is-the-rule-of-law/",
+      "citations": [
+        {
+          "slug": "the-rule-of-law",
+          "claim_index": 3,
+          "source_title": "United Nations: Rule of Law principles"
+        }
+      ],
+      "host": "un.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.un.org/ruleoflaw/what-is-the-rule-of-law/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.unesco.org/en/creative-cities",
       "citations": [
         {
@@ -25251,6 +26237,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.v-dem.net/publications/democracy-reports/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.venice.coe.int/webforms/documents/?pdf=CDL-AD(2016)007-e",
+      "citations": [
+        {
+          "slug": "the-rule-of-law",
+          "claim_index": 1,
+          "source_title": "Venice Commission Rule of Law Checklist"
+        },
+        {
+          "slug": "the-rule-of-law",
+          "claim_index": 2,
+          "source_title": "Venice Commission Rule of Law Checklist"
+        }
+      ],
+      "host": "venice.coe.int",
+      "state": "transient",
+      "method": "GET",
+      "status": 502,
+      "final_url": "https://www.venice.coe.int/webforms/documents/?pdf=CDL-AD(2016)007-e",
       "redirected": false,
       "error": null
     },
@@ -25845,8 +26853,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article/",
-      "redirected": false,
+      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/1/05-0979_article/",
+      "redirected": true,
       "error": null
     },
     {
@@ -25911,8 +26919,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/article/24/5/17-1609_article",
-      "redirected": false,
+      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/24/5/17-1609_article",
+      "redirected": true,
       "error": null
     },
     {

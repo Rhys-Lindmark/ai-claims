@@ -2603,6 +2603,109 @@
       "source_authors": [
         "Bessel van der Kolk"
       ]
+    },
+    {
+      "slug": "the-new-jim-crow",
+      "match_state": "exact_title_author",
+      "cover_id": 14826736,
+      "cover_url": "https://covers.openlibrary.org/b/id/14826736-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL13826369W",
+      "source_title": "The New Jim Crow",
+      "source_authors": [
+        "Michelle Alexander"
+      ]
+    },
+    {
+      "slug": "just-mercy",
+      "match_state": "exact_title_author",
+      "cover_id": 12001726,
+      "cover_url": "https://covers.openlibrary.org/b/id/12001726-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17231441W",
+      "source_title": "Just Mercy",
+      "source_authors": [
+        "Bryan Stevenson"
+      ]
+    },
+    {
+      "slug": "the-collapse-of-american-criminal-justice",
+      "match_state": "exact_title_author",
+      "cover_id": 8481388,
+      "cover_url": "https://covers.openlibrary.org/b/id/8481388-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19364418W",
+      "source_title": "The Collapse of American Criminal Justice",
+      "source_authors": [
+        "William J. Stuntz"
+      ]
+    },
+    {
+      "slug": "the-nine",
+      "match_state": "exact_title_author",
+      "cover_id": 242895,
+      "cover_url": "https://covers.openlibrary.org/b/id/242895-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL119176W",
+      "source_title": "The Nine",
+      "source_authors": [
+        "Jeffrey Toobin"
+      ]
+    },
+    {
+      "slug": "gideons-trumpet",
+      "match_state": "exact_title_author",
+      "cover_id": 1529704,
+      "cover_url": "https://covers.openlibrary.org/b/id/1529704-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3576069W",
+      "source_title": "Gideon's Trumpet",
+      "source_authors": [
+        "Anthony Lewis"
+      ]
+    },
+    {
+      "slug": "simple-justice",
+      "match_state": "exact_title_author",
+      "cover_id": 4615978,
+      "cover_url": "https://covers.openlibrary.org/b/id/4615978-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1725598W",
+      "source_title": "Simple justice",
+      "source_authors": [
+        "Richard Kluger"
+      ]
+    },
+    {
+      "slug": "the-rule-of-law",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-concept-of-law",
+      "match_state": "exact_title_author",
+      "cover_id": 3905962,
+      "cover_url": "https://covers.openlibrary.org/b/id/3905962-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1420755W",
+      "source_title": "The concept of law",
+      "source_authors": [
+        "H. L. A. Hart"
+      ]
+    },
+    {
+      "slug": "locked-in",
+      "match_state": "exact_title_author",
+      "cover_id": 13793035,
+      "cover_url": "https://covers.openlibrary.org/b/id/13793035-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20048166W",
+      "source_title": "Locked in",
+      "source_authors": [
+        "John F. Pfaff"
+      ]
+    },
+    {
+      "slug": "punishment-without-crime",
+      "match_state": "exact_title_author",
+      "cover_id": 8830583,
+      "cover_url": "https://covers.openlibrary.org/b/id/8830583-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20182669W",
+      "source_title": "Punishment Without Crime",
+      "source_authors": [
+        "Alexandra Natapoff"
+      ]
     }
   ]
 }
