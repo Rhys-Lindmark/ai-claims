@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-09-01",
-  "checked_at": "2026-09-01T02:21:47.625Z",
+  "checked_at": "2026-09-01T02:36:09.317Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 10000,
@@ -10,25 +10,25 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 230,
-    "claims": 690,
-    "citations": 1380,
-    "unique_urls": 952,
-    "repeated_citations": 428,
-    "redirected_urls": 136,
+    "books": 240,
+    "claims": 720,
+    "citations": 1440,
+    "unique_urls": 987,
+    "repeated_citations": 453,
+    "redirected_urls": 145,
     "states": {
-      "access_blocked": 200,
+      "access_blocked": 204,
       "network_error": 14,
       "other_http": 3,
-      "reachable": 728,
-      "transient": 7
+      "reachable": 758,
+      "transient": 8
     },
     "score_distribution": {
       "42": 1,
-      "50": 7,
+      "50": 8,
       "58": 13,
-      "67": 48,
-      "75": 57,
+      "67": 54,
+      "75": 60,
       "83": 50,
       "92": 44,
       "100": 10
@@ -36,19 +36,19 @@
     "confidence_distribution": {
       "high": 75,
       "low": 1,
-      "medium": 65,
-      "medium-high": 67,
+      "medium": 69,
+      "medium-high": 73,
       "medium-low": 22
     }
   },
   "domain_summary": [
     {
       "host": "doi.org",
-      "unique_urls": 74,
-      "citations": 106,
+      "unique_urls": 81,
+      "citations": 115,
       "states": {
-        "reachable": 35,
-        "access_blocked": 39
+        "reachable": 39,
+        "access_blocked": 42
       }
     },
     {
@@ -61,11 +61,19 @@
     },
     {
       "host": "cambridge.org",
-      "unique_urls": 25,
-      "citations": 39,
+      "unique_urls": 26,
+      "citations": 42,
       "states": {
-        "transient": 1,
+        "transient": 2,
         "reachable": 24
+      }
+    },
+    {
+      "host": "plato.stanford.edu",
+      "unique_urls": 19,
+      "citations": 37,
+      "states": {
+        "reachable": 19
       }
     },
     {
@@ -93,6 +101,14 @@
       }
     },
     {
+      "host": "nature.com",
+      "unique_urls": 14,
+      "citations": 22,
+      "states": {
+        "reachable": 14
+      }
+    },
+    {
       "host": "en.wikipedia.org",
       "unique_urls": 9,
       "citations": 20,
@@ -101,19 +117,11 @@
       }
     },
     {
-      "host": "nature.com",
-      "unique_urls": 13,
+      "host": "nap.nationalacademies.org",
+      "unique_urls": 12,
       "citations": 20,
       "states": {
-        "reachable": 13
-      }
-    },
-    {
-      "host": "nap.nationalacademies.org",
-      "unique_urls": 9,
-      "citations": 17,
-      "states": {
-        "reachable": 9
+        "reachable": 12
       }
     },
     {
@@ -225,7 +233,8 @@
       "unique_urls": 10,
       "citations": 11,
       "states": {
-        "access_blocked": 10
+        "access_blocked": 9,
+        "reachable": 1
       }
     },
     {
@@ -266,6 +275,14 @@
       "citations": 10,
       "states": {
         "reachable": 8
+      }
+    },
+    {
+      "host": "journals.uchicago.edu",
+      "unique_urls": 5,
+      "citations": 9,
+      "states": {
+        "access_blocked": 5
       }
     },
     {
@@ -317,14 +334,6 @@
       }
     },
     {
-      "host": "journals.uchicago.edu",
-      "unique_urls": 4,
-      "citations": 8,
-      "states": {
-        "access_blocked": 4
-      }
-    },
-    {
       "host": "nsa.gov",
       "unique_urls": 7,
       "citations": 8,
@@ -369,7 +378,8 @@
       "unique_urls": 6,
       "citations": 7,
       "states": {
-        "reachable": 6
+        "reachable": 2,
+        "access_blocked": 4
       }
     },
     {
@@ -568,6 +578,14 @@
       }
     },
     {
+      "host": "physicstoday.aip.org",
+      "unique_urls": 2,
+      "citations": 5,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "v-dem.net",
       "unique_urls": 3,
       "citations": 5,
@@ -657,6 +675,14 @@
     },
     {
       "host": "ops.fhwa.dot.gov",
+      "unique_urls": 3,
+      "citations": 4,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
+      "host": "royalsociety.org",
       "unique_urls": 3,
       "citations": 4,
       "states": {
@@ -844,8 +870,8 @@
       "unique_urls": 3,
       "citations": 3,
       "states": {
-        "access_blocked": 2,
-        "reachable": 1
+        "access_blocked": 1,
+        "reachable": 2
       }
     },
     {
@@ -913,6 +939,14 @@
       }
     },
     {
+      "host": "nist.gov",
+      "unique_urls": 3,
+      "citations": 3,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
       "host": "nsarchive.gwu.edu",
       "unique_urls": 1,
       "citations": 3,
@@ -953,14 +987,6 @@
       }
     },
     {
-      "host": "plato.stanford.edu",
-      "unique_urls": 2,
-      "citations": 3,
-      "states": {
-        "reachable": 2
-      }
-    },
-    {
       "host": "pub.iaea.org",
       "unique_urls": 1,
       "citations": 3,
@@ -994,14 +1020,6 @@
     },
     {
       "host": "research.fs.usda.gov",
-      "unique_urls": 2,
-      "citations": 3,
-      "states": {
-        "reachable": 2
-      }
-    },
-    {
-      "host": "royalsociety.org",
       "unique_urls": 2,
       "citations": 3,
       "states": {
@@ -1231,7 +1249,8 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "access_blocked": 2
+        "access_blocked": 1,
+        "reachable": 1
       }
     },
     {
@@ -1363,14 +1382,6 @@
       }
     },
     {
-      "host": "nist.gov",
-      "unique_urls": 2,
-      "citations": 2,
-      "states": {
-        "reachable": 2
-      }
-    },
-    {
       "host": "nokia.com",
       "unique_urls": 1,
       "citations": 2,
@@ -1427,14 +1438,6 @@
       }
     },
     {
-      "host": "physicstoday.aip.org",
-      "unique_urls": 1,
-      "citations": 2,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
       "host": "pubs.aeaweb.org",
       "unique_urls": 1,
       "citations": 2,
@@ -1456,6 +1459,14 @@
       "citations": 2,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "revistas.ucm.es",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "transient": 1
       }
     },
     {
@@ -1487,7 +1498,8 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "access_blocked": 2
+        "reachable": 1,
+        "access_blocked": 1
       }
     },
     {
@@ -1684,6 +1696,14 @@
     },
     {
       "host": "backoffice.biblio.ugent.be",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "bioanth.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2743,7 +2763,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "transient": 1
+        "reachable": 1
       }
     },
     {
@@ -3009,6 +3029,30 @@
       ]
     },
     {
+      "url": "https://plato.stanford.edu/entries/popper/",
+      "host": "plato.stanford.edu",
+      "citation_count": 6,
+      "state": "reachable",
+      "books": [
+        "the-logic-of-scientific-discovery",
+        "conjectures-and-refutations",
+        "the-beginning-of-infinity"
+      ]
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/scientific-method/",
+      "host": "plato.stanford.edu",
+      "citation_count": 6,
+      "state": "reachable",
+      "books": [
+        "the-logic-of-scientific-discovery",
+        "conjectures-and-refutations",
+        "against-method",
+        "the-demon-haunted-world",
+        "the-invention-of-science"
+      ]
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454256/",
       "host": "pmc.ncbi.nlm.nih.gov",
       "citation_count": 6,
@@ -3170,6 +3214,15 @@
         "pedagogy-of-the-oppressed",
         "how-children-fail",
         "why-dont-students-like-school"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1086/691866",
+      "host": "doi.org",
+      "citation_count": 3,
+      "state": "access_blocked",
+      "books": [
+        "the-invention-of-science"
       ]
     },
     {
@@ -3367,6 +3420,15 @@
       ]
     },
     {
+      "url": "https://physicstoday.aip.org/reviews/the-beginning-of-infinity-explanations-that-transform-the-world",
+      "host": "physicstoday.aip.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-beginning-of-infinity"
+      ]
+    },
+    {
       "url": "https://pip.worldbank.org/home",
       "host": "pip.worldbank.org",
       "citation_count": 3,
@@ -3375,6 +3437,15 @@
         "the-bottom-billion",
         "the-end-of-poverty",
         "why-growth-matters"
+      ]
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/feyerabend/",
+      "host": "plato.stanford.edu",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "against-method"
       ]
     },
     {
@@ -3525,6 +3596,16 @@
       "state": "reachable",
       "books": [
         "your-inner-fish"
+      ]
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/cambridge-history-of-science/3F715642EB8D89BE03E3D4D7304A24CE",
+      "host": "cambridge.org",
+      "citation_count": 3,
+      "state": "transient",
+      "books": [
+        "the-scientific-revolution-shapin",
+        "the-invention-of-science"
       ]
     },
     {
@@ -4059,7 +4140,7 @@
       "url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/reading-comprehension-strategies",
       "host": "educationendowmentfoundation.org.uk",
       "citation_count": 2,
-      "state": "reachable",
+      "state": "access_blocked",
       "books": [
         "why-dont-students-like-school",
         "the-knowledge-gap"
@@ -4363,6 +4444,53 @@
       ]
     },
     {
+      "url": "https://plato.stanford.edu/entries/confirmation/",
+      "host": "plato.stanford.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-logic-of-scientific-discovery",
+        "conjectures-and-refutations"
+      ]
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/pseudo-science/",
+      "host": "plato.stanford.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-logic-of-scientific-discovery",
+        "conjectures-and-refutations"
+      ]
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/qm-everett/",
+      "host": "plato.stanford.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-fabric-of-reality"
+      ]
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/scientific-knowledge-social/",
+      "host": "plato.stanford.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-scientific-revolution-shapin"
+      ]
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/scientific-reduction/",
+      "host": "plato.stanford.edu",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "consilience"
+      ]
+    },
+    {
       "url": "https://plato.stanford.edu/entries/thomas-kuhn/",
       "host": "plato.stanford.edu",
       "citation_count": 2,
@@ -4635,6 +4763,15 @@
       "state": "access_blocked",
       "books": [
         "the-swerve"
+      ]
+    },
+    {
+      "url": "https://revistas.ucm.es/index.php/RESF/en/article/view/100581",
+      "host": "revistas.ucm.es",
+      "citation_count": 2,
+      "state": "transient",
+      "books": [
+        "consilience"
       ]
     },
     {
@@ -5372,6 +5509,15 @@
       "state": "reachable",
       "books": [
         "the-invention-of-nature"
+      ]
+    },
+    {
+      "url": "https://www.nature.com/articles/s41562-023-01641-6",
+      "host": "nature.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-demon-haunted-world"
       ]
     },
     {
@@ -6499,6 +6645,23 @@
       "error": null
     },
     {
+      "url": "https://bioanth.org/about/position-statements/aapa-statement-race-and-racism-2019/",
+      "citations": [
+        {
+          "slug": "the-mismeasure-of-man",
+          "claim_index": 2,
+          "source_title": "AAPA statement on race and racism"
+        }
+      ],
+      "host": "bioanth.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "http://bioanth.org/about/aaba-statement-on-race-racism/",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://blog.geolsoc.org.uk/2013/03/04/publishing-maps-a-cautionary-tale/",
       "citations": [
         {
@@ -7499,6 +7662,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1037/0003-066X.51.2.77",
+      "citations": [
+        {
+          "slug": "the-mismeasure-of-man",
+          "claim_index": 1,
+          "source_title": "APA task force report: Intelligence—Knowns and Unknowns"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://psycnet.apa.org/doiLanding?doi=10.1037/0003-066X.51.2.77",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1037/0003-066X.55.1.68",
       "citations": [
         {
@@ -7621,7 +7801,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-023-01313-5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=0bdb85be-da05-4568-9870-6b94c6db7ee1",
       "redirected": true,
       "error": null
     },
@@ -7653,7 +7833,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=6296eabb-8797-4829-adec-1419d937bc9d",
+      "final_url": "https://www.nature.com/articles/nature06536?error=cookies_not_supported&code=aa399f6e-8935-4e0f-a328-93f7ca9638d6",
       "redirected": true,
       "error": null
     },
@@ -7670,7 +7850,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature10574",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=4c488e1f-bf62-409c-ade2-9f728d0c582a",
       "redirected": true,
       "error": null
     },
@@ -7731,7 +7911,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-023-43426-5",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=5943e3d5-d3ea-455f-a148-4a294be2b79b",
       "redirected": true,
       "error": null
     },
@@ -7748,7 +7928,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=cdc6954f-280e-462d-980a-fa88bfb2c9dd",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=1b96854d-a7fb-4d7b-b084-37dc75314cce",
       "redirected": true,
       "error": null
     },
@@ -7765,7 +7945,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=0194815c-a5a7-4c96-974d-1df681eb316e",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=9ff96bd2-f50e-4bc0-9ed3-ad259f2188d9",
       "redirected": true,
       "error": null
     },
@@ -7799,7 +7979,41 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=aaa6e097-79ea-4f66-acf5-54060e24735f",
+      "final_url": "https://www.nature.com/articles/s41893-019-0293-3",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1057/s41599-019-0279-9",
+      "citations": [
+        {
+          "slug": "the-demon-haunted-world",
+          "claim_index": 3,
+          "source_title": "Fake news game confers psychological resistance"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/s41599-019-0279-9",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1073/pnas.0710717105",
+      "citations": [
+        {
+          "slug": "consilience",
+          "claim_index": 2,
+          "source_title": "Gene-culture coevolution in the age of genomics"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://pnas.org/doi/full/10.1073/pnas.0710717105",
       "redirected": true,
       "error": null
     },
@@ -7929,6 +8143,33 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.journals.uchicago.edu/doi/10.1086/497663",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1086/691866",
+      "citations": [
+        {
+          "slug": "the-invention-of-science",
+          "claim_index": 1,
+          "source_title": "Renaissance Quarterly review of The Invention of Science"
+        },
+        {
+          "slug": "the-invention-of-science",
+          "claim_index": 2,
+          "source_title": "Renaissance Quarterly review of The Invention of Science"
+        },
+        {
+          "slug": "the-invention-of-science",
+          "claim_index": 3,
+          "source_title": "Renaissance Quarterly review of The Invention of Science"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.journals.uchicago.edu/doi/10.1086/691866",
       "redirected": true,
       "error": null
     },
@@ -8289,6 +8530,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1177/0963721417718261",
+      "citations": [
+        {
+          "slug": "the-demon-haunted-world",
+          "claim_index": 2,
+          "source_title": "The psychology of conspiracy theories"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/10.1177/0963721417718261",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1177/1529100612453266",
       "citations": [
         {
@@ -8416,6 +8674,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1371/journal.pbio.1001071",
+      "citations": [
+        {
+          "slug": "the-mismeasure-of-man",
+          "claim_index": 3,
+          "source_title": "PLOS Biology: The Mismeasure of Science"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001071",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1371/journal.pbio.1002533",
       "citations": [
         {
@@ -8429,6 +8704,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002533",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1371/journal.pbio.2007008",
+      "citations": [
+        {
+          "slug": "the-mismeasure-of-man",
+          "claim_index": 3,
+          "source_title": "PLOS Biology: The fault in his seeds"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2007008",
       "redirected": true,
       "error": null
     },
@@ -8679,7 +8971,7 @@
       ],
       "host": "educationendowmentfoundation.org.uk",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/feedback",
       "redirected": false,
@@ -8700,9 +8992,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
       "final_url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/reading-comprehension-strategies",
       "redirected": false,
       "error": null
@@ -8717,9 +9009,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
       "final_url": "https://educationendowmentfoundation.org.uk/news/eef-blog-reading-comprehension-strategies-for-building-background-knowledge",
       "redirected": false,
       "error": null
@@ -8751,9 +9043,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/project-based-learning",
       "redirected": false,
       "error": null
@@ -8768,9 +9060,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
       "final_url": "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/word-and-world-reading-programme",
       "redirected": false,
       "error": null
@@ -9936,7 +10228,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=bc68bdf0-e40e-4444-8146-633812b4f034",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=7c98d024-08fe-43d4-b8bf-dd8f508f9aeb",
       "redirected": true,
       "error": null
     },
@@ -9953,8 +10245,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11229-017-1339-6",
-      "redirected": true,
+      "final_url": "https://link.springer.com/article/10.1007/s11229-017-1339-6",
+      "redirected": false,
       "error": null
     },
     {
@@ -9970,8 +10262,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11229-024-04527-w&code=39fc0b78-c3c4-4d35-a430-81354d0f45cb",
-      "redirected": true,
+      "final_url": "https://link.springer.com/article/10.1007/s11229-024-04527-w",
+      "redirected": false,
       "error": null
     },
     {
@@ -9987,7 +10279,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=f2402c1d-ed79-4f20-bcc5-2acfdac440c7",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=d0ba34b6-9933-46bd-a9c1-e57306854f8d",
       "redirected": true,
       "error": null
     },
@@ -10009,7 +10301,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=b26c3881-c21b-4972-8445-5c520943d226",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=e6e7fd6a-8019-4447-aa3f-fa825390c6ec",
       "redirected": true,
       "error": null
     },
@@ -10026,7 +10318,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=ed9b4bfe-bded-4efb-a3c6-0e53578ea548",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=68628f43-06da-426b-8c1a-ae9b12368f77",
       "redirected": true,
       "error": null
     },
@@ -10053,7 +10345,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=cf83af1b-5360-4d39-9fee-48019e65c182",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=bccdda8e-4378-43a2-967e-9982ecaa9b25",
       "redirected": true,
       "error": null
     },
@@ -10070,7 +10362,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=e06d5a1b-8629-4913-9586-f099c01f0659",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=3a352a4e-6dac-49ef-a35f-8e873966aa46",
       "redirected": true,
       "error": null
     },
@@ -10454,6 +10746,57 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nationalacademies.org/projects/DBASSE-BBCSS-13-06/publication/24783",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science",
+      "citations": [
+        {
+          "slug": "the-demon-haunted-world",
+          "claim_index": 1,
+          "source_title": "National Academies: Reproducibility and Replicability in Science"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/projects/DBASSE-BBCSS-17-03/publication/25303",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://nap.nationalacademies.org/catalog/26902/using-population-descriptors-in-genetics-and-genomics-research-a-new",
+      "citations": [
+        {
+          "slug": "the-mismeasure-of-man",
+          "claim_index": 2,
+          "source_title": "National Academies: Using Population Descriptors in Genetics and Genomics Research"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/projects/HMD-HSP-21-14/publication/26902",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://nap.nationalacademies.org/catalog/26990/measuring-human-capabilities-an-agenda-for-basic-research-on-the-assessment",
+      "citations": [
+        {
+          "slug": "the-mismeasure-of-man",
+          "claim_index": 1,
+          "source_title": "National Academies: Measuring Human Capabilities"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/publications/26990",
       "redirected": true,
       "error": null
     },
@@ -11674,6 +12017,33 @@
       "error": null
     },
     {
+      "url": "https://physicstoday.aip.org/reviews/the-beginning-of-infinity-explanations-that-transform-the-world",
+      "citations": [
+        {
+          "slug": "the-beginning-of-infinity",
+          "claim_index": 1,
+          "source_title": "Physics Today review of The Beginning of Infinity"
+        },
+        {
+          "slug": "the-beginning-of-infinity",
+          "claim_index": 2,
+          "source_title": "Physics Today review of The Beginning of Infinity"
+        },
+        {
+          "slug": "the-beginning-of-infinity",
+          "claim_index": 3,
+          "source_title": "Physics Today review of The Beginning of Infinity"
+        }
+      ],
+      "host": "physicstoday.aip.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://physicstoday.aip.org/reviews/the-beginning-of-infinity-explanations-that-transform-the-world",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pip.worldbank.org/home",
       "citations": [
         {
@@ -11701,6 +12071,45 @@
       "error": null
     },
     {
+      "url": "https://plato.stanford.edu/entries/computational-complexity/",
+      "citations": [
+        {
+          "slug": "the-beginning-of-infinity",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Computational Complexity Theory"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/computational-complexity/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/confirmation/",
+      "citations": [
+        {
+          "slug": "the-logic-of-scientific-discovery",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Confirmation"
+        },
+        {
+          "slug": "conjectures-and-refutations",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Confirmation"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/confirmation/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://plato.stanford.edu/entries/cosmology/",
       "citations": [
         {
@@ -11714,6 +12123,341 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://plato.stanford.edu/entries/cosmology/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/evolutionary-psychology/",
+      "citations": [
+        {
+          "slug": "consilience",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Evolutionary Psychology"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/evolutionary-psychology/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/feyerabend/",
+      "citations": [
+        {
+          "slug": "against-method",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Paul Feyerabend"
+        },
+        {
+          "slug": "against-method",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Paul Feyerabend"
+        },
+        {
+          "slug": "against-method",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Paul Feyerabend"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/feyerabend/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/physics-interrelate/",
+      "citations": [
+        {
+          "slug": "the-fabric-of-reality",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Intertheory Relations in Physics"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/physics-interrelate/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/popper/",
+      "citations": [
+        {
+          "slug": "the-logic-of-scientific-discovery",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Karl Popper"
+        },
+        {
+          "slug": "the-logic-of-scientific-discovery",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Karl Popper"
+        },
+        {
+          "slug": "conjectures-and-refutations",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Karl Popper"
+        },
+        {
+          "slug": "conjectures-and-refutations",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Karl Popper"
+        },
+        {
+          "slug": "conjectures-and-refutations",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Karl Popper"
+        },
+        {
+          "slug": "the-beginning-of-infinity",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Karl Popper"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/popper/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/pseudo-science/",
+      "citations": [
+        {
+          "slug": "the-logic-of-scientific-discovery",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Science and Pseudo-Science"
+        },
+        {
+          "slug": "conjectures-and-refutations",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Science and Pseudo-Science"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/pseudo-science/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/qm-everett/",
+      "citations": [
+        {
+          "slug": "the-fabric-of-reality",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Everett's Relative-State Formulation"
+        },
+        {
+          "slug": "the-fabric-of-reality",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Everett's Relative-State Formulation"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/qm-everett/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/qm/",
+      "citations": [
+        {
+          "slug": "the-fabric-of-reality",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Quantum Mechanics"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/qm/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/qt-quantcomp/",
+      "citations": [
+        {
+          "slug": "the-fabric-of-reality",
+          "claim_index": 1,
+          "source_title": "Quantum computation and quantum information review"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/qt-quantcomp/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/rationality-historicist/",
+      "citations": [
+        {
+          "slug": "against-method",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Historicist Theories of Scientific Rationality"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/rationality-historicist/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/scientific-explanation/",
+      "citations": [
+        {
+          "slug": "the-beginning-of-infinity",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Explanation"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/scientific-explanation/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/scientific-knowledge-social/",
+      "citations": [
+        {
+          "slug": "the-scientific-revolution-shapin",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Social Dimensions of Scientific Knowledge"
+        },
+        {
+          "slug": "the-scientific-revolution-shapin",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Social Dimensions of Scientific Knowledge"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/scientific-knowledge-social/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/scientific-method/",
+      "citations": [
+        {
+          "slug": "the-logic-of-scientific-discovery",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Method"
+        },
+        {
+          "slug": "the-logic-of-scientific-discovery",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Method"
+        },
+        {
+          "slug": "conjectures-and-refutations",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Method"
+        },
+        {
+          "slug": "against-method",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Method"
+        },
+        {
+          "slug": "the-demon-haunted-world",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Method"
+        },
+        {
+          "slug": "the-invention-of-science",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Method"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/scientific-method/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/scientific-pluralism/",
+      "citations": [
+        {
+          "slug": "against-method",
+          "claim_index": 2,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Pluralism"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/scientific-pluralism/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/scientific-reduction/",
+      "citations": [
+        {
+          "slug": "consilience",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Reduction"
+        },
+        {
+          "slug": "consilience",
+          "claim_index": 3,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Reduction"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/scientific-reduction/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/scientific-revolutions/",
+      "citations": [
+        {
+          "slug": "the-scientific-revolution-shapin",
+          "claim_index": 1,
+          "source_title": "Stanford Encyclopedia of Philosophy: Scientific Revolutions"
+        }
+      ],
+      "host": "plato.stanford.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://plato.stanford.edu/entries/scientific-revolutions/",
       "redirected": false,
       "error": null
     },
@@ -13951,6 +14695,28 @@
       "error": null
     },
     {
+      "url": "https://revistas.ucm.es/index.php/RESF/en/article/view/100581",
+      "citations": [
+        {
+          "slug": "consilience",
+          "claim_index": 1,
+          "source_title": "Consilience and Integration of Knowledge: a critical analysis"
+        },
+        {
+          "slug": "consilience",
+          "claim_index": 3,
+          "source_title": "Consilience and Integration of Knowledge: a critical analysis"
+        }
+      ],
+      "host": "revistas.ucm.es",
+      "state": "transient",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "AbortError: This operation was aborted"
+    },
+    {
       "url": "https://revistas.unal.edu.co/index.php/achsc/article/view/71038",
       "citations": [
         {
@@ -13964,6 +14730,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://revistas.unal.edu.co/index.php/achsc/article/view/71038",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://royalsociety.org/about-us/who-we-are/history/",
+      "citations": [
+        {
+          "slug": "the-scientific-revolution-shapin",
+          "claim_index": 2,
+          "source_title": "Royal Society history"
+        }
+      ],
+      "host": "royalsociety.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://royalsociety.org/about-us/who-we-are/history/",
       "redirected": false,
       "error": null
     },
@@ -14016,12 +14799,12 @@
         }
       ],
       "host": "ruj.uj.edu.pl",
-      "state": "transient",
+      "state": "reachable",
       "method": "GET",
-      "status": null,
-      "final_url": null,
-      "redirected": false,
-      "error": "AbortError: This operation was aborted"
+      "status": 200,
+      "final_url": "https://ruj.uj.edu.pl//handle/item/68230",
+      "redirected": true,
+      "error": null
     },
     {
       "url": "https://s-media.nyc.gov/agencies/lpc/lp/0098.pdf",
@@ -15318,9 +16101,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev.psych.59.103006.093629",
       "redirected": false,
       "error": null
@@ -15375,7 +16158,7 @@
       ],
       "host": "aphis.usda.gov",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://www.aphis.usda.gov/sites/default/files/10_16101p.pdf",
       "redirected": false,
@@ -15678,6 +16461,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.cambridge.org/core/books/abs/cambridge-economic-history-of-modern-europe/europe-in-an-asian-mirror-the-great-divergence/D4E6D284CD8B03533C229CEE5D669CB3",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/cambridge-history-of-science/3F715642EB8D89BE03E3D4D7304A24CE",
+      "citations": [
+        {
+          "slug": "the-scientific-revolution-shapin",
+          "claim_index": 1,
+          "source_title": "Cambridge history of science overview"
+        },
+        {
+          "slug": "the-scientific-revolution-shapin",
+          "claim_index": 3,
+          "source_title": "Cambridge history of science overview"
+        },
+        {
+          "slug": "the-invention-of-science",
+          "claim_index": 3,
+          "source_title": "Global history of science and technology"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "transient",
+      "method": "GET",
+      "status": 500,
+      "final_url": "https://www.cambridge.org/core/books/cambridge-history-of-science/3F715642EB8D89BE03E3D4D7304A24CE",
       "redirected": false,
       "error": null
     },
@@ -17796,9 +18606,9 @@
         }
       ],
       "host": "ferc.gov",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy",
       "redirected": false,
       "error": null
@@ -18507,9 +19317,9 @@
         }
       ],
       "host": "historians.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.historians.org/person/kenneth-pomeranz/",
       "redirected": false,
       "error": null
@@ -19231,6 +20041,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.journals.uchicago.edu/doi/full/10.1086/673347",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.journals.uchicago.edu/doi/full/10.1086/691866",
+      "citations": [
+        {
+          "slug": "the-invention-of-science",
+          "claim_index": 2,
+          "source_title": "University of Chicago Press review context"
+        }
+      ],
+      "host": "journals.uchicago.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.journals.uchicago.edu/doi/full/10.1086/691866",
       "redirected": false,
       "error": null
     },
@@ -20304,7 +21131,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=44dbe7df-1f6d-4c64-895b-da15b2316b14",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=3814d586-b684-4f60-baff-e666a6b7db77",
       "redirected": true,
       "error": null
     },
@@ -20331,7 +21158,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=c44e708f-1fc2-44c9-9a10-fd129cf64354",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=3d2b2349-c09d-4d8b-9773-0b11819c27db",
       "redirected": true,
       "error": null
     },
@@ -20358,7 +21185,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=2af94181-2b26-4edf-a552-b1eed017225b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=e6c877cd-a258-4fd5-beba-1320383f0d5b",
       "redirected": true,
       "error": null
     },
@@ -20380,7 +21207,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=426bec7d-c1fd-4578-b561-72fe6afdf9a4",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=c608375c-8e51-459e-b97c-5aeae6d2038b",
       "redirected": true,
       "error": null
     },
@@ -20397,8 +21224,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=66c634cc-e81e-4528-930f-25d632f97699",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
+      "redirected": false,
       "error": null
     },
     {
@@ -20419,6 +21246,28 @@
       "error": null
     },
     {
+      "url": "https://www.nature.com/articles/s41562-023-01641-6",
+      "citations": [
+        {
+          "slug": "the-demon-haunted-world",
+          "claim_index": 2,
+          "source_title": "Understanding and combatting misinformation across 16 countries"
+        },
+        {
+          "slug": "the-demon-haunted-world",
+          "claim_index": 3,
+          "source_title": "Understanding and combatting misinformation across 16 countries"
+        }
+      ],
+      "host": "nature.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=07055ed8-ddd7-45fd-9d16-ff358b38378b",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://www.nature.com/articles/s41576-020-00305-9",
       "citations": [
         {
@@ -20431,7 +21280,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=78572a5c-fae3-41dc-a394-a378cf09b4de",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=a047b8bc-de10-4787-ab40-000875b0dab6",
       "redirected": true,
       "error": null
     },
@@ -20465,7 +21314,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=bef7d6a5-ea17-4693-9b3b-a2ade074a034",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=39930ba5-4310-4585-831e-dc2267ee47e7",
       "redirected": true,
       "error": null
     },
@@ -20487,8 +21336,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=aa4a73ef-6e7e-4872-af3d-8793afb1cf13",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41586-022-04800-3",
+      "redirected": false,
       "error": null
     },
     {
@@ -20846,6 +21695,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nist.gov/publications/public-key-cryptography-0",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nist.gov/quantum-information-science",
+      "citations": [
+        {
+          "slug": "the-fabric-of-reality",
+          "claim_index": 1,
+          "source_title": "NIST quantum information science overview"
+        }
+      ],
+      "host": "nist.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nist.gov/quantum-information-science",
       "redirected": false,
       "error": null
     },
@@ -22746,9 +23612,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.semi.org/en/industry-groups/supply-chain-management",
       "redirected": false,
       "error": null
@@ -24002,8 +24868,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article",
-      "redirected": false,
+      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/1/05-0979_article",
+      "redirected": true,
       "error": null
     },
     {
@@ -24024,8 +24890,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/1/05-0979_article/",
-      "redirected": true,
+      "final_url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article/",
+      "redirected": false,
       "error": null
     },
     {

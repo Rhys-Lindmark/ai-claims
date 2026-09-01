@@ -1,6 +1,6 @@
 # Rapid book batch 31 — philosophy of science and scientific reasoning
 
-Review state: selection and source map in progress; no scores yet.
+Review state: publication candidate complete; all ten books have exactly three scored claims, six citations, and a reproducible aggregate score.
 
 ## Selected books
 
@@ -36,3 +36,11 @@ All ten passed normalized-title uniqueness against the 230-book catalog on 2026-
 - Do not convert speculative unification or interpretation of quantum theory into settled experimental fact.
 - Avoid both a single heroic birth of science and an account so diffuse that institutional and technical discontinuities disappear.
 - Score exactly three central claims per book using the public four-state credit map and at least two independently useful sources per claim.
+
+## Publication evidence
+
+- Catalog after this batch: 240 books, 720 scored claims, and 1,440 citations.
+- Source audit: 987 unique URLs and zero confirmed broken links after repairing three obsolete or incorrect routes.
+- Covers: eight of ten new titles matched Open Library by normalized title and author, raising catalog coverage to 207 of 240; two retain explicit placeholders.
+- Score range in this set: 50–75. Every score is `round(mean(claim credits) × 100)` using the published four-state credit map.
+- Main caution: philosophical coherence, historical description, institutional value, and empirical confirmation are recorded separately rather than collapsed into influence.

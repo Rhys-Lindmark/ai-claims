@@ -2398,6 +2398,108 @@
         "Henry L. Roediger",
         "Mark A. McDaniel"
       ]
+    },
+    {
+      "slug": "the-logic-of-scientific-discovery",
+      "match_state": "exact_title_author",
+      "cover_id": 262763,
+      "cover_url": "https://covers.openlibrary.org/b/id/262763-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1984582W",
+      "source_title": "The Logic of Scientific Discovery",
+      "source_authors": [
+        "Karl Popper"
+      ]
+    },
+    {
+      "slug": "conjectures-and-refutations",
+      "match_state": "exact_title_author",
+      "cover_id": 267020,
+      "cover_url": "https://covers.openlibrary.org/b/id/267020-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1984581W",
+      "source_title": "Conjectures and refutations",
+      "source_authors": [
+        "Karl Popper",
+        "Michelle Irene",
+        "de Launay Marc B.",
+        "Melitta Mew"
+      ]
+    },
+    {
+      "slug": "against-method",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-mismeasure-of-man",
+      "match_state": "exact_title_author",
+      "cover_id": 6539950,
+      "cover_url": "https://covers.openlibrary.org/b/id/6539950-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL473565W",
+      "source_title": "The Mismeasure of Man",
+      "source_authors": [
+        "Stephen Jay Gould",
+        "Joandomènec Ros",
+        "Ricardo Pochtar",
+        "Antonio Desmonts"
+      ]
+    },
+    {
+      "slug": "the-demon-haunted-world",
+      "match_state": "exact_title_author",
+      "cover_id": 13129044,
+      "cover_url": "https://covers.openlibrary.org/b/id/13129044-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2950942W",
+      "source_title": "The Demon-Haunted World",
+      "source_authors": [
+        "Carl Sagan"
+      ]
+    },
+    {
+      "slug": "the-beginning-of-infinity",
+      "match_state": "exact_title_author",
+      "cover_id": 8622269,
+      "cover_url": "https://covers.openlibrary.org/b/id/8622269-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL4325174W",
+      "source_title": "The Beginning of Infinity",
+      "source_authors": [
+        "David Deutsch"
+      ]
+    },
+    {
+      "slug": "the-fabric-of-reality",
+      "match_state": "exact_title_author",
+      "cover_id": 452204,
+      "cover_url": "https://covers.openlibrary.org/b/id/452204-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2635835W",
+      "source_title": "The fabric of reality",
+      "source_authors": [
+        "David Deutsch"
+      ]
+    },
+    {
+      "slug": "consilience",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-scientific-revolution-shapin",
+      "match_state": "exact_title_author",
+      "cover_id": 142945,
+      "cover_url": "https://covers.openlibrary.org/b/id/142945-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3259273W",
+      "source_title": "The scientific revolution",
+      "source_authors": [
+        "Steven Shapin"
+      ]
+    },
+    {
+      "slug": "the-invention-of-science",
+      "match_state": "exact_title_author",
+      "cover_id": 12195380,
+      "cover_url": "https://covers.openlibrary.org/b/id/12195380-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19666035W",
+      "source_title": "The invention of science",
+      "source_authors": [
+        "David Wootton"
+      ]
     }
   ]
 }
