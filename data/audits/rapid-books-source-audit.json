@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-09-01",
-  "checked_at": "2026-09-01T03:37:30.166Z",
+  "checked_at": "2026-09-01T03:53:07.267Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,53 +10,53 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 270,
-    "claims": 810,
-    "citations": 1620,
-    "unique_urls": 1088,
-    "repeated_citations": 532,
-    "redirected_urls": 158,
+    "books": 280,
+    "claims": 840,
+    "citations": 1680,
+    "unique_urls": 1123,
+    "repeated_citations": 557,
+    "redirected_urls": 164,
     "states": {
-      "access_blocked": 228,
-      "network_error": 22,
+      "access_blocked": 240,
+      "network_error": 24,
       "other_http": 4,
-      "reachable": 827,
+      "reachable": 848,
       "transient": 7
     },
     "score_distribution": {
-      "42": 1,
-      "50": 10,
-      "58": 17,
-      "67": 62,
-      "75": 66,
+      "42": 2,
+      "50": 12,
+      "58": 19,
+      "67": 65,
+      "75": 68,
       "83": 58,
       "92": 46,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 93,
+      "high": 100,
       "low": 1,
-      "medium": 69,
-      "medium-high": 85,
+      "medium": 70,
+      "medium-high": 87,
       "medium-low": 22
     }
   },
   "domain_summary": [
     {
       "host": "doi.org",
-      "unique_urls": 83,
-      "citations": 119,
+      "unique_urls": 85,
+      "citations": 125,
       "states": {
-        "reachable": 39,
+        "reachable": 41,
         "access_blocked": 44
       }
     },
     {
       "host": "pmc.ncbi.nlm.nih.gov",
-      "unique_urls": 77,
-      "citations": 116,
+      "unique_urls": 78,
+      "citations": 117,
       "states": {
-        "reachable": 77
+        "reachable": 78
       }
     },
     {
@@ -78,10 +78,18 @@
     },
     {
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "unique_urls": 26,
+      "unique_urls": 27,
+      "citations": 37,
+      "states": {
+        "reachable": 27
+      }
+    },
+    {
+      "host": "sciencedirect.com",
+      "unique_urls": 25,
       "citations": 35,
       "states": {
-        "reachable": 26
+        "access_blocked": 25
       }
     },
     {
@@ -90,14 +98,6 @@
       "citations": 34,
       "states": {
         "reachable": 18
-      }
-    },
-    {
-      "host": "sciencedirect.com",
-      "unique_urls": 22,
-      "citations": 29,
-      "states": {
-        "access_blocked": 22
       }
     },
     {
@@ -110,10 +110,18 @@
     },
     {
       "host": "nature.com",
-      "unique_urls": 14,
-      "citations": 22,
+      "unique_urls": 15,
+      "citations": 24,
       "states": {
-        "reachable": 14
+        "reachable": 15
+      }
+    },
+    {
+      "host": "worldbank.org",
+      "unique_urls": 12,
+      "citations": 21,
+      "states": {
+        "reachable": 12
       }
     },
     {
@@ -133,15 +141,15 @@
       }
     },
     {
-      "host": "worldbank.org",
-      "unique_urls": 12,
-      "citations": 20,
+      "host": "academic.oup.com",
+      "unique_urls": 15,
+      "citations": 19,
       "states": {
-        "reachable": 12
+        "access_blocked": 15
       }
     },
     {
-      "host": "academic.oup.com",
+      "host": "journals.sagepub.com",
       "unique_urls": 14,
       "citations": 18,
       "states": {
@@ -150,10 +158,34 @@
     },
     {
       "host": "onlinelibrary.wiley.com",
+      "unique_urls": 13,
+      "citations": 18,
+      "states": {
+        "access_blocked": 13
+      }
+    },
+    {
+      "host": "nber.org",
       "unique_urls": 12,
       "citations": 17,
       "states": {
-        "access_blocked": 12
+        "reachable": 12
+      }
+    },
+    {
+      "host": "v-dem.net",
+      "unique_urls": 5,
+      "citations": 17,
+      "states": {
+        "reachable": 5
+      }
+    },
+    {
+      "host": "jstor.org",
+      "unique_urls": 11,
+      "citations": 16,
+      "states": {
+        "reachable": 11
       }
     },
     {
@@ -165,11 +197,11 @@
       }
     },
     {
-      "host": "journals.sagepub.com",
-      "unique_urls": 12,
-      "citations": 14,
+      "host": "link.springer.com",
+      "unique_urls": 10,
+      "citations": 15,
       "states": {
-        "access_blocked": 12
+        "reachable": 10
       }
     },
     {
@@ -181,32 +213,16 @@
       }
     },
     {
-      "host": "link.springer.com",
-      "unique_urls": 9,
-      "citations": 14,
-      "states": {
-        "reachable": 9
-      }
-    },
-    {
       "host": "annualreviews.org",
       "unique_urls": 11,
       "citations": 13,
       "states": {
-        "access_blocked": 8,
-        "reachable": 3
+        "reachable": 1,
+        "access_blocked": 10
       }
     },
     {
       "host": "cdc.gov",
-      "unique_urls": 9,
-      "citations": 13,
-      "states": {
-        "reachable": 9
-      }
-    },
-    {
-      "host": "jstor.org",
       "unique_urls": 9,
       "citations": 13,
       "states": {
@@ -230,11 +246,11 @@
       }
     },
     {
-      "host": "v-dem.net",
-      "unique_urls": 5,
-      "citations": 13,
+      "host": "imf.org",
+      "unique_urls": 10,
+      "citations": 12,
       "states": {
-        "reachable": 5
+        "reachable": 10
       }
     },
     {
@@ -243,14 +259,6 @@
       "citations": 12,
       "states": {
         "access_blocked": 1
-      }
-    },
-    {
-      "host": "nber.org",
-      "unique_urls": 7,
-      "citations": 12,
-      "states": {
-        "reachable": 7
       }
     },
     {
@@ -267,6 +275,22 @@
       "citations": 11,
       "states": {
         "access_blocked": 5
+      }
+    },
+    {
+      "host": "federalreserve.gov",
+      "unique_urls": 9,
+      "citations": 11,
+      "states": {
+        "reachable": 9
+      }
+    },
+    {
+      "host": "tandfonline.com",
+      "unique_urls": 10,
+      "citations": 11,
+      "states": {
+        "access_blocked": 10
       }
     },
     {
@@ -294,14 +318,6 @@
       }
     },
     {
-      "host": "federalreserve.gov",
-      "unique_urls": 8,
-      "citations": 10,
-      "states": {
-        "reachable": 8
-      }
-    },
-    {
       "host": "journals.uchicago.edu",
       "unique_urls": 5,
       "citations": 9,
@@ -326,11 +342,11 @@
       }
     },
     {
-      "host": "tandfonline.com",
-      "unique_urls": 8,
-      "citations": 9,
+      "host": "aeaweb.org",
+      "unique_urls": 5,
+      "citations": 8,
       "states": {
-        "access_blocked": 8
+        "reachable": 5
       }
     },
     {
@@ -343,14 +359,6 @@
     },
     {
       "host": "fhwa.dot.gov",
-      "unique_urls": 7,
-      "citations": 8,
-      "states": {
-        "reachable": 7
-      }
-    },
-    {
-      "host": "imf.org",
       "unique_urls": 7,
       "citations": 8,
       "states": {
@@ -448,7 +456,7 @@
       }
     },
     {
-      "host": "aeaweb.org",
+      "host": "eia.gov",
       "unique_urls": 4,
       "citations": 6,
       "states": {
@@ -456,11 +464,12 @@
       }
     },
     {
-      "host": "eia.gov",
-      "unique_urls": 4,
+      "host": "elibrary.imf.org",
+      "unique_urls": 5,
       "citations": 6,
       "states": {
-        "reachable": 4
+        "access_blocked": 3,
+        "reachable": 2
       }
     },
     {
@@ -606,17 +615,7 @@
       "unique_urls": 4,
       "citations": 5,
       "states": {
-        "reachable": 3,
-        "access_blocked": 1
-      }
-    },
-    {
-      "host": "elibrary.imf.org",
-      "unique_urls": 4,
-      "citations": 5,
-      "states": {
-        "access_blocked": 2,
-        "reachable": 2
+        "reachable": 4
       }
     },
     {
@@ -649,6 +648,14 @@
       "citations": 5,
       "states": {
         "reachable": 3
+      }
+    },
+    {
+      "host": "papers.ssrn.com",
+      "unique_urls": 2,
+      "citations": 5,
+      "states": {
+        "access_blocked": 2
       }
     },
     {
@@ -1009,7 +1016,7 @@
       "unique_urls": 2,
       "citations": 3,
       "states": {
-        "reachable": 2
+        "network_error": 2
       }
     },
     {
@@ -1094,14 +1101,6 @@
     },
     {
       "host": "oro.open.ac.uk",
-      "unique_urls": 1,
-      "citations": 3,
-      "states": {
-        "access_blocked": 1
-      }
-    },
-    {
-      "host": "papers.ssrn.com",
       "unique_urls": 1,
       "citations": 3,
       "states": {
@@ -1367,6 +1366,14 @@
       }
     },
     {
+      "host": "hdr.undp.org",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "heritagejohnstown.org",
       "unique_urls": 2,
       "citations": 2,
@@ -1503,6 +1510,14 @@
       }
     },
     {
+      "host": "ncses.nsf.gov",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "nejm.org",
       "unique_urls": 2,
       "citations": 2,
@@ -1524,6 +1539,14 @@
       "citations": 2,
       "states": {
         "transient": 1
+      }
+    },
+    {
+      "host": "nsf.gov",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -1623,6 +1646,14 @@
       }
     },
     {
+      "host": "schumpeter.info",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "scielo.br",
       "unique_urls": 1,
       "citations": 2,
@@ -1697,6 +1728,14 @@
     },
     {
       "host": "toc.library.ethz.ch",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "undp.org",
       "unique_urls": 1,
       "citations": 2,
       "states": {
@@ -3200,6 +3239,14 @@
       }
     },
     {
+      "host": "worldvaluessurvey.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "www-pub.iaea.org",
       "unique_urls": 1,
       "citations": 1,
@@ -3236,6 +3283,21 @@
       ]
     },
     {
+      "url": "https://www.v-dem.net/data/",
+      "host": "v-dem.net",
+      "citation_count": 9,
+      "state": "reachable",
+      "books": [
+        "the-federalist-papers",
+        "democracy-in-america",
+        "the-open-society-and-its-enemies",
+        "political-order-and-political-decay",
+        "why-liberalism-failed",
+        "capitalism-socialism-and-democracy",
+        "development-as-freedom"
+      ]
+    },
+    {
       "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
       "host": "who.int",
       "citation_count": 9,
@@ -3246,6 +3308,20 @@
         "fast-food-nation",
         "the-china-study",
         "how-not-to-die"
+      ]
+    },
+    {
+      "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+      "host": "worldbank.org",
+      "citation_count": 8,
+      "state": "reachable",
+      "books": [
+        "the-origins-of-political-order",
+        "the-road-to-serfdom",
+        "capitalism-and-freedom",
+        "political-order-and-political-decay",
+        "the-narrow-corridor",
+        "free-to-choose"
       ]
     },
     {
@@ -3271,19 +3347,6 @@
         "the-soul-of-a-new-machine",
         "hackers-heroes-of-the-computer-revolution",
         "dealers-of-lightning"
-      ]
-    },
-    {
-      "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
-      "host": "worldbank.org",
-      "citation_count": 7,
-      "state": "reachable",
-      "books": [
-        "the-origins-of-political-order",
-        "the-road-to-serfdom",
-        "capitalism-and-freedom",
-        "political-order-and-political-decay",
-        "the-narrow-corridor"
       ]
     },
     {
@@ -3368,15 +3431,14 @@
       ]
     },
     {
-      "url": "https://www.v-dem.net/data/",
-      "host": "v-dem.net",
-      "citation_count": 5,
+      "url": "https://doi.org/10.1007/s11127-015-0252-0",
+      "host": "doi.org",
+      "citation_count": 4,
       "state": "reachable",
       "books": [
-        "the-federalist-papers",
-        "democracy-in-america",
-        "the-open-society-and-its-enemies",
-        "political-order-and-political-decay"
+        "the-rise-and-decline-of-nations",
+        "the-logic-of-collective-action",
+        "the-price-of-inequality"
       ]
     },
     {
@@ -4455,6 +4517,16 @@
       ]
     },
     {
+      "url": "https://doi.org/10.1017/S1537592714001595",
+      "host": "doi.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-rise-and-decline-of-nations",
+        "the-price-of-inequality"
+      ]
+    },
+    {
       "url": "https://doi.org/10.1037/0033-2909.132.3.354",
       "host": "doi.org",
       "citation_count": 2,
@@ -4587,7 +4659,7 @@
       "url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/reading-comprehension-strategies",
       "host": "educationendowmentfoundation.org.uk",
       "citation_count": 2,
-      "state": "reachable",
+      "state": "access_blocked",
       "books": [
         "why-dont-students-like-school",
         "the-knowledge-gap"
@@ -4666,6 +4738,15 @@
       ]
     },
     {
+      "url": "https://hdr.undp.org/about/human-development",
+      "host": "hdr.undp.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "development-as-freedom"
+      ]
+    },
+    {
       "url": "https://hhsociety.org/wp-content/uploads/2023/11/The-Wager.pdf",
       "host": "hhsociety.org",
       "citation_count": 2,
@@ -4681,6 +4762,24 @@
       "state": "reachable",
       "books": [
         "team-of-rivals"
+      ]
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/0010414086018004005",
+      "host": "journals.sagepub.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "the-rise-and-decline-of-nations"
+      ]
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/00207152241245620",
+      "host": "journals.sagepub.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "the-spirit-level"
       ]
     },
     {
@@ -4772,6 +4871,16 @@
       "state": "reachable",
       "books": [
         "fire-weather"
+      ]
+    },
+    {
+      "url": "https://ncses.nsf.gov/pubs/nsb20262",
+      "host": "ncses.nsf.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-entrepreneurial-state",
+        "capitalism-socialism-and-democracy"
       ]
     },
     {
@@ -4899,6 +5008,15 @@
       "state": "reachable",
       "books": [
         "the-path-between-the-seas"
+      ]
+    },
+    {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4939891",
+      "host": "papers.ssrn.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "the-great-leveler"
       ]
     },
     {
@@ -5196,6 +5314,15 @@
       ]
     },
     {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16226363/",
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-spirit-level"
+      ]
+    },
+    {
       "url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
@@ -5442,6 +5569,15 @@
       "books": [
         "capital-volume-one",
         "capital-in-the-twenty-first-century"
+      ]
+    },
+    {
+      "url": "https://www.aeaweb.org/articles?id=10.1257/jel.20191477",
+      "host": "aeaweb.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-great-leveler"
       ]
     },
     {
@@ -5927,7 +6063,7 @@
       "url": "https://www.healthquality.va.gov/guidelines/mh/ptsd/index.asp",
       "host": "healthquality.va.gov",
       "citation_count": 2,
-      "state": "reachable",
+      "state": "network_error",
       "books": [
         "the-body-keeps-the-score"
       ]
@@ -5957,6 +6093,16 @@
       "state": "reachable",
       "books": [
         "poor-economics"
+      ]
+    },
+    {
+      "url": "https://www.imf.org/en/publications/wp/issues/2016/12/30/r-d-innovation-and-economic-growth-an-empirical-analysis-16927",
+      "host": "imf.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-entrepreneurial-state",
+        "capitalism-socialism-and-democracy"
       ]
     },
     {
@@ -6013,6 +6159,15 @@
       "books": [
         "on-the-origin-of-species",
         "the-beak-of-the-finch"
+      ]
+    },
+    {
+      "url": "https://www.jstor.org/stable/2706641",
+      "host": "jstor.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-rise-and-decline-of-nations"
       ]
     },
     {
@@ -6170,6 +6325,15 @@
       ]
     },
     {
+      "url": "https://www.nature.com/articles/s41599-021-00763-4",
+      "host": "nature.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-great-leveler"
+      ]
+    },
+    {
       "url": "https://www.nber.org/papers/w14467",
       "host": "nber.org",
       "citation_count": 2,
@@ -6269,6 +6433,16 @@
       ]
     },
     {
+      "url": "https://www.nsf.gov/reports/statistics/long-term-trends-show-decline-federally-funded-rd-share-gdp",
+      "host": "nsf.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-entrepreneurial-state",
+        "capitalism-socialism-and-democracy"
+      ]
+    },
+    {
       "url": "https://www.nyc.gov/site/dep/water/sewer-system.page",
       "host": "nyc.gov",
       "citation_count": 2,
@@ -6332,6 +6506,15 @@
       ]
     },
     {
+      "url": "https://www.schumpeter.info/quellen/CS%26D%201949.pdf",
+      "host": "schumpeter.info",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "capitalism-socialism-and-democracy"
+      ]
+    },
+    {
       "url": "https://www.scielo.br/j/rbedu/a/br7NczPCHrxYzQkfWCQryQH/?lang=en",
       "host": "scielo.br",
       "citation_count": 2,
@@ -6359,6 +6542,24 @@
       ]
     },
     {
+      "url": "https://www.sciencedirect.com/science/article/pii/0049089X73900045",
+      "host": "sciencedirect.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "the-logic-of-collective-action"
+      ]
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0014292119301126",
+      "host": "sciencedirect.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "the-logic-of-collective-action"
+      ]
+    },
+    {
       "url": "https://www.sciencedirect.com/science/article/pii/S0167814098001431",
       "host": "sciencedirect.com",
       "citation_count": 2,
@@ -6374,6 +6575,15 @@
       "state": "access_blocked",
       "books": [
         "the-road-to-serfdom"
+      ]
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0277953615001094",
+      "host": "sciencedirect.com",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "the-spirit-level"
       ]
     },
     {
@@ -6500,6 +6710,16 @@
       "state": "reachable",
       "books": [
         "breakneck"
+      ]
+    },
+    {
+      "url": "https://www.undp.org/publications/human-development-report-2010",
+      "host": "undp.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "why-liberalism-failed",
+        "development-as-freedom"
       ]
     },
     {
@@ -6903,6 +7123,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://academic.oup.com/jah/article-abstract/99/2/415/860501",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://academic.oup.com/oxrep/article/33/1/24/2972707",
+      "citations": [
+        {
+          "slug": "the-entrepreneurial-state",
+          "claim_index": 2,
+          "source_title": "Public Financing of Innovation: New Questions"
+        }
+      ],
+      "host": "academic.oup.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://academic.oup.com/oxrep/article/33/1/24/2972707",
       "redirected": false,
       "error": null
     },
@@ -8236,6 +8473,38 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1007/s11127-015-0252-0",
+      "citations": [
+        {
+          "slug": "the-rise-and-decline-of-nations",
+          "claim_index": 1,
+          "source_title": "Collective Action: Fifty Years Later"
+        },
+        {
+          "slug": "the-logic-of-collective-action",
+          "claim_index": 1,
+          "source_title": "Collective Action: Fifty Years Later"
+        },
+        {
+          "slug": "the-logic-of-collective-action",
+          "claim_index": 3,
+          "source_title": "Collective Action: Fifty Years Later"
+        },
+        {
+          "slug": "the-price-of-inequality",
+          "claim_index": 2,
+          "source_title": "Collective Action: Fifty Years Later"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11127-015-0252-0&code=61a008cb-693b-4a99-a08a-3d41845d7253",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1016/0033-5894(82)90065-5",
       "citations": [
         {
@@ -8528,6 +8797,28 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1017/S1537592714001595",
+      "citations": [
+        {
+          "slug": "the-rise-and-decline-of-nations",
+          "claim_index": 1,
+          "source_title": "Testing Theories of American Politics"
+        },
+        {
+          "slug": "the-price-of-inequality",
+          "claim_index": 2,
+          "source_title": "Testing Theories of American Politics"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/perspectives-on-politics/article/testing-theories-of-american-politics-elites-interest-groups-and-average-citizens/62327F513959D0A304D4893B382B992B",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1029/95JD03237",
       "citations": [
         {
@@ -8684,7 +8975,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=c3939f54-3f71-4812-8661-71577a75dfa0",
+      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=e14863b5-af0a-47e1-8b14-05b274e1e73b",
       "redirected": true,
       "error": null
     },
@@ -8716,7 +9007,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=c6b98b94-28a2-4b29-8713-760699fa729d",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=bddaae65-859e-451a-a06d-159d7ff0b160",
       "redirected": true,
       "error": null
     },
@@ -8733,7 +9024,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nature10574",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=67747cf2-b924-40a9-a2ee-a7509698a8c9",
       "redirected": true,
       "error": null
     },
@@ -8755,7 +9046,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnplants201793&code=f8cff9d7-24f4-4ccc-988e-826551e52a21",
+      "final_url": "https://www.nature.com/articles/nplants201793",
       "redirected": true,
       "error": null
     },
@@ -8777,7 +9068,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=23584c40-e161-4f20-98d5-05cf7d9a50f3",
+      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
       "redirected": true,
       "error": null
     },
@@ -8794,7 +9085,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=bedd8b07-6e78-418b-8cb6-1087173c42bd",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=9ab9c2f9-f2f3-4b2c-afd0-3673ef597397",
       "redirected": true,
       "error": null
     },
@@ -8811,7 +9102,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=629fb061-8ffb-4917-80e0-6071d273461f",
+      "final_url": "https://www.nature.com/articles/s41559-019-0907-1",
       "redirected": true,
       "error": null
     },
@@ -8828,7 +9119,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=959ca7f4-7281-4db6-8c76-e65450eadaa1",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=1588e991-a172-4398-af58-94e57284835f",
       "redirected": true,
       "error": null
     },
@@ -8845,7 +9136,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=2946a7ec-c420-4135-bbea-7a94aa53cc55",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=1ef330da-d789-49c6-88f5-494e93c76257",
       "redirected": true,
       "error": null
     },
@@ -8862,7 +9153,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=4f4a1cd8-25c0-4463-8c26-3053a65edcc2",
       "redirected": true,
       "error": null
     },
@@ -9902,9 +10193,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/reading-comprehension-strategies",
       "redirected": false,
       "error": null
@@ -9970,9 +10261,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/word-and-world-reading-programme",
       "redirected": false,
       "error": null
@@ -10693,6 +10984,28 @@
       "error": null
     },
     {
+      "url": "https://hdr.undp.org/about/human-development",
+      "citations": [
+        {
+          "slug": "development-as-freedom",
+          "claim_index": 1,
+          "source_title": "UNDP: What Is Human Development?"
+        },
+        {
+          "slug": "development-as-freedom",
+          "claim_index": 2,
+          "source_title": "UNDP: What Is Human Development?"
+        }
+      ],
+      "host": "hdr.undp.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://hdr.undp.org/about/human-development",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://heritagemalta.mt/explore/fort-st-elmo-national-war-museum/",
       "citations": [
         {
@@ -11009,6 +11322,28 @@
       "error": null
     },
     {
+      "url": "https://journals.sagepub.com/doi/10.1177/0010414086018004005",
+      "citations": [
+        {
+          "slug": "the-rise-and-decline-of-nations",
+          "claim_index": 2,
+          "source_title": "Democracy, Political Stability, and Economic Growth"
+        },
+        {
+          "slug": "the-rise-and-decline-of-nations",
+          "claim_index": 3,
+          "source_title": "Democracy, Political Stability, and Economic Growth"
+        }
+      ],
+      "host": "journals.sagepub.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/10.1177/0010414086018004005",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://journals.sagepub.com/doi/10.1177/001946469603300310",
       "citations": [
         {
@@ -11022,6 +11357,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://journals.sagepub.com/doi/10.1177/001946469603300310",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/00207152241245620",
+      "citations": [
+        {
+          "slug": "the-spirit-level",
+          "claim_index": 1,
+          "source_title": "Inequality and Social Harm: Revisiting the Spirit Level"
+        },
+        {
+          "slug": "the-spirit-level",
+          "claim_index": 3,
+          "source_title": "Inequality and Social Harm: Revisiting the Spirit Level"
+        }
+      ],
+      "host": "journals.sagepub.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/10.1177/00207152241245620",
       "redirected": false,
       "error": null
     },
@@ -11218,7 +11575,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=d95fb63a-9697-4ea2-8fac-4338dcc2d0d7",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=6aac6a91-9b99-4f08-9d87-a6c945fa4867",
       "redirected": true,
       "error": null
     },
@@ -11245,7 +11602,24 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=ccc12a92-78c8-4997-861d-282bb3a8faa3",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=67b3d8df-6730-47ec-932f-9538c45424f5",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s11138-020-00508-7",
+      "citations": [
+        {
+          "slug": "the-entrepreneurial-state",
+          "claim_index": 3,
+          "source_title": "Bureaucrats or Markets in Innovation Policy?"
+        }
+      ],
+      "host": "link.springer.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11138-020-00508-7&code=d22256f9-495d-4f78-aa2b-22e0955c3ec7",
       "redirected": true,
       "error": null
     },
@@ -11279,8 +11653,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s11229-024-04527-w",
-      "redirected": false,
+      "final_url": "https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11229-024-04527-w",
+      "redirected": true,
       "error": null
     },
     {
@@ -11296,7 +11670,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=bbc1ab59-a062-44d7-8bbe-6a7e951b6d19",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=e31d475d-9c78-4766-8bce-5428e5ecef60",
       "redirected": true,
       "error": null
     },
@@ -11318,7 +11692,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=1a074373-6d95-4a44-a7b8-7863cec1b132",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=ca8ad2a6-cfde-423c-8170-60886b410354",
       "redirected": true,
       "error": null
     },
@@ -11335,7 +11709,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=91718a5a-b3bc-4945-8170-bc0c7fd0bc21",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=539c079d-28be-4e79-a0f0-b1797cd11cf8",
       "redirected": true,
       "error": null
     },
@@ -11362,7 +11736,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=a6117818-6418-4580-815c-8ff0ca15079c",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=e5e9696c-e9b7-47ef-8e0d-b08088d7e415",
       "redirected": true,
       "error": null
     },
@@ -11379,7 +11753,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=08de9f29-1132-43d2-a863-291139a69558",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=33dab4d5-2720-4d03-86ea-4e38ac53895e",
       "redirected": true,
       "error": null
     },
@@ -12038,6 +12412,28 @@
       "error": null
     },
     {
+      "url": "https://ncses.nsf.gov/pubs/nsb20262",
+      "citations": [
+        {
+          "slug": "the-entrepreneurial-state",
+          "claim_index": 1,
+          "source_title": "NSF: Translation to Impact"
+        },
+        {
+          "slug": "capitalism-socialism-and-democracy",
+          "claim_index": 1,
+          "source_title": "NSF: Translation to Impact"
+        }
+      ],
+      "host": "ncses.nsf.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ncses.nsf.gov/pubs/nsb20262",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100E0EO.TXT",
       "citations": [
         {
@@ -12546,6 +12942,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/ehr.13341",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/gove.12627",
+      "citations": [
+        {
+          "slug": "development-as-freedom",
+          "claim_index": 2,
+          "source_title": "Is Democracy Pro-Poor? A Global Test of the Sen Hypothesis"
+        }
+      ],
+      "host": "onlinelibrary.wiley.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/gove.12627",
       "redirected": false,
       "error": null
     },
@@ -13204,6 +13617,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3587764",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4939891",
+      "citations": [
+        {
+          "slug": "the-great-leveler",
+          "claim_index": 2,
+          "source_title": "Inequality Reduction Between Tragedy and Progress"
+        },
+        {
+          "slug": "the-great-leveler",
+          "claim_index": 3,
+          "source_title": "Inequality Reduction Between Tragedy and Progress"
+        }
+      ],
+      "host": "papers.ssrn.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4939891",
       "redirected": false,
       "error": null
     },
@@ -15070,6 +15505,23 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6818650/",
+      "citations": [
+        {
+          "slug": "the-entrepreneurial-state",
+          "claim_index": 2,
+          "source_title": "Public R&D Investments and Private-Sector Patenting"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6818650/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6987456/",
       "citations": [
         {
@@ -15499,6 +15951,28 @@
       "error": null
     },
     {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16226363/",
+      "citations": [
+        {
+          "slug": "the-spirit-level",
+          "claim_index": 1,
+          "source_title": "Income Inequality and Population Health: Review of the Evidence"
+        },
+        {
+          "slug": "the-spirit-level",
+          "claim_index": 2,
+          "source_title": "Income Inequality and Population Health: Review of the Evidence"
+        }
+      ],
+      "host": "pubmed.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/16226363/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
       "citations": [
         {
@@ -15771,7 +16245,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 203,
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/3321721/",
       "redirected": false,
       "error": null
@@ -15822,7 +16296,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 200,
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34225102/",
       "redirected": false,
       "error": null
@@ -17813,6 +18287,28 @@
       "error": null
     },
     {
+      "url": "https://www.aeaweb.org/articles?id=10.1257/jel.20191477",
+      "citations": [
+        {
+          "slug": "the-great-leveler",
+          "claim_index": 1,
+          "source_title": "AEA Review of The Great Leveler"
+        },
+        {
+          "slug": "the-great-leveler",
+          "claim_index": 3,
+          "source_title": "AEA Review of The Great Leveler"
+        }
+      ],
+      "host": "aeaweb.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.aeaweb.org/articles?id=10.1257/jel.20191477",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.aeaweb.org/articles?id=10.1257%2Faer.20101199",
       "citations": [
         {
@@ -17966,9 +18462,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-genet-021920-011805",
       "redirected": false,
       "error": null
@@ -17983,9 +18479,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-lawsocsci-102510-105445",
       "redirected": false,
       "error": null
@@ -18000,9 +18496,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011718-012440",
       "redirected": false,
       "error": null
@@ -18034,9 +18530,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-psych-122216-011836",
       "redirected": false,
       "error": null
@@ -18132,8 +18628,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-071213-041224?originator=useradmin&identity=5131&timestamp=20991231000000&signature=d9e00f1aeef59cd68a4f319a0cce4432",
-      "redirected": true,
+      "final_url": "https://www.annualreviews.org/eprint/5N4i9qp8RfQTmPzxZtke/full/10.1146/annurev-polisci-071213-041224",
+      "redirected": false,
       "error": null
     },
     {
@@ -19798,9 +20294,9 @@
         }
       ],
       "host": "commonwealthfund.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.commonwealthfund.org/publications/fund-reports/2024/sep/mirror-mirror-2024",
       "redirected": false,
       "error": null
@@ -20279,6 +20775,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.elibrary.imf.org/view/journals/001/1995/007/article-A001-en.xml",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.elibrary.imf.org/view/journals/006/2015/013/article-A001-en.xml",
+      "citations": [
+        {
+          "slug": "the-price-of-inequality",
+          "claim_index": 3,
+          "source_title": "IMF: Causes and Consequences of Income Inequality"
+        }
+      ],
+      "host": "elibrary.imf.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.elibrary.imf.org/view/journals/006/2015/013/article-A001-en.xml",
       "redirected": false,
       "error": null
     },
@@ -20823,6 +21336,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.federalreserve.gov/boarddocs/speeches/2003/20031024/default.htm",
+      "citations": [
+        {
+          "slug": "free-to-choose",
+          "claim_index": 2,
+          "source_title": "Federal Reserve: The Legacy of Milton and Rose Friedman"
+        }
+      ],
+      "host": "federalreserve.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.federalreserve.gov/boarddocs/speeches/2003/20031024/default.htm",
       "redirected": false,
       "error": null
     },
@@ -21662,12 +22192,12 @@
         }
       ],
       "host": "healthquality.va.gov",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
-      "final_url": "https://www.healthquality.va.gov/guidelines/mh/ptsd/index.asp",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
       "redirected": false,
-      "error": null
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/MH/ptsd/VA-DoD-CPG-PTSD-Full-CPG-Edited-111624-V5-81825.pdf",
@@ -21679,12 +22209,12 @@
         }
       ],
       "host": "healthquality.va.gov",
-      "state": "reachable",
-      "method": "HEAD",
-      "status": 200,
-      "final_url": "https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/MH/ptsd/VA-DoD-CPG-PTSD-Full-CPG-Edited-111624-V5-81825.pdf",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
       "redirected": false,
-      "error": null
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://www.heritage.nf.ca/articles/economy/fishery.php",
@@ -22257,6 +22787,28 @@
       "error": null
     },
     {
+      "url": "https://www.imf.org/en/publications/wp/issues/2016/12/30/r-d-innovation-and-economic-growth-an-empirical-analysis-16927",
+      "citations": [
+        {
+          "slug": "the-entrepreneurial-state",
+          "claim_index": 3,
+          "source_title": "IMF: R&D, Innovation, and Economic Growth"
+        },
+        {
+          "slug": "capitalism-socialism-and-democracy",
+          "claim_index": 2,
+          "source_title": "IMF: R&D, Innovation, and Economic Growth"
+        }
+      ],
+      "host": "imf.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.imf.org/en/publications/wp/issues/2016/12/30/r-d-innovation-and-economic-growth-an-empirical-analysis-16927",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.imf.org/en/publications/wp/issues/2016/12/30/the-effectiveness-of-fiscal-policy-in-stimulating-economic-activity-a-review-of-the-16198",
       "citations": [
         {
@@ -22338,6 +22890,40 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.imf.org/external/pubs/ft/fandd/2014/06/pdf/book2.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.imf.org/external/pubs/ft/fandd/basics/16_monetarism.htm",
+      "citations": [
+        {
+          "slug": "free-to-choose",
+          "claim_index": 1,
+          "source_title": "IMF: Monetarism—Money Is Where It's At"
+        }
+      ],
+      "host": "imf.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.imf.org/external/pubs/ft/fandd/basics/16_monetarism.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.imf.org/external/pubs/ft/sdn/2014/sdn1402.pdf",
+      "citations": [
+        {
+          "slug": "the-price-of-inequality",
+          "claim_index": 3,
+          "source_title": "IMF: Redistribution, Inequality, and Growth"
+        }
+      ],
+      "host": "imf.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.imf.org/external/pubs/ft/sdn/2014/sdn1402.pdf",
       "redirected": false,
       "error": null
     },
@@ -22641,6 +23227,28 @@
       "error": null
     },
     {
+      "url": "https://www.jstor.org/stable/2706641",
+      "citations": [
+        {
+          "slug": "the-rise-and-decline-of-nations",
+          "claim_index": 2,
+          "source_title": "Distributional Coalitions and Other Sources of Economic Stagnation"
+        },
+        {
+          "slug": "the-rise-and-decline-of-nations",
+          "claim_index": 3,
+          "source_title": "Distributional Coalitions and Other Sources of Economic Stagnation"
+        }
+      ],
+      "host": "jstor.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/2706641",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.jstor.org/stable/j.ctt130hpkk",
       "citations": [
         {
@@ -22737,6 +23345,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.jstor.org/stable/j.ctv47w3fn",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.jstor.org/stable/j.ctvc5pcmt",
+      "citations": [
+        {
+          "slug": "why-liberalism-failed",
+          "claim_index": 2,
+          "source_title": "Why Liberalism Failed"
+        }
+      ],
+      "host": "jstor.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/j.ctvc5pcmt",
       "redirected": false,
       "error": null
     },
@@ -23554,8 +24179,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/171737a0",
-      "redirected": false,
+      "final_url": "https://www.nature.com/articles/171737a0?error=cookies_not_supported&code=b8d3553f-cb87-4f59-a9a8-9c1164d8ad53",
+      "redirected": true,
       "error": null
     },
     {
@@ -23588,8 +24213,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-024-00544-4",
-      "redirected": false,
+      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=19728782-6a6b-41ce-877a-17e9a798a567",
+      "redirected": true,
       "error": null
     },
     {
@@ -23610,7 +24235,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=8b48736f-d853-42fb-9b4b-c1e0f812ba22",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=74db1f9a-a126-49a7-8c17-1a85266698fc",
       "redirected": true,
       "error": null
     },
@@ -23637,7 +24262,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=e9bcf032-9144-4e31-be5a-974c451521c1",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=34b00e7b-3af5-4f4b-8372-79958dc05ea5",
       "redirected": true,
       "error": null
     },
@@ -23664,7 +24289,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=2280f4e9-b046-4c76-b6e9-6e4fd1793db2",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=c1566550-d906-4b8e-9f1b-a2ca962f8907",
       "redirected": true,
       "error": null
     },
@@ -23686,7 +24311,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=a44eddf0-09bc-474f-bc31-0e5e2086ff9b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=371c05c2-28ba-4870-97b5-7705a8d2ec45",
       "redirected": true,
       "error": null
     },
@@ -23703,8 +24328,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=1cf94c67-3b1a-488c-8732-54db8cdda566",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
+      "redirected": false,
       "error": null
     },
     {
@@ -23742,7 +24367,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=cd867b1a-7cf8-4c10-a50e-e16b1e8c12ea",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=12fbe155-8a96-49ad-bebe-a64a759a25ba",
       "redirected": true,
       "error": null
     },
@@ -23759,7 +24384,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=1f399ef5-a26c-41ee-ab38-d2656f9b8bca",
+      "final_url": "https://www.nature.com/articles/s41576-020-00305-9?error=cookies_not_supported&code=7f261bee-b027-43c7-b68b-229ecd5a0340",
       "redirected": true,
       "error": null
     },
@@ -23793,7 +24418,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=25018940-1891-4540-b8bd-13e5b4c7aac7",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=e51db8f4-7d45-438f-ba1b-1728499f35ee",
       "redirected": true,
       "error": null
     },
@@ -23815,8 +24440,47 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=a1b48a84-cf29-46d4-a121-490b77b92f91",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=635e1ece-b2a7-430b-a67d-f515b1a5117e",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.nature.com/articles/s41599-021-00763-4",
+      "citations": [
+        {
+          "slug": "the-great-leveler",
+          "claim_index": 1,
+          "source_title": "Historical Effects of Shocks on Inequality"
+        },
+        {
+          "slug": "the-great-leveler",
+          "claim_index": 2,
+          "source_title": "Historical Effects of Shocks on Inequality"
+        }
+      ],
+      "host": "nature.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41599-021-00763-4&code=d0b814bd-c2fb-4368-8010-7af28d4ed1cc",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.nber.org/papers/w10113",
+      "citations": [
+        {
+          "slug": "free-to-choose",
+          "claim_index": 3,
+          "source_title": "NBER: The Effect of School Choice on Student Outcomes"
+        }
+      ],
+      "host": "nber.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nber.org/papers/w10113",
+      "redirected": false,
       "error": null
     },
     {
@@ -23930,6 +24594,57 @@
       "error": null
     },
     {
+      "url": "https://www.nber.org/papers/w19843",
+      "citations": [
+        {
+          "slug": "the-price-of-inequality",
+          "claim_index": 1,
+          "source_title": "NBER: Where Is the Land of Opportunity?"
+        }
+      ],
+      "host": "nber.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nber.org/papers/w19843",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nber.org/papers/w19844",
+      "citations": [
+        {
+          "slug": "the-price-of-inequality",
+          "claim_index": 1,
+          "source_title": "NBER: Is the United States Still a Land of Opportunity?"
+        }
+      ],
+      "host": "nber.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nber.org/papers/w19844",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nber.org/papers/w21839",
+      "citations": [
+        {
+          "slug": "free-to-choose",
+          "claim_index": 3,
+          "source_title": "NBER: Can School Choice Reduce Student Achievement?"
+        }
+      ],
+      "host": "nber.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nber.org/papers/w21839",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.nber.org/papers/w22945",
       "citations": [
         {
@@ -23943,6 +24658,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nber.org/papers/w22945",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nber.org/papers/w2552",
+      "citations": [
+        {
+          "slug": "free-to-choose",
+          "claim_index": 2,
+          "source_title": "NBER: Monetary Policy Without Quantity Variables"
+        }
+      ],
+      "host": "nber.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nber.org/papers/w2552",
       "redirected": false,
       "error": null
     },
@@ -24848,6 +25580,28 @@
       "error": null
     },
     {
+      "url": "https://www.nsf.gov/reports/statistics/long-term-trends-show-decline-federally-funded-rd-share-gdp",
+      "citations": [
+        {
+          "slug": "the-entrepreneurial-state",
+          "claim_index": 1,
+          "source_title": "NSF: Long-Term Trends in Federally Funded R&D"
+        },
+        {
+          "slug": "capitalism-socialism-and-democracy",
+          "claim_index": 2,
+          "source_title": "NSF: Long-Term Trends in Federally Funded R&D"
+        }
+      ],
+      "host": "nsf.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nsf.gov/reports/statistics/long-term-trends-show-decline-federally-funded-rd-share-gdp",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.nybooks.com/articles/1969/01/16/that-war-again/",
       "citations": [
         {
@@ -25186,8 +25940,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/England-and-Europe-in-1420/",
-      "redirected": false,
+      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/england-and-europe-in-1420/",
+      "redirected": true,
       "error": null
     },
     {
@@ -25627,6 +26381,28 @@
       "error": null
     },
     {
+      "url": "https://www.schumpeter.info/quellen/CS%26D%201949.pdf",
+      "citations": [
+        {
+          "slug": "capitalism-socialism-and-democracy",
+          "claim_index": 1,
+          "source_title": "Capitalism, Socialism and Democracy"
+        },
+        {
+          "slug": "capitalism-socialism-and-democracy",
+          "claim_index": 3,
+          "source_title": "Capitalism, Socialism and Democracy"
+        }
+      ],
+      "host": "schumpeter.info",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.schumpeter.info/quellen/CS%26D%201949.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.scielo.br/j/rbedu/a/br7NczPCHrxYzQkfWCQryQH/?lang=en",
       "citations": [
         {
@@ -25727,6 +26503,28 @@
       "error": null
     },
     {
+      "url": "https://www.sciencedirect.com/science/article/pii/0049089X73900045",
+      "citations": [
+        {
+          "slug": "the-logic-of-collective-action",
+          "claim_index": 1,
+          "source_title": "An Experimental Investigation of the Free-Rider Problem"
+        },
+        {
+          "slug": "the-logic-of-collective-action",
+          "claim_index": 2,
+          "source_title": "An Experimental Investigation of the Free-Rider Problem"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/0049089X73900045",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.sciencedirect.com/science/article/pii/036233199290016B",
       "citations": [
         {
@@ -25740,6 +26538,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.sciencedirect.com/science/article/pii/036233199290016B",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0014292119301126",
+      "citations": [
+        {
+          "slug": "the-logic-of-collective-action",
+          "claim_index": 2,
+          "source_title": "Public Good Provision by Large Groups"
+        },
+        {
+          "slug": "the-logic-of-collective-action",
+          "claim_index": 3,
+          "source_title": "Public Good Provision by Large Groups"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0014292119301126",
       "redirected": false,
       "error": null
     },
@@ -25913,6 +26733,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.sciencedirect.com/science/article/pii/S027737912300402X",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0277953615001094",
+      "citations": [
+        {
+          "slug": "the-spirit-level",
+          "claim_index": 2,
+          "source_title": "Recalibrating the Spirit Level"
+        },
+        {
+          "slug": "the-spirit-level",
+          "claim_index": 3,
+          "source_title": "Recalibrating the Spirit Level"
+        }
+      ],
+      "host": "sciencedirect.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S0277953615001094",
       "redirected": false,
       "error": null
     },
@@ -26443,6 +27285,23 @@
       "error": null
     },
     {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/02255189.2011.576136",
+      "citations": [
+        {
+          "slug": "development-as-freedom",
+          "claim_index": 3,
+          "source_title": "Democracy, Institutions and Famines"
+        }
+      ],
+      "host": "tandfonline.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/02255189.2011.576136",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.tandfonline.com/doi/full/10.1080/10464883.2012.714912",
       "citations": [
         {
@@ -26529,6 +27388,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.tandfonline.com/doi/full/10.1080/2330443X.2021.2019152",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/23753234.2019.1616581",
+      "citations": [
+        {
+          "slug": "why-liberalism-failed",
+          "claim_index": 3,
+          "source_title": "Liberalism's Success, Our Failure"
+        }
+      ],
+      "host": "tandfonline.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/23753234.2019.1616581",
       "redirected": false,
       "error": null
     },
@@ -26779,6 +27655,28 @@
       "error": null
     },
     {
+      "url": "https://www.undp.org/publications/human-development-report-2010",
+      "citations": [
+        {
+          "slug": "why-liberalism-failed",
+          "claim_index": 3,
+          "source_title": "UNDP Human Development Report 2010"
+        },
+        {
+          "slug": "development-as-freedom",
+          "claim_index": 1,
+          "source_title": "UNDP Human Development Report 2010"
+        }
+      ],
+      "host": "undp.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.undp.org/publications/human-development-report-2010",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.unesco.org/en/creative-cities",
       "citations": [
         {
@@ -26953,6 +27851,26 @@
         {
           "slug": "political-order-and-political-decay",
           "claim_index": 1,
+          "source_title": "V-Dem datasets and documentation"
+        },
+        {
+          "slug": "why-liberalism-failed",
+          "claim_index": 1,
+          "source_title": "V-Dem datasets and documentation"
+        },
+        {
+          "slug": "why-liberalism-failed",
+          "claim_index": 2,
+          "source_title": "V-Dem datasets and documentation"
+        },
+        {
+          "slug": "capitalism-socialism-and-democracy",
+          "claim_index": 3,
+          "source_title": "V-Dem datasets and documentation"
+        },
+        {
+          "slug": "development-as-freedom",
+          "claim_index": 3,
           "source_title": "V-Dem datasets and documentation"
         }
       ],
@@ -27504,6 +28422,11 @@
           "slug": "the-narrow-corridor",
           "claim_index": 1,
           "source_title": "World Bank Worldwide Governance Indicators"
+        },
+        {
+          "slug": "free-to-choose",
+          "claim_index": 1,
+          "source_title": "World Bank Worldwide Governance Indicators"
         }
       ],
       "host": "worldbank.org",
@@ -27600,6 +28523,23 @@
       "error": null
     },
     {
+      "url": "https://www.worldvaluessurvey.org/WVSContents.jsp",
+      "citations": [
+        {
+          "slug": "why-liberalism-failed",
+          "claim_index": 1,
+          "source_title": "World Values Survey"
+        }
+      ],
+      "host": "worldvaluessurvey.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.worldvaluessurvey.org/wvs.jsp",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://www.wto.org/english/tratop_e/envir_e/climate_impact_e.htm",
       "citations": [
         {
@@ -27656,8 +28596,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/12/1/05-0979_article",
-      "redirected": true,
+      "final_url": "https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article",
+      "redirected": false,
       "error": null
     },
     {
