@@ -5,6 +5,7 @@ Status: research draft. These are evidence routes for claim construction, not au
 ## Influence and self-justification
 
 - Cross-cultural social proof and commitment: https://journals.sagepub.com/doi/10.1177/0146167299258006
+- Reciprocal favor exchange and compliance: https://doi.org/10.1080/15534510600819693
 - Boundary conditions for social proof, authority, and scarcity: https://www.tandfonline.com/doi/full/10.1080/15534510701193444
 - Choice-induced preference change meta-analysis: https://pubmed.ncbi.nlm.nih.gov/33411557/
 - Multilab induced-compliance replication: https://doi.org/10.1177/25152459231213375
