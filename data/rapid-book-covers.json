@@ -2706,6 +2706,126 @@
       "source_authors": [
         "Alexandra Natapoff"
       ]
+    },
+    {
+      "slug": "the-federalist-papers",
+      "match_state": "exact_title_author",
+      "cover_id": 3350489,
+      "cover_url": "https://covers.openlibrary.org/b/id/3350489-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL13057911M",
+      "source_title": "The Federalist Papers",
+      "source_authors": [
+        "Alexander Hamilton",
+        "John Jay",
+        "James Madison"
+      ]
+    },
+    {
+      "slug": "democracy-in-america",
+      "match_state": "exact_title_author",
+      "cover_id": 13281409,
+      "cover_url": "https://covers.openlibrary.org/b/id/13281409-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL32342092W",
+      "source_title": "Democracy in America",
+      "source_authors": [
+        "Alexis de Tocqueville"
+      ]
+    },
+    {
+      "slug": "the-road-to-serfdom",
+      "match_state": "exact_title_author",
+      "cover_id": 11569808,
+      "cover_url": "https://covers.openlibrary.org/b/id/11569808-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL24803462W",
+      "source_title": "The Road to Serfdom",
+      "source_authors": [
+        "Friedrich A. Hayek",
+        "William Hughes"
+      ]
+    },
+    {
+      "slug": "capitalism-and-freedom",
+      "match_state": "exact_title_author",
+      "cover_id": 140808,
+      "cover_url": "https://covers.openlibrary.org/b/id/140808-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2747782W",
+      "source_title": "Capitalism and freedom",
+      "source_authors": [
+        "Milton Friedman"
+      ]
+    },
+    {
+      "slug": "the-open-society-and-its-enemies",
+      "match_state": "exact_title_author",
+      "cover_id": 3069237,
+      "cover_url": "https://covers.openlibrary.org/b/id/3069237-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL8975462W",
+      "source_title": "The Open Society and Its Enemies",
+      "source_authors": [
+        "Karl Popper"
+      ]
+    },
+    {
+      "slug": "the-clash-of-civilizations-and-the-remaking-of-world-order",
+      "match_state": "exact_title_author",
+      "cover_id": 472725,
+      "cover_url": "https://covers.openlibrary.org/b/id/472725-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3289930W",
+      "source_title": "The Clash of Civilizations and the Remaking of World Order",
+      "source_authors": [
+        "Samuel P. Huntington",
+        "Ṭalʻat Shāyib",
+        "Ṣalāḥ Qanṣūh",
+        "Samuel P. Huntington"
+      ]
+    },
+    {
+      "slug": "how-democracies-die",
+      "match_state": "exact_title_author",
+      "cover_id": 8311412,
+      "cover_url": "https://covers.openlibrary.org/b/id/8311412-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL18139175W",
+      "source_title": "How Democracies Die",
+      "source_authors": [
+        "Steven Levitsky",
+        "Daniel Ziblatt"
+      ]
+    },
+    {
+      "slug": "political-order-and-political-decay",
+      "match_state": "exact_title_author",
+      "cover_id": 9381734,
+      "cover_url": "https://covers.openlibrary.org/b/id/9381734-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19986556W",
+      "source_title": "Political order and political decay",
+      "source_authors": [
+        "Francis Fukuyama"
+      ]
+    },
+    {
+      "slug": "the-dictators-handbook",
+      "match_state": "exact_title_author",
+      "cover_id": 8114194,
+      "cover_url": "https://covers.openlibrary.org/b/id/8114194-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15980652W",
+      "source_title": "The dictator's handbook",
+      "source_authors": [
+        "Bruce Bueno de Mesquita",
+        "Alastair Smith",
+        "Bruce Bueno de Mesquita"
+      ]
+    },
+    {
+      "slug": "the-narrow-corridor",
+      "match_state": "exact_title_author",
+      "cover_id": 8872725,
+      "cover_url": "https://covers.openlibrary.org/b/id/8872725-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20220421W",
+      "source_title": "The Narrow Corridor",
+      "source_authors": [
+        "Daron Acemoglu",
+        "James A. Robinson"
+      ]
     }
   ]
 }
