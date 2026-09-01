@@ -55,15 +55,16 @@ All ten titles were checked against the 260-book catalog before branch creation 
 - International IDEA Global State of Democracy — https://www.idea.int/gsod/
 - World Bank Worldwide Governance Indicators — https://www.worldbank.org/en/publication/worldwide-governance-indicators
 - Quality of Government datasets — https://www.gu.se/en/quality-government/qog-data
-- National Bureau of Economic Research work on state capacity — https://www.nber.org/papers/w14595
+- National Bureau of Economic Research work on state capacity, conflict, and development — https://www.nber.org/papers/w15088
 
 ### Selectorates and the state–society balance
 
-- Selectorate-theory foundations should be checked against regime, leader-tenure, public-goods, and conflict datasets rather than treated as one universal mechanism.
-- Archigos political-leaders dataset — https://www.rochester.edu/college/faculty/hgoemans/data.htm
-- V-Dem regime and accountability measures — https://www.v-dem.net/data/
-- World Bank state-effectiveness and rule-of-law indicators — https://www.worldbank.org/en/publication/worldwide-governance-indicators
-- Historical state-capacity research — https://www.nber.org/papers/w14595
+- Original institutional test of political survival across more than 2,700 leaders — https://journals.sagepub.com/doi/10.1177/0022002799043002002
+- Annual Review critique of selectorate theory's authoritarian measurements and applications — https://www.annualreviews.org/eprint/5N4i9qp8RfQTmPzxZtke/full/10.1146/annurev-polisci-071213-041224
+- Independent reassessment of selectorate measures and leader survival — https://academic.oup.com/isq/article-abstract/53/3/695/1796790
+- American Economic Association review of *The Narrow Corridor* — https://pubs.aeaweb.org/doi/10.1257/jel.20201629
+- Historical-data test finding little support for the corridor hypothesis — https://www.tandfonline.com/doi/abs/10.1080/00220388.2023.2197707
+- State capacity, conflict, and development — https://www.nber.org/papers/w15088
 
 ## Review constraints
 
