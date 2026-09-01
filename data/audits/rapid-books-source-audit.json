@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-09-01",
-  "checked_at": "2026-09-01T01:34:50.006Z",
+  "checked_at": "2026-09-01T01:49:46.016Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,62 +10,62 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 200,
-    "claims": 600,
-    "citations": 1200,
-    "unique_urls": 836,
-    "repeated_citations": 364,
-    "redirected_urls": 112,
+    "books": 210,
+    "claims": 630,
+    "citations": 1260,
+    "unique_urls": 877,
+    "repeated_citations": 383,
+    "redirected_urls": 118,
     "states": {
-      "access_blocked": 171,
+      "access_blocked": 176,
       "network_error": 13,
       "other_http": 3,
-      "reachable": 645,
-      "transient": 4
+      "reachable": 680,
+      "transient": 5
     },
     "score_distribution": {
       "42": 1,
       "50": 7,
       "58": 12,
-      "67": 34,
-      "75": 51,
-      "83": 44,
+      "67": 37,
+      "75": 54,
+      "83": 48,
       "92": 41,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 67,
+      "high": 72,
       "low": 1,
-      "medium": 58,
-      "medium-high": 59,
-      "medium-low": 15
+      "medium": 60,
+      "medium-high": 61,
+      "medium-low": 16
     }
   },
   "domain_summary": [
     {
       "host": "pmc.ncbi.nlm.nih.gov",
-      "unique_urls": 50,
-      "citations": 79,
+      "unique_urls": 61,
+      "citations": 93,
       "states": {
-        "reachable": 50
+        "reachable": 61
       }
     },
     {
       "host": "doi.org",
-      "unique_urls": 57,
-      "citations": 77,
+      "unique_urls": 58,
+      "citations": 79,
       "states": {
-        "reachable": 26,
+        "reachable": 27,
         "access_blocked": 31
       }
     },
     {
       "host": "cambridge.org",
-      "unique_urls": 23,
-      "citations": 36,
+      "unique_urls": 24,
+      "citations": 38,
       "states": {
         "transient": 1,
-        "reachable": 22
+        "reachable": 23
       }
     },
     {
@@ -149,6 +149,22 @@
       }
     },
     {
+      "host": "worldbank.org",
+      "unique_urls": 12,
+      "citations": 14,
+      "states": {
+        "reachable": 12
+      }
+    },
+    {
+      "host": "cdc.gov",
+      "unique_urls": 9,
+      "citations": 13,
+      "states": {
+        "reachable": 9
+      }
+    },
+    {
       "host": "jstor.org",
       "unique_urls": 9,
       "citations": 13,
@@ -165,19 +181,19 @@
       }
     },
     {
-      "host": "worldbank.org",
-      "unique_urls": 11,
-      "citations": 13,
-      "states": {
-        "reachable": 11
-      }
-    },
-    {
       "host": "internetsociety.org",
       "unique_urls": 1,
       "citations": 12,
       "states": {
         "access_blocked": 1
+      }
+    },
+    {
+      "host": "journals.sagepub.com",
+      "unique_urls": 10,
+      "citations": 12,
+      "states": {
+        "access_blocked": 10
       }
     },
     {
@@ -193,24 +209,16 @@
       "unique_urls": 10,
       "citations": 11,
       "states": {
-        "reachable": 4,
-        "access_blocked": 6
+        "access_blocked": 9,
+        "reachable": 1
       }
     },
     {
-      "host": "cdc.gov",
-      "unique_urls": 8,
+      "host": "escholarship.org",
+      "unique_urls": 5,
       "citations": 11,
       "states": {
-        "reachable": 8
-      }
-    },
-    {
-      "host": "journals.sagepub.com",
-      "unique_urls": 9,
-      "citations": 11,
-      "states": {
-        "access_blocked": 9
+        "access_blocked": 5
       }
     },
     {
@@ -238,6 +246,14 @@
       }
     },
     {
+      "host": "link.springer.com",
+      "unique_urls": 7,
+      "citations": 10,
+      "states": {
+        "reachable": 7
+      }
+    },
+    {
       "host": "nap.nationalacademies.org",
       "unique_urls": 7,
       "citations": 10,
@@ -246,11 +262,19 @@
       }
     },
     {
-      "host": "escholarship.org",
-      "unique_urls": 4,
+      "host": "epa.gov",
+      "unique_urls": 5,
       "citations": 9,
       "states": {
-        "access_blocked": 4
+        "reachable": 5
+      }
+    },
+    {
+      "host": "nber.org",
+      "unique_urls": 6,
+      "citations": 9,
+      "states": {
+        "reachable": 6
       }
     },
     {
@@ -278,6 +302,14 @@
       }
     },
     {
+      "host": "fhwa.dot.gov",
+      "unique_urls": 7,
+      "citations": 8,
+      "states": {
+        "reachable": 7
+      }
+    },
+    {
       "host": "imf.org",
       "unique_urls": 7,
       "citations": 8,
@@ -291,14 +323,6 @@
       "citations": 8,
       "states": {
         "access_blocked": 4
-      }
-    },
-    {
-      "host": "link.springer.com",
-      "unique_urls": 6,
-      "citations": 8,
-      "states": {
-        "reachable": 6
       }
     },
     {
@@ -331,14 +355,6 @@
       "citations": 7,
       "states": {
         "reachable": 4
-      }
-    },
-    {
-      "host": "fhwa.dot.gov",
-      "unique_urls": 7,
-      "citations": 7,
-      "states": {
-        "reachable": 7
       }
     },
     {
@@ -454,6 +470,14 @@
       }
     },
     {
+      "host": "unesco.org",
+      "unique_urls": 2,
+      "citations": 6,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
       "host": "aasm.org",
       "unique_urls": 3,
       "citations": 5,
@@ -496,27 +520,11 @@
       }
     },
     {
-      "host": "epa.gov",
-      "unique_urls": 3,
-      "citations": 5,
-      "states": {
-        "reachable": 3
-      }
-    },
-    {
       "host": "iarc.who.int",
       "unique_urls": 1,
       "citations": 5,
       "states": {
         "reachable": 1
-      }
-    },
-    {
-      "host": "nber.org",
-      "unique_urls": 4,
-      "citations": 5,
-      "states": {
-        "reachable": 4
       }
     },
     {
@@ -533,14 +541,6 @@
       "citations": 5,
       "states": {
         "access_blocked": 5
-      }
-    },
-    {
-      "host": "unesco.org",
-      "unique_urls": 1,
-      "citations": 5,
-      "states": {
-        "reachable": 1
       }
     },
     {
@@ -569,6 +569,14 @@
     },
     {
       "host": "fao.org",
+      "unique_urls": 2,
+      "citations": 4,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
+      "host": "ipcc.ch",
       "unique_urls": 2,
       "citations": 4,
       "states": {
@@ -609,6 +617,14 @@
       }
     },
     {
+      "host": "ops.fhwa.dot.gov",
+      "unique_urls": 3,
+      "citations": 4,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
       "host": "science.org",
       "unique_urls": 2,
       "citations": 4,
@@ -622,6 +638,14 @@
       "citations": 4,
       "states": {
         "reachable": 2
+      }
+    },
+    {
+      "host": "stacks.cdc.gov",
+      "unique_urls": 4,
+      "citations": 4,
+      "states": {
+        "reachable": 4
       }
     },
     {
@@ -705,6 +729,14 @@
       }
     },
     {
+      "host": "dsl.richmond.edu",
+      "unique_urls": 1,
+      "citations": 3,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "en.unesco.org",
       "unique_urls": 1,
       "citations": 3,
@@ -733,7 +765,7 @@
       "unique_urls": 1,
       "citations": 3,
       "states": {
-        "reachable": 1
+        "transient": 1
       }
     },
     {
@@ -741,8 +773,8 @@
       "unique_urls": 3,
       "citations": 3,
       "states": {
-        "access_blocked": 1,
-        "reachable": 2
+        "access_blocked": 2,
+        "reachable": 1
       }
     },
     {
@@ -775,6 +807,14 @@
       "citations": 3,
       "states": {
         "reachable": 3
+      }
+    },
+    {
+      "host": "nepis.epa.gov",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "reachable": 2
       }
     },
     {
@@ -879,14 +919,6 @@
       "citations": 3,
       "states": {
         "access_blocked": 2
-      }
-    },
-    {
-      "host": "stacks.cdc.gov",
-      "unique_urls": 3,
-      "citations": 3,
-      "states": {
-        "reachable": 3
       }
     },
     {
@@ -1156,14 +1188,6 @@
       }
     },
     {
-      "host": "ipcc.ch",
-      "unique_urls": 1,
-      "citations": 2,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
       "host": "jamanetwork.com",
       "unique_urls": 2,
       "citations": 2,
@@ -1360,8 +1384,7 @@
       "unique_urls": 2,
       "citations": 2,
       "states": {
-        "access_blocked": 1,
-        "reachable": 1
+        "reachable": 2
       }
     },
     {
@@ -1378,6 +1401,14 @@
       "citations": 2,
       "states": {
         "reachable": 1
+      }
+    },
+    {
+      "host": "tara.tcd.ie",
+      "unique_urls": 1,
+      "citations": 2,
+      "states": {
+        "access_blocked": 1
       }
     },
     {
@@ -1470,6 +1501,22 @@
     },
     {
       "host": "apnews.com",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "archive.epa.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "archives.hud.gov",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -1941,6 +1988,30 @@
       }
     },
     {
+      "host": "hud.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "hudhousingcounselors.hud.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "huduser.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "humanorigins.si.edu",
       "unique_urls": 1,
       "citations": 1,
@@ -2022,6 +2093,14 @@
     },
     {
       "host": "journals.gmu.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "journals.library.wustl.edu",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2317,6 +2396,22 @@
       }
     },
     {
+      "host": "planning.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "population.un.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "projecteuclid.org",
       "unique_urls": 1,
       "citations": 1,
@@ -2377,7 +2472,7 @@
       "unique_urls": 1,
       "citations": 1,
       "states": {
-        "access_blocked": 1
+        "reachable": 1
       }
     },
     {
@@ -2514,6 +2609,14 @@
       "citations": 1,
       "states": {
         "access_blocked": 1
+      }
+    },
+    {
+      "host": "strongtowns.org",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
       }
     },
     {
@@ -2831,6 +2934,15 @@
       "state": "access_blocked",
       "books": [
         "the-righteous-mind"
+      ]
+    },
+    {
+      "url": "https://dsl.richmond.edu/panorama/redlining/introduction",
+      "host": "dsl.richmond.edu",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-color-of-law"
       ]
     },
     {
@@ -3165,10 +3277,21 @@
       ]
     },
     {
+      "url": "https://www.epa.gov/smartgrowth/smart-growth-and-transportation",
+      "host": "epa.gov",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-death-and-life-of-great-american-cities",
+        "triumph-of-the-city",
+        "walkable-city"
+      ]
+    },
+    {
       "url": "https://www.fbi.gov/history/cases-and-criminals/osage-murders-case",
       "host": "fbi.gov",
       "citation_count": 3,
-      "state": "reachable",
+      "state": "transient",
       "books": [
         "killers-of-the-flower-moon"
       ]
@@ -3217,6 +3340,17 @@
       "state": "reachable",
       "books": [
         "the-song-of-the-dodo"
+      ]
+    },
+    {
+      "url": "https://www.nber.org/papers/w14806",
+      "host": "nber.org",
+      "citation_count": 3,
+      "state": "reachable",
+      "books": [
+        "the-city-in-history",
+        "cities-in-civilization",
+        "triumph-of-the-city"
       ]
     },
     {
@@ -3444,6 +3578,15 @@
       ]
     },
     {
+      "url": "https://doi.org/10.1016/j.cities.2019.01.006",
+      "host": "doi.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-image-of-the-city"
+      ]
+    },
+    {
       "url": "https://doi.org/10.1016/j.fishres.2025.107325",
       "host": "doi.org",
       "citation_count": 2,
@@ -3598,6 +3741,15 @@
       ]
     },
     {
+      "url": "https://escholarship.org/uc/item/3186c5wn",
+      "host": "escholarship.org",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "cities-in-civilization"
+      ]
+    },
+    {
       "url": "https://files.eric.ed.gov/fulltext/ED069010.pdf",
       "host": "files.eric.ed.gov",
       "citation_count": 2,
@@ -3649,6 +3801,15 @@
       "state": "access_blocked",
       "books": [
         "outliers"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1140/epjds/s13688-021-00313-7",
+      "host": "link.springer.com",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-image-of-the-city"
       ]
     },
     {
@@ -3712,6 +3873,15 @@
       "state": "reachable",
       "books": [
         "fire-weather"
+      ]
+    },
+    {
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100I2K4.TXT",
+      "host": "nepis.epa.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "strong-towns"
       ]
     },
     {
@@ -3787,6 +3957,15 @@
       ]
     },
     {
+      "url": "https://ops.fhwa.dot.gov/publications/fhwahop12026/fhwahop12026.pdf",
+      "host": "ops.fhwa.dot.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-high-cost-of-free-parking"
+      ]
+    },
+    {
       "url": "https://pancanal.com/en/american-canal-construction/",
       "host": "pancanal.com",
       "citation_count": 2,
@@ -3838,6 +4017,16 @@
       "state": "reachable",
       "books": [
         "the-horse-the-wheel-and-language"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10959241/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "walkable-city",
+        "palaces-for-the-people"
       ]
     },
     {
@@ -3932,6 +4121,16 @@
       ]
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5693449/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-death-and-life-of-great-american-cities",
+        "walkable-city"
+      ]
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5938790/",
       "host": "pmc.ncbi.nlm.nih.gov",
       "citation_count": 2,
@@ -3956,6 +4155,15 @@
       "state": "reachable",
       "books": [
         "salt"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9690665/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-image-of-the-city"
       ]
     },
     {
@@ -4234,6 +4442,15 @@
       ]
     },
     {
+      "url": "https://www.cambridge.org/core/journals/urban-history/article/broad-views-of-the-urban-past-in-europe-and-its-extensions/B04996B8DD7E31564DBCE1EFD58C066F",
+      "host": "cambridge.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-city-in-history"
+      ]
+    },
+    {
       "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B60A986B656E8C0A6A45A97CBCD3FD30/9781108838313AR.pdf",
       "host": "cambridge.org",
       "citation_count": 2,
@@ -4259,6 +4476,15 @@
       "state": "reachable",
       "books": [
         "the-premonition"
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/social-connectedness/about/",
+      "host": "cdc.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "palaces-for-the-people"
       ]
     },
     {
@@ -4439,6 +4665,16 @@
       ]
     },
     {
+      "url": "https://www.fhwa.dot.gov/infrastructure/50interstate2.cfm",
+      "host": "fhwa.dot.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-big-roads",
+        "the-death-and-life-of-great-american-cities"
+      ]
+    },
+    {
       "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02396/pdf",
       "host": "frontiersin.org",
       "citation_count": 2,
@@ -4555,6 +4791,16 @@
       "state": "reachable",
       "books": [
         "energy-and-civilization"
+      ]
+    },
+    {
+      "url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-8/",
+      "host": "ipcc.ch",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "the-city-in-history",
+        "triumph-of-the-city"
       ]
     },
     {
@@ -4944,6 +5190,15 @@
       "state": "reachable",
       "books": [
         "the-descent-of-man"
+      ]
+    },
+    {
+      "url": "https://www.tara.tcd.ie/items/1d88e61c-4bb2-46a7-902d-f162cf8a4727",
+      "host": "tara.tcd.ie",
+      "citation_count": 2,
+      "state": "access_blocked",
+      "books": [
+        "cities-in-civilization"
       ]
     },
     {
@@ -5562,6 +5817,40 @@
       "error": null
     },
     {
+      "url": "https://archive.epa.gov/epa/smartgrowth/smart-growth-conventional-suburban-development-infrastructure-case-study-completed-epa.html",
+      "citations": [
+        {
+          "slug": "strong-towns",
+          "claim_index": 1,
+          "source_title": "EPA suburban infrastructure case study"
+        }
+      ],
+      "host": "archive.epa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://archive.epa.gov/epa/smartgrowth/smart-growth-conventional-suburban-development-infrastructure-case-study-completed-epa.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://archives.hud.gov/news/1999/newsconf/stage3.cfm",
+      "citations": [
+        {
+          "slug": "the-color-of-law",
+          "claim_index": 3,
+          "source_title": "HUD archives on mortgage lending discrimination"
+        }
+      ],
+      "host": "archives.hud.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://archives.hud.gov/news/1999/newsconf/stage3.cfm",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://arstechnica.com/gadgets/2012/06/what-the-internet-looks-like-physically/",
       "citations": [
         {
@@ -6081,7 +6370,7 @@
       ],
       "host": "csrc.nist.gov",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://csrc.nist.gov/nist-cyber-history/cryptography/chapter",
       "redirected": false,
@@ -6348,6 +6637,28 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1016/j.cities.2019.01.006",
+      "citations": [
+        {
+          "slug": "the-image-of-the-city",
+          "claim_index": 1,
+          "source_title": "Computational approach to The Image of the City"
+        },
+        {
+          "slug": "the-image-of-the-city",
+          "claim_index": 3,
+          "source_title": "Computational approach to The Image of the City"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0264275118309776",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1016/j.eeh.2020.101382",
       "citations": [
         {
@@ -6596,7 +6907,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-023-01313-5?error=cookies_not_supported&code=0ee50853-7f67-4a02-8f49-b66e7b5bb73f",
+      "final_url": "https://www.nature.com/articles/d41586-023-01313-5",
       "redirected": true,
       "error": null
     },
@@ -6628,7 +6939,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=d34a90b6-1bdc-4014-9d00-3bf25ca793e6",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=02e3e375-1d20-4402-9e39-c352ed8190d5",
       "redirected": true,
       "error": null
     },
@@ -6645,7 +6956,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=e706b34b-3eb3-43b8-bdc0-be0ddfe107f6",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=2295eb23-557d-41f7-a6c3-3573b6fdc4d4",
       "redirected": true,
       "error": null
     },
@@ -6667,7 +6978,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/nplants201793",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnplants201793&code=6100a458-8fc8-4fd0-a8a5-68e7a7fe3c26",
       "redirected": true,
       "error": null
     },
@@ -6689,7 +7000,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=5841b702-fbc2-4d78-a6d6-9e8206771533",
       "redirected": true,
       "error": null
     },
@@ -6723,7 +7034,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=de421404-b5d0-40d9-952a-9784aeef5bb8",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=2dc651e3-7a92-483a-9963-f9d1ee847c7d",
       "redirected": true,
       "error": null
     },
@@ -6740,7 +7051,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=c12bf726-f3fe-492a-bb6a-ab150778930e",
       "redirected": true,
       "error": null
     },
@@ -6757,7 +7068,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=345b6e3d-0ca6-4380-9c2c-1db16b991982",
       "redirected": true,
       "error": null
     },
@@ -6774,7 +7085,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=58a61814-b0b9-460d-bbd0-4c7e0866bede",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=2a1dee32-a698-4956-b36a-c8464ca74d98",
       "redirected": true,
       "error": null
     },
@@ -7400,6 +7711,33 @@
       "error": null
     },
     {
+      "url": "https://dsl.richmond.edu/panorama/redlining/introduction",
+      "citations": [
+        {
+          "slug": "the-color-of-law",
+          "claim_index": 1,
+          "source_title": "Mapping Inequality introduction"
+        },
+        {
+          "slug": "the-color-of-law",
+          "claim_index": 2,
+          "source_title": "Mapping Inequality introduction"
+        },
+        {
+          "slug": "the-color-of-law",
+          "claim_index": 3,
+          "source_title": "Mapping Inequality introduction"
+        }
+      ],
+      "host": "dsl.richmond.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://dsl.richmond.edu/panorama/redlining/introduction",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://dspace.sunyconnect.suny.edu/bitstreams/031e3dec-1288-4e29-bae1-7f990f7901c8/download",
       "citations": [
         {
@@ -7820,6 +8158,28 @@
       "error": null
     },
     {
+      "url": "https://escholarship.org/uc/item/3186c5wn",
+      "citations": [
+        {
+          "slug": "cities-in-civilization",
+          "claim_index": 1,
+          "source_title": "UC eScholarship review of Cities in Civilization"
+        },
+        {
+          "slug": "cities-in-civilization",
+          "claim_index": 2,
+          "source_title": "UC eScholarship review of Cities in Civilization"
+        }
+      ],
+      "host": "escholarship.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://escholarship.org/uc/item/3186c5wn",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://escholarship.org/uc/item/37k4c16h",
       "citations": [
         {
@@ -8149,6 +8509,23 @@
       "error": null
     },
     {
+      "url": "https://hudhousingcounselors.hud.gov/sites/default/files/study_pdfs/202406_Module3.1.pdf",
+      "citations": [
+        {
+          "slug": "the-color-of-law",
+          "claim_index": 2,
+          "source_title": "HUD housing counselor fair-housing history"
+        }
+      ],
+      "host": "hudhousingcounselors.hud.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://hudhousingcounselors.hud.gov/sites/default/files/study_pdfs/202406_Module3.1.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://humanorigins.si.edu/education/introduction-human-evolution",
       "citations": [
         {
@@ -8319,6 +8696,23 @@
       "error": null
     },
     {
+      "url": "https://journals.library.wustl.edu/lawreview/article/4142/galley/20975/view/",
+      "citations": [
+        {
+          "slug": "the-city-in-history",
+          "claim_index": 2,
+          "source_title": "Washington University Law Review of The City in History"
+        }
+      ],
+      "host": "journals.library.wustl.edu",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://journals.library.wustl.edu/lawreview/article/4142/galley/20975/view/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://journals.sagepub.com/doi/10.1016/j.euras.2016.12.001",
       "citations": [
         {
@@ -8409,6 +8803,23 @@
       "error": null
     },
     {
+      "url": "https://journals.sagepub.com/doi/10.1177/0739456X9701700102",
+      "citations": [
+        {
+          "slug": "the-high-cost-of-free-parking",
+          "claim_index": 1,
+          "source_title": "The High Cost of Free Parking original article"
+        }
+      ],
+      "host": "journals.sagepub.com",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/10.1177/0739456X9701700102",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://journals.sagepub.com/doi/10.1177/09567976211042065",
       "citations": [
         {
@@ -8494,7 +8905,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=ec210512-f630-4b09-a3a1-076b09604d1b",
+      "final_url": "https://link.springer.com/article/10.1007/s10602-026-09503-9?error=cookies_not_supported&code=4f648662-447d-4906-bd17-9d1756a07470",
       "redirected": true,
       "error": null
     },
@@ -8521,7 +8932,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=50c9dd39-6da6-4c7d-bd50-89f82c83c5a8",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=37aeec03-2615-4df0-96da-2b0798fc1093",
       "redirected": true,
       "error": null
     },
@@ -8555,7 +8966,29 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11229-024-04527-w",
+      "final_url": "https://link.springer.com/article/10.1007/s11229-024-04527-w",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://link.springer.com/article/10.1140/epjds/s13688-021-00313-7",
+      "citations": [
+        {
+          "slug": "the-image-of-the-city",
+          "claim_index": 2,
+          "source_title": "Urban legibility across nineteen cities"
+        },
+        {
+          "slug": "the-image-of-the-city",
+          "claim_index": 3,
+          "source_title": "Urban legibility across nineteen cities"
+        }
+      ],
+      "host": "link.springer.com",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=828a85e4-b373-44b6-b952-97021234c3c1",
       "redirected": true,
       "error": null
     },
@@ -8572,7 +9005,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=a9af3e2a-48df-4ef9-bb6d-b9924260e08c",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=1a2b6144-c675-4d7d-93b6-293124803ce9",
       "redirected": true,
       "error": null
     },
@@ -8589,7 +9022,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=a5453f12-bd23-49ac-a341-4b655dbfe9f9",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=c60f5518-33f2-420e-8eca-7bcd2c19ff68",
       "redirected": true,
       "error": null
     },
@@ -8948,6 +9381,45 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/energy/Climate-change/pdf/CCCR_FULLREPORT-EN-FINAL.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100E0EO.TXT",
+      "citations": [
+        {
+          "slug": "strong-towns",
+          "claim_index": 2,
+          "source_title": "EPA Essential Smart Growth Fixes"
+        }
+      ],
+      "host": "nepis.epa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100E0EO.TXT",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100I2K4.TXT",
+      "citations": [
+        {
+          "slug": "strong-towns",
+          "claim_index": 1,
+          "source_title": "EPA smart growth economic success for governments"
+        },
+        {
+          "slug": "strong-towns",
+          "claim_index": 2,
+          "source_title": "EPA smart growth economic success for governments"
+        }
+      ],
+      "host": "nepis.epa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100I2K4.TXT",
       "redirected": false,
       "error": null
     },
@@ -9501,6 +9973,62 @@
       "error": null
     },
     {
+      "url": "https://ops.fhwa.dot.gov/congestionpricing/value_pricing/pubs_reports/rpttocongress/pdf/vppp16rpt.pdf",
+      "citations": [
+        {
+          "slug": "the-high-cost-of-free-parking",
+          "claim_index": 3,
+          "source_title": "FHWA Value Pricing Pilot Program report"
+        }
+      ],
+      "host": "ops.fhwa.dot.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ops.fhwa.dot.gov/program_areas/programareas.htm",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://ops.fhwa.dot.gov/publications/fhwahop12026/fhwahop12026.pdf",
+      "citations": [
+        {
+          "slug": "the-high-cost-of-free-parking",
+          "claim_index": 2,
+          "source_title": "FHWA performance-based parking pricing"
+        },
+        {
+          "slug": "the-high-cost-of-free-parking",
+          "claim_index": 3,
+          "source_title": "FHWA performance-based parking pricing"
+        }
+      ],
+      "host": "ops.fhwa.dot.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ops.fhwa.dot.gov/publications/publications.htm",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://ops.fhwa.dot.gov/publications/fhwahop23004/fwd.htm",
+      "citations": [
+        {
+          "slug": "the-high-cost-of-free-parking",
+          "claim_index": 2,
+          "source_title": "FHWA Parking Cruising Analysis Methodology"
+        }
+      ],
+      "host": "ops.fhwa.dot.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ops.fhwa.dot.gov/publications/fhwahop23004/fwd.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://ora.ox.ac.uk/objects/uuid:c648a83e-aa80-49e1-91a0-d9dda05e80e3",
       "citations": [
         {
@@ -9976,6 +10504,62 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10297989/",
+      "citations": [
+        {
+          "slug": "palaces-for-the-people",
+          "claim_index": 1,
+          "source_title": "Built environment and social environment review"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10297989/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10618061/",
+      "citations": [
+        {
+          "slug": "the-death-and-life-of-great-american-cities",
+          "claim_index": 1,
+          "source_title": "Operationalizing Jane Jacobs's urban conditions"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10618061/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10959241/",
+      "citations": [
+        {
+          "slug": "walkable-city",
+          "claim_index": 2,
+          "source_title": "AHA built environment science advisory"
+        },
+        {
+          "slug": "palaces-for-the-people",
+          "claim_index": 3,
+          "source_title": "AHA built environment science advisory"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10959241/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1112606/",
       "citations": [
         {
@@ -10373,6 +10957,23 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4165342/",
+      "citations": [
+        {
+          "slug": "walkable-city",
+          "claim_index": 3,
+          "source_title": "Built environment and cardiovascular health review"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4165342/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4508532/",
       "citations": [
         {
@@ -10425,6 +11026,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4530413/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4532296/",
+      "citations": [
+        {
+          "slug": "walkable-city",
+          "claim_index": 1,
+          "source_title": "Walkability and daily steps meta-analysis"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4532296/",
       "redirected": false,
       "error": null
     },
@@ -10598,6 +11216,28 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5693449/",
+      "citations": [
+        {
+          "slug": "the-death-and-life-of-great-american-cities",
+          "claim_index": 1,
+          "source_title": "Built environment and physical activity review"
+        },
+        {
+          "slug": "walkable-city",
+          "claim_index": 1,
+          "source_title": "Built environment and physical activity review"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5693449/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5804262/",
       "citations": [
         {
@@ -10621,6 +11261,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5804262/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5878058/",
+      "citations": [
+        {
+          "slug": "the-death-and-life-of-great-american-cities",
+          "claim_index": 2,
+          "source_title": "Active streets and violent crime"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5878058/",
       "redirected": false,
       "error": null
     },
@@ -10711,6 +11368,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6351694/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6737987/",
+      "citations": [
+        {
+          "slug": "walkable-city",
+          "claim_index": 2,
+          "source_title": "Systematic review of walking and cycling interventions"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6737987/",
       "redirected": false,
       "error": null
     },
@@ -10823,6 +11497,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7946062/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7963341/",
+      "citations": [
+        {
+          "slug": "palaces-for-the-people",
+          "claim_index": 2,
+          "source_title": "Disaster communitas and social infrastructure"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7963341/",
       "redirected": false,
       "error": null
     },
@@ -10949,6 +11640,62 @@
       "error": null
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9435424/",
+      "citations": [
+        {
+          "slug": "the-death-and-life-of-great-american-cities",
+          "claim_index": 2,
+          "source_title": "Land use and robbery distribution"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9435424/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9690665/",
+      "citations": [
+        {
+          "slug": "the-image-of-the-city",
+          "claim_index": 1,
+          "source_title": "Spatial legibility and urban form"
+        },
+        {
+          "slug": "the-image-of-the-city",
+          "claim_index": 2,
+          "source_title": "Spatial legibility and urban form"
+        }
+      ],
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9690665/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://population.un.org/wup/",
+      "citations": [
+        {
+          "slug": "the-city-in-history",
+          "claim_index": 1,
+          "source_title": "UN World Urbanization Prospects"
+        }
+      ],
+      "host": "population.un.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://population.un.org/wup/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-43/issue-3/Particle-creation-by-black-holes/cmp/1103899181.full",
       "citations": [
         {
@@ -11026,7 +11773,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 203,
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/16351911/",
       "redirected": false,
       "error": null
@@ -11333,7 +12080,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 203,
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34225102/",
       "redirected": false,
       "error": null
@@ -11389,7 +12136,7 @@
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
       "method": "HEAD",
-      "status": 203,
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
       "redirected": false,
       "error": null
@@ -11917,7 +12664,7 @@
       ],
       "host": "ruj.uj.edu.pl",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://ruj.uj.edu.pl//handle/item/68230",
       "redirected": true,
@@ -12178,6 +12925,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://shc.stanford.edu/stanford-humanities-center/news/why-west-rules-now-0",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://stacks.cdc.gov/view/cdc/150954/cdc_150954_DS1.pdf",
+      "citations": [
+        {
+          "slug": "palaces-for-the-people",
+          "claim_index": 3,
+          "source_title": "CDC Building Resilient Inclusive Communities profiles"
+        }
+      ],
+      "host": "stacks.cdc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://stacks.cdc.gov/view/cdc/150954/cdc_150954_DS1.pdf",
       "redirected": false,
       "error": null
     },
@@ -12977,9 +13741,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-genet-021920-011805",
       "redirected": false,
       "error": null
@@ -12994,9 +13758,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011718-012440",
       "redirected": false,
       "error": null
@@ -13062,9 +13826,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev.energy.25.1.21",
       "redirected": false,
       "error": null
@@ -13104,8 +13868,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-110218-024717?crawler=true&mimetype=application/pdf",
-      "redirected": true,
+      "final_url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-ecolsys-110218-024717",
+      "redirected": false,
       "error": null
     },
     {
@@ -13782,6 +14546,28 @@
       "error": null
     },
     {
+      "url": "https://www.cambridge.org/core/journals/urban-history/article/broad-views-of-the-urban-past-in-europe-and-its-extensions/B04996B8DD7E31564DBCE1EFD58C066F",
+      "citations": [
+        {
+          "slug": "the-city-in-history",
+          "claim_index": 1,
+          "source_title": "Cambridge Urban History review of broad urban syntheses"
+        },
+        {
+          "slug": "the-city-in-history",
+          "claim_index": 2,
+          "source_title": "Cambridge Urban History review of broad urban syntheses"
+        }
+      ],
+      "host": "cambridge.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/urban-history/article/abs/broad-views-of-the-urban-past-in-europe-and-its-extensions/B04996B8DD7E31564DBCE1EFD58C066F",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://www.cambridge.org/core/journals/world-politics/article/braudels-mediterranean-un-defi-latin/D8981CD076B725DA461D4AD6895B2C00",
       "citations": [
         {
@@ -14041,6 +14827,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.cdc.gov/nchs/products/databriefs/db533.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.cdc.gov/social-connectedness/about/",
+      "citations": [
+        {
+          "slug": "palaces-for-the-people",
+          "claim_index": 1,
+          "source_title": "CDC social connectedness resource collection"
+        },
+        {
+          "slug": "palaces-for-the-people",
+          "claim_index": 2,
+          "source_title": "CDC social connectedness and public health"
+        }
+      ],
+      "host": "cdc.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.cdc.gov/social-connectedness/about/",
       "redirected": false,
       "error": null
     },
@@ -14999,6 +15807,50 @@
       "error": null
     },
     {
+      "url": "https://www.epa.gov/sites/default/files/documents/smart_growth_and_economic_success.pdf",
+      "citations": [
+        {
+          "slug": "strong-towns",
+          "claim_index": 3,
+          "source_title": "EPA smart growth and economic success"
+        }
+      ],
+      "host": "epa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.epa.gov/sites/default/files/documents/smart_growth_and_economic_success.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.epa.gov/smartgrowth/smart-growth-and-transportation",
+      "citations": [
+        {
+          "slug": "the-death-and-life-of-great-american-cities",
+          "claim_index": 3,
+          "source_title": "EPA smart growth and transportation"
+        },
+        {
+          "slug": "triumph-of-the-city",
+          "claim_index": 3,
+          "source_title": "EPA smart growth and transportation"
+        },
+        {
+          "slug": "walkable-city",
+          "claim_index": 3,
+          "source_title": "EPA smart growth and transportation"
+        }
+      ],
+      "host": "epa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.epa.gov/smartgrowth/smart-growth-and-transportation",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.ers.usda.gov/topics/animal-products/cattle-beef/sector-at-a-glance",
       "citations": [
         {
@@ -15162,12 +16014,12 @@
         }
       ],
       "host": "fbi.gov",
-      "state": "reachable",
+      "state": "transient",
       "method": "GET",
-      "status": 200,
-      "final_url": "https://www.fbi.gov/history/cases-and-criminals/osage-murders-case",
+      "status": null,
+      "final_url": null,
       "redirected": false,
-      "error": null
+      "error": "AbortError: This operation was aborted"
     },
     {
       "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label",
@@ -15347,9 +16199,9 @@
         }
       ],
       "host": "ferc.gov",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy",
       "redirected": false,
       "error": null
@@ -15412,6 +16264,11 @@
           "slug": "the-big-roads",
           "claim_index": 3,
           "source_title": "FHWA The Greatest Decade: urban consequences"
+        },
+        {
+          "slug": "the-death-and-life-of-great-american-cities",
+          "claim_index": 3,
+          "source_title": "FHWA urban Interstate consequences"
         }
       ],
       "host": "fhwa.dot.gov",
@@ -16304,6 +17161,40 @@
       "error": null
     },
     {
+      "url": "https://www.hud.gov/sites/dfiles/Housing/documents/FHAFY2024ANNUALMGMNTRPT.PDF",
+      "citations": [
+        {
+          "slug": "the-color-of-law",
+          "claim_index": 1,
+          "source_title": "HUD FHA 90-year history"
+        }
+      ],
+      "host": "hud.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.hud.gov/sites/dfiles/Housing/documents/FHAFY2024ANNUALMGMNTRPT.PDF",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.huduser.gov/portal/rbc/home.html",
+      "citations": [
+        {
+          "slug": "triumph-of-the-city",
+          "claim_index": 2,
+          "source_title": "HUD Regulatory Barriers Clearinghouse"
+        }
+      ],
+      "host": "huduser.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 202,
+      "final_url": "https://www.huduser.gov/portal/rbc/home.html",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.iaea.org/sites/default/files/vol381.pdf",
       "citations": [
         {
@@ -16650,6 +17541,28 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-6/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-8/",
+      "citations": [
+        {
+          "slug": "the-city-in-history",
+          "claim_index": 3,
+          "source_title": "IPCC AR6 urban systems chapter"
+        },
+        {
+          "slug": "triumph-of-the-city",
+          "claim_index": 3,
+          "source_title": "IPCC AR6 urban systems chapter"
+        }
+      ],
+      "host": "ipcc.ch",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-8/",
       "redirected": false,
       "error": null
     },
@@ -17662,7 +18575,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=b70b9822-c745-4230-9884-0765b462e12e",
+      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=da2c40c7-cdee-4b06-86a3-45ac2c7c10da",
       "redirected": true,
       "error": null
     },
@@ -17684,7 +18597,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=6da697cf-0672-437a-9a98-86b1f91661db",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=b127dcf5-a01a-47de-b464-8cd20da913bc",
       "redirected": true,
       "error": null
     },
@@ -17711,7 +18624,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=7c427adf-ef0c-49fe-99c8-b7ecbd35fa2b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=4ebaab8e-5e20-47fd-a22d-4e9e5adb1d57",
       "redirected": true,
       "error": null
     },
@@ -17738,7 +18651,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=39bbe4e3-a4aa-4b1e-8536-cfaeb794445e",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=14072cf0-e4d2-408e-94c0-1c51360b2991",
       "redirected": true,
       "error": null
     },
@@ -17760,7 +18673,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=e16b3009-1d7f-4218-880f-1f95ea6e46ad",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=c7a6fdea-c9fe-45f3-ae44-7ce72915929b",
       "redirected": true,
       "error": null
     },
@@ -17777,8 +18690,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
-      "redirected": false,
+      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4",
+      "redirected": true,
       "error": null
     },
     {
@@ -17811,7 +18724,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=947652a6-dc22-49ca-a30b-7f75f347810b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=e56c1e97-bbd8-4866-a1ed-41b3cef72ae1",
       "redirected": true,
       "error": null
     },
@@ -17828,8 +18741,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-022-00537-x",
-      "redirected": false,
+      "final_url": "https://www.nature.com/articles/s41576-022-00537-x?error=cookies_not_supported&code=ba7cf6c9-dc70-489b-b0bc-549426854f00",
+      "redirected": true,
       "error": null
     },
     {
@@ -17845,7 +18758,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=ccb0a4dc-93dd-4523-abaf-f8c2137989df",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=43689235-3bcc-4070-a053-bf47403e1780",
       "redirected": true,
       "error": null
     },
@@ -17867,8 +18780,25 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=22893dbb-2c7d-4e3d-8965-7f07294d84cf",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=dc630536-9409-4473-bd9b-c3f09073334a",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.nber.org/papers/w14193",
+      "citations": [
+        {
+          "slug": "triumph-of-the-city",
+          "claim_index": 2,
+          "source_title": "NBER housing supply and housing bubbles"
+        }
+      ],
+      "host": "nber.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nber.org/papers/w14193",
+      "redirected": false,
       "error": null
     },
     {
@@ -17907,6 +18837,33 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.nber.org/papers/w14467",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nber.org/papers/w14806",
+      "citations": [
+        {
+          "slug": "the-city-in-history",
+          "claim_index": 3,
+          "source_title": "NBER agglomeration economies"
+        },
+        {
+          "slug": "cities-in-civilization",
+          "claim_index": 2,
+          "source_title": "NBER agglomeration economies"
+        },
+        {
+          "slug": "triumph-of-the-city",
+          "claim_index": 1,
+          "source_title": "NBER What Makes Cities More Productive?"
+        }
+      ],
+      "host": "nber.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nber.org/papers/w14806",
       "redirected": false,
       "error": null
     },
@@ -19084,6 +20041,23 @@
       "error": null
     },
     {
+      "url": "https://www.planning.org/knowledgebase/resource/9127819/",
+      "citations": [
+        {
+          "slug": "the-high-cost-of-free-parking",
+          "claim_index": 1,
+          "source_title": "APA knowledge base on parking reform"
+        }
+      ],
+      "host": "planning.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.planning.org/knowledgebase/resource/9127819/",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.propublica.org/article/major-investigation-our-katrina-hospital-story-in-the-new-york-times-magazi",
       "citations": [
         {
@@ -19205,9 +20179,9 @@
         }
       ],
       "host": "rct.uk",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 403,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://www.rct.uk/collection",
       "redirected": true,
       "error": null
@@ -19926,9 +20900,9 @@
         }
       ],
       "host": "semi.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.semi.org/en/industry-groups/supply-chain-management",
       "redirected": false,
       "error": null
@@ -20056,6 +21030,23 @@
       "error": null
     },
     {
+      "url": "https://www.strongtowns.org/journal/2024-7-22-what-strong-towns-really-says-about-infrastructure-spending",
+      "citations": [
+        {
+          "slug": "strong-towns",
+          "claim_index": 3,
+          "source_title": "Strong Towns statement of the infrastructure thesis"
+        }
+      ],
+      "host": "strongtowns.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.strongtowns.org/journal/2024-7-22-what-strong-towns-really-says-about-infrastructure-spending",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.tandfonline.com/doi/full/10.1080/00020180701275915",
       "citations": [
         {
@@ -20137,6 +21128,28 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.tandfonline.com/doi/full/10.1080/2330443X.2021.2019152",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.tara.tcd.ie/items/1d88e61c-4bb2-46a7-902d-f162cf8a4727",
+      "citations": [
+        {
+          "slug": "cities-in-civilization",
+          "claim_index": 1,
+          "source_title": "Trinity College Dublin review record"
+        },
+        {
+          "slug": "cities-in-civilization",
+          "claim_index": 3,
+          "source_title": "Trinity College Dublin review record"
+        }
+      ],
+      "host": "tara.tcd.ie",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.tara.tcd.ie/items/1d88e61c-4bb2-46a7-902d-f162cf8a4727",
       "redirected": false,
       "error": null
     },
@@ -20305,6 +21318,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.timeshighereducation.com/books/the-canon-the-origins-of-the-second-world-war-by-ajp-taylor/406820.article",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.unesco.org/en/creative-cities",
+      "citations": [
+        {
+          "slug": "cities-in-civilization",
+          "claim_index": 3,
+          "source_title": "UNESCO Creative Cities Network"
+        }
+      ],
+      "host": "unesco.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.unesco.org/en/creative-cities",
       "redirected": false,
       "error": null
     },
@@ -20920,6 +21950,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.worldbank.org/ext/en/topic/transport",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.worldbank.org/en/topic/urbandevelopment/overview",
+      "citations": [
+        {
+          "slug": "triumph-of-the-city",
+          "claim_index": 1,
+          "source_title": "World Bank urban development overview"
+        }
+      ],
+      "host": "worldbank.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.worldbank.org/ext/en/topic/urban-development",
       "redirected": true,
       "error": null
     },

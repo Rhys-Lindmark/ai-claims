@@ -2098,6 +2098,103 @@
       "source_authors": [
         "Vaclav Smil"
       ]
+    },
+    {
+      "slug": "the-death-and-life-of-great-american-cities",
+      "match_state": "exact_title_author",
+      "cover_id": 5540237,
+      "cover_url": "https://covers.openlibrary.org/b/id/5540237-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL93641W",
+      "source_title": "The Death and Life of Great American Cities",
+      "source_authors": [
+        "Jane Jacobs"
+      ]
+    },
+    {
+      "slug": "the-city-in-history",
+      "match_state": "exact_title_author",
+      "cover_id": 6790310,
+      "cover_url": "https://covers.openlibrary.org/b/id/6790310-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1879188W",
+      "source_title": "The city in history",
+      "source_authors": [
+        "Lewis Mumford"
+      ]
+    },
+    {
+      "slug": "cities-in-civilization",
+      "match_state": "exact_title_author",
+      "cover_id": 158243,
+      "cover_url": "https://covers.openlibrary.org/b/id/158243-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1809458W",
+      "source_title": "Cities in civilization",
+      "source_authors": [
+        "Peter Geoffrey Hall",
+        "Peter Hall"
+      ]
+    },
+    {
+      "slug": "triumph-of-the-city",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-image-of-the-city",
+      "match_state": "exact_title_author",
+      "cover_id": 3246475,
+      "cover_url": "https://covers.openlibrary.org/b/id/3246475-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL4477193W",
+      "source_title": "The Image of the City",
+      "source_authors": [
+        "Kevin Lynch"
+      ]
+    },
+    {
+      "slug": "the-high-cost-of-free-parking",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "walkable-city",
+      "match_state": "exact_title_author",
+      "cover_id": 7412062,
+      "cover_url": "https://covers.openlibrary.org/b/id/7412062-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16654441W",
+      "source_title": "Walkable city",
+      "source_authors": [
+        "Jeff Speck"
+      ]
+    },
+    {
+      "slug": "strong-towns",
+      "match_state": "exact_title_author",
+      "cover_id": 10453417,
+      "cover_url": "https://covers.openlibrary.org/b/id/10453417-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL21648599W",
+      "source_title": "Strong Towns",
+      "source_authors": [
+        "Charles L. Marohn, Jr."
+      ]
+    },
+    {
+      "slug": "palaces-for-the-people",
+      "match_state": "exact_title_author",
+      "cover_id": 13106919,
+      "cover_url": "https://covers.openlibrary.org/b/id/13106919-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19753504W",
+      "source_title": "Palaces for the people",
+      "source_authors": [
+        "Eric Klinenberg"
+      ]
+    },
+    {
+      "slug": "the-color-of-law",
+      "match_state": "exact_title_author",
+      "cover_id": 8816502,
+      "cover_url": "https://covers.openlibrary.org/b/id/8816502-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19671595W",
+      "source_title": "The Color of Law",
+      "source_authors": [
+        "Richard Rothstein"
+      ]
     }
   ]
 }
