@@ -42,3 +42,4 @@ All ten passed normalized-title uniqueness against the 220-book catalog on 2026-
 - Covers: all ten new titles matched Open Library by normalized title and author, raising catalog coverage to 199 of 230.
 - Score range in this set: 58–92. Every score is `round(mean(claim credits) × 100)` using the published four-state credit map.
 - Main caution: educational philosophy, classroom observation, international comparison, and meta-meta-analysis answer different questions. The reviews do not treat them as interchangeable evidence.
+- Deployment note: Sites version 144 reused a stale pre-merge build and was superseded; the replacement artifact was rebuilt in the merged main checkout and must visibly report 230 books before this batch is considered live.
