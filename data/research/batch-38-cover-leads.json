@@ -1,0 +1,19 @@
+{
+  "schema_version":"ai-claims.research-cover-leads/0.1.0",
+  "provider":"Open Library",
+  "status":"research_draft",
+  "match_policy":"Exact normalized title and compatible expected author; publication requires a second alignment check.",
+  "summary":{"books":10,"exact_title_author_leads":10,"unresolved":0},
+  "covers":[
+    {"slug":"the-crowd","match_state":"exact_title_author_lead","cover_id":10441573,"source_url":"https://openlibrary.org/works/OL11118936W","source_title":"The crowd","source_authors":["Gustave Le Bon"]},
+    {"slug":"propaganda","match_state":"exact_title_author_lead","cover_id":7279014,"source_url":"https://openlibrary.org/works/OL2781905W","source_title":"Propaganda","source_authors":["Edward L. Bernays"]},
+    {"slug":"public-opinion","match_state":"exact_title_author_lead","cover_id":5847876,"source_url":"https://openlibrary.org/works/OL42346W","source_title":"Public opinion","source_authors":["Walter Lippmann"]},
+    {"slug":"the-true-believer","match_state":"exact_title_author_lead","cover_id":14912538,"source_url":"https://openlibrary.org/works/OL29277679W","source_title":"The true believer","source_authors":["Eric Hoffer"]},
+    {"slug":"the-authoritarian-personality","match_state":"exact_title_author_lead","cover_id":10680180,"source_url":"https://openlibrary.org/works/OL19311644W","source_title":"The authoritarian personality","source_authors":["Theodor W. Adorno"]},
+    {"slug":"obedience-to-authority","match_state":"exact_title_author_lead","cover_id":723208,"source_url":"https://openlibrary.org/works/OL4109720W","source_title":"Obedience to Authority","source_authors":["Stanley Milgram"]},
+    {"slug":"on-aggression","match_state":"exact_title_author_lead","cover_id":14912777,"source_url":"https://openlibrary.org/works/OL22053609W","source_title":"On Aggression","source_authors":["Konrad Lorenz"]},
+    {"slug":"the-nature-of-prejudice","match_state":"exact_title_author_lead","cover_id":4405426,"source_url":"https://openlibrary.org/works/OL3420407W","source_title":"The nature of prejudice","source_authors":["Gordon W. Allport"]},
+    {"slug":"the-presentation-of-self-in-everyday-life","match_state":"exact_title_author_lead","cover_id":6553478,"source_url":"https://openlibrary.org/works/OL3282045W","source_title":"The presentation of self in everyday life","source_authors":["Erving Goffman"]},
+    {"slug":"the-social-construction-of-reality","match_state":"exact_title_author_lead","cover_id":238146,"source_url":"https://openlibrary.org/works/OL2652737W","source_title":"The social construction of reality","source_authors":["Peter L. Berger","Thomas Luckmann"]}
+  ]
+}
