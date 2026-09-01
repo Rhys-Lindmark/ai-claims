@@ -1,0 +1,89 @@
+{
+  "schema_version": "ai-claims.research-cover-leads/0.1.0",
+  "provider": "Open Library",
+  "status": "research_draft",
+  "match_policy": "Exact normalized title and at least one compatible expected author; rerun the production enrichment gate after public records are generated.",
+  "summary": {
+    "books": 10,
+    "exact_title_author_leads": 9,
+    "unresolved": 1
+  },
+  "covers": [
+    {
+      "slug": "the-federalist-papers",
+      "match_state": "exact_title_author_lead",
+      "cover_id": 15201458,
+      "source_url": "https://openlibrary.org/works/OL22453065W",
+      "source_title": "The Federalist papers",
+      "source_authors": ["Alexander Hamilton", "Roy P. Fairfield"]
+    },
+    {
+      "slug": "democracy-in-america",
+      "match_state": "exact_title_author_lead",
+      "cover_id": 13281409,
+      "source_url": "https://openlibrary.org/works/OL32342092W",
+      "source_title": "Democracy in America",
+      "source_authors": ["Alexis de Tocqueville"]
+    },
+    {
+      "slug": "the-road-to-serfdom",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "capitalism-and-freedom",
+      "match_state": "exact_title_author_lead",
+      "cover_id": 140808,
+      "source_url": "https://openlibrary.org/works/OL2747782W",
+      "source_title": "Capitalism and freedom",
+      "source_authors": ["Milton Friedman"]
+    },
+    {
+      "slug": "the-open-society-and-its-enemies",
+      "match_state": "exact_title_author_lead",
+      "cover_id": 3069237,
+      "source_url": "https://openlibrary.org/works/OL8975462W",
+      "source_title": "The Open Society and Its Enemies",
+      "source_authors": ["Karl Popper"]
+    },
+    {
+      "slug": "the-clash-of-civilizations-and-the-remaking-of-world-order",
+      "match_state": "exact_title_author_lead",
+      "cover_id": 472725,
+      "source_url": "https://openlibrary.org/works/OL3289930W",
+      "source_title": "The Clash of Civilizations and the Remaking of World Order",
+      "source_authors": ["Samuel P. Huntington", "Ṭalʻat Shāyib", "Ṣalāḥ Qanṣūh"]
+    },
+    {
+      "slug": "how-democracies-die",
+      "match_state": "exact_title_author_lead",
+      "cover_id": 8311412,
+      "source_url": "https://openlibrary.org/works/OL18139175W",
+      "source_title": "How Democracies Die",
+      "source_authors": ["Steven Levitsky", "Daniel Ziblatt"]
+    },
+    {
+      "slug": "political-order-and-political-decay",
+      "match_state": "exact_title_author_lead",
+      "cover_id": 9381734,
+      "source_url": "https://openlibrary.org/works/OL19986556W",
+      "source_title": "Political order and political decay",
+      "source_authors": ["Francis Fukuyama"]
+    },
+    {
+      "slug": "the-dictators-handbook",
+      "match_state": "exact_title_author_lead",
+      "cover_id": 8114194,
+      "source_url": "https://openlibrary.org/works/OL15980652W",
+      "source_title": "The dictator's handbook",
+      "source_authors": ["Bruce Bueno de Mesquita", "Alastair Smith"]
+    },
+    {
+      "slug": "the-narrow-corridor",
+      "match_state": "exact_title_author_lead",
+      "cover_id": 8872725,
+      "source_url": "https://openlibrary.org/works/OL20220421W",
+      "source_title": "The Narrow Corridor",
+      "source_authors": ["Daron Acemoglu", "James A. Robinson"]
+    }
+  ]
+}
