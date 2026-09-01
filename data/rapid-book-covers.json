@@ -3269,6 +3269,111 @@
       "source_authors": [
         "Antonio Damasio"
       ]
+    },
+    {
+      "slug": "pale-blue-dot",
+      "match_state": "exact_title_author",
+      "cover_id": 14417175,
+      "cover_url": "https://covers.openlibrary.org/b/id/14417175-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL2950948W",
+      "source_title": "Pale Blue Dot",
+      "source_authors": [
+        "Carl Sagan"
+      ]
+    },
+    {
+      "slug": "the-first-three-minutes",
+      "match_state": "exact_title_author",
+      "cover_id": 298540,
+      "cover_url": "https://covers.openlibrary.org/b/id/298540-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3398958W",
+      "source_title": "The First Three Minutes",
+      "source_authors": [
+        "Steven Weinberg"
+      ]
+    },
+    {
+      "slug": "the-elegant-universe",
+      "match_state": "exact_title_author",
+      "cover_id": 1007630,
+      "cover_url": "https://covers.openlibrary.org/b/id/1007630-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL7920347W",
+      "source_title": "The Elegant Universe",
+      "source_authors": [
+        "Brian Greene"
+      ]
+    },
+    {
+      "slug": "the-fabric-of-the-cosmos",
+      "match_state": "exact_title_author",
+      "cover_id": 6650337,
+      "cover_url": "https://covers.openlibrary.org/b/id/6650337-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1909291W",
+      "source_title": "The Fabric of the Cosmos",
+      "source_authors": [
+        "Brian Greene"
+      ]
+    },
+    {
+      "slug": "black-holes-and-time-warps",
+      "match_state": "exact_title_author",
+      "cover_id": 248886,
+      "cover_url": "https://covers.openlibrary.org/b/id/248886-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL3902081W",
+      "source_title": "Black holes and time warps",
+      "source_authors": [
+        "Kip S. Thorne"
+      ]
+    },
+    {
+      "slug": "the-end-of-everything",
+      "match_state": "exact_title_author",
+      "cover_id": 10342810,
+      "cover_url": "https://covers.openlibrary.org/b/id/10342810-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL21181790W",
+      "source_title": "The End of Everything (Astrophysically Speaking)",
+      "source_authors": [
+        "Katie Mack"
+      ]
+    },
+    {
+      "slug": "until-the-end-of-time",
+      "match_state": "exact_title_author",
+      "cover_id": 9286997,
+      "cover_url": "https://covers.openlibrary.org/b/id/9286997-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20650151W",
+      "source_title": "Until the End of Time",
+      "source_authors": [
+        "Brian Greene",
+        "René Cuillierier",
+        "Joan Lluís Riera"
+      ]
+    },
+    {
+      "slug": "the-order-of-time",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-universe-in-a-nutshell",
+      "match_state": "exact_title_author",
+      "cover_id": 8673699,
+      "cover_url": "https://covers.openlibrary.org/b/id/8673699-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL1892622W",
+      "source_title": "The Universe in a Nutshell",
+      "source_authors": [
+        "Stephen Hawking"
+      ]
+    },
+    {
+      "slug": "the-4-percent-universe",
+      "match_state": "exact_title_author",
+      "cover_id": 11089872,
+      "cover_url": "https://covers.openlibrary.org/b/id/11089872-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL16677137W",
+      "source_title": "The 4 Percent Universe",
+      "source_authors": [
+        "Richard Panek"
+      ]
     }
   ]
 }

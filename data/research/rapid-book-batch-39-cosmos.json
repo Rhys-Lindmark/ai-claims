@@ -1,0 +1,657 @@
+{
+  "schema_version": "ai-claims.rapid-book-batch/0.1.0",
+  "batch_id": "39",
+  "checked_date": "2026-09-01",
+  "books": [
+    {
+      "slug": "pale-blue-dot",
+      "entity_key": "web:book/pale-blue-dot",
+      "title": "Pale Blue Dot",
+      "subtitle": "A Vision of the Human Future in Space",
+      "author": "Carl Sagan",
+      "year": 1994,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "Earth's physical smallness and vulnerability are incontestable; the ethical and political meaning Sagan draws from them is argument rather than discovered fact. Robotic exploration has vindicated much of his practical case, while claims about life's rarity remain unresolved.",
+      "claims": [
+        {
+          "claim": "Earth is a physically tiny and vulnerable world in a vast cosmos, with no evidence that it occupies a privileged location.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Modern planetary science and cosmology place Earth around an ordinary star in one galaxy among enormous numbers, while its habitability depends on a narrow atmosphere, climate, and biosphere. Ethical humility is an interpretation, but the physical premise is secure.",
+          "sources": [
+            {
+              "title": "NASA Universe overview",
+              "url": "https://science.nasa.gov/universe/overview/"
+            },
+            {
+              "title": "NASA Exoplanet exploration",
+              "url": "https://science.nasa.gov/exoplanets/"
+            }
+          ]
+        },
+        {
+          "claim": "Robotic space exploration can greatly expand knowledge while reducing the cost and human risk of many missions.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Planetary probes and space telescopes have transformed knowledge without exposing crews to launch, radiation, and landing hazards. Human missions can provide flexibility, maintenance, and public value, so the evidence supports a broad robotic advantage rather than universal replacement.",
+          "sources": [
+            {
+              "title": "NASA Solar System exploration missions",
+              "url": "https://science.nasa.gov/solar-system/"
+            },
+            {
+              "title": "NASA Webb mission science",
+              "url": "https://science.nasa.gov/mission/webb/"
+            }
+          ]
+        },
+        {
+          "claim": "Life or intelligence is probably rare enough that humanity may be the cosmos's only present means of self-understanding.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Thousands of exoplanets and widespread prebiotic chemistry make possible habitats common, but no confirmed extraterrestrial life or reliable frequency estimate exists. The claim is a motivating possibility under severe selection and detection uncertainty, not a measured conclusion.",
+          "sources": [
+            {
+              "title": "NASA Exoplanet exploration",
+              "url": "https://science.nasa.gov/exoplanets/"
+            },
+            {
+              "title": "NASA Astrobiology",
+              "url": "https://astrobiology.nasa.gov/about/"
+            }
+          ]
+        }
+      ],
+      "other_claims": [
+        "Long-run human survival would benefit from becoming multiplanetary.",
+        "Seeing Earth from space can alter political and moral perspective."
+      ]
+    },
+    {
+      "slug": "the-first-three-minutes",
+      "entity_key": "web:book/the-first-three-minutes",
+      "title": "The First Three Minutes",
+      "subtitle": "A Modern View of the Origin of the Universe",
+      "author": "Steven Weinberg",
+      "year": 1977,
+      "score": 83,
+      "confidence": "high",
+      "summary": "The hot Big Bang, primordial nucleosynthesis, and relic radiation remain core cosmology. Precision has improved dramatically since publication, while the book's earliest-time narrative necessarily reaches beyond directly tested physics.",
+      "claims": [
+        {
+          "claim": "The observable universe evolved from an early hot, dense state and has expanded and cooled for about 13.8 billion years.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Expansion, the cosmic microwave background, light-element abundances, and large-scale structure jointly support hot-Big-Bang cosmology. Planck-era measurements refine the age and parameters without overturning the book's central historical picture.",
+          "sources": [
+            {
+              "title": "NASA Universe overview",
+              "url": "https://science.nasa.gov/universe/overview/"
+            },
+            {
+              "title": "Planck 2018 cosmological parameters",
+              "url": "https://www.aanda.org/articles/aa/full_html/2020/09/aa36386-19/aa36386-19.html"
+            }
+          ]
+        },
+        {
+          "claim": "Nuclear reactions in the first minutes produced most cosmic hydrogen and helium plus trace light elements.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Big-bang nucleosynthesis predicts light-element abundances from baryon density and nuclear reaction rates, with broad observational agreement. Lithium remains a notable discrepancy, but it does not erase the successful hydrogen, helium, and deuterium framework.",
+          "sources": [
+            {
+              "title": "Particle Data Group Big-Bang cosmology review",
+              "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-bbang-cosmology.pdf"
+            },
+            {
+              "title": "Planck 2018 cosmological parameters",
+              "url": "https://www.aanda.org/articles/aa/full_html/2020/09/aa36386-19/aa36386-19.html"
+            }
+          ]
+        },
+        {
+          "claim": "Known particle physics securely reconstructs conditions all the way back to the universe's first instants.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Tested physics supports much of the thermal history after the earliest epochs, but inflation, baryogenesis, quantum gravity, and initial conditions remain unsettled. Extrapolation becomes increasingly model-dependent far before nucleosynthesis.",
+          "sources": [
+            {
+              "title": "NASA Universe overview",
+              "url": "https://science.nasa.gov/universe/overview/"
+            },
+            {
+              "title": "Particle Data Group Big-Bang cosmology review",
+              "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-bbang-cosmology.pdf"
+            }
+          ]
+        }
+      ],
+      "other_claims": [
+        "The cosmic microwave background is relic radiation from the early universe.",
+        "Cosmology can reconstruct a thermal history without explaining why there is a universe."
+      ]
+    },
+    {
+      "slug": "the-elegant-universe",
+      "entity_key": "web:book/the-elegant-universe",
+      "title": "The Elegant Universe",
+      "subtitle": "Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory",
+      "author": "Brian Greene",
+      "year": 1999,
+      "score": 67,
+      "confidence": "medium-high",
+      "summary": "The incompatibility between general relativity and ordinary quantum field methods at extreme scales is real, and string theory supplies a rich candidate framework. No distinctive string prediction has received empirical confirmation, so elegance and mathematical reach cannot count as validation.",
+      "claims": [
+        {
+          "claim": "General relativity and quantum theory are both successful yet resist straightforward unification in extreme regimes.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Each framework has extraordinary empirical support in its domain, while perturbatively quantizing gravity produces unresolved high-energy behavior. Black holes and the early universe expose the need for a deeper account, though several research programs compete.",
+          "sources": [
+            {
+              "title": "CERN quantum gravity overview",
+              "url": "https://home.cern/science/physics/extra-dimensions-gravitons-and-tiny-black-holes"
+            },
+            {
+              "title": "NASA Black holes",
+              "url": "https://science.nasa.gov/universe/black-holes/"
+            }
+          ]
+        },
+        {
+          "claim": "String theory provides a mathematically coherent framework containing gravity and gauge-like interactions.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "String constructions include a massless spin-two mode and rich gauge structures, and dualities have generated major mathematical and theoretical insights. Coherence within important limits is not a proof that nature selects one compactification or low-energy realization.",
+          "sources": [
+            {
+              "title": "CERN extra dimensions and gravitons",
+              "url": "https://home.cern/science/physics/extra-dimensions-gravitons-and-tiny-black-holes"
+            },
+            {
+              "title": "Stanford Encyclopedia: String theory",
+              "url": "https://plato.stanford.edu/entries/physics-structuralism/#StrThe"
+            }
+          ]
+        },
+        {
+          "claim": "String theory is close to empirical confirmation as the unique theory of fundamental physics.",
+          "assessment": "weak",
+          "credit": 0.25,
+          "rationale": "No distinctive string-scale particle, extra dimension, supersymmetric partner, or compactification has been confirmed. The landscape of possible low-energy models and lack of discriminating accessible predictions make uniqueness and near-term validation much weaker than the popular narrative.",
+          "sources": [
+            {
+              "title": "CERN: Supersymmetry—where are you?",
+              "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-susy-2-experiment.pdf"
+            },
+            {
+              "title": "Particle Data Group searches for extra dimensions",
+              "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-extra-dimensions.pdf"
+            }
+          ]
+        }
+      ],
+      "other_claims": [
+        "Extra spatial dimensions could be compactified below ordinary resolution.",
+        "Dualities can reveal apparently different theories as descriptions of one structure."
+      ]
+    },
+    {
+      "slug": "the-fabric-of-the-cosmos",
+      "entity_key": "web:book/the-fabric-of-the-cosmos",
+      "title": "The Fabric of the Cosmos",
+      "subtitle": "Space, Time, and the Texture of Reality",
+      "author": "Brian Greene",
+      "year": 2004,
+      "score": 83,
+      "confidence": "medium-high",
+      "summary": "Relativity, quantum entanglement, and a dynamical spacetime are exceptionally well supported. The book is clearest when explaining those results and least secure when promoting inflationary multiverses or specific microscopic spacetime models beyond available tests.",
+      "claims": [
+        {
+          "claim": "Space and time form a dynamical spacetime whose geometry responds to matter and energy.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "General relativity's lensing, time dilation, orbital, gravitational-wave, and black-hole predictions have survived demanding tests. Quantum gravity remains open, but dynamical spacetime is not merely a metaphor.",
+          "sources": [
+            {
+              "title": "LIGO GW150914 science summary",
+              "url": "https://ligo.org/wp-content/uploads/2024/07/GW150914-science-summary.pdf"
+            },
+            {
+              "title": "NIST optical clocks and relativity",
+              "url": "https://www.nist.gov/publications/relativity-and-optical-clocks"
+            }
+          ]
+        },
+        {
+          "claim": "Quantum entanglement produces correlations that cannot be reproduced by local hidden-variable theories.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Bell tests with increasingly closed loopholes violate local-realist bounds and underpin modern quantum information science. The result does not permit controllable faster-than-light signaling, a distinction the popular language of nonlocality can obscure.",
+          "sources": [
+            {
+              "title": "2022 Nobel Prize in Physics press release",
+              "url": "https://www.nobelprize.org/prizes/physics/2022/press-release/"
+            },
+            {
+              "title": "Loophole-free Bell test",
+              "url": "https://doi.org/10.1038/nature15759"
+            }
+          ]
+        },
+        {
+          "claim": "Inflation and fundamental theory probably imply a physically real multiverse.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Inflationary models explain important observed features and some versions generate eternal inflation, but the inflation mechanism and measure problem remain open. A multiverse is a consequence of some models, not a directly observed component or unique prediction.",
+          "sources": [
+            {
+              "title": "Planck constraints on inflation",
+              "url": "https://www.aanda.org/articles/aa/full_html/2020/09/aa33887-18/aa33887-18.html"
+            },
+            {
+              "title": "Particle Data Group Big-Bang cosmology review",
+              "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-bbang-cosmology.pdf"
+            }
+          ]
+        }
+      ],
+      "other_claims": [
+        "The arrow of time is tied to an unusually low-entropy past.",
+        "Quantum gravity may reveal that familiar spacetime is emergent."
+      ]
+    },
+    {
+      "slug": "black-holes-and-time-warps",
+      "entity_key": "web:book/black-holes-and-time-warps",
+      "title": "Black Holes and Time Warps",
+      "subtitle": "Einstein's Outrageous Legacy",
+      "author": "Kip S. Thorne",
+      "year": 1994,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The book's account of relativity, stellar collapse, black holes, and gravitational waves has been spectacularly vindicated by LIGO and horizon-scale imaging. Its historical interpretation is well researched but necessarily less mechanically testable than the physics.",
+      "claims": [
+        {
+          "claim": "Massive compact objects described by general relativity form black holes with horizons and strong-field spacetime effects.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Stellar and galactic-center observations, gravitational waves, and horizon-scale images match black-hole predictions across very different mass ranges. Measurements constrain alternatives without proving every idealized property of exact solutions.",
+          "sources": [
+            {
+              "title": "NASA Black holes",
+              "url": "https://science.nasa.gov/universe/black-holes/"
+            },
+            {
+              "title": "Event Horizon Telescope first image",
+              "url": "https://eventhorizontelescope.org/press-release-april-10-2019-astronomers-capture-first-image-black-hole"
+            }
+          ]
+        },
+        {
+          "claim": "Merging black holes emit gravitational waves with waveforms predicted by general relativity.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "GW150914 directly detected the inspiral, merger, and ringdown of a binary-black-hole system, followed by a large catalog of detections. Observed waveforms have repeatedly agreed with relativistic models within measured precision.",
+          "sources": [
+            {
+              "title": "LIGO GW150914 science summary",
+              "url": "https://ligo.org/wp-content/uploads/2024/07/GW150914-science-summary.pdf"
+            },
+            {
+              "title": "LIGO detections catalog",
+              "url": "https://www.ligo.org/science/Publication-O4aCatalog/index.php"
+            }
+          ]
+        },
+        {
+          "claim": "Scientific progress on black holes emerged through a contingent interaction of theory, instruments, institutions, and individual judgment.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "The historical record supports long delays between mathematical solutions, physical acceptance, astrophysical evidence, and detection technology. Particular motives and counterfactual credit remain interpretive, but the institutional and technical sequence is well documented.",
+          "sources": [
+            {
+              "title": "LIGO history",
+              "url": "https://www.ligo.org/science/Publication-GW150914/index.php"
+            },
+            {
+              "title": "Nobel Prize 2020 black-hole background",
+              "url": "https://www.nobelprize.org/prizes/physics/2020/press-release/"
+            }
+          ]
+        }
+      ],
+      "other_claims": [
+        "Wormholes are permitted by some equations but not established as traversable structures.",
+        "Frame dragging around rotating masses is a measurable relativistic effect."
+      ]
+    },
+    {
+      "slug": "the-end-of-everything",
+      "entity_key": "web:book/the-end-of-everything",
+      "title": "The End of Everything",
+      "subtitle": "Astrophysically Speaking",
+      "author": "Katie Mack",
+      "year": 2020,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "The candidate endings are legitimate consequences of different physical assumptions, and current acceleration makes long-run cooling the baseline expectation. Dark energy's nature is unknown, so no precise finale can yet be promoted from scenario to forecast.",
+      "claims": [
+        {
+          "claim": "The universe's long-run fate depends strongly on the behavior of dark energy and the expansion history.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Cosmic acceleration is well established, while a cosmological constant, evolving field, or modified gravity can imply different futures. Measuring dark energy's equation of state is therefore directly tied to fate rather than decorative detail.",
+          "sources": [
+            {
+              "title": "NASA What is Dark Energy?",
+              "url": "https://science.nasa.gov/dark-energy/"
+            },
+            {
+              "title": "NASA dark energy science goals",
+              "url": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/expand-our-knowledge-of-dark-energy/"
+            }
+          ]
+        },
+        {
+          "claim": "If dark energy behaves like a cosmological constant, continued expansion and a progressively colder, emptier universe are the leading outcome.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Current observations are broadly compatible with a cosmological constant and indefinite acceleration, making heat-death-like dilution the standard baseline. Parameter uncertainty and possible evolving dark energy prevent certainty over immense timescales.",
+          "sources": [
+            {
+              "title": "NASA Universe overview",
+              "url": "https://science.nasa.gov/universe/overview/"
+            },
+            {
+              "title": "Planck 2018 cosmological parameters",
+              "url": "https://www.aanda.org/articles/aa/full_html/2020/09/aa36386-19/aa36386-19.html"
+            }
+          ]
+        },
+        {
+          "claim": "Big Crunch, vacuum decay, Big Rip, and heat death are all physically motivated scenarios rather than equally likely predictions.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Each follows from a defined model or parameter range, so the taxonomy is scientifically meaningful. Evidence currently favors some assumptions over others, vacuum stability depends on uncertain high-energy inputs, and scenario possibility should not be read as comparable probability.",
+          "sources": [
+            {
+              "title": "NASA What is Dark Energy?",
+              "url": "https://science.nasa.gov/dark-energy/"
+            },
+            {
+              "title": "Particle Data Group cosmological parameters",
+              "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-cosmological-parameters.pdf"
+            }
+          ]
+        }
+      ],
+      "other_claims": [
+        "Vacuum decay, if possible, would proceed without advance warning.",
+        "Cosmic endings can be scientifically constrained even when not directly observable."
+      ]
+    },
+    {
+      "slug": "until-the-end-of-time",
+      "entity_key": "web:book/until-the-end-of-time",
+      "title": "Until the End of Time",
+      "subtitle": "Mind, Matter, and Our Search for Meaning in an Evolving Universe",
+      "author": "Brian Greene",
+      "year": 2020,
+      "score": 75,
+      "confidence": "medium",
+      "summary": "Entropy, stellar evolution, and the temporary emergence of local complexity are solid. The book's bridge from physics to life, mind, culture, and meaning is stimulating synthesis, but it is not one established causal chain derived from thermodynamics.",
+      "claims": [
+        {
+          "claim": "The thermodynamic arrow of time is associated with entropy increasing from an unusually low-entropy past.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Statistical mechanics links macroscopic irreversibility to overwhelmingly probable higher-entropy states, while cosmology requires special low-entropy boundary conditions. The exact origin of that boundary condition remains a foundational open question.",
+          "sources": [
+            {
+              "title": "Stanford Encyclopedia: Thermodynamic asymmetry in time",
+              "url": "https://plato.stanford.edu/entries/time-thermo/"
+            },
+            {
+              "title": "Particle Data Group Big-Bang cosmology review",
+              "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-bbang-cosmology.pdf"
+            }
+          ]
+        },
+        {
+          "claim": "Local complexity can grow while total entropy increases because systems use free-energy gradients and export entropy.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Stars, planets, chemistry, and living systems can form ordered local structures while dissipating usable energy and increasing entropy in their environments. This is standard nonequilibrium thermodynamics and does not violate the second law.",
+          "sources": [
+            {
+              "title": "NASA stellar evolution overview",
+              "url": "https://science.nasa.gov/universe/stars/"
+            },
+            {
+              "title": "NASA Universe overview",
+              "url": "https://science.nasa.gov/universe/overview/"
+            }
+          ]
+        },
+        {
+          "claim": "Physics and entropy supply a substantially complete causal arc from particles to life, consciousness, culture, and meaning.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Physical constraints and energy flows are necessary across every level, but origin-of-life pathways, consciousness, cultural evolution, and normative meaning require additional mechanisms and explanatory vocabularies. Continuity does not establish reduction to one derivation.",
+          "sources": [
+            {
+              "title": "NASA Astrobiology",
+              "url": "https://astrobiology.nasa.gov/about/"
+            },
+            {
+              "title": "Stanford Encyclopedia: Consciousness",
+              "url": "https://plato.stanford.edu/entries/consciousness/"
+            }
+          ]
+        }
+      ],
+      "other_claims": [
+        "Stars and usable energy sources will eventually disappear under standard cosmology.",
+        "Meaning can be humanly real without being cosmically permanent."
+      ]
+    },
+    {
+      "slug": "the-order-of-time",
+      "entity_key": "web:book/the-order-of-time",
+      "title": "The Order of Time",
+      "subtitle": "",
+      "author": "Carlo Rovelli",
+      "year": 2018,
+      "score": 75,
+      "confidence": "medium-high",
+      "summary": "Relativity decisively removes a universal cosmic present, and thermodynamics explains why macroscopic time has a direction. The stronger claim that time is fundamentally absent or emergent belongs to active quantum-gravity interpretation, not settled observation.",
+      "claims": [
+        {
+          "claim": "There is no observer-independent universal present, and elapsed time depends on motion and gravitational potential.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Special and general relativity predict velocity and gravitational time dilation, both measured with clocks and required in precision systems. Different worldlines genuinely accumulate different proper times rather than merely appearing to do so.",
+          "sources": [
+            {
+              "title": "NIST optical clocks and relativity",
+              "url": "https://www.nist.gov/publications/relativity-and-optical-clocks"
+            },
+            {
+              "title": "NIST clocks measure gravitational time dilation",
+              "url": "https://www.nist.gov/news-events/news/2022/02/jila-atomic-clocks-measure-einsteins-general-relativity-millimeter-scale"
+            }
+          ]
+        },
+        {
+          "claim": "The experienced direction of time is closely connected to thermodynamic irreversibility and coarse-grained information.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Entropy increase explains why many macroscopic processes have time-asymmetric records despite largely time-symmetric microscopic laws. Connecting every aspect of memory and experience to coarse-graining remains interpretive, but the thermodynamic core is strong.",
+          "sources": [
+            {
+              "title": "Stanford Encyclopedia: Thermodynamic asymmetry in time",
+              "url": "https://plato.stanford.edu/entries/time-thermo/"
+            },
+            {
+              "title": "Stanford Encyclopedia: Time",
+              "url": "https://plato.stanford.edu/entries/time/"
+            }
+          ]
+        },
+        {
+          "claim": "Fundamental quantum gravity shows that time does not exist at the deepest level.",
+          "assessment": "mixed",
+          "credit": 0.5,
+          "rationale": "Some canonical quantum-gravity formulations lack an external time parameter and motivate relational or emergent accounts. There is no empirically confirmed quantum-gravity theory, and other approaches retain temporal structure, so nonexistence is a research interpretation.",
+          "sources": [
+            {
+              "title": "CERN quantum gravity overview",
+              "url": "https://home.cern/science/physics/extra-dimensions-gravitons-and-tiny-black-holes"
+            },
+            {
+              "title": "Stanford Encyclopedia: Quantum gravity",
+              "url": "https://plato.stanford.edu/entries/quantum-gravity/"
+            }
+          ]
+        }
+      ],
+      "other_claims": [
+        "Clocks measure local physical change rather than one universal flow.",
+        "Temporal order can be relational even when global time is unavailable."
+      ]
+    },
+    {
+      "slug": "the-universe-in-a-nutshell",
+      "entity_key": "web:book/the-universe-in-a-nutshell",
+      "title": "The Universe in a Nutshell",
+      "subtitle": "",
+      "author": "Stephen Hawking",
+      "year": 2001,
+      "score": 67,
+      "confidence": "medium-high",
+      "summary": "Its accounts of relativity, black holes, and expanding-universe cosmology remain broadly sound. Brane worlds, imaginary time, and routes to time travel are valuable theoretical possibilities but have not acquired the empirical footing implied by their narrative prominence.",
+      "claims": [
+        {
+          "claim": "General relativity accurately describes spacetime, black holes, gravitational time dilation, and an expanding cosmos across tested regimes.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Clock experiments, gravitational waves, lensing, orbital dynamics, and black-hole observations provide convergent tests. Singularities and quantum regimes signal incompleteness without undermining the theory's tested domain.",
+          "sources": [
+            {
+              "title": "LIGO GW150914 science summary",
+              "url": "https://ligo.org/wp-content/uploads/2024/07/GW150914-science-summary.pdf"
+            },
+            {
+              "title": "NIST optical clocks and relativity",
+              "url": "https://www.nist.gov/publications/relativity-and-optical-clocks"
+            }
+          ]
+        },
+        {
+          "claim": "Quantum effects make black holes radiate and eventually evaporate.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Hawking radiation follows robust semiclassical calculations and connects black-hole thermodynamics, quantum fields, and gravity. Direct astrophysical detection is absent because expected temperatures and evaporation times are extreme, so empirical confirmation remains indirect.",
+          "sources": [
+            {
+              "title": "NASA Universe glossary: Hawking radiation",
+              "url": "https://science.nasa.gov/universe/glossary/"
+            },
+            {
+              "title": "NASA Black holes",
+              "url": "https://science.nasa.gov/universe/black-holes/"
+            }
+          ]
+        },
+        {
+          "claim": "Brane worlds, imaginary time, or engineered spacetime shortcuts are likely descriptions of accessible physical reality.",
+          "assessment": "weak",
+          "credit": 0.25,
+          "rationale": "These constructions can be mathematically consistent within selected models, but no extra dimension, brane signature, traversable wormhole, or time-machine mechanism has been observed. Possibility in equations does not establish natural realization or engineering feasibility.",
+          "sources": [
+            {
+              "title": "CERN extra dimensions and gravitons",
+              "url": "https://home.cern/science/physics/extra-dimensions-gravitons-and-tiny-black-holes"
+            },
+            {
+              "title": "Particle Data Group searches for extra dimensions",
+              "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-extra-dimensions.pdf"
+            }
+          ]
+        }
+      ],
+      "other_claims": [
+        "The universe may have finite extent without a boundary.",
+        "A quantum theory of gravity is needed at singularities and the earliest epochs."
+      ]
+    },
+    {
+      "slug": "the-4-percent-universe",
+      "entity_key": "web:book/the-4-percent-universe",
+      "title": "The 4 Percent Universe",
+      "subtitle": "Dark Matter, Dark Energy, and the Race to Discover the Rest of Reality",
+      "author": "Richard Panek",
+      "year": 2011,
+      "score": 92,
+      "confidence": "high",
+      "summary": "The observational revolution it narrates is secure: ordinary matter is a small minority, nonluminous matter shapes structure, and expansion accelerates. The identities of dark matter and dark energy remain unknown, making the discoveries descriptions of effects rather than completed substance theories.",
+      "claims": [
+        {
+          "claim": "Ordinary baryonic matter contributes only about five percent of the universe's present mass-energy budget.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Cosmic microwave background, nucleosynthesis, and large-scale-structure measurements converge on a small baryonic fraction, with dark matter and dark energy dominating the fitted budget. Exact percentages depend modestly on dataset and model.",
+          "sources": [
+            {
+              "title": "NASA Universe building blocks",
+              "url": "https://science.nasa.gov/universe/overview/building-blocks/"
+            },
+            {
+              "title": "Planck 2018 cosmological parameters",
+              "url": "https://www.aanda.org/articles/aa/full_html/2020/09/aa36386-19/aa36386-19.html"
+            }
+          ]
+        },
+        {
+          "claim": "A nonluminous gravitating component called dark matter is needed to explain galaxies, clusters, lensing, and cosmic structure.",
+          "assessment": "supported",
+          "credit": 1,
+          "rationale": "Independent gravitational observations support substantially more matter than baryons provide, and cold-dark-matter models successfully organize structure formation. The underlying particle or possible modification of gravity remains unidentified.",
+          "sources": [
+            {
+              "title": "NASA Universe building blocks",
+              "url": "https://science.nasa.gov/universe/overview/building-blocks/"
+            },
+            {
+              "title": "NASA Hubble science themes",
+              "url": "https://science.nasa.gov/mission/hubble/science/science-themes/"
+            }
+          ]
+        },
+        {
+          "claim": "Distant-supernova and complementary observations show that cosmic expansion is accelerating.",
+          "assessment": "mostly supported",
+          "credit": 0.75,
+          "rationale": "Supernovae, cosmic microwave background, and large-scale structure strongly support late-time acceleration within modern cosmological fits. Calling its cause dark energy names the phenomenon; it does not identify a substance, mechanism, or permanently constant behavior.",
+          "sources": [
+            {
+              "title": "NASA What is Dark Energy?",
+              "url": "https://science.nasa.gov/dark-energy/"
+            },
+            {
+              "title": "NASA Hubble cosmological redshift",
+              "url": "https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-cosmological-redshift/"
+            }
+          ]
+        }
+      ],
+      "other_claims": [
+        "Competition and instrument building shaped the discovery of cosmic acceleration.",
+        "The standard cosmological model is empirically successful despite unknown dominant components."
+      ]
+    }
+  ]
+}
