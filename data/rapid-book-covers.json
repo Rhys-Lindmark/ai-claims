@@ -3374,6 +3374,112 @@
       "source_authors": [
         "Richard Panek"
       ]
+    },
+    {
+      "slug": "field-notes-from-a-catastrophe",
+      "match_state": "exact_title_author",
+      "cover_id": 877221,
+      "cover_url": "https://covers.openlibrary.org/b/id/877221-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL5838691W",
+      "source_title": "Field notes from a catastrophe",
+      "source_authors": [
+        "Elizabeth Kolbert",
+        "Hope Davis"
+      ]
+    },
+    {
+      "slug": "the-uninhabitable-earth",
+      "match_state": "exact_title_author",
+      "cover_id": 8801133,
+      "cover_url": "https://covers.openlibrary.org/b/id/8801133-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19096883W",
+      "source_title": "The Uninhabitable Earth",
+      "source_authors": [
+        "David Wallace-Wells"
+      ]
+    },
+    {
+      "slug": "losing-earth",
+      "match_state": "exact_title_author",
+      "cover_id": 8796824,
+      "cover_url": "https://covers.openlibrary.org/b/id/8796824-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20152239W",
+      "source_title": "Losing Earth",
+      "source_authors": [
+        "Nathaniel Rich"
+      ]
+    },
+    {
+      "slug": "the-new-climate-war",
+      "match_state": "exact_title_author",
+      "cover_id": 10657765,
+      "cover_url": "https://covers.openlibrary.org/b/id/10657765-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL24209745W",
+      "source_title": "The New Climate War",
+      "source_authors": [
+        "Michael E. Mann"
+      ]
+    },
+    {
+      "slug": "six-degrees",
+      "match_state": "exact_title_author",
+      "cover_id": 6797189,
+      "cover_url": "https://covers.openlibrary.org/b/id/6797189-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL15833198W",
+      "source_title": "Six degrees",
+      "source_authors": [
+        "Mark Lynas"
+      ]
+    },
+    {
+      "slug": "the-weather-makers",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "this-changes-everything",
+      "match_state": "exact_title_author",
+      "cover_id": 7306100,
+      "cover_url": "https://covers.openlibrary.org/b/id/7306100-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17062332W",
+      "source_title": "This Changes Everything",
+      "source_authors": [
+        "Naomi Klein"
+      ]
+    },
+    {
+      "slug": "drawdown",
+      "match_state": "exact_title_author",
+      "cover_id": 8254671,
+      "cover_url": "https://covers.openlibrary.org/b/id/8254671-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17925029W",
+      "source_title": "Drawdown",
+      "source_authors": [
+        "Paul Hawken",
+        "Christopher Solimene"
+      ]
+    },
+    {
+      "slug": "the-wizard-and-the-prophet",
+      "match_state": "exact_title_author",
+      "cover_id": 8250114,
+      "cover_url": "https://covers.openlibrary.org/b/id/8250114-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17923653W",
+      "source_title": "The Wizard and the Prophet",
+      "source_authors": [
+        "Charles C. Mann"
+      ]
+    },
+    {
+      "slug": "under-a-white-sky",
+      "match_state": "exact_title_author",
+      "cover_id": 10501777,
+      "cover_url": "https://covers.openlibrary.org/b/id/10501777-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL22857877W",
+      "source_title": "Under a White Sky",
+      "source_authors": [
+        "Elizabeth Kolbert",
+        "Joan Lluís Riera"
+      ]
     }
   ]
 }

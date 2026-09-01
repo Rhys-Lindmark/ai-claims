@@ -4,8 +4,8 @@ import { resolve } from 'node:path';
 
 const [batchPath, mode] = process.argv.slice(2);
 
-if (!batchPath || !['--check', '--write'].includes(mode)) {
-  console.error('Usage: node scripts/import-rapid-book-batch.mjs <batch.json> --check|--write');
+if (!batchPath || !['--check', '--write', '--sync'].includes(mode)) {
+  console.error('Usage: node scripts/import-rapid-book-batch.mjs <batch.json> --check|--write|--sync');
   process.exit(2);
 }
 
@@ -25,15 +25,22 @@ const incomingSlugs = new Set();
 const incomingEntities = new Set();
 
 for (const book of batch.books) {
-  assert.ok(!existingSlugs.has(book.slug), `duplicate catalog slug: ${book.slug}`);
-  assert.ok(!existingEntities.has(book.entity_key), `duplicate catalog entity: ${book.entity_key}`);
+  if (mode === '--sync') {
+    const existing = catalog.books.find((candidate) => candidate.slug === book.slug);
+    assert.ok(existing, `cannot sync missing catalog slug: ${book.slug}`);
+    assert.equal(existing.entity_key, book.entity_key, `entity mismatch for synced slug: ${book.slug}`);
+  } else {
+    assert.ok(!existingSlugs.has(book.slug), `duplicate catalog slug: ${book.slug}`);
+    assert.ok(!existingEntities.has(book.entity_key), `duplicate catalog entity: ${book.entity_key}`);
+  }
   assert.ok(!incomingSlugs.has(book.slug), `duplicate batch slug: ${book.slug}`);
   assert.ok(!incomingEntities.has(book.entity_key), `duplicate batch entity: ${book.entity_key}`);
   incomingSlugs.add(book.slug);
   incomingEntities.add(book.entity_key);
 }
 
-console.log(`Rapid book batch ${batch.batch_id}: ${batch.books.length} unique books ready; catalog ${catalog.books.length} -> ${catalog.books.length + batch.books.length}`);
+const resultingCount = mode === '--sync' ? catalog.books.length : catalog.books.length + batch.books.length;
+console.log(`Rapid book batch ${batch.batch_id}: ${batch.books.length} unique books ready; catalog ${catalog.books.length} -> ${resultingCount}`);
 
 if (mode === '--write') {
   const updatedHeader = catalogRaw.replace(/"last_updated": "\d{4}-\d{2}-\d{2}"/, `"last_updated": "${batch.checked_date}"`);
@@ -43,4 +50,16 @@ if (mode === '--write') {
   const serialized = updatedHeader.slice(0, -(`${marker}\n`).length) + `,\n${incoming}${marker}\n`;
   await writeFile(catalogPath, serialized);
   console.log(`Updated ${catalogPath.pathname}`);
+}
+
+if (mode === '--sync') {
+  let updated = catalogRaw.replace(/"last_updated": "\d{4}-\d{2}-\d{2}"/, `"last_updated": "${batch.checked_date}"`);
+  for (const book of batch.books) {
+    const existing = catalog.books.find((candidate) => candidate.slug === book.slug);
+    const before = JSON.stringify(existing);
+    assert.equal(updated.split(before).length, 2, `catalog record is not uniquely replaceable: ${book.slug}`);
+    updated = updated.replace(before, JSON.stringify(book));
+  }
+  await writeFile(catalogPath, updated);
+  console.log(`Synced ${batch.books.length} batch records in ${catalogPath.pathname}`);
 }
