@@ -2,7 +2,7 @@
   "schema_version": "ai-claims.rapid-book-source-audit/0.1.0",
   "catalog_method_version": "three-central-claims/0.1.0",
   "catalog_last_updated": "2026-09-01",
-  "checked_at": "2026-09-01T14:11:06.450Z",
+  "checked_at": "2026-09-01T14:23:00.536Z",
   "checker": {
     "version": "http-head-get/0.1.0",
     "timeout_ms": 15000,
@@ -10,45 +10,46 @@
     "caveat": "HTTP reachability is not evidence quality. Access-blocked responses are kept separate from broken links; redirects are recorded after following them."
   },
   "summary": {
-    "books": 330,
-    "claims": 990,
-    "citations": 1980,
-    "unique_urls": 1320,
-    "repeated_citations": 660,
-    "redirected_urls": 190,
+    "books": 340,
+    "claims": 1020,
+    "citations": 2040,
+    "unique_urls": 1377,
+    "repeated_citations": 663,
+    "redirected_urls": 204,
     "states": {
-      "access_blocked": 365,
-      "network_error": 26,
+      "access_blocked": 340,
+      "network_error": 29,
       "other_http": 4,
-      "reachable": 917,
+      "reachable": 996,
       "transient": 8
     },
     "score_distribution": {
       "42": 3,
       "50": 14,
       "58": 22,
-      "67": 81,
-      "75": 88,
-      "83": 63,
-      "92": 49,
+      "67": 82,
+      "75": 92,
+      "83": 67,
+      "92": 50,
       "100": 10
     },
     "confidence_distribution": {
-      "high": 109,
+      "high": 114,
       "low": 1,
       "medium": 84,
-      "medium-high": 114,
+      "medium-high": 119,
       "medium-low": 22
     }
   },
   "domain_summary": [
     {
       "host": "doi.org",
-      "unique_urls": 106,
-      "citations": 152,
+      "unique_urls": 119,
+      "citations": 165,
       "states": {
-        "reachable": 54,
-        "access_blocked": 52
+        "reachable": 60,
+        "access_blocked": 58,
+        "transient": 1
       }
     },
     {
@@ -64,8 +65,8 @@
       "unique_urls": 63,
       "citations": 104,
       "states": {
-        "access_blocked": 61,
-        "reachable": 2
+        "access_blocked": 26,
+        "reachable": 37
       }
     },
     {
@@ -95,26 +96,26 @@
     },
     {
       "host": "nap.nationalacademies.org",
-      "unique_urls": 18,
-      "citations": 34,
+      "unique_urls": 20,
+      "citations": 36,
       "states": {
-        "reachable": 18
+        "reachable": 20
       }
     },
     {
       "host": "ipcc.ch",
-      "unique_urls": 16,
-      "citations": 33,
+      "unique_urls": 18,
+      "citations": 35,
       "states": {
-        "reachable": 16
+        "reachable": 18
       }
     },
     {
       "host": "science.nasa.gov",
-      "unique_urls": 18,
-      "citations": 33,
+      "unique_urls": 19,
+      "citations": 34,
       "states": {
-        "reachable": 18
+        "reachable": 19
       }
     },
     {
@@ -131,6 +132,14 @@
       "citations": 25,
       "states": {
         "reachable": 16
+      }
+    },
+    {
+      "host": "nps.gov",
+      "unique_urls": 20,
+      "citations": 25,
+      "states": {
+        "reachable": 20
       }
     },
     {
@@ -222,11 +231,11 @@
       }
     },
     {
-      "host": "nps.gov",
-      "unique_urls": 13,
+      "host": "pubs.usgs.gov",
+      "unique_urls": 12,
       "citations": 16,
       "states": {
-        "reachable": 13
+        "reachable": 12
       }
     },
     {
@@ -234,8 +243,8 @@
       "unique_urls": 13,
       "citations": 15,
       "states": {
-        "access_blocked": 12,
-        "reachable": 1
+        "access_blocked": 11,
+        "reachable": 2
       }
     },
     {
@@ -375,6 +384,14 @@
       }
     },
     {
+      "host": "nasa.gov",
+      "unique_urls": 7,
+      "citations": 8,
+      "states": {
+        "reachable": 7
+      }
+    },
+    {
       "host": "nsa.gov",
       "unique_urls": 7,
       "citations": 8,
@@ -384,14 +401,6 @@
     },
     {
       "host": "pdg.lbl.gov",
-      "unique_urls": 4,
-      "citations": 8,
-      "states": {
-        "reachable": 4
-      }
-    },
-    {
-      "host": "pubs.usgs.gov",
       "unique_urls": 4,
       "citations": 8,
       "states": {
@@ -419,8 +428,8 @@
       "unique_urls": 6,
       "citations": 7,
       "states": {
-        "reachable": 4,
-        "access_blocked": 2
+        "reachable": 3,
+        "access_blocked": 3
       }
     },
     {
@@ -448,7 +457,7 @@
       }
     },
     {
-      "host": "nasa.gov",
+      "host": "nationalacademies.org",
       "unique_urls": 6,
       "citations": 7,
       "states": {
@@ -486,6 +495,22 @@
       "citations": 7,
       "states": {
         "reachable": 4
+      }
+    },
+    {
+      "host": "si.edu",
+      "unique_urls": 6,
+      "citations": 7,
+      "states": {
+        "access_blocked": 6
+      }
+    },
+    {
+      "host": "usgs.gov",
+      "unique_urls": 7,
+      "citations": 7,
+      "states": {
+        "network_error": 7
       }
     },
     {
@@ -656,8 +681,7 @@
       "unique_urls": 4,
       "citations": 5,
       "states": {
-        "reachable": 1,
-        "access_blocked": 3
+        "reachable": 4
       }
     },
     {
@@ -685,6 +709,14 @@
       }
     },
     {
+      "host": "naturalhistory.si.edu",
+      "unique_urls": 5,
+      "citations": 5,
+      "states": {
+        "access_blocked": 5
+      }
+    },
+    {
       "host": "nick-lane.net",
       "unique_urls": 3,
       "citations": 5,
@@ -694,6 +726,14 @@
     },
     {
       "host": "nij.ojp.gov",
+      "unique_urls": 3,
+      "citations": 5,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
+      "host": "oceanexplorer.noaa.gov",
       "unique_urls": 3,
       "citations": 5,
       "states": {
@@ -797,6 +837,14 @@
       }
     },
     {
+      "host": "ipbes.net",
+      "unique_urls": 3,
+      "citations": 4,
+      "states": {
+        "reachable": 3
+      }
+    },
+    {
       "host": "mdpi.com",
       "unique_urls": 2,
       "citations": 4,
@@ -818,14 +866,6 @@
       "citations": 4,
       "states": {
         "reachable": 4
-      }
-    },
-    {
-      "host": "oceanexplorer.noaa.gov",
-      "unique_urls": 2,
-      "citations": 4,
-      "states": {
-        "reachable": 2
       }
     },
     {
@@ -858,14 +898,6 @@
       "citations": 4,
       "states": {
         "access_blocked": 2
-      }
-    },
-    {
-      "host": "si.edu",
-      "unique_urls": 3,
-      "citations": 4,
-      "states": {
-        "access_blocked": 3
       }
     },
     {
@@ -942,6 +974,14 @@
     },
     {
       "host": "arts.gov",
+      "unique_urls": 2,
+      "citations": 3,
+      "states": {
+        "reachable": 2
+      }
+    },
+    {
+      "host": "astrobiology.nasa.gov",
       "unique_urls": 2,
       "citations": 3,
       "states": {
@@ -1049,8 +1089,8 @@
       "unique_urls": 3,
       "citations": 3,
       "states": {
-        "access_blocked": 2,
-        "reachable": 1
+        "reachable": 2,
+        "access_blocked": 1
       }
     },
     {
@@ -1082,7 +1122,7 @@
       "unique_urls": 2,
       "citations": 3,
       "states": {
-        "network_error": 2
+        "reachable": 2
       }
     },
     {
@@ -1091,14 +1131,6 @@
       "citations": 3,
       "states": {
         "access_blocked": 2
-      }
-    },
-    {
-      "host": "ipbes.net",
-      "unique_urls": 2,
-      "citations": 3,
-      "states": {
-        "reachable": 2
       }
     },
     {
@@ -1254,14 +1286,6 @@
       }
     },
     {
-      "host": "usgs.gov",
-      "unique_urls": 3,
-      "citations": 3,
-      "states": {
-        "network_error": 3
-      }
-    },
-    {
       "host": "victorianweb.org",
       "unique_urls": 1,
       "citations": 3,
@@ -1308,14 +1332,6 @@
       "citations": 2,
       "states": {
         "network_error": 1
-      }
-    },
-    {
-      "host": "astrobiology.nasa.gov",
-      "unique_urls": 1,
-      "citations": 2,
-      "states": {
-        "reachable": 1
       }
     },
     {
@@ -1757,7 +1773,7 @@
       "unique_urls": 1,
       "citations": 2,
       "states": {
-        "transient": 1
+        "network_error": 1
       }
     },
     {
@@ -2545,6 +2561,14 @@
       }
     },
     {
+      "host": "home.nps.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
       "host": "hopkinsmedicine.org",
       "unique_urls": 1,
       "citations": 1,
@@ -2841,14 +2865,6 @@
       }
     },
     {
-      "host": "nationalacademies.org",
-      "unique_urls": 1,
-      "citations": 1,
-      "states": {
-        "reachable": 1
-      }
-    },
-    {
       "host": "nationalgeographic.com",
       "unique_urls": 1,
       "citations": 1,
@@ -2882,6 +2898,14 @@
     },
     {
       "host": "newsarchive.berkeley.edu",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "ngmdb.usgs.gov",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -2986,6 +3010,14 @@
     },
     {
       "host": "osti.gov",
+      "unique_urls": 1,
+      "citations": 1,
+      "states": {
+        "reachable": 1
+      }
+    },
+    {
+      "host": "paleobiodb.org",
       "unique_urls": 1,
       "citations": 1,
       "states": {
@@ -3621,7 +3653,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/34604558/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 5,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "phantoms-in-the-brain",
         "the-man-who-mistook-his-wife-for-a-hat",
@@ -3757,7 +3789,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/20920513/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 4,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "incognito",
         "the-emotional-brain",
@@ -3768,7 +3800,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/26310109/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 4,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-tell-tale-brain",
         "an-anthropologist-on-mars",
@@ -3780,7 +3812,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/27993606/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 4,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-tell-tale-brain",
         "the-man-who-mistook-his-wife-for-a-hat",
@@ -3791,7 +3823,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/32652097/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 4,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "an-anthropologist-on-mars",
         "the-brain-that-changes-itself",
@@ -4384,7 +4416,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/22365542/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 3,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-emotional-brain"
       ]
@@ -5174,7 +5206,7 @@
       "url": "https://doi.org/10.5281/zenodo.4147317",
       "host": "doi.org",
       "citation_count": 2,
-      "state": "reachable",
+      "state": "transient",
       "books": [
         "spillover",
         "the-coming-plague"
@@ -5881,7 +5913,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/12146734/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-knowledge-illusion"
       ]
@@ -5890,7 +5922,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/12724171/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-emotional-brain",
         "descartes-error"
@@ -5900,7 +5932,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/16226363/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-spirit-level"
       ]
@@ -5918,7 +5950,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/19657605/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "phantoms-in-the-brain",
         "the-brain-that-changes-itself"
@@ -5946,7 +5978,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/28705870/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-happiness-hypothesis"
       ]
@@ -5955,7 +5987,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/29085748/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "the-man-who-mistook-his-wife-for-a-hat",
         "livewired"
@@ -5974,7 +6006,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/34942287/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "incognito",
         "seven-and-a-half-lessons-about-the-brain"
@@ -5984,7 +6016,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/35432041/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "seven-and-a-half-lessons-about-the-brain"
       ]
@@ -6002,7 +6034,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/38171645/",
       "host": "pubmed.ncbi.nlm.nih.gov",
       "citation_count": 2,
-      "state": "access_blocked",
+      "state": "reachable",
       "books": [
         "phantoms-in-the-brain",
         "the-brain-that-changes-itself"
@@ -6096,7 +6128,7 @@
       "url": "https://revistas.ucm.es/index.php/RESF/en/article/view/100581",
       "host": "revistas.ucm.es",
       "citation_count": 2,
-      "state": "transient",
+      "state": "network_error",
       "books": [
         "consilience"
       ]
@@ -6742,7 +6774,7 @@
       "url": "https://www.healthquality.va.gov/guidelines/mh/ptsd/index.asp",
       "host": "healthquality.va.gov",
       "citation_count": 2,
-      "state": "network_error",
+      "state": "reachable",
       "books": [
         "the-body-keeps-the-score"
       ]
@@ -6988,6 +7020,16 @@
       ]
     },
     {
+      "url": "https://www.nationalacademies.org/read/25761/chapter/4",
+      "host": "nationalacademies.org",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "timefulness",
+        "the-story-of-earth"
+      ]
+    },
+    {
       "url": "https://www.nature.com/articles/nature.2015.18248",
       "host": "nature.com",
       "citation_count": 2,
@@ -7132,6 +7174,25 @@
       "state": "reachable",
       "books": [
         "nothing-like-it-in-the-world"
+      ]
+    },
+    {
+      "url": "https://www.nps.gov/subjects/fossils/dinosaurs.htm",
+      "host": "nps.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "why-dinosaurs-matter"
+      ]
+    },
+    {
+      "url": "https://www.nps.gov/subjects/fossils/extinction-events.htm",
+      "host": "nps.gov",
+      "citation_count": 2,
+      "state": "reachable",
+      "books": [
+        "a-brief-history-of-earth",
+        "the-rise-and-fall-of-the-dinosaurs"
       ]
     },
     {
@@ -8158,7 +8219,7 @@
       ],
       "host": "apnews.com",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://apnews.com/article/robert-caro-power-broker-50-years-684b96ffb147edb8c1a1935687d2f7c0",
       "redirected": true,
@@ -8424,6 +8485,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://astrobiology.nasa.gov/about/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://astrobiology.nasa.gov/news/ancient-minerals-on-earth-and-the-origin-of-life/",
+      "citations": [
+        {
+          "slug": "a-brief-history-of-earth",
+          "claim_index": 1,
+          "source_title": "NASA ancient minerals and the origin of life"
+        }
+      ],
+      "host": "astrobiology.nasa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://astrobiology.nasa.gov/news/ancient-minerals-on-earth-and-the-origin-of-life/",
       "redirected": false,
       "error": null
     },
@@ -9555,6 +9633,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.1016/j.epsl.2016.05.049",
+      "citations": [
+        {
+          "slug": "supercontinent",
+          "claim_index": 2,
+          "source_title": "Rodinia assembly and breakup review"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0012821X16302746",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.1016/j.fishres.2025.107325",
       "citations": [
         {
@@ -9595,6 +9690,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0016328722001768",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.gloplacha.2018.07.015",
+      "citations": [
+        {
+          "slug": "supercontinent",
+          "claim_index": 3,
+          "source_title": "Testing scenarios for the next supercontinent"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0921818118302054",
       "redirected": true,
       "error": null
     },
@@ -9663,6 +9775,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0191886915301276",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.palaeo.2016.11.005",
+      "citations": [
+        {
+          "slug": "the-ends-of-the-world",
+          "claim_index": 1,
+          "source_title": "On the causes of mass extinctions"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0031018216306915",
       "redirected": true,
       "error": null
     },
@@ -10086,7 +10215,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=2c053074-0ede-40ea-9445-9424cb2f502c",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-023-01313-5&code=63b64269-989e-4705-8093-cbd169cba6c8",
       "redirected": true,
       "error": null
     },
@@ -10118,7 +10247,24 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=c98b8294-7984-4f82-aabf-6e608efa6b5e",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature06536&code=a764cae6-1550-42cc-b7bc-a26b7fadd47f",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1038/nature08740",
+      "citations": [
+        {
+          "slug": "otherlands",
+          "claim_index": 3,
+          "source_title": "Fossilized melanosomes and dinosaur colour"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature08740&code=99b5eafa-4231-4600-8924-61a51cf548eb",
       "redirected": true,
       "error": null
     },
@@ -10135,7 +10281,24 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=b2d69bc4-a4f7-495d-8124-ea55e9fa713f",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature10574&code=02c989d9-9c3a-4ae7-bcb3-badb6a7de9e2",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1038/nature13068",
+      "citations": [
+        {
+          "slug": "a-brief-history-of-earth",
+          "claim_index": 2,
+          "source_title": "Nature review of Earth's oxygenation"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature13068&code=b771cbf4-e7f0-4e86-ad30-f58f8431deec",
       "redirected": true,
       "error": null
     },
@@ -10152,7 +10315,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature15759&code=a43348c5-f718-47e1-957f-60172d09e375",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature15759&code=119374a9-ece9-44b3-b683-bd24833241a0",
       "redirected": true,
       "error": null
     },
@@ -10196,7 +10359,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-018-03510-7&code=10ecc603-7739-4f0f-a647-771dbd326260",
+      "final_url": "https://www.nature.com/articles/s41467-018-03510-7",
       "redirected": true,
       "error": null
     },
@@ -10213,7 +10376,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=2aa6c585-53b9-47b9-acb8-eb7a31f812ef",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41467-023-43426-5&code=bc6a5842-034f-42c2-9488-62f58e0e6365",
       "redirected": true,
       "error": null
     },
@@ -10230,7 +10393,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=71be9788-eab6-4fb8-bfd6-e78fab254d8e",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0907-1&code=2662d88d-41b3-4f7c-a214-323f4dd8b46c",
       "redirected": true,
       "error": null
     },
@@ -10247,7 +10410,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=06960267-42ed-4f57-bb92-3963f0be3929",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-0225-0&code=4acd4c61-e531-46c6-aeb6-62a347a174b2",
       "redirected": true,
       "error": null
     },
@@ -10264,7 +10427,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=cf6dc47f-d34c-4239-a6dd-3d364d791bad",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-020-03053-2&code=a159f851-e10b-4a32-872a-630e14350915",
       "redirected": true,
       "error": null
     },
@@ -10281,7 +10444,24 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41893-019-0293-3&code=9dd873e0-2587-47cb-9636-894d27cc5e5f",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1038/s43017-021-00259-4",
+      "citations": [
+        {
+          "slug": "the-ends-of-the-world",
+          "claim_index": 2,
+          "source_title": "Environmental crises at the Permian–Triassic extinction"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/s43017-021-00259-4",
       "redirected": true,
       "error": null
     },
@@ -10549,7 +10729,24 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://validate.perfdrive.com/fb803c746e9148689b3984a31fccd902/?ssa=23d65a40-ef4f-4db8-b0ac-50c49120f57b&ssb=52622237068&ssc=https%3A%2F%2Fiopscience.iop.org%2Farticle%2F10.1088%2F1748-9326%2Faa815f&ssi=f9708651-cnvj-4398-b0b1-adcfbaba157f&ssk=botmanager_support@radware.com&ssm=51174792939157196105592444482503&ssn=677e7b0f3b6c1350b18ea7f6d97a9067ede31092e84f-68e2-4d1f-a6a8e4&sso=9029eb65-b342b3d707801aa6e88972146b61c4415cf40c9b6b37eddd&ssp=41655193281788268940178826675806310&ssq=80820377191886641948771918036563153182278&ssr=NzMuMTcwLjI0LjEy&sst=AI-Claims-Source-Audit/0.1%20(+https://ai.rhyslindmark.com/claims)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwZjBkZTU3MTktODQxNy00NjkzLTk2N2ItMDQyMjBhMjVmNjFiMS0xNzg4MjcxOTE4NzIyMC0wMDM5ZTc0YTdiNDUxODliY2E4MTAiLCJyZCI6ImlvcC5vcmciLCJfX3V6bWYiOiI3ZjkwMDAxMDkyZTg0Zi02OGUyLTRkMWYtYWI2NS1iMzQyYjNkNzA3ODAxLTE3ODgyNzE5MTg3MjIwLTAwNDdkODBhYThmYWFmZDMzOTMxMCJ9",
+      "final_url": "https://validate.perfdrive.com/fb803c746e9148689b3984a31fccd902/?ssa=8240dada-85c6-4176-8d41-b0eed0c55d9c&ssb=08520219546&ssc=https%3A%2F%2Fiopscience.iop.org%2Farticle%2F10.1088%2F1748-9326%2Faa815f&ssi=a701c8b3-cnvj-43fd-8016-8a46971844f4&ssk=botmanager_support@radware.com&ssm=91192559201630667106519406456198&ssn=506c73d720334aedf54e50aef2d20b96463b32c720d9-0147-4b88-8c2291&sso=2174d882-d77f4edbd1e34434647c8bfffb04684c5af1b4e05d805e20&ssp=86022182391788200707178828549631250&ssq=96430607263467559120772634339000069388578&ssr=NzMuMTcwLjI0LjEy&sst=AI-Claims-Source-Audit/0.1%20(+https://ai.rhyslindmark.com/claims)&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImlvcC5vcmciLCJfX3V6bWYiOiI3ZjkwMDAzMmM3MjBkOS0wMTQ3LTRiODgtODg4Mi1kNzdmNGVkYmQxZTMxLTE3ODgyNzI2MzUwMDUwLTAwNDZlMzA4ZmExOTZiMjM4MGUxMCIsInV6bXgiOiI3ZmMwMDAxOTJjMGEyMy1jMTM2LTQ3MjUtYTQ5NC05NDkyYWY3YzhhMzIxLTE3ODgyNzI2MzUwMDUwLTAwMzU1YjJlZDEyYTQyMDY5YTExMCJ9",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1089/ast.2015.1302",
+      "citations": [
+        {
+          "slug": "the-story-of-earth",
+          "claim_index": 2,
+          "source_title": "Microbes, mineral evolution, and early Earth"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/10.1089/ast.2015.1302",
       "redirected": true,
       "error": null
     },
@@ -10567,6 +10764,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://academic.oup.com/book/32736/chapter/272744767",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1093/pnasnexus/pgae248",
+      "citations": [
+        {
+          "slug": "the-story-of-earth",
+          "claim_index": 3,
+          "source_title": "Open-ended versus bounded mineral evolution"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://academic.oup.com/pnasnexus/article/doi/10.1093/pnasnexus/pgae248/7698354",
       "redirected": true,
       "error": null
     },
@@ -10672,6 +10886,40 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.science.org/doi/10.1126/sciadv.aao3580",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1126/science.1138700",
+      "citations": [
+        {
+          "slug": "a-brief-history-of-earth",
+          "claim_index": 2,
+          "source_title": "Science early oxygen evidence"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.science.org/doi/10.1126/science.1138700",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1126/science.1177265",
+      "citations": [
+        {
+          "slug": "the-rise-and-fall-of-the-dinosaurs",
+          "claim_index": 3,
+          "source_title": "Chicxulub impact and mass extinction review"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.science.org/doi/10.1126/science.1177265",
       "redirected": true,
       "error": null
     },
@@ -10789,6 +11037,23 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.science.org/doi/10.1126/science.aed6115",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.1146/annurev-earth-042711-105329",
+      "citations": [
+        {
+          "slug": "the-ends-of-the-world",
+          "claim_index": 2,
+          "source_title": "End-Permian extinction in the oceans"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.annualreviews.org/doi/10.1146/annurev-earth-042711-105329",
       "redirected": true,
       "error": null
     },
@@ -11268,6 +11533,23 @@
       "error": null
     },
     {
+      "url": "https://doi.org/10.2138/am.2008.2955",
+      "citations": [
+        {
+          "slug": "the-story-of-earth",
+          "claim_index": 1,
+          "source_title": "Mineral evolution"
+        }
+      ],
+      "host": "doi.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 202,
+      "final_url": "https://www.degruyterbrill.com/document/doi/10.2138/am.2008.2955/html",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://doi.org/10.22024/UniKent/03/klr.1098",
       "citations": [
         {
@@ -11346,9 +11628,26 @@
       ],
       "host": "doi.org",
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "status": 200,
       "final_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.03087/full",
+      "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://doi.org/10.3390/life8040064",
+      "citations": [
+        {
+          "slug": "the-story-of-earth",
+          "claim_index": 1,
+          "source_title": "Paleomineralogy of the Hadean revisited"
+        }
+      ],
+      "host": "doi.org",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.mdpi.com/2075-1729/8/4/64",
       "redirected": true,
       "error": null
     },
@@ -11384,12 +11683,12 @@
         }
       ],
       "host": "doi.org",
-      "state": "reachable",
+      "state": "transient",
       "method": "GET",
-      "status": 200,
-      "final_url": "https://zenodo.org/records/7432079",
-      "redirected": true,
-      "error": null
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "AbortError: This operation was aborted"
     },
     {
       "url": "https://drought.unl.edu/DustBowl/Home.aspx",
@@ -11574,9 +11873,9 @@
         }
       ],
       "host": "educationendowmentfoundation.org.uk",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/project-based-learning",
       "redirected": false,
       "error": null
@@ -12458,6 +12757,23 @@
       "error": null
     },
     {
+      "url": "https://home.nps.gov/subjects/geology/geotime.htm",
+      "citations": [
+        {
+          "slug": "timefulness",
+          "claim_index": 1,
+          "source_title": "NPS geologic time"
+        }
+      ],
+      "host": "home.nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://home.nps.gov/subjects/geology/geotime.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://housedivided.dickinson.edu/essay/print/Essay_Rivals_Print.pdf",
       "citations": [
         {
@@ -12562,6 +12878,23 @@
       "status": 200,
       "final_url": "https://interactive-atlas.ipcc.ch/",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://ipbes.net/global-assessment",
+      "citations": [
+        {
+          "slug": "the-ends-of-the-world",
+          "claim_index": 3,
+          "source_title": "IPBES global biodiversity assessment"
+        }
+      ],
+      "host": "ipbes.net",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ipbes.net/global-assessment",
+      "redirected": true,
       "error": null
     },
     {
@@ -13207,7 +13540,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=52440f99-c476-4478-8d13-c2ee0374815d",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10602-026-09503-9&code=dd2d6809-730d-4ce2-89f8-a46beaf3dadc",
       "redirected": true,
       "error": null
     },
@@ -13234,7 +13567,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=9a3b2941-fc27-4466-a708-c7b8644b45cb",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10814-014-9075-7&code=7330ec8a-daee-4a76-af47-647514d83455",
       "redirected": true,
       "error": null
     },
@@ -13251,8 +13584,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://link.springer.com/article/10.1007/s10902-007-9049-2",
-      "redirected": false,
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10902-007-9049-2&code=17eb1357-1b81-4d6e-a802-beff69ef2172",
+      "redirected": true,
       "error": null
     },
     {
@@ -13268,7 +13601,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10902-024-00747-6&code=c853d3d8-18b4-4f5a-9ebf-58e6ec019e30",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10902-024-00747-6&code=ca98bc8c-5d1b-4e64-8fef-7aac09219301",
       "redirected": true,
       "error": null
     },
@@ -13285,7 +13618,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11138-020-00508-7&code=1bd1c14d-f435-4e62-ad74-322b5a0f547c",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11138-020-00508-7&code=81e3418f-eff0-4415-ac2f-33dd60482eca",
       "redirected": true,
       "error": null
     },
@@ -13336,7 +13669,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=2bf34261-cb8d-4ed1-b3a1-b224bdd83c7d",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs13158-026-00502-3&code=1a568ba7-1fa0-41f0-8aa4-71047030fb15",
       "redirected": true,
       "error": null
     },
@@ -13358,7 +13691,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=3bc7b919-d4dc-42a9-8eb8-d2cf0f937608",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1140%2Fepjds%2Fs13688-021-00313-7&code=c03b9a9e-359a-44a7-b502-f9ba0b0dcf2b",
       "redirected": true,
       "error": null
     },
@@ -13375,7 +13708,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=40841f4e-ab93-4fbc-82ce-24f59f9e87be",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12052-018-0079-5&code=7d81e965-cafe-4c00-8a4b-168688f51a26",
       "redirected": true,
       "error": null
     },
@@ -13402,7 +13735,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=7e915ab3-90a7-4c60-8c24-7dfa1529cfc0",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs40410-017-0073-1&code=e4bba8f7-ab42-457e-9476-54b0071422df",
       "redirected": true,
       "error": null
     },
@@ -13419,7 +13752,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=189a83a3-f432-4dc9-944f-59be3ebc1145",
+      "final_url": "https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4612-3034-2&code=c4fc910a-7273-41ef-9c29-00f76e4c0b12",
       "redirected": true,
       "error": null
     },
@@ -13961,6 +14294,23 @@
       "error": null
     },
     {
+      "url": "https://nap.nationalacademies.org/catalog/25761/a-vision-for-nsf-earth-sciences-2020-2030-earth-in-time",
+      "citations": [
+        {
+          "slug": "earth-an-intimate-history",
+          "claim_index": 3,
+          "source_title": "National Academies Earth in Time"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/projects/DELS-BESR-17-06/publication/25761",
+      "redirected": true,
+      "error": null
+    },
+    {
       "url": "https://nap.nationalacademies.org/catalog/26902/using-population-descriptors-in-genetics-and-genomics-research-a-new",
       "citations": [
         {
@@ -14034,6 +14384,23 @@
       "error": null
     },
     {
+      "url": "https://nap.nationalacademies.org/resource/12161/origin_and_evolution_of_earth_final.pdf",
+      "citations": [
+        {
+          "slug": "a-brief-history-of-earth",
+          "claim_index": 1,
+          "source_title": "National Academies origin and evolution of Earth report brief"
+        }
+      ],
+      "host": "nap.nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://nap.nationalacademies.org/resource/12161/origin_and_evolution_of_earth_final.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://nap.nationalacademies.org/resource/21794/DiagnosticError_ReportBrief.pdf",
       "citations": [
         {
@@ -14091,6 +14458,91 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/energy/Climate-change/pdf/CCCR_FULLREPORT-EN-FINAL.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://naturalhistory.si.edu/education/teaching-resources/anthropology-and-social-studies/deep-time",
+      "citations": [
+        {
+          "slug": "otherlands",
+          "claim_index": 1,
+          "source_title": "Smithsonian Deep Time resources"
+        }
+      ],
+      "host": "naturalhistory.si.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://naturalhistory.si.edu/education/teaching-resources/anthropology-and-social-studies/deep-time",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://naturalhistory.si.edu/education/teaching-resources/life-science/dinosaurs-take-flight",
+      "citations": [
+        {
+          "slug": "the-rise-and-fall-of-the-dinosaurs",
+          "claim_index": 2,
+          "source_title": "Smithsonian Dinosaurs Take Flight"
+        }
+      ],
+      "host": "naturalhistory.si.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://naturalhistory.si.edu/education/teaching-resources/life-science/dinosaurs-take-flight",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://naturalhistory.si.edu/education/teaching-resources/paleontology/webinar-explore-how-dinosaurs-moved-paleontologist-matthew-carrano",
+      "citations": [
+        {
+          "slug": "why-dinosaurs-matter",
+          "claim_index": 2,
+          "source_title": "Smithsonian webinar on dinosaur movement"
+        }
+      ],
+      "host": "naturalhistory.si.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://naturalhistory.si.edu/education/teaching-resources/paleontology/webinar-explore-how-dinosaurs-moved-paleontologist-matthew-carrano",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://naturalhistory.si.edu/research/paleobiology/collections-access",
+      "citations": [
+        {
+          "slug": "otherlands",
+          "claim_index": 3,
+          "source_title": "Smithsonian fossil preparation and evidence"
+        }
+      ],
+      "host": "naturalhistory.si.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://naturalhistory.si.edu/research/paleobiology/collections-access",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://naturalhistory.si.edu/visit/virtual-tour/current-exhibits/deep-time-virtual-tour-fossil-list",
+      "citations": [
+        {
+          "slug": "a-brief-history-of-earth",
+          "claim_index": 3,
+          "source_title": "Smithsonian Deep Time fossil list"
+        }
+      ],
+      "host": "naturalhistory.si.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://naturalhistory.si.edu/visit/virtual-tour/current-exhibits/deep-time-virtual-tour-fossil-list",
       "redirected": false,
       "error": null
     },
@@ -14247,6 +14699,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://newsarchive.berkeley.edu/news/media/releases/2006/04/11_pollan.shtml",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://ngmdb.usgs.gov/ngmdb/ngmdb_home.html",
+      "citations": [
+        {
+          "slug": "annals-of-the-former-world",
+          "claim_index": 3,
+          "source_title": "USGS National Geologic Map Database"
+        }
+      ],
+      "host": "ngmdb.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://ngmdb.usgs.gov/ngmdb/ngmdb_home.html",
       "redirected": false,
       "error": null
     },
@@ -14453,6 +14922,23 @@
       "status": 403,
       "final_url": "https://oaktrust.library.tamu.edu/server/api/core/bitstreams/cbe24692-eae1-4e4d-bf06-a92d6511c0ff/content",
       "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://oceanexplorer.noaa.gov/facts/tectonic-features.html",
+      "citations": [
+        {
+          "slug": "earth-an-intimate-history",
+          "claim_index": 1,
+          "source_title": "NOAA plate tectonics overview"
+        }
+      ],
+      "host": "oceanexplorer.noaa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://oceanexplorer.noaa.gov/ocean-fact/tectonic-features/",
+      "redirected": true,
       "error": null
     },
     {
@@ -15268,6 +15754,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://ourworldindata.org/war-and-peace",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://paleobiodb.org/",
+      "citations": [
+        {
+          "slug": "otherlands",
+          "claim_index": 2,
+          "source_title": "Paleobiology Database"
+        }
+      ],
+      "host": "paleobiodb.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://paleobiodb.org/",
       "redirected": false,
       "error": null
     },
@@ -18137,9 +18640,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/11138768/",
       "redirected": false,
       "error": null
@@ -18154,9 +18657,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/11557895/",
       "redirected": false,
       "error": null
@@ -18176,9 +18679,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/12146734/",
       "redirected": false,
       "error": null
@@ -18198,9 +18701,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/12724171/",
       "redirected": false,
       "error": null
@@ -18241,8 +18744,8 @@
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
       "state": "reachable",
-      "method": "GET",
-      "status": 200,
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/15000225/",
       "redirected": false,
       "error": null
@@ -18257,9 +18760,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/15808493/",
       "redirected": false,
       "error": null
@@ -18279,9 +18782,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/16226363/",
       "redirected": false,
       "error": null
@@ -18318,9 +18821,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/16540574/",
       "redirected": false,
       "error": null
@@ -18335,9 +18838,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/16602058/",
       "redirected": false,
       "error": null
@@ -18352,9 +18855,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/19223222/",
       "redirected": false,
       "error": null
@@ -18374,9 +18877,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/19657605/",
       "redirected": false,
       "error": null
@@ -18423,9 +18926,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/20920513/",
       "redirected": false,
       "error": null
@@ -18484,9 +18987,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/22365542/",
       "redirected": false,
       "error": null
@@ -18501,9 +19004,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/24137138/",
       "redirected": false,
       "error": null
@@ -18577,9 +19080,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/26310109/",
       "redirected": false,
       "error": null
@@ -18594,9 +19097,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/26472647/",
       "redirected": false,
       "error": null
@@ -18670,9 +19173,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/27993606/",
       "redirected": false,
       "error": null
@@ -18726,9 +19229,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/28705870/",
       "redirected": false,
       "error": null
@@ -18748,9 +19251,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/29085748/",
       "redirected": false,
       "error": null
@@ -18765,9 +19268,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/29155276/",
       "redirected": false,
       "error": null
@@ -18855,9 +19358,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/31749520/",
       "redirected": false,
       "error": null
@@ -18872,9 +19375,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/32428706/",
       "redirected": false,
       "error": null
@@ -18889,9 +19392,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/32602396/",
       "redirected": false,
       "error": null
@@ -18921,9 +19424,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/32652097/",
       "redirected": false,
       "error": null
@@ -18982,9 +19485,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/33411557/",
       "redirected": false,
       "error": null
@@ -18999,9 +19502,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/33931306/",
       "redirected": false,
       "error": null
@@ -19016,9 +19519,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34119525/",
       "redirected": false,
       "error": null
@@ -19067,9 +19570,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34325185/",
       "redirected": false,
       "error": null
@@ -19104,9 +19607,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34604558/",
       "redirected": false,
       "error": null
@@ -19126,9 +19629,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/34942287/",
       "redirected": false,
       "error": null
@@ -19165,9 +19668,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/35432041/",
       "redirected": false,
       "error": null
@@ -19255,9 +19758,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/38104789/",
       "redirected": false,
       "error": null
@@ -19277,9 +19780,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/38171645/",
       "redirected": false,
       "error": null
@@ -19328,9 +19831,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/38800458/",
       "redirected": false,
       "error": null
@@ -19379,9 +19882,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/8941953/",
       "redirected": false,
       "error": null
@@ -19396,9 +19899,9 @@
         }
       ],
       "host": "pubmed.ncbi.nlm.nih.gov",
-      "state": "access_blocked",
-      "method": "GET",
-      "status": 429,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 203,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/9241724/",
       "redirected": false,
       "error": null
@@ -19504,6 +20007,74 @@
       "error": null
     },
     {
+      "url": "https://pubs.usgs.gov/gip/continents/",
+      "citations": [
+        {
+          "slug": "annals-of-the-former-world",
+          "claim_index": 1,
+          "source_title": "USGS Our Changing Continent"
+        }
+      ],
+      "host": "pubs.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/gip/continents/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubs.usgs.gov/gip/dynamic/dynamic.html",
+      "citations": [
+        {
+          "slug": "earth-an-intimate-history",
+          "claim_index": 1,
+          "source_title": "USGS This Dynamic Earth"
+        }
+      ],
+      "host": "pubs.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/gip/dynamic/dynamic.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubs.usgs.gov/gip/dynamic/historical.html",
+      "citations": [
+        {
+          "slug": "supercontinent",
+          "claim_index": 1,
+          "source_title": "USGS historical perspective on Pangaea"
+        }
+      ],
+      "host": "pubs.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/gip/dynamic/historical.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubs.usgs.gov/gip/dynamic/Pangaea.html",
+      "citations": [
+        {
+          "slug": "supercontinent",
+          "claim_index": 2,
+          "source_title": "USGS before the breakup of Pangaea"
+        }
+      ],
+      "host": "pubs.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/gip/dynamic/Pangaea.html",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pubs.usgs.gov/gip/dynamic/tectonics.html",
       "citations": [
         {
@@ -19526,6 +20097,57 @@
       "error": null
     },
     {
+      "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+      "citations": [
+        {
+          "slug": "annals-of-the-former-world",
+          "claim_index": 3,
+          "source_title": "USGS understanding plate motions"
+        }
+      ],
+      "host": "pubs.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubs.usgs.gov/gip/geotime/age.html",
+      "citations": [
+        {
+          "slug": "earth-an-intimate-history",
+          "claim_index": 3,
+          "source_title": "USGS age of the Earth"
+        }
+      ],
+      "host": "pubs.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/gip/geotime/age.html",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubs.usgs.gov/gip/geotime/radiometric.html",
+      "citations": [
+        {
+          "slug": "timefulness",
+          "claim_index": 1,
+          "source_title": "USGS radiometric time scale"
+        }
+      ],
+      "host": "pubs.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/gip/geotime/radiometric.html",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://pubs.usgs.gov/myb/vol1/2018/myb1-2018-salt.pdf",
       "citations": [
         {
@@ -19539,6 +20161,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://pubs.usgs.gov/myb/vol1/2018/myb1-2018-salt.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://pubs.usgs.gov/sim/2830/pdf/sim2830back.pdf",
+      "citations": [
+        {
+          "slug": "supercontinent",
+          "claim_index": 1,
+          "source_title": "USGS plate movements through time"
+        }
+      ],
+      "host": "pubs.usgs.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/sim/2830/pdf/sim2830back.pdf",
       "redirected": false,
       "error": null
     },
@@ -19894,12 +20533,12 @@
         }
       ],
       "host": "revistas.ucm.es",
-      "state": "transient",
+      "state": "network_error",
       "method": "GET",
       "status": null,
       "final_url": null,
       "redirected": false,
-      "error": "AbortError: This operation was aborted"
+      "error": "TypeError: fetch failed"
     },
     {
       "url": "https://revistas.unal.edu.co/index.php/achsc/article/view/71038",
@@ -20268,6 +20907,23 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://science.nasa.gov/dark-energy/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://science.nasa.gov/earth/",
+      "citations": [
+        {
+          "slug": "earth-an-intimate-history",
+          "claim_index": 2,
+          "source_title": "NASA Earth science overview"
+        }
+      ],
+      "host": "science.nasa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://science.nasa.gov/earth/",
       "redirected": false,
       "error": null
     },
@@ -21802,9 +22458,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-devpsych-121318-084815",
       "redirected": false,
       "error": null
@@ -21887,9 +22543,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "reachable",
+      "state": "access_blocked",
       "method": "GET",
-      "status": 200,
+      "status": 403,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-psych-010814-015001",
       "redirected": false,
       "error": null
@@ -21972,9 +22628,9 @@
         }
       ],
       "host": "annualreviews.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev.psych.59.103006.093629",
       "redirected": false,
       "error": null
@@ -21997,8 +22653,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-ecolsys-110218-024717",
-      "redirected": false,
+      "final_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-110218-024717?crawler=true&mimetype=application/pdf",
+      "redirected": true,
       "error": null
     },
     {
@@ -23367,7 +24023,7 @@
       ],
       "host": "cdc.gov",
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "status": 200,
       "final_url": "https://www.cdc.gov/mmwr/volumes/69/wr/mm6905e1.htm",
       "redirected": false,
@@ -23736,9 +24392,9 @@
         }
       ],
       "host": "commonwealthfund.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.commonwealthfund.org/publications/fund-reports/2024/sep/mirror-mirror-2024",
       "redirected": false,
       "error": null
@@ -23775,9 +24431,9 @@
         }
       ],
       "host": "commonwealthfund.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.commonwealthfund.org/publications/journal-article/2014/sep/comparison-hospital-administrative-costs-eight-nations-us",
       "redirected": false,
       "error": null
@@ -23792,9 +24448,9 @@
         }
       ],
       "host": "commonwealthfund.org",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.commonwealthfund.org/publications/journal-article/2018/mar/health-care-spending-united-states-and-other-high-income",
       "redirected": false,
       "error": null
@@ -25039,9 +25695,9 @@
         }
       ],
       "host": "ferc.gov",
-      "state": "access_blocked",
+      "state": "reachable",
       "method": "GET",
-      "status": 403,
+      "status": 200,
       "final_url": "https://www.ferc.gov/industries-data/electric/general-information/addressing-2000-2001-western-energy-crisis",
       "redirected": false,
       "error": null
@@ -25702,12 +26358,12 @@
         }
       ],
       "host": "healthquality.va.gov",
-      "state": "network_error",
-      "method": "GET",
-      "status": null,
-      "final_url": null,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.healthquality.va.gov/guidelines/mh/ptsd/index.asp",
       "redirected": false,
-      "error": "TypeError: fetch failed"
+      "error": null
     },
     {
       "url": "https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/MH/ptsd/VA-DoD-CPG-PTSD-Full-CPG-Edited-111624-V5-81825.pdf",
@@ -25719,12 +26375,12 @@
         }
       ],
       "host": "healthquality.va.gov",
-      "state": "network_error",
-      "method": "GET",
-      "status": null,
-      "final_url": null,
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/MH/ptsd/VA-DoD-CPG-PTSD-Full-CPG-Edited-111624-V5-81825.pdf",
       "redirected": false,
-      "error": "TypeError: fetch failed"
+      "error": null
     },
     {
       "url": "https://www.heritage.nf.ca/articles/economy/fishery.php",
@@ -26704,6 +27360,40 @@
       "method": "HEAD",
       "status": 200,
       "final_url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-1/",
+      "citations": [
+        {
+          "slug": "why-dinosaurs-matter",
+          "claim_index": 3,
+          "source_title": "IPCC risk framing and key concepts"
+        }
+      ],
+      "host": "ipcc.ch",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-1/",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-2/",
+      "citations": [
+        {
+          "slug": "the-ends-of-the-world",
+          "claim_index": 3,
+          "source_title": "IPCC impacts on terrestrial and freshwater ecosystems"
+        }
+      ],
+      "host": "ipcc.ch",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-2/",
       "redirected": false,
       "error": null
     },
@@ -27978,6 +28668,40 @@
       "error": null
     },
     {
+      "url": "https://www.nasa.gov/wp-content/uploads/2023/09/193502main_07_10astrogram.pdf",
+      "citations": [
+        {
+          "slug": "the-story-of-earth",
+          "claim_index": 2,
+          "source_title": "NASA evidence for early atmospheric oxygen"
+        }
+      ],
+      "host": "nasa.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nasa.gov/wp-content/uploads/2023/09/193502main_07_10astrogram.pdf",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nationalacademies.org/projects/BESR-U-05-03-A/publication/12161",
+      "citations": [
+        {
+          "slug": "earth-an-intimate-history",
+          "claim_index": 2,
+          "source_title": "National Academies Origin and Evolution of Earth"
+        }
+      ],
+      "host": "nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/projects/BESR-U-05-03-A/publication/12161",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.nationalacademies.org/projects/HMD-HSP-18-18/publication/25665",
       "citations": [
         {
@@ -27992,6 +28716,79 @@
       "status": 200,
       "final_url": "https://www.nationalacademies.org/projects/PGA-PGA%20EO-19-01/publication/25665",
       "redirected": true,
+      "error": null
+    },
+    {
+      "url": "https://www.nationalacademies.org/read/14682/chapter/2",
+      "citations": [
+        {
+          "slug": "why-dinosaurs-matter",
+          "claim_index": 3,
+          "source_title": "National Academies abrupt impacts of climate change"
+        }
+      ],
+      "host": "nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/read/14682/chapter/2",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nationalacademies.org/read/23595/chapter/2",
+      "citations": [
+        {
+          "slug": "timefulness",
+          "claim_index": 3,
+          "source_title": "National Academies science literacy report"
+        }
+      ],
+      "host": "nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/read/23595/chapter/2",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nationalacademies.org/read/24783/chapter/2",
+      "citations": [
+        {
+          "slug": "timefulness",
+          "claim_index": 3,
+          "source_title": "National Academies learning science synthesis"
+        }
+      ],
+      "host": "nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/read/24783/chapter/2",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nationalacademies.org/read/25761/chapter/4",
+      "citations": [
+        {
+          "slug": "timefulness",
+          "claim_index": 2,
+          "source_title": "National Academies Earth in Time"
+        },
+        {
+          "slug": "the-story-of-earth",
+          "claim_index": 3,
+          "source_title": "National Academies early Earth frontier questions"
+        }
+      ],
+      "host": "nationalacademies.org",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/read/25761/chapter/4",
+      "redirected": false,
       "error": null
     },
     {
@@ -28126,8 +28923,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/d41586-024-00544-4?error=cookies_not_supported&code=40b45835-a882-452b-b5aa-7310d0b6b1d4",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/d41586-024-00544-4",
+      "redirected": false,
       "error": null
     },
     {
@@ -28148,7 +28945,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=a257fd77-ca52-4542-b60f-6c99570d14ce",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature.2015.18248&code=4b3b7170-b0f0-467c-9df2-e1e9e20fb9c1",
       "redirected": true,
       "error": null
     },
@@ -28175,7 +28972,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=1b75aa03-7357-4407-a8e9-d1a8137cc21b",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09678&code=891b9b45-9610-4ea6-afc9-c8dad6a3d9f9",
       "redirected": true,
       "error": null
     },
@@ -28202,7 +28999,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=e9445918-d50a-4468-86d8-cf06e75396f6",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fnature09985&code=b876ffb3-c74c-4f81-9ad1-81f79ac0668e",
       "redirected": true,
       "error": null
     },
@@ -28224,7 +29021,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=0ea611f3-5160-4a74-9ccd-e70395815780",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-019-0980-5&code=b89cf1cd-f52d-47fd-b7dd-a6e6ae400478",
       "redirected": true,
       "error": null
     },
@@ -28241,8 +29038,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41559-021-01652-4&code=700e72cd-70d6-4f70-950a-7aa40c36e4ba",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41559-021-01652-4",
+      "redirected": false,
       "error": null
     },
     {
@@ -28275,7 +29072,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-018-0405-5&code=6eab9c2a-3803-4c95-8fa8-12dd230fbe73",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-018-0405-5&code=ffd3766d-cc30-4aa6-9abf-81f005e69f31",
       "redirected": true,
       "error": null
     },
@@ -28297,7 +29094,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=20082c5e-3a05-4e41-98c8-76f1978230d9",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41562-023-01641-6&code=07dde69e-a175-4a4a-9a90-bf9bfba0edee",
       "redirected": true,
       "error": null
     },
@@ -28314,7 +29111,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=cd5da27e-0096-47d8-9b10-8705a237faf0",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41576-020-00305-9&code=024e2521-af18-4958-ac53-9dbd76bc79d3",
       "redirected": true,
       "error": null
     },
@@ -28331,8 +29128,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://www.nature.com/articles/s41576-022-00537-x?error=cookies_not_supported&code=a8989063-501a-4502-8e59-b0b654845651",
-      "redirected": true,
+      "final_url": "https://www.nature.com/articles/s41576-022-00537-x",
+      "redirected": false,
       "error": null
     },
     {
@@ -28348,7 +29145,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=60d3cbb0-5100-4103-9e68-76b07bbc3472",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41579-018-0116-y&code=b0d31d7d-69cb-4da6-b681-21cabf0e2301",
       "redirected": true,
       "error": null
     },
@@ -28370,7 +29167,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=ecb5ce2a-197a-4b31-ae68-ad5c9d056d11",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-022-04800-3&code=5f7679f1-d0be-415f-b148-697a04637286",
       "redirected": true,
       "error": null
     },
@@ -28392,7 +29189,7 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41599-021-00763-4&code=459a84eb-8414-4eba-a1c6-12fb36b2851a",
+      "final_url": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41599-021-00763-4&code=96d3ed36-bd71-43e7-9e96-694e838e6d3d",
       "redirected": true,
       "error": null
     },
@@ -29469,6 +30266,135 @@
       "error": null
     },
     {
+      "url": "https://www.nps.gov/subjects/fossils/dinosaurs.htm",
+      "citations": [
+        {
+          "slug": "why-dinosaurs-matter",
+          "claim_index": 1,
+          "source_title": "NPS dinosaurs"
+        },
+        {
+          "slug": "why-dinosaurs-matter",
+          "claim_index": 2,
+          "source_title": "NPS dinosaur paleontology"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/subjects/fossils/dinosaurs.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/subjects/fossils/evolution-on-land.htm",
+      "citations": [
+        {
+          "slug": "otherlands",
+          "claim_index": 2,
+          "source_title": "NPS evolution on land"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/subjects/fossils/evolution-on-land.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/subjects/fossils/extinction-events.htm",
+      "citations": [
+        {
+          "slug": "a-brief-history-of-earth",
+          "claim_index": 3,
+          "source_title": "NPS extinction events"
+        },
+        {
+          "slug": "the-rise-and-fall-of-the-dinosaurs",
+          "claim_index": 3,
+          "source_title": "NPS extinction events"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/subjects/fossils/extinction-events.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/subjects/fossils/index.htm",
+      "citations": [
+        {
+          "slug": "otherlands",
+          "claim_index": 1,
+          "source_title": "NPS fossils and paleontology"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/subjects/fossils/index.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/subjects/fossils/mass-extinctions-through-geologic-time.htm",
+      "citations": [
+        {
+          "slug": "the-ends-of-the-world",
+          "claim_index": 1,
+          "source_title": "NPS mass extinctions through geologic time"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/subjects/fossils/mass-extinctions-through-geologic-time.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/subjects/fossils/triassic-dinosaurs.htm",
+      "citations": [
+        {
+          "slug": "the-rise-and-fall-of-the-dinosaurs",
+          "claim_index": 1,
+          "source_title": "NPS Triassic dinosaurs"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/subjects/fossils/triassic-dinosaurs.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/subjects/geology/time-scale.htm",
+      "citations": [
+        {
+          "slug": "annals-of-the-former-world",
+          "claim_index": 2,
+          "source_title": "NPS geologic time scale"
+        }
+      ],
+      "host": "nps.gov",
+      "state": "reachable",
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://www.nps.gov/subjects/geology/time-scale.htm",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.nps.gov/subjects/oceans/oyster-reefs.htm",
       "citations": [
         {
@@ -29992,8 +30918,8 @@
       "state": "access_blocked",
       "method": "GET",
       "status": 403,
-      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/england-and-europe-in-1420/",
-      "redirected": true,
+      "final_url": "https://www.parliament.uk/external/committees/committee-news-pre-oct-2020/2020/may/England-and-Europe-in-1420/",
+      "redirected": false,
       "error": null
     },
     {
@@ -31517,6 +32443,23 @@
       "error": null
     },
     {
+      "url": "https://www.si.edu/newsdesk/releases/smithsonian-led-team-discovers-north-americas-oldest-known-pterosaur",
+      "citations": [
+        {
+          "slug": "the-rise-and-fall-of-the-dinosaurs",
+          "claim_index": 1,
+          "source_title": "Smithsonian Triassic ecosystem in flux"
+        }
+      ],
+      "host": "si.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.si.edu/newsdesk/releases/smithsonian-led-team-discovers-north-americas-oldest-known-pterosaur",
+      "redirected": false,
+      "error": null
+    },
+    {
       "url": "https://www.si.edu/object/box-how-shipping-container-made-world-smaller-and-world-economy-bigger-marc-levinson%3Asiris_sil_799285",
       "citations": [
         {
@@ -31569,6 +32512,40 @@
       "method": "GET",
       "status": 403,
       "final_url": "https://www.si.edu/object/how-buildings-learn-what-happens-after-theyre-built-stewart-brand%3Asiris_sil_468917",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.si.edu/spotlight/dinosaurs",
+      "citations": [
+        {
+          "slug": "why-dinosaurs-matter",
+          "claim_index": 1,
+          "source_title": "Smithsonian dinosaur spotlight"
+        }
+      ],
+      "host": "si.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.si.edu/spotlight/dinosaurs",
+      "redirected": false,
+      "error": null
+    },
+    {
+      "url": "https://www.si.edu/stories/could-dinosaurs-still-exist",
+      "citations": [
+        {
+          "slug": "the-rise-and-fall-of-the-dinosaurs",
+          "claim_index": 2,
+          "source_title": "Smithsonian dinosaur-bird evidence"
+        }
+      ],
+      "host": "si.edu",
+      "state": "access_blocked",
+      "method": "GET",
+      "status": 403,
+      "final_url": "https://www.si.edu/stories/could-dinosaurs-still-exist",
       "redirected": false,
       "error": null
     },
@@ -32348,6 +33325,40 @@
       "error": "TypeError: fetch failed"
     },
     {
+      "url": "https://www.usgs.gov/educational-resources/plate-tectonics",
+      "citations": [
+        {
+          "slug": "annals-of-the-former-world",
+          "claim_index": 1,
+          "source_title": "USGS plate tectonics"
+        }
+      ],
+      "host": "usgs.gov",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.usgs.gov/mission-areas/natural-hazards",
+      "citations": [
+        {
+          "slug": "timefulness",
+          "claim_index": 2,
+          "source_title": "USGS natural hazards mission"
+        }
+      ],
+      "host": "usgs.gov",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
       "url": "https://www.usgs.gov/news/volcano-watch-mixing-magmas-krakatau",
       "citations": [
         {
@@ -32371,6 +33382,40 @@
           "slug": "under-a-white-sky",
           "claim_index": 1,
           "source_title": "USGS invasive species program"
+        }
+      ],
+      "host": "usgs.gov",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.usgs.gov/programs/national-cooperative-geologic-mapping-program",
+      "citations": [
+        {
+          "slug": "annals-of-the-former-world",
+          "claim_index": 2,
+          "source_title": "USGS geologic mapping program"
+        }
+      ],
+      "host": "usgs.gov",
+      "state": "network_error",
+      "method": "GET",
+      "status": null,
+      "final_url": null,
+      "redirected": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.usgs.gov/publications/secular-trends-geologic-record-and-supercontinent-cycle",
+      "citations": [
+        {
+          "slug": "supercontinent",
+          "claim_index": 3,
+          "source_title": "USGS secular trends and supercontinent cycle"
         }
       ],
       "host": "usgs.gov",
@@ -33306,8 +34351,8 @@
       "state": "reachable",
       "method": "HEAD",
       "status": 200,
-      "final_url": "https://wwwnc.cdc.gov/eid/article/24/5/17-1609_article",
-      "redirected": false,
+      "final_url": "https://wwwnc.cdc.gov/eid/404.html?aspxerrorpath=/eid/article/24/5/17-1609_article",
+      "redirected": true,
       "error": null
     },
     {

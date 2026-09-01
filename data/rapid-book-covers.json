@@ -3480,6 +3480,110 @@
         "Elizabeth Kolbert",
         "Joan Lluís Riera"
       ]
+    },
+    {
+      "slug": "timefulness",
+      "match_state": "exact_title_author",
+      "cover_id": 12645271,
+      "cover_url": "https://covers.openlibrary.org/b/id/12645271-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL19765195W",
+      "source_title": "Timefulness",
+      "source_authors": [
+        "Marcia Bjornerud"
+      ]
+    },
+    {
+      "slug": "annals-of-the-former-world",
+      "match_state": "exact_title_author",
+      "cover_id": 6798433,
+      "cover_url": "https://covers.openlibrary.org/b/id/6798433-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL11293225W",
+      "source_title": "Annals of the former world",
+      "source_authors": [
+        "John McPhee"
+      ]
+    },
+    {
+      "slug": "earth-an-intimate-history",
+      "match_state": "unresolved"
+    },
+    {
+      "slug": "the-story-of-earth",
+      "match_state": "exact_title_author",
+      "cover_id": 7983441,
+      "cover_url": "https://covers.openlibrary.org/b/id/7983441-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL17708479W",
+      "source_title": "The story of Earth",
+      "source_authors": [
+        "Robert M. Hazen"
+      ]
+    },
+    {
+      "slug": "a-brief-history-of-earth",
+      "match_state": "exact_title_author",
+      "cover_id": 10858991,
+      "cover_url": "https://covers.openlibrary.org/b/id/10858991-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL24337220W",
+      "source_title": "A Brief History of Earth",
+      "source_authors": [
+        "Andrew H. Knoll"
+      ]
+    },
+    {
+      "slug": "the-ends-of-the-world",
+      "match_state": "exact_title_author",
+      "cover_id": 9276724,
+      "cover_url": "https://covers.openlibrary.org/b/id/9276724-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20058393W",
+      "source_title": "The ends of the world",
+      "source_authors": [
+        "Peter Brannen",
+        "Peter Brannen"
+      ]
+    },
+    {
+      "slug": "otherlands",
+      "match_state": "exact_title_author",
+      "cover_id": 11646867,
+      "cover_url": "https://covers.openlibrary.org/b/id/11646867-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL24831204W",
+      "source_title": "Otherlands",
+      "source_authors": [
+        "Thomas Halliday"
+      ]
+    },
+    {
+      "slug": "supercontinent",
+      "match_state": "exact_title_author",
+      "cover_id": 2548141,
+      "cover_url": "https://covers.openlibrary.org/b/id/2548141-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL9548548W",
+      "source_title": "Supercontinent",
+      "source_authors": [
+        "Ted Nield"
+      ]
+    },
+    {
+      "slug": "the-rise-and-fall-of-the-dinosaurs",
+      "match_state": "exact_title_author",
+      "cover_id": 8797646,
+      "cover_url": "https://covers.openlibrary.org/b/id/8797646-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20152885W",
+      "source_title": "The Rise and Fall of the Dinosaurs",
+      "source_authors": [
+        "Steve Brusatte"
+      ]
+    },
+    {
+      "slug": "why-dinosaurs-matter",
+      "match_state": "exact_title_author",
+      "cover_id": 14535065,
+      "cover_url": "https://covers.openlibrary.org/b/id/14535065-M.jpg",
+      "source_url": "https://openlibrary.org/works/OL20059176W",
+      "source_title": "Why dinosaurs matter",
+      "source_authors": [
+        "Kenneth Lacovara"
+      ]
     }
   ]
 }
